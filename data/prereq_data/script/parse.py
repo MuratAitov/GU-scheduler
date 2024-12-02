@@ -2,8 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import re
+# for cs
+#url = "https://www.gonzaga.edu/school-of-engineering-applied-science/degrees-and-programs/computer-science/cpsc-courses"
 
-url = "https://www.gonzaga.edu/school-of-engineering-applied-science/degrees-and-programs/computer-science/cpsc-courses"
+#for math
+#url = 'https://www.gonzaga.edu/college-of-arts-sciences/departments/mathematics/majors-minors-curriculum/courses'
 
 response = requests.get(url)
 soup = BeautifulSoup(response.content, 'html.parser')
@@ -13,10 +16,9 @@ courses = []
 course_wrappers = soup.find_all('div', class_='course-wrapper')
 
 def parse_prerequisites(text):
-    # Удаляем ненужные символы и приводим к стандартному виду
     text = text.replace('\n', ' ').replace('\r', ' ').strip()
-    # Рекурсивно парсим строку пререквизитов
     tokens = re.findall(r'\(|\)|\w+|\band\b|\bor\b', text)
+
     def parse_tokens(tokens):
         result = []
         while tokens:
@@ -27,16 +29,26 @@ def parse_prerequisites(text):
             elif token == ')':
                 break
             elif token.lower() == 'and' or token.lower() == 'or':
+                # Преобразуем последний элемент в список, если он не список
+                if result and not isinstance(result[-1], list):
+                    result[-1] = [result[-1]]
                 result.append(token.lower())
             else:
                 # Собираем название курса и минимальную оценку
                 course = token
                 while tokens and tokens[0] not in ('and', 'or', '(', ')'):
                     course += ' ' + tokens.pop(0)
-                result.append(course.strip())
+                # Оборачиваем курс в список
+                result.append([course.strip()])
+
+        # Упрощение структуры, если это просто один элемент
+        if len(result) == 1:
+            return result[0]
         return result
+
     parsed = parse_tokens(tokens)
     return parsed
+
 
 for wrapper in course_wrappers:
     course = {}
