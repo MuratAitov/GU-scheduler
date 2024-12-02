@@ -1,0 +1,575 @@
+[
+    {
+        "name": "CPSC 110 Special Topics for Non Majors",
+        "description": "Computer Science topics of special interest to students majoring in other disciplines. Sample topics include principles of programming, web programming, and media computing. May not be counted towards a major in Computer Science. On sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "CPSC 121 Computer Science I",
+        "description": "Techniques of problem-solving and algorithmic development. An introduction to programming. Emphasis is on how to design, code, debug, and document programs using good programming style. Fall and Spring.",
+        "term": "Fall, Spring"
+    },
+    {
+        "name": "CPSC 122 Computer Science II",
+        "description": "A continuation of CPSC 121. An examination of dynamic memory management and recursion; an introduction to basic data structures and algorithmic analysis. Fall and Spring.",
+        "term": "Fall, Spring",
+        "prerequisites": [
+            "CPSC 121 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 190 Directed Study",
+        "description": "Topic to be decided by faculty.",
+        "term": null
+    },
+    {
+        "name": "CPSC 212 Computational Modeling",
+        "description": "This course introduces students to the modeling process and computer simulations. It considers two major approaches: system dynamics models and agent-based models. A variety of software tools will be explored. Applications will be chosen from ecology, medicine, chemistry, biology, and others. Spring.",
+        "term": "Spring",
+        "prerequisites": [
+            "CPSC 121 Minimum Grade D"
+        ],
+        "equivalent": "ITEC 212 - OK if taken between Fall 2011 and Fall 2023"
+    },
+    {
+        "name": "CPSC 213 Special Topics",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "CPSC 214 Special Topics",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "CPSC 215 Special Topics",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "CPSC 222 Introduction to Data Science",
+        "description": "This course provides an introduction to the underlying ideas, concepts, and techniques used in data science. Students gain skills in statistical and computational thinking, and their practical application to real-world, data-driven problem solving and decision making. The course teaches important concepts and skills in both statistical reasoning and computer programming for the purpose of analyzing real-world data sets. Examples are drawn from diverse areas such as economics, social science, health and wellness, climate science, and education. Students gain experience using the Python programming language, Python’s standard libraries for data science applications and computational notebooks (e.g., using Jupyter). The course also raises important social questions concerning privacy, social inequality, and professional ethics related to data science and its applications. Fall & Spring.",
+        "term": "Fall, Spring",
+        "prerequisites": [
+            "CPSC 121 Minimum Grade D",
+            "or",
+            "ENSC 201 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 223 Algorithm&Abstract Data Struct",
+        "description": "Algorithm analysis using Big-O notation, sorting, heaps, balanced binary search trees, and hash tables. Fall and Spring.\n\nMATH 231 and CPSC 223 can be taken concurrently.",
+        "term": "Fall, Spring",
+        "prerequisites": [
+            "CPSC 122 Minimum Grade D",
+            "and",
+            [
+                "MATH 231 Minimum Grade D"
+            ],
+            "and",
+            "MATH 231 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 224 Software Development",
+        "description": "This course covers topics in object-oriented programming, user-interface design and development, and software construction including program design, development tools, and basic concepts in software engineering. Students work on hands-on development assignments and projects throughout the semester. Fall and Spring.",
+        "term": "Fall, Spring",
+        "prerequisites": [
+            "CPSC 122 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 260 Computer Organization",
+        "description": "This course covers basic topics in the design of modern computer systems. Topics include digital logic, computer system components, machine-level code, memory organization and management, computer arithmetic, assembly-language programming, and basic connections between high-level and low-level languages (C and assembly). This course also serves as a foundation for courses on networking. security, operating systems, and computer architecture, where a deeper understanding of systems-level issues is required. Fall and Spring.\n****  Students who have taken and received credit for CPEN 231 may not also receive credit for CPSC 260. *****",
+        "term": "Fall, Spring",
+        "prerequisites": [
+            "CPSC 122 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 290 Directed Reading",
+        "description": "Individual exploration of a topic not normally covered in the curriculum.",
+        "term": null
+    },
+    {
+        "name": "CPSC 310 Special Topics",
+        "description": "Topics that reflect the current interests and expertise of the faculty. On sufficient demand.",
+        "term": null,
+        "prerequisites": [
+            "CPSC 122 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 311 Special Topics",
+        "description": "Topics that reflect the current interests and expertise of the faculty. On sufficient demand.",
+        "term": null,
+        "prerequisites": [
+            "CPSC 122 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 312 Special Topics",
+        "description": "Topics that reflect the current interests and expertise of the faculty. On sufficient demand.",
+        "term": null,
+        "prerequisites": [
+            "CPSC 122 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 313 Special Topics",
+        "description": "Topics that reflect the current interests and expertise of the faculty. On sufficient demand.",
+        "term": null,
+        "prerequisites": [
+            "CPSC 122 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 314 Special Topics",
+        "description": "Topics that reflect the current interests and expertise of the faculty. On sufficient demand.",
+        "term": null,
+        "prerequisites": [
+            "CPSC 122 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 315 Special Topics",
+        "description": "Topics that reflect the current interests and expertise of the faculty. On sufficient demand. Prerequisite: CPSC 223",
+        "term": null,
+        "prerequisites": [
+            "CPSC 223 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 321 Database Management Systems",
+        "description": "Introduction to relational database concepts and techniques. Topics include the relational model, database design, SQL, transactions, file and index organization, and using databases within software applications, Fall. Prerequisite: CPSC 122 or CPSC 222",
+        "term": "Fall"
+    },
+    {
+        "name": "CPSC 322 Data Science Algorithms",
+        "description": "This course provides a detailed overview of the processes and techniques used in creating data science applications. Emphasis is placed on popular algorithms for the analysis, classification, and mining of relational data. Students learn to implement data science algorithms and techniques over real-world data sets through assignments and projects in Python. Topics include data preparation and cleaning, summary statistics, basic data visualization techniques, feature selection, discretization, k nearest neighbors, naive bayes, decision trees, ensemble methods, apriori rule mining, and k-means clustering. Fall. Prerequisite: CPSC 122 or CPSC 222",
+        "term": "Fall"
+    },
+    {
+        "name": "CPSC 323 Machine Lrng & Intllgnt Systms",
+        "description": "This course provides a detailed overview of topics in machine learning with an emphasis on algorithms and techniques for unstructured and complex data sets. Students implement and apply machine learning algorithms to examples drawn from time series, image, audio, textual, and numerical data. Topics include regression analysis, support vector machines, genetic algorithms, neural networks and heuristic search. Concepts and issues in building intelligent systems and the role of machine learning are also discussed. Fall.",
+        "term": "Fall",
+        "prerequisites": [
+            "CPSC 322 Minimum Grade D",
+            "or",
+            "CPSC 223 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 325 Data Science Project Lab",
+        "description": "This course provides an overview of how to design a data science system and deploy the system into a production environment. Students complete a semester-long project that involves researching a data science problem, proposing a solution to the problem, implementing the solution, and deploying the solution as a hosted web application. Emphasis is placed on working with web-based application programming interfaces, gathering and processing data, researching and implementing common machine algorithms for data mining and classification, and securely deploying models in the cloud. Spring, odd years.",
+        "term": "Spring",
+        "prerequisites": [
+            "CPSC 322 Minimum Grade D",
+            "or",
+            "CPSC 323 Minimum Grade D"
+        ],
+        "equivalent": "CPSC 483 - OK if taken since Fall 2024"
+    },
+    {
+        "name": "CPSC 326 Organization of Program Langs",
+        "description": "Examination of the structures and concepts of procedural, functional, and logic-based programming languages. Spring.",
+        "term": "Spring",
+        "prerequisites": [
+            "CPSC 223 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 331 UI/UX Design",
+        "description": "Exploration of theories and principles related to human-computer interaction, user experience design, and user interface design. Development of techniques and practices for designing and evaluating software usability. Spring.",
+        "term": "Spring",
+        "prerequisites": [
+            "CPSC 122 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 332 Web Development",
+        "description": "Techniques of web-based software application development. Introduces programming languages and frameworks for web programming. Emphasis on web programming basics using well-established approaches including the basics of full-stack web development. Fall.",
+        "term": "Fall",
+        "prerequisites": [
+            "CPSC 122 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 333 Mobile App Development",
+        "description": "This course provides an introduction to mobile application development. The primary aim of this course is to provide students with a thorough introduction to designing and building native and/or cross-platform apps for mobile devices. The platform, frameworks/libraries, and development tools used in this course vary and are dependent on the current demand in industry. Topics include object-oriented programming, design patterns, user interface design and implementation, data storage, working with application programming interfaces, threading, camera and photos, and location and maps. Additional topics are covered based on trending mobile app features. Fall.",
+        "term": "Fall",
+        "prerequisites": [
+            "CPSC 122 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 334 Linux and DevOps",
+        "description": "This course covers topics of using and managing Linux OSes from the command line, virtual machines, containers, DevOps philosophy, continuous integration, continuous deployment, and Git. Students work on hands-on development assignments and projects throughout the semester. Spring.",
+        "term": "Spring",
+        "prerequisites": [
+            "CPSC 224 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 341 Internet of Things",
+        "description": "The Internet of things (IoT) is the network of physical devices, buildings (smart building), furniture (smart home), vehicles (smart transportation), and many others. In this class, students will learn key technologies in IoT and obtain hands-on experience by building IoT devices. A substantial part of the material will cover IoT applications, IoT architecture, embedded systems, network protocols, sensor networks, and IoT security. Students will also work on research projects related to IoT applications, design, and security. Spring, odd years.",
+        "term": "Spring",
+        "prerequisites": [
+            "CPSC 223 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 346 Operating Systems",
+        "description": "Study of operating systems internals.  Topics include concurrent programming, memory management, file system management, scheduling algorithms, and security.  Fall.\nPrerequisite(s): CPSC 122 and (CPSC 260 or (CPEN 231 and CPEN 231L))",
+        "term": "Fall"
+    },
+    {
+        "name": "CPSC 348 Computer Security",
+        "description": "Study of security and information assurance in stand-alone and distributed computing. Topics include ethics, privacy, access control methods and intrusion detection. Spring.",
+        "term": "Spring",
+        "prerequisites": [
+            "CPSC 223 Minimum Grade D",
+            "and",
+            "CPSC 260 Minimum Grade D",
+            "or",
+            [
+                "CPEN 231 Minimum Grade D",
+                "and",
+                "CPEN 231L Minimum Grade D"
+            ]
+        ],
+        "equivalent": "CPSC 448 - Taken before Spring 2020"
+    },
+    {
+        "name": "CPSC 351 Theory of Computation",
+        "description": "Study of automata, languages, and computability theory. Regular grammars, finite state automata, context-free grammars, pushdown automata, Turing machines, decidable and undecidable problems, and problem reduction. Fall, odd years. Prerequisite(s): CPSC 122 and (MATH 231 or MATH 301)",
+        "term": "Fall",
+        "prerequisites": [
+            "CPSC 223 Minimum Grade D",
+            "and",
+            [
+                "MATH 231 Minimum Grade D",
+                "or",
+                "MATH 301 Minimum Grade D"
+            ]
+        ]
+    },
+    {
+        "name": "CPSC 353 Applied Cryptography",
+        "description": "Topics include classical cryptosystems, block ciphers, public key cryptosystems, key exchange protocols, and hash functions. Fall. \nPrerequisite(s): CPSC 223 and (MATH 231 or MATH 301)",
+        "term": "Fall",
+        "prerequisites": [
+            "CPSC 223 Minimum Grade D",
+            "and",
+            [
+                "MATH 231 Minimum Grade D",
+                "or",
+                "MATH 301 Minimum Grade D"
+            ]
+        ]
+    },
+    {
+        "name": "CPSC 390 Directed Study",
+        "description": "Topic to be decided by faculty.",
+        "term": null
+    },
+    {
+        "name": "CPSC 410 Advanced Topics",
+        "description": "Topics that reflect the current interests and expertise of the faculty. On sufficient demand.",
+        "term": null,
+        "prerequisites": [
+            "CPSC 223 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 411 Advanced Topics",
+        "description": "Topics that reflect the current interests and expertise of the faculty. On sufficient demand.",
+        "term": null,
+        "prerequisites": [
+            "CPSC 223 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 412 Advanced Topics",
+        "description": "Topics that reflect the current interests and expertise of the faculty. On sufficient demand.",
+        "term": null,
+        "prerequisites": [
+            "CPSC 223 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 413 Advanced Topics",
+        "description": "Topics that reflect the current interests and expertise of the faculty. On sufficient demand.",
+        "term": null,
+        "prerequisites": [
+            "CPSC 223 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 414 Advanced Topics",
+        "description": "Topics that reflect the current interests and expertise of the faculty. On sufficient demand.",
+        "term": null,
+        "prerequisites": [
+            "CPSC 223 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 415 Advanced Topics",
+        "description": "Topics that reflect the current interests and expertise of the faculty. On sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "CPSC 425 Computer Graphics",
+        "description": "Introduction to the use of graphics primitives within a higher level language to produce two and three-dimensional images; underlying mathematical operations used to implement standard graphics packages; practical experience with current graphics systems. Spring, odd years.",
+        "term": "Spring",
+        "prerequisites": [
+            "CPSC 223 Minimum Grade D",
+            "and",
+            "MATH 231 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 431 Computer Hrdwr Dsg & Achtr",
+        "description": "Understanding the design techniques, machine structures, technology factors, and evaluation methods that will determine the form of computers in 21st century. Spring.",
+        "term": "Spring",
+        "prerequisites": [
+            "CPSC 260 Minimum Grade D",
+            "or",
+            "CPEN 231 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 435 Parallel & Cloud Computing",
+        "description": "Parallel Programming platforms; principles of parallel algorithm design; basic communication operations; programming using the message-passing paradigm (MPI); programming on shared address space platforms (POSIX Thread and OpenMP); cloud computing; big data analysis; and other advanced topics. On sufficient demand.",
+        "term": null,
+        "prerequisites": [
+            "CPSC 260 Minimum Grade D",
+            "or",
+            [
+                "CPEN 231 Minimum Grade D",
+                "and",
+                "CPEN 231L Minimum Grade D"
+            ]
+        ],
+        "equivalent": "CPEN 435 - Successful completion"
+    },
+    {
+        "name": "CPSC 436 Biomedical Informatics&Comput",
+        "description": "Investigation of the role of computers in the provision of medical services; machine learning algorithms for regression, classification, clustering, and anomaly detection; medical decision-making support; genomic medicine and its techniques. On sufficient demand.",
+        "term": null,
+        "prerequisites": [
+            "CPSC 260 Minimum Grade D",
+            "or",
+            [
+                "CPEN 231 Minimum Grade D",
+                "and",
+                "CPEN 231L Minimum Grade D"
+            ]
+        ],
+        "equivalent": "CPEN 436 - Successful completion"
+    },
+    {
+        "name": "CPSC 439 Digital Forensics",
+        "description": "Digital forensics covers the three functions of digital forensics performed by organizations: employee abuse investigations, incident response, and electronic discovery. Students will learn to conduct all three. In particular students will learn to gather, analyze and present digital evidence to the sponsoring organization as well as to legal audiences. On sufficient demand.\nPrerequisite(s):CPSC 223 and (CPSC 260 or (CPEN 231 and CPEN 231L))",
+        "term": null
+    },
+    {
+        "name": "CPSC 447 Computer Networks",
+        "description": "Study of main components of computer communications and networks; communication protocols; routing algorithms; machine addressing and network services. Spring - even years.\nPrerequisite(s): CPSC 223 and (CPSC 260 or (CPEN 231 and CPEN 231L))",
+        "term": "Spring"
+    },
+    {
+        "name": "CPSC 448 Network and System Security",
+        "description": "Computer Network and System Security covers cybersecurity in computer operating systems, network infrastructure, and devices like routers and switches, server management for Windows and Linux operating systems, along with managing sensitive data. On sufficient demand.\nPrerequisite(s): CPSC 223 and (CPSC 260 or (CPEN 231 and CPEN 231L))",
+        "term": null
+    },
+    {
+        "name": "CPSC 450 Design&Analysis-Comp Algorithm",
+        "description": "Advanced study of computer algorithms not covered in CPSC 223 along with principles and techniques of computational complexity. Topics could include dynamic programming, B-trees, minimum spanning trees, Floyd and Warshall algorithms, various string matching algorithms, computational geometry, exponential growth of round-off errors, NP-completeness and reducibility. Fall - even years.",
+        "term": "Fall",
+        "prerequisites": [
+            "CPSC 223 Minimum Grade D",
+            "and",
+            "MATH 231 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 455 Chaos & Dynamical Systems",
+        "description": "Introduction to the study of discrete nonlinear dynamical systems and their chaotic behavior. The course will focus on investigation s through computer experiments- both numerical and graphical- and the corresponding mathematical analysis of the observed behavior. A significant portion of the course will be devoted to designing graphics programs. In the humanistic tradition of Gonzaga, students will also learn the historical development of the modern science of chaotic dynamical systems. Spring - even years.\nPrerequisite(s): CPSC 122 and (MATH 231 or MATH 301)",
+        "term": "Spring"
+    },
+    {
+        "name": "CPSC 475 Speech&NaturalLangProcessing",
+        "description": "Computational approaches to language processing: text normalization, N-grams, sentiment classification, part-of-speech tagging, parsing, semantic analysis, and applied phonetics. Spring, odd years.",
+        "term": "Spring",
+        "prerequisites": [
+            "CPSC 223 Minimum Grade D",
+            "or",
+            "CPSC 322 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 481 Data Analytics & Communication",
+        "description": "In this course, students will learn a variety of techniques and tools for effectively communicating data analysis questions, results, and insights to a range of audiences. The course will cover techniques related to data storytelling, data visualization, interactive dashboarding, digital portfolio design and development, technical report writing, and technical presentation skills for data science. Students will also learn to effectively use modern tools related to data storytelling and visualization. On sufficient demand.\nPrerequisite: CPSC 222",
+        "term": null
+    },
+    {
+        "name": "CPSC 482 Data Intensive Systems",
+        "description": "This course covers tools and techniques used in applying statistical and machine learning approaches to real-world data sets. Through hands-on assignments and projects, students learn relevant architectures, programming models, and tools related to data modeling and storage, extract-transform-load (ETL) processes, data warehousing, and data pipeline creation and management. The course also explores scalable, distributed, and cloud-based approaches used in data-intensive applications for accessing, filtering, clustering, and classifying data.  On sufficient demand.",
+        "term": null,
+        "prerequisites": [
+            [
+                "CPSC 223 Minimum Grade D",
+                "or",
+                "CPSC 322 Minimum Grade D"
+            ],
+            "and",
+            "CPSC 321 Minimum Grade D"
+        ],
+        "equivalent": "CPSC 324 - Taken before Fall 2024"
+    },
+    {
+        "name": "CPSC 483 Data Science Capstone",
+        "description": "This course provides an overview of how to design a data science system and deploy the system into a production environment. Students complete a semester-long project that involves researching a data science problem, proposing a solution to the problem, implementing the solution, and deploying the solution as a hosted web application. Emphasis is placed on working with web-based application programming interfaces, gathering and processing data, researching and implementing common machine algorithms for data mining and classification, and securely deploying models in the cloud. On sufficient demand.",
+        "term": null,
+        "prerequisites": [
+            "CPSC 322 Minimum Grade D",
+            "or",
+            "CPSC 323 Minimum Grade D"
+        ],
+        "equivalent": "CPSC 325 - Taken before Fall 2024"
+    },
+    {
+        "name": "CPSC 490 Directed Reading",
+        "description": "Individual exploration of a topic not normally covered in the curriculum. Arrangement with an instructor.",
+        "term": null
+    },
+    {
+        "name": "CPSC 491 Software Engineering",
+        "description": "A survey of approaches used in software engineering focusing on software development processes, requirements engineering, estimation, scheduling, risk analysis, testing, version control, and project management. Students apply the techniques and practices learned in their senior design projects, including the development of a detailed project plan and a functional software prototype. Fall.",
+        "term": "Fall",
+        "prerequisites": [
+            "CPSC 223 Minimum Grade D",
+            "and",
+            "CPSC 224 Minimum Grade D"
+        ],
+        "corequisites": [
+            "CPSC 491L CPSC 499"
+        ]
+    },
+    {
+        "name": "CPSC 491L Senior Design Project Lab I",
+        "description": "First semester of a two semester senior design project in which students work in teams to develop a large software product. Teams meet weekly with their faculty project advisors. Fall.",
+        "term": "Fall",
+        "prerequisites": [
+            "CPSC 223 Minimum Grade D",
+            "and",
+            "CPSC 224 Minimum Grade D"
+        ],
+        "corequisites": [
+            "CPSC 491 CPSC 499"
+        ]
+    },
+    {
+        "name": "CPSC 492L Senior Design Project Lab II",
+        "description": "Second semester of a two semester senior design project in which students work in teams to develop a large software product. Teams meet weekly with their faculty project advisors. Spring.",
+        "term": "Spring",
+        "prerequisites": [
+            "CPSC 491 Minimum Grade D",
+            "and",
+            "CPSC 491L Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 493 Software Security Engineering",
+        "description": "Secure Software Engineering covers the principles and practices of secure programming: writing programs in a safe fashion, avoiding vulnerabilities which can be exploited by attackers, and using library security features like authentication and encryption. On sufficient demand.",
+        "term": null,
+        "prerequisites": [
+            "CPSC 223 Minimum Grade D",
+            "and",
+            "CPSC 224 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPSC 495 Thesis I",
+        "description": "First of a two semester senior thesis project. Requires arrangement with a faculty supervisor.",
+        "term": null
+    },
+    {
+        "name": "CPSC 496 Thesis II",
+        "description": "Second of a two semester senior thesis project. Requires arrangement with a faculty supervisor.",
+        "term": null,
+        "prerequisites": [
+            "CPSC 495 Minimum Grade S"
+        ]
+    },
+    {
+        "name": "CPSC 497 Computer Science Internship",
+        "description": "Computer Industry Internship.",
+        "term": null
+    },
+    {
+        "name": "CPSC 499 Computers and Society",
+        "description": "This course discusses ethical, societal, security and legal issues in computing, including their relationship to professional development. Topics are examined within the context of students' senior design projects. Fall.",
+        "term": "Fall",
+        "prerequisites": [
+            "CPSC 223 Minimum Grade D",
+            "and",
+            "CPSC 224 Minimum Grade D"
+        ],
+        "corequisites": [
+            "CPSC 491 CPSC 491L"
+        ]
+    },
+    {
+        "name": "CPSC 510 Intrusion Detection",
+        "description": "Study of the science and art of computer and network intrusion detection. Topics include monitoring events in computer systems, preventing unwanted activity, and recovering from malicious behavior.",
+        "term": null
+    },
+    {
+        "name": "CPSC 511 Off Security & Pen Testing",
+        "description": "The study of offensive security using ethical hacking techniques. Topics include reconnaissance, operating system fingerprinting, remote network mapping, software and network vulnerabilities and their exploitation, credential gathering, and privilege escalation.",
+        "term": null
+    },
+    {
+        "name": "CPSC 523 Machine Learning for Cybersec",
+        "description": "Study of machine learning in the context of cybersecurity. Topics include key ideas in machine learning, processing and analysis of large data collections of security events, building models that detect and respond to malicious events.",
+        "term": null
+    },
+    {
+        "name": "CPSC 532 Ethics for Advanced Computing",
+        "description": "An introduction to the many ethical concerns surrounding data selection, collection, storage, retrieval, sale, and use of data sets and the algorithms that use them. Special focus on data bias, ownership, informed consent, data privacy, and security, as well as on algorithm fairness and jobs for those cataloging and tagging data sets, especially regarding workers from the third world or \"AI Colonialism\".",
+        "term": null,
+        "equivalent": "DATA 532 - OK if taken since Fall 2024"
+    },
+    {
+        "name": "CPSC 539 Risk Mgmt & Incident Response",
+        "description": "Study of information assurance for cybersecurity perspective. Topics include risk management, assessment and mitigation, business impact analysis, continuity planning, disaster recovery planning, as well as compliance and audits.",
+        "term": null
+    },
+    {
+        "name": "CPSC 541 Internet of Things",
+        "description": "Study of networks of physical devices. Topics include IoT architecture, embedded systems network protocols, and IoT security.",
+        "term": null
+    },
+    {
+        "name": "CPSC 546 Operating Systems Security",
+        "description": "The study of security in modern operation systems. Topics include an overview of security in current operating systems, an examination of fundamental concerns in operating system design, and an analysis of operating system models for overall computer system vulnerability.",
+        "term": null
+    },
+    {
+        "name": "CPSC 547 Network Security",
+        "description": "Study of networks and network protocols as they apply to cybersecurity. Topics include important concepts in wired and wireless architectures, including the ISO standard layer model, packet switching, satellite packet broadcasting, the interconnection of packet-switched networks, and error control coding. Special attention is given to security threats and countermeasures.",
+        "term": null
+    },
+    {
+        "name": "CPSC 548 Computer Security",
+        "description": "Study of security and information assurance in stand-alone and distributed computing. Topics include ethics, privacy, access control methods and intrusion detection.",
+        "term": null
+    },
+    {
+        "name": "CPSC 553 Applied Cryptography",
+        "description": "Study of sending securing information over an insecure medium. Topics include classical cryptosystems, block ciphers, public key cryptosystems, key exchange protocols, hash functions, and the necessary mathematics.",
+        "term": null
+    }
+]
