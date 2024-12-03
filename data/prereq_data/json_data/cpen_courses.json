@@ -1,0 +1,185 @@
+[
+    {
+        "name": "CPEN 193 FYS:",
+        "description": "The First-Year Seminar (FYS) introduces new Gonzaga students to the University, the Core Curriculum, and Gonzaga’s Jesuit mission and heritage. While the seminars will be taught by faculty with expertise in particular disciplines, topics will be addressed in a way that illustrates approaches and methods of different academic disciplines. The seminar format of the course highlights the participatory character of university life, emphasizing that learning is an active, collegial process.",
+        "term": null
+    },
+    {
+        "name": "CPEN 230 Intro Digital Logic",
+        "description": "Number systems and codes, Boolean Algebra, Logic gates and flip-flops.  Verilog HDL. Combinational and sequential Logic Design using CPLDs.  Three lecture hours per week.",
+        "term": null,
+        "corequisites": [
+            "CPEN 230L"
+        ]
+    },
+    {
+        "name": "CPEN 230L Intro Digital Logic Lab",
+        "description": "Three laboratory hours per week. Taken concurrently with CPEN 230.",
+        "term": null,
+        "corequisites": [
+            "CPEN 230"
+        ]
+    },
+    {
+        "name": "CPEN 231 Embedded Computer Systems",
+        "description": "Study of components of simple computer systems: CPU's memory, registers, busses, computer control, microprogramming, assembly language programming.  Three lecture hours per week.",
+        "term": null,
+        "prerequisites": [
+            [
+                "CPSC 121 Minimum Grade D"
+            ],
+            "or",
+            [
+                "ENSC 201 Minimum Grade D"
+            ]
+        ],
+        "corequisites": [
+            "CPEN 231L"
+        ]
+    },
+    {
+        "name": "CPEN 231L Embedded Computer Systems Lab",
+        "description": "Three laboratory hours per week. Taken concurrently with CPEN 231.",
+        "term": null,
+        "corequisites": [
+            "CPEN 231"
+        ]
+    },
+    {
+        "name": "CPEN 247 Network Interfacing & Sockets",
+        "description": "Reviewing main programming concepts. Introducing network models, services and applications. Processes Communications. UDP and TCP Client/Server Sockets. Offered during Spring semesters.",
+        "term": "Spring",
+        "prerequisites": [
+            "CPSC 121 Minimum Grade D"
+        ]
+    },
+    {
+        "name": "CPEN 342 Cyber-Physical Systems",
+        "description": "The microcontroller as an engineering component. Hardware expansion with analog and digital devices.  Board-level design of real-time systems.  Design of user-friendly interactive displays. Design project. Troubleshooting with logic analyzers and in-circuit emulation.  Three lecture hours per week.",
+        "term": null,
+        "prerequisites": [
+            [
+                [
+                    "CPEN 231 Minimum Grade D"
+                ],
+                "or",
+                [
+                    "CPSC 260 Minimum Grade D"
+                ]
+            ],
+            "and",
+            [
+                "EENG 201 Minimum Grade D"
+            ],
+            "and",
+            [
+                "EENG 201L Minimum Grade D"
+            ]
+        ],
+        "equivalent": "CPEN 442 - Taken before Fall 2005"
+    },
+    {
+        "name": "CPEN 342L Cyber-Physical Systems Lab",
+        "description": "Three laboratory hours per week. Taken concurrently with CPEN 342.",
+        "term": null,
+        "corequisites": [
+            "CPEN 342"
+        ]
+    },
+    {
+        "name": "CPEN 430 Digital System Design",
+        "description": "Modern methods of digital design realization.  Technology independence.  Designs utilizing gate arrays and custom integrated circuits.  Use of high-level design software. Extensive use of Verilog hardware design language for system description, simulation, and implementation.  Three lecture hours per week.",
+        "term": null,
+        "prerequisites": [
+            [
+                "CPEN 231 Minimum Grade D"
+            ],
+            "or",
+            [
+                "CPSC 260 Minimum Grade D"
+            ]
+        ],
+        "corequisites": [
+            "CPEN 430L"
+        ]
+    },
+    {
+        "name": "CPEN 430L Digital System Design Lab",
+        "description": "Three laboratory hours per week.  Taken concurrently with CPEN 430.",
+        "term": null,
+        "corequisites": [
+            "CPEN 430"
+        ]
+    },
+    {
+        "name": "CPEN 431 Comp Hardware Design & Arch",
+        "description": "Understanding the design techniques, machine structures, technology factors, evaluation methods that will determine the form of computers in 21st century.  Three lecture hours per week.",
+        "term": null,
+        "prerequisites": [
+            [
+                "CPEN 231 Minimum Grade D"
+            ],
+            "or",
+            [
+                "CPSC 260 Minimum Grade D"
+            ]
+        ]
+    },
+    {
+        "name": "CPEN 435 Parallel & Cloud Computing",
+        "description": "Parallel Programming platforms; principles of parallel algorithm design; basic communication operations; programming using the message-passing paradigm (MPI); programming on shared address space platforms (POSIX Thread and OpenMP); cloud computing; big data analysis; and other advanced topics. On sufficient demand.",
+        "term": null,
+        "prerequisites": [
+            [
+                "CPEN 231 Minimum Grade D"
+            ],
+            "or",
+            [
+                "CPSC 260 Minimum Grade D"
+            ]
+        ],
+        "equivalent": "CPSC 435 - OK if taken since Fall 2022"
+    },
+    {
+        "name": "CPEN 436 Machine Learning in Biomed",
+        "description": "Investigation of the role of computers in the provision of medical services; machine learning algorithms for regression, classification, clustering, and anomaly detection; medical decision-making support; genomic medicine and its techniques. On sufficient demand.",
+        "term": null,
+        "prerequisites": [
+            "CPSC 121 Minimum Grade D"
+        ],
+        "equivalent": "CPSC 436 - OK if taken since Fall 2022"
+    },
+    {
+        "name": "CPEN 442 Introduction to Robotics",
+        "description": "Principles of real-time systems and robotics. Thread management and inter-thread communications. Semaphores and thread synchronization. Design and simulation of simple robotic systems. Cooperation, blocking semaphores, FIFO queues, and deadlocks. Thread sleeping and scheduling. File system management, solid-state drives (SSDs), Controller Area Network (CAN). Robotic control systems and fuzzy logic.",
+        "term": null,
+        "prerequisites": [
+            [
+                "CPEN 231 Minimum Grade D"
+            ],
+            "or",
+            [
+                "CPSC 260 Minimum Grade D"
+            ]
+        ]
+    },
+    {
+        "name": "CPEN 443 Autonomous Mobile Robots",
+        "description": "Introducing the principles of robotic sensor integration, mobility, real-time systems, line tracking, data acquisition systems, cognition: object detection and tracking, robotic wireless control, tachometers, and odometry. This course will be offered every spring semester",
+        "term": null,
+        "prerequisites": [
+            [
+                "CPEN 231 Minimum Grade D"
+            ],
+            "or",
+            [
+                "CPSC 260 Minimum Grade D"
+            ]
+        ]
+    },
+    {
+        "name": "CPEN 481 Special Topics",
+        "description": "Courses of special interest may be offered from time to time. Prerequisites will depend on the nature of the material offered and will be announced.",
+        "term": null
+    }
+]

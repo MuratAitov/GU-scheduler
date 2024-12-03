@@ -8,6 +8,8 @@ import re
 #for math
 #url = 'https://www.gonzaga.edu/college-of-arts-sciences/departments/mathematics/majors-minors-curriculum/courses'
 
+#for CPEN
+url = 'https://www.gonzaga.edu/school-of-engineering-applied-science/degrees-and-programs/computer-engineering/cpen-courses'
 response = requests.get(url)
 soup = BeautifulSoup(response.content, 'html.parser')
 
