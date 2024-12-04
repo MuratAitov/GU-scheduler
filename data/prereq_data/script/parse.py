@@ -6,10 +6,10 @@ import re
 #url = "https://www.gonzaga.edu/school-of-engineering-applied-science/degrees-and-programs/computer-science/cpsc-courses"
 
 #for math
-#url = 'https://www.gonzaga.edu/college-of-arts-sciences/departments/mathematics/majors-minors-curriculum/courses'
+url = 'https://www.gonzaga.edu/college-of-arts-sciences/departments/mathematics/majors-minors-curriculum/courses'
 
 #for CPEN
-url = 'https://www.gonzaga.edu/school-of-engineering-applied-science/degrees-and-programs/computer-engineering/cpen-courses'
+#url = 'https://www.gonzaga.edu/school-of-engineering-applied-science/degrees-and-programs/computer-engineering/cpen-courses'
 response = requests.get(url)
 soup = BeautifulSoup(response.content, 'html.parser')
 
@@ -22,35 +22,64 @@ def parse_prerequisites(text):
     tokens = re.findall(r'\(|\)|\w+|\band\b|\bor\b', text)
 
     def parse_tokens(tokens):
-        result = []
+        result = {"type": "and", "requirements": []}
+        stack = [result]
+
         while tokens:
             token = tokens.pop(0)
             if token == '(':
-                sub_expr = parse_tokens(tokens)
-                result.append(sub_expr)
+                new_group = {"type": "and", "requirements": []}
+                stack[-1]["requirements"].append(new_group)
+                stack.append(new_group)
             elif token == ')':
-                break
+                stack.pop()
             elif token.lower() == 'and' or token.lower() == 'or':
-                # Преобразуем последний элемент в список, если он не список
-                if result and not isinstance(result[-1], list):
-                    result[-1] = [result[-1]]
-                result.append(token.lower())
+                stack[-1]["type"] = token.lower()
             else:
-                # Собираем название курса и минимальную оценку
+                # Извлечение курса и минимальной оценки
                 course = token
+                min_grade = None
                 while tokens and tokens[0] not in ('and', 'or', '(', ')'):
-                    course += ' ' + tokens.pop(0)
-                # Оборачиваем курс в список
-                result.append([course.strip()])
+                    next_token = tokens.pop(0)
+                    if next_token.lower() == "minimum" and tokens and tokens[0].lower() == "grade":
+                        tokens.pop(0)  # Удаляем "grade"
+                        min_grade = tokens.pop(0)  # Сохраняем оценку
+                    else:
+                        course += f" {next_token}"
 
-        # Упрощение структуры, если это просто один элемент
-        if len(result) == 1:
-            return result[0]
+                stack[-1]["requirements"].append({
+                    "course": course.strip(),
+                    "min_grade": min_grade
+                })
+
         return result
 
-    parsed = parse_tokens(tokens)
-    return parsed
+    return parse_tokens(tokens)
 
+# Словарь для сокращений термов
+term_abbreviations = {
+    'Fall & Spring': 'FS',
+    'Fall and Spring': 'FS',
+    'On sufficient demand': 'OSD',
+    'Spring, odd years': 'SO',
+    'Fall, odd years': 'FO',
+    'Spring, even years': 'SE',
+    'Fall, even years': 'FE',
+    'Fall': 'F',
+    'Spring': 'S'
+}
+
+# Упорядочиваем термы по длине (от самых специфичных к общим)
+term_keywords = sorted(term_abbreviations.keys(), key=len, reverse=True)
+
+def extract_term(description):
+    """Функция для извлечения и сокращения term"""
+    for keyword in term_keywords:
+        pattern = re.escape(keyword)
+        match = re.search(rf'\b{pattern}\b', description)
+        if match:
+            return term_abbreviations[keyword]
+    return None
 
 for wrapper in course_wrappers:
     course = {}
@@ -63,22 +92,23 @@ for wrapper in course_wrappers:
     # Извлечение описания
     description_div = wrapper.find('div', class_='course-description')
     if description_div:
-        course['description'] = description_div.get_text(strip=True)
+        description_text = description_div.get_text(strip=True)
+        course['description'] = description_text
 
-    # Извлечение информации о семестре
-    if description_div:
-        text = description_div.get_text()
-        # Поиск терминов в тексте
-        terms = []
-        if 'Fall' in text:
-            terms.append('Fall')
-        if 'Spring' in text:
-            terms.append('Spring')
-        if 'Summer' in text:
-            terms.append('Summer')
-        course['term'] = ', '.join(terms) if terms else None
+        # Извлечение term
+        course['term'] = extract_term(description_text)
 
-    # Извлечение пререквизитов
+        # Проверяем пререквизиты в описании
+        if 'Prerequisite:' in description_text and 'prerequisites' not in course:
+            prereq_start = description_text.find('Prerequisite:') + len('Prerequisite:')
+            prereq_text = description_text[prereq_start:].strip()
+            course['prerequisites'] = parse_prerequisites(prereq_text)
+        elif 'Prerequisites:' in description_text and 'prerequisites' not in course:
+            prereq_start = description_text.find('Prerequisites:') + len('Prerequisites:')
+            prereq_text = description_text[prereq_start:].strip()
+            course['prerequisites'] = parse_prerequisites(prereq_text)
+
+    # Извлечение пререквизитов из отдельного блока
     prereq_label = wrapper.find('div', class_='course-prereq-label')
     if prereq_label:
         prereq_div = prereq_label.find_next_sibling('div', class_='course-prereqs')
@@ -104,7 +134,7 @@ for wrapper in course_wrappers:
     courses.append(course)
 
 # Сохранение данных в JSON файл
-with open('courses.json', 'w', encoding='utf-8') as f:
+with open('math_courses.json', 'w', encoding='utf-8') as f:
     json.dump(courses, f, ensure_ascii=False, indent=4)
 
-print("Данные успешно сохранены в 'courses.json'")
+print("Данные успешно сохранены в 'cs_courses.json'")
