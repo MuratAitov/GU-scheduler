@@ -3,10 +3,10 @@ from bs4 import BeautifulSoup
 import json
 import re
 # for cs
-#url = "https://www.gonzaga.edu/school-of-engineering-applied-science/degrees-and-programs/computer-science/cpsc-courses"
+url = "https://www.gonzaga.edu/school-of-engineering-applied-science/degrees-and-programs/computer-science/cpsc-courses"
 
 #for math
-url = 'https://www.gonzaga.edu/college-of-arts-sciences/departments/mathematics/majors-minors-curriculum/courses'
+#url = 'https://www.gonzaga.edu/college-of-arts-sciences/departments/mathematics/majors-minors-curriculum/courses'
 
 #for CPEN
 #url = 'https://www.gonzaga.edu/school-of-engineering-applied-science/degrees-and-programs/computer-engineering/cpen-courses'
@@ -19,42 +19,59 @@ course_wrappers = soup.find_all('div', class_='course-wrapper')
 
 def parse_prerequisites(text):
     text = text.replace('\n', ' ').replace('\r', ' ').strip()
-    tokens = re.findall(r'\(|\)|\w+|\band\b|\bor\b', text)
+    # Replace commas with spaces for better tokenization
+    text = text.replace(',', ' , ')
+    # Tokenize the input text
+    tokens = []
+    for token in re.findall(r'\(|\)|,|and|or|[^\s(),]+', text, re.I):
+        tokens.append(token)
+    # Normalize tokens
+    tokens = [token.lower() if token.lower() in ('and', 'or', '(', ')', ',') else token for token in tokens]
 
-    def parse_tokens(tokens):
-        result = {"type": "and", "requirements": []}
-        stack = [result]
+    def parse_expression(tokens):
+        left = parse_and_expression(tokens)
+        while tokens and tokens[0] == 'or':
+            tokens.pop(0)  # Remove 'or'
+            right = parse_and_expression(tokens)
+            left = {"type": "or", "requirements": [left, right]}
+        return left
 
-        while tokens:
-            token = tokens.pop(0)
-            if token == '(':
-                new_group = {"type": "and", "requirements": []}
-                stack[-1]["requirements"].append(new_group)
-                stack.append(new_group)
-            elif token == ')':
-                stack.pop()
-            elif token.lower() == 'and' or token.lower() == 'or':
-                stack[-1]["type"] = token.lower()
+    def parse_and_expression(tokens):
+        left = parse_term(tokens)
+        while tokens and tokens[0] == 'and':
+            tokens.pop(0)  # Remove 'and'
+            right = parse_term(tokens)
+            if left.get("type") == "and":
+                left["requirements"].append(right)
             else:
-                # Извлечение курса и минимальной оценки
-                course = token
-                min_grade = None
-                while tokens and tokens[0] not in ('and', 'or', '(', ')'):
-                    next_token = tokens.pop(0)
-                    if next_token.lower() == "minimum" and tokens and tokens[0].lower() == "grade":
-                        tokens.pop(0)  # Удаляем "grade"
-                        min_grade = tokens.pop(0)  # Сохраняем оценку
-                    else:
-                        course += f" {next_token}"
+                left = {"type": "and", "requirements": [left, right]}
+        return left
 
-                stack[-1]["requirements"].append({
-                    "course": course.strip(),
-                    "min_grade": min_grade
-                })
+    def parse_term(tokens):
+        if tokens[0] == '(':
+            tokens.pop(0)  # Remove '('
+            expr = parse_expression(tokens)
+            if not tokens or tokens[0] != ')':
+                raise ValueError("Expected ')'")
+            tokens.pop(0)  # Remove ')'
+            return expr
+        else:
+            # Parse course
+            course_parts = []
+            while tokens and tokens[0] not in ('and', 'or', '(', ')', ','):
+                course_parts.append(tokens.pop(0))
+            course = ' '.join(course_parts)
+            return {"course": course.strip(), "min_grade": None}
 
-        return result
+    # Parse the tokens
+    try:
+        parsed = parse_expression(tokens)
+    except Exception as e:
+        print(f"Error parsing prerequisites: {e}")
+        parsed = None
 
-    return parse_tokens(tokens)
+    return parsed
+
 
 # Словарь для сокращений термов
 term_abbreviations = {
