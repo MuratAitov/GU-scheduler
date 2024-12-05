@@ -20,18 +20,28 @@ def is_course_exist(cursor, course_code):
 
 # Функция для вставки данных в таблицу prerequisites
 def insert_prerequisites(cursor, course_code, prerequisites):
+    print(course_code)
     cursor.execute(
         "INSERT INTO prerequisites (course_code, prerequisite_schema) VALUES (%s, %s) ON CONFLICT (course_code) DO NOTHING",
         (course_code, json.dumps(prerequisites))
     )
 
-# Функция для вставки данных в таблицу corequisites
+
 def insert_corequisites(cursor, course_code, corequisites):
+    """
+    Вставляет corequisites в таблицу corequisites.
+    """
+    print(f"Inserting corequisites for {course_code}: {corequisites}")
     for corequisite in corequisites:
         cursor.execute(
-            "INSERT INTO corequisites (course_code, corequisite_course_code) VALUES (%s, %s) ON CONFLICT DO NOTHING",
+            """
+            INSERT INTO corequisites (course_code, corequisite_course_code)
+            VALUES (%s, %s)
+            ON CONFLICT DO NOTHING
+            """,
             (course_code, corequisite)
         )
+
 
 # Функция для вставки данных в таблицу equivalents
 def insert_equivalents(cursor, course_code, equivalents):
@@ -48,33 +58,98 @@ def process_json_file(file_path, connection):
 
     with connection.cursor() as cursor:
         for course in data:
-            course_code = course.get("name", "").split()[0]  # Извлекаем code (например, "CPSC 122")
+            course_code = " ".join(course.get("name", "").split()[:2])
+
 
             # Проверяем, существует ли курс в таблице course
             if not is_course_exist(cursor, course_code):
+                print(f"no class {course_code} found" )
                 continue
 
-            # Добавляем prerequisites
             if "prerequisites" in course:
-                insert_prerequisites(cursor, course_code, course["prerequisites"])
+                print(f"Processing prerequisites for {course_code}: {course['prerequisites']}")
+                prerequisites = course["prerequisites"]
 
-            # Добавляем corequisites
+                # Убедитесь, что prerequisites преобразуется в корректный формат
+                if isinstance(prerequisites, dict):  # Если prerequisites — объект
+                    insert_prerequisites(cursor, course_code, prerequisites)
+                elif isinstance(prerequisites, list):  # Если prerequisites — список
+                    insert_prerequisites(cursor, course_code, {"courses": prerequisites})
+                else:
+                    print(f"Invalid prerequisites format for {course_code}: {prerequisites}")
+
             if "corequisites" in course:
-                corequisites = [item["course"] for item in course["corequisites"]]
-                insert_corequisites(cursor, course_code, corequisites)
+                try:
+                    print(f"Processing corequisites for {course_code}: {course['corequisites']}")
 
-            # Добавляем equivalents
+                    # Если corequisites — это объект, оборачиваем его в список
+                    corequisites = course["corequisites"]
+                    if isinstance(corequisites, dict):
+                        corequisites = [corequisites]
+
+                    # Извлекаем только названия классов из ключа "course"
+                    processed_corequisites = [item["course"] for item in corequisites if "course" in item]
+
+                    # Проверяем, существуют ли эти курсы в таблице course
+                    valid_corequisites = [cr for cr in processed_corequisites if is_course_exist(cursor, cr)]
+                    if not valid_corequisites:
+                        print(f"No valid corequisites for {course_code}: {processed_corequisites}")
+                        continue
+
+                    # Вставляем только валидные corequisites
+                    insert_corequisites(cursor, course_code, valid_corequisites)
+                except Exception as e:
+                    print(f"Error processing corequisites for {course_code}: {e}")
+
+
+
             if "equivalent" in course:
-                equivalents = course["equivalent"].split(", ")  # Если список эквивалентов разделён запятыми
-                insert_equivalents(cursor, course_code, equivalents)
+                try:
+                    print(f"Processing equivalents for {course_code}: {course['equivalent']}")
+
+                    equivalents = course["equivalent"].split(", ")
+                    for eq in equivalents:
+                        # Извлекаем курс
+                        course_eq = eq.split(" - ")[0]
+
+                        # Инициализируем переменные
+                        term = None
+                        relation = None
+
+                        # Проверяем на наличие ключевых слов "since" или "before"
+                        if "since" in eq:
+                            relation = "since"
+                            term = eq.split("since")[-1].strip()
+                        elif "before" in eq:
+                            relation = "before"
+                            term = eq.split("before")[-1].strip()
+
+                        # Проверяем наличие курса в таблице course
+                        if is_course_exist(cursor, course_eq):
+                            # Вставляем данные в таблицу equivalents
+                            cursor.execute(
+                                """
+                                INSERT INTO equivalents (course_code, equivalent_course_code, term, relation)
+                                VALUES (%s, %s, %s, %s)
+                                ON CONFLICT (course_code, equivalent_course_code) DO NOTHING
+                                """,
+                                (course_code, course_eq, term, relation)
+                            )
+                        else:
+                            print(f"Equivalent course {course_eq} not found in table course.")
+                except Exception as e:
+                    print(f"Error processing equivalents for {course_code}: {e}")
+
+
 
 # Основной скрипт
 if __name__ == "__main__":
     import os
 
     # Определяем базовую директорию для JSON-файлов
-    base_dir = os.path.dirname(os.path.abspath("data/prereq_data/script/fill_data.py"))
-    json_folder_path = os.path.join(base_dir, "../../data/prereq_data/json_data/")
+    script_dir = os.path.dirname(os.path.abspath(__file__))  # Текущая директория скрипта
+    json_folder_path = os.path.normpath(os.path.join(script_dir, "../json_data"))
+
 
     # Получаем список всех JSON-файлов в папке json_data
     json_files = [

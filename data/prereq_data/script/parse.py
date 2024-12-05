@@ -8,10 +8,10 @@ import re
 #url = "https://www.gonzaga.edu/school-of-engineering-applied-science/degrees-and-programs/computer-science/cpsc-courses"
 
 #for math
-url = 'https://www.gonzaga.edu/college-of-arts-sciences/departments/mathematics/majors-minors-curriculum/courses'
+#url = 'https://www.gonzaga.edu/college-of-arts-sciences/departments/mathematics/majors-minors-curriculum/courses'
 
 #for CPEN
-#url = 'https://www.gonzaga.edu/school-of-engineering-applied-science/degrees-and-programs/computer-engineering/cpen-courses'
+url = 'https://www.gonzaga.edu/school-of-engineering-applied-science/degrees-and-programs/computer-engineering/cpen-courses'
 
 
 response = requests.get(url)
@@ -163,7 +163,7 @@ for wrapper in course_wrappers:
     courses.append(course)
 
 # Save data to JSON file
-with open('math_courses.json', 'w', encoding='utf-8') as f:
+with open('cpen_courses.json', 'w', encoding='utf-8') as f:
     json.dump(courses, f, ensure_ascii=False, indent=4)
 
 print("Data successfully saved to 'cs_courses.json'")
