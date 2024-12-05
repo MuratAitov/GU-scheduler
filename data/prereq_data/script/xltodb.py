@@ -4,7 +4,7 @@ import pandas as pd
 import sys
 
 # Указываем путь к файлу данных
-base_dir = os.path.dirname(os.path.abspath("data/prereq_data/script/schema.py"))
+base_dir = os.path.dirname(os.path.abspath("data/prereq_data/script/xltodb.py"))
 data_path = os.path.join(base_dir, "../../official_attribute_data/summer2024.xlsx")
 
 
