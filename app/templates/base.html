@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}My App{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    {% if session.get('logged_in') %}
-    <div class="top-menu">
-        <a href="{{ url_for('main.main_page') }}">Scheduler</a>
-        <a href="{{ url_for('main.prereq_tree') }}">Prereq Tree</a>
-        <a href="{{ url_for('main.add_classes') }}">Add classes</a>
-        <a href="{{ url_for('main.degree_eval') }}">Degree eval</a>
-        <a href="{{ url_for('main.profile') }}">Profile</a>
-    </div>
-    <hr/>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <ul class="flash-messages">
+        {% for category, msg in messages %}
+        <li class="{{ category }}">{{ msg }}</li>
+        {% endfor %}
+    </ul>
     {% endif %}
+    {% endwith %}
 
-    <div class="container">
-        {% block content %}{% endblock %}
-    </div>
+    {% block content %}{% endblock %}
 </body>
 </html>
