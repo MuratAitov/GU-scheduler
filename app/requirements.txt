@@ -1,2 +1,9 @@
-Flask==2.2.2
-psycopg2==2.9.5
+Flask==2.1.2
+Werkzeug==2.0.3
+itsdangerous==2.0.1
+Jinja2==3.0.3
+MarkupSafe==2.0.1
+psycopg2-binary
+networkx
+plotly
+numpy
