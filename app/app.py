@@ -1,16 +1,18 @@
 from flask import Flask, render_template, request
 import psycopg2
 
-app = Flask(__name__)
+from credentials import *
+
+app = Flask(name)
 
 def get_connection():
     # Подключение к БД, адаптируйте под ваши данные
     return psycopg2.connect(
-        dbname="gu_scheduler",
-        user="postgres",
-        password="1103",
-        host="localhost",
-        port="5432"
+        dbname= DBNAME,
+        user=USER,
+        password=PASSWORD,
+        host=PASSWORD,
+        port=PORT
     )
 
 @app.route('/', methods=['GET', 'POST'])
