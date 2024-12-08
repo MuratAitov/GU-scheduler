@@ -2,18 +2,17 @@ from flask import Flask, render_template, request
 import psycopg2
 from credentials import *
 
-from credentials import *
-
-app = Flask(name)
+app = Flask(__name__)
 
 def get_connection():
     # Подключение к БД, адаптируйте под ваши данные
-    return psycopg2.connect(
-        dbname= DBNAME,
+   return psycopg2.connect(
+        dbname=DBNAME,
         user=USER,
         password=PASSWORD,
-        host=PASSWORD,
+        host=HOST,
         port=PORT
+
     )
 
 @app.route('/', methods=['GET', 'POST'])

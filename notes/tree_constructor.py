@@ -3,14 +3,21 @@ import json
 import networkx as nx
 import plotly.graph_objects as go
 
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from app.credentials import *
+
 # Функция для подключения к базе данных
 def get_connection():
     return psycopg2.connect(
-        dbname="gu_scheduler",
-        user="postgres",
-        password="1103",
-        host="localhost",
-        port="5432"
+        dbname=DBNAME,
+        user=USER,
+        password=PASSWORD,
+        host=HOST,
+        port=PORT
     )
 
 # Функция для обработки одного курса
