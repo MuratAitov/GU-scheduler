@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import psycopg2
+from credentials import *
 
 from credentials import *
 
