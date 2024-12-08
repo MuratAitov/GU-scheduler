@@ -1,0 +1,259 @@
+{
+    "programs": [
+      {
+        "id": 1,
+        "name": "B.S. in Computer Science",
+        "requirement_groups": [
+          {
+            "id": 100,
+            "name": "I. Computer Science Requirements",
+            "required_credits": 37,
+            "selection_type": "ALL",
+            "subgroups": [
+              {
+                "id": 101,
+                "name": "Lower Division",
+                "selection_type": "ALL",
+                "courses": [
+                  "CPSC 121",
+                  "CPSC 122",
+                  "CPSC 223",
+                  "CPSC 224",
+                  "CPSC 260"
+                ]
+              },
+              {
+                "id": 102,
+                "name": "Upper Division",
+                "selection_type": "ALL",
+                "subgroups": [
+                  {
+                    "id": 103,
+                    "name": "Core Upper Division CS Courses",
+                    "selection_type": "ALL",
+                    "courses": [
+                      "CPSC 321",
+                      "CPSC 326",
+                      "CPSC 346",
+                      "CPSC 348"
+                    ]
+                  },
+                  {
+                    "id": 104,
+                    "name": "Theory/Algorithm Choice",
+                    "selection_type": "MIN",
+                    "required_credits": 3,
+                    "courses": [
+                      "CPSC 351",
+                      "CPSC 450"
+                    ]
+                  },
+                  {
+                    "id": 105,
+                    "name": "Senior Project Sequence",
+                    "selection_type": "ALL",
+                    "courses": [
+                      "CPSC 491",
+                      "CPSC 491L",
+                      "CPSC 492L",
+                      "CPSC 499"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 200,
+            "name": "II. Computer Science Technical Electives",
+            "selection_type": "MIN",
+            "required_credits": 21,
+            "courses": [
+              "CPSC 2xx",
+              "CPSC 3xx",
+              "CPSC 4xx",
+              "-CPSC 497"
+            ],
+            "subgroups": [
+              {
+                "id": 201,
+                "name": "At least 15 credits from advanced set",
+                "selection_type": "MIN",
+                "required_credits": 15,
+                "courses": [
+                  "CPSC 3xx",
+                  "CPSC 4xx",
+                  "-CPSC 497",
+                  "-CPSC 435",
+                  "-CPSC 436"
+                ]
+              }
+            ]
+          },
+          {
+            "id": 300,
+            "name": "III. Mathematics Requirements",
+            "selection_type": "ALL",
+            "subgroups": [
+              {
+                "id": 301,
+                "name": "Core Math",
+                "selection_type": "ALL",
+                "courses": [
+                  "MATH 157",
+                  "MATH 231",
+                  "MATH 258"
+                ]
+              },
+              {
+                "id": 302,
+                "name": "Additional Math/Engineering/CS Options",
+                "selection_type": "MIN",
+                "required_credits": 6,
+                "courses": [
+                  "MATH 259",
+                  "MATH 260",
+                  "ENSC 371",
+                  "CPSC 455",
+                  "MATH 3**",
+                  "MATH 4**"
+                ]
+              }
+            ]
+          },
+          {
+            "id": 400,
+            "name": "IV. Science and Mathematics Electives",
+            "selection_type": "MIN",
+            "required_credits": 14,
+            "courses": [
+              "BIOL 105/L",
+              "BIOL 106",
+              "BIOL 205/L",
+              "BIOL 206/L",
+              "BIOL 207/L",
+              "CHEM 101/L",
+              "CHEM 205",
+              "CHEM 230/L",
+              "CHEM 231/L",
+              "CHEM 245/L",
+              "CHEM 310/L",
+              "CPSC 455",
+              "ENSC 371",
+              "PHYS 121/L",
+              "PHYS 122/L",
+              "PHYS 224",
+              "PHYS 222",
+              "PHYS 325",
+              "MATH 259",
+              "MATH 260",
+              "MATH 3**",
+              "MATH 4**"
+            ],
+            "subgroups": [
+              {
+                "id": 401,
+                "name": "Science Core within Electives",
+                "selection_type": "MIN",
+                "required_credits": 6,
+                "courses": [
+                  "BIOL 105/L",
+                  "BIOL 106",
+                  "BIOL 205/L",
+                  "BIOL 206/L",
+                  "BIOL 207/L",
+                  "CHEM 101/L",
+                  "CHEM 205",
+                  "CHEM 230/L",
+                  "CHEM 231/L",
+                  "CHEM 245/L",
+                  "CHEM 310/L",
+                  "PHYS 121/L",
+                  "PHYS 122/L",
+                  "PHYS 224",
+                  "PHYS 222",
+                  "PHYS 325"
+                ]
+              }
+            ]
+          }
+        ],
+        "concentrations": [
+          {
+            "id": 500,
+            "name": "Software Security Concentration",
+            "selection_type": "MIN",
+            "required_credits": 6,
+            "courses": [
+              "CPSC 353"
+            ],
+            "subgroups": [
+              {
+                "id": 501,
+                "name": "Security-Related Elective",
+                "selection_type": "MIN",
+                "required_credits": 3,
+                "courses": [
+                  "CPSC 341",
+                  "CPSC 447",
+                  "EENG 410"
+                ]
+              }
+            ]
+          },
+          {
+            "id": 600,
+            "name": "Data Science Concentration",
+            "selection_type": "ALL",
+            "required_credits": 12,
+            "subgroups": [
+              {
+                "id": 601,
+                "name": "Data Science Core",
+                "selection_type": "ALL",
+                "courses": [
+                  "CPSC 222",
+                  "CPSC 322"
+                ]
+              },
+              {
+                "id": 602,
+                "name": "Statistics Choice",
+                "selection_type": "MIN",
+                "required_credits": 3,
+                "courses": [
+                  "MATH 121",
+                  "MATH 221",
+                  "MATH 321"
+                ]
+              },
+              {
+                "id": 603,
+                "name": "Advanced Data Science Topics",
+                "selection_type": "MIN",
+                "required_credits": 6,
+                "courses": [
+                  "CPSC 323",
+                  "CPSC 324",
+                  "CPSC 325",
+                  "CPSC 475"
+                ]
+              }
+            ]
+          },
+          {
+            "id": 700,
+            "name": "Software Application Development Concentration",
+            "selection_type": "ALL",
+            "required_credits": 12,
+            "courses": [
+              "CPSC 331",
+              "CPSC 332",
+              "CPSC 333",
+              "CPSC 334"
+            ]
+          }
+        ]
+      }
+    ]
+  }

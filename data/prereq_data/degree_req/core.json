@@ -1,0 +1,217 @@
+{
+    "programs": [
+      {
+        "id": 1,
+        "name": "University Core Curriculum",
+        "selection_type": "ALL",
+        "required_credits": 45,
+        "requirement_groups": [
+          {
+            "id": 100,
+            "name": "Year 1: Understanding and Creating",
+            "selection_type": "ALL",
+            "subgroups": [
+              {
+                "id": 101,
+                "name": "First-Year Seminar",
+                "selection_type": "ALL",
+                "required_credits": 3,
+                "courses": [
+                  "Core: First Year Seminar"
+                ]
+              },
+              {
+                "id": 102,
+                "name": "Writing",
+                "selection_type": "ALL",
+                "required_credits": 3,
+                "courses": [
+                  "Core: Writing"
+                ]
+              },
+              {
+                "id": 103,
+                "name": "Reasoning",
+                "selection_type": "ALL",
+                "required_credits": 3,
+                "courses": [
+                  "Core: Reasoning"
+                ]
+              },
+              {
+                "id": 104,
+                "name": "Communication & Speech",
+                "selection_type": "ALL",
+                "required_credits": 3,
+                "courses": [
+                  "Core: Communication and Speech"
+                ]
+              },
+              {
+                "id": 105,
+                "name": "Scientific Inquiry",
+                "selection_type": "MIN",
+                "required_credits": 3,
+                "courses": [
+                  "Core: Science Inquiry"
+                ]
+              },
+              {
+                "id": 106,
+                "name": "Mathematics (above Math 100)",
+                "selection_type": "MIN",
+                "required_credits": 3,
+                "courses": [
+                  "Core: Mathematics"
+                ]
+              }
+            ]
+          },
+          {
+            "id": 200,
+            "name": "Year 2: Being and Becoming",
+            "selection_type": "ALL",
+            "subgroups": [
+              {
+                "id": 201,
+                "name": "Philosophy of Human Nature",
+                "selection_type": "ALL",
+                "required_credits": 3,
+                "courses": [
+                  "Core: Phil of Human Nature"
+                ]
+              },
+              {
+                "id": 202,
+                "name": "Christianity and Catholic Traditions",
+                "selection_type": "MIN",
+                "required_credits": 3,
+                "courses": [
+                  "Core: Christian or Catholic"
+                ]
+              }
+            ]
+          },
+          {
+            "id": 300,
+            "name": "Year 3: Caring and Doing",
+            "selection_type": "ALL",
+            "subgroups": [
+              {
+                "id": 301,
+                "name": "Ethics",
+                "selection_type": "MIN",
+                "required_credits": 3,
+                "courses": [
+                  "Core: Ethics"
+                ]
+              },
+              {
+                "id": 302,
+                "name": "World/Comparative Religion",
+                "selection_type": "MIN",
+                "required_credits": 3,
+                "courses": [
+                  "Core: World or Comparative Rel"
+                ]
+              }
+            ]
+          },
+          {
+            "id": 400,
+            "name": "Year 4: Imagining the Possible",
+            "selection_type": "ALL",
+            "subgroups": [
+              {
+                "id": 401,
+                "name": "Core Integration Seminar",
+                "selection_type": "ALL",
+                "required_credits": 3,
+                "courses": [
+                  "Core: Core Integration Seminar"
+                ]
+              }
+            ]
+          },
+          {
+            "id": 500,
+            "name": "The Broadening Courses",
+            "selection_type": "ALL",
+            "subgroups": [
+              {
+                "id": 501,
+                "name": "Fine Arts & Design",
+                "selection_type": "MIN",
+                "required_credits": 3,
+                "courses": [
+                  "Core: Fine Arts and Design"
+                ]
+              },
+              {
+                "id": 502,
+                "name": "History",
+                "selection_type": "MIN",
+                "required_credits": 3,
+                "courses": [
+                  "Core: History"
+                ]
+              },
+              {
+                "id": 503,
+                "name": "Literature",
+                "selection_type": "MIN",
+                "required_credits": 3,
+                "courses": [
+                  "Core: Literature"
+                ]
+              },
+              {
+                "id": 504,
+                "name": "Social & Behavioral Sciences",
+                "selection_type": "MIN",
+                "required_credits": 3,
+                "courses": [
+                  "Core: Social/Behavioral Sci"
+                ]
+              }
+            ]
+          },
+          {
+            "id": 600,
+            "name": "The Designations",
+            "selection_type": "ALL",
+            "subgroups": [
+              {
+                "id": 601,
+                "name": "Writing Enriched (WE)",
+                "selection_type": "MIN",
+                "required_credits": 9,
+                "courses": [
+                  "Core: Writing Enriched"
+                ]
+              },
+              {
+                "id": 602,
+                "name": "Global-Studies (GS)",
+                "selection_type": "MIN",
+                "required_credits": 6,
+                "courses": [
+                  "Core: Global Studies"
+                ]
+              },
+              {
+                "id": 603,
+                "name": "Social-Justice (SJ)",
+                "selection_type": "MIN",
+                "required_credits": 3,
+                "courses": [
+                  "Core: Social Justice"
+                ]
+              }
+            ]
+          }
+        ],
+        "concentrations": []
+      }
+    ]
+  }

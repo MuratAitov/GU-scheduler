@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Select your Major and optional Concentration</h2>
+<form action="{{ url_for('calculate_requirements') }}" method="post">
+    <label for="major">Major:</label>
+    <select name="major_id" id="major">
+        {% for m in majors %}
+        <option value="{{ m[0] }}">{{ m[1] }}</option>
+        {% endfor %}
+    </select>
+
+    <label for="concentration">Concentration (optional):</label>
+    <select name="concentration_id" id="concentration">
+        <option value="">No Concentration</option>
+        {% for c in concentrations %}
+        <option value="{{ c[0] }}">{{ c[1] }} ({{c[2]}})</option>
+        {% endfor %}
+    </select>
+
+    <h3>Courses you have already taken:</h3>
+    {% for course in all_courses %}
+    <label>
+      <input type="checkbox" name="taken_courses" value="{{ course[0] }}">
+      {{ course[0] }} - {{ course[1] }}
+    </label><br>
+    {% endfor %}
+
+    <button type="submit">Calculate Remaining Requirements</button>
+</form>
+{% endblock %}

@@ -89,3 +89,102 @@ def create_tables():
 
 if __name__ == "__main__":
     create_tables()
+
+
+
+# -- Создаём таблицу для программ
+# CREATE TABLE IF NOT EXISTS program (
+#     id SERIAL PRIMARY KEY,
+#     name TEXT NOT NULL
+# );
+
+# -- Таблица для хранения групп требований
+# -- parent_id позволяет иметь иерархию подгрупп
+# -- selection_type: 'ALL' или 'MIN'
+# CREATE TABLE IF NOT EXISTS requirement_group (
+#     id SERIAL PRIMARY KEY,
+#     program_id INT REFERENCES program(id) ON DELETE CASCADE,
+#     parent_id INT REFERENCES requirement_group(id) ON DELETE CASCADE,
+#     name TEXT NOT NULL,
+#     selection_type TEXT,
+#     required_credits INT
+# );
+
+# -- Таблица для связи requirement_group с курсами
+# -- В вашем случае курс уже есть в таблице course, где code – PK
+# -- Если нужно указывать исключения, можно добавить флаг excluded.
+# CREATE TABLE IF NOT EXISTS requirement_course_link (
+#     id SERIAL PRIMARY KEY,
+#     requirement_group_id INT REFERENCES requirement_group(id) ON DELETE CASCADE,
+#     course_code VARCHAR REFERENCES course(code) ON DELETE CASCADE,
+#     excluded BOOLEAN DEFAULT FALSE
+# );
+
+# -- Если есть требования, выраженные не конкретными курсами, а шаблонами (типа "MATH 3**"),
+# -- или "Core: Writing", их можно хранить в дополнительной таблице заметок.
+# -- Но для упрощения можно хранить их как "виртуальные курсы" в requirement_course_link,
+# -- указывая course_code как несуществующий код, или использовать таблицу notes:
+# CREATE TABLE IF NOT EXISTS requirement_notes (
+#     id SERIAL PRIMARY KEY,
+#     requirement_group_id INT REFERENCES requirement_group(id) ON DELETE CASCADE,
+#     note TEXT
+# );
+
+# -- Таблица для концентраций
+# CREATE TABLE IF NOT EXISTS concentration (
+#     id SERIAL PRIMARY KEY,
+#     program_id INT REFERENCES program(id) ON DELETE CASCADE,
+#     name TEXT NOT NULL,
+#     selection_type TEXT,
+#     required_credits INT
+# );
+
+# -- Аналогично, концентрации могут иметь requirement_group
+# -- Либо можно хранить их требования так же, как у program
+# -- но для упрощения – сделаем связь концентрации с requirement_group:
+# CREATE TABLE IF NOT EXISTS concentration_requirement_link (
+#     id SERIAL PRIMARY KEY,
+#     concentration_id INT REFERENCES concentration(id) ON DELETE CASCADE,
+#     requirement_group_id INT REFERENCES requirement_group(id) ON DELETE CASCADE
+# );
+
+
+
+
+
+# -- Отключаем проверку ссылочной целостности (необязательно)
+# -- SET session_replication_role = 'replica';
+
+# -- Удаляем все таблицы, кроме course
+# DROP TABLE IF EXISTS concentration_requirement_link CASCADE;
+# DROP TABLE IF EXISTS concentration CASCADE;
+# DROP TABLE IF EXISTS requirement_course_link CASCADE;
+# DROP TABLE IF EXISTS requirement_notes CASCADE;
+# DROP TABLE IF EXISTS requirement_group CASCADE;
+# DROP TABLE IF EXISTS program CASCADE;
+
+# -- Включаем обратно проверку ссылочной целостности (если отключали)
+# -- SET session_replication_role = 'origin';
+
+
+
+
+
+# CREATE TABLE major (
+#     id SERIAL PRIMARY KEY,
+#     name TEXT NOT NULL,
+#     data JSONB NOT NULL  -- сюда сохраняем JSON c requirement_groups и др.
+# );
+
+# CREATE TABLE concentration (
+#     id SERIAL PRIMARY KEY,
+#     major_id INT REFERENCES major(id) ON DELETE CASCADE,
+#     name TEXT NOT NULL,
+#     data JSONB NOT NULL  -- сюда сохраняем JSON по концентрациям
+# );
+
+# CREATE TABLE minor (
+#     id SERIAL PRIMARY KEY,
+#     name TEXT NOT NULL,
+#     data JSONB NOT NULL
+# );

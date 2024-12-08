@@ -11,7 +11,13 @@ import re
 #url = 'https://www.gonzaga.edu/college-of-arts-sciences/departments/mathematics/majors-minors-curriculum/courses'
 
 #for CPEN
-url = 'https://www.gonzaga.edu/school-of-engineering-applied-science/degrees-and-programs/computer-engineering/cpen-courses'
+#url = 'https://www.gonzaga.edu/school-of-engineering-applied-science/degrees-and-programs/computer-engineering/cpen-courses'
+
+# for engineering
+url = 'https://www.gonzaga.edu/school-of-engineering-applied-science/degrees-and-programs/civil-engineering/courses-ce'
+
+url = 'https://www.gonzaga.edu/school-of-engineering-applied-science/degrees-and-programs/biomedical-engineering/beng-courses'
+
 
 
 response = requests.get(url)

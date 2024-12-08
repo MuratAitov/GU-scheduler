@@ -1,0 +1,44 @@
+
+#just major
+
+SELECT
+    p.name AS program_name,
+    rg.id AS requirement_group_id,
+    rg.name AS requirement_group_name,
+    rg.selection_type,
+    rg.required_credits,
+    c.code AS course_code,
+    c.title AS course_title,
+    n.note AS requirement_note
+FROM program p
+JOIN requirement_group rg ON rg.program_id = p.id
+LEFT JOIN requirement_course_link rcl ON rcl.requirement_group_id = rg.id
+LEFT JOIN course c ON c.code = rcl.course_code
+LEFT JOIN requirement_notes n ON n.requirement_group_id = rg.id
+WHERE p.name = 'B.S. in Computer Science'
+  AND rg.id NOT IN (SELECT requirement_group_id FROM concentration_requirement_link)
+ORDER BY rg.id, course_code, requirement_note;
+
+#concentr
+SELECT
+    p.name AS program_name,
+    cn.id AS concentration_id,
+    cn.name AS concentration_name,
+    cn.selection_type,
+    cn.required_credits,
+    rg.id AS requirement_group_id,
+    rg.name AS requirement_group_name,
+    rg.selection_type AS rg_selection_type,
+    rg.required_credits AS rg_required_credits,
+    c.code AS course_code,
+    c.title AS course_title,
+    n.note AS requirement_note
+FROM program p
+JOIN concentration cn ON cn.program_id = p.id
+JOIN concentration_requirement_link crl ON crl.concentration_id = cn.id
+JOIN requirement_group rg ON rg.id = crl.requirement_group_id
+LEFT JOIN requirement_course_link rcl ON rcl.requirement_group_id = rg.id
+LEFT JOIN course c ON c.code = rcl.course_code
+LEFT JOIN requirement_notes n ON n.requirement_group_id = rg.id
+WHERE p.name = 'B.S. in Computer Science'
+ORDER BY concentration_id, requirement_group_id, course_code, requirement_note;
