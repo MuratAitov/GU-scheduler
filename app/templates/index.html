@@ -1,30 +1,15 @@
 {% extends "base.html" %}
+{% block title %}Login or Register{% endblock %}
 {% block content %}
-<h2>Select your Major and optional Concentration</h2>
-<form action="{{ url_for('calculate_requirements') }}" method="post">
-    <label for="major">Major:</label>
-    <select name="major_id" id="major">
-        {% for m in majors %}
-        <option value="{{ m[0] }}">{{ m[1] }}</option>
-        {% endfor %}
-    </select>
-
-    <label for="concentration">Concentration (optional):</label>
-    <select name="concentration_id" id="concentration">
-        <option value="">No Concentration</option>
-        {% for c in concentrations %}
-        <option value="{{ c[0] }}">{{ c[1] }} ({{c[2]}})</option>
-        {% endfor %}
-    </select>
-
-    <h3>Courses you have already taken:</h3>
-    {% for course in all_courses %}
-    <label>
-      <input type="checkbox" name="taken_courses" value="{{ course[0] }}">
-      {{ course[0] }} - {{ course[1] }}
-    </label><br>
-    {% endfor %}
-
-    <button type="submit">Calculate Remaining Requirements</button>
-</form>
+<div class="login-container">
+    <form method="POST" action="{{ url_for('main.login') }}">
+        <input type="text" name="username" placeholder="Username"/>
+        <input type="password" name="password" placeholder="Password"/>
+        <a href="#">Forgot Password?</a>
+        <button type="submit">Login</button>
+    </form>
+    <form method="POST" action="{{ url_for('main.register') }}">
+        <button type="submit">Register</button>
+    </form>
+</div>
 {% endblock %}
