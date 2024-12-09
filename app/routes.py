@@ -19,12 +19,12 @@ def register():
 
         # Примитивная проверка заполнения полей
         if not username or not email or not password or not name:
-            flash('Fill all fields', 'error')
+            flash('Please fill in all fields.', 'error')
             return redirect(url_for('main.register'))
 
         # Проверяем, существует ли пользователь с таким email
         if user_exists(email):
-            flash('this eamil already exists', 'error')
+            flash('This email already exists.', 'error')
             return redirect(url_for('main.register'))
 
         # Хэшируем пароль
@@ -47,7 +47,7 @@ def login():
         password = request.form.get('password')
 
         if not email or not password:
-            flash("Type in email and password", "error")
+            flash("Invalid email or password.", "error")
             return redirect(url_for('main.login'))
 
         user = get_user_by_email(email)
@@ -67,7 +67,7 @@ def login():
 @main_bp.route('/main')
 def main_page():
     if 'user_email' not in session:
-        flash("Сначала войдите", "error")
+        flash("You need to login first", "error")
         return redirect(url_for('main.login'))
     return render_template('main.html', user_name=session.get('user_name'), active_page='main')
 
@@ -78,7 +78,7 @@ def main_page():
 @main_bp.route('/logout')
 def logout():
     session.clear()
-    flash("Вы вышли из системы", "info")
+    flash("You are logged out", "info")
     return redirect(url_for('main.login'))
 
 @main_bp.route('/prereq_tree', methods=['GET', 'POST'])
