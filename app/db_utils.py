@@ -1,5 +1,5 @@
 from .credentials import *
-
+from app.credentials import DBNAME, USER, PASSWORD, HOST, PORT
 import psycopg2
 
 def get_connection():
@@ -20,14 +20,14 @@ def user_exists(email):
     finally:
         conn.close()
 
-def add_user_to_db(username, email, password_hash, name):
+def add_user_to_db(username, email, password_hash, name, major_id):
     conn = get_connection()
     try:
         with conn.cursor() as cur:
             cur.execute("""
-                INSERT INTO users (user_name, email, password, name)
-                VALUES (%s, %s, %s, %s)
-            """, (username, email, password_hash, name))
+                INSERT INTO users (user_name, email, password, name, major_id)
+                VALUES (%s, %s, %s, %s, %s)
+            """, (username, email, password_hash, name, major_id))
         conn.commit()
     finally:
         conn.close()
@@ -128,7 +128,15 @@ def get_all_user_courses(user_name):
             return classes
     finally:
         conn.close()
-
+        
+def get_all_majors():
+    conn = get_connection()
+    try:
+        with conn.cursor() as cur:
+            cur.execute("SELECT id, name FROM majors ORDER BY name")
+            return cur.fetchall()
+    finally:
+        conn.close()
 
 if __name__ == '__main__':
     get_connection()
