@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash, session
 from werkzeug.security import generate_password_hash, check_password_hash
-from .db_utils import user_exists, add_user_to_db, get_user_by_email, get_all_courses_from_db, get_all_courses_from_db_fro_prereq
+from .db_utils import user_exists, add_user_to_db, get_user_by_email, get_all_courses_from_db, get_all_courses_from_db_fro_prereq, update_user_courses, get_all_user_courses
 
 main_bp = Blueprint('main', __name__)
 
@@ -98,10 +98,31 @@ def prereq_tree():
     return render_template('prereq_tree.html', active_page='prereq_tree', courses=get_all_courses_from_db_fro_prereq())
 
 
-@main_bp.route('/add_classes')
+@main_bp.route('/add_classes', methods=['GET', 'POST'])
 def add_classes():
-    # Страница, как в Фото №3
-    return render_template('add_classes.html')
+    if 'user_name' not in session:
+        flash("Please log in first", "error")
+        return redirect(url_for('main.login'))
+
+    user_name = session['user_name']
+
+    if request.method == 'POST':
+        # Обрабатываем POST запрос при нажатии SAVE
+        # данные о курсах и сложностях придут из формы или AJAX
+        updated_courses = request.form.get('updated_courses')
+        # Ожидаем, что updated_courses - JSON строка с массивом курсов: [{"class_taken": "MATH 100", "difficulty":7, "deleted":false}, ...]
+
+        import json
+        courses_data = json.loads(updated_courses)
+        update_user_courses(user_name, courses_data)
+
+        flash("Courses updated successfully", "success")
+        return redirect(url_for('main.add_classes'))
+
+    # Если GET запрос: отображаем страницу
+    all_courses = get_all_courses_from_db()  # Список всех доступных курсов, например [{"code":"CPSC 121", "title":"Intro to CS"}]
+    user_courses = get_all_user_courses(user_name) # [{"class_taken":"MATH 100","difficulty":7}, ...]
+    return render_template('add_classes.html', active_page='add_classes', all_courses=all_courses, user_courses=user_courses)
 
 @main_bp.route('/degree_eval')
 def degree_eval():

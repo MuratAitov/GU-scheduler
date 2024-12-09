@@ -53,12 +53,18 @@ def get_all_courses_from_db():
     conn = get_connection()
     try:
         with conn.cursor() as cur:
-            cur.execute("SELECT code FROM course")  # допустим, у вас есть таблица courses
+            cur.execute("SELECT code, title FROM course")
             rows = cur.fetchall()
-            # rows будет списком кортежей [(CPSC 121,), (CPSC 122,), ...]
-            return [r[0] for r in rows]
+            courses = []
+            for r in rows:
+                courses.append({
+                    "code": r[0],
+                    "title": r[1]
+                })
+            return courses
     finally:
         conn.close()
+
 
 
 
@@ -70,6 +76,56 @@ def get_all_courses_from_db_fro_prereq():
             rows = cur.fetchall()
             # rows будет списком кортежей [(CPSC 121,), (CPSC 122,), ...]
             return [r[0] for r in rows]
+    finally:
+        conn.close()
+
+
+def update_user_courses(user_name, courses_data):
+    conn = get_connection()
+    try:
+        with conn.cursor() as cur:
+            for course in courses_data:
+                class_taken = course["class_taken"]
+                difficulty = course["difficulty"]
+                deleted = course.get("deleted", False)
+
+                if deleted:
+                    # Удаляем курс из user_courses
+                    cur.execute("DELETE FROM user_courses WHERE user_name=%s AND class_taken=%s",
+                                (user_name, class_taken))
+                else:
+                    # Проверяем наличие
+                    cur.execute("SELECT 1 FROM user_courses WHERE user_name=%s AND class_taken=%s",
+                                (user_name, class_taken))
+                    exists = cur.fetchone()
+                    if exists:
+                        # Обновляем сложность
+                        cur.execute("UPDATE user_courses SET difficulty=%s WHERE user_name=%s AND class_taken=%s",
+                                    (difficulty, user_name, class_taken))
+                    else:
+                        # Добавляем новый курс
+                        cur.execute("INSERT INTO user_courses (user_name, class_taken, difficulty) VALUES (%s, %s, %s)",
+                                    (user_name, class_taken, difficulty))
+        conn.commit()
+    finally:
+        conn.close()
+
+def get_all_user_courses(user_name):
+    conn = get_connection()
+    try:
+        with conn.cursor() as cur:
+            # Предположим, что у вас в таблице user_courses есть столбец difficulty
+            # Если нет - уберите difficulty из SELECT
+            cur.execute("SELECT class_taken, difficulty FROM user_courses WHERE user_name = %s", (user_name,))
+            rows = cur.fetchall()
+            classes = []
+            for r in rows:
+                # r[0] - class_taken, r[1] - difficulty
+                classes.append({
+                    "class_taken": r[0],
+                    "difficulty": r[1]
+                })
+            return classes
     finally:
         conn.close()
 

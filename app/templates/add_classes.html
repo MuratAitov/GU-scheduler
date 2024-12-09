@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% block title %}Add Classes{% endblock %}
+{% block content %}
+<div class="add-classes-container">
+    <h2>Add classes</h2>
+    <div class="add-classes-wrapper">
+
+        <!-- Левая панель: поиск курсов -->
+        <div class="left-panel">
+            <div class="search-bar">
+                <input type="text" id="course_search" placeholder="Search courses..." oninput="filterCourses()" />
+                <button id="clear_search" onclick="clearSearch()">×</button>
+            </div>
+            <div class="course-list" id="course_list">
+                {% for course in all_courses %}
+                <div class="course-item" onclick="addCourse('{{course.code}}')">
+                    {{course.code}} ({{course.title}})
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Правая панель: мои курсы -->
+        <div class="right-panel">
+            <h3>My courses</h3>
+            <form method="POST" id="courses_form">
+                <table class="my-courses-table">
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Difficulty</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="my_courses_tbody">
+                        {% for c in user_courses %}
+                        <tr data-course="{{c.class_taken}}">
+                            <td class="course-code">{{c.class_taken}}</td>
+                            <td class="difficulty-cell">
+                                <input type="number" class="difficulty-input" value="{{c.difficulty}}" min="1" max="10" />
+                                <div class="arrows">
+                                    <button type="button" class="arrow-up" onclick="changeDifficulty(this, 1)">▲</button>
+                                    <button type="button" class="arrow-down" onclick="changeDifficulty(this, -1)">▼</button>
+                                </div>
+                            </td>
+                            <td>
+                                <button type="button" class="delete-btn" onclick="markDeleted(this)">DELETE</button>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <input type="hidden" name="updated_courses" id="updated_courses" />
+                <button type="submit" class="save-btn" onclick="prepareData()">SAVE</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+function filterCourses() {
+    const query = document.getElementById('course_search').value.toLowerCase();
+    const items = document.querySelectorAll('.course-item');
+    items.forEach(item => {
+        const text = item.innerText.toLowerCase();
+        item.style.display = text.includes(query) ? 'block' : 'none';
+    });
+}
+
+function clearSearch() {
+    document.getElementById('course_search').value = '';
+    filterCourses();
+}
+
+function addCourse(code) {
+    // Добавляем курс в правую таблицу, если его нет
+    const tbody = document.getElementById('my_courses_tbody');
+    const existing = tbody.querySelector(`tr[data-course="${code}"]`);
+    if (existing) return;
+
+    const tr = document.createElement('tr');
+    tr.setAttribute('data-course', code);
+    tr.innerHTML = `
+        <td class="course-code">${code}</td>
+        <td class="difficulty-cell">
+            <input type="number" class="difficulty-input" value="5" min="1" max="10" />
+            <div class="arrows">
+                <button type="button" class="arrow-up" onclick="changeDifficulty(this, 1)">▲</button>
+                <button type="button" class="arrow-down" onclick="changeDifficulty(this, -1)">▼</button>
+            </div>
+        </td>
+        <td>
+            <button type="button" class="delete-btn" onclick="markDeleted(this)">DELETE</button>
+        </td>
+    `;
+    tbody.appendChild(tr);
+}
+
+function changeDifficulty(btn, delta) {
+    const input = btn.parentNode.parentNode.querySelector('.difficulty-input');
+    let val = parseInt(input.value,10);
+    val = val + delta;
+    if(val<1) val=1;
+    if(val>10) val=10;
+    input.value = val;
+}
+
+function markDeleted(btn) {
+    const tr = btn.closest('tr');
+    tr.classList.toggle('deleted');
+}
+
+function prepareData() {
+    const rows = document.querySelectorAll('#my_courses_tbody tr');
+    let data = [];
+    rows.forEach(row => {
+        const class_taken = row.getAttribute('data-course');
+        const input = row.querySelector('.difficulty-input');
+        const difficulty = parseInt(input.value,10);
+        const deleted = row.classList.contains('deleted');
+        data.push({class_taken, difficulty, deleted});
+    });
+    document.getElementById('updated_courses').value = JSON.stringify(data);
+}
+</script>
+{% endblock %}

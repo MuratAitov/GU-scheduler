@@ -84,3 +84,308 @@ body {
     font-weight: bold;
     color: #000;
 }
+body {
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background: #f8f8f8;
+}
+
+.add-classes-container {
+    padding: 20px;
+}
+
+.add-classes-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.left-panel {
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.search-bar input {
+    flex:1;
+    padding: 8px;
+    border:1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-bar button {
+    padding:8px;
+    border:1px solid #ccc;
+    border-left:none;
+    border-radius:0 4px 4px 0;
+    background:#eee;
+    cursor:pointer;
+}
+
+.course-list {
+    max-height:300px;
+    overflow-y:auto;
+    border:1px solid #ccc;
+    border-radius:4px;
+    background:#fff;
+}
+
+.course-item {
+    padding:8px;
+    cursor:pointer;
+    border-bottom:1px solid #eee;
+}
+.course-item:hover {
+    background:#f0f0f0;
+}
+
+.right-panel {
+    flex:1;
+    background:#fff;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 0 5px #ccc;
+}
+
+.my-courses-table {
+    width:100%;
+    border-collapse:collapse;
+}
+
+.my-courses-table th, .my-courses-table td {
+    padding:8px;
+    border-bottom:1px solid #ccc;
+    text-align:left;
+}
+
+.my-courses-table th {
+    background:#f0f0f0;
+    font-weight:bold;
+}
+
+.my-courses-table td.course-code {
+    font-weight:bold;
+}
+
+.difficulty-cell {
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.difficulty-input {
+    width:50px;
+    text-align:center;
+}
+
+.arrows button {
+    border:none;
+    background:none;
+    cursor:pointer;
+    font-size:14px;
+    line-height:1;
+    padding:2px;
+    color:#333;
+}
+
+.arrows button:hover {
+    color:#000;
+    font-weight:bold;
+}
+
+.delete-btn {
+    background:#f85a5a;
+    border:none;
+    color:#fff;
+    padding:5px 10px;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.delete-btn:hover {
+    background:#e04545;
+}
+
+.deleted {
+    opacity:0.5;
+    text-decoration:line-through;
+}
+
+.save-btn {
+    background:#007bff;
+    color:#fff;
+    border:none;
+    padding:10px 20px;
+    border-radius:4px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+.save-btn:hover {
+    background:#0056b3;
+}
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Стили навигации */
+nav.top-menu {
+    display: flex;
+    align-items: center;
+}
+
+nav.top-menu a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+}
+
+nav.top-menu a.active {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+nav.top-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Flash messages */
+.flash-messages {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.flash-messages li {
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.flash-messages .success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.flash-messages .error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.flash-messages .info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+/* Контент */
+main {
+    padding: 20px;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+/* Кнопки */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Формы */
+form {
+    margin-top: 20px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form input[type="email"]:focus,
+form select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+/* Дополнительно */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
