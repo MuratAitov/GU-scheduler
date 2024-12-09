@@ -1,19 +1,66 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    margin: 0;
-    padding: 0;
+.form-container {
+    width: 300px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px #ccc;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #0056b3;
+}
+
+.register-link {
+    background: #28a745;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.register-link:hover {
+    background: #218838;
 }
 
 .flash-messages {
     list-style: none;
-    padding: 10px;
+    padding: 0;
     margin: 0;
 }
 
 .flash-messages li {
-    margin: 5px 0;
     padding: 10px;
+    margin: 10px 0;
     border-radius: 4px;
 }
 
@@ -27,47 +74,13 @@ body {
     color: #721c24;
 }
 
-.form-container {
-    width: 400px;
-    margin: 50px auto;
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px #ccc;
+body {
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-
-.form-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group label {
-    margin-bottom: 5px;
+.top-menu a.active {
     font-weight: bold;
-}
-
-.form-group input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.submit-btn {
-    width: 100%;
-    padding: 10px;
-    background: #0069d9;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.submit-btn:hover {
-    background: #0053ba;
+    color: #000;
 }

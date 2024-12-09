@@ -1,12 +1,13 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash, session
 from werkzeug.security import generate_password_hash, check_password_hash
-from .db_utils import user_exists, add_user_to_db, get_user_by_email
+from .db_utils import user_exists, add_user_to_db, get_user_by_email, get_all_courses_from_db, get_all_courses_from_db_fro_prereq
 
 main_bp = Blueprint('main', __name__)
 
 @main_bp.route('/')
 def index():
-    return render_template('index.html')
+    return redirect(url_for('main.login'))
+
 
 @main_bp.route('/register', methods=['GET', 'POST'])
 def register():
@@ -46,7 +47,7 @@ def login():
         password = request.form.get('password')
 
         if not email or not password:
-            flash("Введите email и пароль", "error")
+            flash("Type in email and password", "error")
             return redirect(url_for('main.login'))
 
         user = get_user_by_email(email)
@@ -54,10 +55,10 @@ def login():
             # Успешная аутентификация
             session['user_email'] = user['email']
             session['user_name'] = user['user_name']
-            flash("Вы успешно вошли!", "success")
+            flash("You are logged in", "success")
             return redirect(url_for('main.main_page'))
         else:
-            flash("Неверный email или пароль", "error")
+            flash("Wrong email or pasword", "error")
             return redirect(url_for('main.login'))
 
     # Если GET запрос, отображаем форму
@@ -65,10 +66,11 @@ def login():
 
 @main_bp.route('/main')
 def main_page():
-    # Проверим, вошёл ли пользователь
     if 'user_email' not in session:
         flash("Сначала войдите", "error")
         return redirect(url_for('main.login'))
+    return render_template('main.html', user_name=session.get('user_name'), active_page='main')
+
 
     # Если вошёл, показываем главную страницу
     return render_template('main.html', user_name=session.get('user_name'))
@@ -79,10 +81,22 @@ def logout():
     flash("Вы вышли из системы", "info")
     return redirect(url_for('main.login'))
 
-
-@main_bp.route('/prereq_tree')
+@main_bp.route('/prereq_tree', methods=['GET', 'POST'])
 def prereq_tree():
-    return render_template('prereq_tree.html')
+    if request.method == 'POST':
+        course_code = request.form.get('course_code')
+        full_tree = 'full_tree' in request.form  # True/False
+        # Запускаем логику построения графа
+        from .tree_logic import build_tree_data  # Предположим, вы вынесли код в tree_logic.py
+        tree_data = build_tree_data(course_code, full_tree_mode=full_tree)
+
+        # Преобразуем в JSON для фронтенда
+        import json
+        tree_data_json = json.dumps(tree_data, ensure_ascii=False)
+        return render_template('prereq_tree.html', active_page='prereq_tree', tree_data_json=tree_data_json, courses=get_all_courses_from_db_fro_prereq())
+
+    return render_template('prereq_tree.html', active_page='prereq_tree', courses=get_all_courses_from_db_fro_prereq())
+
 
 @main_bp.route('/add_classes')
 def add_classes():

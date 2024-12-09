@@ -49,6 +49,30 @@ def get_user_by_email(email):
     finally:
         conn.close()
 
+def get_all_courses_from_db():
+    conn = get_connection()
+    try:
+        with conn.cursor() as cur:
+            cur.execute("SELECT code FROM course")  # допустим, у вас есть таблица courses
+            rows = cur.fetchall()
+            # rows будет списком кортежей [(CPSC 121,), (CPSC 122,), ...]
+            return [r[0] for r in rows]
+    finally:
+        conn.close()
+
+
+
+def get_all_courses_from_db_fro_prereq():
+    conn = get_connection()
+    try:
+        with conn.cursor() as cur:
+            cur.execute("SELECT course_code FROM prerequisites")  # допустим, у вас есть таблица courses
+            rows = cur.fetchall()
+            # rows будет списком кортежей [(CPSC 121,), (CPSC 122,), ...]
+            return [r[0] for r in rows]
+    finally:
+        conn.close()
+
 
 if __name__ == '__main__':
     get_connection()

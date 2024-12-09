@@ -1,3 +1,4 @@
+<!-- base.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,17 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+    <header>
+        <nav class="top-menu">
+            <a href="{{ url_for('main.main_page') }}" class="{% if active_page == 'main' %}active{% endif %}">Scheduler</a>
+            <a href="{{ url_for('main.prereq_tree') }}" class="{% if active_page == 'prereq_tree' %}active{% endif %}">Prereq Tree</a>
+            <a href="{{ url_for('main.add_classes') }}" class="{% if active_page == 'add_classes' %}active{% endif %}">Add classes</a>
+            <a href="{{ url_for('main.degree_eval') }}" class="{% if active_page == 'degree_eval' %}active{% endif %}">Degree eval</a>
+            <a href="{{ url_for('main.profile') }}" class="{% if active_page == 'profile' %}active{% endif %}">Profile</a>
+        </nav>
+    </header>
+    <hr/>
+
     {% with messages = get_flashed_messages(with_categories=true) %}
     {% if messages %}
     <ul class="flash-messages">
