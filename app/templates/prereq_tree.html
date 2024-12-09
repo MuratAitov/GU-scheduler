@@ -5,19 +5,22 @@
     <h2>Prerequisite Tree</h2>
     <form method="POST" action="{{ url_for('main.prereq_tree') }}">
         <div class="form-group">
-            <label for="course_code">Выберите курс:</label>
+            <label for="course_code">Select Course:</label>
             <select id="course_code" name="course_code" required>
-                <!-- Здесь вы можете динамически подгрузить список курсов из БД -->
                 {% for course in courses %}
-                    <option value="{{ course }}">{{ course }}</option>
+                    <option value="{{ course }}"
+                        {% if course == selected_course %}selected{% endif %}>
+                        {{ course }}
+                    </option>
                 {% endfor %}
             </select>
         </div>
         <div class="form-group">
-            <label for="full_tree">Полное дерево:</label>
-            <input type="checkbox" id="full_tree" name="full_tree">
+            <label for="full_tree">Full Tree:</label>
+            <input type="checkbox" id="full_tree" name="full_tree" 
+                   {% if full_tree %} checked {% endif %}>
         </div>
-        <button type="submit" class="submit-btn">Показать дерево</button>
+        <button type="submit" class="submit-btn">Generate Tree</button>
     </form>
 </div>
 
@@ -25,7 +28,7 @@
     {% if tree_data_json %}
         <!-- Если tree_data_json есть, подгружаем его в JS и визуализируем -->
         <script>
-            const treeData = {{ tree_data_json|safe }};
+            const treeData = {{ tree_data_json | safe }};
         </script>
         <div id="graph" style="width: 100%; height: 600px;"></div>
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
