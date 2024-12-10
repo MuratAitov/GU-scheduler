@@ -334,7 +334,8 @@ CREATE TABLE public.users (
     user_name character varying(255) NOT NULL,
     email character varying(255) NOT NULL,
     password character varying(255) NOT NULL,
-    name character varying(255)
+    name character varying(255),
+    major_id integer
 );
 
 
@@ -12095,10 +12096,11 @@ COPY public.user_courses (user_name, class_taken, difficulty) FROM stdin;
 -- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.users (user_name, email, password, name) FROM stdin;
-Murat_Aitov	maitov@zagmail.gonzaga.edu	1111	Murat Aitov
-maitov	muratos1212@gmail.com	scrypt:32768:8:1$JnT8KxvFNbZmmvlM$2e964785c82c47e01fbec0bccf834d75d975899d624f3cebb5e41400ba4d3ed96f55030eb447d2e3634416d7650bb5b5c627075da2ad37f0e2dc81a7938c4270	Murat
-1111	1111@gmail.com	scrypt:32768:8:1$vX3IPEMlxl13KOeg$8902b418f4a911cd7a5cb9587c1f82f74e3131e8c219696903d498b976977c55e02eecbad0c4304ff310e4d3ad18796135565aa0548233d319b67b4deb18bca1	1111
+COPY public.users (user_name, email, password, name, major_id) FROM stdin;
+Murat_Aitov	maitov@zagmail.gonzaga.edu	1111	Murat Aitov	\N
+maitov	muratos1212@gmail.com	scrypt:32768:8:1$JnT8KxvFNbZmmvlM$2e964785c82c47e01fbec0bccf834d75d975899d624f3cebb5e41400ba4d3ed96f55030eb447d2e3634416d7650bb5b5c627075da2ad37f0e2dc81a7938c4270	Murat	\N
+1111	1111@gmail.com	scrypt:32768:8:1$vX3IPEMlxl13KOeg$8902b418f4a911cd7a5cb9587c1f82f74e3131e8c219696903d498b976977c55e02eecbad0c4304ff310e4d3ad18796135565aa0548233d319b67b4deb18bca1	1111	\N
+222	222@gamil.com	scrypt:32768:8:1$k4IK7qu1De6ugEMm$22efb38dcea5574d9de24e3d8c651efb077bd9689623d0a192a9e070d6e913fc899a42cdf1a6defb73ebd903bca589e16a0087b57d066144c55a3c4ba6f91fe1	2222	2
 \.
 
 
@@ -12310,6 +12312,14 @@ ALTER TABLE ONLY public.equivalents
 
 ALTER TABLE ONLY public.equivalents
     ADD CONSTRAINT equivalents_equivalent_course_code_fkey FOREIGN KEY (equivalent_course_code) REFERENCES public.course(code) ON DELETE CASCADE;
+
+
+--
+-- Name: users fk_major; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.users
+    ADD CONSTRAINT fk_major FOREIGN KEY (major_id) REFERENCES public.program(id);
 
 
 --
