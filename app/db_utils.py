@@ -128,12 +128,12 @@ def get_all_user_courses(user_name):
             return classes
     finally:
         conn.close()
-        
+
 def get_all_majors():
     conn = get_connection()
     try:
         with conn.cursor() as cur:
-            cur.execute("SELECT id, name FROM majors ORDER BY name")
+            cur.execute("SELECT id, name FROM program ORDER BY name")
             return cur.fetchall()
     finally:
         conn.close()
