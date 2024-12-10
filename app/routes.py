@@ -141,12 +141,26 @@ def degree_eval():
         return redirect(url_for('main.login'))
 
     user_name = session['user_name']
-
-    # Connect to the database
     conn = get_connection()
     cur = conn.cursor()
 
-    # Get the user's completed courses
+    # Fetch user's major from the program table
+    cur.execute("""
+        SELECT p.name
+        FROM users u
+        JOIN program p ON u.major_id = p.id
+        WHERE u.user_name = %s
+    """, (user_name,))
+    result = cur.fetchone()
+
+    if not result:
+        flash("Major not found for user.", "error")
+        return redirect(url_for('main.profile'))
+
+    program_name = result[0]
+    session['major_name'] = program_name
+
+    # Fetch completed courses by the user
     cur.execute("""
         SELECT class_taken 
         FROM user_courses 
@@ -154,35 +168,64 @@ def degree_eval():
     """, (user_name,))
     completed_courses = {row[0] for row in cur.fetchall()}
 
-    # Get all required courses
+    # Fetch required courses based on program and requirements
     cur.execute("""
-        SELECT code, title, difficulty, attributes, description, department, term
-        FROM course
-    """)
-    all_courses = cur.fetchall()
+        SELECT 
+            rg.name AS requirement_group_name,
+            rg.required_credits,
+            array_agg(DISTINCT c.code) AS course_codes,
+            array_agg(DISTINCT c.title) AS course_titles
+        FROM program p
+        JOIN requirement_group rg ON rg.program_id = p.id
+        LEFT JOIN requirement_course_link rcl ON rcl.requirement_group_id = rg.id
+        LEFT JOIN course c ON c.code = rcl.course_code
+        WHERE p.name = %s
+          AND rg.id NOT IN (SELECT requirement_group_id FROM concentration_requirement_link)
+        GROUP BY rg.name, rg.required_credits
+        ORDER BY rg.name;
+    """, (program_name,))
+    all_requirements = cur.fetchall()
 
-    # Calculate remaining courses
-    remaining_courses = [
-        {
-            "code": course[0],
-            "title": course[1],
-            "difficulty": course[2],
-            "attributes": course[3],
-            "description": course[4],
-            "department": course[5],
-            "term": course[6]
-        }
-        for course in all_courses if course[0] not in completed_courses
-    ]
+    # Process remaining courses by requirement group
+    remaining_courses = []
+    for req in all_requirements:
+        group_name, required_credits, course_codes, course_titles = req
+
+        # Handle "ALL" case
+        if required_credits == 'ALL':
+            remaining_courses.append({
+                "group_name": group_name,
+                "required_credits": "ALL",
+                "courses": [
+                    {"code": code, "title": title} 
+                    for code, title in zip(course_codes, course_titles)
+                ]
+            })
+        else:
+            # Filter out completed courses
+            remaining_in_group = [
+                {"code": code, "title": title} 
+                for code, title in zip(course_codes, course_titles) 
+                if code not in completed_courses
+            ]
+
+            if remaining_in_group:
+                remaining_courses.append({
+                    "group_name": group_name,
+                    "required_credits": required_credits,
+                    "courses": remaining_in_group
+                })
 
     conn.close()
 
     return render_template(
         'degree_eval.html', 
         completed_courses=completed_courses, 
-        remaining_courses=remaining_courses,
+        remaining_courses=remaining_courses, 
         active_page='degree_eval'
     )
+
+
 
 
 @main_bp.route('/profile')
