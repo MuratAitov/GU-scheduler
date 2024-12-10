@@ -116,7 +116,8 @@ CREATE TABLE public.course (
     attributes text[] DEFAULT '{}'::text[],
     description text DEFAULT ''::text,
     department text,
-    term text
+    term text,
+    credits integer
 );
 
 
@@ -318,7 +319,8 @@ ALTER TABLE public.section OWNER TO postgres;
 
 CREATE TABLE public.user_courses (
     user_name character varying(255) NOT NULL,
-    class_taken character varying(20) NOT NULL
+    class_taken character varying(20) NOT NULL,
+    difficulty integer
 );
 
 
@@ -423,2527 +425,2527 @@ MATH 180	MATH 157
 -- Data for Name: course; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.course (code, title, difficulty, attributes, description, department, term) FROM stdin;
-ACCT 260	Principles of Accounting I	0	{}		ACCT	\N
-ACCT 261	Principles of Accounting II	0	{}		ACCT	\N
-ACCT 263	Accounting Analysis	0	{}		ACCT	\N
-ACCT 311	Data Analysis for Accountants	0	{}		ACCT	\N
-ACCT 360	Interm Financial Accounting I	0	{}		ACCT	\N
-ACCT 362	Accounting Information Systems	0	{}		ACCT	\N
-ACCT 365	Federal Taxation I	0	{}		ACCT	\N
-ACCT 367	Financial Reporting & Analysis	0	{}		ACCT	\N
-ACCT 460	Advanced Financial Accounting	0	{}		ACCT	\N
-ACCT 471	Forensic Accounting Lab	0	{}		ACCT	\N
-ACCT 497	Internship	0	{}		ACCT	\N
-ARAB 101	Elementary Arabic I	0	{}		ARAB	\N
-BCSS 201	Business Leadership	0	{}		BCSS	\N
-BCSS 221	Excel Skills	0	{}		BCSS	\N
-BCSS 230	Economics of the Side Hustle	0	{}		BCSS	\N
-BCSS 233	Work Hacks	0	{}		BCSS	\N
-BCSS 234	Career Preparedness	0	{}		BCSS	\N
-BCSS 240	More Like You Dream Job	0	{}		BCSS	\N
-BCSS 260	Intercultural Business Comm	0	{}		BCSS	\N
-BCSS 268	Community Service & Leadership	0	{}		BCSS	\N
-BENT 340	Small Business in Europe	0	{}		BENT	\N
-BENT 490	Creativity,Innovation,&Entrshp	0	{}		BENT	\N
-BENT 491	Creating New Ventures	0	{}		BENT	\N
-BENT 493	Social Entrepreneurship	0	{}		BENT	\N
-BENT 495	New Venture Lab	0	{}		BENT	\N
-BENT 498	Developing a Business Model	0	{}		BENT	\N
-BFIN 320	Principles of Finance	0	{}		BFIN	\N
-BFIN 322	Intermediate Finance	0	{}		BFIN	\N
-BFIN 422	Investment Analysis	0	{}		BFIN	\N
-BFIN 423	Financial Management Cases	0	{}		BFIN	\N
-BFIN 426	Mergers and Acquisitions	0	{}		BFIN	\N
-BFIN 429B	Portfolio Mgmt II	0	{}		BFIN	\N
-BFIN 489	New York Trek	0	{}		BFIN	\N
-BIOL 104	SI: Biological Systems	0	{}		BIOL	\N
-BIOL 104L	SI: Biological Systems Lab	0	{}		BIOL	\N
-BIOL 105	Info Flow in Biol Systems	0	{}		BIOL	\N
-BIOL 105L	Info Flow in Biol Systems Lab	0	{}		BIOL	\N
-BIOL 106	Energy Flow in Biol Systems	0	{}		BIOL	\N
-BIOL 170	Introduction to Microbiology	0	{}		BIOL	\N
-BIOL 170L	Intro to Microbiology Lab	0	{}		BIOL	\N
-BIOL 181	SI: Biological Systems	0	{}		BIOL	\N
-BIOL 181L	SI: Biological Systems Lab	0	{}		BIOL	\N
-BIOL 205	Physiology & Biodiversity	0	{}		BIOL	\N
-BIOL 205L	Physiology & Biodiversity Lab	0	{}		BIOL	\N
-BIOL 207	Genetics	0	{}		BIOL	\N
-BIOL 207L	Genetics Lab	0	{}		BIOL	\N
-BIOL 295	Science Outreach	0	{}		BIOL	\N
-BIOL 303	Population Ecology	0	{}		BIOL	\N
-BIOL 304	Practice in Laboratory Teachng	0	{}		BIOL	\N
-BIOL 331	Parasitology	0	{}		BIOL	\N
-BIOL 338	Histology	0	{}		BIOL	\N
-BIOL 338L	Histology Lab	0	{}		BIOL	\N
-BIOL 351	Advanced Cell Biology	0	{}		BIOL	\N
-BIOL 351L	Advanced Cell Biology Lab	0	{}		BIOL	\N
-BIOL 357	Wildlife Management	0	{}		BIOL	\N
-BIOL 357L	Wildlife Management Lab	0	{}		BIOL	\N
-BIOL 370	Microbiology	0	{}		BIOL	\N
-BIOL 370L	Microbiology Lab	0	{}		BIOL	\N
-BIOL 395	Research Assistantship	0	{}		BIOL	\N
-BIOL 399	10 Great Inventions of Evol’n	0	{}		BIOL	\N
-BIOL 420	Physiological Ecology	0	{}		BIOL	\N
-BIOL 456	Molecular Biology	0	{}		BIOL	\N
-BIOL 456L	Molecular Biology Lab	0	{}		BIOL	\N
-BIOL 484	Research Seminar	0	{}		BIOL	\N
-BIOL 490	Microbial Interactions	0	{}		BIOL	\N
-BIOL 495	Senior Evaluation	0	{}		BIOL	\N
-BIOL 498	Phage Genetics Research	0	{}		BIOL	\N
-BIOL 499	Senior Colloquium	0	{}		BIOL	\N
-BMIS 235	Management Information Systems	0	{}		BMIS	\N
-BMIS 245	Tech Fnd of Digital Marketing	0	{}		BMIS	\N
-BMIS 331	Prbm Solving & Prog Techniques	0	{}		BMIS	\N
-BMIS 441	Data Base Management	0	{}		BMIS	\N
-BMIS 443	Tech for Web/Mobile-based Bus	0	{}		BMIS	\N
-BMIS 445	Analytics Practicum	0	{}		BMIS	\N
-BRCO 203	Fundamentals of TV Production	0	{}		BRCO	\N
-BRCO 204	Fund of Audio Production	0	{}		BRCO	\N
-BRCO 204L	Fund of Audio Production Lab	0	{}		BRCO	\N
-BRCO 303	Intermediate TV Production	0	{}		BRCO	\N
-BRCO 370	Broadcast Journalism	0	{}		BRCO	\N
-BRCO 470	Broadcast Leadership	0	{}		BRCO	\N
-BRCO 492	IS: Professional Practice	0	{}		BRCO	\N
-BRCO 497	Broadcast Internship	0	{}		BRCO	\N
-BUSN 101	Introduction to Business	0	{}		BUSN	\N
-BUSN 111	Business Computing	0	{}		BUSN	\N
-BUSN 193	FYS: Habits	0	{}		BUSN	\N
-BUSN 230	Business Statistics	0	{}		BUSN	\N
-BUSN 270	Personal Brand& Bus for Athls	0	{}		BUSN	\N
-BUSN 283	Business Law	0	{}		BUSN	\N
-BUSN 390	Gender in the Workplace	0	{}		BUSN	\N
-BUSN 470	Multidisciplinary Act Projects	0	{}		BUSN	\N
-BUSN 480	Senior Seminar Business Ethics	0	{}		BUSN	\N
-BUSN 481	Strategic Management	0	{}		BUSN	\N
-BUSN 490	Wine: from grapes to glass	0	{}		BUSN	\N
-BUSN 491	Startup Accelerator	0	{}		BUSN	\N
-BUSN 494	Small Business Consulting	0	{}		BUSN	\N
-BUSN 497	Internship	0	{}		BUSN	\N
-CENG 225	Engineering Geology	0	{}		CENG	\N
-CENG 252	Civil Fluid Mechanics	0	{}		CENG	\N
-CENG 261	Introduction to Geomatics	0	{}		CENG	\N
-CENG 261L	Introduction to Geomatics Lab	0	{}		CENG	\N
-CENG 301	Structural Analysis I	0	{}		CENG	\N
-CENG 302L	Construction Materials Lab	0	{}		CENG	\N
-CENG 318	Transportation Engineering	0	{}		CENG	\N
-CENG 331	Soil Mechanics	0	{}		CENG	\N
-CENG 331L	Soil Mechanics Lab	0	{}		CENG	\N
-CENG 351	Engineering Hydrology	0	{}		CENG	\N
-CENG 404	Sustainable Systems and Design	0	{}		CENG	\N
-CENG 411	Steel Design	0	{}		CENG	\N
-CENG 417	Traffic Engineering	0	{}		CENG	\N
-CENG 424	Water Treatment Processes	0	{}		CENG	\N
-CENG 426	Stream Restoration	0	{}		CENG	\N
-CENG 473	Foundation Design	0	{}		CENG	\N
-CHEM 101	General Chemistry	0	{}		CHEM	\N
-CHEM 101L	General Chemistry Lab	0	{}		CHEM	\N
-CHEM 104	SI: Chemistry in Context	0	{}		CHEM	\N
-CHEM 104L	SI: Chemistry in Context Lab	0	{}		CHEM	\N
-CHEM 205	Inorganic Chemistry	0	{}		CHEM	\N
-CHEM 231	Organic Chemistry II	0	{}		CHEM	\N
-CHEM 231L	Organic Chemistry II Lab	0	{}		CHEM	\N
-CHEM 295	Science Outreach	0	{}		CHEM	\N
-CHEM 355	Physical Chemistry	0	{}		CHEM	\N
-CHEM 355L	Physical/Inorganic Chem Lab	0	{}		CHEM	\N
-CHEM 390	Bioorganic Chemistry Research	0	{}		CHEM	\N
-CHEM 395	Research Assistantship	0	{}		CHEM	\N
-CHEM 399	Sustainable Polymers	0	{}		CHEM	\N
-CHEM 408	RNA Chemistry and Biology	0	{}		CHEM	\N
-CHEM 415	Organometallic Chemistry	0	{}		CHEM	\N
-CHEM 485	Seminar	0	{}		CHEM	\N
-CHEM 497	Res in the Lab of: Dr Traphel	0	{}		CHEM	\N
-CHEM 498A	Thesis I	0	{}		CHEM	\N
-CHIN 101	Elementary Chinese I	0	{}		CHIN	\N
-CLAS 193	FYS: Spartacus: Fact & Fiction	0	{}		CLAS	\N
-CLAS 375	Spec Topics:The Origin of Love	0	{}		CLAS	\N
-CLAS 420	Ancient Rome in Pop Culture	0	{}		CLAS	\N
-CLAS 499	Senior Thesis	0	{}		CLAS	\N
-COML 504	Organizational Communication	0	{}		COML	\N
-COML 507	Mindful Leadership and Comm	0	{}		COML	\N
-COML 509	SocialMediaEngagement&Analysis	0	{}		COML	\N
-COML 510	CommunicationTeaching&Pedagogy	0	{}		COML	\N
-COML 511	Comm Consulting & Training	0	{}		COML	\N
-COML 512	Strategic & Crisis Comm	0	{}		COML	\N
-COML 513	Spec Top: Arts Lead & Admin	0	{}		COML	\N
-COML 520	Comm Leadership Internship	0	{}		COML	\N
-COML 530	Women, Comm, & Ldrshp	0	{}		COML	\N
-COML 540	Digital Media Analysis	0	{}		COML	\N
-COML 550	Visual Data Communication	0	{}		COML	\N
-COML 595	Theorizing Communication	0	{}		COML	\N
-COML 596	Master's Level Writing	0	{}		COML	\N
-COML 597	Comm & Leadership Ethics	0	{}		COML	\N
-COML 598	Int'l and Intercultural Comm	0	{}		COML	\N
-COML 599	Content Creation and Strategy	0	{}		COML	\N
-COML 602	Comm & Leadership Capstone	0	{}		COML	\N
-COML 690	Gossip as Resistive Practice	0	{}		COML	\N
-COMM 100	Communication and Speech	0	{}		COMM	\N
-COMM 210	Understanding Meaning-making	0	{}		COMM	\N
-COMM 220	Understanding Power in Culture	0	{}		COMM	\N
-COMM 230	Understanding Identity	0	{}		COMM	\N
-COMM 275	Analyzing Public Texts	0	{}		COMM	\N
-COMM 285	Analyzing Practices and Habits	0	{}		COMM	\N
-COMM 320	Resistance, Struggle, & Power	0	{}		COMM	\N
-COMM 340	Encounters in Public Spheres	0	{}		COMM	\N
-COMM 342	Debate Participation	0	{}		COMM	\N
-COMM 350	Politics of Social Memory	0	{}		COMM	\N
-COMM 360	Media Aesthetics	0	{}		COMM	\N
-COMM 430	Intersectional Communication	0	{}		COMM	\N
-COMM 440	Rhetoric of Social Change	0	{}		COMM	\N
-COMM 480	Cross Cultural Communication	0	{}		COMM	\N
-COMM 484	Senior Seminar	0	{}		COMM	\N
-COMM 490	Crafting Professional Identity	0	{}		COMM	\N
-COMM 497	Public Outreach Internship	0	{}		COMM	\N
-CPEN 230	Intro Digital Logic	0	{}		CPEN	\N
-CPEN 230L	Intro Digital Logic Lab	0	{}		CPEN	\N
-CPEN 430	Digital System Design	0	{}		CPEN	\N
-CPEN 430L	Digital System Design Lab	0	{}		CPEN	\N
-CPEN 436	Machine Learning in Biomed	0	{}		CPEN	\N
-CPSC 121	Computer Science I	0	{}		CPSC	\N
-CPSC 122	Computer Science II	0	{}		CPSC	\N
-CPSC 222	Introduction to Data Science	0	{}		CPSC	\N
-CPSC 223	Algorithm&Abstract Data Struct	0	{}		CPSC	\N
-CPSC 224	Software Development	0	{}		CPSC	\N
-CPSC 260	Computer Organization	0	{}		CPSC	\N
-CPSC 321	Database Management Systems	0	{}		CPSC	\N
-CPSC 322	Data Science Algorithms	0	{}		CPSC	\N
-CPSC 323	Machine Lrng & Intllgnt Systms	0	{}		CPSC	\N
-CPSC 332	Web Development	0	{}		CPSC	\N
-CPSC 333	Mobile App Development	0	{}		CPSC	\N
-CPSC 346	Operating Systems	0	{}		CPSC	\N
-CPSC 436	Biomedical Informatics&Comput	0	{}		CPSC	\N
-CPSC 450	Design & Analysis-Comp Algorim	0	{}		CPSC	\N
-CPSC 475	Speech&NaturalLangProcessing	0	{}		CPSC	\N
-CPSC 490	Intro to NLP	0	{}		CPSC	\N
-CPSC 491	Software Engineering	0	{}		CPSC	\N
-CPSC 491L	Senior Design Project Lab I	0	{}		CPSC	\N
-CPSC 499	Computers and Society	0	{}		CPSC	\N
-CRES 101	Intro to Race & Ethnic Studies	0	{}		CRES	\N
-CRES 280	Intro to Asian AmericanStudies	0	{}		CRES	\N
-CRES 302	Race, Resistance, &Resillience	0	{}		CRES	\N
-CRES 380	Hip Hop Feminisms	0	{}		CRES	\N
-CRIM 101	Crime, Social Control, Justice	0	{}		CRIM	\N
-CRIM 312	Criminological Theories	0	{}		CRIM	\N
-CRIM 350	Deviant Behavior	0	{}		CRIM	\N
-CRIM 356	Sociology of Policing	0	{}		CRIM	\N
-CRIM 358	Mass Incarceration	0	{}		CRIM	\N
-CRIM 359	Criminal Violence	0	{}		CRIM	\N
-CRIM 391	Inequality, Crime & Urban Life	0	{}		CRIM	\N
-CRIM 395	Cultural Criminology	0	{}		CRIM	\N
-CRIM 396	Re-entry and Transformation	0	{}		CRIM	\N
-CRIM 397	Drugs and Crime	0	{}		CRIM	\N
-CRIM 480	Crim/Civil Trial Procedure	0	{}		CRIM	\N
-CRIM 497	Criminal Justice Internship	0	{}		CRIM	\N
-CRIM 499	Criminology Senior Capstone	0	{}		CRIM	\N
-CTED 1004	Cert in Law & Biz of Wine	0	{}		CTED	\N
-CTED 1005	Wine & Society	0	{}		CTED	\N
-CTED 1050	Certificate: Fndtnl Ldrshp	0	{}		CTED	\N
-CTED 1051	Certificate: Women's Ldrshp	0	{}		CTED	\N
-CTED 1052	Certificate: Servant Ldrshp	0	{}		CTED	\N
-CTED 1053	Certificate: Design Thinking	0	{}		CTED	\N
-CTED 1100	Authentic Leadership	0	{}		CTED	\N
-DANC 105	Jazz Dance I	0	{}		DANC	\N
-DANC 110	Contemporary/Modern Dance I	0	{}		DANC	\N
-DANC 115	Ballet I	0	{}		DANC	\N
-DANC 155	Dance: Culture and Art	0	{}		DANC	\N
-DANC 190	Dance:Culture & Art Pedagogy	0	{}		DANC	\N
-DANC 205	Jazz Dance II	0	{}		DANC	\N
-DANC 210	Contemporary/Modern Dance II	0	{}		DANC	\N
-DANC 215	Ballet II	0	{}		DANC	\N
-DANC 270	Dance History	0	{}		DANC	\N
-DANC 280	Special Topics- Improvisation	0	{}		DANC	\N
-DANC 380	Topics in Dance - ALA	0	{}		DANC	\N
-DANC 455	Dance Senior Seminar	0	{}		DANC	\N
-DANC 460	Advanced Dance Production	0	{}		DANC	\N
-DANC 466	Adv Comp: Screendance	0	{}		DANC	\N
-DANC 470	Strategies:DanceInstructI(CEL)	0	{}		DANC	\N
-DNAP 702	Basic Principles Anesthesia II	0	{}		DNAP	\N
-DNAP 705	Adv Prin:Anest Across Lifespan	0	{}		DNAP	\N
-DNAP 708	Adv Prin:Acute&ChronicPain Mgt	0	{}		DNAP	\N
-DNAP 712	Anatomy & Physiology II	0	{}		DNAP	\N
-DNAP 722	Adv Pharmacology II	0	{}		DNAP	\N
-DNAP 754	Culture, Div &Hlth Care Policy	0	{}		DNAP	\N
-DNAP 762	Rsrch Mthd, Dsgn&Data Analysis	0	{}		DNAP	\N
-DNAP 765	Capstone III: Project Implmntn	0	{}		DNAP	\N
-DNAP 781	Clinical Practicum: I	0	{}		DNAP	\N
-DNAP 784	Clinical Practicum: IV	0	{}		DNAP	\N
-DNAP 787	Clinical Practicum: VII	0	{}		DNAP	\N
-DPLS 701	Organizational Theory	0	{}		DPLS	\N
-DPLS 703	Global Leadership	0	{}		DPLS	\N
-DPLS 705	Leadership & Social Justice	0	{}		DPLS	\N
-DPLS 711	Organizational Culture	0	{}		DPLS	\N
-DPLS 715	Leadership Ruminations	0	{}		DPLS	\N
-DPLS 716	Social Construct. & Leadership	0	{}		DPLS	\N
-DPLS 723	Qualitative Research	0	{}		DPLS	\N
-DPLS 730	Proposal Seminar	0	{}		DPLS	\N
-DPLS 735	Proposal Defense	0	{}		DPLS	\N
-DPLS 736	Dissertation	0	{}		DPLS	\N
-DPLS 737	Dissertation Extension	0	{}		DPLS	\N
-DPLS 743	Leadership & Consulting	0	{}		DPLS	\N
-DPLS 745	Ethics & Leadership Studies	0	{}		DPLS	\N
-DPLS 756	Leadership & Psychology	0	{}		DPLS	\N
-DPLS 760	Cult Ling & Soc Const of Ldrsp	0	{}		DPLS	\N
-DPLS 761	Naturalistic Inquiry	0	{}		DPLS	\N
-DPLS 762	Christian Religiosity	0	{}		DPLS	\N
-DPLS 763	Feminism & Disabilty	0	{}		DPLS	\N
-DPLS 764	Social Justice Dialogue Ped	0	{}		DPLS	\N
-DPLS 766	Computer Aid Qual Data Analysi	0	{}		DPLS	\N
-DPLS 774	Leadership & Community	0	{}		DPLS	\N
-DPLS 776	Transdisciplinary Leadership	0	{}		DPLS	\N
-DPLS 777	Writing for Completion	0	{}		DPLS	\N
-DPLS 778	Mindful Leadership and Comm	0	{}		DPLS	\N
-ECON 200	Economic Analysis	0	{}		ECON	\N
-ECON 201	Microeconomics	0	{}		ECON	\N
-ECON 202	Macroeconomics	0	{}		ECON	\N
-ECON 302	Intermediate Macroeconomics	0	{}		ECON	\N
-ECON 303	Game Theory & Econ Appl	0	{}		ECON	\N
-ECON 311	Global Economic Issues	0	{}		ECON	\N
-ECON 324	Econ of Environmental Protectn	0	{}		ECON	\N
-ECON 355	Regression Analysis	0	{}		ECON	\N
-ECON 401	Smith, Max, & RerumNovarum	0	{}		ECON	\N
-ECON 489	Mircoeconomics II	0	{}		ECON	\N
-ECON 499	Sr Comprehensive Examination	0	{}		ECON	\N
-EDCE 551	Diversity in Counselling	0	{}		EDCE	\N
-EDCE 558	CA Counselling Issues & Ethics	0	{}		EDCE	\N
-EDCE 559	Ethics and Law in School Couns	0	{}		EDCE	\N
-EDCE 560	Ethics and Law in CMHC	0	{}		EDCE	\N
-EDCE 561	Ethics and Law in MFC	0	{}		EDCE	\N
-EDCE 581	Chemical Dependency in Counslg	0	{}		EDCE	\N
-EDCE 583	Intro to MFC	0	{}		EDCE	\N
-EDCE 585	Intro to School Counseling	0	{}		EDCE	\N
-EDCE 586	Intro to CMH Counseling	0	{}		EDCE	\N
-EDCE 588	Human Growth and Development	0	{}		EDCE	\N
-EDCE 592	Adv Family Systems	0	{}		EDCE	\N
-EDCE 610	Classroom Management in School	0	{}		EDCE	\N
-EDCE 639	Counseling Theories	0	{}		EDCE	\N
-EDCE 640	Canadian Counselling Theories	0	{}		EDCE	\N
-EDCE 664	Group Facilitation	0	{}		EDCE	\N
-EDCE 685	Counselling Pre-Practicum (B)	0	{}		EDCE	\N
-EDCE 688	Adv Theory & Prof Sem II	0	{}		EDCE	\N
-EDCE 695	Counseling Pre-Practicum, CMHC	0	{}		EDCE	\N
-EDCE 697A	Internship (SCH)	0	{}		EDCE	\N
-EDCE 698	Research and Statistics	0	{}		EDCE	\N
-EDLA 626	Cultural Competence Developmnt	0	{}		EDLA	\N
-EDLA 628	Ed Leadership and Inquiry	0	{}		EDLA	\N
-EDLA 633	Ed Leadership & Organizations	0	{}		EDLA	\N
-EDLA 638	Ed Ldrshp: Chng, Mngmnt, Sprvs	0	{}		EDLA	\N
-EDLA 641	Ed Leadership & Community	0	{}		EDLA	\N
-EDLA 698	Research and Data Analysis	0	{}		EDLA	\N
-EDLD 703	Rsrch: Evidence based Practice	0	{}		EDLD	\N
-EDLD 705A	Review of Lit on Probl of Prac	0	{}		EDLD	\N
-EDLD 705B	Lab: Problem of Practice I	0	{}		EDLD	\N
-EDLD 710	Data Analysis for Prb of Pract	0	{}		EDLD	\N
-EDLD 712A	Evidence-based Contribution PP	0	{}		EDLD	\N
-EDLD 712B	Lab: Problem of Practice III	0	{}		EDLD	\N
-EDLD 764	Projects	0	{}		EDLD	\N
-EDPC 912	Leadership Role Seminar	0	{}		EDPC	\N
-EDPC 920	Certification Internship	0	{}		EDPC	\N
-EDPE 103	Basketball and Flag Football	0	{}		EDPE	\N
-EDPE 104	Varsity Basketball	0	{}		EDPE	\N
-EDPE 106	Varsity Cheerleading	0	{}		EDPE	\N
-EDPE 108	Beginning Bowling	0	{}		EDPE	\N
-EDPE 110	X-Biking	0	{}		EDPE	\N
-EDPE 112	Varsity Rowing	0	{}		EDPE	\N
-EDPE 113	CrossFit	0	{}		EDPE	\N
-EDPE 114	Zumba	0	{}		EDPE	\N
-EDPE 115	Cardio Blast	0	{}		EDPE	\N
-EDPE 118	Barre Long and Lean	0	{}		EDPE	\N
-EDPE 120	Varsity Baseball	0	{}		EDPE	\N
-EDPE 122	Varsity Track	0	{}		EDPE	\N
-EDPE 123	Varsity Cross Country	0	{}		EDPE	\N
-EDPE 126	Beginning Golf	0	{}		EDPE	\N
-EDPE 127	Intermediate-Advanced Golf	0	{}		EDPE	\N
-EDPE 128	Varsity Golf	0	{}		EDPE	\N
-EDPE 129	Self Defense/Judo	0	{}		EDPE	\N
-EDPE 136	Scuba	0	{}		EDPE	\N
-EDPE 145	Varsity Soccer	0	{}		EDPE	\N
-EDPE 146	Soccer and Volleyball	0	{}		EDPE	\N
-EDPE 147	Softball and Volleyball	0	{}		EDPE	\N
-EDPE 148	Varsity Tennis	0	{}		EDPE	\N
-EDPE 151	The Union Spin/Yoga	0	{}		EDPE	\N
-EDPE 154	Varsity Volleyball	0	{}		EDPE	\N
-EDPE 155	Soccer/Basketball	0	{}		EDPE	\N
-EDPE 156	Pilates	0	{}		EDPE	\N
-EDPE 157	Yoga	0	{}		EDPE	\N
-EDPE 158	Fitness and Conditioning	0	{}		EDPE	\N
-EDPE 160	Weight Training	0	{}		EDPE	\N
-EDPE 161	Studio Yoga	0	{}		EDPE	\N
-EDPE 162	Sculpt, Strength & Strike	0	{}		EDPE	\N
-EDPE 168	EF: Tread, Yoga, EMP	0	{}		EDPE	\N
-EDPE 175	Beginning Gymclimbing	0	{}		EDPE	\N
-EDPE 176	Intermediate Gym Climbing	0	{}		EDPE	\N
-EDPE 188	PiYo	0	{}		EDPE	\N
-EDPE 189	Exercise Technique	0	{}		EDPE	\N
-EDPE 190	Intro to Kinesiology & Sp Mgt	0	{}		EDPE	\N
-EDPE 191	Teach&Assess Mtr Skill Lab CEL	0	{}		EDPE	\N
-EDPE 195	New Athlete Orientation	0	{}		EDPE	\N
-EDPE 202A	Health & Fitness Club Mgmt	0	{}		EDPE	\N
-EDPE 205	Sport & Act in Diverse Society	0	{}		EDPE	\N
-EDPE 207	Sport & Fitness in Digital Age	0	{}		EDPE	\N
-EDPE 209	Community CPR and First Aid	0	{}		EDPE	\N
-EDPE 222	Health & Wellness	0	{}		EDPE	\N
-EDPE 276	Anatomy and Physiology I	0	{}		EDPE	\N
-EDPE 276L	Anatomy and Physiology I Lab	0	{}		EDPE	\N
-EDPE 307	Fdns in Sports Outreach (CEL)	0	{}		EDPE	\N
-EDPE 310	Motor Development & Learning	0	{}		EDPE	\N
-EDPE 312	Hlth Mthds Diverse Populations	0	{}		EDPE	\N
-EDPE 321	Sport Facility Management	0	{}		EDPE	\N
-EDPE 340	Exercise & Sport Psychology	0	{}		EDPE	\N
-EDPE 377	Physiology of Exercise	0	{}		EDPE	\N
-EDPE 377L	Physiology of Exercise Lab	0	{}		EDPE	\N
-EDPE 378	Structural Kinesiology	0	{}		EDPE	\N
-EDPE 400	Sport Sponsorship & Promotions	0	{}		EDPE	\N
-EDPE 412	Admin of Sport & Athletics	0	{}		EDPE	\N
-EDPE 414	Ethical/Legal Aspects in Sport	0	{}		EDPE	\N
-EDPE 417	Abuse Prevention	0	{}		EDPE	\N
-EDPE 465	Special Populations & Exercise	0	{}		EDPE	\N
-EDPE 485	Intnl Sport Mgmt Cltl-Glbl Std	0	{}		EDPE	\N
-EDPE 494	Student Teaching Seminar	0	{}		EDPE	\N
-EDPE 495	Student Teching Hlth & Phys Ed	0	{}		EDPE	\N
-EDPE 496A	Practicum:Physical Education	0	{}		EDPE	\N
-EDPE 496B	Practicum: Coaching	0	{}		EDPE	\N
-EDPE 496C	Practicum:Health & Fitness	0	{}		EDPE	\N
-EDPE 496D	Sport Management Internship I	0	{}		EDPE	\N
-EDPE 496E	Sport Management Internship II	0	{}		EDPE	\N
-EDPE 497C	Field Exp in Health Education	0	{}		EDPE	\N
-EDPE 497D	Field Exp in Adpt Physical Ed	0	{}		EDPE	\N
-EDPE 499	Comprehensive Examination	0	{}		EDPE	\N
-EDPE 500	Sport & Athletic Promotions	0	{}		EDPE	\N
-EDPE 517	Abuse Prevention	0	{}		EDPE	\N
-EDPE 518	Health/Fitness Methods	0	{}		EDPE	\N
-EDPE 525	Sport & Ath in Social Context	0	{}		EDPE	\N
-EDPE 565	Rsrch Mth & Stats in Sprt Athl	0	{}		EDPE	\N
-EDPE 613	Admin in Sport & Athletics	0	{}		EDPE	\N
-EDPE 621	Facilities Mgmt in Sport & Ath	0	{}		EDPE	\N
-EDPE 696A	Sport & Athl Admin:Intern I	0	{}		EDPE	\N
-EDPE 696B	Sport & Athl Admin:Intern II	0	{}		EDPE	\N
-EDPE 699	Capstone Experience	0	{}		EDPE	\N
-EDSE 150	Psych of Child w/Exception CEL	0	{}		EDSE	\N
-EDSE 155	Signing Exact English	0	{}		EDSE	\N
-EDSE 306	In School Exp Elementary (CEL)	0	{}		EDSE	\N
-EDSE 307	Special Educ Application (CEL)	0	{}		EDSE	\N
-EDSE 320	Applied Behavior Analysis CEL	0	{}		EDSE	\N
-EDSE 320L	Applied Behavior Analysis Lab	0	{}		EDSE	\N
-EDSE 340	Spec Ed Policies & Procedures	0	{}		EDSE	\N
-EDSE 350	Early Childhood Special Ed CEL	0	{}		EDSE	\N
-EDSE 352	Language and Communication CEL	0	{}		EDSE	\N
-EDSE 400	Tutoring and Proctoring	0	{}		EDSE	\N
-EDSE 406	In School Exp Secondary CEL	0	{}		EDSE	\N
-EDSE 407	Spec Ed Applictn w/ Adlts CEL	0	{}		EDSE	\N
-EDSE 410	Precision Teaching (CEL)	0	{}		EDSE	\N
-EDSE 451	Direct Instruction-Reading	0	{}		EDSE	\N
-EDSE 465	Classroom Management (CEL)	0	{}		EDSE	\N
-EDSE 465L	Classroom Management Lab	0	{}		EDSE	\N
-EDSE 469	BCaBA Ethics in Behvr Anlysis	0	{}		EDSE	\N
-EDSE 480	EdTPA & Teacher Dev Seminar	0	{}		EDSE	\N
-EDSE 495	Extended Spec Ed Exp (CEL)	0	{}		EDSE	\N
-EDSE 496	Special Ed Teach Practicum CEL	0	{}		EDSE	\N
-EDSE 497	Ext Special Ed Teach Pract CEL	0	{}		EDSE	\N
-EDSE 501	Psych of Child w/ Exception	0	{}		EDSE	\N
-EDSE 505	Special Ed App Clssrm Exp Elem	0	{}		EDSE	\N
-EDSE 506	SpEd Applied Classrom Exp	0	{}		EDSE	\N
-EDSE 507	Spec Ed Applied Class Exp Seco	0	{}		EDSE	\N
-EDSE 520	Applied Behavior Analysis	0	{}		EDSE	\N
-EDSE 540	Spec Ed Procedures & Policies	0	{}		EDSE	\N
-EDSE 550	Early Childhood Special Ed	0	{}		EDSE	\N
-EDSE 562	Language and Communication	0	{}		EDSE	\N
-EDSE 610	Precision Teaching	0	{}		EDSE	\N
-EDSE 611	Continuing Research Education	0	{}		EDSE	\N
-EDSE 651	Direct Instruction: Reading	0	{}		EDSE	\N
-EDSE 665	Adv Seminar in Classrm Mgmt	0	{}		EDSE	\N
-EDSE 669	Ethics on Behavior Analysis I	0	{}		EDSE	\N
-EDSE 672	Assess&Intrvtn in Ntrl Set CEL	0	{}		EDSE	\N
-EDSE 677	Behavior Change	0	{}		EDSE	\N
-EDSE 689	Professional Seminar	0	{}		EDSE	\N
-EDSE 694	EdTPA & Teacher Dev Seminar	0	{}		EDSE	\N
-EDSE 698	Research in Special Education	0	{}		EDSE	\N
-EDSE 699	Comprehensive Oral Examination	0	{}		EDSE	\N
-EDSS 540	Legal Issues in School Psych	0	{}		EDSS	\N
-EDSS 592	Ind Study: Program Evaluation	0	{}		EDSS	\N
-EDSS 601	Psych of Child with Exceptions	0	{}		EDSS	\N
-EDSS 610	Foundations in School Pysch	0	{}		EDSS	\N
-EDSS 630	Assessment in School Settings	0	{}		EDSS	\N
-EDSS 650	Applied Behavioral Analysis	0	{}		EDSS	\N
-EDSS 690A	Portfolio in School Psychology	0	{}		EDSS	\N
-EDSS 697A	Practicum in School Psych K-12	0	{}		EDSS	\N
-EDSS 698A	Internship in SchoolPsych K-12	0	{}		EDSS	\N
-EDTE 101	Soc& Cultural Fnds of Educ CEL	0	{}		EDTE	\N
-EDTE 201	Learn Thry& Epistemologies CEL	0	{}		EDTE	\N
-EDTE 213	NW History for Teachers	0	{}		EDTE	\N
-EDTE 221E	Elem Dif Instruct & Assess	0	{}		EDTE	\N
-EDTE 221L	Elementary Field Experience	0	{}		EDTE	\N
-EDTE 221S	Sec Diff Instruct & Assess	0	{}		EDTE	\N
-EDTE 241	Teaching in the Middle School	0	{}		EDTE	\N
-EDTE 302	Advocacy and Policy	0	{}		EDTE	\N
-EDTE 304	Concepts in Science	0	{}		EDTE	\N
-EDTE 315E	Classroom Assessmnt Elem Tchrs	0	{}		EDTE	\N
-EDTE 321	Soc Emo Lrn in Clsrm & Comm	0	{}		EDTE	\N
-EDTE 331	Instruct Meth:Rdg/Wrtg/Comm II	0	{}		EDTE	\N
-EDTE 331L	Field Experience	0	{}		EDTE	\N
-EDTE 390	Intercultural Competence Devel	0	{}		EDTE	\N
-EDTE 400	Elementary Methods: Music	0	{}		EDTE	\N
-EDTE 401	Elem Methods: Math	0	{}		EDTE	\N
-EDTE 401L	Field Experience	0	{}		EDTE	\N
-EDTE 402	Elementary Methods:Social Stdy	0	{}		EDTE	\N
-EDTE 403	Elementary Methods: Art	0	{}		EDTE	\N
-EDTE 432	CIS: Advocacy and Policy	0	{}		EDTE	\N
-EDTE 454E	Secondary Methods-English	0	{}		EDTE	\N
-EDTE 454F	Secondary Methods-Social Study	0	{}		EDTE	\N
-EDTE 454L	Field Experience - English	0	{}		EDTE	\N
-EDTE 454M	Secondary Methods-Math	0	{}		EDTE	\N
-EDTE 454S	Secondary Methods-Science	0	{}		EDTE	\N
-EDTE 454T	Secondary Methods-World Lang	0	{}		EDTE	\N
-EDTE 455L	Fld Exp:Additional Endorsement	0	{}		EDTE	\N
-EDTE 460E	Clasrm Mgt & Comm Elem	0	{}		EDTE	\N
-EDTE 460S	Classroom Management Secondary	0	{}		EDTE	\N
-EDTE 462	Child and Adol Literature	0	{}		EDTE	\N
-EDTE 464	Practicum-Reading	0	{}		EDTE	\N
-EDTE 466	Literacy for Engl Lang Learner	0	{}		EDTE	\N
-EDTE 490	5 Themes in Geography	0	{}		EDTE	\N
-EDTE 494	Special Project: Internship	0	{}		EDTE	\N
-EDTE 495	Student Teaching Prof Seminar	0	{}		EDTE	\N
-EDTE 496E	Elementary Student Teaching	0	{}		EDTE	\N
-EDTE 496S	Secondary Student Teaching	0	{}		EDTE	\N
-EDTE 505	Field Experience I -Elementary	0	{}		EDTE	\N
-EDTE 506	Field Experience II-Elementary	0	{}		EDTE	\N
-EDTE 507	Elem Field Experience III	0	{}		EDTE	\N
-EDTE 509	Mathematics Methods	0	{}		EDTE	\N
-EDTE 518	Discipline Specific Literacy	0	{}		EDTE	\N
-EDTE 540	Fndn of Reading and Language	0	{}		EDTE	\N
-EDTE 554E	Secondary Methods-English	0	{}		EDTE	\N
-EDTE 554F	SecondaryMethods-SocialStudies	0	{}		EDTE	\N
-EDTE 554M	Secondary Methods-Math	0	{}		EDTE	\N
-EDTE 554S	Secondary Methods-Science	0	{}		EDTE	\N
-EDTE 554T	Secondary Methods-World Lang	0	{}		EDTE	\N
-EDTE 555E	Clssrm Env:El Mgmt, Proc & Rtn	0	{}		EDTE	\N
-EDTE 555S	Clssrm Env:Sec Mgmt, Proc &Rtn	0	{}		EDTE	\N
-EDTE 562	Child and Adol Literature	0	{}		EDTE	\N
-EDTE 564	Practicum Reading	0	{}		EDTE	\N
-EDTE 566	Literacy & Engl Lang Learner	0	{}		EDTE	\N
-EDTE 590	5 Themes in Geography	0	{}		EDTE	\N
-EDTE 632	Ed Rsrch & Assess - Elementary	0	{}		EDTE	\N
-EDTE 696A	Student Teaching - Elementary	0	{}		EDTE	\N
-EDTE 696B	Student Teaching - Secondary	0	{}		EDTE	\N
-EENG 201	Circuit Analysis I	0	{}		EENG	\N
-EENG 201L	Circuit Analysis I Lab	0	{}		EENG	\N
-EENG 301	Electro Fields and Materials	0	{}		EENG	\N
-EENG 303	Electronics Design I	0	{}		EENG	\N
-EENG 303L	Electronics Design I Lab	0	{}		EENG	\N
-EENG 311	Signals and Systems	0	{}		EENG	\N
-EENG 411	Intro to Control Systems	0	{}		EENG	\N
-EENG 421	Intro Communication Systems	0	{}		EENG	\N
-EENG 424	Digital Signal Processing	0	{}		EENG	\N
-EENG 425	Communication-Control Lab	0	{}		EENG	\N
-EENG 427	Wireless Systems	0	{}		EENG	\N
-EENG 441	Analysis of Power Systems	0	{}		EENG	\N
-ELCT 026	Basic Listening and Speaking	0	{}		ELCT	\N
-ELCT 028	Basic Grammar Support	0	{}		ELCT	\N
-ELCT 029	Basic Reading & Writing	0	{}		ELCT	\N
-ELCT 036	Intermediate Oral Comm	0	{}		ELCT	\N
-ELCT 038	Intermediate Grammar Support	0	{}		ELCT	\N
-ELCT 039	Inter Reading & Writing	0	{}		ELCT	\N
-ELCT 045	Advanced Writing	0	{}		ELCT	\N
-ELCT 046	Advanced Oral Comm	0	{}		ELCT	\N
-ELCT 048	Advanced Grammar Support	0	{}		ELCT	\N
-ELCT 049	Advanced Reading & Writing	0	{}		ELCT	\N
-ELCT 109	Academic Seminar	0	{}		ELCT	\N
-ELCT 110	Communication Seminar	0	{}		ELCT	\N
-ELCT 121	Multilingual Student Writing	0	{}		ELCT	\N
-ELCT 180	Spec Top: Live Learn & Grow I	0	{}		ELCT	\N
-ENGL 101	Writing	0	{}		ENGL	\N
-ENGL 102	Intro to Literature	0	{}		ENGL	\N
-ENGL 105	Disability in Literature	0	{}		ENGL	\N
-ENGL 106	Re-Imagining Africa	0	{}		ENGL	\N
-ENGL 193	FYS: Beyond the Photo	0	{}		ENGL	\N
-ENGL 201	Studies in Poetry	0	{}		ENGL	\N
-ENGL 202	Studies in Fiction: Sci Fi	0	{}		ENGL	\N
-ENGL 220	British Literature Survey II	0	{}		ENGL	\N
-ENGL 230	Survey of American Literature	0	{}		ENGL	\N
-ENGL 271	African American Cinema	0	{}		ENGL	\N
-ENGL 301	Poetry Writing	0	{}		ENGL	\N
-ENGL 302	Fiction Writing	0	{}		ENGL	\N
-ENGL 305	The Writing Traveler	0	{}		ENGL	\N
-ENGL 306	Global Englishes	0	{}		ENGL	\N
-ENGL 310	American Literature I	0	{}		ENGL	\N
-ENGL 340	The Romantic Age	0	{}		ENGL	\N
-ENGL 394	Breaking Bad	0	{}		ENGL	\N
-ENGL 395	The Teaching of Writing	0	{}		ENGL	\N
-ENGL 403	Adv Creative Nonfict Writing	0	{}		ENGL	\N
-ENGL 420	Beowulf: In-Laws and Outlaws	0	{}		ENGL	\N
-ENGL 432	CIS:Cultiv Chng: Ment 21 C CEL	0	{}		ENGL	\N
-ENGL 460	Auth/Text Prod Early Mod Women	0	{}		ENGL	\N
-ENGL 474	The Great War in British Lit	0	{}		ENGL	\N
-ENGL 495	Senior Seminar: The Frontier	0	{}		ENGL	\N
-ENGL 496	Writing Senior Project	0	{}		ENGL	\N
-ENGL 499	Senior Project	0	{}		ENGL	\N
-ENSC 191	First Year Seminar	0	{}		ENSC	\N
-ENSC 205	Statics	0	{}		ENSC	\N
-ENSC 244	Computer Methods for Engineers	0	{}		ENSC	\N
-ENSC 301	Mechanics of Materials I	0	{}		ENSC	\N
-ENSC 352	Fluid Mechanics	0	{}		ENSC	\N
-ENSC 371	Advanced Engineering Math	0	{}		ENSC	\N
-ENSC 405	Engineering Project Management	0	{}		ENSC	\N
-ENSC 491	Senior Design Project I	0	{}		ENSC	\N
-ENTR 201	Idea to Solution	0	{}		ENTR	\N
-ENTR 301	Strategic Leadership	0	{}		ENTR	\N
-ENTR 401	Senior Incubation	0	{}		ENTR	\N
-ENTR 497	Internship	0	{}		ENTR	\N
-ENVS 101	Intro to Environmental Studies	0	{}		ENVS	\N
-ENVS 102	Environmental Politics &Policy	0	{}		ENVS	\N
-ENVS 103	Environmental Biology	0	{}		ENVS	\N
-ENVS 103L	Environmental Biology Lab	0	{}		ENVS	\N
-ENVS 110	Earth Science	0	{}		ENVS	\N
-ENVS 110L	Earth Science Lab	0	{}		ENVS	\N
-ENVS 193	FYS: Digital Ecology	0	{}		ENVS	\N
-ENVS 200	Case Studies in Env Science	0	{}		ENVS	\N
-ENVS 320	Econ of Enviromental Protectn	0	{}		ENVS	\N
-ENVS 324	Climate Change Sci. & Politics	0	{}		ENVS	\N
-ENVS 343	African Environmental History	0	{}		ENVS	\N
-ENVS 358	Environmental Ethics	0	{}		ENVS	\N
-ENVS 397	Environmental Justice	0	{}		ENVS	\N
-ENVS 398	Env Advocacy & Organizing CEL	0	{}		ENVS	\N
-ENVS 399	Sustainable Systems	0	{}		ENVS	\N
-ENVS 404	Principles of Wildlife Mgmt	0	{}		ENVS	\N
-ENVS 404L	Wildlife Management Lab	0	{}		ENVS	\N
-ENVS 490	Symposium in Env Studies (CEL)	0	{}		ENVS	\N
-ENVS 497	Internship	0	{}		ENVS	\N
-ENVS 499A	Symposium in Env Studies(CEL)	0	{}		ENVS	\N
-FILM 202	African American Cinema	0	{}		FILM	\N
-FILM 301	Comparative European Politics	0	{}		FILM	\N
-FILM 302	Breaking Bad	0	{}		FILM	\N
-FILM 303	Acting I	0	{}		FILM	\N
-FILM 304	Bible and Film	0	{}		FILM	\N
-FREN 101	Elementary French I	0	{}		FREN	\N
-FREN 201	Intermediate French I	0	{}		FREN	\N
-FREN 300	Advanced Grammar Review	0	{}		FREN	\N
-FREN 380	Francophone Lit and Culture	0	{}		FREN	\N
-FREN 390	Defining Existentialism	0	{}		FREN	\N
-FREN 499	French Comprehensive	0	{}		FREN	\N
-GERM 101	Elementary German I	0	{}		GERM	\N
-GERM 201	Intermediate German I	0	{}		GERM	\N
-GERM 301	Advanced German	0	{}		GERM	\N
-GREK 101	Greek I	0	{}		GREK	\N
-GREK 290	Attic & Koine Greek Plato & NT	0	{}		GREK	\N
-GREK 390	Greek Fairy Tales	0	{}		GREK	\N
-HEAL 304	Feminism and Science	0	{}		HEAL	\N
-HEAL 376	Christian Sexual Ethics	0	{}		HEAL	\N
-HEAL 475	Organizing for Health Equity	0	{}		HEAL	\N
-HIST 101	Foundations of the West	0	{}		HIST	\N
-HIST 102	The West and the World	0	{}		HIST	\N
-HIST 112	World History	0	{}		HIST	\N
-HIST 195	Russia and the World	0	{}		HIST	\N
-HIST 201	History of the US I	0	{}		HIST	\N
-HIST 202	History of the US II	0	{}		HIST	\N
-HIST 300	Historical Methods	0	{}		HIST	\N
-HIST 304	Alexander Grt and Hellen Wrld	0	{}		HIST	\N
-HIST 312	Renaissance Europe	0	{}		HIST	\N
-HIST 321	Irish History Since 1500	0	{}		HIST	\N
-HIST 334	Russia & USSR Since 1945	0	{}		HIST	\N
-HIST 336	History of Food	0	{}		HIST	\N
-HIST 345	African Environmental History	0	{}		HIST	\N
-HIST 360	Pacific Northwest History	0	{}		HIST	\N
-HIST 363	Women in United States History	0	{}		HIST	\N
-HIST 390	Hist Plays:Fact, Fiction&Story	0	{}		HIST	\N
-HIST 391	Etruscans and Romans	0	{}		HIST	\N
-HIST 400	Senior Thesis - Seminar	0	{}		HIST	\N
-HIST 432	CIS: US Soc Pol &Cul 1980-2040	0	{}		HIST	\N
-HIST 497	Internship Foley Library	0	{}		HIST	\N
-HONS 100	Multi-modal Communications	0	{}		HONS	\N
-HONS 104	SI: Mountain Science	0	{}		HONS	\N
-HONS 104L	SI: Mountain Science	0	{}		HONS	\N
-HONS 107	Intro to Environmental Studies	0	{}		HONS	\N
-HONS 193	Honors First Year Seminar CEL	0	{}		HONS	\N
-HONS 201	Honors Human Nature	0	{}		HONS	\N
-HONS 217	Excursions in Math	0	{}		HONS	\N
-HONS 219	Introduction to Data Science	0	{}		HONS	\N
-HONS 220	Bible and Film	0	{}		HONS	\N
-HONS 221	Religion and Violence	0	{}		HONS	\N
-HONS 237	Intro Solidarity & Soc Justice	0	{}		HONS	\N
-HONS 243	Asian&PacificIslanderAmerHist	0	{}		HONS	\N
-HONS 267	Photographic Art	0	{}		HONS	\N
-HONS 287	Re-Imagining Africa	0	{}		HONS	\N
-HONS 290	Wealth Inequality	0	{}		HONS	\N
-HONS 301	Honors Ethics	0	{}		HONS	\N
-HONS 310	Research & Info Management	0	{}		HONS	\N
-HONS 390	HonorsColloquium:ClimateChange	0	{}		HONS	\N
-HONS 455	Health Care Ethics Honors	0	{}		HONS	\N
-HONS 457	System Dynamics and Control	0	{}		HONS	\N
-HONS 499	Honors Senior Project	0	{}		HONS	\N
-HPHY 205	Experimental Design & Stats	0	{}		HPHY	\N
-HPHY 241	Human Anatomy & Physiology	0	{}		HPHY	\N
-HPHY 241L	Human Anatomy & Physiology Lab	0	{}		HPHY	\N
-HPHY 304	Practice in Lab Teaching	0	{}		HPHY	\N
-HPHY 375	Biomechanics	0	{}		HPHY	\N
-HPHY 375L	Biomechanics Lab	0	{}		HPHY	\N
-HPHY 376	Exercise Physiology	0	{}		HPHY	\N
-HPHY 376L	Exercise Physiology Lab	0	{}		HPHY	\N
-HPHY 442L	Guided Research	0	{}		HPHY	\N
-HPHY 452	Neuromuscular Control	0	{}		HPHY	\N
-HPHY 479	Cell & Molecular Physiology	0	{}		HPHY	\N
-HPHY 489	Illicit Perf Enhance in Sport	0	{}		HPHY	\N
-HPHY 497	Senior Teaching Assistant	0	{}		HPHY	\N
-INMD 101	Media Literacy	0	{}		INMD	\N
-INMD 193	FYS: Resonate Fearlessly	0	{}		INMD	\N
-INMD 360	Media Law	0	{}		INMD	\N
-INST 302	Seminar: Imagining Colombia	0	{}		INST	\N
-INST 305	Religion and Violence	0	{}		INST	\N
-INST 325	Post-Soviet Russia and China	0	{}		INST	\N
-INST 333	Buddhism	0	{}		INST	\N
-INST 334	Russia & USSR Since 1945	0	{}		INST	\N
-INST 341	African Environmental History	0	{}		INST	\N
-INST 345	International Law	0	{}		INST	\N
-INST 368	Islamic Civilization	0	{}		INST	\N
-INST 393	New Europe	0	{}		INST	\N
-INST 395	Comparative European Politics	0	{}		INST	\N
-INST 432	CIS: NGOs and Intl Development	0	{}		INST	\N
-INST 480	Global Issues & Global Orders	0	{}		INST	\N
-ITAL 101	Elementary Italian I	0	{}		ITAL	\N
-ITAL 101L	Elementary Italian I Lab	0	{}		ITAL	\N
-ITAL 102	Elementary Italian II	0	{}		ITAL	\N
-ITAL 102L	Elementary Italian II Lab	0	{}		ITAL	\N
-ITAL 201	Intermediate Italian I	0	{}		ITAL	\N
-ITAL 301	Advanced Italian I	0	{}		ITAL	\N
-ITAL 313	The World of Dante	0	{}		ITAL	\N
-JOUR 110	Journalistic Writing	0	{}		JOUR	\N
-JOUR 210	Civic Journalism	0	{}		JOUR	\N
-JOUR 220	Student Media Writing Lab	0	{}		JOUR	\N
-JOUR 230	Student Media Editing Lab	0	{}		JOUR	\N
-JOUR 270	Photojournalism	0	{}		JOUR	\N
-JOUR 370	Emerging Media	0	{}		JOUR	\N
-JOUR 410	Sports Media	0	{}		JOUR	\N
-JOUR 420	Literary Journalism	0	{}		JOUR	\N
-JOUR 440	Seminar: Media & Democracy	0	{}		JOUR	\N
-JOUR 490	Capstone	0	{}		JOUR	\N
-JOUR 497	Internships	0	{}		JOUR	\N
-JOUR 499	Capstone Project	0	{}		JOUR	\N
-JPNE 101	Elementary Japanese I	0	{}		JPNE	\N
-JPNE 201	Intermediate Japanese I	0	{}		JPNE	\N
-LATN 101	Latin I	0	{}		LATN	\N
-LATN 201	Latin III	0	{}		LATN	\N
-LATN 301	Republican Latin Prose	0	{}		LATN	\N
-LDRS 315	Theories of Leadership & Org	0	{}		LDRS	\N
-LDRS 375	Leading Across Cultures	0	{}		LDRS	\N
-LDRS 390	Outdoor Leadership	0	{}		LDRS	\N
-LDRS 450	Contemp Issues in Leadership	0	{}		LDRS	\N
-LDRS 489	Act Six Leadership	0	{}		LDRS	\N
-MACC 560	Intermediate Accounting I	0	{}		MACC	\N
-MACC 565	Federal Taxation I	0	{}		MACC	\N
-MACC 600	Orientation	0	{}		MACC	\N
-MACC 601	Power Query/Power Pivot	0	{}		MACC	\N
-MACC 602	Cmpter Programming for Accnt'g	0	{}		MACC	\N
-MACC 603	Financial Acct for IncomeTaxes	0	{}		MACC	\N
-MACC 611	Audit Analytics	0	{}		MACC	\N
-MACC 660	Advanced Financial Accounting	0	{}		MACC	\N
-MACC 663	Accounting Theory	0	{}		MACC	\N
-MACC 664	Professional Ethics	0	{}		MACC	\N
-MACC 665	Audit Research & Practice	0	{}		MACC	\N
-MACC 670	Fraud and Forensic Examination	0	{}		MACC	\N
-MACC 671	Forensic Accounting Lab	0	{}		MACC	\N
-MACC 677	Sustainability Accounting I	0	{}		MACC	\N
-MACC 697	Internship	0	{}		MACC	\N
-MATH 100	College Algebra	0	{}		MATH	\N
-MATH 103	Excursions in Mathematics	0	{}		MATH	\N
-MATH 104	Elements of Algebra & Stats	0	{}		MATH	\N
-MATH 114	Mathematical Analysis-Business	0	{}		MATH	\N
-MATH 121	Introductory Statistics	0	{}		MATH	\N
-MATH 147	Precalculus	0	{}		MATH	\N
-MATH 148	Survey of Calculus	0	{}		MATH	\N
-MATH 157	Calculus-Analytic Geometry I	0	{}		MATH	\N
-MATH 180	Algebraic Foundations of Calc	0	{}		MATH	\N
-MATH 221	Applied Statistics	0	{}		MATH	\N
-MATH 231	Discrete Structures	0	{}		MATH	\N
-MATH 258	Calculus-Analytic Geometry II	0	{}		MATH	\N
-MATH 259	Calculus-Analytic Geometry III	0	{}		MATH	\N
-MATH 260	Ordinary Differential Equation	0	{}		MATH	\N
-MATH 301	Fundamentals of Mathematics	0	{}		MATH	\N
-MATH 321	Statistics for Experimentalist	0	{}		MATH	\N
-MATH 339	Linear Algebra	0	{}		MATH	\N
-MATH 341	Modern Geometry	0	{}		MATH	\N
-MATH 350	Numerical Methods	0	{}		MATH	\N
-MATH 413	Real Analysis I	0	{}		MATH	\N
-MATH 421	Probability Theory	0	{}		MATH	\N
-MATH 425	Applied Statistical Models	0	{}		MATH	\N
-MATH 457	Number Theory & Cryptography	0	{}		MATH	\N
-MATH 462	Nonlinear Systems and Chaos	0	{}		MATH	\N
-MATH 490	Topics in Graph Searching	0	{}		MATH	\N
-MATH 496	Comprehensive - Applied Math	0	{}		MATH	\N
-MATH 498A	Thesis I	0	{}		MATH	\N
-MATH 498B	Thesis II	0	{}		MATH	\N
-MATH 499	Comprehensive - Math	0	{}		MATH	\N
-MBUS 520	Financial Management	0	{}		MBUS	\N
-MBUS 560	Accounting Analysis	0	{}		MBUS	\N
-MBUS 600	Orientation	0	{}		MBUS	\N
-MBUS 610	Econ Environment of the Firm	0	{}		MBUS	\N
-MBUS 612	Managing People & Performance	0	{}		MBUS	\N
-MBUS 613	Quantitative & Stats Analysis	0	{}		MBUS	\N
-MBUS 614	Business Ethics	0	{}		MBUS	\N
-MBUS 616	Strategic Management	0	{}		MBUS	\N
-MBUS 624	Finance Theory and Practice	0	{}		MBUS	\N
-MBUS 625	Operations Theory and Practice	0	{}		MBUS	\N
-MBUS 626	Info Systems Theory and Pract	0	{}		MBUS	\N
-MBUS 627	Marketing Theory and Practice	0	{}		MBUS	\N
-MBUS 628	Managerial Accounting	0	{}		MBUS	\N
-MBUS 629	Corporate Financial Reporting	0	{}		MBUS	\N
-MBUS 631	Communications Management	0	{}		MBUS	\N
-MBUS 633	Team Building Intensive	0	{}		MBUS	\N
-MBUS 647T	Entrepreneurship	0	{}		MBUS	\N
-MBUS 670	Foundations of Project Mgmt	0	{}		MBUS	\N
-MBUS 672	Decision Making for Managers	0	{}		MBUS	\N
-MBUS 675	Quality Management	0	{}		MBUS	\N
-MBUS 683	Current Issues in Ethics	0	{}		MBUS	\N
-MBUS 684	Current Issues in Marketing	0	{}		MBUS	\N
-MBUS 686	Current Iss in Management	0	{}		MBUS	\N
-MBUS 689	Fin Modeling & Data Analytics	0	{}		MBUS	\N
-MBUS 691	Directed Study	0	{}		MBUS	\N
-MBUS 697	Internship	0	{}		MBUS	\N
-MBUS 699	Introduction to Real Estate	0	{}		MBUS	\N
-MDLA 190	Elementary Tagalog I	0	{}		MDLA	\N
-MDLA 193	FYS: Imagining Colombia	0	{}		MDLA	\N
-MENG 221	Materials Engineering	0	{}		MENG	\N
-MENG 291	Intro to Mech Eng Design	0	{}		MENG	\N
-MENG 291L	Intro to Mech Eng Design Lab	0	{}		MENG	\N
-MENG 301	Manufacturing Processes	0	{}		MENG	\N
-MENG 301L	Manufacturing Processes Lab	0	{}		MENG	\N
-MENG 321	Thermodynamics I	0	{}		MENG	\N
-MENG 411	Instrumentation Systems	0	{}		MENG	\N
-MENG 411L	Instrumentation Systems Lab	0	{}		MENG	\N
-MENG 434	Vibration Engineering	0	{}		MENG	\N
-MENG 445	Heating Vent and Air Condition	0	{}		MENG	\N
-MENG 461	System Dynamics and Control	0	{}		MENG	\N
-MENG 477	Material Selec for Des (EMgmt)	0	{}		MENG	\N
-MGMT 350	Principles of Management	0	{}		MGMT	\N
-MGMT 355	International Management	0	{}		MGMT	\N
-MGMT 400	Recruitment and Selection	0	{}		MGMT	\N
-MGMT 405	Comp & Performance Appraisal	0	{}		MGMT	\N
-MILS 101	Intro to Army & Critical Think	0	{}		MILS	\N
-MILS 101L	Leadership Laboratory	0	{}		MILS	\N
-MILS 103	Military Physical Fitness Prog	0	{}		MILS	\N
-MILS 190	Directed Reading	0	{}		MILS	\N
-MILS 201	Leadership & Decision Making	0	{}		MILS	\N
-MILS 201L	Leadership Lab	0	{}		MILS	\N
-MILS 203	Mil Phys Fitness Program	0	{}		MILS	\N
-MILS 300	Ranger Challenge	0	{}		MILS	\N
-MILS 301	Train Mgmt & Warfight Function	0	{}		MILS	\N
-MILS 301L	Leadership Laboratory	0	{}		MILS	\N
-MILS 303	Military Phys Fitness Program	0	{}		MILS	\N
-MILS 310	U.S. Military History	0	{}		MILS	\N
-MILS 395	Advanced Camp	0	{}		MILS	\N
-MILS 401	The Army Officer	0	{}		MILS	\N
-MILS 401L	Leadership Laboratory	0	{}		MILS	\N
-MILS 403	Mil Physical Fitness Program	0	{}		MILS	\N
-MKTG 310	Principles of Marketing	0	{}		MKTG	\N
-MKTG 315	Consumer Behavior	0	{}		MKTG	\N
-MKTG 318	Social Media Marketing	0	{}		MKTG	\N
-MKTG 330	Marketing Research	0	{}		MKTG	\N
-MKTG 342	Graphic Design	0	{}		MKTG	\N
-MKTG 402	Marketing Communications	0	{}		MKTG	\N
-MKTG 410	Digital Marketing	0	{}		MKTG	\N
-MKTG 417	International Marketing	0	{}		MKTG	\N
-MKTG 419	Marketing Strategies	0	{}		MKTG	\N
-MKTG 489	Content Marketing	0	{}		MKTG	\N
-MTAX 603	Financial Acct for IncomeTaxes	0	{}		MTAX	\N
-MTAX 604	C Corporation Taxation	0	{}		MTAX	\N
-MTAX 608	State & Local Taxation	0	{}		MTAX	\N
-MTAX 610	International Taxation	0	{}		MTAX	\N
-MTAX 614	S Corporation Taxation	0	{}		MTAX	\N
-MTAX 667	Tax Research & Practice	0	{}		MTAX	\N
-MTAX 697	Internship	0	{}		MTAX	\N
-MTSL 304	Immigrant & Refugee Persp CEL	0	{}		MTSL	\N
-MTSL 404	Intro to Sociolinguistics	0	{}		MTSL	\N
-MTSL 414	Literacy & Engl Lang Learner	0	{}		MTSL	\N
-MTSL 450	Language Awareness	0	{}		MTSL	\N
-MTSL 480	TESOL Field Experience	0	{}		MTSL	\N
-MTSL 490	TESOL Practicum	0	{}		MTSL	\N
-MTSL 502	Pedagogical Grammar	0	{}		MTSL	\N
-MTSL 503	Immigrant & Refugee Persp CEL	0	{}		MTSL	\N
-MTSL 504	Intro to Sociolinguistics	0	{}		MTSL	\N
-MTSL 509	Academic Writing Grad Students	0	{}		MTSL	\N
-MTSL 514	Literacy & Engl Lang Learner	0	{}		MTSL	\N
-MTSL 550	Language Awareness	0	{}		MTSL	\N
-MTSL 602	Thesis	0	{}		MTSL	\N
-MTSL 604	Master's Portfolio	0	{}		MTSL	\N
-MTSL 610	Practicum in TESL	0	{}		MTSL	\N
-MTSL 611	Continuing Research	0	{}		MTSL	\N
-MTSL 680	Professional Seminar	0	{}		MTSL	\N
-MTSL 690	TESOL Field Practicum	0	{}		MTSL	\N
-MUSC 120	Intro to Music Technology	0	{}		MUSC	\N
-MUSC 121	Piano Class I	0	{}		MUSC	\N
-MUSC 123	Guitar Class I	0	{}		MUSC	\N
-MUSC 125	Group Voice Class	0	{}		MUSC	\N
-MUSC 130	Piano Proficiency Class	0	{}		MUSC	\N
-MUSC 131A	Applied Piano	0	{}		MUSC	\N
-MUSC 131B	Applied Organ/Harpsichord	0	{}		MUSC	\N
-MUSC 131C	Applied Voice	0	{}		MUSC	\N
-MUSC 131D	Applied Violin	0	{}		MUSC	\N
-MUSC 131E	Applied Cello	0	{}		MUSC	\N
-MUSC 131G	Applied Guitar	0	{}		MUSC	\N
-MUSC 131H	Applied String Bass	0	{}		MUSC	\N
-MUSC 131I	Applied Clarinet	0	{}		MUSC	\N
-MUSC 131J	Applied Saxophone	0	{}		MUSC	\N
-MUSC 131K	Applied Flute	0	{}		MUSC	\N
-MUSC 131L	Applied Trumpet	0	{}		MUSC	\N
-MUSC 131M	Applied Low Brass	0	{}		MUSC	\N
-MUSC 131N	Applied Percussion	0	{}		MUSC	\N
-MUSC 131O	Applied Jazz Piano	0	{}		MUSC	\N
-MUSC 131P	Applied Bassoon	0	{}		MUSC	\N
-MUSC 131Q	Applied French Horn	0	{}		MUSC	\N
-MUSC 131R	Applied Jazz Improvisation	0	{}		MUSC	\N
-MUSC 131T	Applied Conducting	0	{}		MUSC	\N
-MUSC 131U	Applied Jazz Bass	0	{}		MUSC	\N
-MUSC 131W	Applied Viola	0	{}		MUSC	\N
-MUSC 131X	Applied Jazz Guitar	0	{}		MUSC	\N
-MUSC 131Y	Applied Jazz Voice	0	{}		MUSC	\N
-MUSC 131Z	Applied Jazz Drum Set	0	{}		MUSC	\N
-MUSC 132A	Applied Composition	0	{}		MUSC	\N
-MUSC 135	Strings Techniques	0	{}		MUSC	\N
-MUSC 140	Concert Choir	0	{}		MUSC	\N
-MUSC 143	Chamber Singers	0	{}		MUSC	\N
-MUSC 144	Gonzaga Glee Club	0	{}		MUSC	\N
-MUSC 145	Discantus Treble Chorus	0	{}		MUSC	\N
-MUSC 146	Wind Ensemble	0	{}		MUSC	\N
-MUSC 147	Symphony Orchestra	0	{}		MUSC	\N
-MUSC 148	Chamber Ensemble	0	{}		MUSC	\N
-MUSC 149	Jazz Workshop Combo	0	{}		MUSC	\N
-MUSC 150	Guitar Ensemble	0	{}		MUSC	\N
-MUSC 151	Wind Symphony	0	{}		MUSC	\N
-MUSC 152	Gonzaga Jazz Ensemble	0	{}		MUSC	\N
-MUSC 156	Gonzaga Drum Line	0	{}		MUSC	\N
-MUSC 157	Liturgical Music Ensemble	0	{}		MUSC	\N
-MUSC 161	Music Theory I	0	{}		MUSC	\N
-MUSC 161L	Theory I Ear Training Lab	0	{}		MUSC	\N
-MUSC 171	Music in the Humanities	0	{}		MUSC	\N
-MUSC 175	Jazz History	0	{}		MUSC	\N
-MUSC 185	Trends in Contemporary Music	0	{}		MUSC	\N
-MUSC 193	FYS: Social Justice and Music	0	{}		MUSC	\N
-MUSC 211	Conducting	0	{}		MUSC	\N
-MUSC 231	Vocal Diction I	0	{}		MUSC	\N
-MUSC 241	Upper Division Applied Exam	0	{}		MUSC	\N
-MUSC 257	Creative Music Lab Ensemble	0	{}		MUSC	\N
-MUSC 261	Music Theory III	0	{}		MUSC	\N
-MUSC 261L	Theory III Ear Training Lab	0	{}		MUSC	\N
-MUSC 320	Vocal Pedagogy	0	{}		MUSC	\N
-MUSC 325	Half Recital	0	{}		MUSC	\N
-MUSC 331C	Applied Voice	0	{}		MUSC	\N
-MUSC 331H	Applied String Bass	0	{}		MUSC	\N
-MUSC 331L	Applied Trumpet	0	{}		MUSC	\N
-MUSC 331W	Applied Viola	0	{}		MUSC	\N
-MUSC 332	Choral Conducting Lab	0	{}		MUSC	\N
-MUSC 391	Music History I	0	{}		MUSC	\N
-MUSC 453	General Music Ed Methods	0	{}		MUSC	\N
-MUSC 453L	General Music Ed Methods Lab	0	{}		MUSC	\N
-MUSC 480	Music History Seminar	0	{}		MUSC	\N
-NTAS 322	Native American Religions	0	{}		NTAS	\N
-NTAS 390	Hist Plays:Fact, Fiction&Story	0	{}		NTAS	\N
-NURS 100	Nursing Perspectives	0	{}		NURS	\N
-NURS 210	Growth and Development	0	{}		NURS	\N
-NURS 251	Determinants of Health	0	{}		NURS	\N
-NURS 311	Prof & Therapeutic Comm	0	{}		NURS	\N
-NURS 314	Assessing & Promoting Wellness	0	{}		NURS	\N
-NURS 315	Pract I:Assess/Promo Well CEL	0	{}		NURS	\N
-NURS 316	Pathophy & Pharmacology I	0	{}		NURS	\N
-NURS 320	Stats for Health Professions	0	{}		NURS	\N
-NURS 351	Care of Individual & Family	0	{}		NURS	\N
-NURS 352	Pract II:Care Indiv&Family CEL	0	{}		NURS	\N
-NURS 356	Pathophy & Pharmacology II	0	{}		NURS	\N
-NURS 402	Care of Individuals & Families	0	{}		NURS	\N
-NURS 403	PractIII:Acu/Chron Alt Hlt CEL	0	{}		NURS	\N
-NURS 404	Research & Info Management	0	{}		NURS	\N
-NURS 406	Nursing Research	0	{}		NURS	\N
-NURS 418	Complexity in HlthCare Org	0	{}		NURS	\N
-NURS 465	Prof Nurs Prc Complex Adpt Sys	0	{}		NURS	\N
-NURS 466	Population Focused Health	0	{}		NURS	\N
-NURS 467	PracIV:Part Pop Hlth Pract CEL	0	{}		NURS	\N
-NURS 468	Prac V:Member of Nurs Profess	0	{}		NURS	\N
-NURS 469	Nursing Leadership & Mgmt	0	{}		NURS	\N
-NURS 492	Clinical Update Level I	0	{}		NURS	\N
-NURS 523	Adv Pathophysiology	0	{}		NURS	\N
-NURS 524	Adv Pharmacology	0	{}		NURS	\N
-NURS 561	Info Tech & Data Mgmt	0	{}		NURS	\N
-NURS 562	Theor Fdn Hlthcare Improvement	0	{}		NURS	\N
-NURS 563	EBP for Quality & Safety	0	{}		NURS	\N
-NURS 564	Contemp Hlthcare Env	0	{}		NURS	\N
-NURS 565	Clin Prev for Diverse Pops	0	{}		NURS	\N
-NURS 600	Advanced Health Assessment	0	{}		NURS	\N
-NURS 601	Adv Health Assessment Pract I	0	{}		NURS	\N
-NURS 634A	Nursing Leadership Practicum	0	{}		NURS	\N
-NURS 644A	Business of Healthcare Mngmnt	0	{}		NURS	\N
-NURS 651P	Gender Based	0	{}		NURS	\N
-NURS 652M	PMH Nurse Concepts I	0	{}		NURS	\N
-NURS 652P	Infant, Child, Adolescence	0	{}		NURS	\N
-NURS 653M	PMH Nurse Concepts II	0	{}		NURS	\N
-NURS 653P	Adult/Gerontology I	0	{}		NURS	\N
-NURS 654P	Adult/Gerontology II	0	{}		NURS	\N
-NURS 661M	Psyc-Mntl Hlth Practicum I	0	{}		NURS	\N
-NURS 661P	PC: Gender-Based Practicum	0	{}		NURS	\N
-NURS 662M	Psyc-Mntl Hlth Practicum II	0	{}		NURS	\N
-NURS 662P	Infant, Child, Adoles Pract	0	{}		NURS	\N
-NURS 663P	Adult/Gerontology Pract I	0	{}		NURS	\N
-NURS 664P	Adult/Gerontology Pract II	0	{}		NURS	\N
-NURS 670	Psychopharmacology	0	{}		NURS	\N
-NURS 683A	Nursing Ldrshp Practicum Ext	0	{}		NURS	\N
-NURS 683M	Psyc-Mntl Hlth Pract Extension	0	{}		NURS	\N
-NURS 683P	Prim Care Pract Extension	0	{}		NURS	\N
-NURS 702	DNP Practicum II	0	{}		NURS	\N
-NURS 705	Introduction to the DNP Role	0	{}		NURS	\N
-NURS 711	Qual Imprmnt & Ldrshp in HC	0	{}		NURS	\N
-NURS 712	Translational Rsrch Adv Pract	0	{}		NURS	\N
-NURS 714	Theortcl Underpinning Adv Prct	0	{}		NURS	\N
-NURS 760	DNP Project Readiness	0	{}		NURS	\N
-NURS 762	DNP Project Seminar II	0	{}		NURS	\N
-OPER 340	Operations Management	0	{}		OPER	\N
-OPER 347	Lean Thinking	0	{}		OPER	\N
-OPER 348	Qlty Mgmt & Intrnl Standards	0	{}		OPER	\N
-OPER 440	Global Oper & Supply Chain Mgt	0	{}		OPER	\N
-ORGL 504	Organizational Communication	0	{}		ORGL	\N
-ORGL 506	Leadership and Diversity	0	{}		ORGL	\N
-ORGL 515	Leadership and Human Potential	0	{}		ORGL	\N
-ORGL 516	Relational Dynamics & Org Dev	0	{}		ORGL	\N
-ORGL 517	Organzl Change-Transformation	0	{}		ORGL	\N
-ORGL 518	Transforming Leadership	0	{}		ORGL	\N
-ORGL 520	Negotiation and Conflict Resln	0	{}		ORGL	\N
-ORGL 522	Ldrshp/Com-Empwrmt-Collbtn-Dia	0	{}		ORGL	\N
-ORGL 523	Psychology of Leadership	0	{}		ORGL	\N
-ORGL 530	Servant Leadership	0	{}		ORGL	\N
-ORGL 532	Ldrshp, Justice & Forgiveness	0	{}		ORGL	\N
-ORGL 535	Listen, Discern, Decide	0	{}		ORGL	\N
-ORGL 537	Foresight and Strategy	0	{}		ORGL	\N
-ORGL 550	Team Building & Leadership	0	{}		ORGL	\N
-ORGL 570	Introduction to Global Systems	0	{}		ORGL	\N
-ORGL 600	Foundations of Leadership	0	{}		ORGL	\N
-ORGL 605	Imagine, Create, Lead	0	{}		ORGL	\N
-ORGL 610	Comm & Leadership Ethics	0	{}		ORGL	\N
-ORGL 615	Org Theory & Behavior	0	{}		ORGL	\N
-ORGL 620	Leadership Seminar	0	{}		ORGL	\N
-ORGL 689	Leadership and Mindfulness	0	{}		ORGL	\N
-PHIL 101	Reasoning	0	{}		PHIL	\N
-PHIL 193	FYS: Strangers (CEL)	0	{}		PHIL	\N
-PHIL 201	Philosophy of Human Nature	0	{}		PHIL	\N
-PHIL 301	Ethics	0	{}		PHIL	\N
-PHIL 305	History of Ancient Philosophy	0	{}		PHIL	\N
-PHIL 402	Faith, Reason, and Knowledge	0	{}		PHIL	\N
-PHIL 418	Philosophy of Habit	0	{}		PHIL	\N
-PHIL 432	CIS: Phil of Technology	0	{}		PHIL	\N
-PHIL 437	Philosophy of Time	0	{}		PHIL	\N
-PHIL 442	Philosophy of Sex & Gender	0	{}		PHIL	\N
-PHIL 454	Existentialism	0	{}		PHIL	\N
-PHIL 455	Health Care Ethics	0	{}		PHIL	\N
-PHIL 458	Environmental Ethics	0	{}		PHIL	\N
-PHIL 462	Theories Solidarity & Soc Just	0	{}		PHIL	\N
-PHIL 478	Philosophy of Technology	0	{}		PHIL	\N
-PHIL 491	Science and Society	0	{}		PHIL	\N
-PHIL 493	Dorothy Day & Cath Worker Mvmt	0	{}		PHIL	\N
-PHIL 499	Senior Exit Requirement	0	{}		PHIL	\N
-PHIL 577	Leo Strauss & Political Phil	0	{}		PHIL	\N
-PHIL 579	Moral Respons & Free Will	0	{}		PHIL	\N
-PHIL 586	Philosophy of Habit	0	{}		PHIL	\N
-PHYS 101	General Physics I	0	{}		PHYS	\N
-PHYS 101L	General Physics I Lab	0	{}		PHYS	\N
-PHYS 103	Scientific Physics I	0	{}		PHYS	\N
-PHYS 103L	Scientific Physics I Lab	0	{}		PHYS	\N
-PHYS 104	SI: Physics Concepts	0	{}		PHYS	\N
-PHYS 204	Scientific Physics II	0	{}		PHYS	\N
-PHYS 204L	Scientific Physics II Lab	0	{}		PHYS	\N
-PHYS 208	Computational Physics	0	{}		PHYS	\N
-PHYS 300	Mathematical Methods	0	{}		PHYS	\N
-PHYS 306	Electricity and Magnetism	0	{}		PHYS	\N
-PHYS 390	Research Project	0	{}		PHYS	\N
-PHYS 402	Advanced Mechanics	0	{}		PHYS	\N
-PHYS 468	Solid State Physics	0	{}		PHYS	\N
-POLS 101	American Politics	0	{}		POLS	\N
-POLS 103	People & Politics World Wide	0	{}		POLS	\N
-POLS 104	International Politics	0	{}		POLS	\N
-POLS 319	American Foreign Policy	0	{}		POLS	\N
-POLS 321	Politics & Public Admin	0	{}		POLS	\N
-POLS 323	Constitutional Law:Inst Powers	0	{}		POLS	\N
-POLS 325	Education Politics	0	{}		POLS	\N
-POLS 330	Ruling Well:Plato-Machiavelli	0	{}		POLS	\N
-POLS 331	Modern Political Thought	0	{}		POLS	\N
-POLS 335	Marxism	0	{}		POLS	\N
-POLS 336	Mdrn:Thrs of theState,Eco,&Soc	0	{}		POLS	\N
-POLS 341	Feminist Thought	0	{}		POLS	\N
-POLS 354	Comparative European Politics	0	{}		POLS	\N
-POLS 355	Post-Soviet Russia and China	0	{}		POLS	\N
-POLS 357	Italian Political System	0	{}		POLS	\N
-POLS 359	Third World Development	0	{}		POLS	\N
-POLS 367	New Europe	0	{}		POLS	\N
-POLS 371	International Law	0	{}		POLS	\N
-POLS 372	Middle East Politics	0	{}		POLS	\N
-POLS 378	Climate Change Sci. & Politics	0	{}		POLS	\N
-POLS 432	CIS: All Art is Propaganda	0	{}		POLS	\N
-POLS 492	Urban Planning & Politics	0	{}		POLS	\N
-POLS 497	Superior Court Internship	0	{}		POLS	\N
-POLS 499	Comprehensive Exam Preparation	0	{}		POLS	\N
-PRLS 260	Public Relations Principles	0	{}		PRLS	\N
-PRLS 340	PR Speech Writing & Delivery	0	{}		PRLS	\N
-PRLS 360	Strategic Communications	0	{}		PRLS	\N
-PRLS 460	Public Relations Campaign	0	{}		PRLS	\N
-PRLS 470	PR Internship Course	0	{}		PRLS	\N
-PRLS 480	Public Relations Capstone	0	{}		PRLS	\N
-PRLS 497	Genesis Marketing Internship	0	{}		PRLS	\N
-PRLS 499	Thesis Conferencing	0	{}		PRLS	\N
-PSYC 101	General Psychology	0	{}		PSYC	\N
-PSYC 202	Statistics for Psychology	0	{}		PSYC	\N
-PSYC 206	Scientific Principles of Psych	0	{}		PSYC	\N
-PSYC 300	Biological Psychology	0	{}		PSYC	\N
-PSYC 305	Sensation and Perception	0	{}		PSYC	\N
-PSYC 310	Cognition	0	{}		PSYC	\N
-PSYC 315	Learning	0	{}		PSYC	\N
-PSYC 318	Cultural Psychology	0	{}		PSYC	\N
-PSYC 335	Social Psychology	0	{}		PSYC	\N
-PSYC 340	Personality	0	{}		PSYC	\N
-PSYC 345	Child Psychology CEL	0	{}		PSYC	\N
-PSYC 355	Psychology of Aging	0	{}		PSYC	\N
-PSYC 357	Lifespan Development	0	{}		PSYC	\N
-PSYC 376	Forensic Psych	0	{}		PSYC	\N
-PSYC 380	Industrial-Organizational Psyc	0	{}		PSYC	\N
-PSYC 390	Psychopathology	0	{}		PSYC	\N
-PSYC 395	Clinical Neuropsychology	0	{}		PSYC	\N
-PSYC 399	Sem:Clinical/Counseling Psyc	0	{}		PSYC	\N
-PSYC 416	Psychology of Gender	0	{}		PSYC	\N
-PSYC 449	Adv ST: Cognitive Neuroscience	0	{}		PSYC	\N
-PSYC 450	Advanced Statistics in Psych	0	{}		PSYC	\N
-PSYC 470	Behavior Analysis	0	{}		PSYC	\N
-PSYC 493	Group Research Topics	0	{}		PSYC	\N
-PSYC 494	Teaching Assistant	0	{}		PSYC	\N
-PSYC 496	Individual Research Topics	0	{}		PSYC	\N
-PSYC 497	Internship	0	{}		PSYC	\N
-PSYC 498	Comprehensive Alternate	0	{}		PSYC	\N
-PSYC 499	Comprehensive	0	{}		PSYC	\N
-RELI 101	Hebrew Bible	0	{}		RELI	\N
-RELI 107	Gospels: Life/Tch of Jesus	0	{}		RELI	\N
-RELI 193	FYS: Paranormal	0	{}		RELI	\N
-RELI 206	Hebrew Bible-Ancient Near East	0	{}		RELI	\N
-RELI 228	Catholicism	0	{}		RELI	\N
-RELI 229	Christian Diversity	0	{}		RELI	\N
-RELI 232	Global Christologies	0	{}		RELI	\N
-RELI 233	Christian Spirituality	0	{}		RELI	\N
-RELI 234	Feminism and Christianity	0	{}		RELI	\N
-RELI 235	Christian Mysticism	0	{}		RELI	\N
-RELI 252	African American Religions	0	{}		RELI	\N
-RELI 253	Islamic Civilization	0	{}		RELI	\N
-RELI 256	African Religious Traditions	0	{}		RELI	\N
-RELI 258	Christian-Muslim Relations	0	{}		RELI	\N
-RELI 264	Buddhism	0	{}		RELI	\N
-RELI 267	Early Christianity	0	{}		RELI	\N
-RELI 276	Principles of Christian Ethics	0	{}		RELI	\N
-RELI 286	Healing Creation	0	{}		RELI	\N
-RELI 302	Bible and Film	0	{}		RELI	\N
-RELI 326	Liturgy	0	{}		RELI	\N
-RELI 327	Christian Leadership CEL	0	{}		RELI	\N
-RELI 335	Faith, Justice, and The Church	0	{}		RELI	\N
-RELI 338	Discernment & Faith Traditions	0	{}		RELI	\N
-RELI 339	Ignatian Spirituality	0	{}		RELI	\N
-RELI 341	Christian Morality and Eating	0	{}		RELI	\N
-RELI 355	Islam in the Contemp World	0	{}		RELI	\N
-RELI 356	Native American Religions	0	{}		RELI	\N
-RELI 364	Asian Religions in Film	0	{}		RELI	\N
-RELI 366	Religion and Violence	0	{}		RELI	\N
-RELI 376	Christian Sexual Ethics	0	{}		RELI	\N
-RELI 387	Africa's New Religious Movmts	0	{}		RELI	\N
-RELI 399	Methodology	0	{}		RELI	\N
-RELI 499	Senior Thesis	0	{}		RELI	\N
-RELI 510	Hebrew Bible: Old Testament	0	{}		RELI	\N
-RELI 519	Christian Scriptures-New Test	0	{}		RELI	\N
-RELI 545	Church History	0	{}		RELI	\N
-SOCI 101	Introduction to Sociology	0	{}		SOCI	\N
-SOCI 202	Statistics for Social Science	0	{}		SOCI	\N
-SOCI 204	Research Methods	0	{}		SOCI	\N
-SOCI 244	Sex, Gender and Society	0	{}		SOCI	\N
-SOCI 283	Sociology of Health & Medicine	0	{}		SOCI	\N
-SOCI 290	Statistics for Soc Science TA	0	{}		SOCI	\N
-SOCI 312	Contemporary Social Theory	0	{}		SOCI	\N
-SOCI 323	Sociology of Race & Ethnicity	0	{}		SOCI	\N
-SOCI 337	Subcultures	0	{}		SOCI	\N
-SOCI 350	Deviant Behavior	0	{}		SOCI	\N
-SOCI 356	Sociology of Policing	0	{}		SOCI	\N
-SOCI 358	Mass Incarceration	0	{}		SOCI	\N
-SOCI 391	Social Issues in Film	0	{}		SOCI	\N
-SOCI 395	Captlsm, EnvntlJust&Resistance	0	{}		SOCI	\N
-SOCI 489	Seminar in Research and Theory	0	{}		SOCI	\N
-SOCI 499	Sociology Senior Capstone CEL	0	{}		SOCI	\N
-SOSJ 101	Intro Solidarity & Soc Justice	0	{}		SOSJ	\N
-SOSJ 160	Journalistic Writing	0	{}		SOSJ	\N
-SOSJ 220	Sex, Gender and Society	0	{}		SOSJ	\N
-SOSJ 221	Sociology of Health & Medicine	0	{}		SOSJ	\N
-SOSJ 260	Fundamentals of TV Production	0	{}		SOSJ	\N
-SOSJ 263	Analyzing Practices and Habits	0	{}		SOSJ	\N
-SOSJ 280	Justice in January CEL	0	{}		SOSJ	\N
-SOSJ 321	Sociology of Race & Ethnicity	0	{}		SOSJ	\N
-SOSJ 359	Captlsm, EnvntlJust&Resistance	0	{}		SOSJ	\N
-SOSJ 367	Emerging Media	0	{}		SOSJ	\N
-SOSJ 410	Theories Solidarity & Soc Just	0	{}		SOSJ	\N
-SOSJ 475	Organizing for Health Equity	0	{}		SOSJ	\N
-SOSJ 499	Solidarity & Soc Jus Praxis	0	{}		SOSJ	\N
-SPAN 102	Elementary Spanish II	0	{}		SPAN	\N
-SPAN 201	Intermediate Spanish I	0	{}		SPAN	\N
-SPAN 202	Intermediate Spanish II	0	{}		SPAN	\N
-SPAN 301	Advanced Spanish I	0	{}		SPAN	\N
-SPAN 318	Medical Spanish	0	{}		SPAN	\N
-SPAN 320	Advanced Spanish II	0	{}		SPAN	\N
-SPAN 322	Struggle for Modernity	0	{}		SPAN	\N
-SPAN 380	Latin American Short Story	0	{}		SPAN	\N
-SPAN 480	Seminar: Imagining Colombia	0	{}		SPAN	\N
-SPAN 499	Senior Capstone	0	{}		SPAN	\N
-TADP 500	Essential Fnd of Power Systems	0	{}		TADP	\N
-TADP 501	Ess Fnd of Trans Ln Components	0	{}		TADP	\N
-TADP 541	Elec Distribution Sys Design	0	{}		TADP	\N
-TADP 543	Electrical Grid Operations	0	{}		TADP	\N
-TADP 547	Underground System Design	0	{}		TADP	\N
-TADP 548	T-Line Design - Elect Aspects	0	{}		TADP	\N
-TADP 553	System Automation	0	{}		TADP	\N
-TADP 556	Engineering Leadership	0	{}		TADP	\N
-THEA 100	Introduction to Theatre Arts	0	{}		THEA	\N
-THEA 111	Acting I	0	{}		THEA	\N
-THEA 120	Voice and Movement	0	{}		THEA	\N
-THEA 122	Interdisciplinary Arts	0	{}		THEA	\N
-THEA 132	Stagecraft	0	{}		THEA	\N
-THEA 134	Costume Construction	0	{}		THEA	\N
-THEA 235	Design Process	0	{}		THEA	\N
-THEA 260	Production Lab: DTM	0	{}		THEA	\N
-THEA 261	Perf Lab: DANCE acda	0	{}		THEA	\N
-THEA 432	CIS: Arts in the Community	0	{}		THEA	\N
-THEA 491	Directed Study	0	{}		THEA	\N
-THEA 497	Internship	0	{}		THEA	\N
-THEA 498	Senior Project I	0	{}		THEA	\N
-TRAN 100	Pre-Registration Confirmation	0	{}		TRAN	\N
-UNIV 099	Strategies for Success	0	{}		UNIV	\N
-UNIV 115	The Strategy of College	0	{}		UNIV	\N
-UNIV 140	What Drives Winning?	0	{}		UNIV	\N
-UNIV 420	Career Development Strategies	0	{}		UNIV	\N
-UNIV 421	Health Professions Preparation	0	{}		UNIV	\N
-UNIV 520	Personal Brand& Bus for Athls	0	{}		UNIV	\N
-VART 101	Drawing I	0	{}		VART	\N
-VART 112	Digital Art Foundations	0	{}		VART	\N
-VART 115	Art Appreciation	0	{}		VART	\N
-VART 121	Painting Methods & Materials	0	{}		VART	\N
-VART 141	Ceramics I	0	{}		VART	\N
-VART 170	Photographic Art	0	{}		VART	\N
-VART 190	ArtSurvey:Prehistoric-Medieval	0	{}		VART	\N
-VART 202	Figure Drawing in Florence	0	{}		VART	\N
-VART 212	Sculpture Materials & Design I	0	{}		VART	\N
-VART 221	Oil Painting	0	{}		VART	\N
-VART 230	3-D Design	0	{}		VART	\N
-VART 322	Fresco	0	{}		VART	\N
-VART 323	Painting: Narrative/Figuration	0	{}		VART	\N
-VART 341	Intermediate Ceramics Projects	0	{}		VART	\N
-VART 350	Beginning Printmaking	0	{}		VART	\N
-VART 360	Museum Studies	0	{}		VART	\N
-VART 385	Figure Drawing I	0	{}		VART	\N
-VART 386	Figure Drawing II	0	{}		VART	\N
-VART 395	Art in the 19th Century	0	{}		VART	\N
-VART 397	Renaissance Art	0	{}		VART	\N
-VART 407	Women Artists	0	{}		VART	\N
-VART 421	Advanced Painting Projects	0	{}		VART	\N
-VART 472	Creative Filmmaking	0	{}		VART	\N
-VART 492	Independent Study	0	{}		VART	\N
-VART 493	Studio Practice	0	{}		VART	\N
-VART 494	BFA Solo/Two-Person Exhibit	0	{}		VART	\N
-WGST 193	FYS: Gender&Sexuality in Games	0	{}		WGST	\N
-WGST 201	Sex, Gender & Society	0	{}		WGST	\N
-WGST 202	Gender, Difference, & Power	0	{}		WGST	\N
-WGST 205	Gender and Pop Culture	0	{}		WGST	\N
-WGST 207	Sociology of Health & Medicine	0	{}		WGST	\N
-WGST 219	Re-Imagining Africa	0	{}		WGST	\N
-WGST 252	Feminism and Christianity	0	{}		WGST	\N
-WGST 304	Feminism and Science	0	{}		WGST	\N
-WGST 330	Women in U.S. History	0	{}		WGST	\N
-WGST 350	Women Artists	0	{}		WGST	\N
-BIOL 374	Immunology	0	{}		BIOL	\N
-WGST 380	Christian Sexual Ethics	0	{}		WGST	\N
-WGST 401	Feminist Thought	0	{}		WGST	\N
-WGST 432	CIS: Phil of Sex & Gender	0	{}		WGST	\N
-WGST 460	Auth/Text Prod Early Mod Women	0	{}		WGST	\N
-EDSE 676	Msrmnt & Single Case Design	0	{}		EDSE	\N
-EDSS 512	SchoolSafetyCrisisPrep&Respnse	0	{}		EDSS	\N
-EDSS 615	Research & Program Evaluation	0	{}		EDSS	\N
-EDSS 627	Group Process & Facilitation	0	{}		EDSS	\N
-EDSS 660	Consult&Collab in School Psych	0	{}		EDSS	\N
-EDSS 670	Neuropsych&CognitiveAssessment	0	{}		EDSS	\N
-EDSS 671	Neuropsych&CognitiveAssess Lab	0	{}		EDSS	\N
-EDSS 680	Social-Emotional Assessment	0	{}		EDSS	\N
-EDSS 685	Advanced Diagnostic Assessment	0	{}		EDSS	\N
-EDSS 690B	Portfolio in School Psychology	0	{}		EDSS	\N
-EDSS 697B	Practicum in School Psych K-12	0	{}		EDSS	\N
-EDSS 698B	Internship in SchoolPsych K-12	0	{}		EDSS	\N
-EDTE 200	Language, Society, and Power	0	{}		EDTE	\N
-EDTE 202	Community and Ethnography	0	{}		EDTE	\N
-EDTE 204	Commnty Languages & Lng Acqstn	0	{}		EDTE	\N
-EDTE 231	Instruct Meth:Rdg/Wrtg/Comm I	0	{}		EDTE	\N
-EDTE 306	Crit Pedagogical Iss Amer Educ	0	{}		EDTE	\N
-EDTE 315S	Classroom Assessmnt Scdry Tchr	0	{}		EDTE	\N
-EDTE 404	Elementary Methods: Science	0	{}		EDTE	\N
-EDTE 418	Discipline Specific Literacy	0	{}		EDTE	\N
-EDTE 418L	Field Experience	0	{}		EDTE	\N
-EDTE 461	Reading Diagnosis	0	{}		EDTE	\N
-EDTE 469	The Five Themes of Geography	0	{}		EDTE	\N
-EDTE 510	Science Methods	0	{}		EDTE	\N
-EDTE 537	Integrated Instruction	0	{}		EDTE	\N
-EDTE 550	Social Studies Methods	0	{}		EDTE	\N
-EDTE 561	Reading Diagnosis	0	{}		EDTE	\N
-EDTE 592	Literacy & English Learners	0	{}		EDTE	\N
-EDTE 594	Support MultiLingual Literacy	0	{}		EDTE	\N
-EDTE 633	Ed Research & Data Eval-Elem	0	{}		EDTE	\N
-EENG 202	Circuit Analysis II	0	{}		EENG	\N
-EENG 304	Electronics Design II	0	{}		EENG	\N
-EENG 304L	Electronics Design II Lab	0	{}		EENG	\N
-EENG 322	Probabilistic Mtds Elect Eng	0	{}		EENG	\N
-EENG 340	Intro Electric Power Engin	0	{}		EENG	\N
-EENG 340L	Intro Electric Power Engin Lab	0	{}		EENG	\N
-EENG 406	VLSI Circuits and Systems	0	{}		EENG	\N
-EENG 412	Digital Control Systems	0	{}		EENG	\N
-EENG 428	Wireless Systems II	0	{}		EENG	\N
-EENG 442	Electr Pwr Distbn System Eng	0	{}		EENG	\N
-EENG 481	Network Interfacing and Socket	0	{}		EENG	\N
-ELCT 056	Communications Seminar	0	{}		ELCT	\N
-ELCT 058	Language Awareness	0	{}		ELCT	\N
-ENGL 303	Creative Non-Fiction Writing	0	{}		ENGL	\N
-ENGL 330	Shakespeare	0	{}		ENGL	\N
-ENGL 401	Adv. Poetry Writing	0	{}		ENGL	\N
-ENGL 406	Writing in the Workplace	0	{}		ENGL	\N
-ENGL 423	Chaucer	0	{}		ENGL	\N
-ENGL 466	American Realism & Naturalism	0	{}		ENGL	\N
-ENGL 473	Literature of Empire	0	{}		ENGL	\N
-ENGL 498	Fiction Independent Study	0	{}		ENGL	\N
-ENSC 192	First Year Seminar (SEAS)	0	{}		ENSC	\N
-ENSC 300	Engineering Economics	0	{}		ENSC	\N
-ENSC 306	Dynamics	0	{}		ENSC	\N
-ENSC 355	Thermal Science	0	{}		ENSC	\N
-ENSC 400	Fund of Engineering Exam	0	{}		ENSC	\N
-ENSC 485	Statistical Quality Control	0	{}		ENSC	\N
-ENSC 486	Tribology and Surface Science	0	{}		ENSC	\N
-ACCT 361	Interm Financial Accounting II	0	{}		ACCT	\N
-ARAB 280	Intermediate Arabic I	0	{}		ARAB	\N
-BCSS 209	Social Media Content Creation	0	{}		BCSS	\N
-BCSS 262	Equity and Storytelling	0	{}		BCSS	\N
-BENT 496	AI Senior Projects	0	{}		BENT	\N
-BIOL 305	Biological Data Analysis	0	{}		BIOL	\N
-BIOL 342	Plant Population Ecology	0	{}		BIOL	\N
-BIOL 451	Comparative Endocrinology	0	{}		BIOL	\N
-BRCO 491	TV and Social Justice	0	{}		BRCO	\N
-CATH 390	Theological Method	0	{}		CATH	\N
-CENG 418	Transportation System Design	0	{}		CENG	\N
-CENG 421	Stormwater Management	0	{}		CENG	\N
-CENG 450	Watershed Modeling	0	{}		CENG	\N
-CHEM 304	Practice in Lab Teaching	0	{}		CHEM	\N
-CHEM 407	Molecular Machines	0	{}		CHEM	\N
-CLAS 310	Greek Gods & Heroes	0	{}		CLAS	\N
-CLAS 497	Role-Playing Greek Mythology	0	{}		CLAS	\N
-COML 524	AI & Communication	0	{}		COML	\N
-COML 525	Advanced Pedagogy	0	{}		COML	\N
-COML 545	Digital Surv, Algrthm & Ethics	0	{}		COML	\N
-CPEN 231	Embedded Computer Systems	0	{}		CPEN	\N
-CPEN 231L	Embedded Computer Systems Lab	0	{}		CPEN	\N
-CPSC 353	Applied Cryptography	0	{}		CPSC	\N
-CRES 201	Race and Popular Culture	0	{}		CRES	\N
-CRES 432	CIS: Africana Philosophy	0	{}		CRES	\N
-CRIM 365	Comparative Criminal Justice	0	{}		CRIM	\N
-DANC 465	Choreography	0	{}		DANC	\N
-DPLS 702	AI & Communication	0	{}		DPLS	\N
-DPLS 707	AI Explorations & Applications	0	{}		DPLS	\N
-DPLS 717	Leadership and Film	0	{}		DPLS	\N
-DPLS 765	Black Critical Theory	0	{}		DPLS	\N
-DPLS 772	Advanced Pedagogy	0	{}		DPLS	\N
-ECON 352L	Money and Banking Math Lab	0	{}		ECON	\N
-ECON 389	Special Topics	0	{}		ECON	\N
-ECON 390	Economics of Sports	0	{}		ECON	\N
-EDLD 701	Framework for Eff Ldshp in Ed	0	{}		EDLD	\N
-EDLD 713	Sys-wide Curr & Assessment	0	{}		EDLD	\N
-EDPE 592	Research in Sport Management	0	{}		EDPE	\N
-EDPE 594	Italian Sports and Culture	0	{}		EDPE	\N
-EDSE 102	Amer Sign Language II & Cultur	0	{}		EDSE	\N
-EDSE 344	Psy of Child Behav Disorders	0	{}		EDSE	\N
-EDSE 350L	Early Childhood Special Ed Lab	0	{}		EDSE	\N
-EDSE 352L	Language & Communication Lab	0	{}		EDSE	\N
-EDSE 544	Adv Social, Emotion, & Beh Dis	0	{}		EDSE	\N
-EDSE 550L	Early Childhood Special Ed Lab	0	{}		EDSE	\N
-EDSE 552L	Language & Communication Lab	0	{}		EDSE	\N
-EDSE 680	Adv Teacher Development Sem	0	{}		EDSE	\N
-EDSE 697	Ext Adv Spec Ed Teach Pract	0	{}		EDSE	\N
-EDSS 626	Culture and Diversity	0	{}		EDSS	\N
-EDSS 655	Multi-Tiered System of Support	0	{}		EDSS	\N
-EDSS 721A	Disseratation Proposal I	0	{}		EDSS	\N
-EDSS 735	Counseling Theories	0	{}		EDSS	\N
-EDSS 745B	Statistics II	0	{}		EDSS	\N
-EDSS 755	Multi-Tiered System of Support	0	{}		EDSS	\N
-EDSS 775	Personality Assessment	0	{}		EDSS	\N
-EDSS 776	Consultation & Program Eval	0	{}		EDSS	\N
-EDSS 792A	Clinical Supervision I	0	{}		EDSS	\N
-EDSS 795	Clinical Practicum III	0	{}		EDSS	\N
-EDSS 796	Aff Bases Behav & Psycpthy	0	{}		EDSS	\N
-EDTE 206	Community & Place-Based Eductn	0	{}		EDTE	\N
-EDTE 554D	Secondary Methods-Theater	0	{}		EDTE	\N
-ELCT 181	Live, Learn, Grow II	0	{}		ELCT	\N
-ELCT 182	Live, Learn, Grow III	0	{}		ELCT	\N
-ELCT 509	Academic Writing Grad Students	0	{}		ELCT	\N
-ENGL 314	Multicultural Lit of the US	0	{}		ENGL	\N
-ENGL 331	Renaissance Literature	0	{}		ENGL	\N
-ENGL 440	Literature of the Americas	0	{}		ENGL	\N
-ENGL 492	IndStdy:Renaissance Literature	0	{}		ENGL	\N
-ENGL 497	Internship	0	{}		ENGL	\N
-ENGM 510	Engineering Portfolio Mgmt	0	{}		ENGM	\N
-ENSC 201	Programming for Engineers	0	{}		ENSC	\N
-ENSC 483	Special Topic: System Dynamics	0	{}		ENSC	\N
-ENSC 490	Water Treatment Modeling	0	{}		ENSC	\N
-ENVS 202	Applied Environmental Chemstry	0	{}		ENVS	\N
-ENVS 202L	Applied Envrmntl Chem -Lab	0	{}		ENVS	\N
-ENVS 401	Population Ecology	0	{}		ENVS	\N
-ENVS 411	Plant Population Ecology	0	{}		ENVS	\N
-FILI 101	Elementary Filipino I	0	{}		FILI	\N
-FILM 231	African-American Cinema	0	{}		FILM	\N
-FILM 260	Design Process	0	{}		FILM	\N
-FILM 261	Directing I	0	{}		FILM	\N
-FILM 344	Comparative European Politics	0	{}		FILM	\N
-FILM 349	Tps: Soviet Culture thrgh Film	0	{}		FILM	\N
-FILM 370	Bible and Film	0	{}		FILM	\N
-FILM 371	Asian Religions in Film	0	{}		FILM	\N
-FILM 432	CIS: Philosophy of Film	0	{}		FILM	\N
-FILM 450	Ancient Rome in Popular Cultur	0	{}		FILM	\N
-FILM 499	Film Capstone	0	{}		FILM	\N
-FREN 340	La France d'aujourd'hui	0	{}		FREN	\N
-GREK 201	Greek III	0	{}		GREK	\N
-HEAL 193	FYS: Religion and Medicine	0	{}		HEAL	\N
-HEAL 332	Urban and Community Sociology	0	{}		HEAL	\N
-HEAL 395	Global History of Science	0	{}		HEAL	\N
-HEAL 396	Environmental Justice	0	{}		HEAL	\N
-HIST 103	United States History I	0	{}		HIST	\N
-HIST 107	The Ancient World	0	{}		HIST	\N
-HIST 110	Indians of Columbia Plateau	0	{}		HIST	\N
-HIST 306	The Roman Empire	0	{}		HIST	\N
-HIST 316	Tudor & Stuart Britain	0	{}		HIST	\N
-HIST 320	Global History of Science	0	{}		HIST	\N
-HIST 331	World War II	0	{}		HIST	\N
-HIST 339	Modern France: 1789 to Present	0	{}		HIST	\N
-HIST 392	Soviet Culture through Film	0	{}		HIST	\N
-HONS 222	African Religious Traditions	0	{}		HONS	\N
-HONS 241	Foundations of the West	0	{}		HONS	\N
-HONS 244	United States History I	0	{}		HONS	\N
-HONS 258	Calculus-Analytic Geometry II	0	{}		HONS	\N
-HONS 260	Principles of Accounting I	0	{}		HONS	\N
-HONS 309	Envir Perspectives & Behavior	0	{}		HONS	\N
-HONS 380	Lang Diversity &Social Justice	0	{}		HONS	\N
-HONS 385	Queer Literature in Spanish	0	{}		HONS	\N
-HONS 481	Strategic Management	0	{}		HONS	\N
-INST 344	International Organizations	0	{}		INST	\N
-INST 367	Arab-Israeli Conflict	0	{}		INST	\N
-INST 385	Latin American Politics	0	{}		INST	\N
-LATN 290	Latin Prose Composition	0	{}		LATN	\N
-LDRS 601	AI & Communication	0	{}		LDRS	\N
-LDRS 602	AI Explorations & Applications	0	{}		LDRS	\N
-MACC 561	Intermediate Accounting II	0	{}		MACC	\N
-MACC 641	Financial Statement Analysis	0	{}		MACC	\N
-MACC 662	Accounting Information Systems	0	{}		MACC	\N
-MACC 681	Sustainability Accounting II	0	{}		MACC	\N
-MACC 699	The Art of Accounting	0	{}		MACC	\N
-MENG 447	Advanced Energy Systems	0	{}		MENG	\N
-MENG 478	Vehicle Dynamics	0	{}		MENG	\N
-MKTG 319	Content Marketing	0	{}		MKTG	\N
-MSBA 655	Emerging Issues in Analytics	0	{}		MSBA	\N
-MTAX 690	Fundamentals of Federal Tax	0	{}		MTAX	\N
-MTSL 501	Theory & Prac of Lang Teaching	0	{}		MTSL	\N
-MTSL 691	Vocal Diction I	0	{}		MTSL	\N
-MUSC 131V	Applied Harp	0	{}		MUSC	\N
-MUSC 141	Big Bing Theory a cappella	0	{}		MUSC	\N
-MUSC 142	Gonzaga Vocal Jazz Choir	0	{}		MUSC	\N
-MUSC 454L	Field Experience III	0	{}		MUSC	\N
-MUSC 495	Student Teaching Seminar	0	{}		MUSC	\N
-MUSC 496	Student Teaching	0	{}		MUSC	\N
-NEUR 201	Introduction to Neuroscience	0	{}		NEUR	\N
-NTAS 210	Indians of Columbia Plateau	0	{}		NTAS	\N
-BIOL 375	Virology	0	{}		BIOL	\N
-NTAS 320	Native American Art & Perform	0	{}		NTAS	\N
-NTAS 497	Exper Learning: Internship	0	{}		NTAS	\N
-NURS 491	Spirituality in Health&Healing	0	{}		NURS	\N
-NURS 704	DNP Practicum Extension	0	{}		NURS	\N
-ORGL 510	Renaissance Leadership in Ital	0	{}		ORGL	\N
-PHIL 440	Africana Philosophy	0	{}		PHIL	\N
-PHIL 443	Dorothy Day&the Cath Wkr Mvmt	0	{}		PHIL	\N
-PHIL 466	Phil of Religion & Technology	0	{}		PHIL	\N
-PHIL 490	Natural Philosophy of the Soul	0	{}		PHIL	\N
-PHIL 695	Logic Requirement	0	{}		PHIL	\N
-PHYS 190	Scientific Inquiry Lab	0	{}		PHYS	\N
-PHYS 280	Physics Pathways Seminar	0	{}		PHYS	\N
-PHYS 322	Electricity and Magnetism	0	{}		PHYS	\N
-PHYS 325	Computational Physics	0	{}		PHYS	\N
-PHYS 456	Biophysical Systems & Modeling	0	{}		PHYS	\N
-PHYS 490	Nuclear Physics	0	{}		PHYS	\N
-POLS 352	Latin American Politics	0	{}		POLS	\N
-POLS 369	The Politics of Eurasia	0	{}		POLS	\N
-POLS 373	Arab-Israeli Conflict	0	{}		POLS	\N
-POLS 376	International Organizations	0	{}		POLS	\N
-POLS 498	Senior Seminar	0	{}		POLS	\N
-PRLS 356	Sports Media	0	{}		PRLS	\N
-PRLS 410	Strategic & Crisis Comm	0	{}		PRLS	\N
-PSYC 350	Adolescent Psychology	0	{}		PSYC	\N
-PUBH 101	Introduction to Public Health	0	{}		PUBH	\N
-PUBH 340	Enviro, Climate Chng, & Health	0	{}		PUBH	\N
-PUBH 360	Global Health Issues & Stratgs	0	{}		PUBH	\N
-RELI 226	Challenges in Catholic Theol	0	{}		RELI	\N
-RELI 248	Christian Nonviolence	0	{}		RELI	\N
-RELI 342	Trinity	0	{}		RELI	\N
-RELI 432	CIS: Bad Religion	0	{}		RELI	\N
-SOCI 200	Soc Probs & Change (WSB, CEL)	0	{}		SOCI	\N
-SOCI 332	Urban and Community Sociology	0	{}		SOCI	\N
-SOCI 349	Capitalism Environment Justice	0	{}		SOCI	\N
-SOCI 396	Human Rights Regimes	0	{}		SOCI	\N
-SOCI 490	Sociology Senior Capstone	0	{}		SOCI	\N
-SOCI 494	Seminar in Research & Theory	0	{}		SOCI	\N
-SOSJ 349	Capitalism Environment Justice	0	{}		SOSJ	\N
-SOSJ 419	Dorothy Day & Cath Worker Mvmt	0	{}		SOSJ	\N
-SPAN 351	Intro to Latin American Film	0	{}		SPAN	\N
-STBD 300	University of Auckland	0	{}		STBD	\N
-THEA 253	Directing I	0	{}		THEA	\N
-THEA 293	ST: Devised Performance	0	{}		THEA	\N
-THEA 490	Dir Study: Adv DTM	0	{}		THEA	\N
-UNIV 410	Health Professions Prep	0	{}		UNIV	\N
-UNIV 811	Universal Access	0	{}		UNIV	\N
-VART 394	Native American Art & Perform	0	{}		VART	\N
-WGST 260	Sex, Gender, and Society	0	{}		WGST	\N
-WGST 280	Understanding Identity	0	{}		WGST	\N
-WGST 353	Christian Sexual Ethics	0	{}		WGST	\N
-ENSC 487	Vehicle Dynamics	0	{}		ENSC	\N
-ENSC 492	Senior Design Project II	0	{}		ENSC	\N
-ENSC 497	Internship	0	{}		ENSC	\N
-ENTR 202	Solution to Execution	0	{}		ENTR	\N
-ENTR 302	Strategic Thinking	0	{}		ENTR	\N
-ENTR 402	Ethic and Moral Leadership	0	{}		ENTR	\N
-ENVS 104	Environmental Chemistry	0	{}		ENVS	\N
-ENVS 104L	Environmental Chemistry Lab	0	{}		ENVS	\N
-ENVS 303	Conservation Biology	0	{}		ENVS	\N
-ENVS 325	Native American Govt & Pol	0	{}		ENVS	\N
-ENVS 329	N Amer Environmental Policies	0	{}		ENVS	\N
-ENVS 353	Environmental History	0	{}		ENVS	\N
-ENVS 384	GIS & Ecological Techniques	0	{}		ENVS	\N
-ENVS 384L	GIS & Ecological TechniquesLab	0	{}		ENVS	\N
-ENVS 499B	Symposium in Env Stu.II (CEL)	0	{}		ENVS	\N
-FREN 202	Intermediate French II	0	{}		FREN	\N
-FREN 290	Directed Study	0	{}		FREN	\N
-GERM 102	Elementary German II	0	{}		GERM	\N
-GERM 202	Intermediate German II	0	{}		GERM	\N
-GERM 307	Contemporary Issues	0	{}		GERM	\N
-GREK 102	Greek II	0	{}		GREK	\N
-HIST 193	FYS: Rwandan Genocide	0	{}		HIST	\N
-HIST 301	Historical Methods	0	{}		HIST	\N
-HIST 302	The Ancient City	0	{}		HIST	\N
-HIST 309	Italy: Homeland of the Romans	0	{}		HIST	\N
-HIST 344	African Health and Healing	0	{}		HIST	\N
-HIST 354	American Latina/o History	0	{}		HIST	\N
-HIST 365	Environmental History	0	{}		HIST	\N
-HIST 367	Rights Justice & US Citizenshp	0	{}		HIST	\N
-HIST 401	Senior Thesis/Seminar	0	{}		HIST	\N
-HIST 405	General Hist Summation Project	0	{}		HIST	\N
-HIST 490	Alexander the Great	0	{}		HIST	\N
-HONS 207	Adv Genetics: Race and Racism	0	{}		HONS	\N
-HONS 432	CIS: Quantitative Literacy	0	{}		HONS	\N
-HONS 490	Senior Honors Colloquium	0	{}		HONS	\N
-HPHY 210	Scientific Writing	0	{}		HPHY	\N
-HPHY 242	Human Anatomy & Physiology II	0	{}		HPHY	\N
-ACCT 363	Cost Accounting	0	{}		ACCT	\N
-ACCT 366	Federal Taxation II	0	{}		ACCT	\N
-BFIN 424	Real Estate Principles	0	{}		BFIN	\N
-BFIN 429A	Portfolio Mgmt I	0	{}		BFIN	\N
-BFIN 429C	Portfolio Mgmt III	0	{}		BFIN	\N
-BIOL 206	Ecology	0	{}		BIOL	\N
-BIOL 206L	Ecology Lab	0	{}		BIOL	\N
-BIOL 323	Conservation Biology	0	{}		BIOL	\N
-BIOL 335	Advanced Genetics:	0	{}		BIOL	\N
-BIOL 341	Human Physiology	0	{}		BIOL	\N
-BIOL 341L	Human Physiology Lab	0	{}		BIOL	\N
-BIOL 344	GIS & Ecological Techniques	0	{}		BIOL	\N
-BIOL 344L	GIS & Ecological TechniquesLab	0	{}		BIOL	\N
-BIOL 371	Vertebrate Biology & Anatomy	0	{}		BIOL	\N
-BIOL 371L	Vertebrate Biol & Anatomy Lab	0	{}		BIOL	\N
-BIOL 390	Biologil Data Analysis Using R	0	{}		BIOL	\N
-BIOL 441	Adv Physiol: Neurophysiolgy	0	{}		BIOL	\N
-BIOL 441L	Adv Physiol:Neurophysiolgy Lab	0	{}		BIOL	\N
-BIOL 451L	Comparative Endocrinology Lab	0	{}		BIOL	\N
-BMIS 444	Info System Analysis & Design	0	{}		BMIS	\N
-BRCO 320	Image Communication	0	{}		BRCO	\N
-BRCO 469	Adv Television Production	0	{}		BRCO	\N
-BRCO 481	TV & Social Justice	0	{}		BRCO	\N
-BUSN 267	Business Leadership	0	{}		BUSN	\N
-BUSN 268	Landing Jobs in Mktg&Advrtsng	0	{}		BUSN	\N
-BUSN 269	Economics of the Side Hustle	0	{}		BUSN	\N
-CATH 499	Catholic Studies Symposium	0	{}		CATH	\N
-CENG 303	Environmental Engineering	0	{}		CENG	\N
-CENG 303L	Environmental Engineering Lab	0	{}		CENG	\N
-CENG 352	Hydraulic Engineering	0	{}		CENG	\N
-CENG 352L	Hydraulic Engineer Lab	0	{}		CENG	\N
-CENG 391	Civil Eng Design & Practice	0	{}		CENG	\N
-CENG 412	Concrete Design	0	{}		CENG	\N
-CENG 414	Waste Management	0	{}		CENG	\N
-CENG 415	Masonry - Timber Design	0	{}		CENG	\N
-CENG 422	Structural Analysis II	0	{}		CENG	\N
-CENG 464	Ground Behavior for Structures	0	{}		CENG	\N
-CHEM 123	Environmental Chemistry	0	{}		CHEM	\N
-CHEM 123L	Environmental Chemistry Lab	0	{}		CHEM	\N
-CHEM 200L	General Chemistry II Lab	0	{}		CHEM	\N
-CHEM 230	Organic Chemistry I	0	{}		CHEM	\N
-CHEM 230L	Organic Chemistry I Lab	0	{}		CHEM	\N
-CHEM 245	Biochemistry	0	{}		CHEM	\N
-CHEM 245L	Biochemistry Lab	0	{}		CHEM	\N
-CHEM 270	Career Development I	0	{}		CHEM	\N
-CHEM 310	Analytical Chemistry	0	{}		CHEM	\N
-CHEM 310L	Analytical Chemistry Lab	0	{}		CHEM	\N
-CHEM 345L	Advanced Biochemistry Lab	0	{}		CHEM	\N
-CHEM 370	Career Development II	0	{}		CHEM	\N
-CHEM 385L	Advanced Chemistry Lab	0	{}		CHEM	\N
-CHEM 455	Polymer Chemistry& Engineering	0	{}		CHEM	\N
-CHEM 498B	Thesis II	0	{}		CHEM	\N
-CHIN 102	Elementary Chinese II	0	{}		CHIN	\N
-CLAS 220	Intro to Classical Literature	0	{}		CLAS	\N
-CLAS 432	CIS: Sex/Gender in Greece/Rome	0	{}		CLAS	\N
-COML 514	Strategic & Appl Public Rltns	0	{}		COML	\N
-COML 515	Relational Communication	0	{}		COML	\N
-COML 516	MediaLiteracy&DigitalCitzenshp	0	{}		COML	\N
-COML 518	Online Course Design & Teach	0	{}		COML	\N
-COMM 310	Politics of Popular Culture	0	{}		COMM	\N
-COMM 330	Politics of Space and Place	0	{}		COMM	\N
-COMM 331	Argumentation and Debate	0	{}		COMM	\N
-COMM 370	Digital Culture/Networked Self	0	{}		COMM	\N
-COMM 420	Critical / Cultural Comm	0	{}		COMM	\N
-COMM 450	Justice and Arts of Civic Life	0	{}		COMM	\N
-CPEN 342	Embedded Computer Systems	0	{}		CPEN	\N
-CPEN 342L	Embedded Computer Systems Lab	0	{}		CPEN	\N
-CPEN 435	Parallel & Cloud Computing	0	{}		CPEN	\N
-CPEN 481	Comp Hrdwr Design&Architecture	0	{}		CPEN	\N
-CPSC 215	Python Programming	0	{}		CPSC	\N
-CPSC 311	UI/UX Design	0	{}		CPSC	\N
-CPSC 313	Cloud & High Scale Dist Sys	0	{}		CPSC	\N
-CPSC 326	Organization of Program Langs	0	{}		CPSC	\N
-CPSC 431	Computer Architecture	0	{}		CPSC	\N
-CPSC 455	Chaos & Dynamical Systems	0	{}		CPSC	\N
-CPSC 492L	Senior Design Project Lab II	0	{}		CPSC	\N
-CRES 301	Intersectionality in CRES	0	{}		CRES	\N
-CRES 497	Internship	0	{}		CRES	\N
-CRIM 352	Corrections	0	{}		CRIM	\N
-CRIM 362	BIPOC, Crime & Justice	0	{}		CRIM	\N
-CRIM 385	Law and Society	0	{}		CRIM	\N
-CTED 1000	Women Lead Spokane	0	{}		CTED	\N
-ACCT 464	Auditing	0	{}		ACCT	\N
-ACCT 489	Fraud and Forensic Examination	0	{}		ACCT	\N
-BCSS 207	Resiliency	0	{}		BCSS	\N
-BCSS 264	Nonprofit Fundraising & Mktg	0	{}		BCSS	\N
-BCSS 271	Women's Career & Confidence	0	{}		BCSS	\N
-BFIN 324	Financial Modeling	0	{}		BFIN	\N
-BFIN 325	Financial Institutions	0	{}		BFIN	\N
-BFIN 491	Mergers and Acquisitions	0	{}		BFIN	\N
-BIOL 333	Community Ecology	0	{}		BIOL	\N
-BIOL 359	Studies in Biodiversity	0	{}		BIOL	\N
-BIOL 360	Plant Biology	0	{}		BIOL	\N
-BIOL 367	Entomology	0	{}		BIOL	\N
-BIOL 367L	Entomology Lab	0	{}		BIOL	\N
-BIOL 380	Trop Biome Eco & Climate Chnge	0	{}		BIOL	\N
-BMIS 342	Database Systems	0	{}		BMIS	\N
-BRCO 499	Broadcast Capstone	0	{}		BRCO	\N
-BUSN 290	GU Investment Banking Accel	0	{}		BUSN	\N
-BUSN 430	Waste Mangemnt System in EU	0	{}		BUSN	\N
-BUSN 489	EU Busn Strategy: Case Studies	0	{}		BUSN	\N
-CENG 193	FYS: Equity & Infrastructure	0	{}		CENG	\N
-CENG 380	Construction Materials & Eng	0	{}		CENG	\N
-CENG 380L	Construction Materials&Eng Lab	0	{}		CENG	\N
-CHEM 405	PhysOrg of Biological Pathways	0	{}		CHEM	\N
-CHEM 424	DNA Damage & Repair	0	{}		CHEM	\N
-CHEM 488	Senior Literature Review	0	{}		CHEM	\N
-CLAS 320	The Iliad & the Odyssey	0	{}		CLAS	\N
-CLAS 491	Fragmentary Greek Texts	0	{}		CLAS	\N
-COMM 193	FYS: Semiotics of Advertising	0	{}		COMM	\N
-COMM 401	Communication & Leadership	0	{}		COMM	\N
-COMM 482	Gonzaga Mock Trial	0	{}		COMM	\N
-COMM 485	Meaning of Style	0	{}		COMM	\N
-COMM 491	Crafting Professional Identity	0	{}		COMM	\N
-CPEN 193	FYS: Computers,Robots,AI&Soc	0	{}		CPEN	\N
-CPEN 442	Introduction to Robotics	0	{}		CPEN	\N
-CPSC 348	Computer Security	0	{}		CPSC	\N
-CPSC 351	Theory of Computation	0	{}		CPSC	\N
-CPSC 410	Information Theory and Coding	0	{}		CPSC	\N
-CRES 202	Racing Space and Place	0	{}		CRES	\N
-CRES 306	Monstrosity and Race	0	{}		CRES	\N
-CRIM 360	Street Gangs in America	0	{}		CRIM	\N
-CRIM 366	Mass Trauma and Genocide	0	{}		CRIM	\N
-CRIM 398	Human Rights Regimes	0	{}		CRIM	\N
-CRIM 399	Forensic Science	0	{}		CRIM	\N
-DANC 165	Interdisciplinary Arts	0	{}		DANC	\N
-DANC 180	Intro to Dance	0	{}		DANC	\N
-DANC 360	Dance Company Lab - Ballet	0	{}		DANC	\N
-DANC 497	Internship - Pedagogy	0	{}		DANC	\N
-DPLS 700	Leadership Theory	0	{}		DPLS	\N
-DPLS 720	Principles of Research	0	{}		DPLS	\N
-DPLS 727	Complexity &Leadership Studies	0	{}		DPLS	\N
-DPLS 748	Leadership & Feminist Ethics	0	{}		DPLS	\N
-DPLS 757	Power & Influence in Leadershp	0	{}		DPLS	\N
-DPLS 780	Servant Leadership	0	{}		DPLS	\N
-ECON 301	Intermediate Microeconomics	0	{}		ECON	\N
-ECON 352	Money and Banking	0	{}		ECON	\N
-ECON 411	Globalization & EU Economics	0	{}		ECON	\N
-ECON 491	Economic Research	0	{}		ECON	\N
-EDCE 571	Trauma, Crisis, & Grief in MFC	0	{}		EDCE	\N
-EDCE 587	Child & Adolescent Counseling	0	{}		EDCE	\N
-EDCE 603	Human Sexuality	0	{}		EDCE	\N
-EDCE 687	Adv Theory & Prof Sem I	0	{}		EDCE	\N
-EDCE 697	Counseling Internship (SCH)	0	{}		EDCE	\N
-EDLA 612	Leadership Role Seminar	0	{}		EDLA	\N
-EDLA 620	Principal Internship	0	{}		EDLA	\N
-EDPE 144	Shoot 360 Basketball Training	0	{}		EDPE	\N
-EDPE 315	Adapted Phys Education & Sport	0	{}		EDPE	\N
-EDPE 405	Senior Seminar in Sport	0	{}		EDPE	\N
-EDPE 514	Ethical/Legal Aspects in Sport	0	{}		EDPE	\N
-EDSE 101	Amer Sign Language I & Culture	0	{}		EDSE	\N
-EDSE 552	Language and Communication	0	{}		EDSE	\N
-EDSE 675	Adv Applied Behavior Analysis	0	{}		EDSE	\N
-EDSS 701	Psych of Children w Exception	0	{}		EDSS	\N
-EDSS 710	History& Systems of Psychology	0	{}		EDSS	\N
-EDSS 720	Research Seminar in Schl Psyc	0	{}		EDSS	\N
-EDSS 723	Qualitative Rsrch Mthd & Dsgn	0	{}		EDSS	\N
-EDSS 726	Culture and Diversity	0	{}		EDSS	\N
-EDSS 730	Assessment in Schl Settings	0	{}		EDSS	\N
-EDSS 740	Ethical & Lgl Iss in Schl Psyc	0	{}		EDSS	\N
-EDSS 741	Ed Leadership & community	0	{}		EDSS	\N
-EDSS 745A	Statistics I	0	{}		EDSS	\N
-EDSS 750	Applied Behavioral Analysis	0	{}		EDSS	\N
-EDSS 788	Dev Bases of Behavior	0	{}		EDSS	\N
-EDSS 789	Biological Bases of Behavior	0	{}		EDSS	\N
-EDSS 791	Cognitive Bases of Behavior	0	{}		EDSS	\N
-EDSS 797A	Pract in Sch Psyc K-12	0	{}		EDSS	\N
-EDTE 193	FYS: Possibilities&Predicament	0	{}		EDTE	\N
-EDTE 492	Secondary Methods-Theater	0	{}		EDTE	\N
-EENG 193	FYS: Computers,Robots, AI&Soc	0	{}		EENG	\N
-EENG 410	Information Theory and Coding	0	{}		EENG	\N
-EENG 411L	Intro to Control Systems Lab	0	{}		EENG	\N
-EENG 421L	Intro to Comm Systems Lab	0	{}		EENG	\N
-ELCT 055	Academic Writing	0	{}		ELCT	\N
-ELCT 059	Academic Seminar	0	{}		ELCT	\N
-ENGL 205	Studies in Shakespeare	0	{}		ENGL	\N
-ENGL 287	Intersectionality & Literature	0	{}		ENGL	\N
-ENGL 323	Medieval Lit:Rage&Romance	0	{}		ENGL	\N
-ENGL 342	Victorian Era	0	{}		ENGL	\N
-ENGL 390	Writing Center Practicum	0	{}		ENGL	\N
-ENGL 402	Advanced Fiction Writing	0	{}		ENGL	\N
-ENGL 433	Milton & His Contemporaries	0	{}		ENGL	\N
-ENGL 480	Crit Theory:Lit & Cltrl Stdy	0	{}		ENGL	\N
-ENSC 481	Design for the Human Body	0	{}		ENSC	\N
-ENVS 321	Ecological Thought & Politics	0	{}		ENVS	\N
-ENVS 330	Parks, Forests, and Wildlife	0	{}		ENVS	\N
-ENVS 341	Environmental Science Seminar	0	{}		ENVS	\N
-ENVS 406	Entomology	0	{}		ENVS	\N
-ENVS 406L	Entomology Lab	0	{}		ENVS	\N
-ENVS 422	Sustainable Systems and Design	0	{}		ENVS	\N
-ENVS 425	Stream Restoration	0	{}		ENVS	\N
-FILM 201	Media Aesthetics	0	{}		FILM	\N
-FREN 102	Immersive Elem French II	0	{}		FREN	\N
-FREN 301	Advanced French I	0	{}		FREN	\N
-FREN 302	Advanced French II	0	{}		FREN	\N
-GERM 305	German Conversation	0	{}		GERM	\N
-GREK 190	Greek 1	0	{}		GREK	\N
-GREK 291	Intermediate Greek	0	{}		GREK	\N
-HEAL 195	Disability in Literature	0	{}		HEAL	\N
-HEAL 196	Healthcare Systems	0	{}		HEAL	\N
-HEAL 201	Sociology of Health & Medicine	0	{}		HEAL	\N
-HEAL 318	MedicalSpan&CulturalCompetency	0	{}		HEAL	\N
-HEAL 455	Health Care Ethics	0	{}		HEAL	\N
-HEAL 497	Walking Schl Bus Public Health	0	{}		HEAL	\N
-HIST 104	United States History II	0	{}		HIST	\N
-HIST 105	Russia: Nation, State, Empire	0	{}		HIST	\N
-HIST 106	Asian&PacificIslanderAmerHist	0	{}		HIST	\N
-HIST 108	Intro to Pacific NW History	0	{}		HIST	\N
-HIST 109	History of Islamic Societies	0	{}		HIST	\N
-HIST 200	Historical Foundations	0	{}		HIST	\N
-HIST 329	Nazi Germany	0	{}		HIST	\N
-HIST 342	African History through Film	0	{}		HIST	\N
-HIST 359	Indigenous Early America	0	{}		HIST	\N
-HIST 361	Post-WWII Presidency	0	{}		HIST	\N
-HIST 370	Fnd of East Asian Civilization	0	{}		HIST	\N
-HIST 371	Modern Pacific World	0	{}		HIST	\N
-HIST 380	Colonial Latin America	0	{}		HIST	\N
-HONS 157	Calculus-Analytic Geometry I	0	{}		HONS	\N
-HONS 238	Honors-American Politics	0	{}		HONS	\N
-HONS 242	The West and the World	0	{}		HONS	\N
-HONS 320	Judgement&Decision Making-H	0	{}		HONS	\N
-HONS 381	The Films of Akira Kurosawa	0	{}		HONS	\N
-HONS 387	Honors Social Entrepreneurship	0	{}		HONS	\N
-HONS 417	Honors-Abstract Algebra I	0	{}		HONS	\N
-HPHY 490	Lit Rvw of Eccentric Muscles	0	{}		HPHY	\N
-HPHY 498	Prog for Sci Resrch in Biomech	0	{}		HPHY	\N
-INST 310	Third World Development	0	{}		INST	\N
-INST 326	Global Gender Regimes	0	{}		INST	\N
-INST 343	Global Economic Issues	0	{}		INST	\N
-INST 371	Modern Pacific World	0	{}		INST	\N
-INST 372	Colonial Latin America	0	{}		INST	\N
-INST 378	Africa Reli & Chrnty in CathEU	0	{}		INST	\N
-INST 384	Fnd of East Asian Civilization	0	{}		INST	\N
-INST 397	Nazi Germany	0	{}		INST	\N
-INST 399	Colombian Conflict	0	{}		INST	\N
-INST 492	Int'l Cooperation Formula 1	0	{}		INST	\N
-ITAL 367	Renaissance Europe	0	{}		ITAL	\N
-JOUR 494	Seminar: Media & Democracy	0	{}		JOUR	\N
-LATN 302	Imperial Latin Prose: Pliny	0	{}		LATN	\N
-LDRS 355	Disaster Mngmnt Leadership	0	{}		LDRS	\N
-LDRS 497	Leadership Internship	0	{}		LDRS	\N
-MACC 564	Auditing	0	{}		MACC	\N
-MATH 351	Combinatorics and Graph Theory	0	{}		MATH	\N
-MATH 426	Experimental Design	0	{}		MATH	\N
-MATH 437	Abstract Algebra I	0	{}		MATH	\N
-MATH 440	Foundations of Applied Math	0	{}		MATH	\N
-MBUS 619	Tribal Seminar II	0	{}		MBUS	\N
-MBUS 662	Advanced Corporate Finance	0	{}		MBUS	\N
-MBUS 665	Mergers & Acquisitions	0	{}		MBUS	\N
-MBUS 683T	Legal Enviroment:Indian Cntry	0	{}		MBUS	\N
-MENG 193	FYS: Matter and Consciousness	0	{}		MENG	\N
-MENG 442	Advanced Heat Transfer	0	{}		MENG	\N
-MENG 456	Design for Manufacturing	0	{}		MENG	\N
-MKTG 411	Digital Media in Marketing	0	{}		MKTG	\N
-MKTG 418	Personal Selling	0	{}		MKTG	\N
-MKTG 491	New York Trek	0	{}		MKTG	\N
-MSBA 601	Fund Tech for Bus Analytics	0	{}		MSBA	\N
-MSBA 623	Database Management	0	{}		MSBA	\N
-MSBA 686	Performance Management	0	{}		MSBA	\N
-MTAX 605	Partnership Taxation	0	{}		MTAX	\N
-MTAX 607	Taxation of Property Trans	0	{}		MTAX	\N
-MTAX 699	State & Local Taxation	0	{}		MTAX	\N
-MTSL 401	Theory & Prac of Lang Teaching	0	{}		MTSL	\N
-MUSC 124	Guitar Class II	0	{}		MUSC	\N
-MUSC 131F	Applied Oboe	0	{}		MUSC	\N
-MUSC 131S	Applied Electric Bass	0	{}		MUSC	\N
-MUSC 134	Woodwind Techniques	0	{}		MUSC	\N
-MUSC 153	String Chamber Ensemble	0	{}		MUSC	\N
-MUSC 210	Orchestration & Arranging	0	{}		MUSC	\N
-MUSC 250	Popular Music in the US	0	{}		MUSC	\N
-MUSC 331A	Applied Piano	0	{}		MUSC	\N
-MUSC 332A	Applied Composition	0	{}		MUSC	\N
-MUSC 340	Jazz Piano Proficiency Exam	0	{}		MUSC	\N
-MUSC 399	Research Methods & Materials	0	{}		MUSC	\N
-MUSC 454	Music Education Methods	0	{}		MUSC	\N
-NTAS 201	Philosophy of Human Nature	0	{}		NTAS	\N
-NTAS 359	Indigenous Early America	0	{}		NTAS	\N
-NURS 701	DNP Practicum I	0	{}		NURS	\N
-NURS 703	DNP Practicum III	0	{}		NURS	\N
-NURS 708	Inferential Statistics	0	{}		NURS	\N
-NURS 713	Population Health Outcomes	0	{}		NURS	\N
-NURS 761	DNP Project Seminar I	0	{}		NURS	\N
-NURS 763	DNP Project Seminar III	0	{}		NURS	\N
-ORGL 590	Independent Study	0	{}		ORGL	\N
-ORGL 670	Projects in Organizatn Ldrshp	0	{}		ORGL	\N
-PHIL 403	Faith, Reason, and Being	0	{}		PHIL	\N
-PHIL 426	Political Philosophy	0	{}		PHIL	\N
-PHIL 434	Chinese Philosophy	0	{}		PHIL	\N
-PHIL 495	Philosophy of Mental Health	0	{}		PHIL	\N
-PHIL 697	Comprehensive Examination	0	{}		PHIL	\N
-PHYS 111	General Physics I	0	{}		PHYS	\N
-PHYS 111L	General Physics I Lab	0	{}		PHYS	\N
-PHYS 121	Physics I	0	{}		PHYS	\N
-PHYS 121L	Physics I Lab	0	{}		PHYS	\N
-PHYS 122	Physics II	0	{}		PHYS	\N
-PHYS 122L	Physics II Lab	0	{}		PHYS	\N
-PHYS 180	Physics Skills Seminar	0	{}		PHYS	\N
-PHYS 193	FYS:Pseudoscience&Conspiracies	0	{}		PHYS	\N
-PHYS 201	Mathematical Methods	0	{}		PHYS	\N
-PHYS 310	Intermediate Laboratory	0	{}		PHYS	\N
-PHYS 323	Statistical Mechanics	0	{}		PHYS	\N
-PHYS 324	Quantum Mechanics	0	{}		PHYS	\N
-POLS 102	Political Thought & Action	0	{}		POLS	\N
-POLS 309	Political Parties and Election	0	{}		POLS	\N
-POLS 311	State & Local Government	0	{}		POLS	\N
-POLS 317	Ecological Thought & Politics	0	{}		POLS	\N
-POLS 356	Colombian Conflict	0	{}		POLS	\N
-POLS 363	Global Gender Regimes	0	{}		POLS	\N
-POLS 380	Scrty migrtn&cult divers in EU	0	{}		POLS	\N
-POLS 390	Modern Political Thought	0	{}		POLS	\N
-POLS 395	Humanitr Law & Armed Conflict	0	{}		POLS	\N
-PRLS 310	Writing for Public Relations	0	{}		PRLS	\N
-PSYC 364	Developmental Disorders	0	{}		PSYC	\N
-PSYC 427	Culture & Mntl Health Seminar	0	{}		PSYC	\N
-PSYC 434	Cognitive Neuroscience	0	{}		PSYC	\N
-PSYC 454	Judgement and Decision Making	0	{}		PSYC	\N
-PSYC 472	Cogntv Neuroscnc Of Conscsns	0	{}		PSYC	\N
-PSYC 478	Positive Psychology	0	{}		PSYC	\N
-RELI 104	Narrating Jesus	0	{}		RELI	\N
-RELI 202	Spirituality of Apostle Paul	0	{}		RELI	\N
-RELI 207	Messiah & Covenant	0	{}		RELI	\N
-RELI 236	The Problem of God	0	{}		RELI	\N
-RELI 270	Religion & Politics in Europe	0	{}		RELI	\N
-RELI 287	Christian Nonviolence	0	{}		RELI	\N
-RELI 329	Theological Anthropology	0	{}		RELI	\N
-RELI 334	Muslims in the West	0	{}		RELI	\N
-RELI 354	Childrn of Abra, Jud, Chrs, Is	0	{}		RELI	\N
-RELI 357	Sufism: Islamic Mysticism	0	{}		RELI	\N
-RELI 487	Early Christian Sex & Gender	0	{}		RELI	\N
-SOCI 295	Masculinities in Scandinavia	0	{}		SOCI	\N
-SOCI 366	Mass Trauma and Genocide	0	{}		SOCI	\N
-SOCI 397	Sociology of Popular Culture	0	{}		SOCI	\N
-SOCI 398	Human Rights Regimes	0	{}		SOCI	\N
-SOSJ 170	Photographic Art	0	{}		SOSJ	\N
-SOSJ 219	Principles of Christian Ethics	0	{}		SOSJ	\N
-SOSJ 459	Dorothy Day & Cath Worker Mvmt	0	{}		SOSJ	\N
-SOSJ 479	CIS: Advocacy and Policy	0	{}		SOSJ	\N
-SPAN 101	Beginning Spanish I	0	{}		SPAN	\N
-SPAN 306	Spanish for the Workplace	0	{}		SPAN	\N
-SPAN 321	Span Medieval-Golden Age Lit	0	{}		SPAN	\N
-SPAN 340	Spanish Civilization & Culture	0	{}		SPAN	\N
-SPAN 341	Latin-American Civ & Cultures	0	{}		SPAN	\N
-SPAN 352	Contmp Spanish Hist thr Film	0	{}		SPAN	\N
-SPAN 360	Intro to Hispanic Linguistics	0	{}		SPAN	\N
-SPAN 385	Sp.Top. Contemp.Span.ThrFilm	0	{}		SPAN	\N
-SPAN 417	The Movies of Pedro Almodovar	0	{}		SPAN	\N
-TADP 549	T-Line Design: Structure & Fnd	0	{}		TADP	\N
-THEA 190	Scenic Design	0	{}		THEA	\N
-THEA 193	FYS: Theatre & Neurodivergence	0	{}		THEA	\N
-THEA 240	Theatre for Young Audiences	0	{}		THEA	\N
-THEA 332	Scenic Design	0	{}		THEA	\N
-THEA 354	Directing II	0	{}		THEA	\N
-UNIV 330	GIFE: TeamHub	0	{}		UNIV	\N
-UWMD 800	UW Medical - MedEx27	0	{}		UWMD	\N
-VART 191	Great Masters of the Prado	0	{}		VART	\N
-VART 312	Sculpture Materials &Design II	0	{}		VART	\N
-VART 393	Grand Tour and Americ in Italy	0	{}		VART	\N
-WGST 100	Introduction to WGST	0	{}		WGST	\N
-WGST 200	Gender, Difference & Power	0	{}		WGST	\N
-WGST 342	Global Gender Regimes	0	{}		WGST	\N
-WGST 403	Crit Theory:Lit & Cltrl Stdy	0	{}		WGST	\N
-DANC 170	Princ of Dance Conditioning	0	{}		DANC	\N
-DANC 300	Musical Theatre Dance	0	{}		DANC	\N
-DANC 305	Jazz Dance III	0	{}		DANC	\N
-DANC 310	Contemp/Modern III	0	{}		DANC	\N
-DANC 315	Ballet III	0	{}		DANC	\N
-DANC 405	Jazz Dance Performance	0	{}		DANC	\N
-DANC 410	Contemp/Modern Performance	0	{}		DANC	\N
-DANC 415	Ballet Performance	0	{}		DANC	\N
-DANC 471	Appl Dance Field Instruction	0	{}		DANC	\N
-DNAP 703	Adv Prin Anesthes - Regional	0	{}		DNAP	\N
-DNAP 706	Adv Prin:Neurosurg&Thoracic An	0	{}		DNAP	\N
-DNAP 709	Adv Prin of Ansth: Integration	0	{}		DNAP	\N
-DNAP 713	Adv Pathophysiology	0	{}		DNAP	\N
-DNAP 723	Adv Pharmacology III	0	{}		DNAP	\N
-DNAP 741	Chem & Physics in Anesthesia	0	{}		DNAP	\N
-DNAP 742	Crisis Mgmt in Anesthesia	0	{}		DNAP	\N
-DNAP 760	Ldrshp & Quality Improvement	0	{}		DNAP	\N
-DNAP 763	Capstone I: Project Design	0	{}		DNAP	\N
-DNAP 769	Oral Exam	0	{}		DNAP	\N
-DNAP 782	Clinical Practicum: II	0	{}		DNAP	\N
-DNAP 785	Clinical Practicum: V	0	{}		DNAP	\N
-DNAP 788	Clinical Practicum: VIII	0	{}		DNAP	\N
-DPLS 709	Leadership and Spirituality	0	{}		DPLS	\N
-DPLS 749	Leadership and Eco Ethics	0	{}		DPLS	\N
-DPLS 769	Service Qual in Ed Pandemic	0	{}		DPLS	\N
-DPLS 773	Global Issues: Brussels	0	{}		DPLS	\N
-DPLS 775	Servant Ldrshp, Power& Inclsn	0	{}		DPLS	\N
-ECON 322	Work, Wages, and Inequality	0	{}		ECON	\N
-ECON 351	Managerial Economics	0	{}		ECON	\N
-ECON 402	Currents in 20th Cent Econ	0	{}		ECON	\N
-ECON 451	Econometrics	0	{}		ECON	\N
-EDCE 550	Multicultural Counseling	0	{}		EDCE	\N
-EDCE 584	Counselling across Lifespan	0	{}		EDCE	\N
-EDCE 589	Marriage and Family Counseling	0	{}		EDCE	\N
-EDCE 590	Marriage & Family Counselling	0	{}		EDCE	\N
-EDCE 595	Spec Iss in School Counseling	0	{}		EDCE	\N
-EDCE 616	Psychpthlgy and Psychphrmclgy	0	{}		EDCE	\N
-EDCE 638	Theories in Couples Counseling	0	{}		EDCE	\N
-EDCE 650	Group Process	0	{}		EDCE	\N
-EDCE 658	Group Process and Facilitation	0	{}		EDCE	\N
-EDCE 686	Counselling Practicum	0	{}		EDCE	\N
-EDCE 689	Adv Theory & Prof Sem III	0	{}		EDCE	\N
-EDCE 692	Intersectionality & Human Sex	0	{}		EDCE	\N
-EDCE 693	Comp Orals for Sch Counselors	0	{}		EDCE	\N
-EDCE 696	Counseling Practicum (CMHC)	0	{}		EDCE	\N
-EDCE 697B	Internship (CMHC)	0	{}		EDCE	\N
-EDCE 699	Comprehensive Oral Examination	0	{}		EDCE	\N
-EDLA 618	Professional Literature Review	0	{}		EDLA	\N
-EDLA 653	Ed Ldrshp: Curr, Inst & Assmt	0	{}		EDLA	\N
-EDLA 688	Evdnc Informed Decision Making	0	{}		EDLA	\N
-EDLA 689	Professional Seminar	0	{}		EDLA	\N
-EDLA 690	Ed Ldrshp & Organization	0	{}		EDLA	\N
-EDLA 699	Comprehensive Oral Exam	0	{}		EDLA	\N
-EDLD 704	Mthds & Inst: Data Collection	0	{}		EDLD	\N
-EDLD 707A	Action Plan for Probl of Pract	0	{}		EDLD	\N
-EDLD 707B	Lab: Probl of Practice II	0	{}		EDLD	\N
-EDLD 714	Capstone Completion	0	{}		EDLD	\N
-EDLD 765	Evidence-based Contribution PP	0	{}		EDLD	\N
-EDPC 913	Leadership Role Seminar	0	{}		EDPC	\N
-EDPC 930	Certification Internship	0	{}		EDPC	\N
-EDPE 138	Alpine Skiing	0	{}		EDPE	\N
-EDPE 140	Snowboarding	0	{}		EDPE	\N
-EDPE 152	Racquet Sports	0	{}		EDPE	\N
-EDPE 224	Exercise and Sport Nutrition	0	{}		EDPE	\N
-EDPE 277	Anatomy and Physiology II	0	{}		EDPE	\N
-EDPE 277L	Anatomy and Physiology II Lab	0	{}		EDPE	\N
-EDPE 311	Exercise & Sp Instr'l Methods	0	{}		EDPE	\N
-EDPE 314	Secondary Physical Ed Methods	0	{}		EDPE	\N
-EDPE 415	Phys Ed Mthds for Elem Teacher	0	{}		EDPE	\N
-EDPE 416	Hlth Educ Mthds Elem Teachers	0	{}		EDPE	\N
-EDPE 450	Princ of Strength & Condition	0	{}		EDPE	\N
-EDPE 477	Exercise Testing	0	{}		EDPE	\N
-EDPE 477L	Exercise Testing Lab	0	{}		EDPE	\N
-EDPE 481	Fitness Specialist CapstoneSem	0	{}		EDPE	\N
-EDPE 497B	Field Exp Secondary Phys Educ	0	{}		EDPE	\N
-EDPE 501	Sport Media and Communication	0	{}		EDPE	\N
-EDPE 571	Sport & Athletic Finance	0	{}		EDPE	\N
-EDPE 689	Master's Research Project	0	{}		EDPE	\N
-EDSE 335	Autism	0	{}		EDSE	\N
-EDSE 351	Physical Development	0	{}		EDSE	\N
-EDSE 353	Dev of Child w/ Exception	0	{}		EDSE	\N
-EDSE 417	Assessment-Special Education	0	{}		EDSE	\N
-EDSE 450	Special Education Seminar	0	{}		EDSE	\N
-EDSE 452	Direct Instruction-Mathematics	0	{}		EDSE	\N
-EDSE 452L	DI Math Lab	0	{}		EDSE	\N
-EDSE 617	Assessment in Special Ed	0	{}		EDSE	\N
-EDSE 652	Direct Instruction: Math	0	{}		EDSE	\N
-EDSE 671	Behavior Assess & Intervention	0	{}		EDSE	\N
-HPHY 242L	Human Anatomy & Phys Lab II	0	{}		HPHY	\N
-HPHY 244	Nutrition and Metabolism	0	{}		HPHY	\N
-HPHY 274	Musculoskeletal Dynamics&Phys	0	{}		HPHY	\N
-HPHY 441L	Guided Experimental Design	0	{}		HPHY	\N
-HPHY 451	Systems Neurophysiology	0	{}		HPHY	\N
-HPHY 477	Environmental Physiolgy	0	{}		HPHY	\N
-HPHY 478	Physiology of Aging	0	{}		HPHY	\N
-HPHY 485	Biomedical Engineering	0	{}		HPHY	\N
-HPHY 499	Culminating Experience	0	{}		HPHY	\N
-INDS 193	FYS: Knitting	0	{}		INDS	\N
-INST 201	Intro to International Studies	0	{}		INST	\N
-INST 303	Model UN	0	{}		INST	\N
-INST 304	Interreligious Dialogue	0	{}		INST	\N
-INST 364	African Health and Healing	0	{}		INST	\N
-INST 392	Tyranny to Democracy 21st Cen	0	{}		INST	\N
-ITAL 202	Intermediate Italian II	0	{}		ITAL	\N
-ITAL 307	Conv Approach to Contemp Issue	0	{}		ITAL	\N
-ITAL 390	Conv Approach to Contemp Issue	0	{}		ITAL	\N
-ITAL 498	Senior Project	0	{}		ITAL	\N
-JOUR 280	Design and Editing	0	{}		JOUR	\N
-JOUR 290	Student Media	0	{}		JOUR	\N
-JOUR 310	Public Affairs Reporting	0	{}		JOUR	\N
-JOUR 350	History of Journalism	0	{}		JOUR	\N
-JOUR 470	Documentary Filmmaking	0	{}		JOUR	\N
-JPNE 102	Elementary Japanese II	0	{}		JPNE	\N
-JPNE 202	Intermediate Japanese II	0	{}		JPNE	\N
-LATN 102	Latin II	0	{}		LATN	\N
-LDRS 200	Foundations of Leadership	0	{}		LDRS	\N
-LDRS 325	The Practice of Leadership	0	{}		LDRS	\N
-LDRS 350	Intercultural Persp Ldrshp	0	{}		LDRS	\N
-LDRS 394	Leadership & Storytelling	0	{}		LDRS	\N
-LDRS 395	Service and Leadership (CEL)	0	{}		LDRS	\N
-LDRS 490	Contemporary Issues in Ldrshp	0	{}		LDRS	\N
-MACC 563	Cost Accounting	0	{}		MACC	\N
-MACC 622	Data Mdling & Appl Anyltcs	0	{}		MACC	\N
-MACC 666	Federal Taxation II	0	{}		MACC	\N
-MACC 667	Corporate Governance	0	{}		MACC	\N
-MACC 678	Sustainability Accounting II	0	{}		MACC	\N
-MACC 690	Business Law	0	{}		MACC	\N
-MATH 360	Math Seminar	0	{}		MATH	\N
-MATH 361	Mathematics of Game Shows	0	{}		MATH	\N
-MATH 417	Complex Variables	0	{}		MATH	\N
-MATH 422	Mathematical Statistics	0	{}		MATH	\N
-MATH 438	Abstract Algebra II	0	{}		MATH	\N
-MATH 452	Chaos & Dynamical Systems	0	{}		MATH	\N
-MATH 454	Partial Differential Equations	0	{}		MATH	\N
-MBUS 616T	Tribal Strategic Management	0	{}		MBUS	\N
-MBUS 671	Risk Management	0	{}		MBUS	\N
-MBUS 673	Global Project Management	0	{}		MBUS	\N
-MBUS 674	Agile Project Management	0	{}		MBUS	\N
-MBUS 679	Applied Project Management	0	{}		MBUS	\N
-MENG 322	Thermodynamics II	0	{}		MENG	\N
-MENG 330	Machine Design	0	{}		MENG	\N
-MENG 341	Heat Transfer	0	{}		MENG	\N
-MENG 412	Mechanical Measurements	0	{}		MENG	\N
-MENG 412L	Mechanical Measurements Lab	0	{}		MENG	\N
-MENG 446	Energy Auditing	0	{}		MENG	\N
-MENG 468	Biomatls & Biomech Eng	0	{}		MENG	\N
-MGMT 410	Training & Org Development	0	{}		MGMT	\N
-MGMT 415	Employ Law & Labor Relations	0	{}		MGMT	\N
-MGMT 491	Training and Development	0	{}		MGMT	\N
-MILS 102	Intro Ldrshp & Critical Think	0	{}		MILS	\N
-MILS 102L	Leadership Laboratory	0	{}		MILS	\N
-MILS 104	Military Physical Fitness	0	{}		MILS	\N
-MILS 202	Army Doctrine & Team Dvlpmnt	0	{}		MILS	\N
-MILS 202L	Leadership Lab	0	{}		MILS	\N
-MILS 204	Military Physical Fitness	0	{}		MILS	\N
-MILS 302	App Ldrshp in Small Unit Oper	0	{}		MILS	\N
-MILS 302L	Leadership Laboratory	0	{}		MILS	\N
-MILS 304	Military Physical Fitness	0	{}		MILS	\N
-MILS 402	Company Grade Leadership	0	{}		MILS	\N
-MILS 402L	Leadership Laboratory	0	{}		MILS	\N
-MILS 404	Military Physical Fitness	0	{}		MILS	\N
-MKTG 316	Fashion Marketing & Retailing	0	{}		MKTG	\N
-MKTG 490	Promotion Project	0	{}		MKTG	\N
-MTAX 600	Orientation	0	{}		MTAX	\N
-MTSL 408	Prin of Sec Lang Acquisition	0	{}		MTSL	\N
-MTSL 508	Prin of Sec Lang Acquisition	0	{}		MTSL	\N
-MTSL 510	Design, Eval & Assess in ESL	0	{}		MTSL	\N
-MTSL 600	Research Persp in Sec Lang Ed	0	{}		MTSL	\N
-MUSC 136	Percussion Techniques	0	{}		MUSC	\N
-MUSC 162	Music Theory II	0	{}		MUSC	\N
-MUSC 162L	Theory II Ear Training Lab	0	{}		MUSC	\N
-MUSC 240	Piano Proficiency Exam	0	{}		MUSC	\N
-MUSC 262	Music Theory IV	0	{}		MUSC	\N
-MUSC 331B	Applied Organ/Harpsichord	0	{}		MUSC	\N
-MUSC 331N	Applied Percussion	0	{}		MUSC	\N
-MUSC 358	Keyboard Accompanying	0	{}		MUSC	\N
-MUSC 392	Music History II	0	{}		MUSC	\N
-MUSC 425	Full Recital	0	{}		MUSC	\N
-MUSC 426	Composition Senior Portfolio	0	{}		MUSC	\N
-MUSC 452	Classroom Mgmt & Assessment	0	{}		MUSC	\N
-MUSC 491	Thesis/OralComprehensive Exam	0	{}		MUSC	\N
-MUSC 497	Internship	0	{}		MUSC	\N
-MUSC 499	Senior Thesis	0	{}		MUSC	\N
-NTAS 101	Intro Native American Studies	0	{}		NTAS	\N
-NTAS 290	Indig Lit of Alaska & Hawaii	0	{}		NTAS	\N
-NTAS 311	Native American Govt & Politic	0	{}		NTAS	\N
-NURS 463	Community Health	0	{}		NURS	\N
-NURS 464	Community Health Practicum	0	{}		NURS	\N
-NURS 642A	HC Quality Impr & Safety Mgtmt	0	{}		NURS	\N
-NURS 654M	PMH Nurse Concepts III	0	{}		NURS	\N
-NURS 663M	Psyc-Mntl Hlth Practicum III	0	{}		NURS	\N
-NURS 764	Integr Appl of Evid Sem IV	0	{}		NURS	\N
-NURS 792	DNP Leadership Practice IS	0	{}		NURS	\N
-OPER 345	Service Operations	0	{}		OPER	\N
-OPER 346	Project & Process Management	0	{}		OPER	\N
-OPER 489	Supply Chain Management	0	{}		OPER	\N
-ORGL 507	Women's Leadership	0	{}		ORGL	\N
-ORGL 577	Global Issues: Brussels	0	{}		ORGL	\N
-ORGL 681	Leadership & Storytelling	0	{}		ORGL	\N
-ORGL 690	Leadership Independent  Study	0	{}		ORGL	\N
-PHIL 101H	Reasoning - Honors	0	{}		PHIL	\N
-PHIL 310	History of Medieval Philosophy	0	{}		PHIL	\N
-PHIL 320	History of Modern Philosophy	0	{}		PHIL	\N
-PHIL 419	Personalism	0	{}		PHIL	\N
-PHIL 428	Philosophical Hermeneutics	0	{}		PHIL	\N
-PHIL 435	C.S. Lewis	0	{}		PHIL	\N
-PHIL 456	Feminist Ethics	0	{}		PHIL	\N
-PHIL 485	Philosophy in Film	0	{}		PHIL	\N
-PHYS 102	General Physics II	0	{}		PHYS	\N
-PHYS 102L	General Physics II Lab	0	{}		PHYS	\N
-PHYS 205	Modern Physics	0	{}		PHYS	\N
-PHYS 210	Intro to Linear Electronics	0	{}		PHYS	\N
-PHYS 301	Intermediate Mechanics	0	{}		PHYS	\N
-PHYS 409	Nuclear and Particle Physics	0	{}		PHYS	\N
-PHYS 415	Cosmology and Astrophysics	0	{}		PHYS	\N
-POLS 193	FYS: Birds	0	{}		POLS	\N
-POLS 303	Constitutn Law,Civl Libty,Rgts	0	{}		POLS	\N
-POLS 306	Congress and the Presidency	0	{}		POLS	\N
-POLS 310	Native American Govt & Politic	0	{}		POLS	\N
-POLS 322	Women and Politics	0	{}		POLS	\N
-POLS 329	N Amer Environmental Policies	0	{}		POLS	\N
-POLS 332	Amer Polit Thgt: Founding Era	0	{}		POLS	\N
-POLS 343	War and Peace	0	{}		POLS	\N
-POLS 368	Tyranny to Democracy 21st C.	0	{}		POLS	\N
-POLS 379	Model United Nations	0	{}		POLS	\N
-PSYC 375	Cross-cultural Psychology	0	{}		PSYC	\N
-PSYC 396	Health/Pediatric Psych	0	{}		PSYC	\N
-PSYC 400	Environmental Psychology	0	{}		PSYC	\N
-PSYC 432	CIS: Encultured Minds	0	{}		PSYC	\N
-PSYC 457	Poverty and Social Class (CEL)	0	{}		PSYC	\N
-PSYC 476	Sem:Mindfulness &Psychotherapy	0	{}		PSYC	\N
-RELI 103	New Testament	0	{}		RELI	\N
-RELI 126	Christian Doctrine	0	{}		RELI	\N
-RELI 254	American Christianities	0	{}		RELI	\N
-RELI 301	Stories of the Quran	0	{}		RELI	\N
-RELI 333	Political Theology	0	{}		RELI	\N
-RELI 359	Religion and Globalization	0	{}		RELI	\N
-RELI 506	Sys Theol I:God, Hmnty, Christ	0	{}		RELI	\N
-RELI 507	Sys TheoII:Spirit,Church,World	0	{}		RELI	\N
-RELI 581	Ignatian Integration	0	{}		RELI	\N
-SOCI 246	Sociology of Sport	0	{}		SOCI	\N
-SOCI 311	Classical Social Theory	0	{}		SOCI	\N
-SOCI 330	Society and the Individual	0	{}		SOCI	\N
-SOCI 385	Law and Society	0	{}		SOCI	\N
-SOCI 399	Global Criminology	0	{}		SOCI	\N
-SOCI 497	Sociology Internship	0	{}		SOCI	\N
-SOSJ 190	Intro to Solidarity & Social	0	{}		SOSJ	\N
-SOSJ 311	Political Theology	0	{}		SOSJ	\N
-SOSJ 320	Work, Wages, and Inequality	0	{}		SOSJ	\N
-SOSJ 328	-isms:Racism, Classism, Sexism	0	{}		SOSJ	\N
-SOSJ 329	Third World Development	0	{}		SOSJ	\N
-SOSJ 339	Environmental Justice	0	{}		SOSJ	\N
-SOSJ 341	Rights Justice & US Citizenshp	0	{}		SOSJ	\N
-SOSJ 342	Women and Politics	0	{}		SOSJ	\N
-SOSJ 346	Tyranny to Democracy 21 C.	0	{}		SOSJ	\N
-SOSJ 363	Argumentation and Debate	0	{}		SOSJ	\N
-SOSJ 365	Interreligious Dialogue	0	{}		SOSJ	\N
-SOSJ 465	Justice and Arts of Civic Life	0	{}		SOSJ	\N
-SPAN 324	Latin Amer 19th-21st Cen Lit	0	{}		SPAN	\N
-SPAN 328	Survey of Women's Literature	0	{}		SPAN	\N
-SPAN 400	Spanish in the US	0	{}		SPAN	\N
-TADP 521	Utility Communications	0	{}		TADP	\N
-TADP 540	Intro Transmission Line Design	0	{}		TADP	\N
-TADP 542	Substation Design	0	{}		TADP	\N
-TADP 545	System Protection	0	{}		TADP	\N
-TADP 641	Power System Analysis	0	{}		TADP	\N
-TADP 680	Alternative Energy	0	{}		TADP	\N
-THEA 216	Acting II	0	{}		THEA	\N
-THEA 222	E-Portfolio	0	{}		THEA	\N
-THEA 237	Costume and Fashion Design	0	{}		THEA	\N
-THEA 239	Lighting Design	0	{}		THEA	\N
-THEA 499	Senior Project II	0	{}		THEA	\N
-VART 192	Independent Study Fine Arts	0	{}		VART	\N
-VART 201	Drawing II	0	{}		VART	\N
-VART 241	Ceramics II	0	{}		VART	\N
-VART 324	Painting: Theory & Practice	0	{}		VART	\N
-VART 349	Printmaking & Comics	0	{}		VART	\N
-VART 352	Intermediate Printmaking	0	{}		VART	\N
-VART 396	Art in the 20th Century	0	{}		VART	\N
-VART 401	Renaissance Architecture	0	{}		VART	\N
-VART 403	The Ancient City	0	{}		VART	\N
-VART 408	History of Photography	0	{}		VART	\N
-VART 498	Native American Art	0	{}		VART	\N
-VART 499	Professional Practice	0	{}		VART	\N
-WGST 303	-isms:Racism,Classism, Sexism	0	{}		WGST	\N
-WGST 340	Women and Politics	0	{}		WGST	\N
-WGST 435	Feminist Ethics	0	{}		WGST	\N
-WGST 499	Capstone	0	{}		WGST	\N
-ARAB 102	Elementary Arabic II	0	{}		ARAB	\N
-BCSS 241	Landing Jobs in Mktg&Advrtsng	0	{}		BCSS	\N
-BCSS 242	Development & Self Confidence	0	{}		BCSS	\N
-BIOL 190	Pre-immersion Zambia	0	{}		BIOL	\N
-BIOL 334	Advanced Evolution	0	{}		BIOL	\N
-CHEM 464	Group Theory & Spectroscopy	0	{}		CHEM	\N
-CPEN 247	Network Interfacing & Sockets	0	{}		CPEN	\N
-CPEN 431	Comp Hardware Design & Arch	0	{}		CPEN	\N
-CPSC 290	Python Nat Lang Processing	0	{}		CPSC	\N
-CPSC 325	Data Science Project Lab	0	{}		CPSC	\N
-CPSC 331	UI/UX Design	0	{}		CPSC	\N
-CPSC 334	Linux and DevOps	0	{}		CPSC	\N
-CPSC 341	Internet of Things	0	{}		CPSC	\N
-CPSC 349	Cybersecurity Project Lab	0	{}		CPSC	\N
-CPSC 390	Game Theory of Tafl	0	{}		CPSC	\N
-CPSC 425	Computer Graphics	0	{}		CPSC	\N
-CPSC 435	Parallel & Cloud Computing	0	{}		CPSC	\N
-CRES 390	Chicana Feminisms	0	{}		CRES	\N
-CRES 499	Symposium	0	{}		CRES	\N
-CRIM 353	Juvenile Justice	0	{}		CRIM	\N
-CRIM 357	Inequality, Crime & Urban Life	0	{}		CRIM	\N
-CTED 1054	Certificate Health Care Ldrshp	0	{}		CTED	\N
-DANC 301	Pop Culture Dance	0	{}		DANC	\N
-DPLS 708	Ldrshp, Forgive & Restore Just	0	{}		DPLS	\N
-DPLS 722	Quantitative Data Analysis	0	{}		DPLS	\N
-DPLS 728	Conceptual Frmwk & Res. Design	0	{}		DPLS	\N
-DPLS 741	The Art & Practice of Dialogue	0	{}		DPLS	\N
-DPLS 742	Critical Theory &Leadership	0	{}		DPLS	\N
-DPLS 752	Narrative Inquiry & Identity	0	{}		DPLS	\N
-DPLS 767	Leadership Research	0	{}		DPLS	\N
-ECON 333	Health Economics	0	{}		ECON	\N
-ECON 497	Internship	0	{}		ECON	\N
-EDCE 549	Intro to Multicultural Cnslg	0	{}		EDCE	\N
-EDCE 568	Issues in Family Counseling	0	{}		EDCE	\N
-EDCE 570	Trauma, Crisis, & Grief Cnslg	0	{}		EDCE	\N
-EDPE 291	PE Pedagogy Lab	0	{}		EDPE	\N
-EDPE 313	Elementary Phys Educ Methods	0	{}		EDPE	\N
-EDPE 480	Exercise Prescription	0	{}		EDPE	\N
-EDPE 492	Sports Finance Research	0	{}		EDPE	\N
-EDPE 497A	Field Exp Elementary Phys Educ	0	{}		EDPE	\N
-EDSE 346	Tchg  Std w/ Lrng Disabilities	0	{}		EDSE	\N
-EDSE 470	Beh Assessment & Intervention	0	{}		EDSE	\N
-EDSE 535	Autism	0	{}		EDSE	\N
-EDSE 546	Tech for Tchg the Learng Disab	0	{}		EDSE	\N
-EDSE 553	Dev of Child w/ Exception	0	{}		EDSE	\N
-EDSE 673	Supervision and Consultation	0	{}		EDSE	\N
-EDSE 696	Special Ed Teaching Practicum	0	{}		EDSE	\N
-EDTE 900	Pacific NW History-STI Worksho	0	{}		EDTE	\N
-EENG 402	Electromagnetic Compatibility	0	{}		EENG	\N
-ENGL 200	Intermediate Composition	0	{}		ENGL	\N
-ENGL 210	British Literature Survey I	0	{}		ENGL	\N
-ENGL 270	Gender&Sexuality in Horror Flm	0	{}		ENGL	\N
-ENGL 307	Typography and Book Design	0	{}		ENGL	\N
-ENGL 311	American Literature II	0	{}		ENGL	\N
-ENGL 360	Modern Drama	0	{}		ENGL	\N
-ENVS 326	Environmental Sociology	0	{}		ENVS	\N
-ENVS 352	Environmental Law & Policy	0	{}		ENVS	\N
-ENVS 402	Conservation Biology	0	{}		ENVS	\N
-ENVS 423	Waste Management	0	{}		ENVS	\N
-GERM 480	German Cinema	0	{}		GERM	\N
-HEAL 333	Health Economics	0	{}		HEAL	\N
-HIST 308	Archaeology of Ancient Rome	0	{}		HIST	\N
-HIST 310	Native American Activism	0	{}		HIST	\N
-HIST 323	Disunited Kingdom	0	{}		HIST	\N
-HIST 358	African-American History	0	{}		HIST	\N
-HIST 364	Intro to Public History	0	{}		HIST	\N
-HIST 373	Japan Past and Preesnt	0	{}		HIST	\N
-HIST 393	History of Islamic Medicine	0	{}		HIST	\N
-HPHY 422	Cardiovascular Physiology	0	{}		HPHY	\N
-INST 332	Politics of Space and Place	0	{}		INST	\N
-INST 355	The Politics of Eurasia	0	{}		INST	\N
-INST 375	Japan Past and Present	0	{}		INST	\N
-INST 380	Global Social Change	0	{}		INST	\N
-ITAL 302	Advanced Italian II	0	{}		ITAL	\N
-ITAL 380	Special Topics in Italian	0	{}		ITAL	\N
-JOUR 374	Documentary History & Analysis	0	{}		JOUR	\N
-LATN 490	Love, Sex, & Desire	0	{}		LATN	\N
-MATH 328	Operations Research	0	{}		MATH	\N
-MATH 335	Applied Linear Algbra	0	{}		MATH	\N
-MATH 365	Math Seminar	0	{}		MATH	\N
-MATH 414	Real Analysis II	0	{}		MATH	\N
-MATH 423	Stochastic Processes	0	{}		MATH	\N
-MATH 451	Special Topics: Medical Stats	0	{}		MATH	\N
-MATH 459	Topology	0	{}		MATH	\N
-MBUS 615T	Small Business Marketing	0	{}		MBUS	\N
-MBUS 681	PythonicTech for FinancialData	0	{}		MBUS	\N
-MENG 443	Combustion	0	{}		MENG	\N
-MENG 451	Computational Dynamics	0	{}		MENG	\N
-MTAX 606	Wealth Transfer Taxation	0	{}		MTAX	\N
-MTAX 619	Tax Technologies	0	{}		MTAX	\N
-MTSL 204	Commnty Languages & Lng Acqstn	0	{}		MTSL	\N
-MUSC 311	Conducting II	0	{}		MUSC	\N
-MUSC 326	Composition Junior Portfolio	0	{}		MUSC	\N
-MUSC 331R	Applied Jazz Improvisation	0	{}		MUSC	\N
-MUSC 450	Jazz Theory and Analysis	0	{}		MUSC	\N
-NTAS 310	Native American Activism	0	{}		NTAS	\N
-NURS 692	Medical Spanish for NP	0	{}		NURS	\N
-NURS 715	Hlth Policy, Ethics & Advocacy	0	{}		NURS	\N
-PHIL 427	Major Figs & Mvmts:Kierkegaard	0	{}		PHIL	\N
-PHIL 441	Symbolic Logic	0	{}		PHIL	\N
-PHIL 446	Phil Refl Christnty & Science	0	{}		PHIL	\N
-PHIL 472	Philosophy of Art	0	{}		PHIL	\N
-PHIL 699	Thesis	0	{}		PHIL	\N
-PHYS 217	Modern Physics Lab	0	{}		PHYS	\N
-PHYS 407	Electricity & Magnetism II	0	{}		PHYS	\N
-PHYS 412	Biophysical Systems & Modeling	0	{}		PHYS	\N
-RELI 190	Psalms & Human Condition	0	{}		RELI	\N
-RELI 363	Buddhist Meditation & Practice	0	{}		RELI	\N
-RELI 377	Ethics, Human Rights & Glbztn	0	{}		RELI	\N
-RELI 486	Spec Top: Texts Gospel of John	0	{}		RELI	\N
-RELI 490	Directed Readings	0	{}		RELI	\N
-SOCI 342	Sociology of Family	0	{}		SOCI	\N
-SOCI 357	Inequality, Crime & Urban Life	0	{}		SOCI	\N
-SOCI 380	Global Social Change	0	{}		SOCI	\N
-SOCI 383	Environmental Sociology	0	{}		SOCI	\N
-SOCI 388	Sociology of Education (CEL)	0	{}		SOCI	\N
-SOSJ 310	Ethics-Human Rgts-Globalizatn	0	{}		SOSJ	\N
-SOSJ 325	Inequality, Crime & Urban Life	0	{}		SOSJ	\N
-SOSJ 326	African-American History	0	{}		SOSJ	\N
-SOSJ 327	Sociology of Education	0	{}		SOSJ	\N
-SOSJ 345	Global Social Change	0	{}		SOSJ	\N
-SPAN 481	Performance in Latin American	0	{}		SPAN	\N
-THEA 202	Performance Text Analysis	0	{}		THEA	\N
-VART 272	Intro to Filmmaking	0	{}		VART	\N
-VART 351	Beginning Screen Printing	0	{}		VART	\N
-VART 371	Art Fusion	0	{}		VART	\N
-VART 405	Archaeology of Ancient Rome	0	{}		VART	\N
-VART 441	Advanced Ceramics Projects	0	{}		VART	\N
-VART 450	Advanced Printmaking Projects	0	{}		VART	\N
-VART 497	Art Internship	0	{}		VART	\N
-WGST 221	Gender&Sexuality in Horror Flm	0	{}		WGST	\N
-BCSS 225	Leading Change	0	{}		BCSS	\N
-BFIN 327	International Finance	0	{}		BFIN	\N
-BIOL 404	Freshwater Biology	0	{}		BIOL	\N
-BIOL 404L	Freshwater Biology Lab	0	{}		BIOL	\N
-BIOL 425	Ecotoxicology	0	{}		BIOL	\N
-BIOL 425L	Ecotoxicology Lab	0	{}		BIOL	\N
-BMIS 489	Hack-a-thon	0	{}		BMIS	\N
-CLAS 325	Intro to Linguistics	0	{}		CLAS	\N
-CPEN 443	Autonomous Mobile Robots	0	{}		CPEN	\N
-CPSC 212	Computational Modeling	0	{}		CPSC	\N
-CPSC 314	Investigations in Human Lang	0	{}		CPSC	\N
-CPSC 315	Special Topics: Cybersecurity	0	{}		CPSC	\N
-CPSC 324	Big Data Analytics	0	{}		CPSC	\N
-CPSC 447	Computer Networks	0	{}		CPSC	\N
-CRES 304	(Re)Producing Race & Family	0	{}		CRES	\N
-CRIM 355	Elite & White Collar Deviance	0	{}		CRIM	\N
-DANC 290	Ballet Independent Study	0	{}		DANC	\N
-DANC 390	Independent Study	0	{}		DANC	\N
-DPLS 706	Leadership and Diversity	0	{}		DPLS	\N
-EDLA 613	Leadership Role Seminar	0	{}		EDLA	\N
-EDLA 630	Certification Internship	0	{}		EDLA	\N
-EDPE 119	Roll and Recover	0	{}		EDPE	\N
-EDSE 551	Physical Development	0	{}		EDSE	\N
-EDSS 712	Schl Safety, Crisis Prep & Res	0	{}		EDSS	\N
-EDSS 715	Intro to Research in Ed & Psyc	0	{}		EDSS	\N
-EDSS 722	Quantitative Rsrch Mth & Dsgn	0	{}		EDSS	\N
-EDSS 727	Group Process & Facilitation	0	{}		EDSS	\N
-EDSS 760	Consultation & Collaboration	0	{}		EDSS	\N
-EDSS 770	Neuropsych & Cognitive Assess	0	{}		EDSS	\N
-EDSS 780	Social-Eml Assmt Schl & Home	0	{}		EDSS	\N
-EDSS 785	Advanced Diagnostic Assessment	0	{}		EDSS	\N
-EDSS 787	Child & Adolescent Counseling	0	{}		EDSS	\N
-EDSS 797B	Pract in Sch Psyc K-12	0	{}		EDSS	\N
-ELCT 016	Intro to Listening & Speaking	0	{}		ELCT	\N
-ELCT 018	Intro to Grammar Support	0	{}		ELCT	\N
-ELCT 019	Intro to Reading and Writing	0	{}		ELCT	\N
-ENGL 241	Indigenous Lit Alaska Hawai'i	0	{}		ENGL	\N
-ENGL 348	Restoration & 18th Century Lit	0	{}		ENGL	\N
-ENGL 457	Melville	0	{}		ENGL	\N
-ENGL 490	Early Modern Gender and Lit	0	{}		ENGL	\N
-ENVS 190	Studies in Env Politics & Pol	0	{}		ENVS	\N
-ENVS 332	Representing the Rainforest	0	{}		ENVS	\N
-ENVS 390	Climate Change Science & Pol	0	{}		ENVS	\N
-ENVS 408	Freshwater Biology	0	{}		ENVS	\N
-ENVS 408L	Freshwater Biology Lab	0	{}		ENVS	\N
-ENVS 409	Ecotoxicology	0	{}		ENVS	\N
-ENVS 409L	Ecotoxicology Lab	0	{}		ENVS	\N
-ENVS 421	Environmental Engineering	0	{}		ENVS	\N
-ENVS 421L	Environmental Engineering Lab	0	{}		ENVS	\N
-FILI 102	Elementary Filipino II	0	{}		FILI	\N
-FILM 160	Acting I	0	{}		FILM	\N
-FILM 193	FYS: Cinema, Films, & Movies	0	{}		FILM	\N
-FILM 262	Introduction to Filmmaking	0	{}		FILM	\N
-FILM 352	The Films of Alfred Hitchcock	0	{}		FILM	\N
-FILM 451	Documentary History & Analysis	0	{}		FILM	\N
-FILM 460	Documentary Filmmaking	0	{}		FILM	\N
-FILM 470	Philosophy in Film	0	{}		FILM	\N
-FREN 331	Contemporary French Cinema	0	{}		FREN	\N
-GERM 306	German Youth Literature	0	{}		GERM	\N
-HEAL 104	Indigenous Science	0	{}		HEAL	\N
-HEAL 104L	Indigenous Science Lab	0	{}		HEAL	\N
-HEAL 343	Sociology of Reproduction	0	{}		HEAL	\N
-HEAL 495	CIS: Philosophy of Food	0	{}		HEAL	\N
-HIST 111	Intro to Native American Hist	0	{}		HIST	\N
-HIST 341	African Nationalism	0	{}		HIST	\N
-HIST 355	The American West	0	{}		HIST	\N
-HIST 369	A History of Race in America	0	{}		HIST	\N
-HIST 372	China Past and Present	0	{}		HIST	\N
-HIST 383	Mexico	0	{}		HIST	\N
-HONS 377	International Management	0	{}		HONS	\N
-HONS 407	Honors Advanced Genetics:	0	{}		HONS	\N
-INST 340	African Nationalism	0	{}		INST	\N
-INST 374	China Past and Present	0	{}		INST	\N
-INST 377	Mexico	0	{}		INST	\N
-INST 497	Internship in Intr'l Studies	0	{}		INST	\N
-LATN 305	Vergil	0	{}		LATN	\N
-MATH 362	Computational Modeling	0	{}		MATH	\N
-MATH 455	Chaos & Discrete Dynamical Sys	0	{}		MATH	\N
-MATH 494	Topics in Actuarial Science	0	{}		MATH	\N
-MENG 479	Tribology	0	{}		MENG	\N
-MSBA 622	Data Science for Business	0	{}		MSBA	\N
-MSBA 699	Emerging Issues in Analytics	0	{}		MSBA	\N
-NTAS 199	SI: Indigenous Science	0	{}		NTAS	\N
-NTAS 199L	Biology & Indigenous Sci Lab	0	{}		NTAS	\N
-NTAS 211	Intro Native American History	0	{}		NTAS	\N
-PHIL 406	Philosophy of Mind	0	{}		PHIL	\N
-PHIL 587	Classical Critics of Democracy	0	{}		PHIL	\N
-PHYS 112	General Physics II	0	{}		PHYS	\N
-PHYS 112L	General Physics II Lab	0	{}		PHYS	\N
-PHYS 222	Electronics	0	{}		PHYS	\N
-PHYS 224	Modern Physics	0	{}		PHYS	\N
-PHYS 321	Classical Mechanics	0	{}		PHYS	\N
-PHYS 452	Optics	0	{}		PHYS	\N
-PHYS 454	Nuclear and Particle Physics	0	{}		PHYS	\N
-PHYS 455	Cosmology and Astrophysics	0	{}		PHYS	\N
-PRLS 490	Media Research Directed Study	0	{}		PRLS	\N
-RELI 413	The Gospel of John	0	{}		RELI	\N
-SOCI 334	Social Movements	0	{}		SOCI	\N
-SOCI 343	Sociology of Reproduction	0	{}		SOCI	\N
-SOCI 355	Elite & White Collar Deviance	0	{}		SOCI	\N
-SOSJ 259	Transgender Social Movements	0	{}		SOSJ	\N
-SOSJ 261	Photojournalism	0	{}		SOSJ	\N
-SOSJ 323	Elite & White Collar Deviance	0	{}		SOSJ	\N
-SOSJ 344	Social Movements	0	{}		SOSJ	\N
-SOSJ 466	Intersectional Communication	0	{}		SOSJ	\N
-SOSJ 497	SOSJ Praxis	0	{}		SOSJ	\N
-SPAN 332	Representing the Rainforest	0	{}		SPAN	\N
-SPAN 334	Lorca's Body and Contemp.Spain	0	{}		SPAN	\N
-THEA 200	Theatre History	0	{}		THEA	\N
-THEA 294	Special Top: Fashion History	0	{}		THEA	\N
-THEA 440	Playwriting	0	{}		THEA	\N
-UNIV 100	IDD Testing	0	{}		UNIV	\N
-WGST 261	Sociology of Health & Medicine	0	{}		WGST	\N
-WGST 300	Feminism and Intersectionality	0	{}		WGST	\N
-WGST 305	Transnational Feminisms	0	{}		WGST	\N
-WGST 327	Shakespeare	0	{}		WGST	\N
-ACCT 491	Independent Study Auditing	0	{}		ACCT	\N
-BIOL 159L	Field Studies in Biodiversity	0	{}		BIOL	\N
-BIOL 473	Marine Biology	0	{}		BIOL	\N
-BIOL 497	Research Lab of Dr. Norquist	0	{}		BIOL	\N
-CENG 440	GU-in-Delft:Sustainable Cities	0	{}		CENG	\N
-CHEM 490	Directed Reading	0	{}		CHEM	\N
-COML 505	Digital Storytelling	0	{}		COML	\N
-COML 541	Adv Digital Media Analysis	0	{}		COML	\N
-CPSC 190	Directed Study	0	{}		CPSC	\N
-CPSC 497	Computer Science Internship	0	{}		CPSC	\N
-DNAP 701	Basic Principles Anesthesia I	0	{}		DNAP	\N
-DNAP 704	Adv Prin: Obstetric Anesthesia	0	{}		DNAP	\N
-DNAP 707	Adv Prin:Cardiac & Vascular An	0	{}		DNAP	\N
-DNAP 711	Anatomy & Adv Physiology I	0	{}		DNAP	\N
-DNAP 721	Advanced Pharmacology I	0	{}		DNAP	\N
-DNAP 731	Advanced Health Assessment	0	{}		DNAP	\N
-DNAP 755	Medical Ethics	0	{}		DNAP	\N
-DNAP 759	Prof Role Development	0	{}		DNAP	\N
-DNAP 761	Evidence Based Prac Anesthesia	0	{}		DNAP	\N
-DNAP 764	Capstone II: Project Dvlpmnt	0	{}		DNAP	\N
-DNAP 783	Clinical Practicum: III	0	{}		DNAP	\N
-DNAP 786	Clinical Practicum: VI	0	{}		DNAP	\N
-ECON 320	Economics of Sports	0	{}		ECON	\N
-ECON 334	Behavioral Economics	0	{}		ECON	\N
-EDCE 525	Intro to Canadian Counselling	0	{}		EDCE	\N
-EDCE 564	Assessment in Schl Counseling	0	{}		EDCE	\N
-EDCE 565	Assessment in Counseling	0	{}		EDCE	\N
-EDCE 567	Career Dev & Assmt in Cnsllg	0	{}		EDCE	\N
-EDCE 600	Trauma, Crisis, and Grief	0	{}		EDCE	\N
-EDCE 605	Occ Chce & Career Dvlp Counsel	0	{}		EDCE	\N
-EDCE 684	Counselling Pre-Practicum (A)	0	{}		EDCE	\N
-EDLA 694	Evidence Informed Dec Making	0	{}		EDLA	\N
-EDLD 700	Intro Problem of Practice	0	{}		EDLD	\N
-EDLD 702	Culture and Identity	0	{}		EDLD	\N
-EDLD 708	Schl Imnprove:People,Data,Proc	0	{}		EDLD	\N
-EDLD 709	Ethics:Higher Standard of Ldr	0	{}		EDLD	\N
-EDLD 711	Bldg Cap Continuous Improve	0	{}		EDLD	\N
-EDLD 715	Organizational Systms Analysis	0	{}		EDLD	\N
-EDLD 799	Doctoral Conference & Oral Ex	0	{}		EDLD	\N
-EDPE 696C	Sport & Athl Admin:Intern III	0	{}		EDPE	\N
-EDPL 900	Tjeory & Practice of Lang Tchg	0	{}		EDPL	\N
-EDSE 492	Assessment	0	{}		EDSE	\N
-EDSE 674	Ethics II	0	{}		EDSE	\N
-EDSE 692	Behav Analysis & Social Change	0	{}		EDSE	\N
-EDTE 511	Instructional Foundations	0	{}		EDTE	\N
-EDTE 512E	Elem Diff Instr & Assmnt	0	{}		EDTE	\N
-EDTE 512S	Sec Diff Instr & Assmnt	0	{}		EDTE	\N
-EDTE 520	Teaching in the Middle School	0	{}		EDTE	\N
-EDTE 689	Professional Seminar	0	{}		EDTE	\N
-ELCT 185	ESL pre-test Registration	0	{}		ELCT	\N
-ENGL 204	The Summer Blockbuster	0	{}		ENGL	\N
-ENGL 391	Poetry Writing	0	{}		ENGL	\N
-GERM 380	German Conversation II	0	{}		GERM	\N
-MBUS 618	Tribal Seminar 1	0	{}		MBUS	\N
-MBUS 641	Sports Economics	0	{}		MBUS	\N
-MBUS 660	Investments	0	{}		MBUS	\N
-MTSL 516	Technology in Second Lang Ed	0	{}		MTSL	\N
-MTSL 517	Phonology	0	{}		MTSL	\N
-MTSL 580	TESOL Field Experience	0	{}		MTSL	\N
-NURS 645A	Legal, Regulatory, & Ethic HC	0	{}		NURS	\N
-NURS 671	Care of Frail Elder	0	{}		NURS	\N
-OPER 491	Global Supply Chain Mgmt	0	{}		OPER	\N
-ORGL 551	Adv Team Bldg & Ldrshp	0	{}		ORGL	\N
-PHIL 280	Persons and Conduct	0	{}		PHIL	\N
-PHIL 690	Philosophy of A.N. Whitehead	0	{}		PHIL	\N
-PHIL 691	History of Philosophy II	0	{}		PHIL	\N
-PHYS 395	Research Assistantship	0	{}		PHYS	\N
-PSYC 281	Neuroscience and Sexuality	0	{}		PSYC	\N
-PSYC 490	Cultutal Psychology	0	{}		PSYC	\N
-RELI 227	Theology in Global Contexts	0	{}		RELI	\N
-RELI 255	Relig of the African Diaspora	0	{}		RELI	\N
-RELI 365	Religion and Film	0	{}		RELI	\N
-RELI 370	Chris Spirit: Call to Justice	0	{}		RELI	\N
-RELI 505	Intro to Christian Leadership	0	{}		RELI	\N
-RELI 530	Christian Moral Theology	0	{}		RELI	\N
-RELI 606	Ministry Leadership Seminar	0	{}		RELI	\N
-RELI 690	Thesis: Disability Inclusion	0	{}		RELI	\N
-SPAN 390	Latin American Film	0	{}		SPAN	\N
-TADP 544	Proj Dev & Construction Method	0	{}		TADP	\N
-TADP 640	Adv Transmission Line Design	0	{}		TADP	\N
-UNIV 110	Step Basics	0	{}		UNIV	\N
-UNIV 380	Research	0	{}		UNIV	\N
-UNIV 497	Internship	0	{}		UNIV	\N
-BIOL 359L	Field Studies in Biodiversity	0	{}		BIOL	\N
-COML 521	Travel Writing	0	{}		COML	\N
-COML 522	Ren Rhetoric & Contemp Ldrshp	0	{}		COML	\N
-COMM 432	CIS: Intergroup Dialogue	0	{}		COMM	\N
-CPSC 310	Information Warfare	0	{}		CPSC	\N
-DPLS 779	Writing Retreat	0	{}		DPLS	\N
-EDCE 594	Dialectical Behavior Therapy	0	{}		EDCE	\N
-EDPE 333	Intrl Sport Mgmt & Culture	0	{}		EDPE	\N
-ENGL 350	Twentieth Century British Lit	0	{}		ENGL	\N
-JOUR 390	History of Journalism	0	{}		JOUR	\N
-MBUS 590	Directed Study	0	{}		MBUS	\N
-MTSL 570	History of the English Lang	0	{}		MTSL	\N
-PHIL 520	History of Philosophy I	0	{}		PHIL	\N
-PHIL 521	History of Philosophy II	0	{}		PHIL	\N
-SPAN 342	Mexican Civilization & Culture	0	{}		SPAN	\N
-COMM 391	Directed  Study	0	{}		COMM	\N
-CRES 490	Symposium	0	{}		CRES	\N
-EDSE 508	Clinical Exp & Supervision	0	{}		EDSE	\N
-FILM 221	The Summer Blockbuster	0	{}		FILM	\N
-FILM 372	Religion and Film	0	{}		FILM	\N
-GERM 390	German Conversation II	0	{}		GERM	\N
-HIST 382	Revolutions in Mod Latin Amer	0	{}		HIST	\N
-HIST 395	Sust & Comm in Italian Alps	0	{}		HIST	\N
-MATH 497	Mathematics Internship	0	{}		MATH	\N
-MBUS 690	Introduction to Global Health	0	{}		MBUS	\N
-NURS 499	Intro to Global Health	0	{}		NURS	\N
-RELI 220	Hist Christianity in Scotland	0	{}		RELI	\N
-SPAN 285	Sp Topic Abroad Intrm Spanish	0	{}		SPAN	\N
+COPY public.course (code, title, difficulty, attributes, description, department, term, credits) FROM stdin;
+MTSL 602	Thesis	0	{}		MTSL	\N	\N
+ECON 352L	Money and Banking Math Lab	0	{}		ECON	\N	\N
+EDSE 344	Psy of Child Behav Disorders	0	{}		EDSE	\N	\N
+EDSE 544	Adv Social, Emotion, & Beh Dis	0	{}		EDSE	\N	\N
+EDSS 745B	Statistics II	0	{}		EDSS	\N	\N
+EDSS 776	Consultation & Program Eval	0	{}		EDSS	\N	\N
+EDSS 792A	Clinical Supervision I	0	{}		EDSS	\N	\N
+ENSC 201	Programming for Engineers	0	{}		ENSC	\N	\N
+ENVS 401	Population Ecology	0	{}		ENVS	\N	\N
+GREK 201	Greek III	0	{}		GREK	\N	\N
+HEAL 332	Urban and Community Sociology	0	{}		HEAL	\N	\N
+HIST 107	The Ancient World	0	{}		HIST	\N	\N
+HIST 306	The Roman Empire	0	{}		HIST	\N	\N
+HIST 339	Modern France: 1789 to Present	0	{}		HIST	\N	\N
+MENG 447	Advanced Energy Systems	0	{}		MENG	\N	\N
+NEUR 201	Introduction to Neuroscience	0	{}		NEUR	\N	\N
+NTAS 210	Indians of Columbia Plateau	0	{}		NTAS	\N	\N
+NTAS 320	Native American Art & Perform	0	{}		NTAS	\N	\N
+PHYS 280	Physics Pathways Seminar	0	{}		PHYS	\N	\N
+PHYS 322	Electricity and Magnetism	0	{}		PHYS	\N	\N
+PHYS 325	Computational Physics	0	{}		PHYS	\N	\N
+PHYS 456	Biophysical Systems & Modeling	0	{}		PHYS	\N	\N
+SOCI 332	Urban and Community Sociology	0	{}		SOCI	\N	\N
+BIOL 333	Community Ecology	0	{}		BIOL	\N	\N
+BIOL 360	Plant Biology	0	{}		BIOL	\N	\N
+BIOL 367	Entomology	0	{}		BIOL	\N	\N
+BIOL 367L	Entomology Lab	0	{}		BIOL	\N	\N
+CHEM 405	PhysOrg of Biological Pathways	0	{}		CHEM	\N	\N
+CLAS 320	The Iliad & the Odyssey	0	{}		CLAS	\N	\N
+CPEN 442	Introduction to Robotics	0	{}		CPEN	\N	\N
+CRIM 360	Street Gangs in America	0	{}		CRIM	\N	\N
+EDCE 571	Trauma, Crisis, & Grief in MFC	0	{}		EDCE	\N	\N
+EDSS 701	Psych of Children w Exception	0	{}		EDSS	\N	\N
+EDSS 710	History& Systems of Psychology	0	{}		EDSS	\N	\N
+EDSS 788	Dev Bases of Behavior	0	{}		EDSS	\N	\N
+ENGL 323	Medieval Lit:Rage&Romance	0	{}		ENGL	\N	\N
+ENGL 433	Milton & His Contemporaries	0	{}		ENGL	\N	\N
+ENGL 480	Crit Theory:Lit & Cltrl Stdy	0	{}		ENGL	\N	\N
+PHIL 434	Chinese Philosophy	0	{}		PHIL	\N	\N
+PSYC 434	Cognitive Neuroscience	0	{}		PSYC	\N	\N
+BIOL 334	Advanced Evolution	0	{}		BIOL	\N	\N
+DANC 301	Pop Culture Dance	0	{}		DANC	\N	\N
+ECON 333	Health Economics	0	{}		ECON	\N	\N
+EDPE 313	Elementary Phys Educ Methods	0	{}		EDPE	\N	\N
+EDPE 480	Exercise Prescription	0	{}		EDPE	\N	\N
+EDSE 346	Tchg  Std w/ Lrng Disabilities	0	{}		EDSE	\N	\N
+EDSE 470	Beh Assessment & Intervention	0	{}		EDSE	\N	\N
+EENG 402	Electromagnetic Compatibility	0	{}		EENG	\N	\N
+ENGL 200	Intermediate Composition	0	{}		ENGL	\N	\N
+ENGL 210	British Literature Survey I	0	{}		ENGL	\N	\N
+ENGL 311	American Literature II	0	{}		ENGL	\N	\N
+ENVS 352	Environmental Law & Policy	0	{}		ENVS	\N	\N
+WGST 305	Transnational Feminisms	0	{}		WGST	\N	\N
+EDSE 492	Assessment	0	{}		EDSE	\N	3
+ENGL 350	Twentieth Century British Lit	0	{}		ENGL	\N	3
+JOUR 390	History of Journalism	0	{}		JOUR	\N	3
+MBUS 590	Directed Study	0	{}		MBUS	\N	3
+MTSL 570	History of the English Lang	0	{}		MTSL	\N	3
+PHIL 520	History of Philosophy I	0	{}		PHIL	\N	3
+PHIL 521	History of Philosophy II	0	{}		PHIL	\N	3
+SPAN 342	Mexican Civilization & Culture	0	{}		SPAN	\N	3
+COMM 391	Directed  Study	0	{}		COMM	\N	\N
+CRES 490	Symposium	0	{}		CRES	\N	\N
+EDSE 508	Clinical Exp & Supervision	0	{}		EDSE	\N	3
+FILM 221	The Summer Blockbuster	0	{}		FILM	\N	3
+FILM 372	Religion and Film	0	{}		FILM	\N	3
+GERM 390	German Conversation II	0	{}		GERM	\N	\N
+HIST 382	Revolutions in Mod Latin Amer	0	{}		HIST	\N	3
+HIST 395	Sust & Comm in Italian Alps	0	{}		HIST	\N	3
+MATH 497	Mathematics Internship	0	{}		MATH	\N	\N
+MBUS 690	Introduction to Global Health	0	{}		MBUS	\N	2
+NURS 499	Intro to Global Health	0	{}		NURS	\N	3
+RELI 220	Hist Christianity in Scotland	0	{}		RELI	\N	3
+SPAN 285	Sp Topic Abroad Intrm Spanish	0	{}		SPAN	\N	3
+ACCT 260	Principles of Accounting I	0	{}		ACCT	\N	3
+ACCT 261	Principles of Accounting II	0	{}		ACCT	\N	3
+ACCT 263	Accounting Analysis	0	{}		ACCT	\N	3
+ACCT 311	Data Analysis for Accountants	0	{}		ACCT	\N	3
+ACCT 360	Interm Financial Accounting I	0	{}		ACCT	\N	3
+ACCT 362	Accounting Information Systems	0	{}		ACCT	\N	3
+ACCT 365	Federal Taxation I	0	{}		ACCT	\N	3
+ACCT 367	Financial Reporting & Analysis	0	{}		ACCT	\N	3
+ACCT 460	Advanced Financial Accounting	0	{}		ACCT	\N	3
+ACCT 471	Forensic Accounting Lab	0	{}		ACCT	\N	3
+ACCT 497	Internship	0	{}		ACCT	\N	\N
+ARAB 101	Elementary Arabic I	0	{}		ARAB	\N	4
+BCSS 201	Business Leadership	0	{}		BCSS	\N	1
+BCSS 221	Excel Skills	0	{}		BCSS	\N	1
+BCSS 230	Economics of the Side Hustle	0	{}		BCSS	\N	1
+BCSS 233	Work Hacks	0	{}		BCSS	\N	1
+BCSS 234	Career Preparedness	0	{}		BCSS	\N	1
+BCSS 240	More Like You Dream Job	0	{}		BCSS	\N	1
+BCSS 260	Intercultural Business Comm	0	{}		BCSS	\N	1
+BCSS 268	Community Service & Leadership	0	{}		BCSS	\N	1
+BENT 340	Small Business in Europe	0	{}		BENT	\N	3
+BENT 490	Creativity,Innovation,&Entrshp	0	{}		BENT	\N	3
+BENT 491	Creating New Ventures	0	{}		BENT	\N	3
+BENT 493	Social Entrepreneurship	0	{}		BENT	\N	3
+BENT 495	New Venture Lab	0	{}		BENT	\N	\N
+BENT 498	Developing a Business Model	0	{}		BENT	\N	3
+BFIN 320	Principles of Finance	0	{}		BFIN	\N	3
+BFIN 322	Intermediate Finance	0	{}		BFIN	\N	3
+BFIN 422	Investment Analysis	0	{}		BFIN	\N	3
+BFIN 423	Financial Management Cases	0	{}		BFIN	\N	3
+BFIN 426	Mergers and Acquisitions	0	{}		BFIN	\N	3
+BFIN 429B	Portfolio Mgmt II	0	{}		BFIN	\N	1
+BFIN 489	New York Trek	0	{}		BFIN	\N	3
+BIOL 104	SI: Biological Systems	0	{}		BIOL	\N	2
+BIOL 104L	SI: Biological Systems Lab	0	{}		BIOL	\N	1
+BIOL 105	Info Flow in Biol Systems	0	{}		BIOL	\N	3
+BIOL 105L	Info Flow in Biol Systems Lab	0	{}		BIOL	\N	1
+BIOL 106	Energy Flow in Biol Systems	0	{}		BIOL	\N	3
+BIOL 170	Introduction to Microbiology	0	{}		BIOL	\N	3
+BIOL 170L	Intro to Microbiology Lab	0	{}		BIOL	\N	1
+BIOL 181	SI: Biological Systems	0	{}		BIOL	\N	2
+BIOL 181L	SI: Biological Systems Lab	0	{}		BIOL	\N	1
+BIOL 205	Physiology & Biodiversity	0	{}		BIOL	\N	3
+BIOL 205L	Physiology & Biodiversity Lab	0	{}		BIOL	\N	1
+BIOL 207	Genetics	0	{}		BIOL	\N	3
+BIOL 207L	Genetics Lab	0	{}		BIOL	\N	1
+BIOL 295	Science Outreach	0	{}		BIOL	\N	0
+BIOL 303	Population Ecology	0	{}		BIOL	\N	3
+BIOL 304	Practice in Laboratory Teachng	0	{}		BIOL	\N	1
+BIOL 331	Parasitology	0	{}		BIOL	\N	3
+BIOL 338	Histology	0	{}		BIOL	\N	3
+BIOL 338L	Histology Lab	0	{}		BIOL	\N	1
+BIOL 351	Advanced Cell Biology	0	{}		BIOL	\N	3
+BIOL 351L	Advanced Cell Biology Lab	0	{}		BIOL	\N	1
+BIOL 357	Wildlife Management	0	{}		BIOL	\N	3
+BIOL 357L	Wildlife Management Lab	0	{}		BIOL	\N	1
+BIOL 370	Microbiology	0	{}		BIOL	\N	3
+BIOL 370L	Microbiology Lab	0	{}		BIOL	\N	1
+BIOL 395	Research Assistantship	0	{}		BIOL	\N	0
+BIOL 399	10 Great Inventions of Evol’n	0	{}		BIOL	\N	2
+BIOL 420	Physiological Ecology	0	{}		BIOL	\N	3
+BIOL 456	Molecular Biology	0	{}		BIOL	\N	3
+BIOL 456L	Molecular Biology Lab	0	{}		BIOL	\N	1
+BIOL 484	Research Seminar	0	{}		BIOL	\N	1
+BIOL 490	Microbial Interactions	0	{}		BIOL	\N	2
+BIOL 495	Senior Evaluation	0	{}		BIOL	\N	0
+BIOL 498	Phage Genetics Research	0	{}		BIOL	\N	5
+BIOL 499	Senior Colloquium	0	{}		BIOL	\N	1
+BMIS 235	Management Information Systems	0	{}		BMIS	\N	3
+BMIS 245	Tech Fnd of Digital Marketing	0	{}		BMIS	\N	3
+BMIS 331	Prbm Solving & Prog Techniques	0	{}		BMIS	\N	3
+BMIS 441	Data Base Management	0	{}		BMIS	\N	3
+BMIS 443	Tech for Web/Mobile-based Bus	0	{}		BMIS	\N	3
+BMIS 445	Analytics Practicum	0	{}		BMIS	\N	3
+BRCO 203	Fundamentals of TV Production	0	{}		BRCO	\N	3
+BRCO 204	Fund of Audio Production	0	{}		BRCO	\N	3
+BRCO 204L	Fund of Audio Production Lab	0	{}		BRCO	\N	0
+BRCO 303	Intermediate TV Production	0	{}		BRCO	\N	3
+BRCO 370	Broadcast Journalism	0	{}		BRCO	\N	3
+BRCO 470	Broadcast Leadership	0	{}		BRCO	\N	3
+BRCO 492	IS: Professional Practice	0	{}		BRCO	\N	3
+BRCO 497	Broadcast Internship	0	{}		BRCO	\N	3
+BUSN 101	Introduction to Business	0	{}		BUSN	\N	3
+BUSN 111	Business Computing	0	{}		BUSN	\N	2
+BUSN 193	FYS: Habits	0	{}		BUSN	\N	3
+BUSN 230	Business Statistics	0	{}		BUSN	\N	3
+BUSN 270	Personal Brand& Bus for Athls	0	{}		BUSN	\N	1
+BUSN 283	Business Law	0	{}		BUSN	\N	3
+BUSN 390	Gender in the Workplace	0	{}		BUSN	\N	3
+BUSN 470	Multidisciplinary Act Projects	0	{}		BUSN	\N	3
+BUSN 480	Senior Seminar Business Ethics	0	{}		BUSN	\N	3
+BUSN 481	Strategic Management	0	{}		BUSN	\N	3
+BUSN 490	Wine: from grapes to glass	0	{}		BUSN	\N	3
+BUSN 491	Startup Accelerator	0	{}		BUSN	\N	3
+BUSN 494	Small Business Consulting	0	{}		BUSN	\N	3
+BUSN 497	Internship	0	{}		BUSN	\N	1
+CENG 225	Engineering Geology	0	{}		CENG	\N	3
+CENG 252	Civil Fluid Mechanics	0	{}		CENG	\N	3
+CENG 261	Introduction to Geomatics	0	{}		CENG	\N	2
+CENG 261L	Introduction to Geomatics Lab	0	{}		CENG	\N	1
+CENG 301	Structural Analysis I	0	{}		CENG	\N	3
+CENG 302L	Construction Materials Lab	0	{}		CENG	\N	2
+CENG 318	Transportation Engineering	0	{}		CENG	\N	3
+CENG 331	Soil Mechanics	0	{}		CENG	\N	3
+CENG 331L	Soil Mechanics Lab	0	{}		CENG	\N	1
+CENG 351	Engineering Hydrology	0	{}		CENG	\N	3
+CENG 404	Sustainable Systems and Design	0	{}		CENG	\N	3
+CENG 411	Steel Design	0	{}		CENG	\N	3
+CENG 417	Traffic Engineering	0	{}		CENG	\N	3
+CENG 424	Water Treatment Processes	0	{}		CENG	\N	3
+CENG 426	Stream Restoration	0	{}		CENG	\N	3
+CENG 473	Foundation Design	0	{}		CENG	\N	3
+CHEM 101	General Chemistry	0	{}		CHEM	\N	3
+CHEM 101L	General Chemistry Lab	0	{}		CHEM	\N	1
+CHEM 104	SI: Chemistry in Context	0	{}		CHEM	\N	2
+CHEM 104L	SI: Chemistry in Context Lab	0	{}		CHEM	\N	1
+CHEM 205	Inorganic Chemistry	0	{}		CHEM	\N	3
+CHEM 231	Organic Chemistry II	0	{}		CHEM	\N	3
+CHEM 231L	Organic Chemistry II Lab	0	{}		CHEM	\N	1
+CHEM 295	Science Outreach	0	{}		CHEM	\N	0
+CHEM 355	Physical Chemistry	0	{}		CHEM	\N	3
+CHEM 355L	Physical/Inorganic Chem Lab	0	{}		CHEM	\N	1
+CHEM 390	Bioorganic Chemistry Research	0	{}		CHEM	\N	1
+CHEM 395	Research Assistantship	0	{}		CHEM	\N	0
+CHEM 399	Sustainable Polymers	0	{}		CHEM	\N	2
+CHEM 408	RNA Chemistry and Biology	0	{}		CHEM	\N	2
+CHEM 415	Organometallic Chemistry	0	{}		CHEM	\N	2
+CHEM 485	Seminar	0	{}		CHEM	\N	1
+CHEM 497	Res in the Lab of: Dr Traphel	0	{}		CHEM	\N	3
+CHEM 498A	Thesis I	0	{}		CHEM	\N	1
+CHIN 101	Elementary Chinese I	0	{}		CHIN	\N	4
+CLAS 193	FYS: Spartacus: Fact & Fiction	0	{}		CLAS	\N	3
+CLAS 375	Spec Topics:The Origin of Love	0	{}		CLAS	\N	3
+CLAS 420	Ancient Rome in Pop Culture	0	{}		CLAS	\N	3
+CLAS 499	Senior Thesis	0	{}		CLAS	\N	3
+COML 504	Organizational Communication	0	{}		COML	\N	3
+COML 507	Mindful Leadership and Comm	0	{}		COML	\N	3
+COML 509	SocialMediaEngagement&Analysis	0	{}		COML	\N	3
+COML 510	CommunicationTeaching&Pedagogy	0	{}		COML	\N	3
+COML 511	Comm Consulting & Training	0	{}		COML	\N	3
+COML 512	Strategic & Crisis Comm	0	{}		COML	\N	3
+COML 513	Spec Top: Arts Lead & Admin	0	{}		COML	\N	3
+COML 520	Comm Leadership Internship	0	{}		COML	\N	3
+COML 530	Women, Comm, & Ldrshp	0	{}		COML	\N	3
+COML 540	Digital Media Analysis	0	{}		COML	\N	3
+COML 550	Visual Data Communication	0	{}		COML	\N	3
+COML 595	Theorizing Communication	0	{}		COML	\N	3
+COML 596	Master's Level Writing	0	{}		COML	\N	0
+COML 597	Comm & Leadership Ethics	0	{}		COML	\N	3
+COML 598	Int'l and Intercultural Comm	0	{}		COML	\N	3
+COML 599	Content Creation and Strategy	0	{}		COML	\N	3
+COML 602	Comm & Leadership Capstone	0	{}		COML	\N	3
+COML 690	Gossip as Resistive Practice	0	{}		COML	\N	3
+COMM 100	Communication and Speech	0	{}		COMM	\N	3
+COMM 210	Understanding Meaning-making	0	{}		COMM	\N	3
+COMM 220	Understanding Power in Culture	0	{}		COMM	\N	3
+COMM 230	Understanding Identity	0	{}		COMM	\N	3
+COMM 275	Analyzing Public Texts	0	{}		COMM	\N	3
+COMM 285	Analyzing Practices and Habits	0	{}		COMM	\N	3
+COMM 320	Resistance, Struggle, & Power	0	{}		COMM	\N	3
+COMM 340	Encounters in Public Spheres	0	{}		COMM	\N	3
+COMM 342	Debate Participation	0	{}		COMM	\N	1
+COMM 350	Politics of Social Memory	0	{}		COMM	\N	3
+COMM 360	Media Aesthetics	0	{}		COMM	\N	3
+COMM 430	Intersectional Communication	0	{}		COMM	\N	3
+COMM 440	Rhetoric of Social Change	0	{}		COMM	\N	3
+COMM 480	Cross Cultural Communication	0	{}		COMM	\N	3
+COMM 484	Senior Seminar	0	{}		COMM	\N	3
+COMM 490	Crafting Professional Identity	0	{}		COMM	\N	1
+COMM 497	Public Outreach Internship	0	{}		COMM	\N	6
+CPEN 230	Intro Digital Logic	0	{}		CPEN	\N	3
+CPEN 230L	Intro Digital Logic Lab	0	{}		CPEN	\N	1
+CPEN 430	Digital System Design	0	{}		CPEN	\N	3
+CPEN 430L	Digital System Design Lab	0	{}		CPEN	\N	1
+CPEN 436	Machine Learning in Biomed	0	{}		CPEN	\N	3
+CPSC 121	Computer Science I	0	{}		CPSC	\N	3
+CPSC 122	Computer Science II	0	{}		CPSC	\N	3
+CPSC 222	Introduction to Data Science	0	{}		CPSC	\N	3
+CPSC 223	Algorithm&Abstract Data Struct	0	{}		CPSC	\N	3
+CPSC 224	Software Development	0	{}		CPSC	\N	3
+CPSC 260	Computer Organization	0	{}		CPSC	\N	3
+CPSC 321	Database Management Systems	0	{}		CPSC	\N	3
+CPSC 322	Data Science Algorithms	0	{}		CPSC	\N	3
+CPSC 323	Machine Lrng & Intllgnt Systms	0	{}		CPSC	\N	3
+CPSC 332	Web Development	0	{}		CPSC	\N	3
+CPSC 333	Mobile App Development	0	{}		CPSC	\N	3
+CPSC 346	Operating Systems	0	{}		CPSC	\N	3
+CPSC 436	Biomedical Informatics&Comput	0	{}		CPSC	\N	3
+CPSC 450	Design & Analysis-Comp Algorim	0	{}		CPSC	\N	3
+CPSC 475	Speech&NaturalLangProcessing	0	{}		CPSC	\N	3
+CPSC 490	Intro to NLP	0	{}		CPSC	\N	3
+CPSC 491	Software Engineering	0	{}		CPSC	\N	2
+CPSC 491L	Senior Design Project Lab I	0	{}		CPSC	\N	1
+CPSC 499	Computers and Society	0	{}		CPSC	\N	1
+CRES 101	Intro to Race & Ethnic Studies	0	{}		CRES	\N	3
+CRES 280	Intro to Asian AmericanStudies	0	{}		CRES	\N	3
+CRES 302	Race, Resistance, &Resillience	0	{}		CRES	\N	3
+CRES 380	Hip Hop Feminisms	0	{}		CRES	\N	3
+CRIM 101	Crime, Social Control, Justice	0	{}		CRIM	\N	3
+CRIM 312	Criminological Theories	0	{}		CRIM	\N	3
+CRIM 350	Deviant Behavior	0	{}		CRIM	\N	3
+CRIM 356	Sociology of Policing	0	{}		CRIM	\N	3
+CRIM 358	Mass Incarceration	0	{}		CRIM	\N	3
+CRIM 359	Criminal Violence	0	{}		CRIM	\N	3
+CRIM 391	Inequality, Crime & Urban Life	0	{}		CRIM	\N	3
+CRIM 395	Cultural Criminology	0	{}		CRIM	\N	3
+CRIM 396	Re-entry and Transformation	0	{}		CRIM	\N	3
+CRIM 397	Drugs and Crime	0	{}		CRIM	\N	3
+CRIM 480	Crim/Civil Trial Procedure	0	{}		CRIM	\N	3
+CRIM 497	Criminal Justice Internship	0	{}		CRIM	\N	3
+CRIM 499	Criminology Senior Capstone	0	{}		CRIM	\N	3
+CTED 1004	Cert in Law & Biz of Wine	0	{}		CTED	\N	\N
+CTED 1005	Wine & Society	0	{}		CTED	\N	1
+CTED 1050	Certificate: Fndtnl Ldrshp	0	{}		CTED	\N	4
+CTED 1051	Certificate: Women's Ldrshp	0	{}		CTED	\N	8
+CTED 1052	Certificate: Servant Ldrshp	0	{}		CTED	\N	8
+CTED 1053	Certificate: Design Thinking	0	{}		CTED	\N	8
+CTED 1100	Authentic Leadership	0	{}		CTED	\N	3
+DANC 105	Jazz Dance I	0	{}		DANC	\N	2
+DANC 110	Contemporary/Modern Dance I	0	{}		DANC	\N	2
+DANC 115	Ballet I	0	{}		DANC	\N	2
+DANC 155	Dance: Culture and Art	0	{}		DANC	\N	3
+DANC 190	Dance:Culture & Art Pedagogy	0	{}		DANC	\N	3
+DANC 205	Jazz Dance II	0	{}		DANC	\N	2
+DANC 210	Contemporary/Modern Dance II	0	{}		DANC	\N	2
+DANC 215	Ballet II	0	{}		DANC	\N	2
+DANC 270	Dance History	0	{}		DANC	\N	3
+DANC 280	Special Topics- Improvisation	0	{}		DANC	\N	3
+DANC 380	Topics in Dance - ALA	0	{}		DANC	\N	3
+DANC 455	Dance Senior Seminar	0	{}		DANC	\N	1
+DANC 460	Advanced Dance Production	0	{}		DANC	\N	1
+DANC 466	Adv Comp: Screendance	0	{}		DANC	\N	1
+DANC 470	Strategies:DanceInstructI(CEL)	0	{}		DANC	\N	3
+DNAP 702	Basic Principles Anesthesia II	0	{}		DNAP	\N	3
+DNAP 705	Adv Prin:Anest Across Lifespan	0	{}		DNAP	\N	3
+DNAP 708	Adv Prin:Acute&ChronicPain Mgt	0	{}		DNAP	\N	2
+DNAP 712	Anatomy & Physiology II	0	{}		DNAP	\N	3
+DNAP 722	Adv Pharmacology II	0	{}		DNAP	\N	4
+DNAP 754	Culture, Div &Hlth Care Policy	0	{}		DNAP	\N	3
+DNAP 762	Rsrch Mthd, Dsgn&Data Analysis	0	{}		DNAP	\N	3
+DNAP 765	Capstone III: Project Implmntn	0	{}		DNAP	\N	2
+DNAP 781	Clinical Practicum: I	0	{}		DNAP	\N	1
+DNAP 784	Clinical Practicum: IV	0	{}		DNAP	\N	2
+DNAP 787	Clinical Practicum: VII	0	{}		DNAP	\N	2
+DPLS 701	Organizational Theory	0	{}		DPLS	\N	3
+DPLS 703	Global Leadership	0	{}		DPLS	\N	3
+DPLS 705	Leadership & Social Justice	0	{}		DPLS	\N	3
+DPLS 711	Organizational Culture	0	{}		DPLS	\N	3
+DPLS 715	Leadership Ruminations	0	{}		DPLS	\N	1
+DPLS 716	Social Construct. & Leadership	0	{}		DPLS	\N	3
+DPLS 723	Qualitative Research	0	{}		DPLS	\N	3
+DPLS 730	Proposal Seminar	0	{}		DPLS	\N	3
+DPLS 735	Proposal Defense	0	{}		DPLS	\N	1
+DPLS 736	Dissertation	0	{}		DPLS	\N	\N
+DPLS 737	Dissertation Extension	0	{}		DPLS	\N	1
+DPLS 743	Leadership & Consulting	0	{}		DPLS	\N	3
+DPLS 745	Ethics & Leadership Studies	0	{}		DPLS	\N	3
+DPLS 756	Leadership & Psychology	0	{}		DPLS	\N	3
+DPLS 760	Cult Ling & Soc Const of Ldrsp	0	{}		DPLS	\N	3
+DPLS 761	Naturalistic Inquiry	0	{}		DPLS	\N	3
+DPLS 762	Christian Religiosity	0	{}		DPLS	\N	3
+DPLS 763	Feminism & Disabilty	0	{}		DPLS	\N	3
+DPLS 764	Social Justice Dialogue Ped	0	{}		DPLS	\N	3
+DPLS 766	Computer Aid Qual Data Analysi	0	{}		DPLS	\N	3
+DPLS 774	Leadership & Community	0	{}		DPLS	\N	3
+DPLS 776	Transdisciplinary Leadership	0	{}		DPLS	\N	3
+DPLS 777	Writing for Completion	0	{}		DPLS	\N	3
+DPLS 778	Mindful Leadership and Comm	0	{}		DPLS	\N	3
+ECON 200	Economic Analysis	0	{}		ECON	\N	3
+ECON 201	Microeconomics	0	{}		ECON	\N	3
+ECON 202	Macroeconomics	0	{}		ECON	\N	3
+ECON 302	Intermediate Macroeconomics	0	{}		ECON	\N	4
+ECON 303	Game Theory & Econ Appl	0	{}		ECON	\N	3
+ECON 311	Global Economic Issues	0	{}		ECON	\N	3
+ECON 324	Econ of Environmental Protectn	0	{}		ECON	\N	3
+ECON 355	Regression Analysis	0	{}		ECON	\N	3
+ECON 401	Smith, Max, & RerumNovarum	0	{}		ECON	\N	3
+ECON 489	Mircoeconomics II	0	{}		ECON	\N	4
+ECON 499	Sr Comprehensive Examination	0	{}		ECON	\N	0
+EDCE 551	Diversity in Counselling	0	{}		EDCE	\N	2
+EDCE 558	CA Counselling Issues & Ethics	0	{}		EDCE	\N	3
+EDCE 559	Ethics and Law in School Couns	0	{}		EDCE	\N	3
+EDCE 560	Ethics and Law in CMHC	0	{}		EDCE	\N	3
+EDCE 561	Ethics and Law in MFC	0	{}		EDCE	\N	3
+EDCE 581	Chemical Dependency in Counslg	0	{}		EDCE	\N	2
+EDCE 583	Intro to MFC	0	{}		EDCE	\N	2
+EDCE 585	Intro to School Counseling	0	{}		EDCE	\N	2
+EDCE 586	Intro to CMH Counseling	0	{}		EDCE	\N	2
+EDCE 588	Human Growth and Development	0	{}		EDCE	\N	3
+EDCE 592	Adv Family Systems	0	{}		EDCE	\N	3
+EDCE 610	Classroom Management in School	0	{}		EDCE	\N	2
+EDCE 639	Counseling Theories	0	{}		EDCE	\N	3
+EDCE 640	Canadian Counselling Theories	0	{}		EDCE	\N	3
+EDCE 664	Group Facilitation	0	{}		EDCE	\N	2
+EDCE 685	Counselling Pre-Practicum (B)	0	{}		EDCE	\N	4
+EDCE 688	Adv Theory & Prof Sem II	0	{}		EDCE	\N	1
+EDCE 695	Counseling Pre-Practicum, CMHC	0	{}		EDCE	\N	3
+EDCE 697A	Internship (SCH)	0	{}		EDCE	\N	5
+EDCE 698	Research and Statistics	0	{}		EDCE	\N	4
+EDLA 626	Cultural Competence Developmnt	0	{}		EDLA	\N	3
+EDLA 628	Ed Leadership and Inquiry	0	{}		EDLA	\N	3
+EDLA 633	Ed Leadership & Organizations	0	{}		EDLA	\N	3
+EDLA 638	Ed Ldrshp: Chng, Mngmnt, Sprvs	0	{}		EDLA	\N	3
+EDLA 641	Ed Leadership & Community	0	{}		EDLA	\N	3
+EDLA 698	Research and Data Analysis	0	{}		EDLA	\N	3
+EDLD 703	Rsrch: Evidence based Practice	0	{}		EDLD	\N	3
+EDLD 705A	Review of Lit on Probl of Prac	0	{}		EDLD	\N	3
+EDLD 705B	Lab: Problem of Practice I	0	{}		EDLD	\N	1
+EDLD 710	Data Analysis for Prb of Pract	0	{}		EDLD	\N	3
+EDLD 712A	Evidence-based Contribution PP	0	{}		EDLD	\N	3
+EDLD 712B	Lab: Problem of Practice III	0	{}		EDLD	\N	1
+EDLD 764	Projects	0	{}		EDLD	\N	3
+EDPC 912	Leadership Role Seminar	0	{}		EDPC	\N	3
+EDPC 920	Certification Internship	0	{}		EDPC	\N	3
+EDPE 103	Basketball and Flag Football	0	{}		EDPE	\N	1
+EDPE 104	Varsity Basketball	0	{}		EDPE	\N	1
+EDPE 106	Varsity Cheerleading	0	{}		EDPE	\N	1
+EDPE 108	Beginning Bowling	0	{}		EDPE	\N	1
+EDPE 110	X-Biking	0	{}		EDPE	\N	1
+EDPE 112	Varsity Rowing	0	{}		EDPE	\N	1
+EDPE 113	CrossFit	0	{}		EDPE	\N	1
+EDPE 114	Zumba	0	{}		EDPE	\N	1
+EDPE 115	Cardio Blast	0	{}		EDPE	\N	1
+EDPE 118	Barre Long and Lean	0	{}		EDPE	\N	1
+EDPE 120	Varsity Baseball	0	{}		EDPE	\N	1
+EDPE 122	Varsity Track	0	{}		EDPE	\N	1
+EDPE 123	Varsity Cross Country	0	{}		EDPE	\N	1
+EDPE 126	Beginning Golf	0	{}		EDPE	\N	1
+EDPE 127	Intermediate-Advanced Golf	0	{}		EDPE	\N	1
+EDPE 128	Varsity Golf	0	{}		EDPE	\N	1
+EDPE 129	Self Defense/Judo	0	{}		EDPE	\N	1
+EDPE 136	Scuba	0	{}		EDPE	\N	1
+EDPE 145	Varsity Soccer	0	{}		EDPE	\N	1
+EDPE 146	Soccer and Volleyball	0	{}		EDPE	\N	1
+EDPE 147	Softball and Volleyball	0	{}		EDPE	\N	1
+EDPE 148	Varsity Tennis	0	{}		EDPE	\N	1
+EDPE 151	The Union Spin/Yoga	0	{}		EDPE	\N	1
+EDPE 154	Varsity Volleyball	0	{}		EDPE	\N	1
+EDPE 155	Soccer/Basketball	0	{}		EDPE	\N	1
+EDPE 156	Pilates	0	{}		EDPE	\N	1
+EDPE 157	Yoga	0	{}		EDPE	\N	1
+EDPE 158	Fitness and Conditioning	0	{}		EDPE	\N	1
+EDPE 160	Weight Training	0	{}		EDPE	\N	1
+EDPE 161	Studio Yoga	0	{}		EDPE	\N	1
+EDPE 162	Sculpt, Strength & Strike	0	{}		EDPE	\N	1
+EDPE 168	EF: Tread, Yoga, EMP	0	{}		EDPE	\N	1
+EDPE 175	Beginning Gymclimbing	0	{}		EDPE	\N	1
+EDPE 176	Intermediate Gym Climbing	0	{}		EDPE	\N	1
+EDPE 188	PiYo	0	{}		EDPE	\N	1
+EDPE 189	Exercise Technique	0	{}		EDPE	\N	1
+EDPE 190	Intro to Kinesiology & Sp Mgt	0	{}		EDPE	\N	3
+EDPE 191	Teach&Assess Mtr Skill Lab CEL	0	{}		EDPE	\N	1
+EDPE 195	New Athlete Orientation	0	{}		EDPE	\N	1
+EDPE 202A	Health & Fitness Club Mgmt	0	{}		EDPE	\N	3
+EDPE 205	Sport & Act in Diverse Society	0	{}		EDPE	\N	3
+EDPE 207	Sport & Fitness in Digital Age	0	{}		EDPE	\N	3
+EDPE 209	Community CPR and First Aid	0	{}		EDPE	\N	1
+EDPE 222	Health & Wellness	0	{}		EDPE	\N	3
+EDPE 276	Anatomy and Physiology I	0	{}		EDPE	\N	3
+EDPE 276L	Anatomy and Physiology I Lab	0	{}		EDPE	\N	1
+EDPE 307	Fdns in Sports Outreach (CEL)	0	{}		EDPE	\N	3
+EDPE 310	Motor Development & Learning	0	{}		EDPE	\N	3
+EDPE 312	Hlth Mthds Diverse Populations	0	{}		EDPE	\N	3
+EDPE 321	Sport Facility Management	0	{}		EDPE	\N	3
+EDPE 340	Exercise & Sport Psychology	0	{}		EDPE	\N	3
+EDPE 377	Physiology of Exercise	0	{}		EDPE	\N	3
+EDPE 377L	Physiology of Exercise Lab	0	{}		EDPE	\N	1
+EDPE 378	Structural Kinesiology	0	{}		EDPE	\N	3
+EDPE 400	Sport Sponsorship & Promotions	0	{}		EDPE	\N	3
+EDPE 412	Admin of Sport & Athletics	0	{}		EDPE	\N	3
+EDPE 414	Ethical/Legal Aspects in Sport	0	{}		EDPE	\N	3
+EDPE 417	Abuse Prevention	0	{}		EDPE	\N	1
+EDPE 465	Special Populations & Exercise	0	{}		EDPE	\N	3
+EDPE 485	Intnl Sport Mgmt Cltl-Glbl Std	0	{}		EDPE	\N	3
+EDPE 494	Student Teaching Seminar	0	{}		EDPE	\N	3
+EDPE 495	Student Teching Hlth & Phys Ed	0	{}		EDPE	\N	12
+EDPE 496A	Practicum:Physical Education	0	{}		EDPE	\N	2
+EDPE 496B	Practicum: Coaching	0	{}		EDPE	\N	1
+EDPE 496C	Practicum:Health & Fitness	0	{}		EDPE	\N	3
+EDPE 496D	Sport Management Internship I	0	{}		EDPE	\N	3
+EDPE 496E	Sport Management Internship II	0	{}		EDPE	\N	3
+EDPE 497C	Field Exp in Health Education	0	{}		EDPE	\N	1
+EDPE 497D	Field Exp in Adpt Physical Ed	0	{}		EDPE	\N	1
+EDPE 499	Comprehensive Examination	0	{}		EDPE	\N	0
+EDPE 500	Sport & Athletic Promotions	0	{}		EDPE	\N	3
+EDPE 517	Abuse Prevention	0	{}		EDPE	\N	1
+EDPE 518	Health/Fitness Methods	0	{}		EDPE	\N	3
+EDPE 525	Sport & Ath in Social Context	0	{}		EDPE	\N	3
+EDPE 565	Rsrch Mth & Stats in Sprt Athl	0	{}		EDPE	\N	3
+EDPE 613	Admin in Sport & Athletics	0	{}		EDPE	\N	3
+EDPE 621	Facilities Mgmt in Sport & Ath	0	{}		EDPE	\N	3
+EDPE 696A	Sport & Athl Admin:Intern I	0	{}		EDPE	\N	3
+EDPE 696B	Sport & Athl Admin:Intern II	0	{}		EDPE	\N	3
+EDPE 699	Capstone Experience	0	{}		EDPE	\N	1
+EDSE 150	Psych of Child w/Exception CEL	0	{}		EDSE	\N	3
+EDSE 155	Signing Exact English	0	{}		EDSE	\N	3
+EDSE 306	In School Exp Elementary (CEL)	0	{}		EDSE	\N	1
+EDSE 307	Special Educ Application (CEL)	0	{}		EDSE	\N	\N
+EDSE 320	Applied Behavior Analysis CEL	0	{}		EDSE	\N	3
+EDSE 320L	Applied Behavior Analysis Lab	0	{}		EDSE	\N	0
+EDSE 340	Spec Ed Policies & Procedures	0	{}		EDSE	\N	3
+EDSE 350	Early Childhood Special Ed CEL	0	{}		EDSE	\N	3
+EDSE 352	Language and Communication CEL	0	{}		EDSE	\N	3
+EDSE 400	Tutoring and Proctoring	0	{}		EDSE	\N	3
+EDSE 406	In School Exp Secondary CEL	0	{}		EDSE	\N	1
+EDSE 407	Spec Ed Applictn w/ Adlts CEL	0	{}		EDSE	\N	\N
+EDSE 410	Precision Teaching (CEL)	0	{}		EDSE	\N	3
+EDSE 451	Direct Instruction-Reading	0	{}		EDSE	\N	3
+EDSE 465	Classroom Management (CEL)	0	{}		EDSE	\N	3
+EDSE 465L	Classroom Management Lab	0	{}		EDSE	\N	0
+EDSE 469	BCaBA Ethics in Behvr Anlysis	0	{}		EDSE	\N	1
+EDSE 480	EdTPA & Teacher Dev Seminar	0	{}		EDSE	\N	2
+EDSE 495	Extended Spec Ed Exp (CEL)	0	{}		EDSE	\N	9
+EDSE 496	Special Ed Teach Practicum CEL	0	{}		EDSE	\N	12
+EDSE 497	Ext Special Ed Teach Pract CEL	0	{}		EDSE	\N	13
+EDSE 501	Psych of Child w/ Exception	0	{}		EDSE	\N	3
+EDSE 505	Special Ed App Clssrm Exp Elem	0	{}		EDSE	\N	\N
+EDSE 506	SpEd Applied Classrom Exp	0	{}		EDSE	\N	\N
+EDSE 507	Spec Ed Applied Class Exp Seco	0	{}		EDSE	\N	\N
+EDSE 520	Applied Behavior Analysis	0	{}		EDSE	\N	3
+EDSE 540	Spec Ed Procedures & Policies	0	{}		EDSE	\N	3
+EDSE 550	Early Childhood Special Ed	0	{}		EDSE	\N	3
+EDSE 562	Language and Communication	0	{}		EDSE	\N	3
+EDSE 610	Precision Teaching	0	{}		EDSE	\N	3
+EDSE 611	Continuing Research Education	0	{}		EDSE	\N	1
+EDSE 651	Direct Instruction: Reading	0	{}		EDSE	\N	3
+EDSE 665	Adv Seminar in Classrm Mgmt	0	{}		EDSE	\N	3
+EDSE 669	Ethics on Behavior Analysis I	0	{}		EDSE	\N	1
+EDSE 672	Assess&Intrvtn in Ntrl Set CEL	0	{}		EDSE	\N	4
+EDSE 677	Behavior Change	0	{}		EDSE	\N	3
+EDSE 689	Professional Seminar	0	{}		EDSE	\N	\N
+EDSE 694	EdTPA & Teacher Dev Seminar	0	{}		EDSE	\N	2
+EDSE 698	Research in Special Education	0	{}		EDSE	\N	3
+EDSE 699	Comprehensive Oral Examination	0	{}		EDSE	\N	0
+EDSS 540	Legal Issues in School Psych	0	{}		EDSS	\N	3
+EDSS 592	Ind Study: Program Evaluation	0	{}		EDSS	\N	1
+EDSS 601	Psych of Child with Exceptions	0	{}		EDSS	\N	3
+EDSS 610	Foundations in School Pysch	0	{}		EDSS	\N	3
+EDSS 630	Assessment in School Settings	0	{}		EDSS	\N	3
+EDSS 650	Applied Behavioral Analysis	0	{}		EDSS	\N	3
+EDSS 690A	Portfolio in School Psychology	0	{}		EDSS	\N	1
+EDSS 697A	Practicum in School Psych K-12	0	{}		EDSS	\N	2
+EDSS 698A	Internship in SchoolPsych K-12	0	{}		EDSS	\N	4
+EDTE 101	Soc& Cultural Fnds of Educ CEL	0	{}		EDTE	\N	3
+EDTE 201	Learn Thry& Epistemologies CEL	0	{}		EDTE	\N	3
+EDTE 213	NW History for Teachers	0	{}		EDTE	\N	1
+EDTE 221E	Elem Dif Instruct & Assess	0	{}		EDTE	\N	3
+EDTE 221L	Elementary Field Experience	0	{}		EDTE	\N	1
+EDTE 221S	Sec Diff Instruct & Assess	0	{}		EDTE	\N	3
+EDTE 241	Teaching in the Middle School	0	{}		EDTE	\N	3
+EDTE 302	Advocacy and Policy	0	{}		EDTE	\N	3
+EDTE 304	Concepts in Science	0	{}		EDTE	\N	3
+EDTE 315E	Classroom Assessmnt Elem Tchrs	0	{}		EDTE	\N	3
+EDTE 321	Soc Emo Lrn in Clsrm & Comm	0	{}		EDTE	\N	3
+EDTE 331	Instruct Meth:Rdg/Wrtg/Comm II	0	{}		EDTE	\N	3
+EDTE 331L	Field Experience	0	{}		EDTE	\N	1
+EDTE 390	Intercultural Competence Devel	0	{}		EDTE	\N	3
+EDTE 400	Elementary Methods: Music	0	{}		EDTE	\N	1
+EDTE 401	Elem Methods: Math	0	{}		EDTE	\N	3
+EDTE 401L	Field Experience	0	{}		EDTE	\N	1
+EDTE 402	Elementary Methods:Social Stdy	0	{}		EDTE	\N	3
+EDTE 403	Elementary Methods: Art	0	{}		EDTE	\N	1
+EDTE 432	CIS: Advocacy and Policy	0	{}		EDTE	\N	3
+EDTE 454E	Secondary Methods-English	0	{}		EDTE	\N	3
+EDTE 454F	Secondary Methods-Social Study	0	{}		EDTE	\N	3
+EDTE 454L	Field Experience - English	0	{}		EDTE	\N	1
+EDTE 454M	Secondary Methods-Math	0	{}		EDTE	\N	3
+EDTE 454S	Secondary Methods-Science	0	{}		EDTE	\N	3
+EDTE 454T	Secondary Methods-World Lang	0	{}		EDTE	\N	3
+EDTE 455L	Fld Exp:Additional Endorsement	0	{}		EDTE	\N	1
+EDTE 460E	Clasrm Mgt & Comm Elem	0	{}		EDTE	\N	3
+EDTE 460S	Classroom Management Secondary	0	{}		EDTE	\N	3
+EDTE 462	Child and Adol Literature	0	{}		EDTE	\N	3
+EDTE 464	Practicum-Reading	0	{}		EDTE	\N	1
+EDTE 466	Literacy for Engl Lang Learner	0	{}		EDTE	\N	3
+EDTE 490	5 Themes in Geography	0	{}		EDTE	\N	1
+EDTE 494	Special Project: Internship	0	{}		EDTE	\N	3
+EDTE 495	Student Teaching Prof Seminar	0	{}		EDTE	\N	2
+EDTE 496E	Elementary Student Teaching	0	{}		EDTE	\N	12
+EDTE 496S	Secondary Student Teaching	0	{}		EDTE	\N	12
+EDTE 505	Field Experience I -Elementary	0	{}		EDTE	\N	1
+EDTE 506	Field Experience II-Elementary	0	{}		EDTE	\N	1
+EDTE 507	Elem Field Experience III	0	{}		EDTE	\N	1
+EDTE 509	Mathematics Methods	0	{}		EDTE	\N	3
+EDTE 518	Discipline Specific Literacy	0	{}		EDTE	\N	3
+EDTE 540	Fndn of Reading and Language	0	{}		EDTE	\N	3
+EDTE 554E	Secondary Methods-English	0	{}		EDTE	\N	3
+EDTE 554F	SecondaryMethods-SocialStudies	0	{}		EDTE	\N	3
+EDTE 554M	Secondary Methods-Math	0	{}		EDTE	\N	3
+EDTE 554S	Secondary Methods-Science	0	{}		EDTE	\N	3
+EDTE 554T	Secondary Methods-World Lang	0	{}		EDTE	\N	3
+EDTE 555E	Clssrm Env:El Mgmt, Proc & Rtn	0	{}		EDTE	\N	3
+EDTE 555S	Clssrm Env:Sec Mgmt, Proc &Rtn	0	{}		EDTE	\N	3
+EDTE 562	Child and Adol Literature	0	{}		EDTE	\N	3
+EDTE 564	Practicum Reading	0	{}		EDTE	\N	\N
+EDTE 566	Literacy & Engl Lang Learner	0	{}		EDTE	\N	3
+EDTE 590	5 Themes in Geography	0	{}		EDTE	\N	3
+EDTE 632	Ed Rsrch & Assess - Elementary	0	{}		EDTE	\N	3
+EDTE 696A	Student Teaching - Elementary	0	{}		EDTE	\N	6
+EDTE 696B	Student Teaching - Secondary	0	{}		EDTE	\N	6
+EENG 201	Circuit Analysis I	0	{}		EENG	\N	3
+EENG 201L	Circuit Analysis I Lab	0	{}		EENG	\N	1
+EENG 301	Electro Fields and Materials	0	{}		EENG	\N	4
+EENG 303	Electronics Design I	0	{}		EENG	\N	3
+EENG 303L	Electronics Design I Lab	0	{}		EENG	\N	1
+EENG 311	Signals and Systems	0	{}		EENG	\N	4
+EENG 411	Intro to Control Systems	0	{}		EENG	\N	3
+EENG 421	Intro Communication Systems	0	{}		EENG	\N	3
+EENG 424	Digital Signal Processing	0	{}		EENG	\N	3
+EENG 425	Communication-Control Lab	0	{}		EENG	\N	1
+EENG 427	Wireless Systems	0	{}		EENG	\N	3
+EENG 441	Analysis of Power Systems	0	{}		EENG	\N	3
+ELCT 026	Basic Listening and Speaking	0	{}		ELCT	\N	6
+ELCT 028	Basic Grammar Support	0	{}		ELCT	\N	6
+ELCT 029	Basic Reading & Writing	0	{}		ELCT	\N	6
+ELCT 036	Intermediate Oral Comm	0	{}		ELCT	\N	6
+ELCT 038	Intermediate Grammar Support	0	{}		ELCT	\N	6
+ELCT 039	Inter Reading & Writing	0	{}		ELCT	\N	6
+ELCT 045	Advanced Writing	0	{}		ELCT	\N	3
+ELCT 046	Advanced Oral Comm	0	{}		ELCT	\N	6
+ELCT 048	Advanced Grammar Support	0	{}		ELCT	\N	3
+ELCT 049	Advanced Reading & Writing	0	{}		ELCT	\N	6
+ELCT 109	Academic Seminar	0	{}		ELCT	\N	6
+ELCT 110	Communication Seminar	0	{}		ELCT	\N	3
+ELCT 121	Multilingual Student Writing	0	{}		ELCT	\N	3
+ELCT 180	Spec Top: Live Learn & Grow I	0	{}		ELCT	\N	2
+ENGL 101	Writing	0	{}		ENGL	\N	3
+ENGL 102	Intro to Literature	0	{}		ENGL	\N	3
+ENGL 105	Disability in Literature	0	{}		ENGL	\N	3
+ENGL 106	Re-Imagining Africa	0	{}		ENGL	\N	3
+ENGL 193	FYS: Beyond the Photo	0	{}		ENGL	\N	3
+ENGL 201	Studies in Poetry	0	{}		ENGL	\N	3
+ENGL 202	Studies in Fiction: Sci Fi	0	{}		ENGL	\N	3
+ENGL 220	British Literature Survey II	0	{}		ENGL	\N	3
+ENGL 230	Survey of American Literature	0	{}		ENGL	\N	3
+ENGL 271	African American Cinema	0	{}		ENGL	\N	3
+ENGL 301	Poetry Writing	0	{}		ENGL	\N	3
+ENGL 302	Fiction Writing	0	{}		ENGL	\N	3
+ENGL 305	The Writing Traveler	0	{}		ENGL	\N	3
+ENGL 306	Global Englishes	0	{}		ENGL	\N	4
+ENGL 310	American Literature I	0	{}		ENGL	\N	3
+ENGL 340	The Romantic Age	0	{}		ENGL	\N	3
+ENGL 394	Breaking Bad	0	{}		ENGL	\N	3
+ENGL 395	The Teaching of Writing	0	{}		ENGL	\N	3
+ENGL 403	Adv Creative Nonfict Writing	0	{}		ENGL	\N	3
+ENGL 420	Beowulf: In-Laws and Outlaws	0	{}		ENGL	\N	3
+ENGL 432	CIS:Cultiv Chng: Ment 21 C CEL	0	{}		ENGL	\N	3
+ENGL 460	Auth/Text Prod Early Mod Women	0	{}		ENGL	\N	3
+ENGL 474	The Great War in British Lit	0	{}		ENGL	\N	3
+ENGL 495	Senior Seminar: The Frontier	0	{}		ENGL	\N	3
+ENGL 496	Writing Senior Project	0	{}		ENGL	\N	0
+ENGL 499	Senior Project	0	{}		ENGL	\N	0
+ENSC 191	First Year Seminar	0	{}		ENSC	\N	3
+ENSC 205	Statics	0	{}		ENSC	\N	3
+ENSC 244	Computer Methods for Engineers	0	{}		ENSC	\N	3
+ENSC 301	Mechanics of Materials I	0	{}		ENSC	\N	3
+ENSC 352	Fluid Mechanics	0	{}		ENSC	\N	3
+ENSC 371	Advanced Engineering Math	0	{}		ENSC	\N	3
+ENSC 405	Engineering Project Management	0	{}		ENSC	\N	3
+ENSC 491	Senior Design Project I	0	{}		ENSC	\N	2
+ENTR 201	Idea to Solution	0	{}		ENTR	\N	3
+ENTR 301	Strategic Leadership	0	{}		ENTR	\N	3
+ENTR 401	Senior Incubation	0	{}		ENTR	\N	3
+ENTR 497	Internship	0	{}		ENTR	\N	\N
+ENVS 101	Intro to Environmental Studies	0	{}		ENVS	\N	3
+ENVS 102	Environmental Politics &Policy	0	{}		ENVS	\N	3
+ENVS 103	Environmental Biology	0	{}		ENVS	\N	3
+ENVS 103L	Environmental Biology Lab	0	{}		ENVS	\N	1
+ENVS 110	Earth Science	0	{}		ENVS	\N	\N
+ENVS 110L	Earth Science Lab	0	{}		ENVS	\N	1
+ENVS 193	FYS: Digital Ecology	0	{}		ENVS	\N	3
+ENVS 200	Case Studies in Env Science	0	{}		ENVS	\N	4
+ENVS 320	Econ of Enviromental Protectn	0	{}		ENVS	\N	3
+ENVS 324	Climate Change Sci. & Politics	0	{}		ENVS	\N	3
+ENVS 343	African Environmental History	0	{}		ENVS	\N	3
+ENVS 358	Environmental Ethics	0	{}		ENVS	\N	3
+ENVS 397	Environmental Justice	0	{}		ENVS	\N	3
+ENVS 398	Env Advocacy & Organizing CEL	0	{}		ENVS	\N	4
+ENVS 399	Sustainable Systems	0	{}		ENVS	\N	4
+ENVS 404	Principles of Wildlife Mgmt	0	{}		ENVS	\N	4
+ENVS 404L	Wildlife Management Lab	0	{}		ENVS	\N	1
+ENVS 490	Symposium in Env Studies (CEL)	0	{}		ENVS	\N	4
+ENVS 497	Internship	0	{}		ENVS	\N	4
+ENVS 499A	Symposium in Env Studies(CEL)	0	{}		ENVS	\N	1
+FILM 202	African American Cinema	0	{}		FILM	\N	3
+FILM 301	Comparative European Politics	0	{}		FILM	\N	3
+FILM 302	Breaking Bad	0	{}		FILM	\N	3
+FILM 303	Acting I	0	{}		FILM	\N	4
+FILM 304	Bible and Film	0	{}		FILM	\N	3
+FREN 101	Elementary French I	0	{}		FREN	\N	4
+FREN 201	Intermediate French I	0	{}		FREN	\N	4
+FREN 300	Advanced Grammar Review	0	{}		FREN	\N	3
+FREN 380	Francophone Lit and Culture	0	{}		FREN	\N	3
+FREN 390	Defining Existentialism	0	{}		FREN	\N	3
+FREN 499	French Comprehensive	0	{}		FREN	\N	1
+GERM 101	Elementary German I	0	{}		GERM	\N	4
+GERM 201	Intermediate German I	0	{}		GERM	\N	4
+GERM 301	Advanced German	0	{}		GERM	\N	3
+GREK 101	Greek I	0	{}		GREK	\N	4
+GREK 290	Attic & Koine Greek Plato & NT	0	{}		GREK	\N	3
+GREK 390	Greek Fairy Tales	0	{}		GREK	\N	3
+HEAL 304	Feminism and Science	0	{}		HEAL	\N	3
+HEAL 376	Christian Sexual Ethics	0	{}		HEAL	\N	3
+HEAL 475	Organizing for Health Equity	0	{}		HEAL	\N	1
+HIST 101	Foundations of the West	0	{}		HIST	\N	3
+HIST 102	The West and the World	0	{}		HIST	\N	3
+HIST 112	World History	0	{}		HIST	\N	3
+HIST 195	Russia and the World	0	{}		HIST	\N	3
+HIST 201	History of the US I	0	{}		HIST	\N	3
+HIST 202	History of the US II	0	{}		HIST	\N	3
+HIST 300	Historical Methods	0	{}		HIST	\N	3
+HIST 304	Alexander Grt and Hellen Wrld	0	{}		HIST	\N	3
+HIST 312	Renaissance Europe	0	{}		HIST	\N	3
+HIST 321	Irish History Since 1500	0	{}		HIST	\N	3
+HIST 334	Russia & USSR Since 1945	0	{}		HIST	\N	3
+HIST 336	History of Food	0	{}		HIST	\N	3
+HIST 345	African Environmental History	0	{}		HIST	\N	3
+HIST 360	Pacific Northwest History	0	{}		HIST	\N	3
+HIST 363	Women in United States History	0	{}		HIST	\N	3
+HIST 390	Hist Plays:Fact, Fiction&Story	0	{}		HIST	\N	3
+HIST 391	Etruscans and Romans	0	{}		HIST	\N	3
+HIST 400	Senior Thesis - Seminar	0	{}		HIST	\N	3
+HIST 432	CIS: US Soc Pol &Cul 1980-2040	0	{}		HIST	\N	3
+HIST 497	Internship Foley Library	0	{}		HIST	\N	3
+HONS 100	Multi-modal Communications	0	{}		HONS	\N	3
+HONS 104	SI: Mountain Science	0	{}		HONS	\N	3
+HONS 104L	SI: Mountain Science	0	{}		HONS	\N	1
+HONS 107	Intro to Environmental Studies	0	{}		HONS	\N	3
+HONS 193	Honors First Year Seminar CEL	0	{}		HONS	\N	3
+HONS 201	Honors Human Nature	0	{}		HONS	\N	3
+HONS 217	Excursions in Math	0	{}		HONS	\N	4
+HONS 219	Introduction to Data Science	0	{}		HONS	\N	3
+HONS 220	Bible and Film	0	{}		HONS	\N	3
+HONS 221	Religion and Violence	0	{}		HONS	\N	3
+HONS 237	Intro Solidarity & Soc Justice	0	{}		HONS	\N	3
+HONS 243	Asian&PacificIslanderAmerHist	0	{}		HONS	\N	3
+HONS 267	Photographic Art	0	{}		HONS	\N	3
+HONS 287	Re-Imagining Africa	0	{}		HONS	\N	3
+HONS 290	Wealth Inequality	0	{}		HONS	\N	3
+HONS 301	Honors Ethics	0	{}		HONS	\N	3
+HONS 310	Research & Info Management	0	{}		HONS	\N	3
+HONS 390	HonorsColloquium:ClimateChange	0	{}		HONS	\N	3
+HONS 455	Health Care Ethics Honors	0	{}		HONS	\N	3
+HONS 457	System Dynamics and Control	0	{}		HONS	\N	3
+HONS 499	Honors Senior Project	0	{}		HONS	\N	3
+HPHY 205	Experimental Design & Stats	0	{}		HPHY	\N	3
+HPHY 241	Human Anatomy & Physiology	0	{}		HPHY	\N	3
+HPHY 241L	Human Anatomy & Physiology Lab	0	{}		HPHY	\N	1
+HPHY 304	Practice in Lab Teaching	0	{}		HPHY	\N	1
+HPHY 375	Biomechanics	0	{}		HPHY	\N	\N
+HPHY 375L	Biomechanics Lab	0	{}		HPHY	\N	1
+HPHY 376	Exercise Physiology	0	{}		HPHY	\N	\N
+HPHY 376L	Exercise Physiology Lab	0	{}		HPHY	\N	1
+HPHY 442L	Guided Research	0	{}		HPHY	\N	1
+HPHY 452	Neuromuscular Control	0	{}		HPHY	\N	3
+HPHY 479	Cell & Molecular Physiology	0	{}		HPHY	\N	3
+HPHY 489	Illicit Perf Enhance in Sport	0	{}		HPHY	\N	3
+HPHY 497	Senior Teaching Assistant	0	{}		HPHY	\N	3
+INMD 101	Media Literacy	0	{}		INMD	\N	3
+INMD 193	FYS: Resonate Fearlessly	0	{}		INMD	\N	3
+INMD 360	Media Law	0	{}		INMD	\N	3
+INST 302	Seminar: Imagining Colombia	0	{}		INST	\N	3
+INST 305	Religion and Violence	0	{}		INST	\N	3
+INST 325	Post-Soviet Russia and China	0	{}		INST	\N	3
+INST 333	Buddhism	0	{}		INST	\N	3
+INST 334	Russia & USSR Since 1945	0	{}		INST	\N	3
+INST 341	African Environmental History	0	{}		INST	\N	3
+INST 345	International Law	0	{}		INST	\N	3
+INST 368	Islamic Civilization	0	{}		INST	\N	3
+INST 393	New Europe	0	{}		INST	\N	3
+INST 395	Comparative European Politics	0	{}		INST	\N	3
+INST 432	CIS: NGOs and Intl Development	0	{}		INST	\N	3
+INST 480	Global Issues & Global Orders	0	{}		INST	\N	3
+ITAL 101	Elementary Italian I	0	{}		ITAL	\N	4
+ITAL 101L	Elementary Italian I Lab	0	{}		ITAL	\N	\N
+ITAL 102	Elementary Italian II	0	{}		ITAL	\N	4
+ITAL 102L	Elementary Italian II Lab	0	{}		ITAL	\N	0
+ITAL 201	Intermediate Italian I	0	{}		ITAL	\N	4
+ITAL 301	Advanced Italian I	0	{}		ITAL	\N	3
+ITAL 313	The World of Dante	0	{}		ITAL	\N	3
+JOUR 110	Journalistic Writing	0	{}		JOUR	\N	3
+JOUR 210	Civic Journalism	0	{}		JOUR	\N	3
+JOUR 220	Student Media Writing Lab	0	{}		JOUR	\N	1
+JOUR 230	Student Media Editing Lab	0	{}		JOUR	\N	1
+JOUR 270	Photojournalism	0	{}		JOUR	\N	3
+JOUR 370	Emerging Media	0	{}		JOUR	\N	3
+JOUR 410	Sports Media	0	{}		JOUR	\N	3
+JOUR 420	Literary Journalism	0	{}		JOUR	\N	3
+JOUR 440	Seminar: Media & Democracy	0	{}		JOUR	\N	3
+JOUR 490	Capstone	0	{}		JOUR	\N	4
+JOUR 497	Internships	0	{}		JOUR	\N	3
+JOUR 499	Capstone Project	0	{}		JOUR	\N	1
+JPNE 101	Elementary Japanese I	0	{}		JPNE	\N	4
+JPNE 201	Intermediate Japanese I	0	{}		JPNE	\N	4
+LATN 101	Latin I	0	{}		LATN	\N	4
+LATN 201	Latin III	0	{}		LATN	\N	4
+LATN 301	Republican Latin Prose	0	{}		LATN	\N	3
+LDRS 315	Theories of Leadership & Org	0	{}		LDRS	\N	3
+LDRS 375	Leading Across Cultures	0	{}		LDRS	\N	3
+LDRS 390	Outdoor Leadership	0	{}		LDRS	\N	3
+LDRS 450	Contemp Issues in Leadership	0	{}		LDRS	\N	3
+LDRS 489	Act Six Leadership	0	{}		LDRS	\N	1
+MACC 560	Intermediate Accounting I	0	{}		MACC	\N	3
+MACC 565	Federal Taxation I	0	{}		MACC	\N	3
+MACC 600	Orientation	0	{}		MACC	\N	0
+MACC 601	Power Query/Power Pivot	0	{}		MACC	\N	2
+MACC 602	Cmpter Programming for Accnt'g	0	{}		MACC	\N	3
+MACC 603	Financial Acct for IncomeTaxes	0	{}		MACC	\N	3
+MACC 611	Audit Analytics	0	{}		MACC	\N	2
+MACC 660	Advanced Financial Accounting	0	{}		MACC	\N	3
+MACC 663	Accounting Theory	0	{}		MACC	\N	3
+MACC 664	Professional Ethics	0	{}		MACC	\N	2
+MACC 665	Audit Research & Practice	0	{}		MACC	\N	3
+MACC 670	Fraud and Forensic Examination	0	{}		MACC	\N	3
+MACC 671	Forensic Accounting Lab	0	{}		MACC	\N	3
+MACC 677	Sustainability Accounting I	0	{}		MACC	\N	1
+MACC 697	Internship	0	{}		MACC	\N	\N
+MATH 100	College Algebra	0	{}		MATH	\N	3
+MATH 103	Excursions in Mathematics	0	{}		MATH	\N	3
+MATH 104	Elements of Algebra & Stats	0	{}		MATH	\N	3
+MATH 114	Mathematical Analysis-Business	0	{}		MATH	\N	3
+MATH 121	Introductory Statistics	0	{}		MATH	\N	3
+MATH 147	Precalculus	0	{}		MATH	\N	3
+MATH 148	Survey of Calculus	0	{}		MATH	\N	3
+MATH 157	Calculus-Analytic Geometry I	0	{}		MATH	\N	4
+MATH 180	Algebraic Foundations of Calc	0	{}		MATH	\N	1
+MATH 221	Applied Statistics	0	{}		MATH	\N	3
+MATH 231	Discrete Structures	0	{}		MATH	\N	3
+MATH 258	Calculus-Analytic Geometry II	0	{}		MATH	\N	4
+MATH 259	Calculus-Analytic Geometry III	0	{}		MATH	\N	4
+MATH 260	Ordinary Differential Equation	0	{}		MATH	\N	3
+MATH 301	Fundamentals of Mathematics	0	{}		MATH	\N	3
+MATH 321	Statistics for Experimentalist	0	{}		MATH	\N	3
+MATH 339	Linear Algebra	0	{}		MATH	\N	3
+MATH 341	Modern Geometry	0	{}		MATH	\N	3
+MATH 350	Numerical Methods	0	{}		MATH	\N	3
+MATH 413	Real Analysis I	0	{}		MATH	\N	3
+MATH 421	Probability Theory	0	{}		MATH	\N	3
+MATH 425	Applied Statistical Models	0	{}		MATH	\N	3
+MATH 457	Number Theory & Cryptography	0	{}		MATH	\N	3
+MATH 462	Nonlinear Systems and Chaos	0	{}		MATH	\N	3
+MATH 490	Topics in Graph Searching	0	{}		MATH	\N	3
+MATH 496	Comprehensive - Applied Math	0	{}		MATH	\N	1
+MATH 498A	Thesis I	0	{}		MATH	\N	1
+MATH 498B	Thesis II	0	{}		MATH	\N	2
+MATH 499	Comprehensive - Math	0	{}		MATH	\N	1
+MBUS 520	Financial Management	0	{}		MBUS	\N	2
+MBUS 560	Accounting Analysis	0	{}		MBUS	\N	3
+MBUS 600	Orientation	0	{}		MBUS	\N	0
+MBUS 610	Econ Environment of the Firm	0	{}		MBUS	\N	2
+MBUS 612	Managing People & Performance	0	{}		MBUS	\N	2
+MBUS 613	Quantitative & Stats Analysis	0	{}		MBUS	\N	3
+MBUS 614	Business Ethics	0	{}		MBUS	\N	2
+MBUS 616	Strategic Management	0	{}		MBUS	\N	2
+MBUS 624	Finance Theory and Practice	0	{}		MBUS	\N	2
+MBUS 625	Operations Theory and Practice	0	{}		MBUS	\N	2
+MBUS 626	Info Systems Theory and Pract	0	{}		MBUS	\N	3
+MBUS 627	Marketing Theory and Practice	0	{}		MBUS	\N	2
+MBUS 628	Managerial Accounting	0	{}		MBUS	\N	2
+MBUS 629	Corporate Financial Reporting	0	{}		MBUS	\N	2
+MBUS 631	Communications Management	0	{}		MBUS	\N	1
+MBUS 633	Team Building Intensive	0	{}		MBUS	\N	2
+MBUS 647T	Entrepreneurship	0	{}		MBUS	\N	1
+MBUS 670	Foundations of Project Mgmt	0	{}		MBUS	\N	3
+MBUS 672	Decision Making for Managers	0	{}		MBUS	\N	1
+MBUS 675	Quality Management	0	{}		MBUS	\N	1
+MBUS 683	Current Issues in Ethics	0	{}		MBUS	\N	1
+MBUS 684	Current Issues in Marketing	0	{}		MBUS	\N	1
+MBUS 686	Current Iss in Management	0	{}		MBUS	\N	1
+MBUS 689	Fin Modeling & Data Analytics	0	{}		MBUS	\N	1
+MBUS 691	Directed Study	0	{}		MBUS	\N	2
+MBUS 697	Internship	0	{}		MBUS	\N	\N
+MBUS 699	Introduction to Real Estate	0	{}		MBUS	\N	2
+MDLA 190	Elementary Tagalog I	0	{}		MDLA	\N	4
+MDLA 193	FYS: Imagining Colombia	0	{}		MDLA	\N	3
+MENG 221	Materials Engineering	0	{}		MENG	\N	3
+MENG 291	Intro to Mech Eng Design	0	{}		MENG	\N	2
+MENG 291L	Intro to Mech Eng Design Lab	0	{}		MENG	\N	1
+MENG 301	Manufacturing Processes	0	{}		MENG	\N	2
+MENG 301L	Manufacturing Processes Lab	0	{}		MENG	\N	1
+MENG 321	Thermodynamics I	0	{}		MENG	\N	3
+MENG 411	Instrumentation Systems	0	{}		MENG	\N	3
+MENG 411L	Instrumentation Systems Lab	0	{}		MENG	\N	1
+MENG 434	Vibration Engineering	0	{}		MENG	\N	3
+MENG 445	Heating Vent and Air Condition	0	{}		MENG	\N	3
+MENG 461	System Dynamics and Control	0	{}		MENG	\N	3
+MENG 477	Material Selec for Des (EMgmt)	0	{}		MENG	\N	3
+MGMT 350	Principles of Management	0	{}		MGMT	\N	3
+MGMT 355	International Management	0	{}		MGMT	\N	3
+MGMT 400	Recruitment and Selection	0	{}		MGMT	\N	3
+MGMT 405	Comp & Performance Appraisal	0	{}		MGMT	\N	3
+MILS 101	Intro to Army & Critical Think	0	{}		MILS	\N	3
+MILS 101L	Leadership Laboratory	0	{}		MILS	\N	1
+MILS 103	Military Physical Fitness Prog	0	{}		MILS	\N	1
+MILS 190	Directed Reading	0	{}		MILS	\N	1
+MILS 201	Leadership & Decision Making	0	{}		MILS	\N	3
+MILS 201L	Leadership Lab	0	{}		MILS	\N	1
+MILS 203	Mil Phys Fitness Program	0	{}		MILS	\N	1
+MILS 300	Ranger Challenge	0	{}		MILS	\N	1
+MILS 301	Train Mgmt & Warfight Function	0	{}		MILS	\N	3
+MILS 301L	Leadership Laboratory	0	{}		MILS	\N	1
+MILS 303	Military Phys Fitness Program	0	{}		MILS	\N	1
+MILS 310	U.S. Military History	0	{}		MILS	\N	3
+MILS 395	Advanced Camp	0	{}		MILS	\N	3
+MILS 401	The Army Officer	0	{}		MILS	\N	3
+MILS 401L	Leadership Laboratory	0	{}		MILS	\N	1
+MILS 403	Mil Physical Fitness Program	0	{}		MILS	\N	1
+MKTG 310	Principles of Marketing	0	{}		MKTG	\N	3
+MKTG 315	Consumer Behavior	0	{}		MKTG	\N	3
+MKTG 318	Social Media Marketing	0	{}		MKTG	\N	3
+MKTG 330	Marketing Research	0	{}		MKTG	\N	3
+MKTG 342	Graphic Design	0	{}		MKTG	\N	3
+MKTG 402	Marketing Communications	0	{}		MKTG	\N	3
+MKTG 410	Digital Marketing	0	{}		MKTG	\N	3
+MKTG 417	International Marketing	0	{}		MKTG	\N	3
+MKTG 419	Marketing Strategies	0	{}		MKTG	\N	3
+MKTG 489	Content Marketing	0	{}		MKTG	\N	3
+MTAX 603	Financial Acct for IncomeTaxes	0	{}		MTAX	\N	3
+MTAX 604	C Corporation Taxation	0	{}		MTAX	\N	3
+MTAX 608	State & Local Taxation	0	{}		MTAX	\N	2
+MTAX 610	International Taxation	0	{}		MTAX	\N	2
+MTAX 614	S Corporation Taxation	0	{}		MTAX	\N	1
+MTAX 667	Tax Research & Practice	0	{}		MTAX	\N	1
+MTAX 697	Internship	0	{}		MTAX	\N	\N
+MTSL 304	Immigrant & Refugee Persp CEL	0	{}		MTSL	\N	3
+MTSL 404	Intro to Sociolinguistics	0	{}		MTSL	\N	3
+MTSL 414	Literacy & Engl Lang Learner	0	{}		MTSL	\N	3
+MTSL 450	Language Awareness	0	{}		MTSL	\N	1
+MTSL 480	TESOL Field Experience	0	{}		MTSL	\N	1
+MTSL 490	TESOL Practicum	0	{}		MTSL	\N	1
+MTSL 502	Pedagogical Grammar	0	{}		MTSL	\N	3
+MTSL 503	Immigrant & Refugee Persp CEL	0	{}		MTSL	\N	3
+MTSL 504	Intro to Sociolinguistics	0	{}		MTSL	\N	3
+MTSL 509	Academic Writing Grad Students	0	{}		MTSL	\N	3
+MTSL 514	Literacy & Engl Lang Learner	0	{}		MTSL	\N	3
+MTSL 550	Language Awareness	0	{}		MTSL	\N	1
+MTSL 604	Master's Portfolio	0	{}		MTSL	\N	3
+MTSL 610	Practicum in TESL	0	{}		MTSL	\N	3
+MTSL 611	Continuing Research	0	{}		MTSL	\N	1
+MTSL 680	Professional Seminar	0	{}		MTSL	\N	1
+MTSL 690	TESOL Field Practicum	0	{}		MTSL	\N	3
+MUSC 120	Intro to Music Technology	0	{}		MUSC	\N	1
+MUSC 121	Piano Class I	0	{}		MUSC	\N	1
+MUSC 123	Guitar Class I	0	{}		MUSC	\N	1
+MUSC 125	Group Voice Class	0	{}		MUSC	\N	1
+MUSC 130	Piano Proficiency Class	0	{}		MUSC	\N	1
+MUSC 131A	Applied Piano	0	{}		MUSC	\N	\N
+MUSC 131B	Applied Organ/Harpsichord	0	{}		MUSC	\N	\N
+MUSC 131C	Applied Voice	0	{}		MUSC	\N	\N
+MUSC 131D	Applied Violin	0	{}		MUSC	\N	\N
+MUSC 131E	Applied Cello	0	{}		MUSC	\N	\N
+MUSC 131G	Applied Guitar	0	{}		MUSC	\N	\N
+MUSC 131H	Applied String Bass	0	{}		MUSC	\N	\N
+MUSC 131I	Applied Clarinet	0	{}		MUSC	\N	\N
+MUSC 131J	Applied Saxophone	0	{}		MUSC	\N	\N
+MUSC 131K	Applied Flute	0	{}		MUSC	\N	\N
+MUSC 131L	Applied Trumpet	0	{}		MUSC	\N	\N
+MUSC 131M	Applied Low Brass	0	{}		MUSC	\N	\N
+MUSC 131N	Applied Percussion	0	{}		MUSC	\N	\N
+MUSC 131O	Applied Jazz Piano	0	{}		MUSC	\N	\N
+MUSC 131P	Applied Bassoon	0	{}		MUSC	\N	\N
+MUSC 131Q	Applied French Horn	0	{}		MUSC	\N	\N
+MUSC 131R	Applied Jazz Improvisation	0	{}		MUSC	\N	\N
+MUSC 131T	Applied Conducting	0	{}		MUSC	\N	\N
+MUSC 131U	Applied Jazz Bass	0	{}		MUSC	\N	\N
+MUSC 131W	Applied Viola	0	{}		MUSC	\N	\N
+MUSC 131X	Applied Jazz Guitar	0	{}		MUSC	\N	\N
+MUSC 131Y	Applied Jazz Voice	0	{}		MUSC	\N	\N
+MUSC 131Z	Applied Jazz Drum Set	0	{}		MUSC	\N	\N
+MUSC 132A	Applied Composition	0	{}		MUSC	\N	\N
+MUSC 135	Strings Techniques	0	{}		MUSC	\N	1
+MUSC 140	Concert Choir	0	{}		MUSC	\N	1
+MUSC 143	Chamber Singers	0	{}		MUSC	\N	1
+MUSC 144	Gonzaga Glee Club	0	{}		MUSC	\N	1
+MUSC 145	Discantus Treble Chorus	0	{}		MUSC	\N	1
+MUSC 146	Wind Ensemble	0	{}		MUSC	\N	1
+MUSC 147	Symphony Orchestra	0	{}		MUSC	\N	1
+MUSC 148	Chamber Ensemble	0	{}		MUSC	\N	1
+MUSC 149	Jazz Workshop Combo	0	{}		MUSC	\N	1
+MUSC 150	Guitar Ensemble	0	{}		MUSC	\N	1
+MUSC 151	Wind Symphony	0	{}		MUSC	\N	1
+MUSC 152	Gonzaga Jazz Ensemble	0	{}		MUSC	\N	1
+MUSC 156	Gonzaga Drum Line	0	{}		MUSC	\N	1
+MUSC 157	Liturgical Music Ensemble	0	{}		MUSC	\N	1
+MUSC 161	Music Theory I	0	{}		MUSC	\N	3
+MUSC 161L	Theory I Ear Training Lab	0	{}		MUSC	\N	1
+MUSC 171	Music in the Humanities	0	{}		MUSC	\N	3
+MUSC 175	Jazz History	0	{}		MUSC	\N	3
+MUSC 185	Trends in Contemporary Music	0	{}		MUSC	\N	3
+MUSC 193	FYS: Social Justice and Music	0	{}		MUSC	\N	3
+MUSC 211	Conducting	0	{}		MUSC	\N	3
+MUSC 231	Vocal Diction I	0	{}		MUSC	\N	2
+MUSC 241	Upper Division Applied Exam	0	{}		MUSC	\N	0
+MUSC 257	Creative Music Lab Ensemble	0	{}		MUSC	\N	1
+MUSC 261	Music Theory III	0	{}		MUSC	\N	3
+MUSC 261L	Theory III Ear Training Lab	0	{}		MUSC	\N	1
+MUSC 320	Vocal Pedagogy	0	{}		MUSC	\N	2
+MUSC 325	Half Recital	0	{}		MUSC	\N	0
+MUSC 331C	Applied Voice	0	{}		MUSC	\N	2
+MUSC 331H	Applied String Bass	0	{}		MUSC	\N	2
+MUSC 331L	Applied Trumpet	0	{}		MUSC	\N	2
+MUSC 331W	Applied Viola	0	{}		MUSC	\N	2
+MUSC 332	Choral Conducting Lab	0	{}		MUSC	\N	0
+MUSC 391	Music History I	0	{}		MUSC	\N	3
+MUSC 453	General Music Ed Methods	0	{}		MUSC	\N	3
+MUSC 453L	General Music Ed Methods Lab	0	{}		MUSC	\N	1
+MUSC 480	Music History Seminar	0	{}		MUSC	\N	3
+NTAS 322	Native American Religions	0	{}		NTAS	\N	3
+NTAS 390	Hist Plays:Fact, Fiction&Story	0	{}		NTAS	\N	3
+NURS 100	Nursing Perspectives	0	{}		NURS	\N	1
+NURS 210	Growth and Development	0	{}		NURS	\N	3
+NURS 251	Determinants of Health	0	{}		NURS	\N	3
+NURS 311	Prof & Therapeutic Comm	0	{}		NURS	\N	2
+NURS 314	Assessing & Promoting Wellness	0	{}		NURS	\N	4
+NURS 315	Pract I:Assess/Promo Well CEL	0	{}		NURS	\N	5
+NURS 316	Pathophy & Pharmacology I	0	{}		NURS	\N	4
+NURS 320	Stats for Health Professions	0	{}		NURS	\N	3
+NURS 351	Care of Individual & Family	0	{}		NURS	\N	4
+NURS 352	Pract II:Care Indiv&Family CEL	0	{}		NURS	\N	5
+NURS 356	Pathophy & Pharmacology II	0	{}		NURS	\N	3
+NURS 402	Care of Individuals & Families	0	{}		NURS	\N	4
+NURS 403	PractIII:Acu/Chron Alt Hlt CEL	0	{}		NURS	\N	6
+NURS 404	Research & Info Management	0	{}		NURS	\N	3
+NURS 406	Nursing Research	0	{}		NURS	\N	3
+NURS 418	Complexity in HlthCare Org	0	{}		NURS	\N	2
+NURS 465	Prof Nurs Prc Complex Adpt Sys	0	{}		NURS	\N	3
+NURS 466	Population Focused Health	0	{}		NURS	\N	3
+NURS 467	PracIV:Part Pop Hlth Pract CEL	0	{}		NURS	\N	2
+NURS 468	Prac V:Member of Nurs Profess	0	{}		NURS	\N	3
+NURS 469	Nursing Leadership & Mgmt	0	{}		NURS	\N	2
+NURS 492	Clinical Update Level I	0	{}		NURS	\N	\N
+NURS 523	Adv Pathophysiology	0	{}		NURS	\N	3
+NURS 524	Adv Pharmacology	0	{}		NURS	\N	3
+NURS 561	Info Tech & Data Mgmt	0	{}		NURS	\N	3
+NURS 562	Theor Fdn Hlthcare Improvement	0	{}		NURS	\N	3
+NURS 563	EBP for Quality & Safety	0	{}		NURS	\N	3
+NURS 564	Contemp Hlthcare Env	0	{}		NURS	\N	3
+NURS 565	Clin Prev for Diverse Pops	0	{}		NURS	\N	3
+NURS 600	Advanced Health Assessment	0	{}		NURS	\N	3
+NURS 601	Adv Health Assessment Pract I	0	{}		NURS	\N	1
+NURS 634A	Nursing Leadership Practicum	0	{}		NURS	\N	\N
+NURS 644A	Business of Healthcare Mngmnt	0	{}		NURS	\N	3
+NURS 651P	Gender Based	0	{}		NURS	\N	3
+NURS 652M	PMH Nurse Concepts I	0	{}		NURS	\N	3
+NURS 652P	Infant, Child, Adolescence	0	{}		NURS	\N	3
+NURS 653M	PMH Nurse Concepts II	0	{}		NURS	\N	3
+NURS 653P	Adult/Gerontology I	0	{}		NURS	\N	3
+NURS 654P	Adult/Gerontology II	0	{}		NURS	\N	3
+NURS 661M	Psyc-Mntl Hlth Practicum I	0	{}		NURS	\N	\N
+NURS 661P	PC: Gender-Based Practicum	0	{}		NURS	\N	\N
+NURS 662M	Psyc-Mntl Hlth Practicum II	0	{}		NURS	\N	\N
+NURS 662P	Infant, Child, Adoles Pract	0	{}		NURS	\N	\N
+NURS 663P	Adult/Gerontology Pract I	0	{}		NURS	\N	\N
+NURS 664P	Adult/Gerontology Pract II	0	{}		NURS	\N	\N
+NURS 670	Psychopharmacology	0	{}		NURS	\N	3
+NURS 683A	Nursing Ldrshp Practicum Ext	0	{}		NURS	\N	1
+NURS 683M	Psyc-Mntl Hlth Pract Extension	0	{}		NURS	\N	\N
+NURS 683P	Prim Care Pract Extension	0	{}		NURS	\N	1
+NURS 702	DNP Practicum II	0	{}		NURS	\N	\N
+NURS 705	Introduction to the DNP Role	0	{}		NURS	\N	1
+NURS 711	Qual Imprmnt & Ldrshp in HC	0	{}		NURS	\N	3
+NURS 712	Translational Rsrch Adv Pract	0	{}		NURS	\N	3
+NURS 714	Theortcl Underpinning Adv Prct	0	{}		NURS	\N	3
+NURS 760	DNP Project Readiness	0	{}		NURS	\N	3
+NURS 762	DNP Project Seminar II	0	{}		NURS	\N	1
+OPER 340	Operations Management	0	{}		OPER	\N	3
+OPER 347	Lean Thinking	0	{}		OPER	\N	3
+OPER 348	Qlty Mgmt & Intrnl Standards	0	{}		OPER	\N	3
+OPER 440	Global Oper & Supply Chain Mgt	0	{}		OPER	\N	3
+ORGL 504	Organizational Communication	0	{}		ORGL	\N	3
+ORGL 506	Leadership and Diversity	0	{}		ORGL	\N	3
+ORGL 515	Leadership and Human Potential	0	{}		ORGL	\N	3
+ORGL 516	Relational Dynamics & Org Dev	0	{}		ORGL	\N	3
+ORGL 517	Organzl Change-Transformation	0	{}		ORGL	\N	3
+ORGL 518	Transforming Leadership	0	{}		ORGL	\N	3
+ORGL 520	Negotiation and Conflict Resln	0	{}		ORGL	\N	3
+ORGL 522	Ldrshp/Com-Empwrmt-Collbtn-Dia	0	{}		ORGL	\N	3
+ORGL 523	Psychology of Leadership	0	{}		ORGL	\N	3
+ORGL 530	Servant Leadership	0	{}		ORGL	\N	3
+ORGL 532	Ldrshp, Justice & Forgiveness	0	{}		ORGL	\N	3
+ORGL 535	Listen, Discern, Decide	0	{}		ORGL	\N	3
+ORGL 537	Foresight and Strategy	0	{}		ORGL	\N	3
+ORGL 550	Team Building & Leadership	0	{}		ORGL	\N	3
+ORGL 570	Introduction to Global Systems	0	{}		ORGL	\N	3
+ORGL 600	Foundations of Leadership	0	{}		ORGL	\N	3
+ORGL 605	Imagine, Create, Lead	0	{}		ORGL	\N	3
+ORGL 610	Comm & Leadership Ethics	0	{}		ORGL	\N	3
+ORGL 615	Org Theory & Behavior	0	{}		ORGL	\N	3
+ORGL 620	Leadership Seminar	0	{}		ORGL	\N	3
+ORGL 689	Leadership and Mindfulness	0	{}		ORGL	\N	3
+PHIL 101	Reasoning	0	{}		PHIL	\N	3
+PHIL 193	FYS: Strangers (CEL)	0	{}		PHIL	\N	3
+PHIL 201	Philosophy of Human Nature	0	{}		PHIL	\N	3
+PHIL 301	Ethics	0	{}		PHIL	\N	3
+PHIL 305	History of Ancient Philosophy	0	{}		PHIL	\N	3
+PHIL 402	Faith, Reason, and Knowledge	0	{}		PHIL	\N	3
+PHIL 418	Philosophy of Habit	0	{}		PHIL	\N	3
+PHIL 432	CIS: Phil of Technology	0	{}		PHIL	\N	3
+PHIL 437	Philosophy of Time	0	{}		PHIL	\N	3
+PHIL 442	Philosophy of Sex & Gender	0	{}		PHIL	\N	3
+PHIL 454	Existentialism	0	{}		PHIL	\N	3
+PHIL 455	Health Care Ethics	0	{}		PHIL	\N	3
+PHIL 458	Environmental Ethics	0	{}		PHIL	\N	3
+PHIL 462	Theories Solidarity & Soc Just	0	{}		PHIL	\N	3
+PHIL 478	Philosophy of Technology	0	{}		PHIL	\N	3
+PHIL 491	Science and Society	0	{}		PHIL	\N	3
+PHIL 493	Dorothy Day & Cath Worker Mvmt	0	{}		PHIL	\N	3
+PHIL 499	Senior Exit Requirement	0	{}		PHIL	\N	0
+PHIL 577	Leo Strauss & Political Phil	0	{}		PHIL	\N	3
+PHIL 579	Moral Respons & Free Will	0	{}		PHIL	\N	3
+PHIL 586	Philosophy of Habit	0	{}		PHIL	\N	3
+PHYS 101	General Physics I	0	{}		PHYS	\N	4
+PHYS 101L	General Physics I Lab	0	{}		PHYS	\N	1
+PHYS 103	Scientific Physics I	0	{}		PHYS	\N	4
+PHYS 103L	Scientific Physics I Lab	0	{}		PHYS	\N	1
+PHYS 104	SI: Physics Concepts	0	{}		PHYS	\N	3
+PHYS 204	Scientific Physics II	0	{}		PHYS	\N	4
+PHYS 204L	Scientific Physics II Lab	0	{}		PHYS	\N	1
+PHYS 208	Computational Physics	0	{}		PHYS	\N	2
+PHYS 300	Mathematical Methods	0	{}		PHYS	\N	3
+PHYS 306	Electricity and Magnetism	0	{}		PHYS	\N	3
+PHYS 390	Research Project	0	{}		PHYS	\N	2
+PHYS 402	Advanced Mechanics	0	{}		PHYS	\N	3
+PHYS 468	Solid State Physics	0	{}		PHYS	\N	3
+POLS 101	American Politics	0	{}		POLS	\N	3
+POLS 103	People & Politics World Wide	0	{}		POLS	\N	3
+POLS 104	International Politics	0	{}		POLS	\N	3
+POLS 319	American Foreign Policy	0	{}		POLS	\N	3
+POLS 321	Politics & Public Admin	0	{}		POLS	\N	3
+POLS 323	Constitutional Law:Inst Powers	0	{}		POLS	\N	3
+POLS 325	Education Politics	0	{}		POLS	\N	3
+POLS 330	Ruling Well:Plato-Machiavelli	0	{}		POLS	\N	3
+POLS 331	Modern Political Thought	0	{}		POLS	\N	3
+POLS 335	Marxism	0	{}		POLS	\N	3
+POLS 336	Mdrn:Thrs of theState,Eco,&Soc	0	{}		POLS	\N	4
+POLS 341	Feminist Thought	0	{}		POLS	\N	3
+POLS 354	Comparative European Politics	0	{}		POLS	\N	3
+POLS 355	Post-Soviet Russia and China	0	{}		POLS	\N	3
+POLS 357	Italian Political System	0	{}		POLS	\N	3
+POLS 359	Third World Development	0	{}		POLS	\N	3
+POLS 367	New Europe	0	{}		POLS	\N	3
+POLS 371	International Law	0	{}		POLS	\N	3
+POLS 372	Middle East Politics	0	{}		POLS	\N	3
+POLS 378	Climate Change Sci. & Politics	0	{}		POLS	\N	3
+POLS 432	CIS: All Art is Propaganda	0	{}		POLS	\N	3
+POLS 492	Urban Planning & Politics	0	{}		POLS	\N	3
+POLS 497	Superior Court Internship	0	{}		POLS	\N	9
+POLS 499	Comprehensive Exam Preparation	0	{}		POLS	\N	1
+PRLS 260	Public Relations Principles	0	{}		PRLS	\N	3
+PRLS 340	PR Speech Writing & Delivery	0	{}		PRLS	\N	3
+PRLS 360	Strategic Communications	0	{}		PRLS	\N	3
+PRLS 460	Public Relations Campaign	0	{}		PRLS	\N	3
+PRLS 470	PR Internship Course	0	{}		PRLS	\N	3
+PRLS 480	Public Relations Capstone	0	{}		PRLS	\N	3
+PRLS 497	Genesis Marketing Internship	0	{}		PRLS	\N	3
+PRLS 499	Thesis Conferencing	0	{}		PRLS	\N	0
+PSYC 101	General Psychology	0	{}		PSYC	\N	3
+PSYC 202	Statistics for Psychology	0	{}		PSYC	\N	3
+PSYC 206	Scientific Principles of Psych	0	{}		PSYC	\N	3
+PSYC 300	Biological Psychology	0	{}		PSYC	\N	3
+PSYC 305	Sensation and Perception	0	{}		PSYC	\N	3
+PSYC 310	Cognition	0	{}		PSYC	\N	4
+PSYC 315	Learning	0	{}		PSYC	\N	3
+PSYC 318	Cultural Psychology	0	{}		PSYC	\N	3
+PSYC 335	Social Psychology	0	{}		PSYC	\N	3
+PSYC 340	Personality	0	{}		PSYC	\N	3
+PSYC 345	Child Psychology CEL	0	{}		PSYC	\N	3
+PSYC 355	Psychology of Aging	0	{}		PSYC	\N	3
+PSYC 357	Lifespan Development	0	{}		PSYC	\N	3
+PSYC 376	Forensic Psych	0	{}		PSYC	\N	3
+PSYC 380	Industrial-Organizational Psyc	0	{}		PSYC	\N	3
+PSYC 390	Psychopathology	0	{}		PSYC	\N	3
+PSYC 395	Clinical Neuropsychology	0	{}		PSYC	\N	3
+PSYC 399	Sem:Clinical/Counseling Psyc	0	{}		PSYC	\N	3
+PSYC 416	Psychology of Gender	0	{}		PSYC	\N	3
+PSYC 449	Adv ST: Cognitive Neuroscience	0	{}		PSYC	\N	3
+PSYC 450	Advanced Statistics in Psych	0	{}		PSYC	\N	3
+PSYC 470	Behavior Analysis	0	{}		PSYC	\N	4
+PSYC 493	Group Research Topics	0	{}		PSYC	\N	3
+PSYC 494	Teaching Assistant	0	{}		PSYC	\N	3
+PSYC 496	Individual Research Topics	0	{}		PSYC	\N	3
+PSYC 497	Internship	0	{}		PSYC	\N	1
+PSYC 498	Comprehensive Alternate	0	{}		PSYC	\N	0
+PSYC 499	Comprehensive	0	{}		PSYC	\N	3
+RELI 101	Hebrew Bible	0	{}		RELI	\N	3
+RELI 107	Gospels: Life/Tch of Jesus	0	{}		RELI	\N	3
+RELI 193	FYS: Paranormal	0	{}		RELI	\N	3
+RELI 206	Hebrew Bible-Ancient Near East	0	{}		RELI	\N	3
+RELI 228	Catholicism	0	{}		RELI	\N	3
+RELI 229	Christian Diversity	0	{}		RELI	\N	3
+RELI 232	Global Christologies	0	{}		RELI	\N	3
+RELI 233	Christian Spirituality	0	{}		RELI	\N	3
+RELI 234	Feminism and Christianity	0	{}		RELI	\N	3
+RELI 235	Christian Mysticism	0	{}		RELI	\N	3
+RELI 252	African American Religions	0	{}		RELI	\N	3
+RELI 253	Islamic Civilization	0	{}		RELI	\N	3
+RELI 256	African Religious Traditions	0	{}		RELI	\N	3
+RELI 258	Christian-Muslim Relations	0	{}		RELI	\N	3
+RELI 264	Buddhism	0	{}		RELI	\N	3
+RELI 267	Early Christianity	0	{}		RELI	\N	3
+RELI 276	Principles of Christian Ethics	0	{}		RELI	\N	3
+RELI 286	Healing Creation	0	{}		RELI	\N	3
+RELI 302	Bible and Film	0	{}		RELI	\N	3
+RELI 326	Liturgy	0	{}		RELI	\N	3
+RELI 327	Christian Leadership CEL	0	{}		RELI	\N	3
+RELI 335	Faith, Justice, and The Church	0	{}		RELI	\N	3
+RELI 338	Discernment & Faith Traditions	0	{}		RELI	\N	3
+RELI 339	Ignatian Spirituality	0	{}		RELI	\N	3
+RELI 341	Christian Morality and Eating	0	{}		RELI	\N	3
+RELI 355	Islam in the Contemp World	0	{}		RELI	\N	3
+RELI 356	Native American Religions	0	{}		RELI	\N	3
+RELI 364	Asian Religions in Film	0	{}		RELI	\N	3
+RELI 366	Religion and Violence	0	{}		RELI	\N	3
+RELI 376	Christian Sexual Ethics	0	{}		RELI	\N	3
+RELI 387	Africa's New Religious Movmts	0	{}		RELI	\N	3
+RELI 399	Methodology	0	{}		RELI	\N	3
+RELI 499	Senior Thesis	0	{}		RELI	\N	3
+RELI 510	Hebrew Bible: Old Testament	0	{}		RELI	\N	3
+RELI 519	Christian Scriptures-New Test	0	{}		RELI	\N	3
+RELI 545	Church History	0	{}		RELI	\N	3
+SOCI 101	Introduction to Sociology	0	{}		SOCI	\N	3
+SOCI 202	Statistics for Social Science	0	{}		SOCI	\N	3
+SOCI 204	Research Methods	0	{}		SOCI	\N	3
+SOCI 244	Sex, Gender and Society	0	{}		SOCI	\N	3
+SOCI 283	Sociology of Health & Medicine	0	{}		SOCI	\N	3
+SOCI 290	Statistics for Soc Science TA	0	{}		SOCI	\N	3
+SOCI 312	Contemporary Social Theory	0	{}		SOCI	\N	3
+SOCI 323	Sociology of Race & Ethnicity	0	{}		SOCI	\N	3
+SOCI 337	Subcultures	0	{}		SOCI	\N	3
+SOCI 350	Deviant Behavior	0	{}		SOCI	\N	3
+SOCI 356	Sociology of Policing	0	{}		SOCI	\N	3
+SOCI 358	Mass Incarceration	0	{}		SOCI	\N	3
+SOCI 391	Social Issues in Film	0	{}		SOCI	\N	5
+SOCI 395	Captlsm, EnvntlJust&Resistance	0	{}		SOCI	\N	3
+SOCI 489	Seminar in Research and Theory	0	{}		SOCI	\N	\N
+SOCI 499	Sociology Senior Capstone CEL	0	{}		SOCI	\N	3
+SOSJ 101	Intro Solidarity & Soc Justice	0	{}		SOSJ	\N	3
+SOSJ 160	Journalistic Writing	0	{}		SOSJ	\N	3
+SOSJ 220	Sex, Gender and Society	0	{}		SOSJ	\N	3
+SOSJ 221	Sociology of Health & Medicine	0	{}		SOSJ	\N	3
+SOSJ 260	Fundamentals of TV Production	0	{}		SOSJ	\N	3
+SOSJ 263	Analyzing Practices and Habits	0	{}		SOSJ	\N	3
+SOSJ 280	Justice in January CEL	0	{}		SOSJ	\N	\N
+SOSJ 321	Sociology of Race & Ethnicity	0	{}		SOSJ	\N	3
+SOSJ 359	Captlsm, EnvntlJust&Resistance	0	{}		SOSJ	\N	3
+SOSJ 367	Emerging Media	0	{}		SOSJ	\N	3
+SOSJ 410	Theories Solidarity & Soc Just	0	{}		SOSJ	\N	3
+SOSJ 475	Organizing for Health Equity	0	{}		SOSJ	\N	1
+SOSJ 499	Solidarity & Soc Jus Praxis	0	{}		SOSJ	\N	3
+SPAN 102	Elementary Spanish II	0	{}		SPAN	\N	4
+SPAN 201	Intermediate Spanish I	0	{}		SPAN	\N	4
+SPAN 202	Intermediate Spanish II	0	{}		SPAN	\N	4
+SPAN 301	Advanced Spanish I	0	{}		SPAN	\N	3
+SPAN 318	Medical Spanish	0	{}		SPAN	\N	3
+SPAN 320	Advanced Spanish II	0	{}		SPAN	\N	3
+SPAN 322	Struggle for Modernity	0	{}		SPAN	\N	3
+SPAN 380	Latin American Short Story	0	{}		SPAN	\N	3
+SPAN 480	Seminar: Imagining Colombia	0	{}		SPAN	\N	3
+SPAN 499	Senior Capstone	0	{}		SPAN	\N	1
+TADP 500	Essential Fnd of Power Systems	0	{}		TADP	\N	3
+TADP 501	Ess Fnd of Trans Ln Components	0	{}		TADP	\N	2
+TADP 541	Elec Distribution Sys Design	0	{}		TADP	\N	3
+TADP 543	Electrical Grid Operations	0	{}		TADP	\N	3
+TADP 547	Underground System Design	0	{}		TADP	\N	3
+TADP 548	T-Line Design - Elect Aspects	0	{}		TADP	\N	3
+TADP 553	System Automation	0	{}		TADP	\N	3
+TADP 556	Engineering Leadership	0	{}		TADP	\N	3
+THEA 100	Introduction to Theatre Arts	0	{}		THEA	\N	4
+THEA 111	Acting I	0	{}		THEA	\N	4
+THEA 120	Voice and Movement	0	{}		THEA	\N	3
+THEA 122	Interdisciplinary Arts	0	{}		THEA	\N	3
+THEA 132	Stagecraft	0	{}		THEA	\N	4
+THEA 134	Costume Construction	0	{}		THEA	\N	3
+THEA 235	Design Process	0	{}		THEA	\N	3
+THEA 260	Production Lab: DTM	0	{}		THEA	\N	1
+THEA 261	Perf Lab: DANCE acda	0	{}		THEA	\N	1
+THEA 432	CIS: Arts in the Community	0	{}		THEA	\N	3
+THEA 491	Directed Study	0	{}		THEA	\N	1
+THEA 497	Internship	0	{}		THEA	\N	3
+THEA 498	Senior Project I	0	{}		THEA	\N	1
+TRAN 100	Pre-Registration Confirmation	0	{}		TRAN	\N	12
+UNIV 099	Strategies for Success	0	{}		UNIV	\N	1
+UNIV 115	The Strategy of College	0	{}		UNIV	\N	1
+UNIV 140	What Drives Winning?	0	{}		UNIV	\N	\N
+UNIV 420	Career Development Strategies	0	{}		UNIV	\N	1
+UNIV 421	Health Professions Preparation	0	{}		UNIV	\N	1
+UNIV 520	Personal Brand& Bus for Athls	0	{}		UNIV	\N	3
+VART 101	Drawing I	0	{}		VART	\N	3
+VART 112	Digital Art Foundations	0	{}		VART	\N	3
+VART 115	Art Appreciation	0	{}		VART	\N	3
+VART 121	Painting Methods & Materials	0	{}		VART	\N	3
+VART 141	Ceramics I	0	{}		VART	\N	3
+VART 170	Photographic Art	0	{}		VART	\N	3
+VART 190	ArtSurvey:Prehistoric-Medieval	0	{}		VART	\N	3
+VART 202	Figure Drawing in Florence	0	{}		VART	\N	3
+VART 212	Sculpture Materials & Design I	0	{}		VART	\N	3
+VART 221	Oil Painting	0	{}		VART	\N	3
+VART 230	3-D Design	0	{}		VART	\N	3
+VART 322	Fresco	0	{}		VART	\N	4
+VART 323	Painting: Narrative/Figuration	0	{}		VART	\N	4
+VART 341	Intermediate Ceramics Projects	0	{}		VART	\N	4
+VART 350	Beginning Printmaking	0	{}		VART	\N	4
+VART 360	Museum Studies	0	{}		VART	\N	3
+VART 385	Figure Drawing I	0	{}		VART	\N	4
+VART 386	Figure Drawing II	0	{}		VART	\N	4
+VART 395	Art in the 19th Century	0	{}		VART	\N	3
+VART 397	Renaissance Art	0	{}		VART	\N	3
+VART 407	Women Artists	0	{}		VART	\N	3
+VART 421	Advanced Painting Projects	0	{}		VART	\N	4
+VART 472	Creative Filmmaking	0	{}		VART	\N	4
+VART 492	Independent Study	0	{}		VART	\N	4
+VART 493	Studio Practice	0	{}		VART	\N	1
+VART 494	BFA Solo/Two-Person Exhibit	0	{}		VART	\N	0
+WGST 193	FYS: Gender&Sexuality in Games	0	{}		WGST	\N	3
+WGST 201	Sex, Gender & Society	0	{}		WGST	\N	3
+WGST 202	Gender, Difference, & Power	0	{}		WGST	\N	3
+WGST 205	Gender and Pop Culture	0	{}		WGST	\N	3
+WGST 207	Sociology of Health & Medicine	0	{}		WGST	\N	3
+WGST 219	Re-Imagining Africa	0	{}		WGST	\N	3
+WGST 252	Feminism and Christianity	0	{}		WGST	\N	3
+WGST 304	Feminism and Science	0	{}		WGST	\N	3
+WGST 330	Women in U.S. History	0	{}		WGST	\N	3
+WGST 350	Women Artists	0	{}		WGST	\N	3
+BIOL 374	Immunology	0	{}		BIOL	\N	3
+WGST 380	Christian Sexual Ethics	0	{}		WGST	\N	3
+WGST 401	Feminist Thought	0	{}		WGST	\N	3
+WGST 432	CIS: Phil of Sex & Gender	0	{}		WGST	\N	3
+WGST 460	Auth/Text Prod Early Mod Women	0	{}		WGST	\N	3
+EDSE 676	Msrmnt & Single Case Design	0	{}		EDSE	\N	3
+EDSS 512	SchoolSafetyCrisisPrep&Respnse	0	{}		EDSS	\N	3
+EDSS 615	Research & Program Evaluation	0	{}		EDSS	\N	3
+EDSS 627	Group Process & Facilitation	0	{}		EDSS	\N	3
+EDSS 660	Consult&Collab in School Psych	0	{}		EDSS	\N	3
+EDSS 670	Neuropsych&CognitiveAssessment	0	{}		EDSS	\N	3
+EDSS 671	Neuropsych&CognitiveAssess Lab	0	{}		EDSS	\N	1
+EDSS 680	Social-Emotional Assessment	0	{}		EDSS	\N	3
+EDSS 685	Advanced Diagnostic Assessment	0	{}		EDSS	\N	2
+EDSS 690B	Portfolio in School Psychology	0	{}		EDSS	\N	1
+EDSS 697B	Practicum in School Psych K-12	0	{}		EDSS	\N	2
+EDSS 698B	Internship in SchoolPsych K-12	0	{}		EDSS	\N	4
+EDTE 200	Language, Society, and Power	0	{}		EDTE	\N	3
+EDTE 202	Community and Ethnography	0	{}		EDTE	\N	3
+EDTE 204	Commnty Languages & Lng Acqstn	0	{}		EDTE	\N	3
+EDTE 231	Instruct Meth:Rdg/Wrtg/Comm I	0	{}		EDTE	\N	3
+EDTE 306	Crit Pedagogical Iss Amer Educ	0	{}		EDTE	\N	3
+EDTE 315S	Classroom Assessmnt Scdry Tchr	0	{}		EDTE	\N	3
+EDTE 404	Elementary Methods: Science	0	{}		EDTE	\N	3
+EDTE 418	Discipline Specific Literacy	0	{}		EDTE	\N	3
+EDTE 418L	Field Experience	0	{}		EDTE	\N	1
+EDTE 461	Reading Diagnosis	0	{}		EDTE	\N	3
+EDTE 469	The Five Themes of Geography	0	{}		EDTE	\N	3
+EDTE 510	Science Methods	0	{}		EDTE	\N	2
+EDTE 537	Integrated Instruction	0	{}		EDTE	\N	2
+EDTE 550	Social Studies Methods	0	{}		EDTE	\N	2
+EDTE 561	Reading Diagnosis	0	{}		EDTE	\N	3
+EDTE 592	Literacy & English Learners	0	{}		EDTE	\N	3
+EDTE 594	Support MultiLingual Literacy	0	{}		EDTE	\N	2
+EDTE 633	Ed Research & Data Eval-Elem	0	{}		EDTE	\N	2
+EENG 202	Circuit Analysis II	0	{}		EENG	\N	3
+EENG 304	Electronics Design II	0	{}		EENG	\N	3
+EENG 304L	Electronics Design II Lab	0	{}		EENG	\N	1
+EENG 322	Probabilistic Mtds Elect Eng	0	{}		EENG	\N	3
+EENG 340	Intro Electric Power Engin	0	{}		EENG	\N	3
+EENG 340L	Intro Electric Power Engin Lab	0	{}		EENG	\N	1
+EENG 406	VLSI Circuits and Systems	0	{}		EENG	\N	3
+EENG 412	Digital Control Systems	0	{}		EENG	\N	3
+EENG 428	Wireless Systems II	0	{}		EENG	\N	3
+EENG 442	Electr Pwr Distbn System Eng	0	{}		EENG	\N	3
+EENG 481	Network Interfacing and Socket	0	{}		EENG	\N	3
+ELCT 056	Communications Seminar	0	{}		ELCT	\N	6
+ELCT 058	Language Awareness	0	{}		ELCT	\N	3
+ENGL 303	Creative Non-Fiction Writing	0	{}		ENGL	\N	3
+ENGL 330	Shakespeare	0	{}		ENGL	\N	\N
+ENGL 401	Adv. Poetry Writing	0	{}		ENGL	\N	3
+ENGL 406	Writing in the Workplace	0	{}		ENGL	\N	3
+ENGL 423	Chaucer	0	{}		ENGL	\N	3
+ENGL 466	American Realism & Naturalism	0	{}		ENGL	\N	3
+ENGL 473	Literature of Empire	0	{}		ENGL	\N	3
+ENGL 498	Fiction Independent Study	0	{}		ENGL	\N	3
+ENSC 192	First Year Seminar (SEAS)	0	{}		ENSC	\N	3
+ENSC 300	Engineering Economics	0	{}		ENSC	\N	2
+ENSC 306	Dynamics	0	{}		ENSC	\N	3
+ENSC 355	Thermal Science	0	{}		ENSC	\N	3
+ENSC 400	Fund of Engineering Exam	0	{}		ENSC	\N	0
+ENSC 485	Statistical Quality Control	0	{}		ENSC	\N	3
+ENSC 486	Tribology and Surface Science	0	{}		ENSC	\N	3
+ACCT 361	Interm Financial Accounting II	0	{}		ACCT	\N	3
+ARAB 280	Intermediate Arabic I	0	{}		ARAB	\N	2
+BCSS 209	Social Media Content Creation	0	{}		BCSS	\N	1
+BCSS 262	Equity and Storytelling	0	{}		BCSS	\N	1
+BENT 496	AI Senior Projects	0	{}		BENT	\N	3
+BIOL 305	Biological Data Analysis	0	{}		BIOL	\N	4
+BIOL 342	Plant Population Ecology	0	{}		BIOL	\N	3
+BIOL 451	Comparative Endocrinology	0	{}		BIOL	\N	3
+BRCO 491	TV and Social Justice	0	{}		BRCO	\N	3
+CATH 390	Theological Method	0	{}		CATH	\N	\N
+CENG 418	Transportation System Design	0	{}		CENG	\N	3
+CENG 421	Stormwater Management	0	{}		CENG	\N	3
+CENG 450	Watershed Modeling	0	{}		CENG	\N	3
+CHEM 304	Practice in Lab Teaching	0	{}		CHEM	\N	0
+CHEM 407	Molecular Machines	0	{}		CHEM	\N	2
+CLAS 310	Greek Gods & Heroes	0	{}		CLAS	\N	3
+CLAS 497	Role-Playing Greek Mythology	0	{}		CLAS	\N	2
+COML 524	AI & Communication	0	{}		COML	\N	3
+COML 525	Advanced Pedagogy	0	{}		COML	\N	3
+COML 545	Digital Surv, Algrthm & Ethics	0	{}		COML	\N	3
+CPEN 231	Embedded Computer Systems	0	{}		CPEN	\N	3
+CPEN 231L	Embedded Computer Systems Lab	0	{}		CPEN	\N	1
+CPSC 353	Applied Cryptography	0	{}		CPSC	\N	3
+CRES 201	Race and Popular Culture	0	{}		CRES	\N	3
+CRES 432	CIS: Africana Philosophy	0	{}		CRES	\N	3
+CRIM 365	Comparative Criminal Justice	0	{}		CRIM	\N	3
+DANC 465	Choreography	0	{}		DANC	\N	3
+DPLS 702	AI & Communication	0	{}		DPLS	\N	3
+DPLS 707	AI Explorations & Applications	0	{}		DPLS	\N	3
+DPLS 717	Leadership and Film	0	{}		DPLS	\N	3
+DPLS 765	Black Critical Theory	0	{}		DPLS	\N	3
+DPLS 772	Advanced Pedagogy	0	{}		DPLS	\N	3
+ECON 389	Special Topics	0	{}		ECON	\N	\N
+ECON 390	Economics of Sports	0	{}		ECON	\N	3
+EDLD 701	Framework for Eff Ldshp in Ed	0	{}		EDLD	\N	3
+EDLD 713	Sys-wide Curr & Assessment	0	{}		EDLD	\N	3
+EDPE 592	Research in Sport Management	0	{}		EDPE	\N	\N
+EDPE 594	Italian Sports and Culture	0	{}		EDPE	\N	3
+EDSE 102	Amer Sign Language II & Cultur	0	{}		EDSE	\N	3
+EDSE 350L	Early Childhood Special Ed Lab	0	{}		EDSE	\N	1
+EDSE 352L	Language & Communication Lab	0	{}		EDSE	\N	1
+EDSE 550L	Early Childhood Special Ed Lab	0	{}		EDSE	\N	1
+EDSE 552L	Language & Communication Lab	0	{}		EDSE	\N	1
+EDSE 680	Adv Teacher Development Sem	0	{}		EDSE	\N	2
+EDSE 697	Ext Adv Spec Ed Teach Pract	0	{}		EDSE	\N	6
+EDSS 626	Culture and Diversity	0	{}		EDSS	\N	3
+EDSS 655	Multi-Tiered System of Support	0	{}		EDSS	\N	3
+EDSS 721A	Disseratation Proposal I	0	{}		EDSS	\N	1
+EDSS 735	Counseling Theories	0	{}		EDSS	\N	3
+EDSS 755	Multi-Tiered System of Support	0	{}		EDSS	\N	3
+EDSS 775	Personality Assessment	0	{}		EDSS	\N	3
+EDSS 795	Clinical Practicum III	0	{}		EDSS	\N	3
+EDSS 796	Aff Bases Behav & Psycpthy	0	{}		EDSS	\N	3
+EDTE 206	Community & Place-Based Eductn	0	{}		EDTE	\N	3
+EDTE 554D	Secondary Methods-Theater	0	{}		EDTE	\N	1
+ELCT 181	Live, Learn, Grow II	0	{}		ELCT	\N	1
+ELCT 182	Live, Learn, Grow III	0	{}		ELCT	\N	1
+ELCT 509	Academic Writing Grad Students	0	{}		ELCT	\N	3
+ENGL 314	Multicultural Lit of the US	0	{}		ENGL	\N	3
+ENGL 331	Renaissance Literature	0	{}		ENGL	\N	3
+ENGL 440	Literature of the Americas	0	{}		ENGL	\N	3
+ENGL 492	IndStdy:Renaissance Literature	0	{}		ENGL	\N	3
+ENGL 497	Internship	0	{}		ENGL	\N	3
+ENGM 510	Engineering Portfolio Mgmt	0	{}		ENGM	\N	3
+ENSC 483	Special Topic: System Dynamics	0	{}		ENSC	\N	3
+ENSC 490	Water Treatment Modeling	0	{}		ENSC	\N	1
+ENVS 202	Applied Environmental Chemstry	0	{}		ENVS	\N	3
+ENVS 202L	Applied Envrmntl Chem -Lab	0	{}		ENVS	\N	1
+ENVS 411	Plant Population Ecology	0	{}		ENVS	\N	3
+FILI 101	Elementary Filipino I	0	{}		FILI	\N	4
+FILM 231	African-American Cinema	0	{}		FILM	\N	3
+FILM 260	Design Process	0	{}		FILM	\N	3
+FILM 261	Directing I	0	{}		FILM	\N	3
+FILM 344	Comparative European Politics	0	{}		FILM	\N	3
+FILM 349	Tps: Soviet Culture thrgh Film	0	{}		FILM	\N	3
+FILM 370	Bible and Film	0	{}		FILM	\N	3
+FILM 371	Asian Religions in Film	0	{}		FILM	\N	3
+FILM 432	CIS: Philosophy of Film	0	{}		FILM	\N	3
+FILM 450	Ancient Rome in Popular Cultur	0	{}		FILM	\N	3
+FILM 499	Film Capstone	0	{}		FILM	\N	3
+FREN 340	La France d'aujourd'hui	0	{}		FREN	\N	3
+HEAL 193	FYS: Religion and Medicine	0	{}		HEAL	\N	3
+HEAL 395	Global History of Science	0	{}		HEAL	\N	3
+HEAL 396	Environmental Justice	0	{}		HEAL	\N	3
+HIST 103	United States History I	0	{}		HIST	\N	3
+HIST 110	Indians of Columbia Plateau	0	{}		HIST	\N	3
+HIST 316	Tudor & Stuart Britain	0	{}		HIST	\N	3
+HIST 320	Global History of Science	0	{}		HIST	\N	3
+HIST 331	World War II	0	{}		HIST	\N	3
+HIST 392	Soviet Culture through Film	0	{}		HIST	\N	3
+HONS 222	African Religious Traditions	0	{}		HONS	\N	3
+HONS 241	Foundations of the West	0	{}		HONS	\N	3
+HONS 244	United States History I	0	{}		HONS	\N	3
+HONS 258	Calculus-Analytic Geometry II	0	{}		HONS	\N	4
+HONS 260	Principles of Accounting I	0	{}		HONS	\N	3
+HONS 309	Envir Perspectives & Behavior	0	{}		HONS	\N	3
+HONS 380	Lang Diversity &Social Justice	0	{}		HONS	\N	3
+HONS 385	Queer Literature in Spanish	0	{}		HONS	\N	3
+HONS 481	Strategic Management	0	{}		HONS	\N	3
+INST 344	International Organizations	0	{}		INST	\N	3
+INST 367	Arab-Israeli Conflict	0	{}		INST	\N	3
+INST 385	Latin American Politics	0	{}		INST	\N	3
+LATN 290	Latin Prose Composition	0	{}		LATN	\N	\N
+LDRS 601	AI & Communication	0	{}		LDRS	\N	3
+LDRS 602	AI Explorations & Applications	0	{}		LDRS	\N	3
+MACC 561	Intermediate Accounting II	0	{}		MACC	\N	3
+MACC 641	Financial Statement Analysis	0	{}		MACC	\N	3
+MACC 662	Accounting Information Systems	0	{}		MACC	\N	3
+MACC 681	Sustainability Accounting II	0	{}		MACC	\N	1
+MACC 699	The Art of Accounting	0	{}		MACC	\N	3
+MENG 478	Vehicle Dynamics	0	{}		MENG	\N	3
+MKTG 319	Content Marketing	0	{}		MKTG	\N	3
+MSBA 655	Emerging Issues in Analytics	0	{}		MSBA	\N	1
+MTAX 690	Fundamentals of Federal Tax	0	{}		MTAX	\N	3
+MTSL 501	Theory & Prac of Lang Teaching	0	{}		MTSL	\N	3
+MTSL 691	Vocal Diction I	0	{}		MTSL	\N	\N
+MUSC 131V	Applied Harp	0	{}		MUSC	\N	\N
+MUSC 141	Big Bing Theory a cappella	0	{}		MUSC	\N	1
+MUSC 142	Gonzaga Vocal Jazz Choir	0	{}		MUSC	\N	1
+MUSC 454L	Field Experience III	0	{}		MUSC	\N	1
+MUSC 495	Student Teaching Seminar	0	{}		MUSC	\N	2
+MUSC 496	Student Teaching	0	{}		MUSC	\N	12
+BIOL 375	Virology	0	{}		BIOL	\N	3
+NTAS 497	Exper Learning: Internship	0	{}		NTAS	\N	3
+NURS 491	Spirituality in Health&Healing	0	{}		NURS	\N	\N
+NURS 704	DNP Practicum Extension	0	{}		NURS	\N	1
+ORGL 510	Renaissance Leadership in Ital	0	{}		ORGL	\N	3
+PHIL 440	Africana Philosophy	0	{}		PHIL	\N	3
+PHIL 443	Dorothy Day&the Cath Wkr Mvmt	0	{}		PHIL	\N	3
+PHIL 466	Phil of Religion & Technology	0	{}		PHIL	\N	3
+PHIL 490	Natural Philosophy of the Soul	0	{}		PHIL	\N	3
+PHIL 695	Logic Requirement	0	{}		PHIL	\N	0
+PHYS 190	Scientific Inquiry Lab	0	{}		PHYS	\N	1
+PHYS 490	Nuclear Physics	0	{}		PHYS	\N	3
+POLS 352	Latin American Politics	0	{}		POLS	\N	3
+POLS 369	The Politics of Eurasia	0	{}		POLS	\N	3
+POLS 373	Arab-Israeli Conflict	0	{}		POLS	\N	3
+POLS 376	International Organizations	0	{}		POLS	\N	3
+POLS 498	Senior Seminar	0	{}		POLS	\N	3
+PRLS 356	Sports Media	0	{}		PRLS	\N	3
+PRLS 410	Strategic & Crisis Comm	0	{}		PRLS	\N	3
+PSYC 350	Adolescent Psychology	0	{}		PSYC	\N	3
+PUBH 101	Introduction to Public Health	0	{}		PUBH	\N	3
+PUBH 340	Enviro, Climate Chng, & Health	0	{}		PUBH	\N	3
+PUBH 360	Global Health Issues & Stratgs	0	{}		PUBH	\N	3
+RELI 226	Challenges in Catholic Theol	0	{}		RELI	\N	3
+RELI 248	Christian Nonviolence	0	{}		RELI	\N	3
+RELI 342	Trinity	0	{}		RELI	\N	3
+RELI 432	CIS: Bad Religion	0	{}		RELI	\N	3
+SOCI 200	Soc Probs & Change (WSB, CEL)	0	{}		SOCI	\N	3
+SOCI 349	Capitalism Environment Justice	0	{}		SOCI	\N	3
+SOCI 396	Human Rights Regimes	0	{}		SOCI	\N	3
+SOCI 490	Sociology Senior Capstone	0	{}		SOCI	\N	3
+SOCI 494	Seminar in Research & Theory	0	{}		SOCI	\N	3
+SOSJ 349	Capitalism Environment Justice	0	{}		SOSJ	\N	3
+SOSJ 419	Dorothy Day & Cath Worker Mvmt	0	{}		SOSJ	\N	3
+SPAN 351	Intro to Latin American Film	0	{}		SPAN	\N	3
+STBD 300	University of Auckland	0	{}		STBD	\N	12
+THEA 253	Directing I	0	{}		THEA	\N	3
+THEA 293	ST: Devised Performance	0	{}		THEA	\N	3
+THEA 490	Dir Study: Adv DTM	0	{}		THEA	\N	1
+UNIV 410	Health Professions Prep	0	{}		UNIV	\N	1
+UNIV 811	Universal Access	0	{}		UNIV	\N	0
+VART 394	Native American Art & Perform	0	{}		VART	\N	3
+WGST 260	Sex, Gender, and Society	0	{}		WGST	\N	3
+WGST 280	Understanding Identity	0	{}		WGST	\N	3
+WGST 353	Christian Sexual Ethics	0	{}		WGST	\N	3
+ENSC 487	Vehicle Dynamics	0	{}		ENSC	\N	3
+ENSC 492	Senior Design Project II	0	{}		ENSC	\N	3
+ENSC 497	Internship	0	{}		ENSC	\N	1
+ENTR 202	Solution to Execution	0	{}		ENTR	\N	3
+ENTR 302	Strategic Thinking	0	{}		ENTR	\N	3
+ENTR 402	Ethic and Moral Leadership	0	{}		ENTR	\N	3
+ENVS 104	Environmental Chemistry	0	{}		ENVS	\N	3
+ENVS 104L	Environmental Chemistry Lab	0	{}		ENVS	\N	1
+ENVS 303	Conservation Biology	0	{}		ENVS	\N	3
+ENVS 325	Native American Govt & Pol	0	{}		ENVS	\N	3
+ENVS 329	N Amer Environmental Policies	0	{}		ENVS	\N	3
+ENVS 353	Environmental History	0	{}		ENVS	\N	3
+ENVS 384	GIS & Ecological Techniques	0	{}		ENVS	\N	3
+ENVS 384L	GIS & Ecological TechniquesLab	0	{}		ENVS	\N	1
+ENVS 499B	Symposium in Env Stu.II (CEL)	0	{}		ENVS	\N	2
+FREN 202	Intermediate French II	0	{}		FREN	\N	4
+FREN 290	Directed Study	0	{}		FREN	\N	4
+GERM 102	Elementary German II	0	{}		GERM	\N	\N
+GERM 202	Intermediate German II	0	{}		GERM	\N	4
+GERM 307	Contemporary Issues	0	{}		GERM	\N	3
+GREK 102	Greek II	0	{}		GREK	\N	4
+HIST 193	FYS: Rwandan Genocide	0	{}		HIST	\N	3
+HIST 301	Historical Methods	0	{}		HIST	\N	3
+HIST 302	The Ancient City	0	{}		HIST	\N	3
+HIST 309	Italy: Homeland of the Romans	0	{}		HIST	\N	3
+HIST 344	African Health and Healing	0	{}		HIST	\N	3
+HIST 354	American Latina/o History	0	{}		HIST	\N	3
+HIST 365	Environmental History	0	{}		HIST	\N	3
+HIST 367	Rights Justice & US Citizenshp	0	{}		HIST	\N	3
+HIST 401	Senior Thesis/Seminar	0	{}		HIST	\N	3
+HIST 405	General Hist Summation Project	0	{}		HIST	\N	0
+HIST 490	Alexander the Great	0	{}		HIST	\N	3
+HONS 207	Adv Genetics: Race and Racism	0	{}		HONS	\N	3
+HONS 432	CIS: Quantitative Literacy	0	{}		HONS	\N	3
+HONS 490	Senior Honors Colloquium	0	{}		HONS	\N	3
+HPHY 210	Scientific Writing	0	{}		HPHY	\N	3
+HPHY 242	Human Anatomy & Physiology II	0	{}		HPHY	\N	3
+ACCT 363	Cost Accounting	0	{}		ACCT	\N	3
+ACCT 366	Federal Taxation II	0	{}		ACCT	\N	3
+BFIN 424	Real Estate Principles	0	{}		BFIN	\N	3
+BFIN 429A	Portfolio Mgmt I	0	{}		BFIN	\N	1
+BFIN 429C	Portfolio Mgmt III	0	{}		BFIN	\N	1
+BIOL 206	Ecology	0	{}		BIOL	\N	3
+BIOL 206L	Ecology Lab	0	{}		BIOL	\N	1
+BIOL 323	Conservation Biology	0	{}		BIOL	\N	3
+BIOL 335	Advanced Genetics:	0	{}		BIOL	\N	3
+BIOL 341	Human Physiology	0	{}		BIOL	\N	3
+BIOL 341L	Human Physiology Lab	0	{}		BIOL	\N	1
+BIOL 344	GIS & Ecological Techniques	0	{}		BIOL	\N	3
+BIOL 344L	GIS & Ecological TechniquesLab	0	{}		BIOL	\N	1
+BIOL 371	Vertebrate Biology & Anatomy	0	{}		BIOL	\N	3
+BIOL 371L	Vertebrate Biol & Anatomy Lab	0	{}		BIOL	\N	1
+BIOL 390	Biologil Data Analysis Using R	0	{}		BIOL	\N	3
+BIOL 441	Adv Physiol: Neurophysiolgy	0	{}		BIOL	\N	3
+BIOL 441L	Adv Physiol:Neurophysiolgy Lab	0	{}		BIOL	\N	1
+BIOL 451L	Comparative Endocrinology Lab	0	{}		BIOL	\N	1
+BMIS 444	Info System Analysis & Design	0	{}		BMIS	\N	3
+BRCO 320	Image Communication	0	{}		BRCO	\N	3
+BRCO 469	Adv Television Production	0	{}		BRCO	\N	3
+BRCO 481	TV & Social Justice	0	{}		BRCO	\N	3
+BUSN 267	Business Leadership	0	{}		BUSN	\N	1
+BUSN 268	Landing Jobs in Mktg&Advrtsng	0	{}		BUSN	\N	1
+BUSN 269	Economics of the Side Hustle	0	{}		BUSN	\N	1
+CATH 499	Catholic Studies Symposium	0	{}		CATH	\N	3
+CENG 303	Environmental Engineering	0	{}		CENG	\N	3
+CENG 303L	Environmental Engineering Lab	0	{}		CENG	\N	1
+CENG 352	Hydraulic Engineering	0	{}		CENG	\N	3
+CENG 352L	Hydraulic Engineer Lab	0	{}		CENG	\N	1
+CENG 391	Civil Eng Design & Practice	0	{}		CENG	\N	3
+CENG 412	Concrete Design	0	{}		CENG	\N	3
+CENG 414	Waste Management	0	{}		CENG	\N	3
+CENG 415	Masonry - Timber Design	0	{}		CENG	\N	3
+CENG 422	Structural Analysis II	0	{}		CENG	\N	3
+CENG 464	Ground Behavior for Structures	0	{}		CENG	\N	3
+CHEM 123	Environmental Chemistry	0	{}		CHEM	\N	3
+CHEM 123L	Environmental Chemistry Lab	0	{}		CHEM	\N	1
+CHEM 200L	General Chemistry II Lab	0	{}		CHEM	\N	1
+CHEM 230	Organic Chemistry I	0	{}		CHEM	\N	4
+CHEM 230L	Organic Chemistry I Lab	0	{}		CHEM	\N	1
+CHEM 245	Biochemistry	0	{}		CHEM	\N	3
+CHEM 245L	Biochemistry Lab	0	{}		CHEM	\N	1
+CHEM 270	Career Development I	0	{}		CHEM	\N	1
+CHEM 310	Analytical Chemistry	0	{}		CHEM	\N	3
+CHEM 310L	Analytical Chemistry Lab	0	{}		CHEM	\N	2
+CHEM 345L	Advanced Biochemistry Lab	0	{}		CHEM	\N	3
+CHEM 370	Career Development II	0	{}		CHEM	\N	1
+CHEM 385L	Advanced Chemistry Lab	0	{}		CHEM	\N	3
+CHEM 455	Polymer Chemistry& Engineering	0	{}		CHEM	\N	2
+CHEM 498B	Thesis II	0	{}		CHEM	\N	1
+CHIN 102	Elementary Chinese II	0	{}		CHIN	\N	4
+CLAS 220	Intro to Classical Literature	0	{}		CLAS	\N	3
+CLAS 432	CIS: Sex/Gender in Greece/Rome	0	{}		CLAS	\N	3
+COML 514	Strategic & Appl Public Rltns	0	{}		COML	\N	3
+COML 515	Relational Communication	0	{}		COML	\N	3
+COML 516	MediaLiteracy&DigitalCitzenshp	0	{}		COML	\N	3
+COML 518	Online Course Design & Teach	0	{}		COML	\N	3
+COMM 310	Politics of Popular Culture	0	{}		COMM	\N	3
+COMM 330	Politics of Space and Place	0	{}		COMM	\N	3
+COMM 331	Argumentation and Debate	0	{}		COMM	\N	3
+COMM 370	Digital Culture/Networked Self	0	{}		COMM	\N	3
+COMM 420	Critical / Cultural Comm	0	{}		COMM	\N	3
+COMM 450	Justice and Arts of Civic Life	0	{}		COMM	\N	3
+CPEN 342	Embedded Computer Systems	0	{}		CPEN	\N	3
+CPEN 342L	Embedded Computer Systems Lab	0	{}		CPEN	\N	1
+CPEN 435	Parallel & Cloud Computing	0	{}		CPEN	\N	3
+CPEN 481	Comp Hrdwr Design&Architecture	0	{}		CPEN	\N	3
+CPSC 215	Python Programming	0	{}		CPSC	\N	3
+CPSC 311	UI/UX Design	0	{}		CPSC	\N	3
+CPSC 313	Cloud & High Scale Dist Sys	0	{}		CPSC	\N	3
+CPSC 326	Organization of Program Langs	0	{}		CPSC	\N	3
+CPSC 431	Computer Architecture	0	{}		CPSC	\N	3
+CPSC 455	Chaos & Dynamical Systems	0	{}		CPSC	\N	3
+CPSC 492L	Senior Design Project Lab II	0	{}		CPSC	\N	3
+CRES 301	Intersectionality in CRES	0	{}		CRES	\N	3
+CRES 497	Internship	0	{}		CRES	\N	3
+CRIM 352	Corrections	0	{}		CRIM	\N	3
+CRIM 362	BIPOC, Crime & Justice	0	{}		CRIM	\N	3
+CRIM 385	Law and Society	0	{}		CRIM	\N	3
+CTED 1000	Women Lead Spokane	0	{}		CTED	\N	1
+ACCT 464	Auditing	0	{}		ACCT	\N	3
+ACCT 489	Fraud and Forensic Examination	0	{}		ACCT	\N	3
+BCSS 207	Resiliency	0	{}		BCSS	\N	1
+BCSS 264	Nonprofit Fundraising & Mktg	0	{}		BCSS	\N	1
+BCSS 271	Women's Career & Confidence	0	{}		BCSS	\N	1
+BFIN 324	Financial Modeling	0	{}		BFIN	\N	3
+BFIN 325	Financial Institutions	0	{}		BFIN	\N	3
+BFIN 491	Mergers and Acquisitions	0	{}		BFIN	\N	3
+BIOL 359	Studies in Biodiversity	0	{}		BIOL	\N	1
+BIOL 380	Trop Biome Eco & Climate Chnge	0	{}		BIOL	\N	4
+BMIS 342	Database Systems	0	{}		BMIS	\N	3
+BRCO 499	Broadcast Capstone	0	{}		BRCO	\N	0
+BUSN 290	GU Investment Banking Accel	0	{}		BUSN	\N	1
+BUSN 430	Waste Mangemnt System in EU	0	{}		BUSN	\N	3
+BUSN 489	EU Busn Strategy: Case Studies	0	{}		BUSN	\N	3
+CENG 193	FYS: Equity & Infrastructure	0	{}		CENG	\N	3
+CENG 380	Construction Materials & Eng	0	{}		CENG	\N	2
+CENG 380L	Construction Materials&Eng Lab	0	{}		CENG	\N	1
+CHEM 424	DNA Damage & Repair	0	{}		CHEM	\N	2
+CHEM 488	Senior Literature Review	0	{}		CHEM	\N	1
+CLAS 491	Fragmentary Greek Texts	0	{}		CLAS	\N	3
+COMM 193	FYS: Semiotics of Advertising	0	{}		COMM	\N	3
+COMM 401	Communication & Leadership	0	{}		COMM	\N	3
+COMM 482	Gonzaga Mock Trial	0	{}		COMM	\N	3
+COMM 485	Meaning of Style	0	{}		COMM	\N	3
+COMM 491	Crafting Professional Identity	0	{}		COMM	\N	1
+CPEN 193	FYS: Computers,Robots,AI&Soc	0	{}		CPEN	\N	3
+CPSC 348	Computer Security	0	{}		CPSC	\N	3
+CPSC 351	Theory of Computation	0	{}		CPSC	\N	3
+CPSC 410	Information Theory and Coding	0	{}		CPSC	\N	3
+CRES 202	Racing Space and Place	0	{}		CRES	\N	3
+CRES 306	Monstrosity and Race	0	{}		CRES	\N	3
+CRIM 366	Mass Trauma and Genocide	0	{}		CRIM	\N	3
+CRIM 398	Human Rights Regimes	0	{}		CRIM	\N	3
+CRIM 399	Forensic Science	0	{}		CRIM	\N	3
+DANC 165	Interdisciplinary Arts	0	{}		DANC	\N	3
+DANC 180	Intro to Dance	0	{}		DANC	\N	3
+DANC 360	Dance Company Lab - Ballet	0	{}		DANC	\N	1
+DANC 497	Internship - Pedagogy	0	{}		DANC	\N	1
+DPLS 700	Leadership Theory	0	{}		DPLS	\N	3
+DPLS 720	Principles of Research	0	{}		DPLS	\N	3
+DPLS 727	Complexity &Leadership Studies	0	{}		DPLS	\N	3
+DPLS 748	Leadership & Feminist Ethics	0	{}		DPLS	\N	3
+DPLS 757	Power & Influence in Leadershp	0	{}		DPLS	\N	3
+DPLS 780	Servant Leadership	0	{}		DPLS	\N	3
+ECON 301	Intermediate Microeconomics	0	{}		ECON	\N	3
+ECON 352	Money and Banking	0	{}		ECON	\N	3
+ECON 411	Globalization & EU Economics	0	{}		ECON	\N	3
+ECON 491	Economic Research	0	{}		ECON	\N	3
+EDCE 587	Child & Adolescent Counseling	0	{}		EDCE	\N	3
+EDCE 603	Human Sexuality	0	{}		EDCE	\N	2
+EDCE 687	Adv Theory & Prof Sem I	0	{}		EDCE	\N	1
+EDCE 697	Counseling Internship (SCH)	0	{}		EDCE	\N	5
+EDLA 612	Leadership Role Seminar	0	{}		EDLA	\N	3
+EDLA 620	Principal Internship	0	{}		EDLA	\N	3
+EDPE 144	Shoot 360 Basketball Training	0	{}		EDPE	\N	1
+EDPE 315	Adapted Phys Education & Sport	0	{}		EDPE	\N	3
+EDPE 405	Senior Seminar in Sport	0	{}		EDPE	\N	3
+EDPE 514	Ethical/Legal Aspects in Sport	0	{}		EDPE	\N	3
+EDSE 101	Amer Sign Language I & Culture	0	{}		EDSE	\N	3
+EDSE 552	Language and Communication	0	{}		EDSE	\N	3
+EDSE 675	Adv Applied Behavior Analysis	0	{}		EDSE	\N	3
+EDSS 720	Research Seminar in Schl Psyc	0	{}		EDSS	\N	0
+EDSS 723	Qualitative Rsrch Mthd & Dsgn	0	{}		EDSS	\N	3
+EDSS 726	Culture and Diversity	0	{}		EDSS	\N	3
+EDSS 730	Assessment in Schl Settings	0	{}		EDSS	\N	3
+EDSS 740	Ethical & Lgl Iss in Schl Psyc	0	{}		EDSS	\N	3
+EDSS 741	Ed Leadership & community	0	{}		EDSS	\N	3
+EDSS 745A	Statistics I	0	{}		EDSS	\N	3
+EDSS 750	Applied Behavioral Analysis	0	{}		EDSS	\N	3
+EDSS 789	Biological Bases of Behavior	0	{}		EDSS	\N	3
+EDSS 791	Cognitive Bases of Behavior	0	{}		EDSS	\N	3
+EDSS 797A	Pract in Sch Psyc K-12	0	{}		EDSS	\N	3
+EDTE 193	FYS: Possibilities&Predicament	0	{}		EDTE	\N	3
+EDTE 492	Secondary Methods-Theater	0	{}		EDTE	\N	3
+EENG 193	FYS: Computers,Robots, AI&Soc	0	{}		EENG	\N	3
+EENG 410	Information Theory and Coding	0	{}		EENG	\N	3
+EENG 411L	Intro to Control Systems Lab	0	{}		EENG	\N	1
+EENG 421L	Intro to Comm Systems Lab	0	{}		EENG	\N	1
+ELCT 055	Academic Writing	0	{}		ELCT	\N	3
+ELCT 059	Academic Seminar	0	{}		ELCT	\N	6
+ENGL 205	Studies in Shakespeare	0	{}		ENGL	\N	3
+ENGL 287	Intersectionality & Literature	0	{}		ENGL	\N	3
+ENGL 342	Victorian Era	0	{}		ENGL	\N	3
+ENGL 390	Writing Center Practicum	0	{}		ENGL	\N	\N
+ENGL 402	Advanced Fiction Writing	0	{}		ENGL	\N	3
+ENSC 481	Design for the Human Body	0	{}		ENSC	\N	3
+ENVS 321	Ecological Thought & Politics	0	{}		ENVS	\N	3
+ENVS 330	Parks, Forests, and Wildlife	0	{}		ENVS	\N	4
+ENVS 341	Environmental Science Seminar	0	{}		ENVS	\N	1
+ENVS 406	Entomology	0	{}		ENVS	\N	3
+ENVS 406L	Entomology Lab	0	{}		ENVS	\N	1
+ENVS 422	Sustainable Systems and Design	0	{}		ENVS	\N	3
+ENVS 425	Stream Restoration	0	{}		ENVS	\N	3
+FILM 201	Media Aesthetics	0	{}		FILM	\N	3
+FREN 102	Immersive Elem French II	0	{}		FREN	\N	4
+FREN 301	Advanced French I	0	{}		FREN	\N	3
+FREN 302	Advanced French II	0	{}		FREN	\N	3
+GERM 305	German Conversation	0	{}		GERM	\N	3
+GREK 190	Greek 1	0	{}		GREK	\N	3
+GREK 291	Intermediate Greek	0	{}		GREK	\N	3
+HEAL 195	Disability in Literature	0	{}		HEAL	\N	3
+HEAL 196	Healthcare Systems	0	{}		HEAL	\N	3
+HEAL 201	Sociology of Health & Medicine	0	{}		HEAL	\N	3
+HEAL 318	MedicalSpan&CulturalCompetency	0	{}		HEAL	\N	3
+HEAL 455	Health Care Ethics	0	{}		HEAL	\N	3
+HEAL 497	Walking Schl Bus Public Health	0	{}		HEAL	\N	2
+HIST 104	United States History II	0	{}		HIST	\N	3
+HIST 105	Russia: Nation, State, Empire	0	{}		HIST	\N	3
+HIST 106	Asian&PacificIslanderAmerHist	0	{}		HIST	\N	3
+HIST 108	Intro to Pacific NW History	0	{}		HIST	\N	3
+HIST 109	History of Islamic Societies	0	{}		HIST	\N	3
+HIST 200	Historical Foundations	0	{}		HIST	\N	3
+HIST 329	Nazi Germany	0	{}		HIST	\N	3
+HIST 342	African History through Film	0	{}		HIST	\N	3
+HIST 359	Indigenous Early America	0	{}		HIST	\N	3
+HIST 361	Post-WWII Presidency	0	{}		HIST	\N	3
+HIST 370	Fnd of East Asian Civilization	0	{}		HIST	\N	3
+HIST 371	Modern Pacific World	0	{}		HIST	\N	3
+HIST 380	Colonial Latin America	0	{}		HIST	\N	3
+HONS 157	Calculus-Analytic Geometry I	0	{}		HONS	\N	4
+HONS 238	Honors-American Politics	0	{}		HONS	\N	3
+HONS 242	The West and the World	0	{}		HONS	\N	3
+HONS 320	Judgement&Decision Making-H	0	{}		HONS	\N	3
+HONS 381	The Films of Akira Kurosawa	0	{}		HONS	\N	3
+HONS 387	Honors Social Entrepreneurship	0	{}		HONS	\N	3
+HONS 417	Honors-Abstract Algebra I	0	{}		HONS	\N	3
+HPHY 490	Lit Rvw of Eccentric Muscles	0	{}		HPHY	\N	1
+HPHY 498	Prog for Sci Resrch in Biomech	0	{}		HPHY	\N	2
+INST 310	Third World Development	0	{}		INST	\N	3
+INST 326	Global Gender Regimes	0	{}		INST	\N	3
+INST 343	Global Economic Issues	0	{}		INST	\N	3
+INST 371	Modern Pacific World	0	{}		INST	\N	3
+INST 372	Colonial Latin America	0	{}		INST	\N	3
+INST 378	Africa Reli & Chrnty in CathEU	0	{}		INST	\N	3
+INST 384	Fnd of East Asian Civilization	0	{}		INST	\N	3
+INST 397	Nazi Germany	0	{}		INST	\N	3
+INST 399	Colombian Conflict	0	{}		INST	\N	3
+INST 492	Int'l Cooperation Formula 1	0	{}		INST	\N	3
+ITAL 367	Renaissance Europe	0	{}		ITAL	\N	3
+JOUR 494	Seminar: Media & Democracy	0	{}		JOUR	\N	3
+LATN 302	Imperial Latin Prose: Pliny	0	{}		LATN	\N	3
+LDRS 355	Disaster Mngmnt Leadership	0	{}		LDRS	\N	3
+LDRS 497	Leadership Internship	0	{}		LDRS	\N	3
+MACC 564	Auditing	0	{}		MACC	\N	3
+MATH 351	Combinatorics and Graph Theory	0	{}		MATH	\N	3
+MATH 426	Experimental Design	0	{}		MATH	\N	3
+MATH 437	Abstract Algebra I	0	{}		MATH	\N	3
+MATH 440	Foundations of Applied Math	0	{}		MATH	\N	3
+MBUS 619	Tribal Seminar II	0	{}		MBUS	\N	1
+MBUS 662	Advanced Corporate Finance	0	{}		MBUS	\N	2
+MBUS 665	Mergers & Acquisitions	0	{}		MBUS	\N	2
+MBUS 683T	Legal Enviroment:Indian Cntry	0	{}		MBUS	\N	2
+MENG 193	FYS: Matter and Consciousness	0	{}		MENG	\N	3
+MENG 442	Advanced Heat Transfer	0	{}		MENG	\N	3
+MENG 456	Design for Manufacturing	0	{}		MENG	\N	3
+MKTG 411	Digital Media in Marketing	0	{}		MKTG	\N	3
+MKTG 418	Personal Selling	0	{}		MKTG	\N	3
+MKTG 491	New York Trek	0	{}		MKTG	\N	\N
+MSBA 601	Fund Tech for Bus Analytics	0	{}		MSBA	\N	3
+MSBA 623	Database Management	0	{}		MSBA	\N	3
+MSBA 686	Performance Management	0	{}		MSBA	\N	1
+MTAX 605	Partnership Taxation	0	{}		MTAX	\N	3
+MTAX 607	Taxation of Property Trans	0	{}		MTAX	\N	3
+MTAX 699	State & Local Taxation	0	{}		MTAX	\N	3
+MTSL 401	Theory & Prac of Lang Teaching	0	{}		MTSL	\N	3
+MUSC 124	Guitar Class II	0	{}		MUSC	\N	1
+MUSC 131F	Applied Oboe	0	{}		MUSC	\N	\N
+MUSC 131S	Applied Electric Bass	0	{}		MUSC	\N	\N
+MUSC 134	Woodwind Techniques	0	{}		MUSC	\N	1
+MUSC 153	String Chamber Ensemble	0	{}		MUSC	\N	1
+MUSC 210	Orchestration & Arranging	0	{}		MUSC	\N	3
+MUSC 250	Popular Music in the US	0	{}		MUSC	\N	3
+MUSC 331A	Applied Piano	0	{}		MUSC	\N	2
+MUSC 332A	Applied Composition	0	{}		MUSC	\N	2
+MUSC 340	Jazz Piano Proficiency Exam	0	{}		MUSC	\N	0
+MUSC 399	Research Methods & Materials	0	{}		MUSC	\N	3
+MUSC 454	Music Education Methods	0	{}		MUSC	\N	3
+NTAS 201	Philosophy of Human Nature	0	{}		NTAS	\N	3
+NTAS 359	Indigenous Early America	0	{}		NTAS	\N	3
+NURS 701	DNP Practicum I	0	{}		NURS	\N	\N
+NURS 703	DNP Practicum III	0	{}		NURS	\N	\N
+NURS 708	Inferential Statistics	0	{}		NURS	\N	3
+NURS 713	Population Health Outcomes	0	{}		NURS	\N	3
+NURS 761	DNP Project Seminar I	0	{}		NURS	\N	2
+NURS 763	DNP Project Seminar III	0	{}		NURS	\N	1
+ORGL 590	Independent Study	0	{}		ORGL	\N	3
+ORGL 670	Projects in Organizatn Ldrshp	0	{}		ORGL	\N	3
+PHIL 403	Faith, Reason, and Being	0	{}		PHIL	\N	3
+PHIL 426	Political Philosophy	0	{}		PHIL	\N	3
+PHIL 495	Philosophy of Mental Health	0	{}		PHIL	\N	3
+PHIL 697	Comprehensive Examination	0	{}		PHIL	\N	0
+PHYS 111	General Physics I	0	{}		PHYS	\N	4
+PHYS 111L	General Physics I Lab	0	{}		PHYS	\N	1
+PHYS 121	Physics I	0	{}		PHYS	\N	4
+PHYS 121L	Physics I Lab	0	{}		PHYS	\N	1
+PHYS 122	Physics II	0	{}		PHYS	\N	4
+PHYS 122L	Physics II Lab	0	{}		PHYS	\N	1
+PHYS 180	Physics Skills Seminar	0	{}		PHYS	\N	1
+PHYS 193	FYS:Pseudoscience&Conspiracies	0	{}		PHYS	\N	3
+PHYS 201	Mathematical Methods	0	{}		PHYS	\N	3
+PHYS 310	Intermediate Laboratory	0	{}		PHYS	\N	2
+PHYS 323	Statistical Mechanics	0	{}		PHYS	\N	3
+PHYS 324	Quantum Mechanics	0	{}		PHYS	\N	3
+POLS 102	Political Thought & Action	0	{}		POLS	\N	3
+POLS 309	Political Parties and Election	0	{}		POLS	\N	3
+POLS 311	State & Local Government	0	{}		POLS	\N	3
+POLS 317	Ecological Thought & Politics	0	{}		POLS	\N	3
+POLS 356	Colombian Conflict	0	{}		POLS	\N	3
+POLS 363	Global Gender Regimes	0	{}		POLS	\N	3
+POLS 380	Scrty migrtn&cult divers in EU	0	{}		POLS	\N	3
+POLS 390	Modern Political Thought	0	{}		POLS	\N	3
+POLS 395	Humanitr Law & Armed Conflict	0	{}		POLS	\N	\N
+PRLS 310	Writing for Public Relations	0	{}		PRLS	\N	3
+PSYC 364	Developmental Disorders	0	{}		PSYC	\N	3
+PSYC 427	Culture & Mntl Health Seminar	0	{}		PSYC	\N	3
+PSYC 454	Judgement and Decision Making	0	{}		PSYC	\N	3
+PSYC 472	Cogntv Neuroscnc Of Conscsns	0	{}		PSYC	\N	3
+PSYC 478	Positive Psychology	0	{}		PSYC	\N	3
+RELI 104	Narrating Jesus	0	{}		RELI	\N	3
+RELI 202	Spirituality of Apostle Paul	0	{}		RELI	\N	3
+RELI 207	Messiah & Covenant	0	{}		RELI	\N	3
+RELI 236	The Problem of God	0	{}		RELI	\N	3
+RELI 270	Religion & Politics in Europe	0	{}		RELI	\N	3
+RELI 287	Christian Nonviolence	0	{}		RELI	\N	3
+RELI 329	Theological Anthropology	0	{}		RELI	\N	3
+RELI 334	Muslims in the West	0	{}		RELI	\N	3
+RELI 354	Childrn of Abra, Jud, Chrs, Is	0	{}		RELI	\N	\N
+RELI 357	Sufism: Islamic Mysticism	0	{}		RELI	\N	3
+RELI 487	Early Christian Sex & Gender	0	{}		RELI	\N	3
+SOCI 295	Masculinities in Scandinavia	0	{}		SOCI	\N	3
+SOCI 366	Mass Trauma and Genocide	0	{}		SOCI	\N	3
+SOCI 397	Sociology of Popular Culture	0	{}		SOCI	\N	3
+SOCI 398	Human Rights Regimes	0	{}		SOCI	\N	3
+SOSJ 170	Photographic Art	0	{}		SOSJ	\N	3
+SOSJ 219	Principles of Christian Ethics	0	{}		SOSJ	\N	3
+SOSJ 459	Dorothy Day & Cath Worker Mvmt	0	{}		SOSJ	\N	3
+SOSJ 479	CIS: Advocacy and Policy	0	{}		SOSJ	\N	3
+SPAN 101	Beginning Spanish I	0	{}		SPAN	\N	4
+SPAN 306	Spanish for the Workplace	0	{}		SPAN	\N	3
+SPAN 321	Span Medieval-Golden Age Lit	0	{}		SPAN	\N	3
+SPAN 340	Spanish Civilization & Culture	0	{}		SPAN	\N	3
+SPAN 341	Latin-American Civ & Cultures	0	{}		SPAN	\N	3
+SPAN 352	Contmp Spanish Hist thr Film	0	{}		SPAN	\N	3
+SPAN 360	Intro to Hispanic Linguistics	0	{}		SPAN	\N	3
+SPAN 385	Sp.Top. Contemp.Span.ThrFilm	0	{}		SPAN	\N	3
+SPAN 417	The Movies of Pedro Almodovar	0	{}		SPAN	\N	3
+TADP 549	T-Line Design: Structure & Fnd	0	{}		TADP	\N	3
+THEA 190	Scenic Design	0	{}		THEA	\N	3
+THEA 193	FYS: Theatre & Neurodivergence	0	{}		THEA	\N	3
+THEA 240	Theatre for Young Audiences	0	{}		THEA	\N	3
+THEA 332	Scenic Design	0	{}		THEA	\N	3
+THEA 354	Directing II	0	{}		THEA	\N	3
+UNIV 330	GIFE: TeamHub	0	{}		UNIV	\N	\N
+UWMD 800	UW Medical - MedEx27	0	{}		UWMD	\N	12
+VART 191	Great Masters of the Prado	0	{}		VART	\N	3
+VART 312	Sculpture Materials &Design II	0	{}		VART	\N	4
+VART 393	Grand Tour and Americ in Italy	0	{}		VART	\N	3
+WGST 100	Introduction to WGST	0	{}		WGST	\N	3
+WGST 200	Gender, Difference & Power	0	{}		WGST	\N	3
+WGST 342	Global Gender Regimes	0	{}		WGST	\N	3
+WGST 403	Crit Theory:Lit & Cltrl Stdy	0	{}		WGST	\N	3
+DANC 170	Princ of Dance Conditioning	0	{}		DANC	\N	3
+DANC 300	Musical Theatre Dance	0	{}		DANC	\N	3
+DANC 305	Jazz Dance III	0	{}		DANC	\N	2
+DANC 310	Contemp/Modern III	0	{}		DANC	\N	2
+DANC 315	Ballet III	0	{}		DANC	\N	2
+DANC 405	Jazz Dance Performance	0	{}		DANC	\N	1
+DANC 410	Contemp/Modern Performance	0	{}		DANC	\N	1
+DANC 415	Ballet Performance	0	{}		DANC	\N	1
+DANC 471	Appl Dance Field Instruction	0	{}		DANC	\N	2
+DNAP 703	Adv Prin Anesthes - Regional	0	{}		DNAP	\N	3
+DNAP 706	Adv Prin:Neurosurg&Thoracic An	0	{}		DNAP	\N	2
+DNAP 709	Adv Prin of Ansth: Integration	0	{}		DNAP	\N	3
+DNAP 713	Adv Pathophysiology	0	{}		DNAP	\N	3
+DNAP 723	Adv Pharmacology III	0	{}		DNAP	\N	3
+DNAP 741	Chem & Physics in Anesthesia	0	{}		DNAP	\N	2
+DNAP 742	Crisis Mgmt in Anesthesia	0	{}		DNAP	\N	2
+DNAP 760	Ldrshp & Quality Improvement	0	{}		DNAP	\N	3
+DNAP 763	Capstone I: Project Design	0	{}		DNAP	\N	2
+DNAP 769	Oral Exam	0	{}		DNAP	\N	0
+DNAP 782	Clinical Practicum: II	0	{}		DNAP	\N	1
+DNAP 785	Clinical Practicum: V	0	{}		DNAP	\N	2
+DNAP 788	Clinical Practicum: VIII	0	{}		DNAP	\N	2
+DPLS 709	Leadership and Spirituality	0	{}		DPLS	\N	3
+DPLS 749	Leadership and Eco Ethics	0	{}		DPLS	\N	3
+DPLS 769	Service Qual in Ed Pandemic	0	{}		DPLS	\N	1
+DPLS 773	Global Issues: Brussels	0	{}		DPLS	\N	3
+DPLS 775	Servant Ldrshp, Power& Inclsn	0	{}		DPLS	\N	3
+ECON 322	Work, Wages, and Inequality	0	{}		ECON	\N	3
+ECON 351	Managerial Economics	0	{}		ECON	\N	3
+ECON 402	Currents in 20th Cent Econ	0	{}		ECON	\N	3
+ECON 451	Econometrics	0	{}		ECON	\N	3
+EDCE 550	Multicultural Counseling	0	{}		EDCE	\N	3
+EDCE 584	Counselling across Lifespan	0	{}		EDCE	\N	3
+EDCE 589	Marriage and Family Counseling	0	{}		EDCE	\N	3
+EDCE 590	Marriage & Family Counselling	0	{}		EDCE	\N	3
+EDCE 595	Spec Iss in School Counseling	0	{}		EDCE	\N	2
+EDCE 616	Psychpthlgy and Psychphrmclgy	0	{}		EDCE	\N	4
+EDCE 638	Theories in Couples Counseling	0	{}		EDCE	\N	2
+EDCE 650	Group Process	0	{}		EDCE	\N	3
+EDCE 658	Group Process and Facilitation	0	{}		EDCE	\N	3
+EDCE 686	Counselling Practicum	0	{}		EDCE	\N	5
+EDCE 689	Adv Theory & Prof Sem III	0	{}		EDCE	\N	1
+EDCE 692	Intersectionality & Human Sex	0	{}		EDCE	\N	3
+EDCE 693	Comp Orals for Sch Counselors	0	{}		EDCE	\N	0
+EDCE 696	Counseling Practicum (CMHC)	0	{}		EDCE	\N	4
+EDCE 697B	Internship (CMHC)	0	{}		EDCE	\N	5
+EDCE 699	Comprehensive Oral Examination	0	{}		EDCE	\N	0
+EDLA 618	Professional Literature Review	0	{}		EDLA	\N	3
+EDLA 653	Ed Ldrshp: Curr, Inst & Assmt	0	{}		EDLA	\N	3
+EDLA 688	Evdnc Informed Decision Making	0	{}		EDLA	\N	3
+EDLA 689	Professional Seminar	0	{}		EDLA	\N	3
+EDLA 690	Ed Ldrshp & Organization	0	{}		EDLA	\N	3
+EDLA 699	Comprehensive Oral Exam	0	{}		EDLA	\N	0
+EDLD 704	Mthds & Inst: Data Collection	0	{}		EDLD	\N	3
+EDLD 707A	Action Plan for Probl of Pract	0	{}		EDLD	\N	3
+EDLD 707B	Lab: Probl of Practice II	0	{}		EDLD	\N	1
+EDLD 714	Capstone Completion	0	{}		EDLD	\N	3
+EDLD 765	Evidence-based Contribution PP	0	{}		EDLD	\N	3
+EDPC 913	Leadership Role Seminar	0	{}		EDPC	\N	3
+EDPC 930	Certification Internship	0	{}		EDPC	\N	3
+EDPE 138	Alpine Skiing	0	{}		EDPE	\N	1
+EDPE 140	Snowboarding	0	{}		EDPE	\N	1
+EDPE 152	Racquet Sports	0	{}		EDPE	\N	1
+EDPE 224	Exercise and Sport Nutrition	0	{}		EDPE	\N	3
+EDPE 277	Anatomy and Physiology II	0	{}		EDPE	\N	3
+EDPE 277L	Anatomy and Physiology II Lab	0	{}		EDPE	\N	1
+EDPE 311	Exercise & Sp Instr'l Methods	0	{}		EDPE	\N	3
+EDPE 314	Secondary Physical Ed Methods	0	{}		EDPE	\N	3
+EDPE 415	Phys Ed Mthds for Elem Teacher	0	{}		EDPE	\N	1
+EDPE 416	Hlth Educ Mthds Elem Teachers	0	{}		EDPE	\N	1
+EDPE 450	Princ of Strength & Condition	0	{}		EDPE	\N	3
+EDPE 477	Exercise Testing	0	{}		EDPE	\N	3
+EDPE 477L	Exercise Testing Lab	0	{}		EDPE	\N	1
+EDPE 481	Fitness Specialist CapstoneSem	0	{}		EDPE	\N	1
+EDPE 497B	Field Exp Secondary Phys Educ	0	{}		EDPE	\N	1
+EDPE 501	Sport Media and Communication	0	{}		EDPE	\N	3
+EDPE 571	Sport & Athletic Finance	0	{}		EDPE	\N	3
+EDPE 689	Master's Research Project	0	{}		EDPE	\N	3
+EDSE 335	Autism	0	{}		EDSE	\N	3
+EDSE 351	Physical Development	0	{}		EDSE	\N	3
+EDSE 353	Dev of Child w/ Exception	0	{}		EDSE	\N	3
+EDSE 417	Assessment-Special Education	0	{}		EDSE	\N	3
+EDSE 450	Special Education Seminar	0	{}		EDSE	\N	1
+EDSE 452	Direct Instruction-Mathematics	0	{}		EDSE	\N	3
+EDSE 452L	DI Math Lab	0	{}		EDSE	\N	0
+EDSE 617	Assessment in Special Ed	0	{}		EDSE	\N	3
+EDSE 652	Direct Instruction: Math	0	{}		EDSE	\N	3
+EDSE 671	Behavior Assess & Intervention	0	{}		EDSE	\N	4
+HPHY 242L	Human Anatomy & Phys Lab II	0	{}		HPHY	\N	1
+HPHY 244	Nutrition and Metabolism	0	{}		HPHY	\N	3
+HPHY 274	Musculoskeletal Dynamics&Phys	0	{}		HPHY	\N	3
+HPHY 441L	Guided Experimental Design	0	{}		HPHY	\N	1
+HPHY 451	Systems Neurophysiology	0	{}		HPHY	\N	3
+HPHY 477	Environmental Physiolgy	0	{}		HPHY	\N	3
+HPHY 478	Physiology of Aging	0	{}		HPHY	\N	3
+HPHY 485	Biomedical Engineering	0	{}		HPHY	\N	3
+HPHY 499	Culminating Experience	0	{}		HPHY	\N	1
+INDS 193	FYS: Knitting	0	{}		INDS	\N	3
+INST 201	Intro to International Studies	0	{}		INST	\N	3
+INST 303	Model UN	0	{}		INST	\N	3
+INST 304	Interreligious Dialogue	0	{}		INST	\N	3
+INST 364	African Health and Healing	0	{}		INST	\N	3
+INST 392	Tyranny to Democracy 21st Cen	0	{}		INST	\N	3
+ITAL 202	Intermediate Italian II	0	{}		ITAL	\N	4
+ITAL 307	Conv Approach to Contemp Issue	0	{}		ITAL	\N	3
+ITAL 390	Conv Approach to Contemp Issue	0	{}		ITAL	\N	3
+ITAL 498	Senior Project	0	{}		ITAL	\N	1
+JOUR 280	Design and Editing	0	{}		JOUR	\N	3
+JOUR 290	Student Media	0	{}		JOUR	\N	1
+JOUR 310	Public Affairs Reporting	0	{}		JOUR	\N	3
+JOUR 350	History of Journalism	0	{}		JOUR	\N	3
+JOUR 470	Documentary Filmmaking	0	{}		JOUR	\N	3
+JPNE 102	Elementary Japanese II	0	{}		JPNE	\N	4
+JPNE 202	Intermediate Japanese II	0	{}		JPNE	\N	4
+LATN 102	Latin II	0	{}		LATN	\N	4
+LDRS 200	Foundations of Leadership	0	{}		LDRS	\N	3
+LDRS 325	The Practice of Leadership	0	{}		LDRS	\N	3
+LDRS 350	Intercultural Persp Ldrshp	0	{}		LDRS	\N	1
+LDRS 394	Leadership & Storytelling	0	{}		LDRS	\N	3
+LDRS 395	Service and Leadership (CEL)	0	{}		LDRS	\N	\N
+LDRS 490	Contemporary Issues in Ldrshp	0	{}		LDRS	\N	3
+MACC 563	Cost Accounting	0	{}		MACC	\N	3
+MACC 622	Data Mdling & Appl Anyltcs	0	{}		MACC	\N	3
+MACC 666	Federal Taxation II	0	{}		MACC	\N	3
+MACC 667	Corporate Governance	0	{}		MACC	\N	3
+MACC 678	Sustainability Accounting II	0	{}		MACC	\N	1
+MACC 690	Business Law	0	{}		MACC	\N	3
+MATH 360	Math Seminar	0	{}		MATH	\N	1
+MATH 361	Mathematics of Game Shows	0	{}		MATH	\N	3
+MATH 417	Complex Variables	0	{}		MATH	\N	3
+MATH 422	Mathematical Statistics	0	{}		MATH	\N	3
+MATH 438	Abstract Algebra II	0	{}		MATH	\N	3
+MATH 452	Chaos & Dynamical Systems	0	{}		MATH	\N	3
+MATH 454	Partial Differential Equations	0	{}		MATH	\N	3
+MBUS 616T	Tribal Strategic Management	0	{}		MBUS	\N	1
+MBUS 671	Risk Management	0	{}		MBUS	\N	1
+MBUS 673	Global Project Management	0	{}		MBUS	\N	1
+MBUS 674	Agile Project Management	0	{}		MBUS	\N	1
+MBUS 679	Applied Project Management	0	{}		MBUS	\N	3
+MENG 322	Thermodynamics II	0	{}		MENG	\N	3
+MENG 330	Machine Design	0	{}		MENG	\N	3
+MENG 341	Heat Transfer	0	{}		MENG	\N	3
+MENG 412	Mechanical Measurements	0	{}		MENG	\N	3
+MENG 412L	Mechanical Measurements Lab	0	{}		MENG	\N	1
+MENG 446	Energy Auditing	0	{}		MENG	\N	3
+MENG 468	Biomatls & Biomech Eng	0	{}		MENG	\N	3
+MGMT 410	Training & Org Development	0	{}		MGMT	\N	3
+MGMT 415	Employ Law & Labor Relations	0	{}		MGMT	\N	3
+MGMT 491	Training and Development	0	{}		MGMT	\N	3
+MILS 102	Intro Ldrshp & Critical Think	0	{}		MILS	\N	3
+MILS 102L	Leadership Laboratory	0	{}		MILS	\N	1
+MILS 104	Military Physical Fitness	0	{}		MILS	\N	1
+MILS 202	Army Doctrine & Team Dvlpmnt	0	{}		MILS	\N	3
+MILS 202L	Leadership Lab	0	{}		MILS	\N	1
+MILS 204	Military Physical Fitness	0	{}		MILS	\N	1
+MILS 302	App Ldrshp in Small Unit Oper	0	{}		MILS	\N	3
+MILS 302L	Leadership Laboratory	0	{}		MILS	\N	1
+MILS 304	Military Physical Fitness	0	{}		MILS	\N	1
+MILS 402	Company Grade Leadership	0	{}		MILS	\N	3
+MILS 402L	Leadership Laboratory	0	{}		MILS	\N	1
+MILS 404	Military Physical Fitness	0	{}		MILS	\N	1
+MKTG 316	Fashion Marketing & Retailing	0	{}		MKTG	\N	3
+MKTG 490	Promotion Project	0	{}		MKTG	\N	3
+MTAX 600	Orientation	0	{}		MTAX	\N	0
+MTSL 408	Prin of Sec Lang Acquisition	0	{}		MTSL	\N	3
+MTSL 508	Prin of Sec Lang Acquisition	0	{}		MTSL	\N	3
+MTSL 510	Design, Eval & Assess in ESL	0	{}		MTSL	\N	3
+MTSL 600	Research Persp in Sec Lang Ed	0	{}		MTSL	\N	3
+MUSC 136	Percussion Techniques	0	{}		MUSC	\N	1
+MUSC 162	Music Theory II	0	{}		MUSC	\N	3
+MUSC 162L	Theory II Ear Training Lab	0	{}		MUSC	\N	1
+MUSC 240	Piano Proficiency Exam	0	{}		MUSC	\N	0
+MUSC 262	Music Theory IV	0	{}		MUSC	\N	3
+MUSC 331B	Applied Organ/Harpsichord	0	{}		MUSC	\N	2
+MUSC 331N	Applied Percussion	0	{}		MUSC	\N	2
+MUSC 358	Keyboard Accompanying	0	{}		MUSC	\N	1
+MUSC 392	Music History II	0	{}		MUSC	\N	3
+MUSC 425	Full Recital	0	{}		MUSC	\N	0
+MUSC 426	Composition Senior Portfolio	0	{}		MUSC	\N	0
+MUSC 452	Classroom Mgmt & Assessment	0	{}		MUSC	\N	3
+MUSC 491	Thesis/OralComprehensive Exam	0	{}		MUSC	\N	0
+MUSC 497	Internship	0	{}		MUSC	\N	3
+MUSC 499	Senior Thesis	0	{}		MUSC	\N	0
+NTAS 101	Intro Native American Studies	0	{}		NTAS	\N	3
+NTAS 290	Indig Lit of Alaska & Hawaii	0	{}		NTAS	\N	3
+NTAS 311	Native American Govt & Politic	0	{}		NTAS	\N	3
+NURS 463	Community Health	0	{}		NURS	\N	3
+NURS 464	Community Health Practicum	0	{}		NURS	\N	3
+NURS 642A	HC Quality Impr & Safety Mgtmt	0	{}		NURS	\N	3
+NURS 654M	PMH Nurse Concepts III	0	{}		NURS	\N	3
+NURS 663M	Psyc-Mntl Hlth Practicum III	0	{}		NURS	\N	\N
+NURS 764	Integr Appl of Evid Sem IV	0	{}		NURS	\N	1
+NURS 792	DNP Leadership Practice IS	0	{}		NURS	\N	1
+OPER 345	Service Operations	0	{}		OPER	\N	3
+OPER 346	Project & Process Management	0	{}		OPER	\N	3
+OPER 489	Supply Chain Management	0	{}		OPER	\N	3
+ORGL 507	Women's Leadership	0	{}		ORGL	\N	3
+ORGL 577	Global Issues: Brussels	0	{}		ORGL	\N	3
+ORGL 681	Leadership & Storytelling	0	{}		ORGL	\N	3
+ORGL 690	Leadership Independent  Study	0	{}		ORGL	\N	3
+PHIL 101H	Reasoning - Honors	0	{}		PHIL	\N	3
+PHIL 310	History of Medieval Philosophy	0	{}		PHIL	\N	3
+PHIL 320	History of Modern Philosophy	0	{}		PHIL	\N	3
+PHIL 419	Personalism	0	{}		PHIL	\N	3
+PHIL 428	Philosophical Hermeneutics	0	{}		PHIL	\N	3
+PHIL 435	C.S. Lewis	0	{}		PHIL	\N	3
+PHIL 456	Feminist Ethics	0	{}		PHIL	\N	3
+PHIL 485	Philosophy in Film	0	{}		PHIL	\N	3
+PHYS 102	General Physics II	0	{}		PHYS	\N	4
+PHYS 102L	General Physics II Lab	0	{}		PHYS	\N	1
+PHYS 205	Modern Physics	0	{}		PHYS	\N	3
+PHYS 210	Intro to Linear Electronics	0	{}		PHYS	\N	2
+PHYS 301	Intermediate Mechanics	0	{}		PHYS	\N	3
+PHYS 409	Nuclear and Particle Physics	0	{}		PHYS	\N	3
+PHYS 415	Cosmology and Astrophysics	0	{}		PHYS	\N	3
+POLS 193	FYS: Birds	0	{}		POLS	\N	3
+POLS 303	Constitutn Law,Civl Libty,Rgts	0	{}		POLS	\N	3
+POLS 306	Congress and the Presidency	0	{}		POLS	\N	3
+POLS 310	Native American Govt & Politic	0	{}		POLS	\N	3
+POLS 322	Women and Politics	0	{}		POLS	\N	3
+POLS 329	N Amer Environmental Policies	0	{}		POLS	\N	3
+POLS 332	Amer Polit Thgt: Founding Era	0	{}		POLS	\N	3
+POLS 343	War and Peace	0	{}		POLS	\N	3
+POLS 368	Tyranny to Democracy 21st C.	0	{}		POLS	\N	3
+POLS 379	Model United Nations	0	{}		POLS	\N	3
+PSYC 375	Cross-cultural Psychology	0	{}		PSYC	\N	3
+PSYC 396	Health/Pediatric Psych	0	{}		PSYC	\N	3
+PSYC 400	Environmental Psychology	0	{}		PSYC	\N	3
+PSYC 432	CIS: Encultured Minds	0	{}		PSYC	\N	3
+PSYC 457	Poverty and Social Class (CEL)	0	{}		PSYC	\N	3
+PSYC 476	Sem:Mindfulness &Psychotherapy	0	{}		PSYC	\N	3
+RELI 103	New Testament	0	{}		RELI	\N	3
+RELI 126	Christian Doctrine	0	{}		RELI	\N	3
+RELI 254	American Christianities	0	{}		RELI	\N	3
+RELI 301	Stories of the Quran	0	{}		RELI	\N	3
+RELI 333	Political Theology	0	{}		RELI	\N	3
+RELI 359	Religion and Globalization	0	{}		RELI	\N	3
+RELI 506	Sys Theol I:God, Hmnty, Christ	0	{}		RELI	\N	3
+RELI 507	Sys TheoII:Spirit,Church,World	0	{}		RELI	\N	3
+RELI 581	Ignatian Integration	0	{}		RELI	\N	2
+SOCI 246	Sociology of Sport	0	{}		SOCI	\N	3
+SOCI 311	Classical Social Theory	0	{}		SOCI	\N	3
+SOCI 330	Society and the Individual	0	{}		SOCI	\N	3
+SOCI 385	Law and Society	0	{}		SOCI	\N	3
+SOCI 399	Global Criminology	0	{}		SOCI	\N	3
+SOCI 497	Sociology Internship	0	{}		SOCI	\N	3
+SOSJ 190	Intro to Solidarity & Social	0	{}		SOSJ	\N	3
+SOSJ 311	Political Theology	0	{}		SOSJ	\N	3
+SOSJ 320	Work, Wages, and Inequality	0	{}		SOSJ	\N	3
+SOSJ 328	-isms:Racism, Classism, Sexism	0	{}		SOSJ	\N	3
+SOSJ 329	Third World Development	0	{}		SOSJ	\N	3
+SOSJ 339	Environmental Justice	0	{}		SOSJ	\N	3
+SOSJ 341	Rights Justice & US Citizenshp	0	{}		SOSJ	\N	3
+SOSJ 342	Women and Politics	0	{}		SOSJ	\N	3
+SOSJ 346	Tyranny to Democracy 21 C.	0	{}		SOSJ	\N	3
+SOSJ 363	Argumentation and Debate	0	{}		SOSJ	\N	3
+SOSJ 365	Interreligious Dialogue	0	{}		SOSJ	\N	3
+SOSJ 465	Justice and Arts of Civic Life	0	{}		SOSJ	\N	3
+SPAN 324	Latin Amer 19th-21st Cen Lit	0	{}		SPAN	\N	3
+SPAN 328	Survey of Women's Literature	0	{}		SPAN	\N	3
+SPAN 400	Spanish in the US	0	{}		SPAN	\N	3
+TADP 521	Utility Communications	0	{}		TADP	\N	3
+TADP 540	Intro Transmission Line Design	0	{}		TADP	\N	3
+TADP 542	Substation Design	0	{}		TADP	\N	3
+TADP 545	System Protection	0	{}		TADP	\N	3
+TADP 641	Power System Analysis	0	{}		TADP	\N	3
+TADP 680	Alternative Energy	0	{}		TADP	\N	3
+THEA 216	Acting II	0	{}		THEA	\N	4
+THEA 222	E-Portfolio	0	{}		THEA	\N	0
+THEA 237	Costume and Fashion Design	0	{}		THEA	\N	3
+THEA 239	Lighting Design	0	{}		THEA	\N	3
+THEA 499	Senior Project II	0	{}		THEA	\N	1
+VART 192	Independent Study Fine Arts	0	{}		VART	\N	3
+VART 201	Drawing II	0	{}		VART	\N	3
+VART 241	Ceramics II	0	{}		VART	\N	3
+VART 324	Painting: Theory & Practice	0	{}		VART	\N	4
+VART 349	Printmaking & Comics	0	{}		VART	\N	4
+VART 352	Intermediate Printmaking	0	{}		VART	\N	4
+VART 396	Art in the 20th Century	0	{}		VART	\N	3
+VART 401	Renaissance Architecture	0	{}		VART	\N	3
+VART 403	The Ancient City	0	{}		VART	\N	3
+VART 408	History of Photography	0	{}		VART	\N	3
+VART 498	Native American Art	0	{}		VART	\N	3
+VART 499	Professional Practice	0	{}		VART	\N	2
+WGST 303	-isms:Racism,Classism, Sexism	0	{}		WGST	\N	3
+WGST 340	Women and Politics	0	{}		WGST	\N	3
+WGST 435	Feminist Ethics	0	{}		WGST	\N	3
+WGST 499	Capstone	0	{}		WGST	\N	3
+ARAB 102	Elementary Arabic II	0	{}		ARAB	\N	4
+BCSS 241	Landing Jobs in Mktg&Advrtsng	0	{}		BCSS	\N	1
+BCSS 242	Development & Self Confidence	0	{}		BCSS	\N	1
+BIOL 190	Pre-immersion Zambia	0	{}		BIOL	\N	1
+CHEM 464	Group Theory & Spectroscopy	0	{}		CHEM	\N	2
+CPEN 247	Network Interfacing & Sockets	0	{}		CPEN	\N	3
+CPEN 431	Comp Hardware Design & Arch	0	{}		CPEN	\N	3
+CPSC 290	Python Nat Lang Processing	0	{}		CPSC	\N	3
+CPSC 325	Data Science Project Lab	0	{}		CPSC	\N	3
+CPSC 331	UI/UX Design	0	{}		CPSC	\N	3
+CPSC 334	Linux and DevOps	0	{}		CPSC	\N	3
+CPSC 341	Internet of Things	0	{}		CPSC	\N	3
+CPSC 349	Cybersecurity Project Lab	0	{}		CPSC	\N	3
+CPSC 390	Game Theory of Tafl	0	{}		CPSC	\N	3
+CPSC 425	Computer Graphics	0	{}		CPSC	\N	3
+CPSC 435	Parallel & Cloud Computing	0	{}		CPSC	\N	3
+CRES 390	Chicana Feminisms	0	{}		CRES	\N	3
+CRES 499	Symposium	0	{}		CRES	\N	3
+CRIM 353	Juvenile Justice	0	{}		CRIM	\N	3
+CRIM 357	Inequality, Crime & Urban Life	0	{}		CRIM	\N	3
+CTED 1054	Certificate Health Care Ldrshp	0	{}		CTED	\N	3
+DPLS 708	Ldrshp, Forgive & Restore Just	0	{}		DPLS	\N	3
+DPLS 722	Quantitative Data Analysis	0	{}		DPLS	\N	3
+DPLS 728	Conceptual Frmwk & Res. Design	0	{}		DPLS	\N	3
+DPLS 741	The Art & Practice of Dialogue	0	{}		DPLS	\N	3
+DPLS 742	Critical Theory &Leadership	0	{}		DPLS	\N	3
+DPLS 752	Narrative Inquiry & Identity	0	{}		DPLS	\N	3
+DPLS 767	Leadership Research	0	{}		DPLS	\N	1
+ECON 497	Internship	0	{}		ECON	\N	\N
+EDCE 549	Intro to Multicultural Cnslg	0	{}		EDCE	\N	1
+EDCE 568	Issues in Family Counseling	0	{}		EDCE	\N	3
+EDCE 570	Trauma, Crisis, & Grief Cnslg	0	{}		EDCE	\N	3
+EDPE 291	PE Pedagogy Lab	0	{}		EDPE	\N	1
+EDPE 492	Sports Finance Research	0	{}		EDPE	\N	3
+EDPE 497A	Field Exp Elementary Phys Educ	0	{}		EDPE	\N	1
+EDSE 535	Autism	0	{}		EDSE	\N	3
+EDSE 546	Tech for Tchg the Learng Disab	0	{}		EDSE	\N	3
+EDSE 553	Dev of Child w/ Exception	0	{}		EDSE	\N	3
+EDSE 673	Supervision and Consultation	0	{}		EDSE	\N	3
+EDSE 696	Special Ed Teaching Practicum	0	{}		EDSE	\N	6
+EDTE 900	Pacific NW History-STI Worksho	0	{}		EDTE	\N	1
+ENGL 270	Gender&Sexuality in Horror Flm	0	{}		ENGL	\N	3
+ENGL 307	Typography and Book Design	0	{}		ENGL	\N	3
+ENGL 360	Modern Drama	0	{}		ENGL	\N	3
+ENVS 326	Environmental Sociology	0	{}		ENVS	\N	3
+ENVS 402	Conservation Biology	0	{}		ENVS	\N	3
+ENVS 423	Waste Management	0	{}		ENVS	\N	3
+GERM 480	German Cinema	0	{}		GERM	\N	3
+HEAL 333	Health Economics	0	{}		HEAL	\N	3
+HIST 308	Archaeology of Ancient Rome	0	{}		HIST	\N	3
+HIST 310	Native American Activism	0	{}		HIST	\N	3
+HIST 323	Disunited Kingdom	0	{}		HIST	\N	3
+HIST 358	African-American History	0	{}		HIST	\N	3
+HIST 364	Intro to Public History	0	{}		HIST	\N	3
+HIST 373	Japan Past and Preesnt	0	{}		HIST	\N	3
+HIST 393	History of Islamic Medicine	0	{}		HIST	\N	3
+HPHY 422	Cardiovascular Physiology	0	{}		HPHY	\N	3
+INST 332	Politics of Space and Place	0	{}		INST	\N	3
+INST 355	The Politics of Eurasia	0	{}		INST	\N	3
+INST 375	Japan Past and Present	0	{}		INST	\N	3
+INST 380	Global Social Change	0	{}		INST	\N	3
+ITAL 302	Advanced Italian II	0	{}		ITAL	\N	3
+ITAL 380	Special Topics in Italian	0	{}		ITAL	\N	3
+JOUR 374	Documentary History & Analysis	0	{}		JOUR	\N	3
+LATN 490	Love, Sex, & Desire	0	{}		LATN	\N	3
+MATH 328	Operations Research	0	{}		MATH	\N	3
+MATH 335	Applied Linear Algbra	0	{}		MATH	\N	3
+MATH 365	Math Seminar	0	{}		MATH	\N	1
+MATH 414	Real Analysis II	0	{}		MATH	\N	3
+MATH 423	Stochastic Processes	0	{}		MATH	\N	3
+MATH 451	Special Topics: Medical Stats	0	{}		MATH	\N	1
+MATH 459	Topology	0	{}		MATH	\N	3
+MBUS 615T	Small Business Marketing	0	{}		MBUS	\N	3
+MBUS 681	PythonicTech for FinancialData	0	{}		MBUS	\N	2
+MENG 443	Combustion	0	{}		MENG	\N	3
+MENG 451	Computational Dynamics	0	{}		MENG	\N	3
+MTAX 606	Wealth Transfer Taxation	0	{}		MTAX	\N	3
+MTAX 619	Tax Technologies	0	{}		MTAX	\N	1
+MTSL 204	Commnty Languages & Lng Acqstn	0	{}		MTSL	\N	3
+MUSC 311	Conducting II	0	{}		MUSC	\N	3
+MUSC 326	Composition Junior Portfolio	0	{}		MUSC	\N	0
+MUSC 331R	Applied Jazz Improvisation	0	{}		MUSC	\N	2
+MUSC 450	Jazz Theory and Analysis	0	{}		MUSC	\N	1
+NTAS 310	Native American Activism	0	{}		NTAS	\N	3
+NURS 692	Medical Spanish for NP	0	{}		NURS	\N	1
+NURS 715	Hlth Policy, Ethics & Advocacy	0	{}		NURS	\N	3
+PHIL 427	Major Figs & Mvmts:Kierkegaard	0	{}		PHIL	\N	3
+PHIL 441	Symbolic Logic	0	{}		PHIL	\N	3
+PHIL 446	Phil Refl Christnty & Science	0	{}		PHIL	\N	3
+PHIL 472	Philosophy of Art	0	{}		PHIL	\N	3
+PHIL 699	Thesis	0	{}		PHIL	\N	6
+PHYS 217	Modern Physics Lab	0	{}		PHYS	\N	2
+PHYS 407	Electricity & Magnetism II	0	{}		PHYS	\N	3
+PHYS 412	Biophysical Systems & Modeling	0	{}		PHYS	\N	3
+RELI 190	Psalms & Human Condition	0	{}		RELI	\N	3
+RELI 363	Buddhist Meditation & Practice	0	{}		RELI	\N	3
+RELI 377	Ethics, Human Rights & Glbztn	0	{}		RELI	\N	3
+RELI 486	Spec Top: Texts Gospel of John	0	{}		RELI	\N	3
+RELI 490	Directed Readings	0	{}		RELI	\N	3
+SOCI 342	Sociology of Family	0	{}		SOCI	\N	3
+SOCI 357	Inequality, Crime & Urban Life	0	{}		SOCI	\N	3
+SOCI 380	Global Social Change	0	{}		SOCI	\N	3
+SOCI 383	Environmental Sociology	0	{}		SOCI	\N	3
+SOCI 388	Sociology of Education (CEL)	0	{}		SOCI	\N	3
+SOSJ 310	Ethics-Human Rgts-Globalizatn	0	{}		SOSJ	\N	3
+SOSJ 325	Inequality, Crime & Urban Life	0	{}		SOSJ	\N	3
+SOSJ 326	African-American History	0	{}		SOSJ	\N	3
+SOSJ 327	Sociology of Education	0	{}		SOSJ	\N	3
+SOSJ 345	Global Social Change	0	{}		SOSJ	\N	3
+SPAN 481	Performance in Latin American	0	{}		SPAN	\N	3
+THEA 202	Performance Text Analysis	0	{}		THEA	\N	3
+VART 272	Intro to Filmmaking	0	{}		VART	\N	3
+VART 351	Beginning Screen Printing	0	{}		VART	\N	4
+VART 371	Art Fusion	0	{}		VART	\N	4
+VART 405	Archaeology of Ancient Rome	0	{}		VART	\N	3
+VART 441	Advanced Ceramics Projects	0	{}		VART	\N	4
+VART 450	Advanced Printmaking Projects	0	{}		VART	\N	4
+VART 497	Art Internship	0	{}		VART	\N	2
+WGST 221	Gender&Sexuality in Horror Flm	0	{}		WGST	\N	3
+BCSS 225	Leading Change	0	{}		BCSS	\N	1
+BFIN 327	International Finance	0	{}		BFIN	\N	3
+BIOL 404	Freshwater Biology	0	{}		BIOL	\N	3
+BIOL 404L	Freshwater Biology Lab	0	{}		BIOL	\N	1
+BIOL 425	Ecotoxicology	0	{}		BIOL	\N	3
+BIOL 425L	Ecotoxicology Lab	0	{}		BIOL	\N	1
+BMIS 489	Hack-a-thon	0	{}		BMIS	\N	1
+CLAS 325	Intro to Linguistics	0	{}		CLAS	\N	3
+CPEN 443	Autonomous Mobile Robots	0	{}		CPEN	\N	3
+CPSC 212	Computational Modeling	0	{}		CPSC	\N	3
+CPSC 314	Investigations in Human Lang	0	{}		CPSC	\N	3
+CPSC 315	Special Topics: Cybersecurity	0	{}		CPSC	\N	3
+CPSC 324	Big Data Analytics	0	{}		CPSC	\N	3
+CPSC 447	Computer Networks	0	{}		CPSC	\N	3
+CRES 304	(Re)Producing Race & Family	0	{}		CRES	\N	3
+CRIM 355	Elite & White Collar Deviance	0	{}		CRIM	\N	3
+DANC 290	Ballet Independent Study	0	{}		DANC	\N	1
+DANC 390	Independent Study	0	{}		DANC	\N	\N
+DPLS 706	Leadership and Diversity	0	{}		DPLS	\N	3
+EDLA 613	Leadership Role Seminar	0	{}		EDLA	\N	3
+EDLA 630	Certification Internship	0	{}		EDLA	\N	3
+EDPE 119	Roll and Recover	0	{}		EDPE	\N	1
+EDSE 551	Physical Development	0	{}		EDSE	\N	3
+EDSS 712	Schl Safety, Crisis Prep & Res	0	{}		EDSS	\N	3
+EDSS 715	Intro to Research in Ed & Psyc	0	{}		EDSS	\N	3
+EDSS 722	Quantitative Rsrch Mth & Dsgn	0	{}		EDSS	\N	3
+EDSS 727	Group Process & Facilitation	0	{}		EDSS	\N	3
+EDSS 760	Consultation & Collaboration	0	{}		EDSS	\N	3
+EDSS 770	Neuropsych & Cognitive Assess	0	{}		EDSS	\N	4
+EDSS 780	Social-Eml Assmt Schl & Home	0	{}		EDSS	\N	3
+EDSS 785	Advanced Diagnostic Assessment	0	{}		EDSS	\N	3
+EDSS 787	Child & Adolescent Counseling	0	{}		EDSS	\N	3
+EDSS 797B	Pract in Sch Psyc K-12	0	{}		EDSS	\N	3
+ELCT 016	Intro to Listening & Speaking	0	{}		ELCT	\N	6
+ELCT 018	Intro to Grammar Support	0	{}		ELCT	\N	6
+ELCT 019	Intro to Reading and Writing	0	{}		ELCT	\N	6
+ENGL 241	Indigenous Lit Alaska Hawai'i	0	{}		ENGL	\N	3
+ENGL 348	Restoration & 18th Century Lit	0	{}		ENGL	\N	3
+ENGL 457	Melville	0	{}		ENGL	\N	3
+ENGL 490	Early Modern Gender and Lit	0	{}		ENGL	\N	3
+ENVS 190	Studies in Env Politics & Pol	0	{}		ENVS	\N	\N
+ENVS 332	Representing the Rainforest	0	{}		ENVS	\N	3
+ENVS 390	Climate Change Science & Pol	0	{}		ENVS	\N	3
+ENVS 408	Freshwater Biology	0	{}		ENVS	\N	3
+ENVS 408L	Freshwater Biology Lab	0	{}		ENVS	\N	1
+ENVS 409	Ecotoxicology	0	{}		ENVS	\N	3
+ENVS 409L	Ecotoxicology Lab	0	{}		ENVS	\N	1
+ENVS 421	Environmental Engineering	0	{}		ENVS	\N	3
+ENVS 421L	Environmental Engineering Lab	0	{}		ENVS	\N	1
+FILI 102	Elementary Filipino II	0	{}		FILI	\N	4
+FILM 160	Acting I	0	{}		FILM	\N	3
+FILM 193	FYS: Cinema, Films, & Movies	0	{}		FILM	\N	3
+FILM 262	Introduction to Filmmaking	0	{}		FILM	\N	3
+FILM 352	The Films of Alfred Hitchcock	0	{}		FILM	\N	3
+FILM 451	Documentary History & Analysis	0	{}		FILM	\N	3
+FILM 460	Documentary Filmmaking	0	{}		FILM	\N	3
+FILM 470	Philosophy in Film	0	{}		FILM	\N	3
+FREN 331	Contemporary French Cinema	0	{}		FREN	\N	3
+GERM 306	German Youth Literature	0	{}		GERM	\N	3
+HEAL 104	Indigenous Science	0	{}		HEAL	\N	2
+HEAL 104L	Indigenous Science Lab	0	{}		HEAL	\N	1
+HEAL 343	Sociology of Reproduction	0	{}		HEAL	\N	3
+HEAL 495	CIS: Philosophy of Food	0	{}		HEAL	\N	3
+HIST 111	Intro to Native American Hist	0	{}		HIST	\N	3
+HIST 341	African Nationalism	0	{}		HIST	\N	3
+HIST 355	The American West	0	{}		HIST	\N	3
+HIST 369	A History of Race in America	0	{}		HIST	\N	3
+HIST 372	China Past and Present	0	{}		HIST	\N	3
+HIST 383	Mexico	0	{}		HIST	\N	3
+HONS 377	International Management	0	{}		HONS	\N	3
+HONS 407	Honors Advanced Genetics:	0	{}		HONS	\N	3
+INST 340	African Nationalism	0	{}		INST	\N	3
+INST 374	China Past and Present	0	{}		INST	\N	3
+INST 377	Mexico	0	{}		INST	\N	3
+INST 497	Internship in Intr'l Studies	0	{}		INST	\N	3
+LATN 305	Vergil	0	{}		LATN	\N	3
+MATH 362	Computational Modeling	0	{}		MATH	\N	3
+MATH 455	Chaos & Discrete Dynamical Sys	0	{}		MATH	\N	3
+MATH 494	Topics in Actuarial Science	0	{}		MATH	\N	1
+MENG 479	Tribology	0	{}		MENG	\N	3
+MSBA 622	Data Science for Business	0	{}		MSBA	\N	3
+MSBA 699	Emerging Issues in Analytics	0	{}		MSBA	\N	3
+NTAS 199	SI: Indigenous Science	0	{}		NTAS	\N	2
+NTAS 199L	Biology & Indigenous Sci Lab	0	{}		NTAS	\N	1
+NTAS 211	Intro Native American History	0	{}		NTAS	\N	3
+PHIL 406	Philosophy of Mind	0	{}		PHIL	\N	3
+PHIL 587	Classical Critics of Democracy	0	{}		PHIL	\N	3
+PHYS 112	General Physics II	0	{}		PHYS	\N	4
+PHYS 112L	General Physics II Lab	0	{}		PHYS	\N	1
+PHYS 222	Electronics	0	{}		PHYS	\N	2
+PHYS 224	Modern Physics	0	{}		PHYS	\N	3
+PHYS 321	Classical Mechanics	0	{}		PHYS	\N	3
+PHYS 452	Optics	0	{}		PHYS	\N	3
+PHYS 454	Nuclear and Particle Physics	0	{}		PHYS	\N	3
+PHYS 455	Cosmology and Astrophysics	0	{}		PHYS	\N	3
+PRLS 490	Media Research Directed Study	0	{}		PRLS	\N	3
+RELI 413	The Gospel of John	0	{}		RELI	\N	3
+SOCI 334	Social Movements	0	{}		SOCI	\N	3
+SOCI 343	Sociology of Reproduction	0	{}		SOCI	\N	3
+SOCI 355	Elite & White Collar Deviance	0	{}		SOCI	\N	3
+SOSJ 259	Transgender Social Movements	0	{}		SOSJ	\N	3
+SOSJ 261	Photojournalism	0	{}		SOSJ	\N	3
+SOSJ 323	Elite & White Collar Deviance	0	{}		SOSJ	\N	3
+SOSJ 344	Social Movements	0	{}		SOSJ	\N	3
+SOSJ 466	Intersectional Communication	0	{}		SOSJ	\N	3
+SOSJ 497	SOSJ Praxis	0	{}		SOSJ	\N	\N
+SPAN 332	Representing the Rainforest	0	{}		SPAN	\N	3
+SPAN 334	Lorca's Body and Contemp.Spain	0	{}		SPAN	\N	3
+THEA 200	Theatre History	0	{}		THEA	\N	3
+THEA 294	Special Top: Fashion History	0	{}		THEA	\N	3
+THEA 440	Playwriting	0	{}		THEA	\N	3
+UNIV 100	IDD Testing	0	{}		UNIV	\N	1
+WGST 261	Sociology of Health & Medicine	0	{}		WGST	\N	3
+WGST 300	Feminism and Intersectionality	0	{}		WGST	\N	3
+WGST 327	Shakespeare	0	{}		WGST	\N	3
+ACCT 491	Independent Study Auditing	0	{}		ACCT	\N	3
+BIOL 159L	Field Studies in Biodiversity	0	{}		BIOL	\N	3
+BIOL 473	Marine Biology	0	{}		BIOL	\N	3
+BIOL 497	Research Lab of Dr. Norquist	0	{}		BIOL	\N	0
+CENG 440	GU-in-Delft:Sustainable Cities	0	{}		CENG	\N	4
+CHEM 490	Directed Reading	0	{}		CHEM	\N	1
+COML 505	Digital Storytelling	0	{}		COML	\N	3
+COML 541	Adv Digital Media Analysis	0	{}		COML	\N	3
+CPSC 190	Directed Study	0	{}		CPSC	\N	3
+CPSC 497	Computer Science Internship	0	{}		CPSC	\N	1
+DNAP 701	Basic Principles Anesthesia I	0	{}		DNAP	\N	3
+DNAP 704	Adv Prin: Obstetric Anesthesia	0	{}		DNAP	\N	3
+DNAP 707	Adv Prin:Cardiac & Vascular An	0	{}		DNAP	\N	2
+DNAP 711	Anatomy & Adv Physiology I	0	{}		DNAP	\N	3
+DNAP 721	Advanced Pharmacology I	0	{}		DNAP	\N	3
+DNAP 731	Advanced Health Assessment	0	{}		DNAP	\N	3
+DNAP 755	Medical Ethics	0	{}		DNAP	\N	3
+DNAP 759	Prof Role Development	0	{}		DNAP	\N	3
+DNAP 761	Evidence Based Prac Anesthesia	0	{}		DNAP	\N	3
+DNAP 764	Capstone II: Project Dvlpmnt	0	{}		DNAP	\N	2
+DNAP 783	Clinical Practicum: III	0	{}		DNAP	\N	2
+DNAP 786	Clinical Practicum: VI	0	{}		DNAP	\N	2
+ECON 320	Economics of Sports	0	{}		ECON	\N	3
+ECON 334	Behavioral Economics	0	{}		ECON	\N	3
+EDCE 525	Intro to Canadian Counselling	0	{}		EDCE	\N	1
+EDCE 564	Assessment in Schl Counseling	0	{}		EDCE	\N	2
+EDCE 565	Assessment in Counseling	0	{}		EDCE	\N	3
+EDCE 567	Career Dev & Assmt in Cnsllg	0	{}		EDCE	\N	4
+EDCE 600	Trauma, Crisis, and Grief	0	{}		EDCE	\N	2
+EDCE 605	Occ Chce & Career Dvlp Counsel	0	{}		EDCE	\N	2
+EDCE 684	Counselling Pre-Practicum (A)	0	{}		EDCE	\N	2
+EDLA 694	Evidence Informed Dec Making	0	{}		EDLA	\N	3
+EDLD 700	Intro Problem of Practice	0	{}		EDLD	\N	3
+EDLD 702	Culture and Identity	0	{}		EDLD	\N	3
+EDLD 708	Schl Imnprove:People,Data,Proc	0	{}		EDLD	\N	3
+EDLD 709	Ethics:Higher Standard of Ldr	0	{}		EDLD	\N	3
+EDLD 711	Bldg Cap Continuous Improve	0	{}		EDLD	\N	3
+EDLD 715	Organizational Systms Analysis	0	{}		EDLD	\N	3
+EDLD 799	Doctoral Conference & Oral Ex	0	{}		EDLD	\N	3
+EDPE 696C	Sport & Athl Admin:Intern III	0	{}		EDPE	\N	3
+EDPL 900	Tjeory & Practice of Lang Tchg	0	{}		EDPL	\N	3
+EDSE 674	Ethics II	0	{}		EDSE	\N	2
+EDSE 692	Behav Analysis & Social Change	0	{}		EDSE	\N	3
+EDTE 511	Instructional Foundations	0	{}		EDTE	\N	3
+EDTE 512E	Elem Diff Instr & Assmnt	0	{}		EDTE	\N	3
+EDTE 512S	Sec Diff Instr & Assmnt	0	{}		EDTE	\N	3
+EDTE 520	Teaching in the Middle School	0	{}		EDTE	\N	3
+EDTE 689	Professional Seminar	0	{}		EDTE	\N	1
+ELCT 185	ESL pre-test Registration	0	{}		ELCT	\N	\N
+ENGL 204	The Summer Blockbuster	0	{}		ENGL	\N	3
+ENGL 391	Poetry Writing	0	{}		ENGL	\N	3
+GERM 380	German Conversation II	0	{}		GERM	\N	3
+MBUS 618	Tribal Seminar 1	0	{}		MBUS	\N	1
+MBUS 641	Sports Economics	0	{}		MBUS	\N	2
+MBUS 660	Investments	0	{}		MBUS	\N	2
+MTSL 516	Technology in Second Lang Ed	0	{}		MTSL	\N	3
+MTSL 517	Phonology	0	{}		MTSL	\N	1
+MTSL 580	TESOL Field Experience	0	{}		MTSL	\N	1
+NURS 645A	Legal, Regulatory, & Ethic HC	0	{}		NURS	\N	3
+NURS 671	Care of Frail Elder	0	{}		NURS	\N	3
+OPER 491	Global Supply Chain Mgmt	0	{}		OPER	\N	3
+ORGL 551	Adv Team Bldg & Ldrshp	0	{}		ORGL	\N	3
+PHIL 280	Persons and Conduct	0	{}		PHIL	\N	3
+PHIL 690	Philosophy of A.N. Whitehead	0	{}		PHIL	\N	3
+PHIL 691	History of Philosophy II	0	{}		PHIL	\N	3
+PHYS 395	Research Assistantship	0	{}		PHYS	\N	0
+PSYC 281	Neuroscience and Sexuality	0	{}		PSYC	\N	3
+PSYC 490	Cultutal Psychology	0	{}		PSYC	\N	3
+RELI 227	Theology in Global Contexts	0	{}		RELI	\N	3
+RELI 255	Relig of the African Diaspora	0	{}		RELI	\N	3
+RELI 365	Religion and Film	0	{}		RELI	\N	3
+RELI 370	Chris Spirit: Call to Justice	0	{}		RELI	\N	3
+RELI 505	Intro to Christian Leadership	0	{}		RELI	\N	3
+RELI 530	Christian Moral Theology	0	{}		RELI	\N	3
+RELI 606	Ministry Leadership Seminar	0	{}		RELI	\N	1
+RELI 690	Thesis: Disability Inclusion	0	{}		RELI	\N	3
+SPAN 390	Latin American Film	0	{}		SPAN	\N	3
+TADP 544	Proj Dev & Construction Method	0	{}		TADP	\N	3
+TADP 640	Adv Transmission Line Design	0	{}		TADP	\N	3
+UNIV 110	Step Basics	0	{}		UNIV	\N	1
+UNIV 380	Research	0	{}		UNIV	\N	0
+UNIV 497	Internship	0	{}		UNIV	\N	0
+BIOL 359L	Field Studies in Biodiversity	0	{}		BIOL	\N	3
+COML 521	Travel Writing	0	{}		COML	\N	3
+COML 522	Ren Rhetoric & Contemp Ldrshp	0	{}		COML	\N	3
+COMM 432	CIS: Intergroup Dialogue	0	{}		COMM	\N	3
+CPSC 310	Information Warfare	0	{}		CPSC	\N	3
+DPLS 779	Writing Retreat	0	{}		DPLS	\N	1
+EDCE 594	Dialectical Behavior Therapy	0	{}		EDCE	\N	1
+EDPE 333	Intrl Sport Mgmt & Culture	0	{}		EDPE	\N	3
 \.
 
 
@@ -12082,7 +12084,10 @@ COPY public.section (crn, credits, days, "time", cap, instructor, classroom, att
 -- Data for Name: user_courses; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.user_courses (user_name, class_taken) FROM stdin;
+COPY public.user_courses (user_name, class_taken, difficulty) FROM stdin;
+1111	HONS 258	9
+1111	LATN 290	5
+1111	LDRS 602	5
 \.
 
 
