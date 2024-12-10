@@ -1,13 +1,13 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash, session
 from werkzeug.security import generate_password_hash, check_password_hash
-from .db_utils import user_exists, add_user_to_db, get_user_by_email, get_all_courses_from_db, get_all_courses_from_db_fro_prereq, update_user_courses, get_all_user_courses
+from .db_utils import user_exists, add_user_to_db, get_user_by_email, get_all_courses_from_db, get_all_courses_from_db_fro_prereq, update_user_courses, get_all_user_courses, get_all_majors
 import json
+from .db_utils import get_connection
 main_bp = Blueprint('main', __name__)
 
 @main_bp.route('/')
 def index():
     return redirect(url_for('main.login'))
-
 
 @main_bp.route('/register', methods=['GET', 'POST'])
 def register():
@@ -16,28 +16,25 @@ def register():
         email = request.form.get('email')
         password = request.form.get('password')
         name = request.form.get('name')
+        major_id = request.form.get('major_id')
 
-        # Примитивная проверка заполнения полей
-        if not username or not email or not password or not name:
+        if not username or not email or not password or not name or not major_id:
             flash('Please fill in all fields.', 'error')
             return redirect(url_for('main.register'))
 
-        # Проверяем, существует ли пользователь с таким email
         if user_exists(email):
             flash('This email already exists.', 'error')
             return redirect(url_for('main.register'))
 
-        # Хэшируем пароль
         password_hash = generate_password_hash(password)
+        add_user_to_db(username, email, password_hash, name, major_id)
 
-        # Добавляем пользователя в базу данных
-        add_user_to_db(username, email, password_hash, name)
+        flash('Registration successful!', 'success')
+        return redirect(url_for('main.login'))
 
-        flash('Registration completed', 'success')
-        return redirect(url_for('main.index'))
-
-    return render_template('register.html')
-
+    # Fetch majors for the dropdown
+    majors = get_all_majors()
+    return render_template('register.html', majors=majors)
 
 
 @main_bp.route('/login', methods=['GET', 'POST'])
@@ -139,7 +136,54 @@ def add_classes():
 
 @main_bp.route('/degree_eval')
 def degree_eval():
-    return render_template('degree_eval.html')
+    if 'user_name' not in session:
+        flash("Please log in first.", "error")
+        return redirect(url_for('main.login'))
+
+    user_name = session['user_name']
+
+    # Connect to the database
+    conn = get_connection()
+    cur = conn.cursor()
+
+    # Get the user's completed courses
+    cur.execute("""
+        SELECT class_taken 
+        FROM user_courses 
+        WHERE user_name = %s
+    """, (user_name,))
+    completed_courses = {row[0] for row in cur.fetchall()}
+
+    # Get all required courses
+    cur.execute("""
+        SELECT code, title, difficulty, attributes, description, department, term
+        FROM course
+    """)
+    all_courses = cur.fetchall()
+
+    # Calculate remaining courses
+    remaining_courses = [
+        {
+            "code": course[0],
+            "title": course[1],
+            "difficulty": course[2],
+            "attributes": course[3],
+            "description": course[4],
+            "department": course[5],
+            "term": course[6]
+        }
+        for course in all_courses if course[0] not in completed_courses
+    ]
+
+    conn.close()
+
+    return render_template(
+        'degree_eval.html', 
+        completed_courses=completed_courses, 
+        remaining_courses=remaining_courses,
+        active_page='degree_eval'
+    )
+
 
 @main_bp.route('/profile')
 def profile():

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Degree Evaluation{% endblock %}
+
+{% block content %}
+<div class="degree-eval-container">
+    <h2>Degree Evaluation</h2>
+
+    <h3>Completed Courses</h3>
+    {% if completed_courses %}
+        <ul>
+        {% for course in completed_courses %}
+            <li>{{ course }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No courses taken yet.</p>
+    {% endif %}
+
+    <h3>Remaining Courses</h3>
+    {% if remaining_courses %}
+        <ul>
+        {% for course in remaining_courses %}
+            <li>
+                <strong>{{ course['code'] }} - {{ course['title'] }}</strong><br>
+                <em>Difficulty:</em> {{ course['difficulty'] }}<br>
+                <em>Description:</em> {{ course['description'] }}<br>
+                <em>Department:</em> {{ course['department'] }}<br>
+                <em>Term:</em> {{ course['term'] }}
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>All courses completed! You are ready to graduate.</p>
+    {% endif %}
+</div>
+{% endblock %}
