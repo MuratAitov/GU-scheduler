@@ -5,6 +5,9 @@
 <div class="degree-eval-container">
     <h2>Degree Evaluation</h2>
 
+    <h3>Your Major: {{ session['major_name'] }}</h3>
+
+    <!-- Completed Courses Section -->
     <h3>Completed Courses</h3>
     {% if completed_courses %}
         <ul>
@@ -16,21 +19,24 @@
         <p>No courses taken yet.</p>
     {% endif %}
 
-    <h3>Remaining Courses</h3>
+    <!-- Remaining Requirements Section -->
+    <h3>Remaining Requirements</h3>
     {% if remaining_courses %}
         <ul>
-        {% for course in remaining_courses %}
+        {% for req in remaining_courses %}
             <li>
-                <strong>{{ course['code'] }} - {{ course['title'] }}</strong><br>
-                <em>Difficulty:</em> {{ course['difficulty'] }}<br>
-                <em>Description:</em> {{ course['description'] }}<br>
-                <em>Department:</em> {{ course['department'] }}<br>
-                <em>Term:</em> {{ course['term'] }}
+                <strong>{{ req['group_name'] }} - 
+                    {{ req['required_credits'] }} credits:</strong>
+                <ul>
+                    {% for course in req['courses'] %}
+                        <li>{{ course['code'] }} - {{ course['title'] }}</li>
+                    {% endfor %}
+                </ul>
             </li>
         {% endfor %}
         </ul>
     {% else %}
-        <p>All courses completed! You are ready to graduate.</p>
+        <p>All degree requirements completed! Congratulations!</p>
     {% endif %}
 </div>
 {% endblock %}
