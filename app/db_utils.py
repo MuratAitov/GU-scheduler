@@ -87,28 +87,46 @@ def update_user_courses(user_name, courses_data):
             for course in courses_data:
                 class_taken = course["class_taken"]
                 difficulty = course["difficulty"]
+                status = course["status"]  # Fetch the status from the data
                 deleted = course.get("deleted", False)
 
                 if deleted:
-                    # Удаляем курс из user_courses
-                    cur.execute("DELETE FROM user_courses WHERE user_name=%s AND class_taken=%s",
-                                (user_name, class_taken))
+                    # Remove the course from user_courses
+                    cur.execute(
+                        "DELETE FROM user_courses WHERE user_name=%s AND class_taken=%s",
+                        (user_name, class_taken)
+                    )
                 else:
-                    # Проверяем наличие
-                    cur.execute("SELECT 1 FROM user_courses WHERE user_name=%s AND class_taken=%s",
-                                (user_name, class_taken))
+                    # Check if the course already exists for the user
+                    cur.execute(
+                        "SELECT 1 FROM user_courses WHERE user_name=%s AND class_taken=%s",
+                        (user_name, class_taken)
+                    )
                     exists = cur.fetchone()
+
                     if exists:
-                        # Обновляем сложность
-                        cur.execute("UPDATE user_courses SET difficulty=%s WHERE user_name=%s AND class_taken=%s",
-                                    (difficulty, user_name, class_taken))
+                        # Update difficulty and status
+                        cur.execute(
+                            """
+                            UPDATE user_courses
+                            SET difficulty=%s, status=%s
+                            WHERE user_name=%s AND class_taken=%s
+                            """,
+                            (difficulty, status, user_name, class_taken)
+                        )
                     else:
-                        # Добавляем новый курс
-                        cur.execute("INSERT INTO user_courses (user_name, class_taken, difficulty) VALUES (%s, %s, %s)",
-                                    (user_name, class_taken, difficulty))
+                        # Insert a new course
+                        cur.execute(
+                            """
+                            INSERT INTO user_courses (user_name, class_taken, difficulty, status)
+                            VALUES (%s, %s, %s, %s)
+                            """,
+                            (user_name, class_taken, difficulty, status)
+                        )
         conn.commit()
     finally:
         conn.close()
+
 
 def get_all_user_courses(user_name):
     conn = get_connection()

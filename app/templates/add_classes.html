@@ -5,7 +5,7 @@
     <h2>Add classes</h2>
     <div class="add-classes-wrapper">
 
-        <!-- Левая панель: поиск курсов -->
+        <!-- Left Panel: Search for Courses -->
         <div class="left-panel">
             <div class="search-bar">
                 <input type="text" id="course_search" placeholder="Search courses..." oninput="filterCourses()" />
@@ -20,7 +20,7 @@
             </div>
         </div>
 
-        <!-- Правая панель: мои курсы -->
+        <!-- Right Panel: My Courses -->
         <div class="right-panel">
             <h3>My courses</h3>
             <form method="POST" id="courses_form">
@@ -29,19 +29,26 @@
                         <tr>
                             <th>Course</th>
                             <th>Difficulty</th>
-                            <th></th>
+                            <th>Status</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody id="my_courses_tbody">
                         {% for c in user_courses %}
-                        <tr data-course="{{c.class_taken}}">
-                            <td class="course-code">{{c.class_taken}}</td>
+                        <tr data-course="{{ c.class_taken }}">
+                            <td class="course-code">{{ c.class_taken }}</td>
                             <td class="difficulty-cell">
-                                <input type="number" class="difficulty-input" value="{{c.difficulty}}" min="1" max="10" />
+                                <input type="number" class="difficulty-input" value="{{ c.difficulty }}" min="1" max="10" />
                                 <div class="arrows">
                                     <button type="button" class="arrow-up" onclick="changeDifficulty(this, 1)">▲</button>
                                     <button type="button" class="arrow-down" onclick="changeDifficulty(this, -1)">▼</button>
                                 </div>
+                            </td>
+                            <td>
+                                <select class="status-select">
+                                    <option value="PREVIOUS" {% if c.status == "PREVIOUS" %}selected{% endif %}>Previously Taken</option>
+                                    <option value="REGISTERED" {% if c.status == "REGISTERED" %}selected{% endif %}>Registering Now</option>
+                                </select>
                             </td>
                             <td>
                                 <button type="button" class="delete-btn" onclick="markDeleted(this)">DELETE</button>
@@ -73,7 +80,6 @@ function clearSearch() {
 }
 
 function addCourse(code) {
-    // Добавляем курс в правую таблицу, если его нет
     const tbody = document.getElementById('my_courses_tbody');
     const existing = tbody.querySelector(`tr[data-course="${code}"]`);
     if (existing) return;
@@ -90,6 +96,12 @@ function addCourse(code) {
             </div>
         </td>
         <td>
+            <select class="status-select">
+                <option value="PREVIOUS">Previously Taken</option>
+                <option value="REGISTERED">Registering Now</option>
+            </select>
+        </td>
+        <td>
             <button type="button" class="delete-btn" onclick="markDeleted(this)">DELETE</button>
         </td>
     `;
@@ -98,10 +110,10 @@ function addCourse(code) {
 
 function changeDifficulty(btn, delta) {
     const input = btn.parentNode.parentNode.querySelector('.difficulty-input');
-    let val = parseInt(input.value,10);
+    let val = parseInt(input.value, 10);
     val = val + delta;
-    if(val<1) val=1;
-    if(val>10) val=10;
+    if (val < 1) val = 1;
+    if (val > 10) val = 10;
     input.value = val;
 }
 
@@ -113,13 +125,22 @@ function markDeleted(btn) {
 function prepareData() {
     const rows = document.querySelectorAll('#my_courses_tbody tr');
     let data = [];
+
     rows.forEach(row => {
         const class_taken = row.getAttribute('data-course');
         const input = row.querySelector('.difficulty-input');
-        const difficulty = parseInt(input.value,10);
+        const difficulty = parseInt(input.value, 10);
+        const status = row.querySelector('.status-select').value; // Fetch correct status
         const deleted = row.classList.contains('deleted');
-        data.push({class_taken, difficulty, deleted});
+
+        data.push({
+            class_taken,
+            difficulty,
+            status,
+            deleted
+        });
     });
+
     document.getElementById('updated_courses').value = JSON.stringify(data);
 }
 </script>

@@ -117,22 +117,28 @@ def add_classes():
     user_name = session['user_name']
 
     if request.method == 'POST':
-        # Обрабатываем POST запрос при нажатии SAVE
-        # данные о курсах и сложностях придут из формы или AJAX
-        updated_courses = request.form.get('updated_courses')
-        # Ожидаем, что updated_courses - JSON строка с массивом курсов: [{"class_taken": "MATH 100", "difficulty":7, "deleted":false}, ...]
-
+        # Handle the POST request from the form
         import json
+        updated_courses = request.form.get('updated_courses')
         courses_data = json.loads(updated_courses)
+
+        # Update user courses, including the new status field
         update_user_courses(user_name, courses_data)
 
         flash("Courses updated successfully", "success")
         return redirect(url_for('main.add_classes'))
 
-    # Если GET запрос: отображаем страницу
-    all_courses = get_all_courses_from_db()  # Список всех доступных курсов, например [{"code":"CPSC 121", "title":"Intro to CS"}]
-    user_courses = get_all_user_courses(user_name) # [{"class_taken":"MATH 100","difficulty":7}, ...]
-    return render_template('add_classes.html', active_page='add_classes', all_courses=all_courses, user_courses=user_courses)
+    # Handle the GET request to display the page
+    all_courses = get_all_courses_from_db()  # Fetch all available courses
+    user_courses = get_all_user_courses(user_name)  # Fetch user's registered courses
+    
+    # Render the updated template
+    return render_template(
+        'add_classes.html', 
+        active_page='add_classes', 
+        all_courses=all_courses, 
+        user_courses=user_courses
+    )
 
 @main_bp.route('/degree_eval')
 def degree_eval():
@@ -160,13 +166,17 @@ def degree_eval():
     program_name = result[0]
     session['major_name'] = program_name
 
-    # Fetch completed courses by the user
+    # Fetch previously taken and registered courses
     cur.execute("""
-        SELECT class_taken 
-        FROM user_courses 
+        SELECT class_taken, status
+        FROM user_courses
         WHERE user_name = %s
     """, (user_name,))
-    completed_courses = {row[0] for row in cur.fetchall()}
+    user_courses = cur.fetchall()
+
+    # Separate courses based on their status
+    previously_taken_courses = [row[0] for row in user_courses if row[1] == 'Pre']
+    registered_courses = [row[0] for row in user_courses if row[1] == 'Reg']
 
     # Fetch required courses based on program and requirements
     cur.execute("""
@@ -206,7 +216,7 @@ def degree_eval():
             remaining_in_group = [
                 {"code": code, "title": title} 
                 for code, title in zip(course_codes, course_titles) 
-                if code not in completed_courses
+                if code not in previously_taken_courses and code not in registered_courses
             ]
 
             if remaining_in_group:
@@ -220,10 +230,12 @@ def degree_eval():
 
     return render_template(
         'degree_eval.html', 
-        completed_courses=completed_courses, 
+        previously_taken_courses=previously_taken_courses,
+        registered_courses=registered_courses,
         remaining_courses=remaining_courses, 
         active_page='degree_eval'
     )
+
 
 
 

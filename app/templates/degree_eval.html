@@ -8,15 +8,27 @@
     <h3>Your Major: {{ session['major_name'] }}</h3>
 
     <!-- Completed Courses Section -->
-    <h3>Completed Courses</h3>
-    {% if completed_courses %}
+    <h3>Previously Taken Courses</h3>
+    {% if previously_taken_courses %}
         <ul>
-        {% for course in completed_courses %}
+        {% for course in previously_taken_courses %}
             <li>{{ course }}</li>
         {% endfor %}
         </ul>
     {% else %}
         <p>No courses taken yet.</p>
+    {% endif %}
+
+    <!-- Registered Courses Section -->
+    <h3>Registered Courses</h3>
+    {% if registered_courses %}
+        <ul>
+        {% for course in registered_courses %}
+            <li>{{ course }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No registered courses yet.</p>
     {% endif %}
 
     <!-- Remaining Requirements Section -->
