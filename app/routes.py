@@ -228,6 +228,69 @@ def degree_eval():
 
 
 
-@main_bp.route('/profile')
+from flask import Blueprint, render_template, request, redirect, url_for, flash, session
+from werkzeug.security import generate_password_hash, check_password_hash
+from .db_utils import get_connection
+
+@main_bp.route('/profile', methods=['GET', 'POST'])
 def profile():
-    return render_template('profile.html')
+    if 'user_name' not in session:
+        flash("Please log in first.", "error")
+        return redirect(url_for('main.login'))
+
+    user_name = session['user_name']
+
+    if request.method == 'POST':
+        action = request.form.get('action')
+
+        # Update Password
+        if action == 'update_password':
+            current_password = request.form.get('current_password')
+            new_password = request.form.get('new_password')
+            confirm_password = request.form.get('confirm_password')
+
+            if not current_password or not new_password or not confirm_password:
+                flash("Please fill all fields.", "error")
+                return redirect(url_for('main.profile'))
+
+            if new_password != confirm_password:
+                flash("New passwords do not match.", "error")
+                return redirect(url_for('main.profile'))
+
+            conn = get_connection()
+            cur = conn.cursor()
+
+            # Validate current password
+            cur.execute("SELECT password FROM users WHERE user_name = %s", (user_name,))
+            result = cur.fetchone()
+
+            if not result or not check_password_hash(result[0], current_password):
+                flash("Incorrect current password.", "error")
+                conn.close()
+                return redirect(url_for('main.profile'))
+
+            # Update password
+            new_password_hash = generate_password_hash(new_password)
+            cur.execute("UPDATE users SET password = %s WHERE user_name = %s",
+                        (new_password_hash, user_name))
+            conn.commit()
+            conn.close()
+
+            flash("Password updated successfully.", "success")
+            return redirect(url_for('main.profile'))
+
+        # Delete Account
+        elif action == 'delete_account':
+            conn = get_connection()
+            cur = conn.cursor()
+            cur.execute("DELETE FROM users WHERE user_name = %s", (user_name,))
+            conn.commit()
+            conn.close()
+
+            # Clear session and redirect to login
+            session.clear()
+            flash("Account deleted successfully.", "success")
+            return redirect(url_for('main.login'))
+
+    return render_template('profile.html', user_name=user_name)
+
