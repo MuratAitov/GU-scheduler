@@ -1,0 +1,357 @@
+[
+    {
+        "name": "CHEM 101 General Chemistry I",
+        "description": "This course will offer an introduction to the fundamental laws and theories of chemistry and heir applications. Topics will include atomic and molecular structure, properties of elements and molecules, chemical reactions, gases, thermochemistry, and chemical equilibrium. Designed for science and engineering majors. Taken concurrently with CHEM 101L. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "CHEM 101L General Chemistry I Lab",
+        "description": "This laboratory course that emphasizes experimental techniques designed to accompany General Chemistry I. Taken concurrently with CHEM 101. One laboratory per week. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "CHEM 102 General Chemistry II",
+        "description": "This course will offer further study and a quantitative treatment of the fundamental laws and theories of chemistry and their applications. Topics will include thermochemistry, phase transitions, kinetics, equilibrium, thermodynamics, acid-base chemistry, electrochemistry, and nuclear chemistry. Designed for science majors. Taken concurrently with CHEM 102L. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "CHEM 101 Minimum Grade: C-"
+        }
+    },
+    {
+        "name": "CHEM 102L General Chemistry II Lab",
+        "description": "This is a laboratory course that emphasizes experimental techniques designed to accompany General Chemistry II. Wherever appropriate, computer skills are introduced and applied to data collection and analysis. Taken concurrently with CHEM 102. One laboratory per week. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "CHEM 101L Minimum Grade: C-"
+        }
+    },
+    {
+        "name": "CHEM 104 Scientific Inquiry",
+        "description": "This lecture and lab course content will be determined by the instructor to meet the learning objectives of the Scientific Inquiry requirement of the University Core. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "CHEM 104L Scientific Inquiry Lab",
+        "description": "Taken concurrently with CHEM 104. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "CHEM 123 Environmental Chemistry",
+        "description": "This course will cover the fundamental principles of chemistry necessary to understand the source, transport, and fate of substances in the environment due to human activity. Additional topics will be chosen by the instructor but may include the environmental implications of various energy-generation methods; the chemistry of the atmosphere, hydrosphere, and lithosphere; climate change; and water quality, pollution, and treatment of water sources. Taken concurrently with CHEM 123L. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "CHEM 123L Environmental Chemistry Lab",
+        "description": "See CHEM 123 course description. Taken concurrently with CHEM 123. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "CHEM 190 Study Abroad Special Topics",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "CHEM 193 FYS:",
+        "description": "The First-Year Seminar (FYS) introduces new Gonzaga students to the University, the Core Curriculum, and Gonzaga’s Jesuit mission and heritage. While the seminars will be taught by faculty with expertise in particular disciplines, topics will be addressed in a way that illustrates approaches and methods of different academic disciplines. The seminar format of the course highlights the participatory character of university life, emphasizing that learning is an active, collegial process.",
+        "term": null
+    },
+    {
+        "name": "CHEM 198 Topics in Chemistry",
+        "description": "This lecture-only course is designed for non-science majors. Different subfields of chemistry will be explored depending on the instructor. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "CHEM 200L Basic Inorganic Chemistry Lab",
+        "description": "CHEM 200L is designed for students who need two semesters of general or inorganic chemistry lab for specific professional programs. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "CHEM 205 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "CHEM 205 Inorganic Chemistry",
+        "description": "Introduction to foundational concepts in inorganic chemistry with emphasis on atomic structure, bonding, and reactivity. Topics will include nuclear chemistry, quantum mechanics, periodic trends, covalent bonding, ionic bonding, metallic bonding, coordinate covalent bonding, acid-base chemistry, electrochemistry, and thermodynamics. Three lectures per week. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "course": "CHEM 101 Minimum Grade: C-"
+        }
+    },
+    {
+        "name": "CHEM 230 Organic Chemistry I",
+        "description": "Essential concepts in bonding and structure, acid-base chemistry, reactivity and synthesis of functional groups, nomenclature, and mechanisms of fundamental organic reactions. Three lectures and one recitation per week. Taken concurrently with CHEM 230L. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "course": "CHEM 101 Minimum Grade: C-"
+        }
+    },
+    {
+        "name": "CHEM 230L Organic Chemistry Lab I",
+        "description": "Preparation and analysis of representative organic compounds. One laboratory per week. Taken concurrently with CHEM 230. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "course": "CHEM 101L Minimum Grade: C-"
+        }
+    },
+    {
+        "name": "CHEM 231 Organic Chemistry II",
+        "description": "Continuation of CHEM 230. A significant focus of the course is on aromatic compounds and carbonyl chemistry. Other topics include organometallic chemistry, radicals, mass spectrometry and synthetic polymers. Three lectures per week. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "course": "CHEM 230 Minimum Grade: C-"
+        }
+    },
+    {
+        "name": "CHEM 231L Organic Chemistry Lab II",
+        "description": "Preparation and analysis of representative organic compounds. One laboratory per week. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "course": "CHEM 230L Minimum Grade: C-"
+        }
+    },
+    {
+        "name": "CHEM 245 Biochemistry",
+        "description": "Structure and function of the major classes of biomolecules (carbohydrates, lipids, proteins and nucleic acids). Fundamental concepts of protein structure and function, kinetics and enzymology, bioenergetics and thermodynamics, metabolism and regulation are discussed. Three lectures per week. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "course": "CHEM 231 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "CHEM 245L Biochemistry Lab",
+        "description": "Laboratory methods and techniques relevant to biochemistry. One laboratory per week. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "course": "CHEM 231L Minimum Grade: D"
+        }
+    },
+    {
+        "name": "CHEM 270 Career Development I",
+        "description": "This course introduces Chemistry and Biochemistry majors to research and career opportunities related to their major, the use of primary literature, and scientific ethics. One lecture per week. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "CHEM 290 Directed Reading",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "CHEM 295 Science Outreach",
+        "description": "The Biology and Chemistry departments run a variety of outreach programs that include class visits, field trip tours, special summer programs and more. All of our programs strive to engage participants with opportunities for hands-on scientific discovery and inspiration.",
+        "term": null
+    },
+    {
+        "name": "CHEM 304 Practice in Lab Teaching",
+        "description": "Introduction to the methods of laboratory teaching. Emphasis on safety, time management, direct student-teacher interaction, and class presentation.",
+        "term": null,
+        "prerequisites": {
+            "course": "CHEM 230 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "CHEM 310 Analytical Chemistry",
+        "description": "Principles of foundational analytical techniques and methods are presented in three lectures per week. These include gravimetric, volumetric, electrochemical, spectrometric, chromatographic, and mass spectrometry topics as well as basic descriptive statistics. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "CHEM 205 Minimum Grade: C-"
+                },
+                {
+                    "course": "CHEM 230 Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "CHEM 310L Analytical Chemistry Lab",
+        "description": "Laboratory experiments including titrations, gravimetric analysis, molecular and atomic spectroscopy, potentiometry, and chromatography. Sample preparation, instrument calibration, data analysis, and reporting are emphasized. Two laboratory periods per week. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "CHEM 230L Minimum Grade: C-"
+        }
+    },
+    {
+        "name": "CHEM 345L Advanced Biochemistry Lab",
+        "description": "In-depth exploration of concepts and techniques used to study biomolecules and biomolecular systems with additional emphasis on scientific writing and communication in biochemistry. Two laboratories per week. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "CHEM 245 Minimum Grade: D"
+                },
+                {
+                    "course": "CHEM 245L Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "CHEM 355 Physical Chemistry",
+        "description": "Introduction to foundational concepts in physical chemistry with emphasis on quantum mechanics, gases, thermodynamics, and kinetics. Fall.\nPre-requisite: CHEM 310, minimum grade: C- and MATH 157, minimum grade: C- and MATH 258, minimum grade: C- and PHYS 103, minimum grade: C-\nCo-requisite or Pre-requisite: PHYS 204, minimum grade: C-",
+        "term": "F"
+    },
+    {
+        "name": "CHEM 355L Physical/Inorganic Chem Lab",
+        "description": "Experiments that emphasize synthesis and characterization of inorganic compounds, as well as physical chemistry methods ranging from spectroscopy to thermodynamics and kinetics. One laboratory period per week. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "course": "CHEM 310L Minimum Grade: C-"
+        }
+    },
+    {
+        "name": "CHEM 370 Career Development II",
+        "description": "This course will focus on scientific oral presentations and scientific writing and prepare students for their senior project. This course also includes outside speakers from graduate schools and the chemistry and biochemistry industry to further provide educational opportunities about continued study and employment in the field. One lecture per week. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "CHEM 385L Advanced Chemistry Lab",
+        "description": "In-depth laboratory course featuring projects, often interdisciplinary, within the analytical, inorganic, physical, and organic sub-disciplines of chemistry. Literature engagement and scientific writing are emphasized. Two laboratory periods per week. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "CHEM 355 Minimum Grade: C-"
+                },
+                {
+                    "course": "CHEM 355L Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "CHEM 390 Directed Research",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "CHEM 395 Research Assistantship",
+        "description": "Undergraduate research assistantships are opportunities for student to earn a stipend while performing independent research in the laboratory of a Biology or Chemistry & Biochemistry faculty member.",
+        "term": null
+    },
+    {
+        "name": "CHEM 399 Advanced Topics:",
+        "description": "Courses focus on reading the primary literature in a particular content area, and will emphasize in-class discussion, writing, and/or presentations. Topics determined by instructor. Two lectures per week. Fall and Spring. Pre-requisites vary depending on topic.",
+        "term": "FS"
+    },
+    {
+        "name": "CHEM 405 Special Topics in Chemistry",
+        "description": "Topic determined by instructor. Two lectures per week. Fall and Spring. Pre-requisites vary depending on topic.",
+        "term": "FS"
+    },
+    {
+        "name": "CHEM 407 Special Topics in Biochemistry",
+        "description": "Topic determined by instructor. Two lectures per week. Fall and Spring. Pre-requisites vary depending on topic.",
+        "term": "FS"
+    },
+    {
+        "name": "CHEM 408 RNA Chemistry and Biology",
+        "description": "This course builds upon foundational topics introduced in CHEM 245 Biochemistry and CHEM 231 Organic Chemistry II to explore the biology, chemistry, and therapeutic uses of RNA. Emphasis placed on the determination of RNA structures, noncoding RNAs classes and their functions to relate gene expression in bacteria and eukaryotes, and the use of nucleic acid technology in therapeutics. The course involves the reading of primary and secondary literature and incorporates literature discussions. Two lectures per week.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "CHEM 245 Minimum Grade: C-"
+                },
+                {
+                    "course": "CHEM 231 Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "CHEM 415 Organometallic Chemistry",
+        "description": "This course builds on foundational topics introduced in CHEM 205 Inorganic Chemistry and CHEM 230 Organic Chemistry I to explore the synthesis, structure, bonding, and reactivity of organometallic complexes, compounds that contain at least one bond between a carbon atom and a metal. Emphasis placed on d-block organometallic compounds and how they are used as homogeneous catalysts for current industrially important organic transformations including hydrogenations, carbonylations, hydroformylations, metathesis, and alkene polymerizations. Two lectures per week.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "CHEM 205 Minimum Grade: C-"
+                },
+                {
+                    "course": "CHEM 230 Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "CHEM 424 DNA Damage & Repair",
+        "description": "This course builds upon foundational topics introduced in CHEM 245 Biochemistry and CHEM 231 Organic Chemistry II to explore the environmental and biological causes of DNA damage, the repercussions this has on disease development, and the enzymes that have evolved to maintain DNA integrity. Primary focus on the chemical mechanisms of DNA repair and intermolecular forces that imbue repair enzymes with\nremarkable specificity. The course will culminate in discussions on the development of drug therapies targeting DNA repair pathways for the treatment of numerous diseases. Two lectures per week.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "CHEM 231 Minimum Grade: C-"
+                },
+                {
+                    "course": "CHEM 245 Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "CHEM 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.",
+        "term": null
+    },
+    {
+        "name": "CHEM 455 Special Topic in Chem/Biochem",
+        "description": "Topic determined by instructor. Fall and Spring. Additional pre-requisites may be required depending on topic.",
+        "term": "FS",
+        "prerequisites": {
+            "course": "CHEM 355 Minimum Grade: C-"
+        }
+    },
+    {
+        "name": "CHEM 464 Group Theory & Spectroscopy",
+        "description": "Introduction to foundations of group theory including symmetry operations and elements, point groups, character tables, reducible and irreducible representations. Formal development of standard models to describe electronic structure of atoms, chemical bonding, as well as rotational and vibrational motion. Quantum mechanical treatment of selection rules and their application to electronic, vibrational, and rotational transitions. Application of group theory and standard quantum mechanical models to the interpretation of atomic and molecular spectra. Two lectures per week.",
+        "term": null,
+        "prerequisites": {
+            "course": "CHEM 355 Minimum Grade: C-"
+        }
+    },
+    {
+        "name": "CHEM 485 Seminar",
+        "description": "Required of all Chemistry and Biochemistry majors. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "CHEM 488 Senior Literature Review",
+        "description": "Literature review of special chemical problem or topic under the direction of a faculty member. Fall or Spring. By Department Chair permission only.",
+        "term": "S",
+        "prerequisites": {
+            "course": "CHEM 370 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "CHEM 490 Directed Reading",
+        "description": "Material and credit to be arranged by instructor.",
+        "term": null
+    },
+    {
+        "name": "CHEM 497 Internship",
+        "description": "Professional work experience in a chemistry-related field.",
+        "term": null
+    },
+    {
+        "name": "CHEM 498A Thesis I",
+        "description": "Investigation of special chemical problems and topics under the direction of a faculty member. Required for ACS approved B.S. degrees. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "course": "CHEM 370 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "CHEM 498B Thesis II",
+        "description": "Required for ACS approved B.S. degrees. Continuation of CHEM 498A. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "CHEM 498A Minimum Grade: D"
+        }
+    }
+]

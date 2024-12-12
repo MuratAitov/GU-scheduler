@@ -1,0 +1,365 @@
+[
+    {
+        "name": "SOCI 101 Introduction to Sociology",
+        "description": "A general survey of the field of sociology and how human society works. Materials focus on an understanding of modern societies.",
+        "term": null
+    },
+    {
+        "name": "SOCI 190 Directed Study",
+        "description": "Topic determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOCI 193 FYS:",
+        "description": "The First-Year Seminar (FYS) introduces new Gonzaga students to the University, the Core Curriculum, and Gonzaga’s Jesuit mission and heritage. While the seminars will be taught by faculty with expertise in particular disciplines, topics will be addressed in a way that illustrates approaches and methods of different academic disciplines. The seminar format of the course highlights the participatory character of university life, emphasizing that learning is an active, collegial process.",
+        "term": null
+    },
+    {
+        "name": "SOCI 200 Social Probl, Sol & Soc Change",
+        "description": "A course on the study of major social problems. Specifically, the course will demonstrate how sociology skills can be employed to bring about social change.",
+        "term": null
+    },
+    {
+        "name": "SOCI 202 Statistics for Social Science",
+        "description": "An introduction to the basic concepts of descriptive and inferential statistics with an emphasis on social scientific applications.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "SOCI 101 Minimum Grade: D"
+                },
+                {
+                    "course": "CRIM 101 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "SOCI 204 Research Methods",
+        "description": "Provides training and experience designing, conducting, and analyzing social research through projects using surveys, interviews, and observation. This course is useful for students contemplating careers in which knowledge concerning people (customers, clients, employees, students, etc.) is needed for testing theories, making decisions, targeting appeals, etc. Required for all Sociology majors.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "SOCI 101 Minimum Grade: D"
+                },
+                {
+                    "course": "CRIM 101 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "SOCI 244 Sex, Gender and Society",
+        "description": "Explores theories and research on the constructions of masculinity and femininity and how these influence our individual lives and social institutions.",
+        "term": null
+    },
+    {
+        "name": "SOCI 246 Sociology of Sport",
+        "description": "Examine how sport creates and exists in relationship with social, cultural, political, and economic forces operating at multiple levels. The goals of the course are to understand sport as a social institution, develop critical analytical skills by examining issues relevant to sport, and to understand sport as a site for the reproduction and contestation of systems of social inequality.",
+        "term": null
+    },
+    {
+        "name": "SOCI 255 Sociology of Literature",
+        "description": "This course explores the relationship between literature and society through an intensive reading and examination of popular novels. By focusing on the production, transmission, representation and consumption of literature in society, students learn how to read academic and literary writing, and how to write using social scientific concepts to explain the cultural phenomenon of popular novels.",
+        "term": null
+    },
+    {
+        "name": "SOCI 283 Sociology of Health & Medicine",
+        "description": "This course examines the social context of health, illness and health care. Particular attention will be paid to the effects of culture and social inequality on health, the interaction of various health care professionals and political debates about the health care system.",
+        "term": null
+    },
+    {
+        "name": "SOCI 290 Directed Study",
+        "description": "Topic determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOCI 295 Special Topics",
+        "description": "Topic determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOCI 311 Classical Social Theory",
+        "description": "Analyzes the theories developed by Marx, Weber, Durkheim, and others during the nineteenth and early twentieth centuries and how these continue to influence the work of sociologists today. This course invites students to examine their own practices of theorizing.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "SOCI 101 Minimum Grade: D"
+                },
+                {
+                    "course": "CRIM 101 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "SOCI 312 Contemporary Social Theory",
+        "description": "Explores the major strategies for sociological theorizing developed during the twentieth century in America and Western Europe. Considers how constructions of modernity and postmodernity are central to understanding what theorizing means and what it can contribute to our work as sociologists and as citizens.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "SOCI 101 Minimum Grade: D"
+                },
+                {
+                    "course": "CRIM 101 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "SOCI 322 Latin American Society",
+        "description": "An overview of Latin American development.  Several socio-economic factors are examined.  Development issues are broadly conceptualized within economic, demographic, and cultural dimensions.  These variables are viewed as overlapping forces influencing development.",
+        "term": null
+    },
+    {
+        "name": "SOCI 323 Sociology of Race & Ethnicity",
+        "description": "This course will examine the foundations of race and ethnicity and how they inform constructions of difference in the past and present. Students will be introduced to definitions and theories of race and ethnicity, explore racial and ethnic identity, and analyze how race and ethnicity work in combination with other axes of difference such as gender, class, and nation to reproduce inequality.",
+        "term": null
+    },
+    {
+        "name": "SOCI 326 East Asian Society",
+        "description": "As a socio-historical survey of China, Korea and Japan from 1800 to the present, this course examines the political, economic, ideological, and cultural transformations within East Asia through the  processes of imperialism, colonialism, modernization, war and revolution, and globalization. By exploring how cultural, social, and political dimensions overlap and influence economic development, students gain insight into contemporary social change, representation and power in East Asia.",
+        "term": null
+    },
+    {
+        "name": "SOCI 327 Social & Economic Inequalities",
+        "description": "Examine the distribution of such social rewards as income, power, style of life, wealth, and prestige among members of a society. Also consider a variety of sociological explanations for the distribution of rewards; compare and contrast stratification systems across societies.",
+        "term": null
+    },
+    {
+        "name": "SOCI 329 Sociology of Culture",
+        "description": "Focus on analysis of rules and values that constitute American culture, especially in relation to how these are portrayed in mass media and the built environment.",
+        "term": null
+    },
+    {
+        "name": "SOCI 330 Society and the Individual",
+        "description": "Social psychology introduces novelty into the ancient pastime of speculating about human behavior and human groups by attempting to use scientific methods. This course focuses on the relationship between individuals and groups. It includes an examination of the impact of groups on individuals, and the impact of individuals on the groups to which they belong. Topics covered include friendship, leadership, influence, the self-concept, prejudice, and morality.",
+        "term": null
+    },
+    {
+        "name": "SOCI 332 Urban and Community Sociology",
+        "description": "This course investigates the way that urbanization- the increasing density and diversity of human settlements - creates challenges to and opportunities for the flourishing of communal life. We study the political economy of urban land use, the formation of segregated ghettos and ethnic enclaves, and gentrification. We also examine the potential for public spaces, community centers, parks and libraries to provide vital sources of social support and communal life. Spring, odd years.",
+        "term": "SO"
+    },
+    {
+        "name": "SOCI 334 Social Movements",
+        "description": "Social movements are often characterized by the spontaneous development of new norms and social organization that may contradict, reinterpret and/or challenge existing social arrangements. The purpose of this course is to examine social movement behavior, and their role in promoting social change and social justice.",
+        "term": null
+    },
+    {
+        "name": "SOCI 337 Subcultures",
+        "description": "This course examines a specific type of social group - the subculture - and the relationship between subcultures and the larger culture. Students will review the historical development of subcultural studies, with dual emphasis on theory and methodology.",
+        "term": null
+    },
+    {
+        "name": "SOCI 342 Sociology of Family",
+        "description": "Examine images and practices of family life in American society. Use historical material to show how ideals about family life have developed. Discuss definitions of \"family\" as political, with a special emphasis on the politics of gender. Connect debates over how to define and understand family with decisions about social policies.",
+        "term": null
+    },
+    {
+        "name": "SOCI 343 Sociology of Reproduction",
+        "description": "This course investigates the history and sociology of reproduction primarily within the US context. It examines how reproduction is simultaneously biological and social, focusing on a wide range of topics, including intention, pregnancy, abortion, contraception, infertility, and breastfeeding. It distinguishes reproductive rights from reproductive justice and pays particular attention to how social institutions and intersecting inequalities influence reproductive practices and policies. Every other Spring.",
+        "term": "S"
+    },
+    {
+        "name": "SOCI 349 Capitalism Environment Justice",
+        "description": "This course examines how capitalism structures human relationships and impacts the nonhuman world, creating uneven social and environmental benefits and burdens. Students will draw upon a range of critical perspectives, including political economy, political ecology, feminist theory, critical race theory, indigenous and post- colonial epistemology, critical geography, science studies, environmental justice, and other approaches. Resistance and social movement responses is emphasized.",
+        "term": null
+    },
+    {
+        "name": "SOCI 350 Deviant Behavior",
+        "description": "Knavery, skullduggery, cheating, crime, malingering, cutting corners, immorality, dishonesty, betrayal, wickedness, and all other unconventional activities are forms of deviance. All known societies have members who become deviants. This course introduces students to several theories explaining deviance and examines the life styles of a variety of deviants.",
+        "term": null
+    },
+    {
+        "name": "SOCI 353 Juvenile Delinquency",
+        "description": "An investigation of the nature and extent of juvenile delinquents in America. Special attention will be given to theoretical explanations; the effect of family, peers and school; and the history of the juvenile justice system in handling juvenile offenders.",
+        "term": null
+    },
+    {
+        "name": "SOCI 355 Elite & White Collar Deviance",
+        "description": "This course examines deviance and crimes committed by organizations and the rich and powerful. The nature, extent and societal effects of various types of elite and white collar deviance are examined.",
+        "term": null
+    },
+    {
+        "name": "SOCI 356 Sociology of Policing",
+        "description": "This course examines law enforcement in American society with a focus on empirical research and sociological and criminological theory. Students will review the historical development of policing in the United States, the roles of the police in contemporary society, the structure and responsibilities of law enforcement agencies in this country, and the interaction between institutional and individual aspects of police work. Students will also be exposed to research and theory on controversial issues in law enforcement, including the use of force, police deviance, the use of discretion, the impact of social inequality on enforcement, and policing in the mass media.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "CRIM 101 Minimum Grade: D"
+                },
+                {
+                    "course": "SOCI 101 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "SOCI 357 Inequality, Crime & Urban Life",
+        "description": "This course examines the relationship between inequality and crime in America’s inner cities.  Students will consider how cultural, economic, educational, legal, political, and other factors shape life in urban areas, and how these factors reproduce crime and inequality in America’s inner cities.",
+        "term": null
+    },
+    {
+        "name": "SOCI 358 Mass Incarceration",
+        "description": "This course examines the causes and consequences of mass incarceration in the United States from a sociological perspective. Particular attention will be paid to racial/ethnic and socioeconomic inequalities in imprisonment. The impact of mass incarceration on incarcerated individuals, their families, and society, more broadly will be examined. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "SOCI 364 Drugs and Society",
+        "description": "This course will examine the effect that drugs, both legal and illegal, have on the legal justice system. Critical analysis, select lectures, in-class discussion, and writing will be the formats used to address issues such as the effect of the \"war on drugs,\" the decriminalization debate, the relationship between drugs and violence, how drugs relate to law enforcement, sentencing, and corrections within the U.S. legal justice system, and the impact of drugs on individual users.",
+        "term": null
+    },
+    {
+        "name": "SOCI 366 Mass Trauma and Genocide",
+        "description": "This course investigates the relationship between multiple intersecting identities (including race, gender, religion, class) and mass trauma, genocide, and human suffering. We will explore a range of mass traumas in diverse cultural and political settings, primarily focusing on the twentieth century. Throughout the semester, the importance of collective memory will be brought to bear on the study of mass trauma and genocide. Fall, odd years.",
+        "term": "FO"
+    },
+    {
+        "name": "SOCI 378 Social Econ Dvlpmnt of Italy",
+        "description": "The impact of social theories on economic problems in Italy. The Mezzogiorno treated from the economic, sociological, political, and religious points of view. Florence campus only.",
+        "term": null
+    },
+    {
+        "name": "SOCI 380 Global Social Change",
+        "description": "This course examines social change and its implications for individuals and groups at the local and global level, and offers sociological perspectives on the political, economic, and cultural processes of globalization throughout the world, including Asia, Latin America, North America, Africa and the Middle East. This course explores the historical development of global capitalism with a focus on the changing relationships between markets, states, and civil societies, and analyzes the forces that promote and resist these changes, including migration, state violence and social movements. Questions of power and inequality will be central to our approach, as we explore global social change through the lens of world-systems theory, neoliberalism, and neo-institutionalism. Offered every other year.",
+        "term": null
+    },
+    {
+        "name": "SOCI 381 Politics and Society",
+        "description": "An empirical analysis of the major theories which attempt to describe the actual distribution of power in America. The course is primarily concerned with how power in societies is contested, given legitimacy, and sustained; it also examines political behavior of the public focusing on voting behavior.",
+        "term": null
+    },
+    {
+        "name": "SOCI 382 Population and Society",
+        "description": "There are more people on this planet than ever before, and the problems associated with population growth seem to be everywhere. Urban crowding, disease, poverty, ethnic tensions, refugees, illegal immigration, environmental degradation, unemployment, aging and the social security \"crisis\" are just a few of these troubles. This course introduces students to the study of population and demography to help them better understand these issues. After learning how to measure and analyze population characteristics and trends, students will explore the relationship between population changes and contemporary social and political issues in the developing regions of the world.",
+        "term": null
+    },
+    {
+        "name": "SOCI 383 Environmental Sociology",
+        "description": "This course examines human relationships with the natural environment. It explores how power structures, social norms, ideologies and politics affect our relationship and treatment of the environment.",
+        "term": null
+    },
+    {
+        "name": "SOCI 384 Sociology of Religion",
+        "description": "This course studies works of classical and contemporary sociologists on the social and cultural aspects of religion. This course examines how religion is influenced by social conditions and often plays an important role in shaping society.",
+        "term": null
+    },
+    {
+        "name": "SOCI 385 Law and Society",
+        "description": "The central question of this course is how do social policies that contribute to the common good come to be written into law in some times and places and not others? The course analyzes an array of political, economic, social, and cultural factors that combine to shape policy development. Case studies will include education, welfare, health care, the environment, and/or other policy domains.",
+        "term": null
+    },
+    {
+        "name": "SOCI 388 Sociology of Education",
+        "description": "This course is a sociological analysis of American Schools and Schooling, with a particular focus on social inequality. The course will investigate how race, class, and gender shape student experiences and the policy efforts that have been (and could be) attempted to alleviate student inequalities. Throughout the course we will address the fundamental tension between the success of individuals and the collective good in education.\n\nThis is a CEL course where you will be accompanying elementary school children in their walk to school--leaving campus at 645 am, and not returning to campus until 830 am (transportation time included and transportation provided). \n \nThis means that you cannot register for a MWF 8 am course in the spring and take Sociology of Education, because you will not be back to Gonzaga in time.",
+        "term": null
+    },
+    {
+        "name": "SOCI 390 Feminist Thought",
+        "description": "Analyzes the contributions of feminist scholars to social and political theory and shows how feminist scholarship is transforming topics, methods, and goals. Reviews the major approaches to feminist theorizing and invites students to put these to work examining contemporary social and political issues.",
+        "term": null
+    },
+    {
+        "name": "SOCI 391 Directed Study",
+        "description": "Topic determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOCI 395 Topics in Sociology",
+        "description": "Topic determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOCI 396 Topics in Sociology",
+        "description": "Topic determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOCI 397 Topics in Sociology",
+        "description": "Topic determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOCI 398 Topics in Sociology",
+        "description": "Topic determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOCI 399 Topics in Sociology",
+        "description": "Topic determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOCI 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.",
+        "term": null
+    },
+    {
+        "name": "SOCI 486 Seminar",
+        "description": "Topic determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOCI 487 Seminar",
+        "description": "Topic determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOCI 488 Seminar",
+        "description": "Topic determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOCI 489 Seminar",
+        "description": "Topic determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOCI 490 Directed Readings",
+        "description": "Supervised advanced reading in selected topics in sociology. Must obtain prior permission from Sociology Department Chair.",
+        "term": null
+    },
+    {
+        "name": "SOCI 494 Seminar in Research & Theory",
+        "description": "In this course, students design and execute original research projects, and present their findings to the public. Students must submit a proposal to the professor prior to being allowed to register for the course. Research experiences for undergraduates are well known as high-impact educational practices that carry with them a variety of benefits for students, faculty, and universities. Our program provides undergraduates with the opportunity to develop and conduct original social science research projects. Over the course of a full academic year, students achieve the following goals:\n1. Develop a thorough understanding of the scholarship and sociological theory in their area(s) of interest.\n2. Develop a research question that identifies a gap in the literature.",
+        "term": null
+    },
+    {
+        "name": "SOCI 495 Independent Research Project",
+        "description": "Approved directed experience in sociological research proposed by the student.",
+        "term": null
+    },
+    {
+        "name": "SOCI 496 Practicum in Sociology",
+        "description": "Supervised experience in a selected social agency. Credit by arrangement.",
+        "term": null,
+        "prerequisites": {
+            "course": "SOCI 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "SOCI 497 Sociology Internship",
+        "description": "Practical experience working within a variety of settings related to the field of sociology. Internships are individually arranged.",
+        "term": null
+    },
+    {
+        "name": "SOCI 498 Senior Honors Thesis",
+        "description": "Students with a 3.70 grade point average or above in their sociology courses who wish to be graduated with departmental honors in sociology, must enroll in this course in the semester prior to the semester in which they are graduated. Work is done under the direction of a faculty member from the department. The student must pass an oral examination of the thesis administered by the department. The thesis may be theoretical or based upon empirical research.",
+        "term": null
+    },
+    {
+        "name": "SOCI 499 Sociology Senior Capstone",
+        "description": "This course offers Sociology majors the opportunity to review theories and research, and to consider how these might be useful for understanding current social issues. Required of all Sociology majors and fulfills comprehensive examination degree requirement.",
+        "term": null
+    }
+]

@@ -1,0 +1,386 @@
+[
+    {
+        "name": "PHYS 104 Scientific Inquiry",
+        "description": "This course is an integrated course and lab experience satisfying the Core Scientific Inquiry requirement. The course is designed and intended for non-science majors. The topics will be developed conceptually, with the required mathematics not exceeding high school algebra and trigonometry. The specific content will vary with instructor. The course title in Zagweb will identify the focus of the lecture course material. The integrated, open lab experience focuses on developing an understanding of the scientific method and the processes of science, including measurement, modeling, and analysis. The lab experience includes hands-on activities and experiments highlighting the covered processes and delivered in an open lab time format. The lab will be open and staffed on Tuesdays and Thursdays for students to come in and complete that week's lab on their own schedule. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "PHYS 105 Astronomy",
+        "description": "Introductory astronomy. An overview of the celestial objects found within the universe, such as stars, planets, and galaxies. For physics majors and PHYS 105 does NOT fulfill the Core Scientific Inquiry requirement. Annually, upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "PHYS 106 Conceptual Physics",
+        "description": "The basic principles of physics are covered in a descriptive (non-mathematical) manner. Designed for students not majoring in the natural sciences or those needing a very basic background in physics. Offered upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "PHYS 106L Conceptual Physics Lab",
+        "description": "Taken concurrently with PHYS 106. Two hours of laboratory. Offered upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "PHYS 107 Conceptual Physics II",
+        "description": "The basic principles of physics are covered in a descriptive (non-mathematical) manner. Designed for students not majoring in the natural sciences or those needing a very basic background in physics. Offered upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "PHYS 107L Conceptual Physics Lab II",
+        "description": "Taken concurrently with PHYS 107. Two hours of laboratory. Offered upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "PHYS 111 General Physics I",
+        "description": "Algebra-based introductory physics. Mechanics, including Newton's laws, conservation laws, fluids, oscillations, and waves. Five hours of lecture with experimental demonstrations and problems. Not accepted as a pre-requisite for any advanced work. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "PHYS 111L General Physics I Lab",
+        "description": "Taken concurrently with or after the lecture course PHYS 111. Three hours of laboratory. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "course": "PHYS 111 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PHYS 112 General Physics II",
+        "description": "Algebra-based introductory physics. Thermodynamics, electricity and magnetism, and optics. Five hours of lecture with experimental demonstrations and problems. Not accepted as pre-requisite for any advanced work. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "PHYS 111 Minimum Grade: D"
+                        },
+                        {
+                            "course": "PHYS 121 Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "course": "PHYS 101 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PHYS 112L General Physics II Lab",
+        "description": "Taken concurrently with or after the lecture course PHYS 112. Three hours of laboratory. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "PHYS 111L Minimum Grade: D"
+                        },
+                        {
+                            "course": "PHYS 121L Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "course": "PHYS 112 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PHYS 121 Physics I",
+        "description": "Calculus-based introductory physics. Mechanics, including Newton's laws, conservation laws, fluids, oscillations, and waves. Five hours of lecture with experimental demonstrations and problems. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "PHYS 121L Physics I Lab",
+        "description": "Taken concurrently with or after the lecture course PHYS 121. Three hours of laboratory. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "course": "PHYS 121 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PHYS 122 Physics II",
+        "description": "Calculus-based introductory physics. Thermodynamics, electricity and magnetism, and optics. Five hours of lecture with experimental demonstrations and problems. MATH 258 Calculus & Analytic Geometry II, may be taken prior to or concurrently. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "PHYS 122L Physics II Lab",
+        "description": "Taken concurrently with or after the lecture course PHYS 122. Three hours of laboratory. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "PHYS 103L Minimum Grade: D"
+                        },
+                        {
+                            "course": "PHYS 121L Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "PHYS 122 Minimum Grade: D"
+                        },
+                        {
+                            "course": "PHYS 204 Minimum Grade: D"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "PHYS 180 Physics Skills Seminar",
+        "description": "Development of tools useful for success in the study of physics, as well as an understanding of the discipline and the resources available to students at Gonzaga. Fall, odd years.",
+        "term": "FO"
+    },
+    {
+        "name": "PHYS 185 Introductory Special Topics",
+        "description": "Topics to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "PHYS 190 Introductory Directed Study",
+        "description": "Directed study in approved topics. Requires completed form and departmental approval. Cannot be registered for via ZagWeb.",
+        "term": null
+    },
+    {
+        "name": "PHYS 193 FYS:",
+        "description": "The First-Year Seminar (FYS) introduces new Gonzaga students to the University, the Core Curriculum, and Gonzaga’s Jesuit mission and heritage. While the seminars will be taught by faculty with expertise in particular disciplines, topics will be addressed in a way that illustrates approaches and methods of different academic disciplines. The seminar format of the course highlights the participatory character of university life, emphasizing that learning is an active, collegial process.",
+        "term": null
+    },
+    {
+        "name": "PHYS 201 Mathematical Methods",
+        "description": "Survey of mathematical techniques used in upper-division physics courses. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "PHYS 122 Minimum Grade: D"
+                },
+                {
+                    "course": "PHYS 204 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PHYS 222 Electronics",
+        "description": "This course is primarily a laboratory in which students learn basic concepts of linear electronics and laboratory techniques through passive components, DC and AC applications, use of test equipment, operational amplifiers, basic transistor circuits, and more. Two hours of lecture and one three-hour laboratory exercise per week. Fall, even years.",
+        "term": "FE",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "PHYS 122L Minimum Grade: D"
+                },
+                {
+                    "course": "PHYS 204L Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PHYS 224 Modern Physics",
+        "description": "Special relativity, development, and an introduction to quantum mechanics and other selected topics. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "PHYS 122 Minimum Grade: D"
+                },
+                {
+                    "course": "PHYS 204 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PHYS 280 Physics Pathways Seminar",
+        "description": "Development of tools useful for success in the practice of physics, as well as an understanding of the discipline and the opportunities available to students during and after their time at Gonzaga. Fall, even years.",
+        "term": "FE"
+    },
+    {
+        "name": "PHYS 285 Intermediate Special Topics",
+        "description": "Topics to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "PHYS 290 Intermediate Directed Study",
+        "description": "Directed study in approved topics. Requires completed form and departmental approval. Cannot be registered for via ZagWeb.",
+        "term": null
+    },
+    {
+        "name": "PHYS 321 Classical Mechanics",
+        "description": "Particle and rigid body statics and dynamics in a rigorous vectorial calculus treatment. A fundamental introduction to theoretical physics. Spring, even years.\nPrerequisite(s): (PHYS 201 or (MATH 259 and MATH 260)) and PHYS 122",
+        "term": "SE"
+    },
+    {
+        "name": "PHYS 322 Electricity and Magnetism",
+        "description": "Electrical and magnetic phenomena leading to a development of Maxwell's equations and electromagnetic field theory. Fall, even years.\nPrerequisite(s): (PHYS 201 or (MATH 259 and MATH 260)) and PHYS 122",
+        "term": "FE"
+    },
+    {
+        "name": "PHYS 323 Statistical Mechanics",
+        "description": "Study of thermal properties from microscopic and statistical viewpoints. Topics include: probability distributions, entropy, density of states, black body radiation. Spring, odd years.",
+        "term": "SO",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "PHYS 122 Minimum Grade: D"
+                },
+                {
+                    "course": "PHYS 204 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PHYS 324 Quantum Mechanics",
+        "description": "Development of techniques to represent and solve the Schrödinger equation for various potential energy functions and measurements in quantum mechanical systems. Fall, odd years.\nPrerequisite(s): PHYS 224 and (PHYS 201 or (MATH 259 and MATH 260))",
+        "term": "FO"
+    },
+    {
+        "name": "PHYS 325 Computational Physics",
+        "description": "An introduction to computational physics. Students will be introduced to many of the basic ideas, algorithms, and tools used by physicists to solve problems. Techniques learned here will be used in most upper-level courses. Spring, odd years.\nPrerequisite(s): MATH 258 and PHYS 121",
+        "term": "SO"
+    },
+    {
+        "name": "PHYS 385 Special Topics",
+        "description": "Topics to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "PHYS 390 Directed Study",
+        "description": "Directed study in approved topics. Requires completed form and departmental approval. Cannot be registered for via ZagWeb.",
+        "term": null
+    },
+    {
+        "name": "PHYS 395 Research Assistantship",
+        "description": "Undergraduate research assistantships are opportunities for student to earn a stipend while performing independent research in the laboratory of a Physics faculty member.",
+        "term": null
+    },
+    {
+        "name": "PHYS 424 Advanced Quantum Mechanics",
+        "description": "Extension of techniques and concepts of Quantum Mechanics to systems with greater complexity, such as the inclusion of relativistic effects and the behavior of identical particles. Spring, even years.",
+        "term": "SE",
+        "prerequisites": {
+            "course": "PHYS 324 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PHYS 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.",
+        "term": null
+    },
+    {
+        "name": "PHYS 441 Advanced Laboratory I",
+        "description": "Development of experimental and analytical techniques. Introduction to scientific writing and communication. Fall, odd years.",
+        "term": "FO",
+        "prerequisites": {
+            "course": "PHYS 122L Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PHYS 442 Advanced Laboratory II",
+        "description": "Further development of experimental and analytical techniques. Refinement of scientific writing and communication. Spring, even years.",
+        "term": "SE",
+        "prerequisites": {
+            "course": "PHYS 441 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PHYS 451 Fields, Oscs, & Relativity",
+        "description": "Study of advanced classical and relativistic systems, including orbital mechanics, coupled oscillations, electromagnetic waves, and relativistic transformations. Spring, odd years.",
+        "term": "SO",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "PHYS 224 Minimum Grade: D"
+                        },
+                        {
+                            "course": "PHYS 321 Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "course": "PHYS 322 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PHYS 452 Optics",
+        "description": "Treatment of optical phenomena using the three major models for light: rays, waves, and photons. Spring, even years.\nPrerequisite(s): (PHYS 201 or (MATH 259 and MATH 260)) and PHYS 122",
+        "term": "SE"
+    },
+    {
+        "name": "PHYS 453 Solid State Physics",
+        "description": "Study of solid materials using both macroscopic and microscopic quantum models from physics. Topics may include early models of solids, mechanical and thermal properties of materials, elasticity, chemical bonding, metals, crystal structure, phonons and vibrational modes, electric conductivity, band gap theory and semiconductors, transistors, magnetic properties of materials, and other selected solid state topics. Fall, odd years.\nPrerequisite(s): PHYS 224 and (PHYS 201 or (MATH 259 and MATH 260))",
+        "term": "FO"
+    },
+    {
+        "name": "PHYS 454 Nuclear and Particle Physics",
+        "description": "Study of experimental and theoretical aspects of nuclear interactions as they apply to nuclear structures and elementary particle characteristics. Fall, odd years.",
+        "term": "FO",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "PHYS 244 Minimum Grade: D"
+                },
+                {
+                    "course": "PHYS 205 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PHYS 455 Cosmology and Astrophysics",
+        "description": "Study of the global evolution of the universe, including the expansion rate of the universe, big bang nucleosynthesis, the cosmic microwave background radiation, inflation, relativity, and other selected astrophysics topics. Spring, odd years.\nPrerequisite(s): (PHYS 201 or (MATH 259 and MATH 260)) and PHYS 122",
+        "term": "SO"
+    },
+    {
+        "name": "PHYS 456 Biophysical Systems & Modeling",
+        "description": "Study of biological systems using first principles, tools, and models from physics. Topics may include diffusion, membrane potentials, models of neural dynamics, information processing in biological systems, and other selected biophysics topics. Fall, even years.\nPrerequisite(s): (CPSC 121 or ENSC201 ) and PHYS 122 and (PHYS 201 or MATH 260)",
+        "term": "FE"
+    },
+    {
+        "name": "PHYS 485 Advanced Special Topics",
+        "description": "Topics to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "PHYS 490 Advanced Directed Study",
+        "description": "Directed study in approved topics. Requires completed form and departmental approval. Cannot be registered for via ZAGWEB.",
+        "term": null
+    },
+    {
+        "name": "PHYS 497 Internship",
+        "description": "Credit recognition of an internship or research experience, arranged by the student, directly related to the student's Physics Major and/or career plans, where said experience helps the student increase and develop practical physics knowledge and skills. Prior to registration, the student must secure participation in an internship or research experience, identify a faculty supervisor, complete and submit the Physics Department Internship Application form, and receive permission from the Physics Department.",
+        "term": null
+    },
+    {
+        "name": "PHYS 499 Senior Project",
+        "description": "May be undertaken by B.S. Physics Majors in their senior year. Permission from Physics Department required.",
+        "term": null
+    }
+]

@@ -1,0 +1,444 @@
+[
+    {
+        "name": "VART 101 Drawing I",
+        "description": "The graphic representation of visual reality in a variety of media; emphasis is directed toward an understanding of observation, form, line, value, composition, and space. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "VART 112 Digital Art Foundations",
+        "description": "An introduction to basic design and digital art, using the computer as a primary tool and Adobe Photoshop, as well as drawing and painting materials. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "VART 115 Art Appreciation",
+        "description": "An introduction to the visual arts of the Western world. The basic premise of the course stems from a conviction that painting, sculpture, and architecture reflect the times and places that produced them. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "VART 121 Painting Methods & Materials",
+        "description": "An introduction to a variety of methods and mediums that are used in basic painting. Students will learn how to prepare different surfaces for painting, including paper, panel and canvas. Intended for the non-art major/minor. Fall and Spring. Fulfills the following degree requirement(s): Core: Fine Arts and Design.",
+        "term": "FS"
+    },
+    {
+        "name": "VART 140 Ceramics: Hand Building",
+        "description": "This course will focus on hand-building techniques such as coiling and slab construction as well as an introduction to the potter's wheel.",
+        "term": null
+    },
+    {
+        "name": "VART 141 Ceramics I",
+        "description": "A basic experience with clay. Emphasis on hand building techniques with an introduction to wheel forming. Secondary emphasis on developing fundamentals of clay and glaze technology. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "VART 170 Photographic Art",
+        "description": "A survey of the role of photography in media and art as well as contemporary human experience. The course emphasizes creative control of digital cameras and an understanding of the principles of photography in creating images with technical and high aesthetic value. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "VART 180 Special Topics",
+        "description": "Topics to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "VART 190 ArtSurvey:Prehistoric-Medieval",
+        "description": "A study of art and architecture from the Prehistoric era to the late Middle Ages.  Fall, even numbered years.",
+        "term": "F"
+    },
+    {
+        "name": "VART 191 Art Survey:Renaissance-Modern",
+        "description": "A study of art and architecture from the late Middle Ages to modern times.  Spring, even-numbered years.",
+        "term": "S"
+    },
+    {
+        "name": "VART 192 Independent Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "VART 193 FYS:",
+        "description": "The First-Year Seminar (FYS) introduces new Gonzaga students to the University, the Core Curriculum, and Gonzaga’s Jesuit mission and heritage. While the seminars will be taught by faculty with expertise in particular disciplines, topics will be addressed in a way that illustrates approaches and methods of different academic disciplines. The seminar format of the course highlights the participatory character of university life, emphasizing that learning is an active, collegial process.",
+        "term": null
+    },
+    {
+        "name": "VART 194 World Art",
+        "description": "An introduction to the visual arts of Africa, Oceania, Asia, and the indigenous populations of South and North America from the fourteenth century to today. Fall, odd-numbered years",
+        "term": "F"
+    },
+    {
+        "name": "VART 195 Arts of Asia",
+        "description": "This course focuses on the art and architecture of China, Japan, Korea, and South and Southeast Asia from the Neolithic period to today. Students will examine developments in a variety of media, including painting, sculpture, architecture, ceramics, prints, textiles, and alternative media that have emerged since the 1960s. Spring, odd-numbered years.",
+        "term": "S"
+    },
+    {
+        "name": "VART 201 Drawing II",
+        "description": "A continuation of VART 101. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "VART 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "VART 202 Figure Drawing in Florence",
+        "description": "Focuses on traditional drawing techniques and methods for depicting the physicality of the body and of space. VART 101 recommended as a pre-requisite but not required. Florence campus only.",
+        "term": null
+    },
+    {
+        "name": "VART 212 Sculpture Materials & Design I",
+        "description": "Explores the principal elements of design through sculpture and drawing projects. Students will develop their structural and perceptual senses, with a special emphasis on 3-D perception. Florence campus only.",
+        "term": null
+    },
+    {
+        "name": "VART 221 Oil Painting",
+        "description": "Basic problems in oil techniques, explorations in still life, landscape, and expression. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "VART 101 Minimum Grade: D"
+                },
+                {
+                    "course": "VART 112 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "VART 230 3-D Design",
+        "description": "A foundational course focused on the principles and elements of design for three-dimensional/sculptural art. Students learn how to turn a concept/idea into a three-dimensional work of art. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "VART 241 Ceramics II",
+        "description": "Qualities of form, function, and style are explored by means of wheel forming. Glaze development and approaches to firing techniques are introduced. Spring only.",
+        "term": "S",
+        "prerequisites": {
+            "course": "VART 141 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "VART 272 Intro to Filmmakeing",
+        "description": "An experiential, hands-on course that introduces students to the fundamental aspects of digital filmmaking. Students will learn basic camera operation, audio recording, and video editing while also examining the creative and ethical considerations associated with the craft of filmmaking. Spring",
+        "term": "S",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "VART 170 Minimum Grade: D"
+                        },
+                        {
+                            "course": "VART 112 Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "course": "JOUR 270 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "VART 292 Directed Studio",
+        "description": "Variable credit, directed study for the student with a limited schedule. Studio work by arrangement. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "VART 293 Introduction to Florence",
+        "description": "A survey of Florentine history from its origins to 1400, with special reference to the artistic, social, and literary developments of the 13th and 14th centuries. Florence campus only.",
+        "term": null
+    },
+    {
+        "name": "VART 294 Florence of the Medici",
+        "description": "A study of the artistic, social, and literary developments in Florence from the time of Savonarola through the Florence of Michelangelo, Cosimo I, Galileo, and the Grand Dukes. Florence campus only.",
+        "term": null
+    },
+    {
+        "name": "VART 295 Spanish Art-Modern and Contemp",
+        "description": "Granada campus only.",
+        "term": null
+    },
+    {
+        "name": "VART 296 Spanish Art-Ancient, Medieval",
+        "description": "Granada campus only.",
+        "term": null
+    },
+    {
+        "name": "VART 312 Sculpture Materials &Design II",
+        "description": "Explores the principal elements of design through sculpture and drawing projects. Students will develop their structural and perceptual senses, with a special emphasis on 3-D perception. Florence campus only.",
+        "term": null
+    },
+    {
+        "name": "VART 322 Fresco",
+        "description": "Exploration of Fresco techniques. Both buon and fresco secco are introduced. Students have hands-on experience and produce a fresco image during the course. Florence campus only.",
+        "term": null
+    },
+    {
+        "name": "VART 323 Painting: Narrative/Figuration",
+        "description": "Focuses on the human figure and creating narrative in painting.  Students work partly from direct observation, crafting works that explore imagery, symbolism, and setting. Fall only.",
+        "term": "F",
+        "prerequisites": {
+            "course": "VART 221 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "VART 324 Painting: Theory & Practice",
+        "description": "Focuses on contemporary theory in painting. Students create works on a single theme using different materials and processes.",
+        "term": null,
+        "prerequisites": {
+            "course": "VART 221 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "VART 341 Intermediate Ceramics Projects",
+        "description": "A directed study of specific throwing and/or hand building techniques. Studio processes of glaze development and firing practices will be introduced.",
+        "term": null,
+        "prerequisites": {
+            "course": "VART 241 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "VART 349 Special Topics in Studio Art",
+        "description": "Topics to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "VART 350 Beginning Printmaking",
+        "description": "Introduces students to the development of imagery through a variety of etching and relief processes. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "course": "VART 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "VART 351 Beginning Screen Printing",
+        "description": "Introduces students to the development of imagery through the screen printing process. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "VART 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "VART 352 Intermediate Printmaking",
+        "description": "This course adds new printmaking techniques to the processes learned in beginning printmaking, refines the abilities already learned and expands the student's knowledge about image development through the printmaking process. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "VART 350 Minimum Grade: D"
+                },
+                {
+                    "course": "VART 351 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "VART 360 Museum Studies",
+        "description": "An exploration of the value and function of museums. History of Italian museums as outstanding examples of European Culture from the Renaissance to the 20th Century. Florence campus only. Can be substituted for one Art History requirement for Art majors.",
+        "term": null
+    },
+    {
+        "name": "VART 371 Art Fusion",
+        "description": "Students experiment with the use of various art media, including photography and film, to create mixed media pieces and learn how to critically engage in the analysis of creative works of art. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "VART 112 Minimum Grade: C-"
+                },
+                {
+                    "course": "VART 170 Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "VART 385 Figure Drawing I",
+        "description": "Basic problems in developing the human figure and experiments with a variety of drawing media.  Florence campus and main campus. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "VART 386 Figure Drawing II",
+        "description": "A continuation of VART 385. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "course": "VART 385 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "VART 393 Special Topics Study Abroad",
+        "description": "Topic determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "VART 394 Special Topics in Art History",
+        "description": "Consult instructor for topic as it will vary each semester.",
+        "term": null
+    },
+    {
+        "name": "VART 395 Art in the 19th Century",
+        "description": "A survey of European and American art from c. 1789 to 1914. Special emphasis placed on the relationship between art and political revolution, Orientalism and \"Primitivism\" in the visual arts, the rise of landscape painting, the invention of photography, and the formation of an avant-garde identity in the nineteenth century. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "VART 396 Art in the 20th Century",
+        "description": "A survey of European and American art from the 1890's to 1990's. Course topics include: the relationship between avant-garde culture and political radicalism; \"Primitivism\" in western art; the machine aesthetic; abstraction and its meanings; the influence and role of photography in modern culture; and the emergence of alternative and experimental visual media in the 1960's and 1970's. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "VART 397 Renaissance Art",
+        "description": "A survey of the painting, sculpture, and architecture of Italy, 1400-1600. Florence campus only.",
+        "term": null
+    },
+    {
+        "name": "VART 401 Renaissance Architecture",
+        "description": "Renaissance Architecture, civil engineering, and design from Brunelleschi to Leonardo and Michelangelo and the interdependence of such fields to Florentine humanism and the development of European modernity. Florence campus only.",
+        "term": null
+    },
+    {
+        "name": "VART 402 The Image of God",
+        "description": "A comparative study in religious art and architecture between the Western world and traditional Far Eastern aesthetics (Chinese and Japanese), focusing on the basic element of spirituality. Florence campus only.",
+        "term": null
+    },
+    {
+        "name": "VART 403 The Ancient City",
+        "description": "This course is a survey of the development of the city in the ancient world. Students will explore urban forms and processes as they are shaped by - and as they shape - their social, cultural, economic and physical contexts. The course will focus on representative urban centers of the ancient Near East, Egypt, and the Mediterranean world, tracing the evolution of ancient urbanism from the Near East to the classical worlds of Greece and Rome.",
+        "term": null
+    },
+    {
+        "name": "VART 404 Archaeology of Ancient Greece",
+        "description": "This course examines the techniques and methods of Classical Archaeology as revealed through an examination of the major monuments and artifacts of Ancient Greece and its neighbors. Architecture, sculpture, vase and fresco painting, and the minor arts are all examined, from the Bronze Age through the Hellenistic period. We consider the nature of this archaeological evidence, and the relationship of classical archaeology to other disciplines such as history, art history, and the classical languages.",
+        "term": null
+    },
+    {
+        "name": "VART 405 Archaeology of Ancient Rome",
+        "description": "This course examines the techniques and methods of classical archaeology as revealed through an examination of the major monuments and artifacts of ancient Rome and its neighbors. Architecture, sculpture, vase and fresco painting, and the minor arts are all examined, from the Early Iron Age through the Late Roman period. We consider the nature of this archaeological evidence, and the relationship of classical archaeology to other disciplines such as history, art history, and the classical languages.",
+        "term": null
+    },
+    {
+        "name": "VART 406 American Cultures and Ideas",
+        "description": "This course will examine American history through an exploration of its culture. Throughout this course we will work towards defining what culture is, how it shapes expectations and assumption, how it motivates human actions and interactions, and how it is bound by time and place. Each student’s ability to critically read cultural sources from an appropriately historical frame of reference will be tested in a variety of assignments, including weekly readings, writing assignments, and active class participation.",
+        "term": null
+    },
+    {
+        "name": "VART 407 Women Artists",
+        "description": "An introduction to women as creators of fine and decorative art within North America and Europe from the late 18th C. to today. The course also addresses how women have been represented in art by men and other women.",
+        "term": null
+    },
+    {
+        "name": "VART 408 History of Photography",
+        "description": "An introduction to the origins and history of photography from the 1830’s to today. Spring, even-numbered years.",
+        "term": "S"
+    },
+    {
+        "name": "VART 421 Advanced Painting Projects",
+        "description": "Advanced oil painting problems in still-life, figure and landscape. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "VART 324 Minimum Grade: D"
+                },
+                {
+                    "course": "VART 323 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "VART 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.",
+        "term": null
+    },
+    {
+        "name": "VART 441 Advanced Ceramics Projects",
+        "description": "Exploration of advanced glazing and firing techniques. Emphasis is on developing individual expression in ceramic form.",
+        "term": null,
+        "prerequisites": {
+            "course": "VART 341 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "VART 442 Ceramic Materials",
+        "description": "A study of glaze theory and empirical formulation methods. Coursework is designed for the advanced student contemplating graduate school or a professional career in the studio. Upon sufficient demand.",
+        "term": null,
+        "prerequisites": {
+            "course": "VART 241 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "VART 443 Kiln Design and Construction",
+        "description": "An exploration of kiln types, firing methods, and chamber designs. A kiln will be constructed and fired. Upon sufficient demand.",
+        "term": null,
+        "prerequisites": {
+            "course": "VART 241 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "VART 450 Advanced Printmaking Projects",
+        "description": "This course continues to refine the abilities already learned and expands the student's knowledge about printmaking. The emphasis is on idea development in combination with technical skills to create a body of work through printed means. Individual exploration is encouraged and challenged through critical dialogue in combination with the teacher and fellow students.",
+        "term": null,
+        "prerequisites": {
+            "course": "VART 352 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "VART 466 Philosophy of Art",
+        "description": "An analysis of beauty, creativity, and taste according to the theories of Aristotle, Plato, Aquinas, and some contemporary philosophers. Several representative works from all areas of the fine arts are examined in the light of the aesthetic principles of classical philosophy.",
+        "term": null
+    },
+    {
+        "name": "VART 472 Creative Filmmaking",
+        "description": "An exploration of moving images and digital video as they relate to documentary films and art. Students learn how artists employ digital video and moving images in their artistic work. They also learn how to apply fundamental visual strategies of digital media and technological tools, including media editing software such as Adobe Premiere Pro and After Effects, to the creation and editing of video. Lab fee. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "VART 480 Special Topics Studio",
+        "description": "Topic to be determined by Instructor.",
+        "term": null
+    },
+    {
+        "name": "VART 485 Advanced Drawing Projects",
+        "description": "Exploration of advanced drawing techniques.",
+        "term": null,
+        "prerequisites": {
+            "course": "VART 386 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "VART 492 Independent Study",
+        "description": "Specialized study by arrangement with individual studio faculty.",
+        "term": null
+    },
+    {
+        "name": "VART 493 Studio Practice",
+        "description": "Students begin a body of work that launches them towards their larger group of works to be· shown in April of their senior year as part of the senior exhibition. Students discuss and learn about various forms of studio practice and how artists create spaces, projects, and situations for themselves. Group critiques of work-in-progress will take place on a weekly basis. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "VART 494 BFA Solo/Two-Person Exhibit",
+        "description": "Students will exhibit a body of work in the local area, on or off campus. Students will be responsible for the planning, marketing, and installation of their solo or two-person show. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "VART 497 Art Internship",
+        "description": "Professional work experience in an art-related field.",
+        "term": null
+    },
+    {
+        "name": "VART 498 Research",
+        "description": "Individual research on an art topic approved by and arranged with a faculty member.",
+        "term": null
+    },
+    {
+        "name": "VART 499 Professional Practice",
+        "description": "Required of Art Majors. Open to art minors by departmental invitation only. A seminar designed to prepare the graduating student for vocations in art or postgraduate studies, culminating with a public exhibition of the senior's portfolio demonstrating learned skills. Enrollment by permission of instructor. Spring.",
+        "term": "S"
+    }
+]

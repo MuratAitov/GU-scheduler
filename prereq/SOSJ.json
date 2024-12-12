@@ -1,0 +1,402 @@
+[
+    {
+        "name": "SOSJ 101 Intro Solidarity & Soc Justice",
+        "description": "This course provides an overview of social justice theories, causes and effects of structural injustice, and various examples of social change. Distinctions between charity and social justice are clarified and special attention is paid to the practice of solidarity. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "SOSJ 119 Special Topics: Block A",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 139 Special Topics: Block B",
+        "description": "Topic to determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 159 Special Topics: Block C",
+        "description": "To be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 160 Journalistic Writing",
+        "description": "An introduction to journalistic-style writing across media platforms, including broadcast journalism and public relations writing. Fall, Spring, Summer.",
+        "term": "S"
+    },
+    {
+        "name": "SOSJ 170 Photographic Art",
+        "description": "A survey of the role of photography in media and art as well as contemporary human experience. The course emphasizes creative control of digital cameras and an understanding of the principles of photography in creating images with technical and high aesthetic value.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 179 Special Topics: Block D",
+        "description": "Topic to determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 180 Special Topics",
+        "description": "Topic to be determined by Instructor.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 190 Directed Study",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 193 FYS:",
+        "description": "The First-Year Seminar (FYS) introduces new Gonzaga students to the University, the Core Curriculum, and Gonzaga’s Jesuit mission and heritage. While the seminars will be taught by faculty with expertise in particular disciplines, topics will be addressed in a way that illustrates approaches and methods of different academic disciplines. The seminar format of the course highlights the participatory character of university life, emphasizing that learning is an active, collegial process.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 219 Special Topics Block A",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "SOSJ 220 Sex, Gender and Society",
+        "description": "Explores theories and research on the constructions of masculinity and femininity and how these influence our individual lives and social institutions.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 221 Sociology of Health & Medicine",
+        "description": "This course examines the social context of health, illness and health care. Particular attention will be paid to the effects of culture and social inequality on health, the interaction of various health care professionals and political debates about the health care system.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 239 Special Topics Block B",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 240 Social Probs, Solutions, Chg",
+        "description": "Course on the study of major social problems. Specifically, the course will demonstrate how sociology skills can be employed to bring about social change. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "SOSJ 259 Special Topics Block C",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 260 Fundamentals of TV Production",
+        "description": "A practicum dealing with the technical aspects of television production along with creative generation of live, original programs. Students learn the basics of how television signals are created and transported, and then demonstrate proficiency in all crew areas concerned with live productions. In addition, this course provides a much greater sense of media literacy as it applies to mainstream messages in the media today. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "SOSJ 260L Fund of TV Production Lab",
+        "description": "See SOSJ 260 for course description. Taken concurrently with SOSJ 260.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 261 Photojournalism",
+        "description": "An introduction to the technical, ethical, and creative principles of journalism-based photography and video. Topics include basic camera functions, digital image-editing tools, and the intersection of photojournalism, digital-video, and short documentary filmmaking. Special attention will be given to the professional and ethical considerations of the practice and the unique differences that separate photojournalism from other forms of image capturing. Lab fee. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "course": "INMD 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "SOSJ 262 Civic Journalism",
+        "description": "Emphasis on the style of journalism that fosters community engagement. Research, reporting and interviewing techniques that focus on news coverage of public organizations and groups that participate in framing public policy. A variety of writing styles will be utilized. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "JOUR 110 Minimum Grade: D"
+                },
+                {
+                    "course": "SOSJ 160 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "SOSJ 263 Analyzing Practices and Habits",
+        "description": "The course provides a foundation in attending to, analyzing, and reporting meaningful information about the social world through humanistic communication research methods. The course introduces ethnographic and qualitative research methods, ethics, selection of research topics and questions, ethnographic data collection methods (e.g. participant observation; un-, semi- and structured interviewing; structured observation), managing and coding field notes, and qualitative analysis. In this course, students will create field notes, analyses, and more.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "COMM 100 Minimum Grade: D"
+                },
+                {
+                    "course": "HONS 100 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "SOSJ 279 Special Topics Block D",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 280 Special Topics",
+        "description": "Topic to be determined by Instructor.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 310 Ethics-Human Rgts-Globalizatn",
+        "description": "This course focuses on religious and ethical responses to issues arising in relation to globalization, and specifically, the topic of human rights.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 311 Political Theology",
+        "description": "This course presents an inquiry into the political shifts in religious faith and practice in the wake of globalization and modern secularism. Students will explore critiques of classic accounts of divine transcendence and religious authority, the growing recognition of the plight of the poor and marginalized, and the increasingly political focus of contemporary theologians and religious thinkers in response to this rapidly shifting intellectual milieu. Offered every year.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 319 Special Topics Block A",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "SOSJ 320 Work, Wages, and Inequality",
+        "description": "An economic perspective on labor market issues. Explores recent controversial topics such as inequality in earnings, race and sex discrimination in labor markets, immigration, minimum wage laws and labor unions, health and safety regulations in the work-place. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "ECON 201 Minimum Grade: D"
+                },
+                {
+                    "course": "ECON 270H Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "SOSJ 321 Sociology of Race & Ethnicity",
+        "description": "This course will examine the foundations of race and ethnicity and how they inform constructions of difference in the past and present. Students will be introduced to definitions and theories of race and ethnicity, explore racial and ethnic identity, and analyze how race and ethnicity work in combination with other axes of difference such as gender, class, and nation to reproduce inequality.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 322 Social & Economic Inequalities",
+        "description": "Examines the distribution of such social rewards as income, power, style of life, wealth, and prestige among members of a society.  Also considers a variety of sociological explanations for the distribution of rewards; compares and contrasts stratification systems across societies. Fall, alternate years.",
+        "term": "F"
+    },
+    {
+        "name": "SOSJ 323 Elite & White Collar Deviance",
+        "description": "This course examines deviance and crimes committed by organizations and the rich and powerful. The nature, extent and societal effects of various types of elite and white collar deviance are examined.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 325 Inequality, Crime & Urban Life",
+        "description": "In this course, students will consider the problems of crime and inequality as intertwined. Students will also move beyond simplistic explanations of these problems and towards a more complex understanding of the relationships between social institutions - like criminal justice, economics, education, politics, and the media - and how these institutions collaborate (overtly and covertly) to reproduce crime and inequality in America's inner cities. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "SOSJ 326 African-American History",
+        "description": "This course explores the lives and experiences of African-Americans from the colonial era to the present. It focuses on communities, values, and traditions of redress that sustained these citizens, workers, parents, children, and activists.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 327 Sociology of Education",
+        "description": "This course is a sociological analysis of American Schools and Schooling, with a particular focus on social inequality. The course will investigate how race, class, and gender shape student experiences and the policy efforts that have been (and could be) attempted to alleviate student inequalities. Throughout the course we will address the fundamental tension between the success of individuals and the collective good in education.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 329 Third World Development",
+        "description": "Focus on political development in the Third World. After examining the making of the Third World through imperialism and colonialism, analyzes key political institutions (the state, political parties, the military), the international economic context of dependency and vulnerability. Several case studies follow a common analytical framework to trace experiences with democratic and authoritarian rule and assess the underlying causes of democratic success and failure.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 330 Mass Incarceration",
+        "description": "This course examines the causes and consequences of mass incarceration in the United States from a sociological perspective. Particular attention will be paid to racial/ethnic and socioeconomic inequalities in imprisonment. The impact of mass incarceration on incarcerated individuals, their families, and society, more broadly will be examined. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "SOSJ 339 Special Topics Block B",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 341 Rights Justice & US Citizenshp",
+        "description": "This course explores the history of citizenship in the United States from its founding in the Revolutionary era to the present by examining how and why the rights and obligations of citizenship have changed over time. This seminar style course includes discussions of philosophical and theoretical frameworks involved in building and in understanding citizenship including reform efforts that aspired to democratize institutions that treated citizens differently because of race, ethnicity, class, national origin, or gender. This course is geared towards students interested in history, law, politics, ethnic studies, women’s studies, and social movements.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 342 Women and Politics",
+        "description": "History and dynamics of women's political movements (both conservative and liberal) in the U.S. Survey of women's current levels and styles of participation in U.S. government and politics. Offered annually.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 343 Race & Ethnicity Politics",
+        "description": "Examines the conditions facing selected racial and ethnic groups in the U.S., with African Americans being the primary case for analysis. Topics include the social construction of race and ethnicity, the wide range of political strategies and tactics employed by racial and ethnic groups in pursuit of equality, and U.S. immigration policy. Offered annually.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 344 Social Movements",
+        "description": "Social movements  are often characterized by the spontaneous development of new norms and social organization that may contradict, reinterpret and/or challenge existing social arrangements. The purpose of this course is to examine  social movement behavior, and  their role in promoting social change and social justice.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 345 Global Social Change",
+        "description": "This course examines social change and its implications for individuals and groups at the local and global level, and offers sociological perspectives on the political, economic, and cultural processes of globalization throughout the world, including Asia, Latin America, North America, Africa and the Middle East. This course explores the historical development of global capitalism with a focus on the changing relationships between markets, states, and civil societies and analyzes the forces that promote and resist these changes including migration, state violence, and social movements. Questions of power and inequality will be central to our approach, as we explore global social change through the lens of world-systems theory, neoliberalism, and neo-institutionalism. Offered every other year.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 346 Tyranny to Democracy 21 C.",
+        "description": "Between 1974 and 2000 more than fifty countries in Southern Europe, Latin America, East Asia, and Eastern Europe shifted from authoritarian to democratic systems of government. This course examines the causes and nature of these democratic transitions and investigates several case studies of democratic transitions in different areas of the world; in order to understand the factors responsible for the democratic trend and to ascertain which key variables best explain completed democratic transitions and democratic consolidation. Spring, alternate years.",
+        "term": "S"
+    },
+    {
+        "name": "SOSJ 348 Interreligious Dialogue",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "SOSJ 349 Capitalism Environment Justice",
+        "description": "This course examines how capitalism structures human relationships and impacts the nonhuman world, creating uneven social and environmental benefits and burdens. Students will draw upon a range of critical perspectives, including political economy, political ecology, feminist theory, critical race theory, indigenous and post- colonial epistemology, critical geography, science studies, environmental justice, and other approaches. Resistance and social movement responses is emphasized.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 359 Special Topics Block C",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 363 Argumentation and Debate",
+        "description": "Examination of the fundamentals of advocacy including argumentation theory, techniques of persuasion, refutation, and cross-examination. This course is open to both debate team members and anyone interested in improving their argumentation skills.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 366 Writing for Social Action",
+        "description": "In this course, we will approach writing for social action from a rhetorical perspective, focusing on purpose and audience as well as genre, form, and the craft of writing. Throughout the semester, you will be asked to analyze texts produced by contemporary and historical social movements and activists in order to discern best practices when advocating for a cause.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "ENGL 101 Minimum Grade: D"
+                },
+                {
+                    "course": "ENGL 200 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "SOSJ 367 Emerging Media",
+        "description": "Students integrate reporting and research with audio, video, photos and text to produce and design multimedia packages in a journalistic context. Students may utilize blogging, podcasting, social media and emerging media techniques. Some focus on analysis of the optimal platforms for presenting journalistic content.  Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "JOUR 110 Minimum Grade: D"
+                },
+                {
+                    "course": "SOSJ 160 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "SOSJ 379 Special Topics Block D",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 380 Special Topics",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "SOSJ 410 Theories Solidarity & Soc Just",
+        "description": "This course is designed to fulfill one of the requirements of the Solidarity and Social Justice minor. It builds on the background provided by other courses in the SOSJ minor and the University Core by focusing more explicitly on the role public reason plays in the pursuit of solidarity and social justice. The course will ask “What is justice and how is it related to human solidarity? How do we ground claims about solidarity and social justice through an appeal to reason? What role should reason play in shaping our models of justice and what role can it play in the promotion of solidarity and social justice?”",
+        "term": null
+    },
+    {
+        "name": "SOSJ 412 Ancient Concepts of Justice",
+        "description": "Many modern theories of social justice rest upon models developed in classical antiquity. Similarly, many modern institutions and laws relating to justice have ancient precursors. This course examines major classical texts dealing with justice: selected pre-Socratic texts; Plato, Republic; Thucydides, History of Peloponnesian war, Aristotle, Nicomachean Ethics, Book V, selections from Cicero; selections from other Hellenistic and late Roman authors (including Augustine).",
+        "term": null
+    },
+    {
+        "name": "SOSJ 419 Special Topics Block A",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 439 Special Topics Block B",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 459 Special Topics Block C",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 464 Communication & Leadership",
+        "description": "A critical examination of the reciprocity between effective communication and successful leadership. Includes a historical examination of leadership styles, theories, and research. Includes an analysis of motivation, power, and organizational culture, with writing and speaking assignments designed to cultivate leadership skills. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "SOSJ 465 Justice and Arts of Civic Life",
+        "description": "Ethical communication and intentional civic engagement fosters vibrant democratic life. As civic actors, we deliberate and contest policies, advocate for justice, and attempt to foster cooperation among a multiplicity of voices. This course synthesizes theories of ethics that students grapple with to examine relationships between rhetoric, democracy, and justice. Specifically, we will address questions of how we should practice rhetoric in ways that refine our capacities for ethical discernment, build inclusive communities, promote social justice, and ultimately enrich democratic life. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "COMM 340 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SOSJ 466 Intersectional Communication",
+        "description": "The study of communication and culture in a global world cannot and must not be apolitical, ahistorical, or blind to the messy entanglements of power and privilege. Therefore, this course will focus on the intersections between critical race theory, feminist theory, and critical intercultural communication in order to interrogate and examine the ways in which our social identities and locations affect the contexts of our lives including our opportunities, relationships, and overall understanding of the world. Specifically, this course will engage the work of Black Feminist scholars and ongoing scholarly conversations on intersectionality to analyze intercultural encounters and engagement. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "COMM 320 Minimum Grade: C"
+                        },
+                        {
+                            "course": "COMM 340 Minimum Grade: C"
+                        }
+                    ]
+                },
+                {
+                    "course": "COMM 370 Minimum Grade: C"
+                }
+            ]
+        }
+    },
+    {
+        "name": "SOSJ 475 Organizing for Health Equity",
+        "description": "The Community Organizing for Health Equity course facilitates learning of community organizing skills through participatory exercises, discussion, and short lectures. The course provides a foundation from which to understand the world through a different lens needed to work on \n“upstream” issues. The course will equip student leaders with the tools they need to organize themselves and others to more effectively address the social justice issues that matter most to them.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 479 Special Topics Block D",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 480 Special Topic",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 497 Internship",
+        "description": "Practical experience working within a variety of settings related to the fields of solidarity and social justice. Internships are individually arranged.",
+        "term": null
+    },
+    {
+        "name": "SOSJ 499 Solidarity & Soc Jus Praxis",
+        "description": "Students taking this capstone course will participate in a semester-long internship for a justice-oriented organization. As a \"praxis\" course, the goal is for students to combine action with reflection and understanding. Students will meet weekly to reflect on their practical internship experience and integrate empirical and theoretical information.",
+        "term": null
+    }
+]

@@ -1,0 +1,436 @@
+[
+    {
+        "name": "PSYC 101 General Psychology",
+        "description": "An overview of contemporary psychology which introduces the student to the following areas: human development, sensation and perception, motivation, learning, emotion, psychological measurement, biological basis of behavior, experimental psychology, intelligence, abnormal behavior, and personality. Format consists of lectures and discussions. Fall and Spring;",
+        "term": "FS"
+    },
+    {
+        "name": "PSYC 193 FYS:",
+        "description": "The First-Year Seminar (FYS) introduces new Gonzaga students to the University, the Core Curriculum, and Gonzaga’s Jesuit mission and heritage. While the seminars will be taught by faculty with expertise in particular disciplines, topics will be addressed in a way that illustrates approaches and methods of different academic disciplines. The seminar format of the course highlights the participatory character of university life, emphasizing that learning is an active, collegial process.",
+        "term": null
+    },
+    {
+        "name": "PSYC 202 Statistics for Psychology",
+        "description": "An introduction to the essential statistical methods employed in psychological research. Fall and Spring",
+        "term": "FS",
+        "prerequisites": {
+            "course": "PSYC 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PSYC 206 Scientific Principles of Psych",
+        "description": "This course introduces the fundamental methods used in psychological research. Students have an opportunity through assignments and in-class exercises to practice their understanding of the scientific principles guiding psychology. Majors must earn a grade of B- or better (course may be repeated). Research concentration students must earn an A- or better. Fall and Spring. Students must take PSYC 202 to meet the Statistics pre-requisite.",
+        "term": "FS"
+    },
+    {
+        "name": "PSYC 281 Special Topics",
+        "description": "Topics to be determined by faculty.",
+        "term": null,
+        "prerequisites": {
+            "course": "PSYC 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PSYC 290 Directed Study",
+        "description": "Topic to be determined by faculty. Permission of Department Chair required.",
+        "term": null
+    },
+    {
+        "name": "PSYC 300 Biological Psychology",
+        "description": "This course will introduce students to the biological structures and processes that are involved in psychological behavior. Students will learn about the cells, anatomy, and development of the human nervous system, and about the biological processes related to specific behaviors including perception, movement, emotion, learning, memory, and cognition.",
+        "term": null
+    },
+    {
+        "name": "PSYC 305 Sensation and Perception",
+        "description": "Examines the transduction of sensory information, its processing and organization by the human nervous system, and how these processes result in perceptual experiences. Emphasis on vision and hearing.",
+        "term": null
+    },
+    {
+        "name": "PSYC 310 Cognition",
+        "description": "An exploration of the psychophysics and neurophysiology of human cognition. Topics include perception, attention, memory, language, reasoning, decision making, and the representation of knowledge.",
+        "term": null
+    },
+    {
+        "name": "PSYC 315 Learning",
+        "description": "Advanced survey of concepts and methods relevant to the scientific analysis of learning.",
+        "term": null,
+        "prerequisites": {
+            "course": "PSYC 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PSYC 318 Cultural Psychology",
+        "description": "Studies how cultural systems and mind mutually and dynamically influence each other. Cultural influences on cognition, perception, emotion, motivation, moral reasoning, and the constitution of well-being/psychopathology discussed with a view towards understanding divergent mentalities. PSYC 335 Social Psychology recommended as a pre-requisite, but not required.",
+        "term": null
+    },
+    {
+        "name": "PSYC 320 Seminar:Psychophysiology",
+        "description": "Psychophysiology is a branch of psychology that uses physiological measures, such as skin conductance and heart rate, to study psychological processes, such as selective attention and emotion. In this seminar you will learn to record and psychologically interpret common psychophysiological measures including skin conductance, muscle activity, cardiovascular activity, eye movements, and cortical brain activity.",
+        "term": null
+    },
+    {
+        "name": "PSYC 330 Emotion",
+        "description": "This seminar is designed to provide undergraduates with a broad foundation in current theory and research related to human emotion. Students become familiar with classic theories, current issues, methodologies and debates characterizing the study of emotion. Both intrapersonal and interpersonal dimensions of emotion are addressed. The seminar prepares students for graduate level work in the area of psychology and as such, it requires a high level of preparation for and participation during each class meeting.",
+        "term": null
+    },
+    {
+        "name": "PSYC 334 Comparative Psychology",
+        "description": "Students will study the behavior of a variety of species and how their behavior relates to that of human beings.",
+        "term": null
+    },
+    {
+        "name": "PSYC 335 Social Psychology",
+        "description": "An investigation into the impact that individuals, groups, and social structure have on individual decision-making and behavior. Fall and Spring;",
+        "term": "FS"
+    },
+    {
+        "name": "PSYC 340 Personality",
+        "description": "A survey and critique of major theories of personality. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "PSYC 345 Child Psychology",
+        "description": "The essentials of child psychology, representing various schools of thought based upon research on the development of children from conception to preadolescence. May include a service-learning component.",
+        "term": null
+    },
+    {
+        "name": "PSYC 350 Adolescent Psychology",
+        "description": "A survey of psychological research and major theories regarding the life-span between puberty and the attainment of maturity. May include a service-learning component.",
+        "term": null
+    },
+    {
+        "name": "PSYC 352 Emerging Adulthood",
+        "description": "Examines psychological development during the lifespan from post-adolescence through middle age, with an emphasis on emerging adulthood.",
+        "term": null
+    },
+    {
+        "name": "PSYC 355 Psychology of Aging",
+        "description": "Explores the interaction and impact of the aging process on physiological, cognitive, and psychological changes within the individual. Topics such as the diversity of aging experiences, retirement, widowhood, coping with illness, family care giving, and mental health issues.",
+        "term": null,
+        "prerequisites": {
+            "course": "PSYC 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PSYC 357 Lifespan Development",
+        "description": "Lifespan development explores the physical, cognitive, and socio-emotional changes that humans experience across the lifespan from birth through old age. We address questions such as: \"Is development continuous or discontinuous?\"; \"Are we the product of nature or nurture?\"; \"Do all people follow a similar trajectory or is human development marked by diversity?\". Drawing on developmental, social and cognitive psychology, and an understanding of development milestones of each age period, as we investigate development we pay special attention to the roles of parents, peers, schools, and socioeconomic contexts in those processes.",
+        "term": null,
+        "prerequisites": {
+            "course": "PSYC 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PSYC 364 Abnormal Child Psychology",
+        "description": "An overview of theory, research, and practice in developmental psychopathology. The major disorders of childhood are reviewed. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "PSYC 365 Ethics in Psychology",
+        "description": "Using the APA ethical guidelines for psychologists we examine the aspirational goals, the standards themselves, the history of the current standards, and how to apply them in a variety of situations faced by psychologists.",
+        "term": null,
+        "prerequisites": {
+            "course": "PSYC 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PSYC 370 Educational Psychology",
+        "description": "Designed to guide students in the application of psychological theory and research to work in the classroom. Includes topics such as learning, aspects of human development that influence learning, and how to structure the classroom environment to maximize learning. Upon sufficient demand.",
+        "term": null,
+        "prerequisites": {
+            "course": "PSYC 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PSYC 375 Cross-cultural Psychology",
+        "description": "An exploration of the psychological research which seeks to understand differences and similarities in human behavior when compared across cultures and groups.",
+        "term": null
+    },
+    {
+        "name": "PSYC 376 Forensics",
+        "description": "Introductory level course to the field of forensic psychology, the branch of psychology which focuses on the application of psychological research data and principles within the legal arena. Students are introduced to the process of applying psychological knowledge, concepts, and principles within the civil and criminal court systems. Includes an introduction to an overview of topics such as the history of forensic psychology, an overview of the legal system, consultation to legal parties, ethical issues, eye witness testimony, assessment, evaluation of malingering, competency in criminal proceedings, civil commitment, child custody, psychologist testimony in courtroom settings, assessment of sexual offenders, assessment of violent and homicidal behavior, treatment of crime victims, police and investigative psychology, and careers within this field. A variety of formats including lecture, readings, presentation by class members on selected topics, and guest speakers from within the legal arena. Disclaimer: Course by virtue of its topic addresses issues related to criminal activity and the subsequent legal proceedings. Although it may seem obvious, each person should consider carefully whether the content is suitable before enrolling in the course as the lectures, readings, and other materials may at times involve topics related to violence and sometimes sexual material, which may be offensive to some people.",
+        "term": null
+    },
+    {
+        "name": "PSYC 380 Industrial-Organizational Psyc",
+        "description": "A survey of psychology applied to the work experience. Selection, evaluation, leadership, and work motivation are among the broad range of topics covered.",
+        "term": null
+    },
+    {
+        "name": "PSYC 381 Special Electives Topics",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "PSYC 385 Behavior Management",
+        "description": "A critical review of learning procedures used to effect behavioral change in the natural environment. Includes treatment of both normal and maladaptive behaviors.",
+        "term": null,
+        "prerequisites": {
+            "course": "PSYC 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PSYC 390 Psychopathology",
+        "description": "Survey of major emotional and behavior disorders; discussion of causation, symptomology, and treatment.\nPre-requisite: PSYC 101 and PSYC 202 and PSYC 206",
+        "term": null
+    },
+    {
+        "name": "PSYC 395 Clinical Neuropsychology",
+        "description": "Neuropsychology is the study of the relationship between brain functioning and behavior, especially as it applies to psychopathology. The course incorporates an introduction to neuroanatomy, an overview of neuropsychological assessment, and clinical case studies.",
+        "term": null
+    },
+    {
+        "name": "PSYC 396 Health&Pediatric Psychology",
+        "description": "This course is designed to cover a survey of health/pediatric psychology (i.e. studying the interface between psychological and physical processes), while simultaneously providing in-depth analysis of various topic areas (e.g. oncology, pain, etc.). Course content emphasizes many aspects of health/pediatric psychology including basic and applied research, consultation, clinical intervention, and health promotion strategies.",
+        "term": null
+    },
+    {
+        "name": "PSYC 397 Children:Risk & Resilience",
+        "description": "This reading and writing intensive seminar focuses on factors and contexts that pose risks for development as well as those that promote resilience. Topics include the neuro-biological, behavioral, and social effects of child neglect, maltreatment, and other childhood trauma; an exploration of global and political issues including extreme poverty; a Children's Bill of Rights; and the research on resilience, including some promising programs to promote resilience. Recommended especially for students interested in clinical or social work with children or in teaching.",
+        "term": null
+    },
+    {
+        "name": "PSYC 398 Sem: Community Psychology",
+        "description": "Combines an emphasis on exploring alternative methods of providing mental health services in the community and the identification of conditions of risk to psychological adjustment and the prevention or lessening of risk factors. This course has a service-learning component that requires a commitment outside of the classroom. Reading/writing intensive.",
+        "term": null
+    },
+    {
+        "name": "PSYC 399 Sem:Clinical/Counseling Psyc",
+        "description": "An introduction to current theory and method in clinical and counseling psychology. Reading/writing intensive. (WE Designation)",
+        "term": null
+    },
+    {
+        "name": "PSYC 400 Environmental Psychology",
+        "description": "An exploration of the interaction between human behavior and the physical environment. Emphasis on perception, preference, and coping with less preferred environments.",
+        "term": null,
+        "prerequisites": {
+            "course": "PSYC 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PSYC 404 Psychology of Addiction",
+        "description": "This course provides a survey of psychological theory and research regarding addictive disorders and their treatment.",
+        "term": null
+    },
+    {
+        "name": "PSYC 410 Marriage and Family",
+        "description": "Individuals develop within a complex network of relationships. Among these, family relationships are especially significant due to their centrality and longevity. This course examines what we know from the empirical study of family relationships. Students are introduced to methods of studying family relationships as well as prominent theories and findings regarding marital and family functioning. Two themes span the variety of topics covered in this course: the first involves the importance of understanding the family as a system embedded in a particular socio-economic context; the second has to do with the interface between individual and family development.",
+        "term": null
+    },
+    {
+        "name": "PSYC 412 Family Systems:Theory & Pract",
+        "description": "Introduces students to the theory and practice of family systems. We compare and contrast various models of family systems including transgenerational, structural, strategic, and experiential approaches. This course is especially recommended for students considering a career in a clinical context as a therapist. We apply family systems theories to clinical case studies and examine how family therapists try to bring about change. Students will have an opportunity to integrate these concepts as they begin to clarify and develop their own therapeutic framework.",
+        "term": null
+    },
+    {
+        "name": "PSYC 414 Group Process",
+        "description": "Introduction to the theory and practice of group counseling and psychotherapy. Students in this course study both historical and current literature regarding the theoretical and experiential understandings of group purpose, developmental stages, dynamics such as roles, norms, and therapeutic factors, leadership orientations and process, counseling theories, group counseling methods, and skills.",
+        "term": null
+    },
+    {
+        "name": "PSYC 416 Psychology of Gender",
+        "description": "A review of both the theory and empirical literature investigating the psychology of gender, including biological cognitive, developmental and psychosocial models.",
+        "term": null
+    },
+    {
+        "name": "PSYC 422 Develop in Diverse Environmnts",
+        "description": "Students in this course explore child development across various contexts with particular emphasis on broadening students' perspectives beyond normative development in white, middle class environments. Contexts explored include poverty and homelessness, racial discrimination, diverse family contexts (e.g., divorce, parents who are homosexual), foster care and adoption, violent/war stricken environments, and cross-cultural child-rearing practices. May include a service-learning component.",
+        "term": null
+    },
+    {
+        "name": "PSYC 427 Culture & Mntl Health Seminar",
+        "description": "This reading, writing, and discussion intense seminar explores the role that culture plays in the manifestation, experience, and course of mental illness and the cultural foundations for understanding such illnesses. Although not required, recommended pre-requisites are Cultural Psychology (PSYC 318) and Psychopathology (PSYC 390).",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "PSYC 101 Minimum Grade: D"
+                        },
+                        {
+                            "course": "PSYC 202 Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "course": "PSYC 206 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PSYC 428 Sem: Psychology of Trauma",
+        "description": "Since the Viet Nam war, our culture has become increasingly familiar with the terms 'trauma' and 'post-traumatic stress disorder' (PTSD). But what is trauma, exactly, and what are its effects? Is the nature of the trauma (type, duration) related to its impact? As a discipline, what do we know about the onset, duration and prognosis of PTSD? What do we know about the experience of PTSD? This course addresses these questions and considers both intrapersonal (biological and cognitive) and interpersonal dimensions of trauma.",
+        "term": null
+    },
+    {
+        "name": "PSYC 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.",
+        "term": null
+    },
+    {
+        "name": "PSYC 434 Cognitive Neuroscience",
+        "description": "Advanced discussion of how the brain performs cognitive processes (such as perception, attention, memory, and other select topics). Draws heavily on empirical studies to assess theories of brain function and neural processing.",
+        "term": null
+    },
+    {
+        "name": "PSYC 449 Advanced Special Electives",
+        "description": "Advanced theory, research or application topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "PSYC 450 Advanced Statistics in Psych",
+        "description": "An advanced treatment of topics and techniques commonly used by psychologists, including the general linear model, coding schemes, multiple correlation and regression, analysis of variance and covariance, planned and post hoc tests, and the use of statistical computer packages. Format is combined lecture/lab. Fall and/or Spring.",
+        "term": "S"
+    },
+    {
+        "name": "PSYC 454 Judgement and Decision Making",
+        "description": "What should people do? What do people actually do? In this course we investigate how and why the answers to these two questions are sometimes different. We utilize theories in social psychology and behavioral economics to gain a better understanding of why human beings often diverge from \"rational\" decision making processes and what consequences this has for individuals, groups, and society as a whole.",
+        "term": null
+    },
+    {
+        "name": "PSYC 457 Poverty and Social Class",
+        "description": "Service learning course. We examine the social constructions of poverty and wealth and their outcomes (perceived, as well as measured) on well-being. Through our readings and students' connections to those living in poverty in Spokane we develop an understanding of the obstacles and hardships that accompanies those living in poverty.",
+        "term": null
+    },
+    {
+        "name": "PSYC 458 Social Relationships & Hlth",
+        "description": "This course explores the most up-to-date social psychological research and theory on interpersonal relationships, with a specific focus how close relationships (and a perceived lack of social connection) impact individual health and well-being. Examples of topics explored in this course include the impact of loneliness on health and social functioning; forgiveness and sacrifice within intimate relationships; self-disclosure and social support; friendship; relationships and techonolgy.",
+        "term": null
+    },
+    {
+        "name": "PSYC 460 Testing and Measurement",
+        "description": "Emphasis on the theoretical aspects of psychological testing for test administration, construction, and evaluation. Either PSYC 460 or PSYC 462 (but not both) will count toward Psychology major and minor requirements.",
+        "term": null
+    },
+    {
+        "name": "PSYC 462 Psychological Assessment",
+        "description": "Emphasis on the theoretical aspects of psychological testing for test administration, construction, and evaluation in clinical settings. Either PSYC 460 or PSYC 462 (but not both) will count toward Psychology major and minor requirements.",
+        "term": null
+    },
+    {
+        "name": "PSYC 465 History and Systems of Psych",
+        "description": "The various systematic approaches to the understanding of psychological phenomena are surveyed in historical context; such schools as structuralism, functionalism, psychoanalysis humanistic psychology, and varieties of behaviorism and cognitivism, are considered.",
+        "term": null,
+        "prerequisites": {
+            "course": "PSYC 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PSYC 470 Behavior Analysis",
+        "description": "The attitudes, principles, and techniques which enter into the experimental analysis of behavior. Concentrated laboratory study and the communication of experimental findings.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "PSYC 101 Minimum Grade: D"
+                        },
+                        {
+                            "course": "PSYC 315 Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "course": "EDSE 320 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PSYC 472 Psychology of Consciousness",
+        "description": "This class examines the relationship between mind and brain based upon current philosophical and empirical perspectives.",
+        "term": null
+    },
+    {
+        "name": "PSYC 474 Sem:Attachment Across Lifespan",
+        "description": "Seminar course explores the basic principles of attachment theory and an analysis of attachment relationships (e.g., parent-child, romantic partners) at various points in the lifespan. May include a service-learning component. Reading/writing intensive.",
+        "term": null
+    },
+    {
+        "name": "PSYC 476 Sem:Mindfulness &Psychotherapy",
+        "description": "This course provides a survey of psychological theory and research regarding addictive disorders and their treatment.",
+        "term": null
+    },
+    {
+        "name": "PSYC 478 Human Flourishing",
+        "description": "Human Flourishing explores what is constructive, beautiful and healthy about human beings and their social interactions. This course provides familiarity with the Positive Psychology movement and what it brings to the social psychology table that helps us understand and improve ourselves and the communities in which we reside (e.g. our relationships, workplaces). Some of the section topics include: healthy relationships and their benefits, happiness as both a cause and an effect of positive outcomes, distinguishing positive emotions (e.g. awe, elevation, gratitude) and their outcomes, and the importance of personal well-being for the workplace and our economy. Reading/writing intensive.",
+        "term": null
+    },
+    {
+        "name": "PSYC 485 Special Topics in Adv T/P/R",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "PSYC 488 Adv Research Design",
+        "description": "This class is the first in a two-class Research Concentration sequence that builds on the information presented in lower division Research Methods (PSYC 206) and Statistics (PSYC 202) classes. During this semester students will learn about ethical considerations that all Psychologists must adhere to and different research designs to describe, predict, and control behavior across a variety of subfields in Psychology. By the end of this course, all students will have formulated and proposed an empirical research study in collaboration with the course instructor and their main faculty research advisor.",
+        "term": null
+    },
+    {
+        "name": "PSYC 489 Adv Research Analyses",
+        "description": "This class is the second in a two-class Research Concentration sequence and builds on the information presented in PSYC 488 Advanced Research Designs. During this semester students will conduct studies proposed in their PSYC 488 research proposals and learn how to analyze, write-up, and present the empirical data that they have collected from their research proposal in PSYC 488.",
+        "term": null
+    },
+    {
+        "name": "PSYC 490 Directed Study",
+        "description": "Directed study of special topic to include readings and practical application.",
+        "term": null
+    },
+    {
+        "name": "PSYC 492 Directed Reading in Psychology",
+        "description": "Directed reading of an advanced topic in the field of psychology; reports submitted, conferences attended, and examination taken at the judgment of the Directed Reading Director.",
+        "term": null
+    },
+    {
+        "name": "PSYC 493 Group Research Topics",
+        "description": "Supervised research experience as a part of a research team working on a specific project under the direction and supervision of a faculty member.",
+        "term": null
+    },
+    {
+        "name": "PSYC 494 Tutoring",
+        "description": "Advanced psychology students participate in the tutoring and proctoring of students who can benefit from special assistance in a particular area of psychology, especially in research methods. It is assumed that tutors and proctors have an especially good command of the subject matter. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "PSYC 495 Practicum",
+        "description": "Supervised agency experiences in one or more of the applied aspects of psychology. Only one credit may be counted toward the requirements for the Psychology major.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "PSYC 390 Minimum Grade: B-"
+                },
+                {
+                    "course": "PSYC 399 Minimum Grade: B-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PSYC 496 Individual Research Topics",
+        "description": "Supervised individual research on a topic of interest to the student and approved by and arranged with a faculty member.",
+        "term": null
+    },
+    {
+        "name": "PSYC 497 Internship",
+        "description": "Supervised research experience as a part of a research team working on a specific project under the direction and supervision of a faculty member.",
+        "term": null
+    },
+    {
+        "name": "PSYC 498 Comprehensive Alternate",
+        "description": "Comprehensive Alternate course is for students who have either taken PSYC 455/455L (grade of B or better) OR taken the GRE Subject Test in Psychology (test scores need to be reported at or above the 12th percentile to the Psychology Department) OR completed independent research and presented this work at a conference.",
+        "term": null
+    },
+    {
+        "name": "PSYC 499 Comprehensive",
+        "description": "Students must take the Major Fields Test (MFT) in Psychology and score at or above the 45th percentile to pass. The MFT is administered at least once a semester by the Psychology Department.",
+        "term": null
+    }
+]

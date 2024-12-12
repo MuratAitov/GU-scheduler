@@ -1,0 +1,1096 @@
+[
+    {
+        "name": "ARAB 101 Elementary Arabic I",
+        "description": "Arabic 101 is a beginning level course primarily for students with little, if any, prior knowledge of Modern Standard Arabic. Arabic 101 introduces grammar, vocabulary, reading, speaking and writing activities, as well as cultural topics. The course stresses communication using both formal and informal Arabic and exposes the students to the diversity and social issues of the Arab-speaking world. It develops the ability to read, speak, listen and write in Arabic through the consideration of cultural themes, language functions, and authentic situations. The weekly class meetings will be dedicated to meaningful oral use of the language in order to foster acquisition and proficiency. This course provides extensive practice with writing, reading, speaking, and listening proficiency at the novice level according to the ACTFL guidelines. Offered occasionally, when there is sufficient student interest. Taught in Arabic.",
+        "term": null
+    },
+    {
+        "name": "ARAB 102 Elementary Arabic II",
+        "description": "This course is designed to further introduce students to basic Arabic language skills and give them an insight into the many aspects of Arabic-speaking countries and their culture. Students will be able to apply creative as well as analytic thinking skills by exploring a foreign language and its cultural idiosyncrasies. This course provides extensive practice with writing, reading, speaking, and listening proficiency at the novice level according to the ACTFL guidelines. Offered occasionally, when there is sufficient student interest. Taught in Arabic. \nPrerequisite: Arabic 101 or equivalent.",
+        "term": null,
+        "prerequisites": {
+            "course": "ARAB 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ARAB 201 Intermediate Arabic I",
+        "description": "Arabic 201 is designed to further strengthen and expand basic language skills in Arabic. This course provides extensive practice with writing, reading, speaking, and listening proficiency at the intermediate low level according to the ACTFL guidelines, in addition to developing students’ intercultural competencies. Offered occasionally, when there is sufficient student interest. Taught in Arabic. \nPrerequisite: Arabic 102 or equivalent.",
+        "term": null,
+        "prerequisites": {
+            "course": "ARAB 102 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ARAB 202 Intermediate Arabic II",
+        "description": "Arabic 202 is designed to further strengthen and expand students' language skills in Arabic. This course provides extensive practice with writing, reading, speaking, and listening proficiency at the intermediate level according to the ACTFL guidelines, in addition to developing students’ intercultural competencies. Offered occasionally, when there is sufficient student interest. Taught in Arabic. \nPrerequisite: Arabic 201 or equivalent.",
+        "term": null,
+        "prerequisites": {
+            "course": "ARAB 201 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ARAB 280 Special Topics",
+        "description": "Topics to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "ARAB 290 Directed Study",
+        "description": "Topic to be determined by professor and approved by the Department Chair. Taught in Arabic.",
+        "term": null
+    },
+    {
+        "name": "ARAB 497 Internship",
+        "description": "Professional experience in a setting related to the Arabic-speaking community in which Arabic is used. Student is responsible to find an appropriate internship and to present a plan (description, objectives, proposed assessment) to the Department Chair for approval. Taught in Arabic.",
+        "term": null,
+        "prerequisites": {
+            "course": "ARAB 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "CHIN 101 Elementary Chinese I",
+        "description": "Fundamentals of standard Chinese, emphasizing culture as well as the four language skills: speaking, listening, reading and writing. Systematic methods and various communication activities for basic training in pronunciation, grammatical structures, conversation on daily topics, and the writing system. Ten hours of conversational language time with students in small groups (held outside of class time) required. This course is only offered through the Gonzaga/Whitworth Classroom Exchange  when there is sufficient student interest, and/or study abroad opportunities. Department Chair approval required. Taught in Chinese.",
+        "term": null
+    },
+    {
+        "name": "CHIN 102 Elementary Chinese II",
+        "description": "Second-year course in modern Chinese to develop proficiency in all four language skills: speaking, listening, reading and writing. In addition to the basic conversational topics, students will be taught to use the dictionary, will be exposed to both traditional and simplified characters, and will read and write longer discourses ranging from personal letters to short narratives. Students will also learn to use Chinese word processing. Ten hours of conversational language time with students in small groups (held outside of class time) required. Prerequisite: Chinese 102 or equivalent. This course is only offered through the Gonzaga/Whitworth Classroom Exchange, when there is sufficient student interest , and/or study abroad opportunities. Department Chair approval required. Taught in Chinese.",
+        "term": null
+    },
+    {
+        "name": "CHIN 201 Intermediate Chinese I",
+        "description": "Credit for Chinese language is given to students through the Gonzaga/Whitworth Classroom Exchange, when there is sufficient student interest,  and/or study abroad opportunities. Department Chair approval required. Taught in Chinese.",
+        "term": null
+    },
+    {
+        "name": "CHIN 202 Intermediate Chinese II",
+        "description": "Continuation of Chinese 201. Ten hours of conversational language time with students in small groups (held outside of class time) required. Prerequisite: Chinese 201 or equivalent. This course is only offered through the Gonzaga/Whitworth Classroom Exchange, when there is sufficient student interest, and/or study abroad opportunities. Department Chair approval required. Taught in Chinese.",
+        "term": null
+    },
+    {
+        "name": "CHIN 290 Directed Study",
+        "description": "Topic to be determined by professor. This course is only offered through study abroad opportunities. Department Chair approval required. Taught in Chinese.",
+        "term": null
+    },
+    {
+        "name": "CHIN 301 Advanced Chinese I",
+        "description": "Available only through sponsored Study Abroad programs. Taught in Chinese.",
+        "term": null
+    },
+    {
+        "name": "CHIN 303 Conversation and Composition",
+        "description": "Available only through sponsored Study Abroad programs. Taught in Chinese.",
+        "term": null
+    },
+    {
+        "name": "CHIN 390 Directed Study",
+        "description": "Available only through sponsored Study Abroad programs. Taught in Chinese.",
+        "term": null
+    },
+    {
+        "name": "FREN 101 Elementary French I",
+        "description": "Introduction to French for students with no previous study of the language. Students learn basic tasks such as introducing themselves and meeting others, giving personal information, describing their schedule. Practice in the four skills of speaking, listening, reading and writing. The focus is on language acquisition, with some exposure to aspects of French and Francophone cultures. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "FREN 102 Elementary French II",
+        "description": "For students who have completed French 101 or the equivalent. The goal of the course is to enable students to progress from novice to intermediate level proficiency in the four language skills of speaking, listening, reading and writing. Students learn to provide more information about themselves and to accomplish more daily tasks. The focus is on language acquisition, and students also are introduced to some basics of French and Francophone cultures. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "FREN 190 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "FREN 201 Intermediate French I",
+        "description": "For students who have completed French 102 or the equivalent. The goal of the course is to reinforce the fundamentals of grammar and syntax and to build proficiency in the four skills of speaking, listening, reading and writing. Students will be able to perform many communicative tasks by the end of the semester. A further goal of the course is to increase awareness of French and Francophone cultures. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "FREN 202 Intermediate French II",
+        "description": "For students who have completed French 201 or the equivalent. The goal of the course is to strengthen the skills of speaking, listening, reading and writing in order to enable students to perform a larger number of communicative tasks. Lessons are conducted entirely in French for better immersion in the language. Additional goals of the course are to increase awareness of French and Francophone cultures, and to initiate students into the reading and interpretation of more challenging texts (short pieces of literature). Spring.",
+        "term": "S"
+    },
+    {
+        "name": "FREN 280 Special Topics",
+        "description": "By arrangement.",
+        "term": null
+    },
+    {
+        "name": "FREN 290 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "FREN 300 Advanced Grammar Review",
+        "description": "An intensive one-semester grammar course with extensive oral practice. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "FREN 301 Advanced French I",
+        "description": "Short stories, plays, novels, or essays by modern authors, with grammar and conversation based on the texts studied. Practice in phonetics where needed. Available only through sponsored study abroad programs.",
+        "term": null
+    },
+    {
+        "name": "FREN 302 Advanced French II",
+        "description": "Continuation of FREN 301. A greater emphasis on composition and advanced style. Available only through sponsored study abroad programs.",
+        "term": null,
+        "prerequisites": {
+            "course": "FREN 301 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "FREN 303 Advanced Language Practice I",
+        "description": "Oral and written comprehension, oral and written expression, grammar, vocabulary. Basics of phonetics. Culture and civilization. Available only through sponsored study abroad programs.",
+        "term": null
+    },
+    {
+        "name": "FREN 304 Advanced Language Practice II",
+        "description": "A continuation of FREN 303. Available only through sponsored study abroad programs.",
+        "term": null
+    },
+    {
+        "name": "FREN 315 Advanced French Conversation",
+        "description": "Intensive practice in oral French. Study of vocabulary, grammar, and pronunciation through discussion of cultural topics.",
+        "term": null
+    },
+    {
+        "name": "FREN 323 Le Paris des contrastes",
+        "description": "Paris, ville d'amour et d'exclusion sociale. Students will analyze manifestations of social integration and exclusion, through representations of the city of Paris in French literary texts (short stories, novel and poetry), films, songs, photographs, and architecture.",
+        "term": null
+    },
+    {
+        "name": "FREN 327 Intro to Existentialism",
+        "description": "Students will analyze existentialist thought and become more acquainted with famous names associated with the area of Saint-Germain-des-Pres, such as Jean-Paul Sartre, Simone de Beauvoir, Albert Camus, Juliette Greco, etc. Existentialism will be approached as a cultural and humanistic movement, a way of life and rebirth in post-war Paris. Taught in French.",
+        "term": null,
+        "prerequisites": {
+            "course": "FREN 300 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "FREN 331 Contemporary French Cinema",
+        "description": "A study of French cinema as it has evolved in the last two decades. The films viewed will be used as a means to encourage reflection on the history, ideas and values that have gone into the making of modern France. The course is offered in English and French in separate sections. For students who take the English section of the course through the INST cross-listing, there is no French prerequisite. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "FREN 340 La France d'aujourd'hui",
+        "description": "A culture course that explores the political, social, economic, administrative, and cultural reality of contemporary France. Taught in French.",
+        "term": null
+    },
+    {
+        "name": "FREN 350 French Civilization & Culture",
+        "description": "The political, social, intellectual, and artistic development of French culture from the beginning to the present. Available only through sponsored study abroad programs.",
+        "term": null
+    },
+    {
+        "name": "FREN 365 French Politics",
+        "description": "A study of the French political system, its parties, elections, and how the system works in the new European order. Available only through sponsored study abroad programs.",
+        "term": null
+    },
+    {
+        "name": "FREN 380 Special Topics",
+        "description": "Selected topics in French language, literature or civilization.",
+        "term": null
+    },
+    {
+        "name": "FREN 390 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "FREN 415 Business French",
+        "description": "Offered Abroad.",
+        "term": null
+    },
+    {
+        "name": "FREN 491 Directed Reading",
+        "description": "Selected readings by arrangement.",
+        "term": null
+    },
+    {
+        "name": "FREN 495 Senior Seminar",
+        "description": "The major French writers by genre. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "FREN 323 Minimum Grade: D"
+                },
+                {
+                    "course": "FREN 327 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "FREN 497 Internship",
+        "description": "Professional experience in a supervised organizational setting allowing for the applied use of skills in French language and/or knowledge of Francophone cultures. An internship plan (description, objectives, learning outcomes) is devised with a  French program faculty member before the internship begins.",
+        "term": null
+    },
+    {
+        "name": "FREN 499 French Comprehensive",
+        "description": "Required of all French majors in their fourth year.",
+        "term": null
+    },
+    {
+        "name": "GERM 101 Elementary German I",
+        "description": "This course is designed to introduce students to basic German language skills and give them an insight into the many aspects of German-speaking countries and their culture. This course provides extensive practice with writing, reading, speaking, and listening proficiency at the novice level according to the ACTFL guidelines.",
+        "term": null
+    },
+    {
+        "name": "GERM 102 Elementary German II",
+        "description": "This course is designed to further introduce students to basic German language skills and give them an insight into the many aspects of German-speaking countries and their culture. Students will be able to apply creative as well as analytic thinking skills by exploring a foreign language and its cultural idiosyncrasies. This course provides extensive practice with writing, reading, speaking, and listening proficiency at the novice level according to the ACTFL guidelines. Prerequisite: German 101 or equivalent.",
+        "term": null
+    },
+    {
+        "name": "GERM 103 Intensive Introductory German",
+        "description": "This accelerated language course is designed to introduce students with previous German or other foreign language experience to basic German language skills and give them an insight into the many aspects of German speaking countries and their culture.",
+        "term": null
+    },
+    {
+        "name": "GERM 201 Intermediate German I",
+        "description": "German 201 is designed to further strengthen and expand basic language skills in German. This course provides extensive practice with writing, reading, speaking, and listening proficiency at the intermediate low level according to the ACTFL guidelines, in addition to developing students’ intercultural competencies. Prerequisite: German 102 or equivalent.",
+        "term": null
+    },
+    {
+        "name": "GERM 202 Intermediate German II",
+        "description": "German 202 is designed to further strengthen and expand students' language skills in German. This course provides extensive practice with writing, reading, speaking, and listening proficiency at the intermediate level according to the ACTFL guidelines, in addition to developing students’ intercultural competencies. Prerequisite: German 201 or equivalent.",
+        "term": null
+    },
+    {
+        "name": "GERM 290 Directed Study",
+        "description": "Topics to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "GERM 301 Advanced German",
+        "description": "This course is designed for students at the advanced level according to ACTFL guidelines and provides intensive practice in written and spoken German through the discussion and analysis of short stories and literary texts in their social, cultural, and historical context. Additionally, students work on reviewing and practicing grammatical structures and new vocabulary in hands-on exercises. This course also focuses on 1) the inclusion of supporting documentation and references to support conclusions, 2) editing, 3) grammatical points, 4) introduction to MLA style guidelines and 5) interpreting complex reading passages.\nPrerequisite: German 202 or equivalent.",
+        "term": null
+    },
+    {
+        "name": "GERM 305 German Conversation",
+        "description": "Modern texts are the basis for structured conversations within a correct grammatical framework.",
+        "term": null,
+        "prerequisites": {
+            "course": "GERM 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "GERM 306 German Youth Literature",
+        "description": "This course focuses on popular texts written for children and young adults. Advanced grammar will be part of the course.",
+        "term": null,
+        "prerequisites": {
+            "course": "GERM 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "GERM 307 Contemporary Issues",
+        "description": "Reading and discussion of current social, political, economic and environmental issues of German speaking countries as represented by their media.",
+        "term": null,
+        "prerequisites": {
+            "course": "GERM 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "GERM 308 German Conversation 2",
+        "description": "This course provides an intensive practice in spoken German through guided conversation and discussion of contemporary topics for students at an intermediate/advanced level. Students additionally review advanced grammatical structures and new vocabulary in hands on exercises. This course is offered every other summer during the Gonzaga-in-Graz study abroad program.",
+        "term": null,
+        "prerequisites": {
+            "course": "GERM 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "GERM 320 Austrian Culture (German)",
+        "description": "This course introduces students at an intermediate/advanced level to the fundamentals of Austrian culture. This course further provides an intensive practice in spoken and written German through guided conversation and discussion of contemporary topics relevant to Austria. This course has a global studies designation. This course is offered during the Gonzaga-in-Graz study abroad summer program.",
+        "term": null,
+        "prerequisites": {
+            "course": "GERM 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "GERM 322 Austrian Culture (English)",
+        "description": "This course introduces students to the fundamentals of Austrian culture and contemporary topics relevant to Austria. This course has a global studies designation. This course is offered as needed.",
+        "term": null
+    },
+    {
+        "name": "GERM 328 20th-Century Short Prose",
+        "description": "",
+        "term": null,
+        "prerequisites": {
+            "course": "GERM 301 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "GERM 330 Literary Genres",
+        "description": "A study of examples of the major literary forms (prose, drama, and poetry) in their historical context.",
+        "term": null,
+        "prerequisites": {
+            "course": "GERM 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "GERM 331 German Cinema (German)",
+        "description": "This course looks at contemporary films from German-speaking countries to explore historical, social, and cultural issues as well as questions of national identity. Students learn about the beginnings of German language movies and demonstrate an awareness of cinematographic features when analyzing different samples of German language films. This course is offered every other Spring semester. Taught in German.",
+        "term": "S",
+        "prerequisites": {
+            "course": "GERM 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "GERM 332 German Cinema (English)",
+        "description": "This course looks at contemporary films from German-speaking countries to explore historical, social, and cultural issues as well as questions of national identity. Students learn about the beginnings of German language movies and demonstrate an awareness of cinematographic features when analyzing different samples of German language films. This course is offered as needed. Taught in English.",
+        "term": null
+    },
+    {
+        "name": "GERM 380 Special Topics",
+        "description": "Topic to be determined by professor.",
+        "term": null,
+        "prerequisites": {
+            "course": "GERM 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "GERM 390 Directed Study",
+        "description": "Specific topic determined by professor.",
+        "term": null
+    },
+    {
+        "name": "GERM 480 Seminar",
+        "description": "Specific topic determined by professor.",
+        "term": null
+    },
+    {
+        "name": "GERM 497 Internship",
+        "description": "Professional experience in a supervised organizational setting allowing for the applied use of skills in German language and/or knowledge of German-speaking cultures. A maximum of three credits, with approval of the Department Chair, can be applied as upper division elective credits for the German minor.",
+        "term": null
+    },
+    {
+        "name": "ITAL 101 Elementary Italian I",
+        "description": "This course is designed to introduce students to elementary Italian language skills and give them an insight into the many aspects of Italy and its cultures. This course provides practice with writing, reading, speaking, and listening. Students are expected to achieve novice-mid level proficiency in these skills according to the ACTFL guidelines, in addition to developing intercultural knowledge and competencies. Students will be able to recall facts and basic concepts. This course is taught in Italian.",
+        "term": null
+    },
+    {
+        "name": "ITAL 101L Elementary Italian I Lab",
+        "description": "Taken only in conjunction with ITAL 101 when taken in Florence, Italy.",
+        "term": null
+    },
+    {
+        "name": "ITAL 102 Elementary Italian II",
+        "description": "This course is designed to further introduce students to elementary Italian language skills and give them an insight into the many aspects of Italy and its cultures. This course provides extensive practice with writing, reading, speaking, and listening. Students are expected to achieve novice-high level proficiency in these skills according to the ACTFL guidelines, in addition to developing intercultural knowledge and competencies. Students will be able to draw connections among ideas and engage the present, the past and the future tenses. This course is taught in Italian.",
+        "term": null
+    },
+    {
+        "name": "ITAL 102L Elementary Italian II Lab",
+        "description": "Taken only in conjunction with ITAL 102 when taken in Florence, Italy.",
+        "term": null
+    },
+    {
+        "name": "ITAL 105 Elementary Italian Convers I",
+        "description": "Students learn to use the language in a variety of everyday situations through focused practice in class and organized encounters with native speakers of Italian. Does not fulfill the College of Arts and Sciences Language requirement.",
+        "term": null
+    },
+    {
+        "name": "ITAL 106 Elementary Italian Convers II",
+        "description": "A continuation of ITAL 105. Vocabulary and grammar presented in Italian 102 are reinforced. Does not fulfill the College of Arts and Sciences Language requirement.",
+        "term": null
+    },
+    {
+        "name": "ITAL 190 Directed Study",
+        "description": "Topic to be determined by professor.",
+        "term": null
+    },
+    {
+        "name": "ITAL 201 Intermediate Italian I",
+        "description": "This course is designed to further strengthen and expand language skills in Italian. This course provides extensive practice with writing, reading, speaking, and listening. Students will develop intermediate-mid level proficiency in these skills according to the ACTFL guidelines, in addition to developing intercultural knowledge and competencies. Students will be able to draw connections among and evaluate ideas and to engage the past, the present and the future tenses in addition to the imperative and the conditional modes. This course is taught in Italian.",
+        "term": null
+    },
+    {
+        "name": "ITAL 202 Intermediate Italian II",
+        "description": "This course is designed to further strengthen and expand students' language skills in Italian. This course provides extensive practice with writing, reading, speaking, and listening. Students will develop intermediate-high level proficiency in these skills according to the ACTFL guidelines, in addition to developing intercultural knowledge and competencies. Students will be able to explore ideas by creative analytic thinking while engaging the past, the present and the future tenses in addition to the imperative, the conditional and the subjunctive modes. This course is taught in Italian.",
+        "term": null
+    },
+    {
+        "name": "ITAL 290 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "ITAL 301 Advanced Italian I",
+        "description": "Advanced review of grammatical structures through conversation, readings, compositions and oral comprehension. Course taught in Italian.",
+        "term": null
+    },
+    {
+        "name": "ITAL 302 Advanced Italian II",
+        "description": "Advanced review of grammatical structures through conversation, readings, presentations and oral comprehension. Can be taken alone or as a continuation of ITAL 301. Course taught in Italian.",
+        "term": null
+    },
+    {
+        "name": "ITAL 303 Survey of Italian Literature I",
+        "description": "An overview of Italian literature from the age of Dante through the Renaissance, including Petrarch, Boccaccio and Machiavelli. Course taught in Italian.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 304 Survey: Italian Literature II",
+        "description": "An overview of Italian literature from the Renaissance through contemporary times. Course taught in Italian.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 306 Advanced Conversation",
+        "description": "Advanced conversation for students returning from Florence. Course taught in Italian.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 307 Conv Approach to Contemp Issue",
+        "description": "A course designed for those who wish to continue to improve their conversational skills. Course taught in Italian.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 308 Italian through Film",
+        "description": "This course uses Italian films to help students improve language proficiency and deepen their understanding of Italian history and culture. Italian cinema closely reflects national culture and each film in the course is chosen for its focus on one or more aspects of Italian society. Preparation for viewing includes background reading, thematic discussions and vocabulary building exercises. Course taught in Italian. Offered in Florence only.",
+        "term": null
+    },
+    {
+        "name": "ITAL 313 The World of Dante",
+        "description": "In this course, students will engage with the history, philosophy, art, politics, and poetics of the Middle Ages through a close reading of Dante Alighieri's Commedia, Vita Nova, and other period texts. The course will also briefly consider the monumental cultural heritage that Dante's poem has and continues to produce. In class discussions, students will be expected to know, discuss, and offer interpretations of the text through their own reading and preparation based on notes provided by the instructor. Course will emphasize close reading of primarily poetic texts. This course is taught in English.",
+        "term": null
+    },
+    {
+        "name": "ITAL 314 Fascism in Film and Literature",
+        "description": "This class examines the way fascism is presented in selected novels and films. An important objective of the course is to study the impact of Fascism on segments of the Italian population which did not conform to fascist ideals. Taught in English.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 315 The Italian Cinema",
+        "description": "This course engages a selection of contemporary Italian films to conduct a systematic study of cinematic form, narration and expression. Students will familiarize with the terms and perspectives required to compose structured and argumentative analyses according to norms of academic writing.Taught in English.",
+        "term": null
+    },
+    {
+        "name": "ITAL 316 The Italian Short Story I",
+        "description": "In Italian. The development of the Italian short story from its origin through the Baroque. Included are stories from the Novellino, the Decameron, the Novelliere, and the Pentameron.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 317 Italian Short Story II",
+        "description": "The Italian short story through the works of the nineteenth and twentieth century authors. Taught in Italian.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 319 Mafia&PoliticViolence-Film/Lit",
+        "description": "Through a study of Italian film, novels and nonfiction, this course will examine the phenomenon of organized crime in Italian society. Taught in English.",
+        "term": null
+    },
+    {
+        "name": "ITAL 320 New Immigrants in Film &Lit",
+        "description": "This course will explore the impact of immigration from Third World countries on Italian society through the study of novels, nonfiction and film. Taught in Italian.",
+        "term": null
+    },
+    {
+        "name": "ITAL 322 The Italian Historical Novel",
+        "description": "This course will explore the development of the historical novel in Italy with emphasis on modern historical novels. Taught in English.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 330 Literary Genres",
+        "description": "A study of examples of the major literary genres (narrative, dramatic, and poetic). Taught in Italian.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 350 Italian Civilization & Culture",
+        "description": "Readings and discussion of various aspects of Italian life such as art, cinema, politics, literature, history, fashions, etc. Taught in Italian.",
+        "term": null
+    },
+    {
+        "name": "ITAL 363 The Roman Republic",
+        "description": "The political, social and cultural history of Republican Rome from its legendary origins to the Battle of Actium and its de facto end in 31 BC. The course will focus closely on the factors leading to the Republic’s successful rise as uncontested Mediterranean ruler as well as the internal political and social conflicts that brought the Republic crashing down to its ultimate fall. Taught in English.",
+        "term": null
+    },
+    {
+        "name": "ITAL 364 The Roman Empire",
+        "description": "The political, social and cultural history of Rome during the age of the Emperors, from Augustus' creation of the principate in 27 B.C. to the decline of the Roman Empire in the west by the 5th century AD. Special focus in this course will be given to the workings of the Imperial system, daily life in Rome and the provinces, the rise of Christianity, and the ultimate transformation of the empire. Taught in English.",
+        "term": null
+    },
+    {
+        "name": "ITAL 366 Medieval Europe",
+        "description": "Developments in the first flowering of Western European civilization, circa A.D. 500-1350, including feudalism, the rise of representative assemblies, the commercial revolution and the papal monarchy. Taught in English. Gonzaga in Florence only.",
+        "term": null
+    },
+    {
+        "name": "ITAL 367 Renaissance Europe",
+        "description": "The history of Western Europe circa 1350-1550, examining the political, religious, social, and economic context for the cultural achievements of the humanists, artists, dramatists, scientists, architects, and educators of the age of Joan of Arc, Michelangelo, the Tudors and the Medici. Taught in English.",
+        "term": null
+    },
+    {
+        "name": "ITAL 380 Special Topics",
+        "description": "Selected topics in Italian language, literature, or civilization.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 390 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "ITAL 391 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "ITAL 440 Women in Italian Literature",
+        "description": "This course examines the contribution of women novelists to Italian literature through the discussion of contemporary novels by women. Taught in English.",
+        "term": null
+    },
+    {
+        "name": "ITAL 497 Internship",
+        "description": "The internship provides students with the opportunity to apply knowledge and skills gained in the Italian classroom with a supervised organizational setting directly related to the student's major area of study. An internship plan (description, objectives, learning outcomes) is devised with an Italian faculty member, and approved by the Director of Italian Studies, before the internship begins.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "ITAL 301 Minimum Grade: B"
+                },
+                {
+                    "course": "ITAL 302 Minimum Grade: B"
+                }
+            ]
+        }
+    },
+    {
+        "name": "ITAL 498 Senior Project",
+        "description": "Required of all Italian Studies majors. Permission from the Director of Italian Studies only.",
+        "term": null
+    },
+    {
+        "name": "JPNE 100 Japanese for Travelers",
+        "description": "Acquisition of useful vocabulary, phrases, sentence patterns for getting around in Japan. The students will acquire cultural understanding for better communication with Japanese speakers. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "JPNE 101 Elementary Japanese I",
+        "description": "Grammar, composition, conversation, and discussion of cultural topics. Mastery of hiragana, katakana, and approximately 50 kanji (Chinese characters). Fall.",
+        "term": "F"
+    },
+    {
+        "name": "JPNE 102 Elementary Japanese II",
+        "description": "A continuation of JPNE 101. 150 kanji in addition to those introduced in JPNE 101. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "JPNE 190 Directed Study",
+        "description": "Topic to be determined by professor. Department Chair approval required.",
+        "term": null
+    },
+    {
+        "name": "JPNE 201 Intermediate Japanese I",
+        "description": "Intensive oral work to develop fluency in the language; written composition and reading at the intermediate level. 200 kanji in addition to those introduced in JPNE 102. Offered in the Fall when there is sufficient interest.",
+        "term": "F"
+    },
+    {
+        "name": "JPNE 202 Intermediate Japanese II",
+        "description": "A continuation of JPNE 201. 200 kanji in addition to those introduced in JPNE 201. Offered in the Spring when there is sufficient interest.",
+        "term": "S"
+    },
+    {
+        "name": "JPNE 290 Japanese Tutoring",
+        "description": "This course is designed to train Japanese language tutors to assist Japanese language learners. The course focus is on practical experience. Tutors will meet regularly with their pupils.",
+        "term": null
+    },
+    {
+        "name": "JPNE 291 Directed Study",
+        "description": "Topic to be determined by professor. Department Chair approval required.",
+        "term": null
+    },
+    {
+        "name": "JPNE 301 Advanced Japanese I",
+        "description": "Intensive oral work to develop fluency in the language; written composition and reading at the advanced level. 200 kanji in addition to those introduced in JPNE 202. Offered occasionally when there is sufficient interest.",
+        "term": null
+    },
+    {
+        "name": "JPNE 302 Advanced Japanese II",
+        "description": "A continuation of JPNE 301. 200 kanji in addition to those introduced in JPNE 301. Offered occasionally when there is sufficient interest.",
+        "term": null,
+        "prerequisites": {
+            "course": "JPNE 301 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JPNE 350 Japanese Culture I",
+        "description": "This course is designed to introduce students to fundamental Japanese culture. Some of the areas covered by this course will be human relations at work and in school, etiquette, customs, traditions and social issues. Taught in English.",
+        "term": null
+    },
+    {
+        "name": "JPNE 351 Japanese Culture II",
+        "description": "This course focuses on Japanese values, attitudes and behaviors. The students will learn strategies for communication with Japanese people. Taught in English. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "JPNE 380 Special Topics",
+        "description": "Selected topics in Japanese language, literature or civilization. Department Chair approval required.",
+        "term": null,
+        "prerequisites": {
+            "course": "JPNE 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JPNE 390 Directed Study",
+        "description": "Topic to be determined by professor. Department Chair approval required.",
+        "term": null
+    },
+    {
+        "name": "JPNE 401 Literature and Culture",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "JPNE 491 Directed Study",
+        "description": "Selected readings by arrangement. Department Chair approval required.",
+        "term": null
+    },
+    {
+        "name": "JPNE 497 Internship",
+        "description": "Professional experience in a supervised organizational setting allowing for the applied use of skills in Japanese language and/or knowledge of Japanese-speaking cultures. A maximum of three credits with approval of the Department Chair, can be applied as upper division credits.",
+        "term": null
+    },
+    {
+        "name": "MDLA 190 Elementary Language",
+        "description": "Elementary language learning.",
+        "term": null
+    },
+    {
+        "name": "MDLA 193 FYS:",
+        "description": "The First-Year Seminar (FYS) introduces new Gonzaga students to the University, the Core Curriculum, and Gonzaga’s Jesuit mission and heritage. While the seminars will be taught by professors with expertise in particular disciplines, topics will be addressed in a way that illustrates approaches and methods of different academic disciplines. The seminar format of the course highlights the participatory character of university life, emphasizing that learning is an active, collegial process.",
+        "term": null
+    },
+    {
+        "name": "MDLA 290 Intermediate Language",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "MDLA 380 Special Topics",
+        "description": "Topic to be determined by the instructor.",
+        "term": null
+    },
+    {
+        "name": "MDLA 390 Advanced Language",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "MDLA 432 CIS:",
+        "description": "Topic to be determined by department.",
+        "term": null
+    },
+    {
+        "name": "SPAN 101 Elementary Spanish I",
+        "description": "This course is designed to introduce students to elementary Spanish language skills and give them an insight into the many aspects of Spanish-speaking countries and their cultures. This course provides practice with writing, reading, speaking, and listening. Students are expected to achieve novice-mid level proficiency in these skills according to the ACTFL guidelines, in addition to developing intercultural knowledge and competencies. Students will be able to recall facts and basic concepts.  This course is taught in Spanish. Summer.",
+        "term": null
+    },
+    {
+        "name": "SPAN 102 Elementary Spanish II",
+        "description": "This course is designed to further introduce students to elementary Spanish language skills and give them an insight into the many aspects of Spanish-speaking countries and their cultures. This course provides extensive practice with writing, reading, speaking, and listening. Students are expected to achieve novice-high level proficiency in these skills according to the ACTFL guidelines, in addition to developing intercultural knowledge and competencies.  Students will be able to draw connections among ideas. This course is taught in Spanish. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "SPAN 180 Special Topics Beg Level",
+        "description": "Topic to be determined by professor.",
+        "term": null
+    },
+    {
+        "name": "SPAN 185 Special Topics Abroad Beg Levl",
+        "description": "Topic to be determined by professor.",
+        "term": null
+    },
+    {
+        "name": "SPAN 190 Directed Study",
+        "description": "Topic to be determined by professor.",
+        "term": null
+    },
+    {
+        "name": "SPAN 201 Intermediate Spanish I",
+        "description": "This course is designed to further strengthen and expand language skills in Spanish. This course provides extensive practice with writing, reading, speaking, and listening. Students will develop intermediate-mid level proficiency in these skills according to the ACTFL guidelines, in addition to developing intercultural knowledge and competencies. Students will be able to draw connections among ideas and evaluate ideas.  This course is taught in Spanish. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "SPAN 202 Intermediate Spanish II",
+        "description": "This course is designed to further strengthen and expand students' language skills in Spanish. This course provides extensive practice with writing, reading, speaking, and listening. Students will develop intermediate-high level proficiency in these skills according to the ACTFL guidelines, in addition to developing intercultural knowledge and competencies. Students will be able to apply creative as well as analytic thinking skills while exploring ideas. This course is taught in Spanish. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "SPAN 206 Spanish Conversation",
+        "description": "Development of oral expression in Spanish within a correct grammatical framework.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 102 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "SPAN 280 Special Topic Intermediate Lvl",
+        "description": "By arrangement only.   Topic selected by student-professor consultation.",
+        "term": null
+    },
+    {
+        "name": "SPAN 281 Special Topics",
+        "description": "Topic selected by professor.",
+        "term": null
+    },
+    {
+        "name": "SPAN 285 Special Topic Abroad Intrm Lvl",
+        "description": "Topic determined by professor.",
+        "term": null
+    },
+    {
+        "name": "SPAN 290 Spanish Grammar Review",
+        "description": "Review of Spanish grammar.",
+        "term": null
+    },
+    {
+        "name": "SPAN 291 Directed Study",
+        "description": "Topic to be determined by professor.",
+        "term": null
+    },
+    {
+        "name": "SPAN 301 Advanced Spanish I",
+        "description": "Advanced grammar. A review of specific grammatical constructions fundamental to effective oral and written communication and proficiency in listening and reading skills through the lens of culture. This course focuses specifically on description, narration, and exposition.",
+        "term": null
+    },
+    {
+        "name": "SPAN 306 Advanced Conversation",
+        "description": "Designed for those who wish to continue improving their listening and speaking skills.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 301 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 309 Adv Spanish Grammar Review",
+        "description": "Exploration of and practice with complex grammatical structures in Spanish. This course is designed to consolidate the command of Spanish grammar and vocabulary through oral practice and classroom activities as well as through compositions and written exercises.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 302 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "SPAN 317 Translation: Principles & Prac",
+        "description": "This course is designed to be an introduction to the history, theory, and practice of translation principally from Spanish to English but also from English to Spanish. The student will learn the fundamentals of translating literary works, letters, legal documents, newspapers, commercial advertisements, and other materials.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 301 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 318 Med Span & Cultural Competncy",
+        "description": "This course is designed for students planning to work in the health care field and who want to acquire more cultural and linguistic skills in medical Spanish. Students will develop new critical perspectives on health care for Hispanics in the US. Specifically, students will develop medical language skills and cultural competency for health care situations.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 301 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 319 Special Topic Language Adv Lvl",
+        "description": "Topic to be determined by professor.",
+        "term": null
+    },
+    {
+        "name": "SPAN 320 Advanced Spanish II",
+        "description": "Advanced grammar, continuation of SPAN 301. A review of specific grammatical constructions fundamental to effective oral and written communication and proficiency in listening and reading skills through the lens of culture. This course focuses specifically on critical thinking, argumentation and analysis.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 301 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 321 Span Medieval-Golden Age Lit",
+        "description": "This survey course is designed to give students a broad understanding of Spanish literature from its origins to the XVIII century. Students will study some key authors, philosophical and literary movements, historical and other elements that have shaped Spanish literary development. Students will also practice presentational and interpersonal oral skills and writing skills, in Spanish, while improving skills in literary analysis.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 322 Spanish Lit (18th C-21st C)",
+        "description": "This course presents a panoramic view of the history of modern Spanish literature (from 18th C to the present) in their historical and cultural context through the study in detail of some of the most significant literary works ( essay, drama, novel, short story, poetry) of the period.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 323 Lat Am Pre-Hisp 19th Ct Lit",
+        "description": "This course offers an introduction to the literature of the Spanish-speaking Americas. The texts students will read range from pre-Hispanic times until the end of the nineteenth century. During the semester, students will explore the various voices that arise from the Americas and how they present themselves in different genres such as: diary, chronicle, letter, essay, poetry, short story, and novel.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 324 Latin Amer 19th-21st Cen Lit",
+        "description": "This course is designed to introduce students to the major trends and authors of Latin America during the contemporary period, starting at the end of the 19th Century and concluding with present-day works.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 325 Intro to Poetry in Spanish",
+        "description": "This course introduces students to the analytical tools of poetry analysis and provides a general survey of Spanish language poetry from its origins to the 21st century, covering poets from Spain and Latin America. Due to the scope of the material covered in this course, mostly canonical authors will be studied as a means to approach the philosophical and literary movements, historical and other cultural elements, that have shaped Spanish language literary development.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "SPAN 320 Minimum Grade: C"
+                },
+                {
+                    "course": "SPAN 302 Minimum Grade: C"
+                }
+            ]
+        }
+    },
+    {
+        "name": "SPAN 328 Survey of Women's Literature",
+        "description": "Studies and analyzes a range of texts, including narrative fiction, poetry, drama, and/or essays written in Spanish by women writers. Texts may come from Spain and/or Latin America. Emphasis placed on literature from the 20th and 21st centuries.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 332 Representing the Rainforest",
+        "description": "This course examines how the jungle/rainforest (\"selva\") space is defined in Latin America and how it is represented in literature, film, and photography. The course does not focus on the Brazilian Amazon, but instead examines the representation of Spanish-American jungle spaces, including those found in Argentina, Colombia, Peru, Ecuador, and the Central American isthmus, from the Encounter until present day.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 333 Veins of Gold",
+        "description": "This course, studies the way in which Spanish America's natural resources have been imagined, described, and narrated textually throughout the history of Spanish America. Through a survey of literary and visual texts, we explore the history of extractivism, environmentalism, and economic engagement in Spanish America. Short stories, poetry, and film are analyzed from within the framework of Latin American critical responses to this history.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 334 Lorca's Body and Contemp.Spain",
+        "description": "This course is an exploration of the literary corpus of Spanish author Federico García Lorca (1898-1936), as well as a reflection about his legacy and importance in symbolic terms (as a myth or a body of myths) to understand Spanish history and culture. The class, an attempt to find and explore Lorca’s body, will center on how Lorca’s life and works articulate the quintessential conflict between tradition and modernity in Spain in national, gender, sexual, and ethnic terms; as well as on the importance of Lorca’s legacy and mythical status for an understanding of the convoluted history of 20th century Spain, including the recent Law of Historical Memory that has led to several unsuccessful searches for his remains (for his body). The class will focus on a broad selection of written and visual/audio documents by Lorca or about him.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 340 Spanish Civilization & Culture",
+        "description": "This course provides a general introduction to the history and culture( s) of Spain through an analysis of its social, political, and cultural characteristics from ancient times to the present. Special attention will be paid to Spain's art, music, architecture, social customs, and values.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 341 Latin-American Civ & Cultures",
+        "description": "This course offers an introduction to the cultures of the Spanish-speaking Americas from the precolonial period until present day. During the semester, students will explore various texts (written and visual) in order to examine the various manifestations of Latin American cultures.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 342 Mexican Civilization & Culture",
+        "description": "This course provides a general introduction to Mexican culture and civilization from the pre-colonial period to the present day. Special attention will be paid to Mexico's history, art, music, social customs, and values.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 351 Latin American Cinema",
+        "description": "This course will focus on a series of representative Latin American films in order to explore issues of national formation and cultural identity. Emphasis will be given to the social, political, and economic factors which affect the production and reception of these films.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 352 Spanish Cinema",
+        "description": "This course provides an introduction to the history of Spanish cinema through the study of representative films of different historical periods (Francoist and/ or democratic period). Particular attention will be given to the historical, social, and cultural context of the production and reception of those movies, as well as to questions of authorship/genre, gender/sexuality, and national/cultural identity.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 360 Intro to Spanish Linguistics",
+        "description": "This course provides an introduction to Spanish linguistics and establishes the basis for the application of linguistic principles. The content included is an overview of linguistic rules with a focus on Spanish. The course begins with an introduction to the description and organization of data dealing with phonology (how sound patterns form words). Building on this, the discussion continues with topics in morphology (word formation and verbal inflection) and the description and organization of data dealing with syntax (how words combine to form phrases and sentences). Finally, the course ends by analyzing the regional variations of Spanish ( dialectology) where the students apply the first three concepts (phonology, morphology and syntax) to contrast and compare the regional categories of Spanish use world-wide including the following six modalities: Peninsular (Northern/Southern Spain), Atlantic (Canary Islands/Latin America), USA, Equatorial Guinea, Judeo-Spanish and Creoles.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 361 History of Spanish Language",
+        "description": "This course traces the development of the Spanish language from Latin to the present focusing upon the cultural, literary and historical factors that have contributed to its evolution from Latin to early Romance, and then to the Modern language. The course is divided into four parts: the lexical expansion Vulgar Latin to Classical Latin to modern Spanish elements; the development of the phonological system; the development of the written language from Alfonso El Sabio and Berceo to La Celestina, Valdes, Nebrija, and the language of the Golden Age; and, the overseas expansion of Spanish and Judeo-Spanish.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 362 Spanish Phonology & Phonetics",
+        "description": "This course examines the relationship between orthography (the way we spell Spanish) and the way it is pronounced. It also focuses on common orthographic errors, including spelling, accentuation and syllabification. In addition, it closely examines the sounds of Spanish (the phonetics) and the rules that govern the distribution of these sounds in the language (the phonology) and examines how these sounds vary across dialects and the linguistic and extralinguistic factors that contribute to this variation.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 380 Special Topics Advanced Level",
+        "description": "Topics in Spanish literature to be determined by professor.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 385 Special Topics Abroad Adv Lvl",
+        "description": "Topic to be determined by professor.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 390 Directed Study",
+        "description": "Topic to be decided by professor.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 400 Spanish in the US",
+        "description": "This course familiarizes students with issues about language use in social contexts. Students will discuss results of research on the relationship between language and society in several Spanish-speaking communities, examine different types of linguistic and social variation, and learn methods to study such variation in monolingual and bilingual communities. Based on the readings, discussions and practice, students will have the opportunity to explore, discover and investigate the social nature of language.",
+        "term": null
+    },
+    {
+        "name": "SPAN 401 Second Language Acquisition",
+        "description": "This course is an introduction to the field of second language acquisition with an emphasis on speaking. The course format will include readings, discussions, and student presentations. It will examine speaking in a second language from several perspectives: theory, evaluation/testing, pedagogy, and materials.",
+        "term": null
+    },
+    {
+        "name": "SPAN 403 Spanish Theater",
+        "description": "Spanish theater from its origins to the present.  Emphasis on the significance of the Golden Age of theater to the evolution of this genre.",
+        "term": null
+    },
+    {
+        "name": "SPAN 404 Spanish-American Theater",
+        "description": "Spanish American theatre from the pre-Hispanic period to the present. Emphasis placed on the contemporary period and the theater that evolved subsequent to the Modernist period.",
+        "term": null
+    },
+    {
+        "name": "SPAN 405 Narrative Fiction in Spain",
+        "description": "Analysis of the historical evolution of the novel and short story and their literary antecedents in Spain, from origins to the present.",
+        "term": null
+    },
+    {
+        "name": "SPAN 406 Narrative Fiction in Span Amer",
+        "description": "The novel and short story in Spanish America during the twentieth century.",
+        "term": null
+    },
+    {
+        "name": "SPAN 407 Peninsular Contemp Short Story",
+        "description": "This course focuses on Spanish short stories written in Spain or by Spaniards living in exile from the 1940s to the present. The course gives a panoramic vision of Spain’s recent history through a selection of short stories and also through the history of this genre in Spain, with a strong emphasis on women writers. We will take into consideration the main authors and movements of recent  decades and analyze both the mechanisms that shape the genre, and its representations, especially in terms of gender discontinuities. The students will be exposed not only to short stories, but also to articles, films, interviews, and reflections and meditations by the writers themselves.",
+        "term": null
+    },
+    {
+        "name": "SPAN 417 The Movies of Pedro Almodovar",
+        "description": "In this class, the film career of Pedro Almodovar (1949-), the most important Spanish filmmaker in recent decades, will be analyzed taking into account both the recent history of Spain and the history of the Spanish movie industry in the last 30 years. We will discuss several of his feature films and short films, as well as some of his writing. The topics of discussion will mainly focus on questions of identity in his movies, the relationship between his films and the cultural-political market of the democracy in Spain (the \"Movida\"), and the evolution of his movies in terms of cinematography, genre (from comedy to melodrama and lately, film noir), and gender representation. Film titles vary from semester to semester; however, could include films such as: Labyrinth of Passions (1982), Dark Habits (1983), What Have I Done to Deserve This?! (1984), Matador (1986), The Law of Desire (1987), Women on the Verge of a Nervous Breakdown (1988), High Heels (1991), All About my Mother (1999), Talk to Her (2002), Volver (2006), Broken Embraces (2009). This class will be conducted in Spanish.",
+        "term": null
+    },
+    {
+        "name": "SPAN 418 Spanish American Short Story",
+        "description": "This course will study the evolution of Spanish American short story from its appearance in the nineteenth century until today. Students will examine the manner in which this literary genre responded to the particular set of social, political, and economic considerations which shaped its production and reception. Students will read not only the texts themselves, but will also study critical theory surrounding the development of short story in Spanish America, and the regional responses which emerged.",
+        "term": null
+    },
+    {
+        "name": "SPAN 429 Latin American History",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "SPAN 442 Contemp Latin Amer Women Lit",
+        "description": "Studies and analyzes narrative fiction, poetry, drama, and/or essays written by or about Latin American women writers. Emphasis placed on literature from the 20th and 21st centuries.",
+        "term": null
+    },
+    {
+        "name": "SPAN 470 Special Topics Study Abroad",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "SPAN 471 The Hispanic Community in U.S.",
+        "description": "Social outreach course: readings on and volunteer work with Hispanic community.",
+        "term": null
+    },
+    {
+        "name": "SPAN 480 Seminar",
+        "description": "Specific topics to be chosen by professor.",
+        "term": null
+    },
+    {
+        "name": "SPAN 481 Seminar",
+        "description": "Specific topics to be chosen by professor.",
+        "term": null
+    },
+    {
+        "name": "SPAN 490 Directed Study",
+        "description": "Readings and reports on selected topics.  By arrangement.",
+        "term": null
+    },
+    {
+        "name": "SPAN 491 Directed Reading",
+        "description": "Readings and reports on selected topics.  By arrangement.",
+        "term": null
+    },
+    {
+        "name": "SPAN 497 Spanish Language Internship",
+        "description": "Professional experience in a setting related to Hispanic communities and in which Spanish is often used. SPAN 497 does not count toward upper-division major/minor requirements. Student is responsible to find an appropriate internship and to present a plan (description, objectives, proposed assessment) to a Spanish professor for approval and supervision.",
+        "term": null
+    },
+    {
+        "name": "SPAN 499 Senior Capstone",
+        "description": "In this course students will demonstrate the knowledge they have learned via a portfolio that includes a language proficiency exam, a Spanish narrative that critically reflects upon the content acquired in the courses students completed toward the major, a reflective essay in\nEnglish to measure the student learning outcome of intercultural competency, and an oral presentation. The Spanish narrative is designed to integrate and synthesize students' experiences in literature, culture, film and linguistics. The final grade will be (Satisfactory/Non- Satisfactory).",
+        "term": null
+    }
+]

@@ -1,0 +1,134 @@
+[
+    {
+        "name": "GERM 101 Elementary German I",
+        "description": "This course is designed to introduce students to basic German language skills and give them an insight into the many aspects of German-speaking countries and their culture. This course provides extensive practice with writing, reading, speaking, and listening proficiency at the novice level according to the ACTFL guidelines.",
+        "term": null
+    },
+    {
+        "name": "GERM 102 Elementary German II",
+        "description": "This course is designed to further introduce students to basic German language skills and give them an insight into the many aspects of German-speaking countries and their culture. Students will be able to apply creative as well as analytic thinking skills by exploring a foreign language and its cultural idiosyncrasies. This course provides extensive practice with writing, reading, speaking, and listening proficiency at the novice level according to the ACTFL guidelines. Prerequisite: German 101 or equivalent.",
+        "term": null
+    },
+    {
+        "name": "GERM 103 Intensive Introductory German",
+        "description": "This accelerated language course is designed to introduce students with previous German or other foreign language experience to basic German language skills and give them an insight into the many aspects of German speaking countries and their culture.",
+        "term": null
+    },
+    {
+        "name": "GERM 201 Intermediate German I",
+        "description": "German 201 is designed to further strengthen and expand basic language skills in German. This course provides extensive practice with writing, reading, speaking, and listening proficiency at the intermediate low level according to the ACTFL guidelines, in addition to developing students’ intercultural competencies. Prerequisite: German 102 or equivalent.",
+        "term": null
+    },
+    {
+        "name": "GERM 202 Intermediate German II",
+        "description": "German 202 is designed to further strengthen and expand students' language skills in German. This course provides extensive practice with writing, reading, speaking, and listening proficiency at the intermediate level according to the ACTFL guidelines, in addition to developing students’ intercultural competencies. Prerequisite: German 201 or equivalent.",
+        "term": null
+    },
+    {
+        "name": "GERM 290 Directed Study",
+        "description": "Topics to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "GERM 301 Advanced German",
+        "description": "This course is designed for students at the advanced level according to ACTFL guidelines and provides intensive practice in written and spoken German through the discussion and analysis of short stories and literary texts in their social, cultural, and historical context. Additionally, students work on reviewing and practicing grammatical structures and new vocabulary in hands-on exercises. This course also focuses on 1) the inclusion of supporting documentation and references to support conclusions, 2) editing, 3) grammatical points, 4) introduction to MLA style guidelines and 5) interpreting complex reading passages.\nPrerequisite: German 202 or equivalent.",
+        "term": null
+    },
+    {
+        "name": "GERM 305 German Conversation",
+        "description": "Modern texts are the basis for structured conversations within a correct grammatical framework.",
+        "term": null,
+        "prerequisites": {
+            "course": "GERM 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "GERM 306 German Youth Literature",
+        "description": "This course focuses on popular texts written for children and young adults. Advanced grammar will be part of the course.",
+        "term": null,
+        "prerequisites": {
+            "course": "GERM 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "GERM 307 Contemporary Issues",
+        "description": "Reading and discussion of current social, political, economic and environmental issues of German speaking countries as represented by their media.",
+        "term": null,
+        "prerequisites": {
+            "course": "GERM 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "GERM 308 German Conversation 2",
+        "description": "This course provides an intensive practice in spoken German through guided conversation and discussion of contemporary topics for students at an intermediate/advanced level. Students additionally review advanced grammatical structures and new vocabulary in hands on exercises. This course is offered every other summer during the Gonzaga-in-Graz study abroad program.",
+        "term": null,
+        "prerequisites": {
+            "course": "GERM 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "GERM 320 Austrian Culture (German)",
+        "description": "This course introduces students at an intermediate/advanced level to the fundamentals of Austrian culture. This course further provides an intensive practice in spoken and written German through guided conversation and discussion of contemporary topics relevant to Austria. This course has a global studies designation. This course is offered during the Gonzaga-in-Graz study abroad summer program.",
+        "term": null,
+        "prerequisites": {
+            "course": "GERM 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "GERM 322 Austrian Culture (English)",
+        "description": "This course introduces students to the fundamentals of Austrian culture and contemporary topics relevant to Austria. This course has a global studies designation. This course is offered as needed.",
+        "term": null
+    },
+    {
+        "name": "GERM 328 20th-Century Short Prose",
+        "description": "",
+        "term": null,
+        "prerequisites": {
+            "course": "GERM 301 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "GERM 330 Literary Genres",
+        "description": "A study of examples of the major literary forms (prose, drama, and poetry) in their historical context.",
+        "term": null,
+        "prerequisites": {
+            "course": "GERM 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "GERM 331 German Cinema (German)",
+        "description": "This course looks at contemporary films from German-speaking countries to explore historical, social, and cultural issues as well as questions of national identity. Students learn about the beginnings of German language movies and demonstrate an awareness of cinematographic features when analyzing different samples of German language films. This course is offered every other Spring semester. Taught in German.",
+        "term": "S",
+        "prerequisites": {
+            "course": "GERM 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "GERM 332 German Cinema (English)",
+        "description": "This course looks at contemporary films from German-speaking countries to explore historical, social, and cultural issues as well as questions of national identity. Students learn about the beginnings of German language movies and demonstrate an awareness of cinematographic features when analyzing different samples of German language films. This course is offered as needed. Taught in English.",
+        "term": null
+    },
+    {
+        "name": "GERM 380 Special Topics",
+        "description": "Topic to be determined by professor.",
+        "term": null,
+        "prerequisites": {
+            "course": "GERM 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "GERM 390 Directed Study",
+        "description": "Specific topic determined by professor.",
+        "term": null
+    },
+    {
+        "name": "GERM 480 Seminar",
+        "description": "Specific topic determined by professor.",
+        "term": null
+    },
+    {
+        "name": "GERM 497 Internship",
+        "description": "Professional experience in a supervised organizational setting allowing for the applied use of skills in German language and/or knowledge of German-speaking cultures. A maximum of three credits, with approval of the Department Chair, can be applied as upper division elective credits for the German minor.",
+        "term": null
+    }
+]

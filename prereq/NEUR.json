@@ -1,0 +1,50 @@
+[
+    {
+        "name": "NEUR 201 Introduction to Neuroscience",
+        "description": "This course provides a comprehensive introduction to the field of neuroscience, covering topics such as the structure and function of the nervous system, neural signaling and communication, sensory and motor systems, learning and memory, and neurological disorders. Students will also learn about research in neuroscience and the methods used to study the brain.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "type": "and",
+                            "requirements": [
+                                {
+                                    "course": "BIOL 105 Minimum Grade: D"
+                                },
+                                {
+                                    "course": "BIOL 105L Minimum Grade: D"
+                                }
+                            ]
+                        },
+                        {
+                            "course": "CHEM 101 Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "course": "CHEM 101L Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "NEUR 399 Scientific Communications",
+        "description": "This course focuses on developing effective scientific communication skills within the field of neuroscience. Through critical analysis of primary literature, class discussions, and presentations, students will learn to communicate scientific ideas clearly and effectively. Additionally, students will develop skills in scientific writing and learn to prepare research articles, grant proposals, and other scientific documents.",
+        "term": null,
+        "prerequisites": {
+            "course": "NEUR 201 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "NEUR 499 Neuroscience and Society",
+        "description": "In this senior capstone course, students will critically examine the intersection of neuroscience and society. Through readings, discussions, and presentations, students will explore how scientific advances in neuroscience impact and shape our understanding of everyday life. Students will integrate knowledge from their neuroscience major and liberal arts core to develop a comprehensive understanding of the societal implications of neuroscience research.",
+        "term": null,
+        "prerequisites": {
+            "course": "NEUR 201 Minimum Grade: D"
+        }
+    }
+]

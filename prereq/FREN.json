@@ -1,0 +1,149 @@
+[
+    {
+        "name": "FREN 101 Elementary French I",
+        "description": "Introduction to French for students with no previous study of the language. Students learn basic tasks such as introducing themselves and meeting others, giving personal information, describing their schedule. Practice in the four skills of speaking, listening, reading and writing. The focus is on language acquisition, with some exposure to aspects of French and Francophone cultures. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "FREN 102 Elementary French II",
+        "description": "For students who have completed French 101 or the equivalent. The goal of the course is to enable students to progress from novice to intermediate level proficiency in the four language skills of speaking, listening, reading and writing. Students learn to provide more information about themselves and to accomplish more daily tasks. The focus is on language acquisition, and students also are introduced to some basics of French and Francophone cultures. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "FREN 190 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "FREN 201 Intermediate French I",
+        "description": "For students who have completed French 102 or the equivalent. The goal of the course is to reinforce the fundamentals of grammar and syntax and to build proficiency in the four skills of speaking, listening, reading and writing. Students will be able to perform many communicative tasks by the end of the semester. A further goal of the course is to increase awareness of French and Francophone cultures. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "FREN 202 Intermediate French II",
+        "description": "For students who have completed French 201 or the equivalent. The goal of the course is to strengthen the skills of speaking, listening, reading and writing in order to enable students to perform a larger number of communicative tasks. Lessons are conducted entirely in French for better immersion in the language. Additional goals of the course are to increase awareness of French and Francophone cultures, and to initiate students into the reading and interpretation of more challenging texts (short pieces of literature). Spring.",
+        "term": "S"
+    },
+    {
+        "name": "FREN 280 Special Topics",
+        "description": "By arrangement.",
+        "term": null
+    },
+    {
+        "name": "FREN 290 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "FREN 300 Advanced Grammar Review",
+        "description": "An intensive one-semester grammar course with extensive oral practice. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "FREN 301 Advanced French I",
+        "description": "Short stories, plays, novels, or essays by modern authors, with grammar and conversation based on the texts studied. Practice in phonetics where needed. Available only through sponsored study abroad programs.",
+        "term": null
+    },
+    {
+        "name": "FREN 302 Advanced French II",
+        "description": "Continuation of FREN 301. A greater emphasis on composition and advanced style. Available only through sponsored study abroad programs.",
+        "term": null,
+        "prerequisites": {
+            "course": "FREN 301 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "FREN 303 Advanced Language Practice I",
+        "description": "Oral and written comprehension, oral and written expression, grammar, vocabulary. Basics of phonetics. Culture and civilization. Available only through sponsored study abroad programs.",
+        "term": null
+    },
+    {
+        "name": "FREN 304 Advanced Language Practice II",
+        "description": "A continuation of FREN 303. Available only through sponsored study abroad programs.",
+        "term": null
+    },
+    {
+        "name": "FREN 315 Advanced French Conversation",
+        "description": "Intensive practice in oral French. Study of vocabulary, grammar, and pronunciation through discussion of cultural topics.",
+        "term": null
+    },
+    {
+        "name": "FREN 323 Le Paris des contrastes",
+        "description": "Paris, ville d'amour et d'exclusion sociale. Students will analyze manifestations of social integration and exclusion, through representations of the city of Paris in French literary texts (short stories, novel and poetry), films, songs, photographs, and architecture.",
+        "term": null
+    },
+    {
+        "name": "FREN 327 Intro to Existentialism",
+        "description": "Students will analyze existentialist thought and become more acquainted with famous names associated with the area of Saint-Germain-des-Pres, such as Jean-Paul Sartre, Simone de Beauvoir, Albert Camus, Juliette Greco, etc. Existentialism will be approached as a cultural and humanistic movement, a way of life and rebirth in post-war Paris. Taught in French.",
+        "term": null,
+        "prerequisites": {
+            "course": "FREN 300 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "FREN 331 Contemporary French Cinema",
+        "description": "A study of French cinema as it has evolved in the last two decades. The films viewed will be used as a means to encourage reflection on the history, ideas and values that have gone into the making of modern France. The course is offered in English and French in separate sections. For students who take the English section of the course through the INST cross-listing, there is no French prerequisite. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "FREN 340 La France d'aujourd'hui",
+        "description": "A culture course that explores the political, social, economic, administrative, and cultural reality of contemporary France. Taught in French.",
+        "term": null
+    },
+    {
+        "name": "FREN 350 French Civilization & Culture",
+        "description": "The political, social, intellectual, and artistic development of French culture from the beginning to the present. Available only through sponsored study abroad programs.",
+        "term": null
+    },
+    {
+        "name": "FREN 365 French Politics",
+        "description": "A study of the French political system, its parties, elections, and how the system works in the new European order. Available only through sponsored study abroad programs.",
+        "term": null
+    },
+    {
+        "name": "FREN 380 Special Topics",
+        "description": "Selected topics in French language, literature or civilization.",
+        "term": null
+    },
+    {
+        "name": "FREN 390 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "FREN 415 Business French",
+        "description": "Offered Abroad.",
+        "term": null
+    },
+    {
+        "name": "FREN 491 Directed Reading",
+        "description": "Selected readings by arrangement.",
+        "term": null
+    },
+    {
+        "name": "FREN 495 Senior Seminar",
+        "description": "The major French writers by genre. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "FREN 323 Minimum Grade: D"
+                },
+                {
+                    "course": "FREN 327 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "FREN 497 Internship",
+        "description": "Professional experience in a supervised organizational setting allowing for the applied use of skills in French language and/or knowledge of Francophone cultures. An internship plan (description, objectives, learning outcomes) is devised with a  French program faculty member before the internship begins.",
+        "term": null
+    },
+    {
+        "name": "FREN 499 French Comprehensive",
+        "description": "Required of all French majors in their fourth year.",
+        "term": null
+    }
+]

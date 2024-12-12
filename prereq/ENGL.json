@@ -1,0 +1,522 @@
+[
+    {
+        "name": "ENGL 101 Writing",
+        "description": "This course helps students develop the foundational skills of critical reading, thinking, analysis, and writing. Students will learn a variety of approaches to writing, sharpen critical reading and information literacy skills, and produce formal and informal texts that ethically and persuasively appeal to a range of audiences for distinct purposes.",
+        "term": null
+    },
+    {
+        "name": "ENGL 102 Intro to Literature",
+        "description": "This course exposes students to a range of literary genres and assists students in developing and articulating ideas about texts in oral and written form.",
+        "term": null
+    },
+    {
+        "name": "ENGL 105 Themes in Literature",
+        "description": "This course introduces students to literary study through the exploration of a particular theme. This course exposes students to a range of literary genres and assists students in developing and articulating ideas about texts in oral and written form.",
+        "term": null
+    },
+    {
+        "name": "ENGL 106 Sp Top:Multicltrl & World Lit",
+        "description": "This course introduces students to literature through works produced by different minority groups in America and/or by cultures throughout the world. This course exposes students to a range of literary genres and assists students in developing and articulating ideas about texts in oral and written form.",
+        "term": null
+    },
+    {
+        "name": "ENGL 190 Directed Study",
+        "description": "Topic to be determined by faculty. Permission from Department Chair required.",
+        "term": null
+    },
+    {
+        "name": "ENGL 193 FYS:",
+        "description": "The First-Year Seminar (FYS) introduces new Gonzaga students to the University, the Core Curriculum, and Gonzaga’s Jesuit mission and heritage. While the seminars will be taught by faculty with expertise in particular disciplines, topics will be addressed in a way that illustrates approaches and methods of different academic disciplines. The seminar format of the course highlights the participatory character of university life, emphasizing that learning is an active, collegial process.",
+        "term": null
+    },
+    {
+        "name": "ENGL 200 Intermediate Composition",
+        "description": "Building upon skills developed in earlier courses that required writing, students will engage in a deliberate study of the art and craft of writing and give special emphasis to building a multi-genre portfolio of their original writing.",
+        "term": null
+    },
+    {
+        "name": "ENGL 201 Studies in Poetry",
+        "description": "The study of poetry, with emphasis on the major elements: imagery, tone, rhythm, etc.; practice in effective critical writing focused on explication and interpretation of poems.",
+        "term": null
+    },
+    {
+        "name": "ENGL 202 Studies in Fiction",
+        "description": "The study of fiction, with emphasis on the major elements of narrative form: plot, character, point of view, etc.; practice in effective critical writing focused on textual analysis and interpretation of short stories and novels.",
+        "term": null
+    },
+    {
+        "name": "ENGL 203 Studies in Drama",
+        "description": "The study of drama, with emphasis on major elements of dramatic form: action, audience, structure, character, etc.; practice in effective writing focused on close reading and interpretation of plays. Readings will include a variety of types and forms that reflect the traditions of the genre.",
+        "term": null
+    },
+    {
+        "name": "ENGL 205 Studies in Shakespeare",
+        "description": "An introductory survey of Shakespeare's histories, comedies, and tragedies as well as the sonnets; close textual analysis.",
+        "term": null
+    },
+    {
+        "name": "ENGL 206H Honors Literature II",
+        "description": "A capstone course for Honors students providing an in-depth study in a specific area of literary approaches. Examples include a specific genre, historical/literary period, theme, author, etc.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "ENGL 101 Minimum Grade: D"
+                },
+                {
+                    "course": "HONS 190 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "ENGL 207 Lit of Western Civilization I",
+        "description": "This course is a survey of Classical, Medieval and Renaissance literature of the Western tradition.",
+        "term": null
+    },
+    {
+        "name": "ENGL 208 Lit Western Civilization II",
+        "description": "This course is a survey of the Western tradition in literature since the Renaissance.",
+        "term": null
+    },
+    {
+        "name": "ENGL 210 British Literature Survey I",
+        "description": "This course is a survey of British literature through the 18th Century.",
+        "term": null
+    },
+    {
+        "name": "ENGL 220 British Literature Survey II",
+        "description": "This course is a survey of British literature since the 18th Century.",
+        "term": null
+    },
+    {
+        "name": "ENGL 230 Survey of American Literature",
+        "description": "This course examines a selection of representative American writers from the Colonial period to the present.",
+        "term": null
+    },
+    {
+        "name": "ENGL 240 Top: Multcultural Literature",
+        "description": "This course examines literature produced by different social, ethnic and racial groups within the United States.",
+        "term": null
+    },
+    {
+        "name": "ENGL 241 Indigenous Lit Alaska Hawai'i",
+        "description": "This course explores Native Hawai’ian and Alaska Native cultures through their literatures. We will contextualize nonfiction and literary texts alike in the complicated histories of the lands that are now the United States’ 49th and 50th states in terms of their Indigenous cultures and inhabitation, the annexation by the U.S., and the controversial moves into statehood in 1959. We will interrogate historical and contemporary realities and debates within and beyond Alaska and Hawai’i regarding sovereignty movements and U.S. imperialism, positioning these literatures in a trans-Indigenous global context. In this way we will work toward sophisticated understandings of important contributions to contemporary American literatures and the complexities of the contexts that influence literary production in Hawai’i, Alaska, and the world. All of the activities and assignments are designed to demonstrate the role of literature in transnational politics of representation and the importance of formal and informal literary and textual analysis in the development of global awareness and citizenship.",
+        "term": null
+    },
+    {
+        "name": "ENGL 260 Top:World Literature",
+        "description": "This course examines selected authors, themes and historical periods in world literature with emphasis on works outside the Western tradition.",
+        "term": null
+    },
+    {
+        "name": "ENGL 270 Film Form",
+        "description": "This course serves as an introduction to elements of film form and grammar, including narrative, mise-en-scene, cinematography, editing, sound, and acting.  Students taking this course will learn how to describe a film’s formal qualities and will use these descriptions to make analytical claims about film.",
+        "term": null
+    },
+    {
+        "name": "ENGL 271 Film History",
+        "description": "This course serves as an introduction to the history of film as a medium, ranging from its original to the current moment.  Students taking this course will learn how to situate a film in its historical and cultural contexts and will use these contexts to make analytical claims about film and history.",
+        "term": null
+    },
+    {
+        "name": "ENGL 285 Special Topics",
+        "description": "This course provides special offerings in English literature that may not fit under other 200-level course offering descriptions. Topics will be approved by the Department Chair.",
+        "term": null
+    },
+    {
+        "name": "ENGL 286 Special Topics in Form",
+        "description": "This course provides special offerings in English form that may not fit under other 200-level course offering descriptions. Topics will be approved by the Department Chair.",
+        "term": null
+    },
+    {
+        "name": "ENGL 287 Special Topics: Lit History",
+        "description": "This course provides special offerings in English history that may not fit under other 200-level course offering descriptions. Topics will be approved by the Department Chair.",
+        "term": null
+    },
+    {
+        "name": "ENGL 291 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "ENGL 300 Research & Writing for Majors",
+        "description": "Students will learn how to engage in academic discourse through research-informed writing.",
+        "term": null
+    },
+    {
+        "name": "ENGL 301 Poetry Writing",
+        "description": "The practice of poetry writing.",
+        "term": null
+    },
+    {
+        "name": "ENGL 302 Fiction Writing",
+        "description": "The practice of fiction writing.",
+        "term": null
+    },
+    {
+        "name": "ENGL 303 Creative Non-Fiction Writing",
+        "description": "The practice of writing creative non-fiction.",
+        "term": null
+    },
+    {
+        "name": "ENGL 304 Hwy & Byways Eng Cntry Poetry",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "ENGL 305 The Writing Traveler",
+        "description": "The practice of writing poetry, fiction, and essays in the context of foreign travel and residency.",
+        "term": null
+    },
+    {
+        "name": "ENGL 306 Special Topics in Writing",
+        "description": "A study of writing practices within a focused context. Possible examples include:  the intersection of visual media and written texts; ekphrastic writing; nature writing; and/or specific study of the relationship between writing and place.",
+        "term": null
+    },
+    {
+        "name": "ENGL 307 Typography and Book Design",
+        "description": "This course offers students an introduction to design for literary publishing. Students investigate ethical concerns related to presenting content; grow conversant with essentials of typography and print design; gain basic competency with industry-standard software; and produce content for both print and e-book formats. Major assignments will build on one another, and successful students will complete the course with a portfolio of print designs and a complete e-publication.",
+        "term": null
+    },
+    {
+        "name": "ENGL 308 The Art(s) of Editing",
+        "description": "We all know that good writers benefit from good editors, but we don't necessarily understand what editors do. This course offers a practicum for students who may want to go into an editorial field, who want to serve other writers, or who want to understand publishing more holistically. Students will undertake typical editorial practices, such as using a house style, shaping manuscript submissions, copyediting, and creating indexes for publications. Where possible and appropriate, students will work on--and get named credit for contributing to­-active publishing projects.",
+        "term": null
+    },
+    {
+        "name": "ENGL 309 Writing for Social Action",
+        "description": "This course investigates current and historical social movement writing and rhetorics to determine the best practices in advocating for a social cause, producing persuasive public texts, and understanding the rhetorical foundations of advocacy writing. Students will be asked to produce materials in a range of genres associated with writing for social action (e.g., letters, essays, poetry, embodied activism) and actively participate in class discussions and writing workshops. Fall, odd-numbered years.",
+        "term": "F",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "ENGL 101 Minimum Grade: D"
+                        },
+                        {
+                            "course": "ENGL 103H Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "course": "ENGL 200 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "ENGL 310 American Literature I",
+        "description": "Colonial American literature to the early Romantic movement of the 1830s and 1840s.",
+        "term": null
+    },
+    {
+        "name": "ENGL 311 American Literature II",
+        "description": "American literature from 1840-1900.",
+        "term": null
+    },
+    {
+        "name": "ENGL 312 American Literature III",
+        "description": "American literature from 1900 to present.",
+        "term": null
+    },
+    {
+        "name": "ENGL 313 American Narratives",
+        "description": "Over 200 years of literature relating to the aspirations and fears of colonists/Americans, from 1620 to 1854.",
+        "term": null
+    },
+    {
+        "name": "ENGL 314 Multicultural Lit of the US",
+        "description": "Literature produced by different social, ethnic and racial groups in the U.S.",
+        "term": null
+    },
+    {
+        "name": "ENGL 316 Studies in Post Colonial Lit",
+        "description": "Works written in English by writers responding to the impact of Western colonization and imperialism.",
+        "term": null
+    },
+    {
+        "name": "ENGL 317 Latinx Feminist Literatures",
+        "description": "This course examines various forms of historical and contemporary literatures written by Chicana/ o / x and Latina/ o / x feminists and explores the importance of these literary works for the development of Chicanx and Latinx feminisms. We will emphasize the similarities and differences between the Chicanx/Latinx experiences; literary constructions of identity in terms of race, gender sexuality, class, ability and language; and the expression of a Chicanx/Latinx feminist collective and solidary identity.",
+        "term": null
+    },
+    {
+        "name": "ENGL 318 African-American Literature",
+        "description": "A study of African-American writers.",
+        "term": null
+    },
+    {
+        "name": "ENGL 323 Medieval Lit:Rage&Romance",
+        "description": "This course is a general survey of English literature in the Middle Ages. Students will encounter the major texts, themes and genres recorded in Old English and Middle English.",
+        "term": null
+    },
+    {
+        "name": "ENGL 330 Shakespeare",
+        "description": "Selected plays and poetry.",
+        "term": null
+    },
+    {
+        "name": "ENGL 331 Renaissance Literature",
+        "description": "British literature covering the period 1500-1700, excluding drama.",
+        "term": null
+    },
+    {
+        "name": "ENGL 340 The Romantic Age",
+        "description": "British writers of the Romantic period, 1798-1832, with emphasis on poetry.",
+        "term": null
+    },
+    {
+        "name": "ENGL 342 Victorian Era",
+        "description": "Writers of the Victorian Era, 1832-1901, with emphasis on poetry.",
+        "term": null
+    },
+    {
+        "name": "ENGL 348 Restoration & 18th Century Lit",
+        "description": "Major prose, drama and poetry from 1660-1800, exclusive of the novel.",
+        "term": null
+    },
+    {
+        "name": "ENGL 350 Twentieth Century British Lit",
+        "description": "British literature of the Twentieth Century including poetry, drama and prose.",
+        "term": null
+    },
+    {
+        "name": "ENGL 360 Modern Drama",
+        "description": "This course will cover a broad sweep of plays from the modern and contemporary eras of drama, emphasizing the beginnings of dramatic modernism in Nineteenth-Century continental Europe (texts to be read in translation), as well as the development of drama in Britain and America from the late Nineteenth Century to the present.",
+        "term": null
+    },
+    {
+        "name": "ENGL 366 Themes in Literature",
+        "description": "Topic to be determined by faculty. Florence campus only.",
+        "term": null
+    },
+    {
+        "name": "ENGL 367 Love inthe Renaissance",
+        "description": "This course addresses the centrality of love in the Renaissance literature in its conceptual and aesthetic complexity. Spring, Florence campus only.",
+        "term": "S"
+    },
+    {
+        "name": "ENGL 368 20th Century Novel",
+        "description": "This course, a blend of Comparative Literature and Cultural Studies, is a journey that begins with the Ancient Greeks and somehow also ends with the Ancient Greeks: their culture, their myths, their literature, and their discoveries. Through reading and discussion of some 20th century novels, it will follow the path travelled by modern man and woman by focusing on cultural evolution and attitudes shaped by social context, especially during the 19th and 20th centuries. Fall and Spring, Florence campus only.",
+        "term": "FS"
+    },
+    {
+        "name": "ENGL 390 Writing Center Practicum",
+        "description": "Students tutor in the Writing Center under the supervision of the Writing Center Director. May satisfy the English Teach Ed endorsement writing pedagogies requirement usually fulfilled by ENGL 395, with prior permission from Department Chair. Requires written permission from both the instructor and the Department Chair.",
+        "term": null
+    },
+    {
+        "name": "ENGL 391 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "ENGL 394 Topics in Film",
+        "description": "An examination of narrower topics in film which may include: the film traditions of other nations (e.g. France, Italy, Japan, or Russia); periods (silent films of the 1920s; French New Wave; American film of the 1970s); or themes (e.g. the Western from Porter to Eastwood or Shakespeare on film). The course will include significant readings from major critics (e.g. James Agee's reviews and essays) and filmmakers (e.g. Truffaut on the auteur).",
+        "term": null
+    },
+    {
+        "name": "ENGL 395 The Teaching of Writing",
+        "description": "Students will demonstrate their ability to research and respond to theories and practices pertaining to composing and to the teaching of writing. They will acquire this ability, in part, by writing about and discussing observations of writers in action, by reflecting critically on their own composing processes, and by reading and responding to writing from a variety of genres. Key specific learning outcomes include translating theory into practice and discussing the politics and assessment of language as applied to written English in a variety of rhetorical settings. Required for students seeking teacher certification.",
+        "term": null
+    },
+    {
+        "name": "ENGL 401 Advanced Poetry Writing",
+        "description": "An intensive exploration of the practice of writing poetry. Specific sections may focus on subgenres including lyrical poetry, narrative poetry, and/or the long poem.",
+        "term": null
+    },
+    {
+        "name": "ENGL 402 Advanced Fiction Writing",
+        "description": "An intensive exploration of the practice of writing fiction. Specific sections may focus on subgenres including the novella, flash fiction, and/or chapters within a novel.",
+        "term": null
+    },
+    {
+        "name": "ENGL 403 Advanced Nonfiction Writing",
+        "description": "An intensive and challenging exploration of the practice of writing nonfiction. Specific sections may focus on the intersection of nonfiction writing and focused subject matter.",
+        "term": null
+    },
+    {
+        "name": "ENGL 406 Adv Special Topics in Writing",
+        "description": "An intensive and challenging study on writing practices within a focused context. Possible examples include: writing and philosophy, writing and questions of social justice, environmental writing, and/or writing and mysticism.",
+        "term": null
+    },
+    {
+        "name": "ENGL 413 19th Century American Novel",
+        "description": "Major American novels of the period 1800-1900.",
+        "term": null
+    },
+    {
+        "name": "ENGL 414 20th Century American Novel",
+        "description": "Selected major novelists of the 20th Century.",
+        "term": null
+    },
+    {
+        "name": "ENGL 415 Recent American Writing",
+        "description": "American prose and poetry since World War II.",
+        "term": null
+    },
+    {
+        "name": "ENGL 417 Transnational Latinx Lit",
+        "description": "Study of literature produced by Chicana/o/x, Latina/o/x, and Latin American authors from a transnational approach: an approach that considers the continuous cross-border connections across the Americas.",
+        "term": null
+    },
+    {
+        "name": "ENGL 418 American Indian Literatures",
+        "description": "This course is designed to introduce students to several important texts in the multifaceted genre of American Indian literature as well as to invite students into a critical discussion of contemporary issues centering on the relationship between American Indian literatures and contemporary sociopolitical and cultural realities and issues. We will examine the role of American Indian literature in the continual process of cultural maintenance as well as identity (re)construction. Through close reading of texts by writers from various tribes and regions, students will explore the heterogeneity of Native America and the complexities of all attempts to define or shape indigenous nationhood in the United States. We will contextualize these texts in discussions of social justice issues particular to Native America, including but not limited to the five definitions of genocide; geographical and cultural displacements; and \"third world\" living conditions. We will also be engaged in dialogues about local and national American Indian cultures in cooperation with the American Indian Studies house on campus. Spring, odd numbered years.",
+        "term": "S"
+    },
+    {
+        "name": "ENGL 420 Beowulf: In-Laws and Outlaws",
+        "description": "Language and literary study of the Old English period with special emphasis on the anonymous epic poem Beowulf.",
+        "term": null
+    },
+    {
+        "name": "ENGL 423 Chaucer",
+        "description": "Chaucer's principal works in the original language.",
+        "term": null
+    },
+    {
+        "name": "ENGL 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.",
+        "term": null
+    },
+    {
+        "name": "ENGL 433 Milton & His Contemporaries",
+        "description": "Poetry and prose from the 17th Century with particular emphasis on Milton.",
+        "term": null
+    },
+    {
+        "name": "ENGL 434 Tudor & Stuart Drama",
+        "description": "Principal plays 1520-1640, excluding Shakespeare.",
+        "term": null
+    },
+    {
+        "name": "ENGL 436 18th Century British Novel",
+        "description": "The British novel from 1700-1800.",
+        "term": null
+    },
+    {
+        "name": "ENGL 438 Restoration 18th C Brit Drama",
+        "description": "British drama from the re-opening of the London stages in 1660 through 1800.",
+        "term": null
+    },
+    {
+        "name": "ENGL 440 Literature of the Americas",
+        "description": "A study in contemporary American literature inclusive of texts and writers from\nCanada, the U.S., and all of Latin America.",
+        "term": null
+    },
+    {
+        "name": "ENGL 446 19th Century British Novel",
+        "description": "The British novel from 1800-1900.",
+        "term": null
+    },
+    {
+        "name": "ENGL 450 20th Century British Novel",
+        "description": "The British novel from 1900 and 2000.",
+        "term": null
+    },
+    {
+        "name": "ENGL 450L 19th/20th Century Novel",
+        "description": "19th/20th Century novel.",
+        "term": null
+    },
+    {
+        "name": "ENGL 455 Special Topics in American Lit",
+        "description": "Topics to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "ENGL 457 Melville",
+        "description": "Herman Melville achieved brief literary celebrity in the late 1840s as the author of Typee: the “man who lived among the cannibals.” As his artistic ambition grew, his work became less popular; after the moderate successes of Typee and its sequel, Omoo, Melville’s books lost money and were poorly reviewed. Around 1860, he turned from prose to poetry, eventually withdrawing entirely from the literary marketplace. He died in 1891, an “absolutely forgotten man” (according the obit in his hometown paper, The New York Times). In the 1920s the Melville Revival rescued him from the\ndustbin of history, and Moby-Dick is now widely considered among the greatest novels ever written. In this course we will consider his work in the context of the “global” nineteenth century.",
+        "term": null
+    },
+    {
+        "name": "ENGL 459 American Realism & Naturalism",
+        "description": "This course will examine the period of American literature between the Civil War and World War I. This era marked the emergence of realism and naturalism as an alternative to the romantic and sentimental books which dominated the literary market throughout the nineteenth century. Although realist and naturalist authors varied in their approaches to fiction, their writings shared many characteristics. Our reading and discussion in this class will aim to outline the commonalities of the realists and naturalists, identify their differences, and examine how the cultural milieu of the late nineteenth century gave shape to their work.",
+        "term": null
+    },
+    {
+        "name": "ENGL 460 Studies in Women Writers",
+        "description": "Selected authors and themes.",
+        "term": null
+    },
+    {
+        "name": "ENGL 466 Topics in Literature",
+        "description": "Selected authors or themes.",
+        "term": null
+    },
+    {
+        "name": "ENGL 467 Special Topics",
+        "description": "The course will tie in to the Florence experience and will require reading literature in English or in translation. Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "ENGL 471 Topics in Pre 1914 AmLit",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "ENGL 472 Topics in Lit 1660 or before",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "ENGL 473 Topics: British Lit 1660-1914",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "ENGL 474 Topics in Literature Post 1914",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "ENGL 480 Crit Theory:Lit & Cltrl Stdy",
+        "description": "Theories about the nature of literature and criticism.",
+        "term": null
+    },
+    {
+        "name": "ENGL 485 Poetics",
+        "description": "This course will study English Language poetry from Chaucer to present. Focus on the \"formal\" qualities of poetry.",
+        "term": null
+    },
+    {
+        "name": "ENGL 490 Directed Reading",
+        "description": "A directed program of readings and written responses.",
+        "term": null
+    },
+    {
+        "name": "ENGL 492 Independent Study",
+        "description": "Courses which allow the individual student to engage in interdepartmental and interdisciplinary study. Credit by arrangement.",
+        "term": null
+    },
+    {
+        "name": "ENGL 495 Senior Seminar",
+        "description": "A focused, in-depth study of a literary/cultural topic chosen by the instructor.  The course will familiarize students with the critical conversation surrounding the topic, prepare them to engage in this and similar conversations, and have them enter into this conversation through well-informed, well-argued, research-based, critical study that will constitute the written aspect of the Senior Project. Required for English Majors. Senior standing or permission of Department Chair. To be taken concurrently with ENGL 499.",
+        "term": null
+    },
+    {
+        "name": "ENGL 496 Writing Senior Project",
+        "description": "This course is required of students pursuing the Writing Concentration in the English major and consists of these chief components: 1) a critical/historical review contextualizing the student's creative work in literary tradition and 2) an original creative manuscript of the student's poetry/prose/drama/non-fiction.",
+        "term": null
+    },
+    {
+        "name": "ENGL 497 Internship",
+        "description": "Professional experience in literature- or writing-related field. Students must take the initiative to contact an agency and an English Department faculty member willing to supervise the internship. Does not count towards program electives for the major or minor.",
+        "term": null
+    },
+    {
+        "name": "ENGL 498 Directed Research",
+        "description": "A directed program in which the individual student will engage in approved research activity and submit a scholarly paper or papers.",
+        "term": null
+    },
+    {
+        "name": "ENGL 499 Senior Project",
+        "description": "Academic paper produced in Senior Seminar (ENGL 495). Required for English majors. To be taken concurrently with ENGL 495.",
+        "term": null
+    }
+]

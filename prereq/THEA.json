@@ -1,0 +1,267 @@
+[
+    {
+        "name": "THEA 100 Introduction to Theatre Arts",
+        "description": "An introductory survey of the history, aesthetics, and literature of the theatre, and the various areas of theatrical production. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "THEA 102 Dance: Culture and Art",
+        "description": "Introduces dance as a social form present in all cultures and as an art form composed for the stage. This course provides the necessary skills and understanding for an appreciation of the social, physical, and artistic qualities of dance through various cultures. Somatic learning of social/ballroom dance forms is paired with cognitive and emotional understanding of the countries and cultures from which they were derived. Students will also study the concepts of leading and following, the transition from social to concert dance as a global phenomenon, and gain an understanding of dance from a global perspective.",
+        "term": null
+    },
+    {
+        "name": "THEA 111 Acting I",
+        "description": "An introduction to the techniques of dramatic expression utilizing the body, voice, and imagination. Structured play exercise helps the beginner to overcome physical/vocal inhibitions, and develop a sense of trust and teamwork within the group. Scene work is approached using beats, intentions, scores of physical actions, obstacles, and subtext. The class concludes with a recital to provide practical experience in rehearsal and performance. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "THEA 120 Voice and Movement",
+        "description": "An introduction to expressively engaging the entire physical instrument in life and performance. Coursework focuses on a variety of techniques designed to develop an increased range of physical and vocal expression. The course features experimentation in a studio setting and practical/creative application through rehearsal and performance. Fall, odd years.",
+        "term": "FO"
+    },
+    {
+        "name": "THEA 130 Topics in Dance",
+        "description": "Advanced courses, visiting artists, cultural dance. Periodic offering.",
+        "term": null
+    },
+    {
+        "name": "THEA 132 Stagecraft",
+        "description": "The theory and practice of the construction and painting of scenery and props, the fundamentals of stage lighting, and the organization of technical work in the theatre. Includes a lab component. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "THEA 134 Costume Construction",
+        "description": "In this class we will seek to understand the overall breadth of the field, with an introduction to its areas of specialization; beginning stitching, patterning, and crafting techniques, and individual contributions to the work of the Gonzaga Costume Shop, as well as a personal construction project. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "THEA 190 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "THEA 193 FYS:",
+        "description": "The First-Year Seminar (FYS) introduces new Gonzaga students to the University, the Core Curriculum, and Gonzaga’s Jesuit mission and heritage. While the seminars will be taught by faculty with expertise in particular disciplines, topics will be addressed in a way that illustrates approaches and methods of different academic disciplines. The seminar format of the course highlights the participatory character of university life, emphasizing that learning is an active, collegial process.",
+        "term": null
+    },
+    {
+        "name": "THEA 200 Theatre History",
+        "description": "A study of the theatre as an expression of life and culture from a primitive ritual to the 21st century. Theatre literature, performance practice, and theatre architecture will be studied within the larger context of the culture form which the various types of theatrical expression are derived. Fall, odd years.",
+        "term": "FO"
+    },
+    {
+        "name": "THEA 202 Performance Text Analysis",
+        "description": "This course will provide students with the necessary tools to create, and support other students in the creation of, critical analyses of plays and productions. Through textbook readings designed to provide students with access to the creative process, published play readings engineered to highlight successful analytical lenses and practices, and exercises devised to tap into different modes of creative generation, students discover multiple methodologies for performance text analysis. Students learn to give and receive effective feedback. By the end of the semester, students complete several full performance text analyses and contribute directly to the making of a live performance.",
+        "term": null
+    },
+    {
+        "name": "THEA 216 Acting II",
+        "description": "An intensive study of the acting process building on skills developed in Acting I (THEA 111). The course focuses on character development in psychological realism and other modern forms and is intended to expand the actor's range with both scene and monologue work, as well as to expand skills in voice/body integration and script analysis. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "THEA 111 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "THEA 222 E-Portfolio",
+        "description": "Taken each fall of sophomore and junior years, Interdisciplinary Arts Minor students submit work from the year before into an e-portfolio format. This is reviewed by the Director and the student in a scheduled meeting, reviewing ideas for their senior synthesis project and ensuring they are on track with coursework.",
+        "term": null
+    },
+    {
+        "name": "THEA 224 Contemporary Modern Dance I",
+        "description": "Analysis and theory of modern dance with an emphasis on basic technique and movement exploration. Includes a study of the evolution of modern dance and its past and present pioneers. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "THEA 235 Design Process",
+        "description": "Fundamentals of the process of designing for the theatre - developing the design from the initial script study through the collaborative process in design meetings. Learning how to “see” and developing points of view and approaches are studied. The course also covers the business of design, working in regional theatres and other professional venues. Fall, even years.",
+        "term": "FE"
+    },
+    {
+        "name": "THEA 237 Costume and Fashion Design",
+        "description": "Examine the role of costume design in the performance storytelling process for stage and fashion. Utilizing classic design principles and tools, including color theory and artistic media, we explore turning texts into visual images through script analysis, character interpretation, use of historical dress, and artistic inspirations. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "THEA 239 Lighting Design",
+        "description": "An introduction to the technical procedures, equipment, organization, drafting, and design principles of theatrical lighting. Students will design and execute lighting for main stage productions. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "THEA 240 Theatre for Young Audiences",
+        "description": "An introduction to the artistic, pedagogical, and entrepreneurial methods for producing theatre for (and with) young audiences. Coursework features practical rehearsal and performance, a survey of major Theatre for Young Audience plays, applied theatre techniques, and curriculum development. This class is intended for students seeking to become teachers (inside and outside of theatre arts classrooms) and those interested in performing for K-12 audiences. Spring, even years.",
+        "term": "SE"
+    },
+    {
+        "name": "THEA 253 Directing I",
+        "description": "The fundamental techniques of play analysis, actor communication, and composition are introduced and applied to model plays. Organizational, leadership, and conceptual skills are developed as students audition, cast, and rehearse chosen scenes from the modern realistic repertoire for performance. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "course": "THEA 111 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "THEA 260 Production Lab",
+        "description": "Introductory level participation in one or more phases of the design, technology, and management (DTM) production process (set construction, costume construction, lighting, sound, etc.) Spring and Fall.",
+        "term": "S"
+    },
+    {
+        "name": "THEA 261 Performance Lab",
+        "description": "Performance of a role in a main stage theatre production. Spring and Fall.",
+        "term": "S"
+    },
+    {
+        "name": "THEA 280 Shakespeare in Performance",
+        "description": "An introductory study of contemporary acting methods used to perform Shakespeare's plays. Emphasis is placed on balancing Elizabethan language and staging conventions with today's psychological realism. The course focuses on character development, physical and vocal techniques for the actor, use of verse and prose, delivery of soliloquies, and script analysis. Students engage with both scene and monologue work The course is intended to expand the actor's range as well as the reader's understanding of Shakespeare's work for the live stage.",
+        "term": null
+    },
+    {
+        "name": "THEA 287 Allied Arts",
+        "description": "The goal of the artist in a theatrical production is simple: to make the audience believe. To that end, it is the responsibility of the scenic artist to create the illusion that rough plywood surfaces are in fact brick walls, or that a masonite floor is instead a cobblestone walkway. This class explores scenic painting techniques, foam carving, and specialty prop design. Topics include the role of the scenic artist in the production process. Additional emphasis placed on faux painting techniques and trompe l'oeil painting. This is an intermediate studio course exploring the techniques and processes of scenic painting and crafts that encompass skills necessary for theatre and theatre production projects. Tools, materials and painting techniques will be demonstrated by the instructor and explored and executed by the student. Scenic painting does not arrive from your imagination alone. Research into surfaces and light will be necessary to apply the skills of painting.",
+        "term": null
+    },
+    {
+        "name": "THEA 290 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "THEA 293 Special Topics",
+        "description": "Topic to be determined by Instructor.",
+        "term": null
+    },
+    {
+        "name": "THEA 294 Special Topics",
+        "description": "Topic to be determined by Instructor.",
+        "term": null
+    },
+    {
+        "name": "THEA 316 Acting For The Camera",
+        "description": "With experience of basic acting techniques in hand, the student actor works in front of the camera to meet the challenges of electronic media. Simplicity of presentation, performance of the authentic person, and active listening are key skills. Work is in a variety of forms, from feature films to public service announcements. The class concludes with a public showing of student work. Periodic offering.",
+        "term": null,
+        "prerequisites": {
+            "course": "THEA 111 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "THEA 332 Scenic Design",
+        "description": "Theory and application of the process used to design theatrical scenery. Students begin to develop and apply skills in script analysis, theatre drafting, model building, collage, and research techniques with the intent to design scenery for live theatre performance. Fall, odd years.",
+        "term": "FO"
+    },
+    {
+        "name": "THEA 354 Directing II",
+        "description": "With a foundation in conceptualization, play analysis, actor communication, and design, student directors will create a vision for a short play. Student directors cast their shows and collaborate with a design team to realize the production in a public performance. Emphasis is placed on building conceptually rich, unified productions and the development of an individual creative voice. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "THEA 253 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "THEA 390 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "THEA 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.",
+        "term": null
+    },
+    {
+        "name": "THEA 440 Playwriting",
+        "description": "Designed to provide students with the necessary tools to create dramatic texts for reading and performance. Through play reading assignments and exercises devised to tap into different modes of creative generation, students discover methodologies for developing new work. Students hear their work read by actors in a 10-minute play festival. By the end of the semester, students complete a short one-act play. Fall, even years.",
+        "term": "FE"
+    },
+    {
+        "name": "THEA 480 Theatre Seminar",
+        "description": "Intensive study of a particular aspect of theatre. Permission from Department Chair required. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "THEA 481 Theatre Seminar",
+        "description": "Intensive study of a particular aspect of theatre. Permission from Department Chair required. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "THEA 482 Theatre Seminar",
+        "description": "Intensive study of a particular aspect of theatre. Permission from Department Chair required. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "THEA 483 Theatre Seminar",
+        "description": "Intensive study of a particular aspect of theatre. Permission of instructor required. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "THEA 484 Theatre Seminar",
+        "description": "Intensive study of a particular aspect of theatre. Permission of instructor required. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "THEA 485 Theatre Seminar",
+        "description": "Intensive study of a particular aspect of theatre. Permission of instructor required. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "THEA 486 Theatre Seminar",
+        "description": "Intensive study of a particular aspect of theatre. Permission of instructor required. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "THEA 487 Theatre Seminar",
+        "description": "Intensive study of a particular aspect of theatre. Permission of instructor required. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "THEA 488 Theatre Seminar",
+        "description": "Intensive study of a particular aspect of theatre. Pre-requisite: permission of instructor. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "THEA 489 Theatre Seminar",
+        "description": "Intensive study of a particular aspect of theatre. Permission of instructor required. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "THEA 490 Directed Study",
+        "description": "Students will take leadership in one of the following areas of applied theatrical production: stage management, lighting design, scenic design, sound design, costume design or directing.",
+        "term": null
+    },
+    {
+        "name": "THEA 491 Directed Study",
+        "description": "Students will take leadership in one of the following areas of applied theatrical production: stage management, lighting design, scenic design, sound design, costume design or directing.",
+        "term": null
+    },
+    {
+        "name": "THEA 492 Directed Study",
+        "description": "Students will take leadership in one of the following areas of applied theatrical production: stage management, lighting design, scenic design, sound design, costume design or directing.",
+        "term": null
+    },
+    {
+        "name": "THEA 493 Directed Study",
+        "description": "Students will take leadership in one of the following areas of applied theatrical production: stage management, lighting design, scenic design, sound design, costume design, or directing.",
+        "term": null
+    },
+    {
+        "name": "THEA 494 Directed Study",
+        "description": "Students will take leadership in one of the following areas of applied theatrical production: stage management, lighting design, scenic design, sound design, costume design or directing.",
+        "term": null
+    },
+    {
+        "name": "THEA 497 Internship",
+        "description": "Professional work experience in theatre related field. Fall, Spring, and Summer.",
+        "term": "S"
+    },
+    {
+        "name": "THEA 498 Senior Project I",
+        "description": "A career preparation and individual artistic development experience in a cohort and mentorship setting. Students will engage in self-initiated as well as guided exercises to prepare for life and career after graduation. Development of senior project, to be completed in THEA 499 in the spring. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "THEA 499 Senior Project II",
+        "description": "A continuation of THEA 498 with more emphasis placed on implementing a senior project in partial fulfillment of the department’s major requirements. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "THEA 498 Minimum Grade: D"
+        }
+    }
+]

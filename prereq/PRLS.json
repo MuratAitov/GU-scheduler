@@ -1,0 +1,169 @@
+[
+    {
+        "name": "PRLS 260 Public Relations Principles",
+        "description": "Theories and principles underlying public relations practice. The history and development of the field, responsibilities and duties, ethics, law, and social responsibility, and survey of practice and techniques. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "PRLS 310 Writing for Public Relations",
+        "description": "Theory and models for communication in an array of forms common to PR including utilization of emerging technologies and an emphasis on understanding the target audience.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "PRLS 260 Minimum Grade: D"
+                },
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "JOUR 110 Minimum Grade: D"
+                        },
+                        {
+                            "course": "SOSJ 160 Minimum Grade: D"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "PRLS 340 PR Speech Writing & Delivery",
+        "description": "A focus on the variety of public address forms common to the public relations profession, including writing speeches for executives and public figures, and coaching for public and media appearances. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "course": "PRLS 310 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PRLS 356 Sports Media",
+        "description": "The course content examines the roles of public relations practitioners and journalists through the lens of athletics organizations and sports in society. Students will engage in sporting events coverage that focuses on an array of writing styles, social media strategies, media relationships with sports organizations and athletes, and an in-depth understanding of all sports competitions, primarily those at the collegiate and professional levels. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "INMD 101 Minimum Grade: D"
+                },
+                {
+                    "course": "JOUR 110 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PRLS 360 Strategic Communications",
+        "description": "Strategic roles and theory-based planning concepts, integrated marketing communication, and analysis of case studies that review communication theory and professional practice. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "course": "PRLS 260 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PRLS 410 Special Topics",
+        "description": "Course content focuses on emerging issues and topics that relate to public relations practice and philosophy.",
+        "term": null
+    },
+    {
+        "name": "PRLS 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.",
+        "term": null
+    },
+    {
+        "name": "PRLS 450 Organizational Issues for PR",
+        "description": "A study of the changing nature of the organizational public relations role, including contemporary theoretical models and expanding roles in communication, leadership, and organizational culture. Emphasis on consulting practices, leadership theory, strategies and corporate ethics.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "PRLS 310 Minimum Grade: D"
+                },
+                {
+                    "course": "PRLS 360 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PRLS 460 Public Relations Campaign",
+        "description": "Applied work for an actual client based on theories of organizational communication, including a campaign plan. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "PRLS 310 Minimum Grade: D"
+                },
+                {
+                    "course": "PRLS 340 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PRLS 470 PR Internship Course",
+        "description": "Pre-professional work experience in public relations with a PR agency, non-profit or organization. 120-140 hours required with onsite supervision by a public relations practitioner. Instructor supports securing an internship, and all internships are to be pre-approved by the instructor. Includes attendance at regular class sessions. Registration requires a minimum cumulative 3.0 G.P.A. Fall, Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "PRLS 310 Minimum Grade: D"
+                },
+                {
+                    "course": "PRLS 360 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PRLS 480 Public Relations Capstone",
+        "description": "This course involves the completion of a public relations reflection project that integrates and applies prior course work and field work into academic research of contemporary issues in the public relations profession.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "PRLS 310 Minimum Grade: D"
+                },
+                {
+                    "course": "PRLS 360 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PRLS 490 Directed Study",
+        "description": "Individualized study of an issue related to the public relations profession. Fall, Spring, and Summer.",
+        "term": "S",
+        "prerequisites": {
+            "course": "PRLS 310 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PRLS 497 Elective Internship",
+        "description": "Pre-professional work experience in public relations with a PR agency, non-profit or organization. All internships are to be approved by the instructor prior to start date. Virtual internships are allowed with instructor permission. Fall, Spring, and Summer.",
+        "term": "S",
+        "prerequisites": {
+            "course": "PRLS 310 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PRLS 499 Thesis Conferencing",
+        "description": "Individual thesis review sessions with PRLS 480 instructor. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "PRLS 310 Minimum Grade: D"
+                },
+                {
+                    "course": "PRLS 360 Minimum Grade: D"
+                }
+            ]
+        }
+    }
+]

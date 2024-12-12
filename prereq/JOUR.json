@@ -1,0 +1,223 @@
+[
+    {
+        "name": "JOUR 110 Journalistic Writing",
+        "description": "An introduction to journalistic-style writing across media platforms, including broadcast journalism and public relations writing.",
+        "term": null
+    },
+    {
+        "name": "JOUR 190 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "JOUR 210 Civic Journalism",
+        "description": "Emphasis on the style of journalism that fosters community engagement. Research, reporting and interviewing techniques that focus on news coverage of public organizations and groups that participate in framing public policy. A variety of writing styles will be utilized.",
+        "term": null,
+        "prerequisites": {
+            "course": "JOUR 110 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 220 Student Media Writing Lab",
+        "description": "With direction from student newspaper advisers/instructors and editors, students write stories and news reports for The Gonzaga Bulletin and gonzagabulletin.com.",
+        "term": null,
+        "prerequisites": {
+            "course": "JOUR 210 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 230 Student Media Editing Lab",
+        "description": "With direction from advisers/instructors, students edit news stories for The Gonzaga Bulletin and gonzagabulletin.com.",
+        "term": null,
+        "prerequisites": {
+            "course": "JOUR 110 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 270 Photojournalism",
+        "description": "An introduction to the technical, ethical, and creative principles of journalism-based photography and video. Topics include basic camera functions, digital image-editing tools, and the intersection of photojournalism, digital-video, and short documentary filmmaking. Special attention will be given to the professional and ethical considerations of the practice and the unique differences that separate photojournalism from other forms of image capturing. Lab fee. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "course": "INMD 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 280 Design and Editing",
+        "description": "Emphasis on design principles and editing skills for print and online journalistic platforms. Attention also to news values and philosophies.",
+        "term": null,
+        "prerequisites": {
+            "course": "JOUR 110 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 290 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "JOUR 310 Public Affairs Reporting",
+        "description": "Reporting municipal, county, state, and federal affairs. Open meeting, shield and disclosure laws, law enforcement and the judicial process.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "JOUR 210 Minimum Grade: D"
+                },
+                {
+                    "course": "PRLS 310 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "JOUR 350 History of Journalism",
+        "description": "The historical development of the press and journalistic practices in America. The focus is the development of journalistic values such as objectivity, accuracy, balance and legal and ethical issues such as free speech and access to public records.",
+        "term": null,
+        "prerequisites": {
+            "course": "INMD 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 370 Emerging Media",
+        "description": "Students integrate reporting and research with audio, video, photos and text to produce and design multimedia packages in a journalistic context. Students may utilize blogging, podcasting, social media and emerging media techniques. Some focus on analysis of the optimal platforms for presenting journalistic content.",
+        "term": null,
+        "prerequisites": {
+            "course": "JOUR 110 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 374 Documentary History & Analysis",
+        "description": "The course explores documentary film as both a popular art form and as an instrument for constructing social knowledge. From early cinematic experiments to contemporary award winners, students will critically review the evolution of non-fiction filmmaking while analyzing the techniques that documentary filmmakers use to craft their documentaries. The larger ethical and societal impacts of documentary film will also be explored. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "INMD 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 390 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "JOUR 410 Special Topics",
+        "description": "Course content focuses on emerging issues and topics that relate to journalistic practice and philosophy.",
+        "term": null
+    },
+    {
+        "name": "JOUR 420 Literary Journalism",
+        "description": "The course focuses on writing longer forms of journalism. Content includes a look at the traditions of literary journalism in America, memoir-style nonfiction and using fiction techniques in nonfiction stories. Writing topics are individualized.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "type": "or",
+                            "requirements": [
+                                {
+                                    "type": "or",
+                                    "requirements": [
+                                        {
+                                            "type": "or",
+                                            "requirements": [
+                                                {
+                                                    "course": "JOUR 110 Minimum Grade: D"
+                                                },
+                                                {
+                                                    "course": "ENGL 301 Minimum Grade: D"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "course": "ENGL 302 Minimum Grade: D"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "course": "ENGL 303 Minimum Grade: D"
+                                }
+                            ]
+                        },
+                        {
+                            "course": "ENGL 306 Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "course": "SOSJ 160 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "JOUR 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.",
+        "term": null
+    },
+    {
+        "name": "JOUR 440 Seminar: Media & Democracy",
+        "description": "Examines the organizational, cultural, technological, and ideological nature of news. Attention is given to theories of the press, the construction of news, news as a form of knowledge, and the broader social implications of news organizations and practices.",
+        "term": null,
+        "prerequisites": {
+            "course": "INMD 360 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 470 Documentary Filmmaking",
+        "description": "Documentary filmmaking provides an environment in which students experiment with the combination of digital film aesthetics and documentary storytelling to produce an original short non-fiction work. The course includes examination of ethical issues in documentaries, the use of animation and interactivity in film and the role of documentary work in different cultures. Lab fee. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "VART 272 Minimum Grade: D"
+                },
+                {
+                    "course": "BRCO 303 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "JOUR 485 Media Ethics",
+        "description": "Journalistic ethical issues ranging from fairness, balance and conflicts of interest to sensationalism will be discussed in depth. Overview of theories of leading historical and contemporary philosophers through the lens of relevance to contemporary media. Emphasis on use of ethical decision-making models.",
+        "term": null,
+        "prerequisites": {
+            "course": "INMD 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 490 Directed Study-Special Project",
+        "description": "Tutorial or a project proposed to faculty. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "JOUR 494 Independent Study",
+        "description": "In-depth pursuit of a topic proposed to faculty. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "JOUR 497 Internships",
+        "description": "Professional work experience in journalism. Possibilities include print and online journalistic organizations and magazines. Fall, Spring, and Summer.",
+        "term": "S",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "JOUR 210 Minimum Grade: D"
+                },
+                {
+                    "course": "SOSJ 262 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "JOUR 499 Capstone Project",
+        "description": "Students demonstrate command of journalistic practices and philosophies in a comprehensive project and essay exam. Spring.",
+        "term": "S"
+    }
+]

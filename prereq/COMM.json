@@ -1,0 +1,411 @@
+[
+    {
+        "name": "COMM 100 Communication and Speech",
+        "description": "Communicating thoughtfully and ethically for, with, and among others is vital to becoming the leaders Gonzaga hopes students will become. This course introduces students to the theory and practice of rhetoric—how we use symbols to create meaning and understanding between people—with the goal of helping students continue to grow into responsible and thoughtful communicators. Students will learn how communication (including oral, visual, and aural symbol use across personal interactions, media, our bodies, physical spaces, and other material phenomena) shapes our identities, ideas, policies, society, and all aspects of our lived experiences. The course develops skills and ways of thinking about communication needed to analyze, construct, and deliver messages that enrich civic and cultural life. Three central concepts—rhetoric & symbolic action, civic engagement, and audience—provide a common thread throughout the class as we explore the Core Curriculum Year 1 question: “How do we pursue knowledge and cultivate understanding?” The course supports the University mission through alignment with eloquentia perfecta, a Jesuit tradition that references excellence in speaking and writing for the common good to create a more just world.",
+        "term": null
+    },
+    {
+        "name": "COMM 193 FYS:",
+        "description": "The First-Year Seminar (FYS) introduces new Gonzaga students to the University, the Core Curriculum, and Gonzaga’s Jesuit mission and heritage. While the seminars will be taught by faculty with expertise in particular disciplines, topics will be addressed in a way that illustrates approaches and methods of different academic disciplines. The seminar format of the course highlights the participatory character of university life, emphasizing that learning is an active, collegial process.",
+        "term": null
+    },
+    {
+        "name": "COMM 210 Understanding Meaning-making",
+        "description": "We make sense of our world and the people in it through the symbols we use to communicate about our experiences. The symbols we use (e.g. language, pictures, film, music, architecture, bodies) matter because they have real effects on us, on others, and on our perceptions and understanding of the world. This course explores the theories and ways of thinking that help us understand how symbols create, maintain, and transform our social worlds. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "COMM 220 Understanding Power in Culture",
+        "description": "Power is everywhere and influences our relationships with others and our ability to get things done in our societies. Communication and symbolic action is a primary way that people struggle over and effect their power relationships. Power clearly reveals itself in cultural ideologies or values and beliefs that influence our social actions, and these ideologies are embedded in our daily communication practices. This course introduces a cultural studies perspective that helps students build a lexicon and critical capacity for engaging with power, ideology, and cultural influence. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "COMM 230 Understanding Identity",
+        "description": "Our intersecting identities emerge from an array of communicative, performative, and cultural practices and they are tied up in everyday communication contexts such as interpersonal interactions, media platforms, and social movements. Through communication we align ourselves with common interests and communities, and this course will provide a theoretical foundation for understanding audiences, our performances of self, and our negotiation of the two. The course also invites students to explore how our identities are shaped and interpreted in ways outside our control. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "COMM 275 Analyzing Public Texts",
+        "description": "This course introduces students to the practice of studying, analyzing, and interpreting public texts, and the work they do in constituting public culture. Students engage with methods to make critical judgements about how rhetorical/communicative texts influence public life. Students will address public texts including written, visual/aural, and embodied forms of communication such as movies and song lyrics, sports broadcasts, maps, museum spaces, political speeches, religious texts, historical writings, comedic performances, YouTube channels, and much more. Students will also engage in ethical communicative practices that produce knowledge about human communication and relationships. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "COMM 100 Minimum Grade: D"
+                },
+                {
+                    "course": "HONS 100 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "COMM 282 Special Topics",
+        "description": "Topic determined by instructor.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "COMM 210 Minimum Grade: D"
+                },
+                {
+                    "course": "COMM 220 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "COMM 285 Analyzing Practices and Habits",
+        "description": "This course provides a foundation in attending to, analyzing, and reporting meaningful information about the social world through humanistic communication research methods. The course introduces ethnographic and qualitative research methods, ethics, selection of research topics and questions, ethnographic data collection methods (e.g. participant observation; un-, semi- and structured interviewing; structured observation), managing and coding field notes, and qualitative analysis. In this course, students will create field notes, analyses, and more. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "COMM 100 Minimum Grade: D"
+                },
+                {
+                    "course": "HONS 100 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "COMM 310 Politics of Popular Culture",
+        "description": "Pulling from the fields of media and cultural studies, this course explores the ways we use and are used by popular culture. This class seriously considers how popular culture influences the ways we think, feel, act, and participate in civic life. Building upon students’ expertise as cultural consumers, we explore popular culture through aesthetic, ideological, social, and industrial lenses. Through our consideration of a wide range of popular culture—including film, television, games, print and social media, advertising, and others—we explore questions of aesthetic quality and cultural value in relation to media texts, audiences, and our experiences of culture. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "COMM 210 Minimum Grade: C"
+                        },
+                        {
+                            "course": "COMM 220 Minimum Grade: C"
+                        }
+                    ]
+                },
+                {
+                    "course": "COMM 275 Minimum Grade: C"
+                }
+            ]
+        }
+    },
+    {
+        "name": "COMM 320 Resistance, Struggle, & Power",
+        "description": "Communication is the central means for contesting and reconfiguring structural forms of power relations among social groups, and this class focuses on power dynamics and imbalances across social institutions such as law, education, medicine, economics, media, and religion. Students engage the concepts of hegemony (the production of consent for dominant power relationships) and counter-hegemony (the struggle against dominant social arrangements). As such, the course invites students to consider the interplay of communication, culture, and social institutions in maintaining, resisting, and transforming the persistent inequalities of power and disproportionate distribution of cultural and political capital. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "COMM 210 Minimum Grade: C"
+                        },
+                        {
+                            "course": "COMM 220 Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "COMM 275 Minimum Grade: C"
+                        },
+                        {
+                            "course": "COMM 285 Minimum Grade: C"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "COMM 330 Politics of Space and Place",
+        "description": "Everyday encounters with physical surroundings guide our orientations to the world. As we wander city streets, shopping malls, stadiums, nature preserves, sacred sites, restaurants, monuments, museums, and classrooms, we examine how we move in, and are moved by the material  arenas we share. Spatial organization and built environments inform our habits of perception, determine the meaning of a particular place, accent what is worth attention and what might be overlooked, and reaffirm dominant norms and power relationships in public culture. Charts, maps, apps, and other navigational tools dictate where and how we move, and how we understand our roles within a given space. Featuring the experiential dimensions of rhetoric and communication, this course presses us to consider how material spaces and places construct everyday geographies. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "COMM 210 Minimum Grade: D"
+                        },
+                        {
+                            "course": "COMM 220 Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "COMM 275 Minimum Grade: D"
+                        },
+                        {
+                            "course": "COMM 285 Minimum Grade: D"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "COMM 331 Argumentation and Debate",
+        "description": "Examination of the fundamentals of advocacy including argumentation theory, techniques of persuasion, refutation, and cross-examination. This course is open to both debate team members and anyone interested in improving their argumentation skills. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "COMM 210 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "COMM 340 Encounters in Public Spheres",
+        "description": "Everyday communication practices, conventional public deliberations, and emergent media technologies shape our public life and affect human and non-human entanglements. This class explores contemporary theoretical conversations about publics and public spheres: what they look like, how they are shaped, how they arrange political bodies, and how we navigate their boundaries and borders of inclusion and exclusion. Students analyze how different modes of communication promote solidarities around common concerns and arrange difference, as well as how we form counter-publics and spaces of resistance and transformation. Topics may include propaganda and censorship, surveillance and privacy, journalism and mass media, spheres of expertise (i.e., science and medicine), roles of rumor, and notions of cultural “buzz.” Fall.",
+        "term": "F"
+    },
+    {
+        "name": "COMM 342 Debate Participation",
+        "description": "Participation on University debate teams.",
+        "term": null
+    },
+    {
+        "name": "COMM 350 Politics of Social Memory",
+        "description": "The ways we remember our collective past influence our present and shape our futures. This course examines how we rhetorically construct and struggle over social memory through public remembrances of historical events via war memorials, film and documentary, commemorative celebrations, reenactments, monuments, and museum exhibits. Students extend rhetorical and visual theoretical concepts and methods to evaluate sites of public memory and the social and cultural politics shaping the construction of memory. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "COMM 210 Minimum Grade: C"
+                        },
+                        {
+                            "course": "COMM 220 Minimum Grade: C"
+                        }
+                    ]
+                },
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "COMM 275 Minimum Grade: C"
+                        },
+                        {
+                            "course": "COMM 285 Minimum Grade: C"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "COMM 360 Media Aesthetics",
+        "description": "Images and sounds saturate our daily lives and while we often pay attention to content, we may neglect the visual and aural dimensions of these media. As citizens and consumers, we need to develop critical visual and aural interpretive frameworks to make sense of media. This course invites students to sharpen their analytical tools to attend to the sights and sounds that animate everyday life. This course examines media aesthetics through mise-en-scene, camera and point of view, editing techniques, visual style, and sound. From still to moving images, from print to online, students will conduct detailed aesthetic analyses of movies, television, radio, advertisements, podcasts, art, photography, websites, gifs, memes, and other forms of digital media. Additional topics may include industry, genre, power, visual culture theory, and identity. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "COMM 210 Minimum Grade: C"
+                        },
+                        {
+                            "course": "COMM 230 Minimum Grade: C"
+                        }
+                    ]
+                },
+                {
+                    "course": "COMM 275 Minimum Grade: C"
+                }
+            ]
+        }
+    },
+    {
+        "name": "COMM 370 Digital Culture/Networked Self",
+        "description": "Online communication has both collapsed our communication contexts and expanded our potential identities and relationships. This course applies a cultural lens to understand our digital lives and the various media technologies we interact with on a daily basis. We will examine a range of contemporary theories and issues surrounding digital media including how cultural values are embedded in digital technologies and how we manage identities across multiple digital contexts. We will explore ways to successfully and critically navigate an array of personal, professional, and civic responsibilities in a globally networked world. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "COMM 230 Minimum Grade: C"
+                },
+                {
+                    "course": "COMM 285 Minimum Grade: C"
+                }
+            ]
+        }
+    },
+    {
+        "name": "COMM 391 Directed  Study",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "COMM 401 Communication & Leadership",
+        "description": "A critical examination of the reciprocity between effective communication and successful leadership. Includes an historical examination of leadership styles, theories, and research. Includes an analysis of motivation, power, and organizational culture. Writing and speaking assignments are designed to cultivate leadership skills. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "COMM 210 Minimum Grade: D"
+                },
+                {
+                    "course": "COMM 230 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "COMM 420 Critical / Cultural Comm",
+        "description": "This course invites students to integrate their communication studies knowledge with a broad, interdisciplinary conversation on critical theory, and to understand how communication scholars engage with other disciplines and thinkers in struggles for social justice, social change, and solidarity. The course will address a range of critical theories that have influenced and been influenced by the study of communication such as Marxism, the Frankfurt School, postcolonial theory, feminist theory, critical race theory, and queer theory. Students explore how critical theory is linked to and emerges from socio-political struggle in different historical moments. In addition, the course invites students to apply critical theory to contemporary social debates and challenges to better understand questions of power, civic participation, identity, and social organization. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "COMM 310 Minimum Grade: C"
+                },
+                {
+                    "course": "COMM 320 Minimum Grade: C"
+                }
+            ]
+        }
+    },
+    {
+        "name": "COMM 430 Intersectional Communication",
+        "description": "The study of communication and culture in a global world cannot and must not be apolitical, ahistorical, or blind to the messy entanglements of power and privilege. Therefore, this course will focus on the intersections between critical race theory, feminist theory, and critical intercultural communication in order to interrogate and examine the ways in which our social identities and locations affect the contexts of our lives including our opportunities, relationships, and overall understanding of the world. Specifically, this course will engage the work of Black Feminist scholars and ongoing scholarly conversations on intersectionality to analyze intercultural encounters and engagement. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "COMM 320 Minimum Grade: C"
+                },
+                {
+                    "course": "COMM 340 Minimum Grade: C"
+                }
+            ]
+        }
+    },
+    {
+        "name": "COMM 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.",
+        "term": null
+    },
+    {
+        "name": "COMM 440 Rhetoric of Social Change",
+        "description": "Public expression and discourse can affirm, complicate, challenge, and even radically revolutionize our shared values and ideals over time. Arguments and symbolic actions in communal spaces prompt individuals and groups to rethink, redevelop, and reestablish potential modes of identity, participation, and interaction within a society. Students in this course will closely examine specific social movements (including, potentially, civil rights, gender rights, indigenous rights, and environmental movements) to better understand the plurality of voices and modes of public expression in dialogue and competition that contribute to, resist, and ultimately shape societal change. Students will then build upon historical knowledge and perspective to engage in an immersive study of an ongoing contemporary social controversy, ultimately creating an informed rhetorical intervention of their own, participating in the social issues and changes of the current day. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "COMM 320 Minimum Grade: C"
+                        },
+                        {
+                            "course": "COMM 340 Minimum Grade: C"
+                        }
+                    ]
+                },
+                {
+                    "course": "COMM 350 Minimum Grade: C"
+                }
+            ]
+        }
+    },
+    {
+        "name": "COMM 450 Justice and Arts of Civic Life",
+        "description": "Ethical communication and intentional civic engagement fosters vibrant democratic life. As civic actors, we deliberate and contest policies, advocate for justice, and attempt to foster cooperation among a multiplicity of voices. This course synthesizes theories of ethics that students grapple with to examine relationships between rhetoric, democracy, and justice. Specifically, we will address questions of how we should practice rhetoric in ways that refine our capacities for ethical discernment, build inclusive communities, promote social justice, and ultimately enrich democratic life. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "COMM 340 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "COMM 480 Themes in Communication",
+        "description": "Special topics courses are one time course offerings that include courses that address a current or timely topic or a special interest which will not be made a regular on-going part of the curriculum. Occasionally, a special topics course may be used to offer an experimental or “pilot” phase course before it is subsequently proposed as a regular course. Special topics course offerings vary from term to term. See current semester course listings for topics.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "COMM 210 Minimum Grade: D"
+                        },
+                        {
+                            "course": "COMM 220 Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "COMM 275 Minimum Grade: D"
+                        },
+                        {
+                            "course": "COMM 285 Minimum Grade: D"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "COMM 482 Seminar",
+        "description": "Special topics with credit to be arranged. On sufficient demand.",
+        "term": "OSD",
+        "prerequisites": {
+            "course": "COMM 184 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "COMM 484 Senior Seminar",
+        "description": "In this capstone course for the Communication Studies major, students demonstrate their proficiency in oral, written, and visual communication by adapting their senior thesis to multiple communication platforms.  The seminar is also designed to help students reflect on their education and develop a personal philosophy of communication. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "COMM 485 Communication Abroad",
+        "description": "This course provides transfer credit for students who have arranged an intensive experience studying abroad and will be taking a humanities-based communication course that explores themes of rhetoric, media, and cultural studies that deepens their understanding of the foundation they’ve received at Gonzaga. Prior permission from the Department Chair is required.",
+        "term": null
+    },
+    {
+        "name": "COMM 490 Crafting Professional Identity",
+        "description": "In this course, students connect their communication studies knowledge and skills with their civic and professional goals during and after college. Students compose narratives highlighting their proficient use of communication skills within their personal organizational experiences, at school, at work, and within their communities. Building this portfolio of materials helps students translate and articulate their skills and ambitions into new organizational contexts post-graduation. A series of professional speakers, including alumni, will model communication in developing a career path. Students apply a social justice perspective to professional life and consider how to integrate a Jesuit, Catholic, humanistic educational experience in a professional context. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "COMM 491 Directed  Study",
+        "description": "Directed Study requires completion of a form, department permission and cannot be registered for via Zagweb.",
+        "term": null,
+        "prerequisites": {
+            "course": "COMM 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "COMM 497 Internship",
+        "description": "Professional experience in a communication related field. Students must take the initiative to contact an agency or business and find a Communication Studies department faculty member willing to supervise the internship. Fall, Spring, and Summer.",
+        "term": "S"
+    }
+]

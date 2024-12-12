@@ -1,0 +1,383 @@
+[
+    {
+        "name": "SPAN 101 Elementary Spanish I",
+        "description": "This course is designed to introduce students to elementary Spanish language skills and give them an insight into the many aspects of Spanish-speaking countries and their cultures. This course provides practice with writing, reading, speaking, and listening. Students are expected to achieve novice-mid level proficiency in these skills according to the ACTFL guidelines, in addition to developing intercultural knowledge and competencies. Students will be able to recall facts and basic concepts.  This course is taught in Spanish. Summer.",
+        "term": null
+    },
+    {
+        "name": "SPAN 102 Elementary Spanish II",
+        "description": "This course is designed to further introduce students to elementary Spanish language skills and give them an insight into the many aspects of Spanish-speaking countries and their cultures. This course provides extensive practice with writing, reading, speaking, and listening. Students are expected to achieve novice-high level proficiency in these skills according to the ACTFL guidelines, in addition to developing intercultural knowledge and competencies.  Students will be able to draw connections among ideas. This course is taught in Spanish. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "SPAN 180 Special Topics Beg Level",
+        "description": "Topic to be determined by professor.",
+        "term": null
+    },
+    {
+        "name": "SPAN 185 Special Topics Abroad Beg Levl",
+        "description": "Topic to be determined by professor.",
+        "term": null
+    },
+    {
+        "name": "SPAN 190 Directed Study",
+        "description": "Topic to be determined by professor.",
+        "term": null
+    },
+    {
+        "name": "SPAN 201 Intermediate Spanish I",
+        "description": "This course is designed to further strengthen and expand language skills in Spanish. This course provides extensive practice with writing, reading, speaking, and listening. Students will develop intermediate-mid level proficiency in these skills according to the ACTFL guidelines, in addition to developing intercultural knowledge and competencies. Students will be able to draw connections among ideas and evaluate ideas.  This course is taught in Spanish. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "SPAN 202 Intermediate Spanish II",
+        "description": "This course is designed to further strengthen and expand students' language skills in Spanish. This course provides extensive practice with writing, reading, speaking, and listening. Students will develop intermediate-high level proficiency in these skills according to the ACTFL guidelines, in addition to developing intercultural knowledge and competencies. Students will be able to apply creative as well as analytic thinking skills while exploring ideas. This course is taught in Spanish. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "SPAN 206 Spanish Conversation",
+        "description": "Development of oral expression in Spanish within a correct grammatical framework.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 102 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "SPAN 280 Special Topic Intermediate Lvl",
+        "description": "By arrangement only.   Topic selected by student-professor consultation.",
+        "term": null
+    },
+    {
+        "name": "SPAN 281 Special Topics",
+        "description": "Topic selected by professor.",
+        "term": null
+    },
+    {
+        "name": "SPAN 285 Special Topic Abroad Intrm Lvl",
+        "description": "Topic determined by professor.",
+        "term": null
+    },
+    {
+        "name": "SPAN 290 Spanish Grammar Review",
+        "description": "Review of Spanish grammar.",
+        "term": null
+    },
+    {
+        "name": "SPAN 291 Directed Study",
+        "description": "Topic to be determined by professor.",
+        "term": null
+    },
+    {
+        "name": "SPAN 301 Advanced Spanish I",
+        "description": "Advanced grammar. A review of specific grammatical constructions fundamental to effective oral and written communication and proficiency in listening and reading skills through the lens of culture. This course focuses specifically on description, narration, and exposition.",
+        "term": null
+    },
+    {
+        "name": "SPAN 306 Advanced Conversation",
+        "description": "Designed for those who wish to continue improving their listening and speaking skills.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 301 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 309 Adv Spanish Grammar Review",
+        "description": "Exploration of and practice with complex grammatical structures in Spanish. This course is designed to consolidate the command of Spanish grammar and vocabulary through oral practice and classroom activities as well as through compositions and written exercises.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 302 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "SPAN 317 Translation: Principles & Prac",
+        "description": "This course is designed to be an introduction to the history, theory, and practice of translation principally from Spanish to English but also from English to Spanish. The student will learn the fundamentals of translating literary works, letters, legal documents, newspapers, commercial advertisements, and other materials.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 301 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 318 Med Span & Cultural Competncy",
+        "description": "This course is designed for students planning to work in the health care field and who want to acquire more cultural and linguistic skills in medical Spanish. Students will develop new critical perspectives on health care for Hispanics in the US. Specifically, students will develop medical language skills and cultural competency for health care situations.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 301 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 319 Special Topic Language Adv Lvl",
+        "description": "Topic to be determined by professor.",
+        "term": null
+    },
+    {
+        "name": "SPAN 320 Advanced Spanish II",
+        "description": "Advanced grammar, continuation of SPAN 301. A review of specific grammatical constructions fundamental to effective oral and written communication and proficiency in listening and reading skills through the lens of culture. This course focuses specifically on critical thinking, argumentation and analysis.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 301 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 321 Span Medieval-Golden Age Lit",
+        "description": "This survey course is designed to give students a broad understanding of Spanish literature from its origins to the XVIII century. Students will study some key authors, philosophical and literary movements, historical and other elements that have shaped Spanish literary development. Students will also practice presentational and interpersonal oral skills and writing skills, in Spanish, while improving skills in literary analysis.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 322 Spanish Lit (18th C-21st C)",
+        "description": "This course presents a panoramic view of the history of modern Spanish literature (from 18th C to the present) in their historical and cultural context through the study in detail of some of the most significant literary works ( essay, drama, novel, short story, poetry) of the period.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 323 Lat Am Pre-Hisp 19th Ct Lit",
+        "description": "This course offers an introduction to the literature of the Spanish-speaking Americas. The texts students will read range from pre-Hispanic times until the end of the nineteenth century. During the semester, students will explore the various voices that arise from the Americas and how they present themselves in different genres such as: diary, chronicle, letter, essay, poetry, short story, and novel.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 324 Latin Amer 19th-21st Cen Lit",
+        "description": "This course is designed to introduce students to the major trends and authors of Latin America during the contemporary period, starting at the end of the 19th Century and concluding with present-day works.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 325 Intro to Poetry in Spanish",
+        "description": "This course introduces students to the analytical tools of poetry analysis and provides a general survey of Spanish language poetry from its origins to the 21st century, covering poets from Spain and Latin America. Due to the scope of the material covered in this course, mostly canonical authors will be studied as a means to approach the philosophical and literary movements, historical and other cultural elements, that have shaped Spanish language literary development.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "SPAN 320 Minimum Grade: C"
+                },
+                {
+                    "course": "SPAN 302 Minimum Grade: C"
+                }
+            ]
+        }
+    },
+    {
+        "name": "SPAN 328 Survey of Women's Literature",
+        "description": "Studies and analyzes a range of texts, including narrative fiction, poetry, drama, and/or essays written in Spanish by women writers. Texts may come from Spain and/or Latin America. Emphasis placed on literature from the 20th and 21st centuries.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 332 Representing the Rainforest",
+        "description": "This course examines how the jungle/rainforest (\"selva\") space is defined in Latin America and how it is represented in literature, film, and photography. The course does not focus on the Brazilian Amazon, but instead examines the representation of Spanish-American jungle spaces, including those found in Argentina, Colombia, Peru, Ecuador, and the Central American isthmus, from the Encounter until present day.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 333 Veins of Gold",
+        "description": "This course, studies the way in which Spanish America's natural resources have been imagined, described, and narrated textually throughout the history of Spanish America. Through a survey of literary and visual texts, we explore the history of extractivism, environmentalism, and economic engagement in Spanish America. Short stories, poetry, and film are analyzed from within the framework of Latin American critical responses to this history.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 334 Lorca's Body and Contemp.Spain",
+        "description": "This course is an exploration of the literary corpus of Spanish author Federico García Lorca (1898-1936), as well as a reflection about his legacy and importance in symbolic terms (as a myth or a body of myths) to understand Spanish history and culture. The class, an attempt to find and explore Lorca’s body, will center on how Lorca’s life and works articulate the quintessential conflict between tradition and modernity in Spain in national, gender, sexual, and ethnic terms; as well as on the importance of Lorca’s legacy and mythical status for an understanding of the convoluted history of 20th century Spain, including the recent Law of Historical Memory that has led to several unsuccessful searches for his remains (for his body). The class will focus on a broad selection of written and visual/audio documents by Lorca or about him.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 340 Spanish Civilization & Culture",
+        "description": "This course provides a general introduction to the history and culture( s) of Spain through an analysis of its social, political, and cultural characteristics from ancient times to the present. Special attention will be paid to Spain's art, music, architecture, social customs, and values.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 341 Latin-American Civ & Cultures",
+        "description": "This course offers an introduction to the cultures of the Spanish-speaking Americas from the precolonial period until present day. During the semester, students will explore various texts (written and visual) in order to examine the various manifestations of Latin American cultures.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 342 Mexican Civilization & Culture",
+        "description": "This course provides a general introduction to Mexican culture and civilization from the pre-colonial period to the present day. Special attention will be paid to Mexico's history, art, music, social customs, and values.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 351 Latin American Cinema",
+        "description": "This course will focus on a series of representative Latin American films in order to explore issues of national formation and cultural identity. Emphasis will be given to the social, political, and economic factors which affect the production and reception of these films.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 352 Spanish Cinema",
+        "description": "This course provides an introduction to the history of Spanish cinema through the study of representative films of different historical periods (Francoist and/ or democratic period). Particular attention will be given to the historical, social, and cultural context of the production and reception of those movies, as well as to questions of authorship/genre, gender/sexuality, and national/cultural identity.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 360 Intro to Spanish Linguistics",
+        "description": "This course provides an introduction to Spanish linguistics and establishes the basis for the application of linguistic principles. The content included is an overview of linguistic rules with a focus on Spanish. The course begins with an introduction to the description and organization of data dealing with phonology (how sound patterns form words). Building on this, the discussion continues with topics in morphology (word formation and verbal inflection) and the description and organization of data dealing with syntax (how words combine to form phrases and sentences). Finally, the course ends by analyzing the regional variations of Spanish ( dialectology) where the students apply the first three concepts (phonology, morphology and syntax) to contrast and compare the regional categories of Spanish use world-wide including the following six modalities: Peninsular (Northern/Southern Spain), Atlantic (Canary Islands/Latin America), USA, Equatorial Guinea, Judeo-Spanish and Creoles.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 361 History of Spanish Language",
+        "description": "This course traces the development of the Spanish language from Latin to the present focusing upon the cultural, literary and historical factors that have contributed to its evolution from Latin to early Romance, and then to the Modern language. The course is divided into four parts: the lexical expansion Vulgar Latin to Classical Latin to modern Spanish elements; the development of the phonological system; the development of the written language from Alfonso El Sabio and Berceo to La Celestina, Valdes, Nebrija, and the language of the Golden Age; and, the overseas expansion of Spanish and Judeo-Spanish.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 362 Spanish Phonology & Phonetics",
+        "description": "This course examines the relationship between orthography (the way we spell Spanish) and the way it is pronounced. It also focuses on common orthographic errors, including spelling, accentuation and syllabification. In addition, it closely examines the sounds of Spanish (the phonetics) and the rules that govern the distribution of these sounds in the language (the phonology) and examines how these sounds vary across dialects and the linguistic and extralinguistic factors that contribute to this variation.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 380 Special Topics Advanced Level",
+        "description": "Topics in Spanish literature to be determined by professor.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 385 Special Topics Abroad Adv Lvl",
+        "description": "Topic to be determined by professor.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 390 Directed Study",
+        "description": "Topic to be decided by professor.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "SPAN 400 Spanish in the US",
+        "description": "This course familiarizes students with issues about language use in social contexts. Students will discuss results of research on the relationship between language and society in several Spanish-speaking communities, examine different types of linguistic and social variation, and learn methods to study such variation in monolingual and bilingual communities. Based on the readings, discussions and practice, students will have the opportunity to explore, discover and investigate the social nature of language.",
+        "term": null
+    },
+    {
+        "name": "SPAN 401 Second Language Acquisition",
+        "description": "This course is an introduction to the field of second language acquisition with an emphasis on speaking. The course format will include readings, discussions, and student presentations. It will examine speaking in a second language from several perspectives: theory, evaluation/testing, pedagogy, and materials.",
+        "term": null
+    },
+    {
+        "name": "SPAN 403 Spanish Theater",
+        "description": "Spanish theater from its origins to the present.  Emphasis on the significance of the Golden Age of theater to the evolution of this genre.",
+        "term": null
+    },
+    {
+        "name": "SPAN 404 Spanish-American Theater",
+        "description": "Spanish American theatre from the pre-Hispanic period to the present. Emphasis placed on the contemporary period and the theater that evolved subsequent to the Modernist period.",
+        "term": null
+    },
+    {
+        "name": "SPAN 405 Narrative Fiction in Spain",
+        "description": "Analysis of the historical evolution of the novel and short story and their literary antecedents in Spain, from origins to the present.",
+        "term": null
+    },
+    {
+        "name": "SPAN 406 Narrative Fiction in Span Amer",
+        "description": "The novel and short story in Spanish America during the twentieth century.",
+        "term": null
+    },
+    {
+        "name": "SPAN 407 Peninsular Contemp Short Story",
+        "description": "This course focuses on Spanish short stories written in Spain or by Spaniards living in exile from the 1940s to the present. The course gives a panoramic vision of Spain’s recent history through a selection of short stories and also through the history of this genre in Spain, with a strong emphasis on women writers. We will take into consideration the main authors and movements of recent  decades and analyze both the mechanisms that shape the genre, and its representations, especially in terms of gender discontinuities. The students will be exposed not only to short stories, but also to articles, films, interviews, and reflections and meditations by the writers themselves.",
+        "term": null
+    },
+    {
+        "name": "SPAN 417 The Movies of Pedro Almodovar",
+        "description": "In this class, the film career of Pedro Almodovar (1949-), the most important Spanish filmmaker in recent decades, will be analyzed taking into account both the recent history of Spain and the history of the Spanish movie industry in the last 30 years. We will discuss several of his feature films and short films, as well as some of his writing. The topics of discussion will mainly focus on questions of identity in his movies, the relationship between his films and the cultural-political market of the democracy in Spain (the \"Movida\"), and the evolution of his movies in terms of cinematography, genre (from comedy to melodrama and lately, film noir), and gender representation. Film titles vary from semester to semester; however, could include films such as: Labyrinth of Passions (1982), Dark Habits (1983), What Have I Done to Deserve This?! (1984), Matador (1986), The Law of Desire (1987), Women on the Verge of a Nervous Breakdown (1988), High Heels (1991), All About my Mother (1999), Talk to Her (2002), Volver (2006), Broken Embraces (2009). This class will be conducted in Spanish.",
+        "term": null
+    },
+    {
+        "name": "SPAN 418 Spanish American Short Story",
+        "description": "This course will study the evolution of Spanish American short story from its appearance in the nineteenth century until today. Students will examine the manner in which this literary genre responded to the particular set of social, political, and economic considerations which shaped its production and reception. Students will read not only the texts themselves, but will also study critical theory surrounding the development of short story in Spanish America, and the regional responses which emerged.",
+        "term": null
+    },
+    {
+        "name": "SPAN 429 Latin American History",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "SPAN 442 Contemp Latin Amer Women Lit",
+        "description": "Studies and analyzes narrative fiction, poetry, drama, and/or essays written by or about Latin American women writers. Emphasis placed on literature from the 20th and 21st centuries.",
+        "term": null
+    },
+    {
+        "name": "SPAN 470 Special Topics Study Abroad",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "SPAN 471 The Hispanic Community in U.S.",
+        "description": "Social outreach course: readings on and volunteer work with Hispanic community.",
+        "term": null
+    },
+    {
+        "name": "SPAN 480 Seminar",
+        "description": "Specific topics to be chosen by professor.",
+        "term": null
+    },
+    {
+        "name": "SPAN 481 Seminar",
+        "description": "Specific topics to be chosen by professor.",
+        "term": null
+    },
+    {
+        "name": "SPAN 490 Directed Study",
+        "description": "Readings and reports on selected topics.  By arrangement.",
+        "term": null
+    },
+    {
+        "name": "SPAN 491 Directed Reading",
+        "description": "Readings and reports on selected topics.  By arrangement.",
+        "term": null
+    },
+    {
+        "name": "SPAN 497 Spanish Language Internship",
+        "description": "Professional experience in a setting related to Hispanic communities and in which Spanish is often used. SPAN 497 does not count toward upper-division major/minor requirements. Student is responsible to find an appropriate internship and to present a plan (description, objectives, proposed assessment) to a Spanish professor for approval and supervision.",
+        "term": null
+    },
+    {
+        "name": "SPAN 499 Senior Capstone",
+        "description": "In this course students will demonstrate the knowledge they have learned via a portfolio that includes a language proficiency exam, a Spanish narrative that critically reflects upon the content acquired in the courses students completed toward the major, a reflective essay in\nEnglish to measure the student learning outcome of intercultural competency, and an oral presentation. The Spanish narrative is designed to integrate and synthesize students' experiences in literature, culture, film and linguistics. The final grade will be (Satisfactory/Non- Satisfactory).",
+        "term": null
+    }
+]

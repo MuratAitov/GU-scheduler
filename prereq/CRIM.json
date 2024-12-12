@@ -1,0 +1,244 @@
+[
+    {
+        "name": "CRIM 101 Crime, Social Control, Justice",
+        "description": "A critical analysis of the way the American criminal justice system operates, focusing on the nature of law, the police, and the courts.",
+        "term": null
+    },
+    {
+        "name": "CRIM 180 Issues in Law Enforcement",
+        "description": "Examines current issues in law enforcement such as corruption, brutality, use of deadly force, politics and policy administration, resource management, stress, community relations, and major court decisions.",
+        "term": null
+    },
+    {
+        "name": "CRIM 181 Issues in Courts",
+        "description": "A hands-on class conducted by a Superior Court Judge. Students observe actual trials and are instructed about the proceedings by the judge.",
+        "term": null
+    },
+    {
+        "name": "CRIM 190 Directed Reading",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "CRIM 193 FYS:",
+        "description": "The First-Year Seminar (FYS) introduces new Gonzaga students to the University, the Core Curriculum, and Gonzaga’s Jesuit mission and heritage. While the seminars will be taught by faculty with expertise in particular disciplines, topics will be addressed in a way that illustrates approaches and methods of different academic disciplines. The seminar format of the course highlights the participatory character of university life, emphasizing that learning is an active, collegial process.",
+        "term": null
+    },
+    {
+        "name": "CRIM 295 Special Topics",
+        "description": "Topic determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "CRIM 312 Criminological Theories",
+        "description": "This course assists students in thinking theoretically about crime, criminal justice, and social control, focusing on the articulation between theoretical constructs, research strategies, and claims to knowledge. We explore the ways in which the theoretical resources of the social sciences can be brought to bear upon the phenomena of crime and criminality, their occurrence and distribution, and their contested character. Offered every semester.",
+        "term": null,
+        "prerequisites": {
+            "course": "CRIM 101 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "CRIM 350 Deviant Behavior",
+        "description": "Knavery, skullduggery, cheating, crime, malingering, cutting corners, immorality, dishonesty, betrayal, wickedness, and all other unconventional activities are forms of deviance. All known societies have members who become deviants. This course introduces students to several theories explaining deviance and examines the life styles of a variety of deviants.",
+        "term": null
+    },
+    {
+        "name": "CRIM 351 Criminology",
+        "description": "A study of crime and criminal offenders in America. Special attention will be given to criminal statistics, theoretical explanations, and public policy.",
+        "term": null
+    },
+    {
+        "name": "CRIM 352 Corrections",
+        "description": "An examination of the U.S. correctional system, from its origins to the present day. Focuses on philosophical and policy issues and debates that confront our society in attempting to deal with criminal offenders. Field trips to correctional facilities.",
+        "term": null
+    },
+    {
+        "name": "CRIM 353 Juvenile Justice",
+        "description": "An investigation of the nature and extent of juvenile delinquents in the United States. Special attention will be given to theoretical explanations; the effect of family, peers and school; and the history of the juvenile justice system in handling juvenile offenders.",
+        "term": null,
+        "prerequisites": {
+            "course": "CRIM 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "CRIM 355 Elite & White Collar Deviance",
+        "description": "This course examines deviance and crimes committed by organizations and the rich and powerful. The nature, extent and societal effects of various types of elite and white collar deviance are examined.",
+        "term": null
+    },
+    {
+        "name": "CRIM 356 Sociology of Policing",
+        "description": "This course examines law enforcement in American society with a focus on empirical research and sociological and criminological theory. Students will review the historical development of policing in the United States, the roles of the police in contemporary society, the structure and responsibilities of law enforcement agencies in this country, and the interaction between institutional and individual aspects of police work. Students will also be exposed to research and theory on controversial issues in law enforcement, including the use of force, police deviance, the use of discretion, the impact of social inequality on enforcement, and policing in the mass media.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "CRIM 101 Minimum Grade: D"
+                },
+                {
+                    "course": "SOCI 101 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "CRIM 357 Inequality, Crime & Urban Life",
+        "description": "This course examines the relationship between inequality and crime in America’s inner cities. Students will consider how cultural, economic, educational, legal, political, and other factors shape life in urban areas, and how these factors reproduce crime and inequality in America’s inner cities.",
+        "term": null
+    },
+    {
+        "name": "CRIM 358 Mass Incarceration",
+        "description": "This course examines the causes and consequences of mass incarceration in the United States from a sociological perspective. Particular attention will be paid to racial/ethnic and socioeconomic inequalities in imprisonment. The impact of mass incarceration on incarcerated individuals, their families, and society, more broadly will be examined. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "CRIM 359 Criminal Violence",
+        "description": "This course introduces students to various forms of criminal violence (e.g., homicides, robbery, terrorism, and gang violence). Students will gain a deeper understanding of the criminological and social mechanisms and frameworks that underlie their occurrence, including (sub)cultural context and situational dynamics.",
+        "term": null,
+        "prerequisites": {
+            "course": "CRIM 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "CRIM 360 Street Gangs in America",
+        "description": "This course introduces students to the history of gangs, their individual and group characteristics, lifestyle, and the strategies of gang control. Students will gain a deeper understanding of the theoretical mechanisms and frameworks that underlie various gang processes, including membership, violence, and disengagement.",
+        "term": null,
+        "prerequisites": {
+            "course": "CRIM 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "CRIM 361 Crime & Gender",
+        "description": "An exploration of the ways in which gender influences who is and is not considered criminal, why women are often socialized to be the victims of crime and men the perpetrators of such actions, and how such behaviors are used to maintain and support pre-existing inequalities. As such, special attention will also be paid to how issues of social class, ethnicity, and sexual orientation often temper these societal outcomes.",
+        "term": null
+    },
+    {
+        "name": "CRIM 362 BIPOC, Crime & Justice",
+        "description": "This course will take an in-depth and critical examination of the role that race/ethnicity plays in crime and justice process. The theories, causes, and statistics behind disparities in the crime and justice system will be examined. Furthermore, the discrimination against black, indigenous, and people of color (BIPOC) in the contexts of police-minority contact, sentencing, and corrections will be discussed at length.",
+        "term": null,
+        "prerequisites": {
+            "course": "CRIM 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "CRIM 363 The Death Penalty",
+        "description": "The United States holds the problematic distinction among Western societies of being the only jurisdiction to retain death as a form of punishment in the majority of its states, at the federal level, and in the military. This course is designed to illustrate the empirical background of capital punishment, from its early history to present day.",
+        "term": null
+    },
+    {
+        "name": "CRIM 364 Drugs and Society",
+        "description": "This course will examine the effect that drugs, both legal and illegal, have on the legal justice system. Critical analysis, select lectures, in-class discussion, and writing will be the formats used to address issues such as the effect of the \"war on drugs,\" the decriminalization debate, the relationship between drugs and violence, how drugs relate to law enforcement, sentencing, and corrections within the U.S. legal justice system, and the impact of drugs on individual users.",
+        "term": null
+    },
+    {
+        "name": "CRIM 365 Comparative Criminal Justice",
+        "description": "A comparison of criminal justice systems from around the world using the Internet and a seminar format.",
+        "term": null
+    },
+    {
+        "name": "CRIM 366 Mass Trauma and Genocide",
+        "description": "This course investigates the relationship between multiple intersecting identities (including race, gender, religion, class) and mass trauma, genocide, and human suffering. We will explore a range of mass traumas in diverse cultural and political settings, primarily focusing on the twentieth century. Throughout the semester, the importance of collective memory will be brought to bear on the study of mass trauma and genocide. Fall, odd years.",
+        "term": "FO"
+    },
+    {
+        "name": "CRIM 370 Forensic Psychology",
+        "description": "This course is an introductory level course to the field of forensic psychology, the branch of psychology which focuses on the application of psychological research data and principles within the legal arena. Students will be introduced to the process of applying psychological knowledge, concepts, and principles within the civil and criminal court systems. This course will include an introduction to an overview of topics such as the history of forensic psychology, an overview of the legal system, consultation to legal parties, ethical issues, eye witness testimony, assessment, evaluation of malingering, competency in criminal proceedings, civil commitment, child custody, psychologist testimony in courtroom settings, assessment of sexual offenders, assessment of violent and homicidal behavior, treatment of crime victims, police and investigative psychology, and careers within this field. A variety of formats will be used including lecture, readings, presentation by class members on selected topics, and guest speakers from within the legal arena. Offered upon sufficient demand.\nDisclaimer:\t\t\nThis course by virtue of its topic will address issues related to criminal activity and the subsequent legal proceedings. Although it may seem obvious, each person should consider carefully whether the content is suitable before enrolling in the course as the lectures, readings, and other materials may at times involve topics related to violence and sometimes sexual material which may be offensive to some people.",
+        "term": null
+    },
+    {
+        "name": "CRIM 385 Law and Society",
+        "description": "The central question of this course is how do social policies that contribute to the common good come to be written into law in some times and places and not others? The course analyzes an array of political, economic, social, and cultural factors that combine to shape policy development. Case studies will include education, welfare, health care, the environment, and/or other policy domains.",
+        "term": null
+    },
+    {
+        "name": "CRIM 386 Criminal Law",
+        "description": "Substantive criminal law; principles, functions, and limits; basic crime categories with extensive case analysis; state and national legal research materials.",
+        "term": null
+    },
+    {
+        "name": "CRIM 390 American Court System",
+        "description": "A hands-on class conducted by a Superior Court Judge. Students observe actual trials and are instructed about the proceedings by the judge.",
+        "term": null
+    },
+    {
+        "name": "CRIM 391 Directed Study",
+        "description": "Course content to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "CRIM 395 Topics in Criminology",
+        "description": "Specific topics to be chosen by instructor.",
+        "term": null
+    },
+    {
+        "name": "CRIM 396 Topics in Criminology",
+        "description": "Specific topics to be chosen by instructor.",
+        "term": null
+    },
+    {
+        "name": "CRIM 397 Topics in Criminology",
+        "description": "Specific topics to be chosen by instructor.",
+        "term": null
+    },
+    {
+        "name": "CRIM 398 Topics in Criminology",
+        "description": "Specific topics to be chosen by instructor.",
+        "term": null
+    },
+    {
+        "name": "CRIM 399 Topics in Criminology",
+        "description": "Specific topics to be chosen by instructor.",
+        "term": null
+    },
+    {
+        "name": "CRIM 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.",
+        "term": null
+    },
+    {
+        "name": "CRIM 480 Crim/Civil Trial Procedure",
+        "description": "Full court case preparation in a year-long mock trial team environment, including knowledge of the law, opening and closing statements, directs, redirects, cross-examinations, courtroom procedure and demeanor. Formal American Mock Trial competition takes place during spring semester, at the end of which credit will be granted for successful completion of the course. Intended only for those with a serious interest in law. Cannot be repeated for credit.",
+        "term": null
+    },
+    {
+        "name": "CRIM 490 Dir Read in Criminal Justice",
+        "description": "Supervised readings in criminal justice.",
+        "term": null
+    },
+    {
+        "name": "CRIM 494 Senior Thesis",
+        "description": "Students with at least a 3.70 GPA in the Criminology major and at least a 3.30 overall GPA who wish to graduate with Departmental Honors in Criminology must enroll in CRIM 494 two semesters prior to their graduation and complete an honors thesis. The thesis may be a significant expansion of the student's work in SOCI 204 or CRIM 499. A committee of three faculty members will direct the thesis. Two members of the committee must be from the Criminology/Sociology Department, and one may be from another department. The chair of the committee will be the instructor of record. The committee's decision about whether to award Departmental Honors is independent of the course grade.",
+        "term": null
+    },
+    {
+        "name": "CRIM 495 SPD Cooperative Education",
+        "description": "The course involves a 40 hour training academy and a commitment of at least 20 hours a month to the Spokane Police Department. Students will provide low priority responses to citizen needs such as property recovery and accident reporting. Student must be enrolled in this course prior to beginning the academy training. This course may be taken twice, for up to 2 credits total.",
+        "term": null
+    },
+    {
+        "name": "CRIM 496 Practicum in Criminal Justice",
+        "description": "Supervised experience for Criminology majors in selected criminal justice agencies such as the Spokane County Prosecutor's Office, the Spokane County Public Defender's Office, or the Spokane County Juvenile Court.",
+        "term": null
+    },
+    {
+        "name": "CRIM 497 Criminolology Internship",
+        "description": "Practical experience working in the Criminal Justice field. Internships are individually arranged and may be done in a wide array of settings.",
+        "term": null
+    },
+    {
+        "name": "CRIM 499 Criminology Senior Capstone",
+        "description": "An advanced class in criminological theory and methods. In a seminar format, students will review and discuss current criminological research and theories. Required of all Criminology majors and fulfills the comprehensive examination degree requirement.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "CRIM 101 Minimum Grade: D"
+                },
+                {
+                    "course": "CRIM 312 Minimum Grade: D"
+                }
+            ]
+        }
+    }
+]

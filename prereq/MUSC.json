@@ -1,0 +1,1372 @@
+[
+    {
+        "name": "MUSC 110 Introduction to Composition",
+        "description": "Students compose vocal and instrumental music to gain an understanding of the creative process and contemporary music. Topics include notation, the elements of music, instrumentation, vocal techniques, and aesthetics.",
+        "term": null
+    },
+    {
+        "name": "MUSC 120 Intro to Music Technology",
+        "description": "Students will acquire skills and proficiency in applications and technology that will allow them to create music, including but not limited to digital recording and editing, publishing scores, and electronically generating music. Music majors must take this course concurrently with MUSC 162 and MUSC 162L.",
+        "term": null
+    },
+    {
+        "name": "MUSC 121 Piano Class I",
+        "description": "Designed for the pianist with no previous keyboard skills or note reading ability. Emphasis is on basic terminology, technique, and musical concepts. Literature includes classical to contemporary.",
+        "term": null
+    },
+    {
+        "name": "MUSC 122 Piano Class II",
+        "description": "Designed for beginner to intermediate pianists who have completed MUSC 121 or who have some past keyboard experience. Includes review of basics, plus technique, sight-reading, harmonizing, transposition, improvisation, and literature.",
+        "term": null,
+        "prerequisites": {
+            "course": "MUSC 121 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "MUSC 123 Guitar Class I",
+        "description": "Designed for the beginning guitarist. Emphasis on tuning, position, chords, and basic reading skills.",
+        "term": null
+    },
+    {
+        "name": "MUSC 124 Guitar Class II",
+        "description": "A continuation of Guitar Class I.",
+        "term": null,
+        "prerequisites": {
+            "course": "MUSC 123 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "MUSC 125 Group Voice Class",
+        "description": "Designed for the beginning vocalist. Emphasizes the development of basic techniques of breath management, posture, tone quality, and diction. Includes study of vocal theory, exercise materials, and an introduction to standard vocal literature.",
+        "term": null
+    },
+    {
+        "name": "MUSC 130 Piano Proficiency Class",
+        "description": "Required of all music majors. Students learn basic piano techniques (scales, arpegglos, hand positions), and they play a melody with accompaniment , clef reading, sight-reading, and basic repertoire.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131A Applied Piano",
+        "description": "Individual lessons in applied piano, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131B Applied Organ/Harpsichord",
+        "description": "Individual lessons in applied organ/harpsichord, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131C Applied Voice",
+        "description": "Individual lessons in applied voice, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson. Students also meet for a weekly 60-minute studio class.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131D Applied Violin",
+        "description": "Individual lessons in applied violin, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131E Applied Cello",
+        "description": "Individual lessons in applied cello, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131F Applied Oboe",
+        "description": "Individual lessons in applied oboe, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131G Applied Guitar",
+        "description": "Individual lessons in applied guitar, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131H Applied String Bass",
+        "description": "Individual lessons in applied string bass, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131I Applied Clarinet",
+        "description": "Individual lessons in applied clarinet, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131J Applied Saxophone",
+        "description": "Individual lessons in applied saxophone, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131K Applied Flute",
+        "description": "Individual lessons in applied flute, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131L Applied Trumpet",
+        "description": "Individual lessons in applied trumpet, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131M Applied Low Brass",
+        "description": "Individual lessons in applied low brass, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131N Applied Percussion",
+        "description": "Individual lessons in applied percussion, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131O Applied Jazz Piano",
+        "description": "Individual lessons in applied jazz piano, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131P Applied Bassoon",
+        "description": "Individual lessons in applied bassoon, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131Q Applied French Horn",
+        "description": "Individual lessons in applied french horn, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131R Applied Jazz Improvisation",
+        "description": "Individual lessons in applied jazz improvisation, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131S Applied Electric Bass",
+        "description": "Individual lessons in applied electric bass, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131T Applied Conducting",
+        "description": "Individual lessons in applied conducting, open to music majors and conducting minors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "course": "MUSC 211 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "MUSC 131U Applied Jazz Bass",
+        "description": "Individual lessons in applied jazz bass, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131V Applied Harp",
+        "description": "Individual lessons in applied harp, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131W Applied Viola",
+        "description": "Individual lessons in applied viola, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131X Applied Jazz Guitar",
+        "description": "Individual lessons in applied jazz guitar, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131Y Applied Jazz Voice",
+        "description": "Individual lessons in applied jazz voice, open to music majors, minors, and non-music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 131Z Applied Jazz Drum Set",
+        "description": "Individual lessons in applied jazz drum set. Designed to teach the basics of jazz drumming. Students will learn how to play within a wide variety of jazz styles including straight ahead swing, bossa nova, 12/8, ballad style, etc. Students will learn proper techniques including use of hi-hat, feathering on the bass drum, comping on all drums/cymbals, marking form and use of the proper equipment including brushes, sticks and mallets.",
+        "term": null
+    },
+    {
+        "name": "MUSC 132A Applied Composition",
+        "description": "Individual lessons in applied composition, open to music majors, minors, and non? music majors. 1 credit meets weekly for a 30?minute lesson; 2 credits meet weekly for a 60?minute lesson.",
+        "term": null
+    },
+    {
+        "name": "MUSC 133 Brass Techniques",
+        "description": "Designed to formulate principles for teaching the brass instruments. Discussion, demonstration, and performance on the brass instruments. Includes development of proper embouchure, tone production, intonation, range and tone quality. Representative repertoire and teaching materials studied.",
+        "term": null
+    },
+    {
+        "name": "MUSC 134 Woodwind Techniques",
+        "description": "Designed to formulate principles for teaching the woodwind instruments. Discussion, demonstration, and performance on the woodwind instruments. Includes development of proper embouchure, tone production, intonation, range and tone quality. Representative repertoire and teaching materials studied.",
+        "term": null
+    },
+    {
+        "name": "MUSC 135 Strings Techniques",
+        "description": "Designed to formulate principles for teaching the string instruments. Discussion, demonstration, and performance on the string instruments. Includes development of proper bowing, tone production, intonation, range and tone quality. Representative repertoire and teaching materials studied.",
+        "term": null
+    },
+    {
+        "name": "MUSC 136 Percussion Techniques",
+        "description": "Designed to formulate principles for teaching the percussion instruments. Discussion, demonstration, and performance on the percussion instruments. Includes development of snare drum technique, proper grip, striking action, and tone quality. Representative repertoire and teaching materials studied.",
+        "term": null
+    },
+    {
+        "name": "MUSC 137 Vocal Techniques",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "MUSC 139 World Music Methods",
+        "description": "This course is designed specifically for students in the B.A. in Music Education program. The course explores musical cultures throughout the world at the present time, including but not limited; Africa, the Americas, Asia, Near East, Europe, and the South Pacific. The course is designed to supplement the Music History sequence (MUSC 391,392,393) by encouraging appreciation for non-Western music and musical cultures that lie outside the Western canon, and will lead them to formulate principles and methodologies for applying their knowledge of world music to their teaching in the elementary and secondary schools.",
+        "term": null
+    },
+    {
+        "name": "MUSC 140 Concert Choir",
+        "description": "Mixed, SATB chorus open to students of all majors by placement with choral faculty.",
+        "term": null
+    },
+    {
+        "name": "MUSC 141 Big Bing Theory a cappella",
+        "description": "The Gonzaga University Big Bing Theory a cappella vocal ensemble rehearses, reflects upon and performs standard repertoire from the pop a cappella choral music canon. The ensemble is open to students of all areas of study through the choral placement process.",
+        "term": null
+    },
+    {
+        "name": "MUSC 142 Gonzaga Vocal Jazz Choir",
+        "description": "The Gonzaga Vocal Jazz Choir rehearses, reflects upon, and performs standard vocal jazz choir\nrepertoire from a variety of jazz sub-genres and vocal jazz composers spanning several decades.\nThe ensemble is open to student musicians of all areas of study.",
+        "term": null
+    },
+    {
+        "name": "MUSC 143 Vocal Arts Ensemble",
+        "description": "Vocal performing ensemble course that provides opportunities for fully staged operas and musicals, and smaller acting through singing performances. Additionally every other spring this course serves as the international intercultural exchange touring choir. Audition or preauthorization from a vocal or choral faculty is required for enrollment.",
+        "term": null
+    },
+    {
+        "name": "MUSC 144 Gonzaga Glee Club",
+        "description": "Chorus of tenors & basses open to students of all majors by placement or meeting with choral faculty. \nThe Glee Club sings TTBB literature. May be repeated for credit.",
+        "term": null
+    },
+    {
+        "name": "MUSC 145 Musea Treble Chorus",
+        "description": "Chorus of sopranos and altos open to students of all majors. No audition required. Musea sings music from a variety of genres and backgrounds with a special emphasis on music written specifically for treble voices.",
+        "term": null
+    },
+    {
+        "name": "MUSC 146 Wind Ensemble",
+        "description": "The Wind Ensemble performs new and standard literature for concert band and wind ensemble. Audition required.",
+        "term": null
+    },
+    {
+        "name": "MUSC 147 Symphony Orchestra",
+        "description": "The Symphony Orchestra is open to all members of the University and Spokane community. Registration required for all orchestra players from the University and community. Audition or permission from instructor required.",
+        "term": null
+    },
+    {
+        "name": "MUSC 148 Chamber Ensemble",
+        "description": "Audition required.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "MUSC 140 Minimum Grade: D"
+                        },
+                        {
+                            "course": "MUSC 146 Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "course": "MUSC 147 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 149 Jazz Workshop Combo",
+        "description": "Audition required.",
+        "term": null
+    },
+    {
+        "name": "MUSC 150 Guitar Ensemble",
+        "description": "Audition required.",
+        "term": null
+    },
+    {
+        "name": "MUSC 151 Wind Symphony",
+        "description": "An instrumental class that focuses on tone production, blend, balance, intonation, breath support, and other necessary skills as it relates to the performance of established and contemporary works in the wind band medium.",
+        "term": null
+    },
+    {
+        "name": "MUSC 152 Gonzaga Jazz Ensemble",
+        "description": "The Jazz Ensemble performs new and standard literature for big band/jazz orchestra. Membership in the Jazz Ensemble is limited to saxophones, trumpets, trombones, and rhythm section players. An entrance audition at the beginning of the Fall semester is required.",
+        "term": "F"
+    },
+    {
+        "name": "MUSC 153 String Chamber Ensemble",
+        "description": "A chamber ensemble for string students. Students must be proficient on their instrument. Audition required.",
+        "term": null
+    },
+    {
+        "name": "MUSC 154 Percussion Ensemble",
+        "description": "The Percussion Ensemble performs a wide variety of literature from standard to non-traditional and ethnic music. Instructor permission required.",
+        "term": null
+    },
+    {
+        "name": "MUSC 155 Gonzaga Band",
+        "description": "Gonzaga Band is a non-performing beginning/skills band that will serve as a feeder to the instrumental ensembles in the music department. The class will focus on tone production, blend, balance, intonation, breath support, and other necessary skills for any student musician seeking to audition into music department instrumental ensembles.",
+        "term": null
+    },
+    {
+        "name": "MUSC 156 Gonzaga Drum Line",
+        "description": "GU Drum Line will consist of learning music and other protocol associated with the Gonzaga Bulldog Band. Students will concentrate on leaning proper technique on marching snare, bass drum, cymbals, and quads. They will focus on learning the Bulldog Band repertoire as well as several drum cadences and features that will be showcased at Men’s/Women’s/home games.",
+        "term": null
+    },
+    {
+        "name": "MUSC 157 Liturgical Music Ensemble",
+        "description": "The Liturgical Music Ensemble consists of singers and instrumentalists who lead music at the university's festive liturgies, student Masses, ecumenical liturgies, and interfaith services. The course utilizes a diverse repertoire of sacred music, including new compositions, contemporary arrangements, repertoire from the Catholic tradition, hymns, anthems, Mass settings, gospel music, and repertoire from global cultures.",
+        "term": null
+    },
+    {
+        "name": "MUSC 161 Music Theory I",
+        "description": "Review of music fundamentals, basic analysis, and the study of harmony through secondary dominants. Introduction to musical forms.",
+        "term": null
+    },
+    {
+        "name": "MUSC 161L Theory I Ear Training Lab",
+        "description": "Course includes ear training, sight-signing, melodic, rhythmic and harmonic dictation.",
+        "term": null
+    },
+    {
+        "name": "MUSC 162 Music Theory II",
+        "description": "A continuation of MUSC 161.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "MUSC 161 Minimum Grade: D"
+                },
+                {
+                    "course": "MUSC 161L Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 162L Theory II Ear Training Lab",
+        "description": "Course includes ear training, sight-singing, melodic, rhythmic and harmonic dictation.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "MUSC 161 Minimum Grade: D"
+                },
+                {
+                    "course": "MUSC 161L Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 171 Music in the Humanities",
+        "description": "Historical survey of the development of music from antiquity to the present. Relationships between the other arts, philosophies, and social structures presented in context with the evolution of music. Emphasizes the understanding of music history through lecture, performance, and recordings.",
+        "term": null
+    },
+    {
+        "name": "MUSC 175 Jazz History",
+        "description": "A survey of jazz history including important musicians and recordings with the highest emphasis on aural discernment and critical listening skills. The lives, historical/social significance, and music of key jazz musicians of each style period will be studied through demonstrative lectures and audio/visual examples.",
+        "term": null
+    },
+    {
+        "name": "MUSC 185 Special Topics:",
+        "description": "Course topic to be determined by Music faculty.",
+        "term": null
+    },
+    {
+        "name": "MUSC 190 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "MUSC 193 FYS:",
+        "description": "The First-Year Seminar (FYS) introduces new Gonzaga students to the University, the Core Curriculum, and Gonzaga’s Jesuit mission and heritage. While the seminars will be taught by faculty with expertise in particular disciplines, topics will be addressed in a way that illustrates approaches and methods of different academic disciplines. The seminar format of the course highlights the participatory character of university life, emphasizing that learning is an active, collegial process.",
+        "term": null
+    },
+    {
+        "name": "MUSC 210 Orchestration & Arranging",
+        "description": "Students develop knowledge of instrumentation, orchestration, and arranging techniques. They apply these concepts to compose and arrange music for instrumentalists and vocalists.",
+        "term": null
+    },
+    {
+        "name": "MUSC 211 Conducting",
+        "description": "Fundamental study of conducting and score reading, and analysis skill applicable to instrumental and choral ensembles.",
+        "term": null,
+        "prerequisites": {
+            "course": "MUSC 162 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "MUSC 221 Piano Class III",
+        "description": "A continuation of MUSC 122, designed for both the student with some past keyboard experience and music majors preparing for the keyboard skills competency exam. Includes review of fundamentals, technical sight-reading, harmonizing transposition, improvisation, and literature.",
+        "term": null,
+        "prerequisites": {
+            "course": "MUSC 122 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "MUSC 222 Piano Class IV",
+        "description": "A continuation of MUSC 221, designed for both the student with some past experience and music majors preparing for the keyboard competency exam. Includes review of fundamentals, plus technique, sight-reading, harmonization, transposition, improvisation, and literature.",
+        "term": null,
+        "prerequisites": {
+            "course": "MUSC 221 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "MUSC 223 Guitar Class III",
+        "description": "A continuation of Guitar Class II, this course provides a survey of guitars styles from classical to contemporary.",
+        "term": null,
+        "prerequisites": {
+            "course": "MUSC 124 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "MUSC 224 Guitar Class IV",
+        "description": "A continuation of guitar Class III, this course provides an advanced survey of guitar styles and techniques from classical to contemporary. Emphasis on application in performance.",
+        "term": null,
+        "prerequisites": {
+            "course": "MUSC 223 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "MUSC 231 Vocal Diction I",
+        "description": "Part of a four-semester sequence of courses that explore subjects significant to singers. An introduction to the International Phonetic Alphabet (IPA) and English, Italian, and Latin lyric diction, using IPA as it applies to vocal literature. Explores rules of pronunciation rules and practical application for singers as it relates to foreign language diction.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "MUSC 131C Minimum Grade: D"
+                },
+                {
+                    "course": "MUSC 331C Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 232 Vocal Diction II",
+        "description": "Part of a four-semester sequence of courses that explore subjects significant to singers. Applies the International Phonetic Alphabet (IPA) to German and French vocal literature. Explores rules of pronunciation rules and practical application for singers as it relates to foreign language diction.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "MUSC 131C Minimum Grade: D"
+                },
+                {
+                    "course": "MUSC 331C Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 241 Upper Division Applied Exam",
+        "description": "This course is required for students prior to enrolling in upper division applied lessons, normally taken during the fourth semester of MUSC 131 Applied Lessons.",
+        "term": null
+    },
+    {
+        "name": "MUSC 249 World Music",
+        "description": "This course explores several musical cultures throughout the world, including but not limited to; Africa, the Americas, Asia, Near East, Europe and the South Pacific. The course is designed to enhance each student’s appreciation of the diversity of music throughout the world, as well as the people that perform it.",
+        "term": null
+    },
+    {
+        "name": "MUSC 250 Popular Music in the US",
+        "description": "This course introduces various musical styles, influences, and composers of the United States from pre-Colonial times to the present. Emphasis is placed on the broad variety of music particular to American culture, and on music's importance in the cultural history of the nation. Students will demonstrate their understanding of American music history and its cultural relevance through writing, discussion, and aural examination.",
+        "term": null
+    },
+    {
+        "name": "MUSC 257 Creative Music Lab Ensemble",
+        "description": "The Creative Music Lab Ensemble (CMLE) is a contemporary chamber ensemble of varying instrumentation that explores traditional and non-traditional ways of thinking about and making music. Students will study, rehearse and perform a work by a groundbreaking 20th/21st Century composer, as well as student-created arrangements and compositions representing a wide variety of styles. CMLE allows students to actively learn about the creative musical process from ideation-to­-performance through direct experience at all stages. It fosters creativity and allows students to integrate their understanding of music theory, ear training and history in a way that permits them to more fully see their relevance and importance. Students develop themselves as well-rounded musicians and gain a deeper knowledge of music. It also gives future music educators the skills to compose, improvise, arrange, and model effective methods for teaching. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "MUSC 261 Music Theory III",
+        "description": "Continuation of Music Theory II. Advanced ear-training skills, analysis, stylistic writing, and introduction to complex musical forms.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "MUSC 162 Minimum Grade: D"
+                },
+                {
+                    "course": "MUSC 162L Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 261L Theory III Ear Training Lab",
+        "description": "Course includes ear training, sight-singing, melodic, rhythmic and harmonic dictation.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "MUSC 162 Minimum Grade: D"
+                },
+                {
+                    "course": "MUSC 162L Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 262 Music Theory IV",
+        "description": "Continuation of Music Theory III. Twentieth-century and contemporary harmony and composition.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "MUSC 261 Minimum Grade: D"
+                },
+                {
+                    "course": "MUSC 261L Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 290 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "MUSC 310 Interdisciplinary Composition",
+        "description": "Students develop advanced composition and collaboration skills in unique cross-sections with dance, theater, songwriting, and commercial music.",
+        "term": null,
+        "prerequisites": {
+            "course": "MUSC 132A Minimum Grade: A"
+        }
+    },
+    {
+        "name": "MUSC 311 Conducting II",
+        "description": "To prepare all students to conduct a mixed-voice ensemble and be knowledgeable in score study and preparation, including instrument transposition, baton technique, score analysis, interpretation, rehearsal planning and implementation of rehearsal techniques. Students must be prepared to conduct a live ensemble of peers during each class meeting. Conducting times will be assigned for other ensembles outside of class.",
+        "term": null,
+        "prerequisites": {
+            "course": "MUSC 211 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "MUSC 320 Vocal Pedagogy",
+        "description": "Part of a four-semester sequence of courses that explore subjects significant to singers. Surveys voice science, which includes the anatomy and mechanics of vocalization, breath, and hearing; the acoustics of singing; vocal health and maintenance; classification of voice type; and an introduction to voice analysis and teaching methods.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "MUSC 131C Minimum Grade: D"
+                },
+                {
+                    "course": "MUSC 331C Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 321 Song Literature",
+        "description": "Part of a four-semester sequence of courses that explore subjects of significant importance to singers. Surveys art song literature, history, and style, exploring major and minor composers of the German, French, Italian, British, and American repertoire.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "MUSC 131C Minimum Grade: D"
+                },
+                {
+                    "course": "MUSC 331C Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 325 Half Recital",
+        "description": "Public performance and recording of two or more compositions written for MUSC 364. Required of Music majors-Composition Concentration.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "MUSC 130 Minimum Grade: D"
+                },
+                {
+                    "course": "MUSC 241 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 326 Composition Junior Portfolio",
+        "description": "Public performance and recording of two or more compositions written for MUSC 364. Required of composition emphasis Music majors.",
+        "term": null
+    },
+    {
+        "name": "MUSC 331A Applied Piano",
+        "description": "Training in applied piano.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "MUSC 131A Minimum Grade: D"
+                        },
+                        {
+                            "course": "MUSC 241 Minimum Grade: S"
+                        }
+                    ]
+                },
+                {
+                    "course": "MUSC 130 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331B Applied Organ/Harpsichord",
+        "description": "Individual lessons in applied organ/harpsichord, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "MUSC 131B Minimum Grade: D"
+                        },
+                        {
+                            "course": "MUSC 241 Minimum Grade: S"
+                        }
+                    ]
+                },
+                {
+                    "course": "MUSC 130 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331C Applied Voice",
+        "description": "Individual lessons in applied voice, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson. Students also meet for a weekly 60-minute studio class.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "MUSC 131C Minimum Grade: D"
+                        },
+                        {
+                            "course": "MUSC 241 Minimum Grade: S"
+                        }
+                    ]
+                },
+                {
+                    "course": "MUSC 130 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331D Applied Violin",
+        "description": "Individual lessons in applied violin, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "MUSC 131D Minimum Grade: D"
+                },
+                {
+                    "course": "MUSC 130 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331E Applied Cello",
+        "description": "Individual lessons in applied cello, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "MUSC 131E Minimum Grade: D"
+                        },
+                        {
+                            "course": "MUSC 241 Minimum Grade: S"
+                        }
+                    ]
+                },
+                {
+                    "course": "MUSC 130 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331F Applied Oboe",
+        "description": "Individual lessons in applied oboe, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "MUSC 131F Minimum Grade: D"
+                        },
+                        {
+                            "course": "MUSC 241 Minimum Grade: S"
+                        }
+                    ]
+                },
+                {
+                    "course": "MUSC 130 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331G Applied Guitar",
+        "description": "Individual lessons in applied guitar, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "MUSC 131G Minimum Grade: D"
+                        },
+                        {
+                            "course": "MUSC 241 Minimum Grade: S"
+                        }
+                    ]
+                },
+                {
+                    "course": "MUSC 130 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331H Applied String Bass",
+        "description": "Individual lessons in applied string bass, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "MUSC 131H Minimum Grade: D"
+                        },
+                        {
+                            "course": "MUSC 241 Minimum Grade: S"
+                        }
+                    ]
+                },
+                {
+                    "course": "MUSC 130 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331I Applied Clarinet",
+        "description": "Individual lessons in applied clarinet, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "MUSC 131I Minimum Grade: D"
+                        },
+                        {
+                            "course": "MUSC 241 Minimum Grade: S"
+                        }
+                    ]
+                },
+                {
+                    "course": "MUSC 130 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331J Applied Saxophone",
+        "description": "Individual lessons in applied saxophone, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "MUSC 131J Minimum Grade: D"
+                        },
+                        {
+                            "course": "MUSC 241 Minimum Grade: S"
+                        }
+                    ]
+                },
+                {
+                    "course": "MUSC 130 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331K Applied Flute",
+        "description": "Individual lessons in applied flute, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "MUSC 131K Minimum Grade: D"
+                        },
+                        {
+                            "course": "MUSC 241 Minimum Grade: S"
+                        }
+                    ]
+                },
+                {
+                    "course": "MUSC 130 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331L Applied Trumpet",
+        "description": "Individual lessons in applied trumpet, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "MUSC 131L Minimum Grade: D"
+                        },
+                        {
+                            "course": "MUSC 241 Minimum Grade: S"
+                        }
+                    ]
+                },
+                {
+                    "course": "MUSC 130 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331M Applied Low Brass",
+        "description": "Individual lessons in applied low brass, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "MUSC 131M Minimum Grade: D"
+                        },
+                        {
+                            "course": "MUSC 241 Minimum Grade: S"
+                        }
+                    ]
+                },
+                {
+                    "course": "MUSC 130 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331N Applied Percussion",
+        "description": "Individual lessons in applied percussion, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "MUSC 131N Minimum Grade: D"
+                        },
+                        {
+                            "course": "MUSC 241 Minimum Grade: S"
+                        }
+                    ]
+                },
+                {
+                    "course": "MUSC 130 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331O Applied Jazz Piano",
+        "description": "Individual lessons in applied jazz piano, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "MUSC 131O Minimum Grade: D"
+                },
+                {
+                    "course": "MUSC 241 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331P Applied Bassoon",
+        "description": "Individual lessons in applied bassoon, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "MUSC 131P Minimum Grade: D"
+                        },
+                        {
+                            "course": "MUSC 241 Minimum Grade: S"
+                        }
+                    ]
+                },
+                {
+                    "course": "MUSC 130 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331Q Applied French Horn",
+        "description": "Individual lessons in applied french horn, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "MUSC 131Q Minimum Grade: D"
+                        },
+                        {
+                            "course": "MUSC 241 Minimum Grade: S"
+                        }
+                    ]
+                },
+                {
+                    "course": "MUSC 130 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331R Applied Jazz Improvisation",
+        "description": "Individual lessons in applied jazz improvisation, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "course": "MUSC 131R Minimum Grade: D"
+        }
+    },
+    {
+        "name": "MUSC 331S Applied Electric Bass",
+        "description": "Individual lessons in applied electric bass, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "MUSC 131S Minimum Grade: D"
+                },
+                {
+                    "course": "MUSC 241 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331U Applied Jazz Bass",
+        "description": "Individual lessons in applied jazz bass, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "MUSC 131U Minimum Grade: D"
+                },
+                {
+                    "course": "MUSC 241 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331V Applied Harp",
+        "description": "Individual lessons in applied harp, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "MUSC 131V Minimum Grade: D"
+                        },
+                        {
+                            "course": "MUSC 241 Minimum Grade: S"
+                        }
+                    ]
+                },
+                {
+                    "course": "MUSC 130 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331W Applied Viola",
+        "description": "Individual lessons in applied viola, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "MUSC 131W Minimum Grade: D"
+                },
+                {
+                    "course": "MUSC 241 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331X Applied Jazz Guitar",
+        "description": "Individual lessons in applied jazz guitar, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "MUSC 131X Minimum Grade: D"
+                },
+                {
+                    "course": "MUSC 241 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 331Z Applied Jazz Drum Set",
+        "description": "Individual lessons in applied jazz drum set, open to music majors. 1 credit meets weekly for a 30-minute lesson; 2 credits meet weekly for a 60-minute lesson. Designed to continue in the development and refinement of jazz drumming.",
+        "term": null,
+        "prerequisites": {
+            "course": "MUSC 241 Minimum Grade: S"
+        }
+    },
+    {
+        "name": "MUSC 332 Choral Conducting Lab",
+        "description": "Choral Conducting lab to accompany Applied Conducting (MUSC 131T).",
+        "term": null
+    },
+    {
+        "name": "MUSC 332A Applied Composition",
+        "description": "Individual lessons in applied composition, open to music majors, minors, and non? music majors. 1 credit meets weekly for a 30?minute lesson; 2 credits meet weekly for a 60?minute lesson.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "MUSC 132A Minimum Grade: D"
+                },
+                {
+                    "course": "MUSC 241 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 333 Instrumental Conducting Lab",
+        "description": "Instrumental Conducting Lab to accompany Applied Conducting (MUSC 131T).",
+        "term": null
+    },
+    {
+        "name": "MUSC 340 Jazz Piano Proficiency Exam",
+        "description": "All students pursuing a Major in Music with a Jazz Performance Concentration must pass the Jazz Piano Proficiency Exam. Major and Minor ii-V-I progressions using rootless voicings in all keys, 2-hand accompaniment of 12-bar Blues, and chord progression sight-reading will be evaluated in the exam.",
+        "term": null,
+        "prerequisites": {
+            "course": "MUSC 130 Minimum Grade: S"
+        }
+    },
+    {
+        "name": "MUSC 358 Keyboard Accompanying",
+        "description": "Keyboard students are assigned to student vocalists and instrumentalists by the instructor. Students attend weekly rehearsals, receive coaching and are required to perform at least once per semester.",
+        "term": null,
+        "prerequisites": {
+            "course": "MUSC 331A Minimum Grade: D"
+        }
+    },
+    {
+        "name": "MUSC 385 Special Topics",
+        "description": "Topic determined by Music faculty.",
+        "term": null
+    },
+    {
+        "name": "MUSC 391 Music History I",
+        "description": "Survey of the history and literature of music from Antiquity through the Medieval, Renaissance, Baroque, and Classical Periods.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "MUSC 261 Minimum Grade: C"
+                },
+                {
+                    "course": "MUSC 130 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 392 Music History II",
+        "description": "Survey of the history and literature of music in the Romantic Period, 20th Century, and New Millennium. Includes music of the Western classical and jazz traditions and global intersections.",
+        "term": null,
+        "prerequisites": {
+            "course": "MUSC 391 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "MUSC 425 Full Recital",
+        "description": "Sixty minute degree recital required for those students majoring in Music Performance. Presentation of recital requires successful audition one month prior to recital date.",
+        "term": null
+    },
+    {
+        "name": "MUSC 426 Composition Senior Portfolio",
+        "description": "Public performance and recording of one or more compositions written for MUSC 364 or MUSC 464. Works performed for MUSC 326 are ineligible to meet this requirement. Required for Music Majors, Composition Concentration.",
+        "term": null,
+        "prerequisites": {
+            "course": "MUSC 326 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "MUSC 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.",
+        "term": null
+    },
+    {
+        "name": "MUSC 450 Jazz Theory and Analysis",
+        "description": "Designed to teach students chord/scale theory, application, and analysis. The course will cover harmonic major, ascending melodic minor, diminished, augmented, pentatonic, and synthetic scales as well as triad pairs and how they relate to the harmony over which jazz improvisers apply them. Further, students will transcribe and analyze instrumental jazz from three developmental eras of jazz: Bebop (1940-1950), Classic (1950-1960), and Modern (1960-present).",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "MUSC 340 Minimum Grade: S"
+                },
+                {
+                    "course": "MUSC 262 Minimum Grade: C"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 452 Classroom Mgmt & Assessment",
+        "description": "Future music teachers develop strategies and techniques for effective and creative classroom management, motivation, assessment, and evaluation with applications to K?12 school music programs.",
+        "term": null,
+        "prerequisites": {
+            "course": "MUSC 211 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "MUSC 452L Field Experience I",
+        "description": "\"Teacher candidates will have the opportunity to explore the instruction, assessment, and technology practices that are at work in schools. Teacher candidates are required to submit a Field Experience Request form to the Field Experience office a minimum of a month prior to the semester they are taking the course. This form can be found on on Blackboard under Teacher Certification and Field Experience Materials Course.\nThe field experience requires a minimum of 30 hours in the classroom and travel by car may be required. In addition, current fingerprint clearance from the WSP and FBI throughout the semester and Pre-Residency Clearance is to be on file. Field experiences at Gonzaga University provide opportunities for teacher candidates to observe experienced teachers, practice newly emerging teaching skills, and apply theory gained from university coursework to the “real world’ of elementary, middle, and secondary schools. It is also a time of feedback and reflection on the social, psychological, and pedagogical aspects of classroom and school life.\"",
+        "term": null,
+        "prerequisites": {
+            "course": "MUSC 211 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "MUSC 453 General Music Ed Methods",
+        "description": "General Music Education Methods is designed to prepare students for teaching general music to children in grades K-12. Emphasis is placed on developing a philosophy of music education that considers the developmental needs of children as foundational in the process of teaching music concepts. The course consists of lectures, teaching demonstrations, peer teaching, music classroom observations, a review of music education literature, and the development of a teaching portfolio. Students will develop skills in teaching music that incorporates singing, movement, playing instruments, listening, creating, and writing.",
+        "term": null
+    },
+    {
+        "name": "MUSC 453L General Music Ed Methods Lab",
+        "description": "Teacher candidates will have the opportunity to explore the instruction, assessment, and technology practices that are at work in schools. Teacher candidates are required to submit a Field Experience Request form to the Field Experience office a minimum of a month prior to the semester they are taking the course. This form can be found on on Blackboard under Teacher Certification and Field Experience Materials Course. The field experience requires a minimum of 30 hours in the classroom and travel by car may be required. In addition, current fingerprint clearance from the WSP and FBI throughout the semester and Pre-Residency Clearance is to be on file.",
+        "term": null
+    },
+    {
+        "name": "MUSC 454 Music Education Methods",
+        "description": "A study of elementary and secondary choral and instrumental instruction including program organization, teaching techniques, materials, and field experiences.",
+        "term": null
+    },
+    {
+        "name": "MUSC 454L Field Experience III",
+        "description": "Field experiences at Gonzaga University provide opportunities for teacher candidates to observe experienced teachers, practice newly emerging teaching skills, and apply theory gained from university coursework to the “real world’ of elementary, middle, and secondary schools.  It is also a time of feedback and reflection on the social, psychological, and pedagogical aspects of classroom and school life.",
+        "term": null
+    },
+    {
+        "name": "MUSC 480 Music History Seminar",
+        "description": "An in-depth investigation of one particular topic of music. Students engage in analysis, research and practical application of a topic relevant to the discipline of music. Examples include a given composer, genre, and music performance issue. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "MUSC 392 Minimum Grade: C"
+                },
+                {
+                    "course": "MUSC 391 Minimum Grade: C"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 490 Directed Study/Readings",
+        "description": "Directed Study/Readings requires completion of a form, and Department Chair permission and cannot be registered for via Zagweb.",
+        "term": null
+    },
+    {
+        "name": "MUSC 491 Thesis/OralComprehensive Exam",
+        "description": "This course is designed to test students’ knowledge and retention of the information covered in their course of study. Required for Music Majors, General Studies Concentration.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "type": "and",
+                            "requirements": [
+                                {
+                                    "type": "and",
+                                    "requirements": [
+                                        {
+                                            "type": "and",
+                                            "requirements": [
+                                                {
+                                                    "type": "or",
+                                                    "requirements": [
+                                                        {
+                                                            "course": "MUSC 291 Minimum Grade: D"
+                                                        },
+                                                        {
+                                                            "course": "MUSC 391 Minimum Grade: D"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "or",
+                                                    "requirements": [
+                                                        {
+                                                            "course": "MUSC 311 Minimum Grade: D"
+                                                        },
+                                                        {
+                                                            "course": "MUSC 211 Minimum Grade: D"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "or",
+                                            "requirements": [
+                                                {
+                                                    "course": "MUSC 390 Minimum Grade: D"
+                                                },
+                                                {
+                                                    "course": "MUSC 391 Minimum Grade: D"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "or",
+                                    "requirements": [
+                                        {
+                                            "course": "MUSC 391 Minimum Grade: D"
+                                        },
+                                        {
+                                            "course": "MUSC 392 Minimum Grade: D"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "course": "MUSC 462 Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "course": "MUSC 499 Minimum Grade: S"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MUSC 495 Student Teaching Seminar",
+        "description": "The Seminar complements the semester of student teaching. It is an integral facet of the student teaching experience and will serve both as a forum for sharing ideas, concerns, problems and solutions as well as a means of preparation for effective teaching. Current issues in music education will be discussed.",
+        "term": null
+    },
+    {
+        "name": "MUSC 496 Student Teaching",
+        "description": "This is a culminating 16 week capstone experience in which the teacher candidate assumes the full responsibility of a  teacher under the direction of a University Supervisor and a Mentor Teacher. Seminars are provided for student interaction, problem solving, certification requirements, and informational support. Current fingerprint clearance from the WSP and FBI throughout the semester and Pre-Residency Clearance is on file.",
+        "term": null
+    },
+    {
+        "name": "MUSC 497 Internship",
+        "description": "An Internship in Music is designed to give music majors an experience working within a professional organization and to develop hands-on career experiences. It is intended to prepare music majors for a career in the music and/or teaching profession. The student is responsible for securing the internship.",
+        "term": null
+    },
+    {
+        "name": "MUSC 499 Senior Thesis",
+        "description": "Required for those students seeking the Bachelor of Arts in Music, General Studies Concentration. A major research paper on a selected topic. The Senior Thesis will serve as a major component in the Oral Comprehensive Exam.",
+        "term": null,
+        "prerequisites": {
+            "course": "MUSC 399 Minimum Grade: D"
+        }
+    }
+]

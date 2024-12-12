@@ -1,0 +1,228 @@
+[
+    {
+        "name": "ITAL 101 Elementary Italian I",
+        "description": "This course is designed to introduce students to elementary Italian language skills and give them an insight into the many aspects of Italy and its cultures. This course provides practice with writing, reading, speaking, and listening. Students are expected to achieve novice-mid level proficiency in these skills according to the ACTFL guidelines, in addition to developing intercultural knowledge and competencies. Students will be able to recall facts and basic concepts. This course is taught in Italian.",
+        "term": null
+    },
+    {
+        "name": "ITAL 101L Elementary Italian I Lab",
+        "description": "Taken only in conjunction with ITAL 101 when taken in Florence, Italy.",
+        "term": null
+    },
+    {
+        "name": "ITAL 102 Elementary Italian II",
+        "description": "This course is designed to further introduce students to elementary Italian language skills and give them an insight into the many aspects of Italy and its cultures. This course provides extensive practice with writing, reading, speaking, and listening. Students are expected to achieve novice-high level proficiency in these skills according to the ACTFL guidelines, in addition to developing intercultural knowledge and competencies. Students will be able to draw connections among ideas and engage the present, the past and the future tenses. This course is taught in Italian.",
+        "term": null
+    },
+    {
+        "name": "ITAL 102L Elementary Italian II Lab",
+        "description": "Taken only in conjunction with ITAL 102 when taken in Florence, Italy.",
+        "term": null
+    },
+    {
+        "name": "ITAL 105 Elementary Italian Convers I",
+        "description": "Students learn to use the language in a variety of everyday situations through focused practice in class and organized encounters with native speakers of Italian. Does not fulfill the College of Arts and Sciences Language requirement.",
+        "term": null
+    },
+    {
+        "name": "ITAL 106 Elementary Italian Convers II",
+        "description": "A continuation of ITAL 105. Vocabulary and grammar presented in Italian 102 are reinforced. Does not fulfill the College of Arts and Sciences Language requirement.",
+        "term": null
+    },
+    {
+        "name": "ITAL 190 Directed Study",
+        "description": "Topic to be determined by professor.",
+        "term": null
+    },
+    {
+        "name": "ITAL 201 Intermediate Italian I",
+        "description": "This course is designed to further strengthen and expand language skills in Italian. This course provides extensive practice with writing, reading, speaking, and listening. Students will develop intermediate-mid level proficiency in these skills according to the ACTFL guidelines, in addition to developing intercultural knowledge and competencies. Students will be able to draw connections among and evaluate ideas and to engage the past, the present and the future tenses in addition to the imperative and the conditional modes. This course is taught in Italian.",
+        "term": null
+    },
+    {
+        "name": "ITAL 202 Intermediate Italian II",
+        "description": "This course is designed to further strengthen and expand students' language skills in Italian. This course provides extensive practice with writing, reading, speaking, and listening. Students will develop intermediate-high level proficiency in these skills according to the ACTFL guidelines, in addition to developing intercultural knowledge and competencies. Students will be able to explore ideas by creative analytic thinking while engaging the past, the present and the future tenses in addition to the imperative, the conditional and the subjunctive modes. This course is taught in Italian.",
+        "term": null
+    },
+    {
+        "name": "ITAL 290 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "ITAL 301 Advanced Italian I",
+        "description": "Advanced review of grammatical structures through conversation, readings, compositions and oral comprehension. Course taught in Italian.",
+        "term": null
+    },
+    {
+        "name": "ITAL 302 Advanced Italian II",
+        "description": "Advanced review of grammatical structures through conversation, readings, presentations and oral comprehension. Can be taken alone or as a continuation of ITAL 301. Course taught in Italian.",
+        "term": null
+    },
+    {
+        "name": "ITAL 303 Survey of Italian Literature I",
+        "description": "An overview of Italian literature from the age of Dante through the Renaissance, including Petrarch, Boccaccio and Machiavelli. Course taught in Italian.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 304 Survey: Italian Literature II",
+        "description": "An overview of Italian literature from the Renaissance through contemporary times. Course taught in Italian.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 306 Advanced Conversation",
+        "description": "Advanced conversation for students returning from Florence. Course taught in Italian.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 307 Conv Approach to Contemp Issue",
+        "description": "A course designed for those who wish to continue to improve their conversational skills. Course taught in Italian.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 308 Italian through Film",
+        "description": "This course uses Italian films to help students improve language proficiency and deepen their understanding of Italian history and culture. Italian cinema closely reflects national culture and each film in the course is chosen for its focus on one or more aspects of Italian society. Preparation for viewing includes background reading, thematic discussions and vocabulary building exercises. Course taught in Italian. Offered in Florence only.",
+        "term": null
+    },
+    {
+        "name": "ITAL 313 The World of Dante",
+        "description": "In this course, students will engage with the history, philosophy, art, politics, and poetics of the Middle Ages through a close reading of Dante Alighieri's Commedia, Vita Nova, and other period texts. The course will also briefly consider the monumental cultural heritage that Dante's poem has and continues to produce. In class discussions, students will be expected to know, discuss, and offer interpretations of the text through their own reading and preparation based on notes provided by the instructor. Course will emphasize close reading of primarily poetic texts. This course is taught in English.",
+        "term": null
+    },
+    {
+        "name": "ITAL 314 Fascism in Film and Literature",
+        "description": "This class examines the way fascism is presented in selected novels and films. An important objective of the course is to study the impact of Fascism on segments of the Italian population which did not conform to fascist ideals. Taught in English.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 315 The Italian Cinema",
+        "description": "This course engages a selection of contemporary Italian films to conduct a systematic study of cinematic form, narration and expression. Students will familiarize with the terms and perspectives required to compose structured and argumentative analyses according to norms of academic writing.Taught in English.",
+        "term": null
+    },
+    {
+        "name": "ITAL 316 The Italian Short Story I",
+        "description": "In Italian. The development of the Italian short story from its origin through the Baroque. Included are stories from the Novellino, the Decameron, the Novelliere, and the Pentameron.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 317 Italian Short Story II",
+        "description": "The Italian short story through the works of the nineteenth and twentieth century authors. Taught in Italian.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 319 Mafia&PoliticViolence-Film/Lit",
+        "description": "Through a study of Italian film, novels and nonfiction, this course will examine the phenomenon of organized crime in Italian society. Taught in English.",
+        "term": null
+    },
+    {
+        "name": "ITAL 320 New Immigrants in Film &Lit",
+        "description": "This course will explore the impact of immigration from Third World countries on Italian society through the study of novels, nonfiction and film. Taught in Italian.",
+        "term": null
+    },
+    {
+        "name": "ITAL 322 The Italian Historical Novel",
+        "description": "This course will explore the development of the historical novel in Italy with emphasis on modern historical novels. Taught in English.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 330 Literary Genres",
+        "description": "A study of examples of the major literary genres (narrative, dramatic, and poetic). Taught in Italian.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 350 Italian Civilization & Culture",
+        "description": "Readings and discussion of various aspects of Italian life such as art, cinema, politics, literature, history, fashions, etc. Taught in Italian.",
+        "term": null
+    },
+    {
+        "name": "ITAL 363 The Roman Republic",
+        "description": "The political, social and cultural history of Republican Rome from its legendary origins to the Battle of Actium and its de facto end in 31 BC. The course will focus closely on the factors leading to the Republic’s successful rise as uncontested Mediterranean ruler as well as the internal political and social conflicts that brought the Republic crashing down to its ultimate fall. Taught in English.",
+        "term": null
+    },
+    {
+        "name": "ITAL 364 The Roman Empire",
+        "description": "The political, social and cultural history of Rome during the age of the Emperors, from Augustus' creation of the principate in 27 B.C. to the decline of the Roman Empire in the west by the 5th century AD. Special focus in this course will be given to the workings of the Imperial system, daily life in Rome and the provinces, the rise of Christianity, and the ultimate transformation of the empire. Taught in English.",
+        "term": null
+    },
+    {
+        "name": "ITAL 366 Medieval Europe",
+        "description": "Developments in the first flowering of Western European civilization, circa A.D. 500-1350, including feudalism, the rise of representative assemblies, the commercial revolution and the papal monarchy. Taught in English. Gonzaga in Florence only.",
+        "term": null
+    },
+    {
+        "name": "ITAL 367 Renaissance Europe",
+        "description": "The history of Western Europe circa 1350-1550, examining the political, religious, social, and economic context for the cultural achievements of the humanists, artists, dramatists, scientists, architects, and educators of the age of Joan of Arc, Michelangelo, the Tudors and the Medici. Taught in English.",
+        "term": null
+    },
+    {
+        "name": "ITAL 380 Special Topics",
+        "description": "Selected topics in Italian language, literature, or civilization.",
+        "term": null,
+        "prerequisites": {
+            "course": "ITAL 202 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ITAL 390 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "ITAL 391 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "ITAL 440 Women in Italian Literature",
+        "description": "This course examines the contribution of women novelists to Italian literature through the discussion of contemporary novels by women. Taught in English.",
+        "term": null
+    },
+    {
+        "name": "ITAL 497 Internship",
+        "description": "The internship provides students with the opportunity to apply knowledge and skills gained in the Italian classroom with a supervised organizational setting directly related to the student's major area of study. An internship plan (description, objectives, learning outcomes) is devised with an Italian faculty member, and approved by the Director of Italian Studies, before the internship begins.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "ITAL 301 Minimum Grade: B"
+                },
+                {
+                    "course": "ITAL 302 Minimum Grade: B"
+                }
+            ]
+        }
+    },
+    {
+        "name": "ITAL 498 Senior Project",
+        "description": "Required of all Italian Studies majors. Permission from the Director of Italian Studies only.",
+        "term": null
+    }
+]

@@ -1,0 +1,601 @@
+[
+    {
+        "name": "INST 180 Special Topics",
+        "description": "Topics determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "INST 190 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "INST 193 FYS:",
+        "description": "The First-Year Seminar (FYS) introduces new Gonzaga students to the University, the Core Curriculum, and Gonzaga’s Jesuit mission and heritage. While the seminars will be taught by faculty with expertise in particular disciplines, topics will be addressed in a way that illustrates approaches and methods of different academic disciplines. The seminar format of the course highlights the participatory character of university life, emphasizing that learning is an active, collegial process.",
+        "term": null
+    },
+    {
+        "name": "INST 201 Intro to International Studies",
+        "description": "This course provides an introduction to the multi-disciplinary field of International Studies. Required for all International Studies majors and minors. Recommended for any first or second year student from any program of study with an interest in international affairs.",
+        "term": null
+    },
+    {
+        "name": "INST 285 Special Topics",
+        "description": "Selected International Studies topics of current and special interest.",
+        "term": null
+    },
+    {
+        "name": "INST 290 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "INST 302 Topics: Int'l Differences.",
+        "description": "Special topics which are offered on occasion as full semester courses by faculty members from the various disciplines which make up the International Studies Program. Such courses focus on subjects of current or special interests which are not normally a part of the regular curriculum and focus on international differences (e.g., cultural, political, economic) and particular regions of the world. (topic must pertain to region of Major/Minor Study).",
+        "term": null
+    },
+    {
+        "name": "INST 303 Topics: Int'l Interactions",
+        "description": "Special topics which are offered on occasion as full semester courses by faculty members from the various disciplines which make up the International Studies Program. Such courses focus on subjects of current or special interests which are not normally a part of the regular curriculum and focus on international interactions among nations and/or organizations, international law, treaties, etc.",
+        "term": null
+    },
+    {
+        "name": "INST 304 Interreligious Dialogue",
+        "description": "Investigates the imperative of Christianity and other world religions to engage in respectful dialogue and mutual understanding, exposes pressing practical issues such as religious violence and divisive ideologies, and proposes a comparative theological perspective highlighting spiritual engagement, moral responsibility and reconciliation.",
+        "term": null
+    },
+    {
+        "name": "INST 305 Religion and Violence",
+        "description": "In today's world of alarming growth in sectarianism, radicalization, and terrorism across many continents, does religion simply give rise to human division or, is it- as some say - peaceful? This course not merely studies religious violence, it responds to it and encourages Gonzaga students to think with and beyond a variety of disciplines to develop their own skills of interpretation. Offered every year.",
+        "term": null
+    },
+    {
+        "name": "INST 310 Third World Development",
+        "description": "Focus on political development in the Third World. After examining the making of the Third World through imperialism and colonialism, analyzes key political institutions (the state, political parties, the military), international economic context of dependency and vulnerability. Several case studies follow a common analytical framework to trace experiences with democratic and authoritarian rule and assess the underlying causes of democratic success and failure.",
+        "term": null
+    },
+    {
+        "name": "INST 311 African History Through Film",
+        "description": "This course explores African history by examining the roles that Africans have played historically as creators, audiences, and subjects of films. Using both film studies and African studies concepts, the course interrogates African film as both artifacts and interpretations of the past.",
+        "term": null,
+        "prerequisites": {
+            "course": "HIST 102 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "INST 315 Latin American Society",
+        "description": "An overview of Latin American development. Several socio-economic factors are examined. Development issues are broadly conceptualized within economic, demographic, and cultural dimensions. These variables are viewed as overlapping forces influencing development. International Differences elective.",
+        "term": null
+    },
+    {
+        "name": "INST 316 Latin Amer Pre-Hisp-19thC Lit",
+        "description": "An introduction to the literature of the Spanish-speaking Americas. The texts students will read range from pre-Hispanic times until the end of the nineteenth century. During the semester, students will explore the various voices that arise from the Americas and how they present themselves in different genres such as: diary, chronicle, letter, essay, poetry, short story, and novel. (Taught in Spanish). Fall, alternate years.",
+        "term": "F",
+        "prerequisites": {
+            "course": "SPAN 302 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "INST 317 Latin American 19th-21st Cent",
+        "description": "Introduction to the major trends and authors of Latin America during the contemporary period, starting at the end of the 19th Century and concluding with present-day works. (Taught in Spanish). Spring, alternate years.",
+        "term": "S",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "SPAN 302 Minimum Grade: D"
+                },
+                {
+                    "course": "SPAN 320 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "INST 320 Resistance, Struggle, & Power",
+        "description": "Communication is the central means for contesting and reconfiguring structural forms of power relations among social groups, and this class focuses on power dynamics and imbalances across social institutions such as law, education, medicine, economics, media, and religion. Students engage the concepts of hegemony (the production of consent for dominant power relationships) and counter-hegemony (the struggle against dominant social arrangements). As such, the course invites students to consider the interplay of communication, culture, and social institutions in maintaining, resisting, and transforming the persistent inequalities of power and disproportionate distribution of cultural and political capital. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "COMM 210 Minimum Grade: C"
+                        },
+                        {
+                            "course": "COMM 220 Minimum Grade: C"
+                        }
+                    ]
+                },
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "COMM 275 Minimum Grade: C"
+                        },
+                        {
+                            "course": "COMM 285 Minimum Grade: C"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "INST 325 Post-Soviet Russia and China",
+        "description": "Focus on the pre-1985 Soviet political system; how Gorbachev's six-year reform program led to the unraveling of the Soviet Union; and the difficult transition to democracy and a market economy in post-Soviet Russia. Similarly, study contrasts of Maoist China with the uneasy mixture of economic reform and political repression coexisting in China today.",
+        "term": null
+    },
+    {
+        "name": "INST 326 Global Gender Regimes",
+        "description": "Compares the lives of women around the world: their public and private roles and responsibilities, positions in government, the economy, and the private sphere. Seeks to explain women's status differences in various regions and societies by looking at the influence of culture, religion, economics, and politics.",
+        "term": null
+    },
+    {
+        "name": "INST 330 Religions of Asia",
+        "description": "This survey course introduces the following Asian religions: Hinduism, Buddhism, Confucianism, Daoism, and Shinto. We examine the teachings of these Asian traditions in the context of their diverse cultural and historical settings. We also consider how these Asian religions have adapted to fit the contemporary world and how they have influenced popular culture. Offered every semester.",
+        "term": null
+    },
+    {
+        "name": "INST 332 Politics of Space and Place",
+        "description": "Everyday encounters with physical surroundings guide our orientations to the world. As we wander city streets, shopping malls, stadiums, nature preserves, sacred sites, restaurants, monuments, museums, and classroooms, we examine how we move in, and are moved by the material  arenas we share. Spatial organization and built environments inform our habits of perception, determine the meaning of a particular place, accent what is worth attention and what might be overlooked, and reaffirm dominant norms and power relationships in public culture. Charts, maps, apps, and other navigational tools dictate where and how we move, and how we understand our roles within a given space. Featuring the experiential dimensions of rhetoric and communication, this course presses us to consider how material spaces and places construct everyday geographies. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "COMM 210 Minimum Grade: C"
+                },
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "COMM 275 Minimum Grade: C"
+                        },
+                        {
+                            "course": "COMM 285 Minimum Grade: C"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "INST 333 Buddhism",
+        "description": "Introduction to Buddhism examines the historical and cultural contexts in which Buddhist beliefs and practices were developed in Asia and how they spread to the West. We also study how, throughout history, Buddhism has adapted to a changing world. Offered every other semester.",
+        "term": null
+    },
+    {
+        "name": "INST 334 Russia & USSR Since 1945",
+        "description": "This course may be considered an autopsy on the Soviet empire. Its themes include: \"developed\" socialism under Stalin's successors; the rise and decline of the Soviet economy; the Cold War; the Soviet Union's nationalities issues; the impact of Gorbachev's reforms; and the collapse of the USSR. The course will also consider the domestic and foreign policy challenges faced by Yeltsin and Putin after 1991.",
+        "term": null
+    },
+    {
+        "name": "INST 337 The Stalin Era",
+        "description": "This course focuses on the dictatorship of Josef Stalin from the late 1920s until his death in 1953. Its main topics include: Stalin's consolidation of personal rule; the impact of crash industrialization and agricultural collectivization; Stalinist terror; the Soviet experience in World War II; the worldwide influence of the Soviet model after the war; and the legacy of Stalinism in Russia.",
+        "term": null
+    },
+    {
+        "name": "INST 339 Contemporary French Cinema",
+        "description": "A study of French cinema as it has evolved in the last two decades. The films viewed will be used as a means to encourage reflection on the history, ideas and values that have gone into the making of modern France. The course is offered in English and French in separate sections. For students who take the English section of the course through the INST cross-listing, there is no French pre-requisite. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "INST 340 African Nationalism",
+        "description": "This course will examine African countries' internal histories as they transitioned from colony to nation from the 1940s through the 1990s. While not ignoring the roles played by colonial masters and indigenous elites, the course's main focus is on how ordinary men and women shaped these processes.",
+        "term": null
+    },
+    {
+        "name": "INST 341 African Environmental History",
+        "description": "This course explores the long-term history of Africans' dynamic interactions with their environments by interrogating how African environmental realities and Africans' conceptions of the environment shaped broader political, social and economic histories. Beginning in the precolonial period, we will trace how climatic variation, political and economic changes in the colonial period, and post-independence priorities transformed Africans' relationships with their environments.",
+        "term": null
+    },
+    {
+        "name": "INST 342 International Relations",
+        "description": "Theory and practice of the international political system and the behavior of the participating nations. Taught only at Gonzaga-in-Florence.",
+        "term": null
+    },
+    {
+        "name": "INST 343 Global Economic Issues",
+        "description": "This course is a presentation of a broad range of global economic issues and policies relevant to a number of disciplines including business, political science, and international studies. Topics include: why nations trade, international trade and economic growth, protectionism, discriminatory trade policies, the foreign exchange market, factor mobility, and comparative economic systems. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "type": "or",
+                            "requirements": [
+                                {
+                                    "course": "ECON 201 Minimum Grade: D"
+                                },
+                                {
+                                    "course": "ECON 270H Minimum Grade: D"
+                                }
+                            ]
+                        },
+                        {
+                            "course": "ECON 200 Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "course": "ECON 207H Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "INST 344 International Organizations",
+        "description": "Examines why international organizations exist and whether they make a difference in solving global problems. Questions to be addressed include: Where does their power come from? Why are some designed differently than others? Why do countries use international organizations to achieve their goals? Are they effective? Practical knowledge about the major ones such as the U.N., European Union, World Trade Organization, and NGOs. Their successes and failures about specific global problems such as conflict, human rights and development.",
+        "term": null
+    },
+    {
+        "name": "INST 345 International Law",
+        "description": "International law with an international relations focus. How and why international treaties and other sources of international laws are created; actors who create, interpret, and enforce them. Structures for increasing compliance and their effectiveness. Variety of major international treaties and laws: war, sea, trade, and human rights.",
+        "term": null
+    },
+    {
+        "name": "INST 346 Parliamentary Government",
+        "description": "Parliamentary or Cabinet government contrasted with the American government. Focus on disciplined parties, prime ministers, civil servants, and elected politicians, written and unwritten constitutional rules, parliamentary supremacy and rights-based politics. Usually features Canada but draws examples from Great Britain, New Zealand, India, and Australia.",
+        "term": null
+    },
+    {
+        "name": "INST 347 International Treaties",
+        "description": "Examines international treaties: why they exist, origins of their power, different designs, uses made of them, effectiveness. Covers such examples as NATO, NAFTA, Kyoto Protocol. Their successes and failures about specific problems. International Interactions elective.",
+        "term": null
+    },
+    {
+        "name": "INST 348 20th Century Northern Ireland",
+        "description": "This course explores the troubled history of Northern Ireland from the perspective of the two communities that live within it, as well as that of the British and Irish governments. It examines key events in Northern Ireland's recent history such as Bloody Sunday, internment, the murder of Lord Mountbatten, the hunger strikes, the Enniskillen and Omagh bombings, and the steps to the Peace Process The course emphasizes how peace has been achieved in the wake of the \"Troubles\" as it examines whether the Good Friday Agreement can offer lessons to other conflict zones around the world.",
+        "term": null
+    },
+    {
+        "name": "INST 350 International Ethics",
+        "description": "The moral structure of the international community in the context of problems such as war, foreign aid, and transnational migration.",
+        "term": null
+    },
+    {
+        "name": "INST 351 Politics of Social Memory",
+        "description": "The ways we remember our collective past influence our present and shape our futures. This course examines how we rhetorically construct and struggle over social memory through public remembrances of historical events via war memorials, film and documentary, commemorative celebrations, reenactments, monuments, and museum exhibits. Students extend rhetorical and visual theoretical concepts and methods to evaluate sites of public memory and the social and cultural politics shaping the construction of memory. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "COMM 210 Minimum Grade: C"
+                        },
+                        {
+                            "course": "COMM 220 Minimum Grade: C"
+                        }
+                    ]
+                },
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "COMM 275 Minimum Grade: C"
+                        },
+                        {
+                            "course": "COMM 285 Minimum Grade: C"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "INST 355 The Politics of Eurasia",
+        "description": "We will begin by developing our understanding of democracy and then proceed to explore the political, economic and social development of several countries of Central and Eastern Europe, Russia and Central Asia over time. What explains the various fates of the countries in this region? Political culture/history? Political agency? Proximity to \"the West\" and diffusion of norms?",
+        "term": null
+    },
+    {
+        "name": "INST 356 The U.S. in the World",
+        "description": "This course will introduce you to the history of the United States in its global context. In order to situate the United States within its world, this course explores the interconnections between domestic beliefs, national policy, and international events.",
+        "term": null
+    },
+    {
+        "name": "INST 360 Japanese Culture I",
+        "description": "This course is designed to introduce students to fundamental Japanese culture. Some of the areas covered by this course will be human relations at work and in school, etiquette, customs, traditions and social issues. (This course will be taught in English).",
+        "term": null
+    },
+    {
+        "name": "INST 361 Japanese Culture II",
+        "description": "This course focuses on Japanese values, attitudes and behaviors. The students will learn strategies for communication with Japanese people. (This course will be taught in English).",
+        "term": null
+    },
+    {
+        "name": "INST 362 Intro to Chinese Culture",
+        "description": "This course is designed thematically and aims to acquaint students with important aspects of Chinese culture. The course will help students better understand modern China, which is shaped by five thousand years of tradition and interaction with the world. Topics include: contemporary china, brief history, religion and philosophy, and art and literature. The course assumes no previous knowledge of China or the Chinese language and will be taught in English.",
+        "term": null
+    },
+    {
+        "name": "INST 363 Colonial Africa",
+        "description": "This course examines the colonial period through the lived realities of Africans themselves. In particular, it considers the ways in which African and colonial systems of economics, politics, gender, and community were brought into dynamic tension during the decades of colonial rule.",
+        "term": null
+    },
+    {
+        "name": "INST 364 African Health and Healing",
+        "description": "This class interrogates how African understandings of health and practices of healing transformed from the precolonial through the post-independence periods. In particular, we will study the interrelationship between health and politics in African thought, the integration of western biomedicine into African systems of healing, and the changing disease landscape of capitalism, colonialism, and globalization.",
+        "term": null
+    },
+    {
+        "name": "INST 366 Topics Int'l Political Economy",
+        "description": "This course will examine questions pertinent to International Political Economy according to the criteria for inclusion in the \"International and Political Economy\" courses.",
+        "term": null
+    },
+    {
+        "name": "INST 367 Arab-Israeli Conflict",
+        "description": "Why is there an Arab-Israeli conflict? The question is much-discussed but not very often answered. Comprehensive effort to understand that question as well as the intense political debates surrounding it. Interdisciplinary, touching on the historical, political, and sociological origins and trajectory of the conflict. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "INST 368 Islamic Civilization",
+        "description": "Introduction to the history of Islamic civilization centering on the relationship of religion to society and culture; the origins of Islam; Islamic belief and practice; Islam, politics, and society; fine arts and intellectual developments; and Islam in the modern world. Offered every semester.",
+        "term": null
+    },
+    {
+        "name": "INST 369 Revolutions in Mod Latin Amer",
+        "description": "This course examines the origins, emergence, process, and consequences of major Latin American social and political revolutions in the twentieth century. It will investigate a variety of types of revolutions including different urban and rural movements, as well as groups that sought radical change from high politics to the grass roots level.",
+        "term": null
+    },
+    {
+        "name": "INST 370 Model United Nations",
+        "description": "This course is designed to enhance the student delegates’ achievement of the learning objectives listed above through participation in simulations of various committees and other bodies of the United Nations. Through brief lectures, individual research and writing projects, in-class simulations, and participation in the National Model United Nations conference, students will gain an enhanced knowledge of global issues, a deeper understanding of what motivates state action, and an understanding of which factors facilitate or hinder cooperation. Students will also gain valuable writing, speaking, negotiating, and diplomatic skills. Enrollment by instructor permission only. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "INST 371 The Modern Pacific World",
+        "description": "This course brings together the histories of Asia, the Americas, and Oceania since the 18th century by examining how human migration in and throughout the Pacific region shaped and reshaped it over time. Investigating sojourners, merchants, laborers, soldiers, imperial administrators, colonial subjects, women, and business elites allows us to understand changes in economic exchange, political influence, geographic knowledge, racial beliefs, the rise and fall of empires, and the era of globalization.",
+        "term": null
+    },
+    {
+        "name": "INST 372 Colonial Latin America",
+        "description": "A survey of colonial Latin America that examines the contact, conflict, and accommodation among Europeans, Native Americans, and Africans that shaped colonial Latin America.",
+        "term": null
+    },
+    {
+        "name": "INST 374 China Past and Present",
+        "description": "This course is a focused survey of Chinese history from the Shang Dynasty (c. 1600 B.C.) up to the present. Using the standard interpretive categories of politics, economics, society, and culture, the course will explore such topics as pre-imperial China; the Qin-Han consolidations and breakdowns; pre-modern Imperial China (Jin, Sui, Tang, Song, including inter-dynasty kingdoms); the Mongol (Yuan) dynasty; early modern and modern imperial China (Ming and Qing); and the Revolutionary periods of the twentieth century, including the Guomindang era, Maoism, and Post-Mao modernizations. Students who take this course for International Studies credit will be required to do an extra writing assignment that integrates the material of this course with their International Studies focus region. It is desired but not required that students will have taken HIST 112 World History  prior to taking this course.",
+        "term": null
+    },
+    {
+        "name": "INST 375 Japan Past and Present",
+        "description": "This course is a focused survey of Japanese history from the Jomon Period (c. 14,000 B.C) up to the present. Using the standard interpretive categories of politics, economics, society, and culture, the course will explore such topics as the Jomon and Yayoi classical ages; the Yamato, Nara, and Heian aristocratic ages; the Kamakura, Ashikaga, and Tokugawa warrior ages, and the modern period from the Meiji Restoration through the twentieth century. Students who take this course for International Studies credit will be required to do an extra writing assignment that integrates the material of this course with their International Studies focus region. It is desired but not required that students will have taken History 112 World History ) prior to taking this course.",
+        "term": null
+    },
+    {
+        "name": "INST 377 Mexico",
+        "description": "A survey of Mexican history from the Aztec wars to the present.",
+        "term": null
+    },
+    {
+        "name": "INST 378 Global-Intercultural Connectns",
+        "description": "This course will examine questions of Global and Intercultural nature according to the criteria for inclusion in the \"Global and Intercultural Interconnection\" Thematic courses.",
+        "term": null
+    },
+    {
+        "name": "INST 379 Topics in War and Peace",
+        "description": "This course will examine questions of war and peace according to the criteria for inclusion in the \"War and Peace\" Thematic courses.",
+        "term": null
+    },
+    {
+        "name": "INST 380 Global Social Change",
+        "description": "This course examines social change and its implications for individuals and groups at the local and global level, and offers sociological perspectives on the political, economic, and cultural processes of globalization throughout the world, including Asia, Latin America, North America, Africa and the Middle East. This course explores the historical development of global capitalism with a focus on the changing relationships between markets, states, and civil societies and analyzes the forces that promote and resist these changes including migration, state violence, and social movements. Questions of power and inequality will be central to our approach, as we explore global social change through the lens of world-systems theory, neoliberalism, and neo-institutionalism. Offered every other year.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "HIST 102 Minimum Grade: D"
+                },
+                {
+                    "course": "HIST 112 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "INST 381 Mafia&PoliticViolence-Film/Lit",
+        "description": "Through a study of Italian film, novels and nonfiction, this course will examine the phenomenon of organized crime in Italian society. In English. Special arrangements may be made for majors in Italian Studies and minors in Italian.",
+        "term": null
+    },
+    {
+        "name": "INST 383 Ethics-Human Rgts-Globalizatn",
+        "description": "Focus on religious and ethical responses to issues arising in relation to globalization, and specifically, the topic of human rights.",
+        "term": null
+    },
+    {
+        "name": "INST 384 Fnd of East Asian Civilization",
+        "description": "This course seeks to give students an understanding of the history and culture of pre-modern China, Japan, Korea, and Vietnam. After exploring the historical roots of Confucianism, Daoism and Buddhism in China, students will examine the ways in which these foundational philosophies helped form social, cultural, and political institutions in China and its neighbors. Students will also focus attention on the historical emergence of the Chinese imperial system, and its greatest pre-modern exemplars, the Qin, Han and T'ang dynasties. Not limiting the focus to China alone, students will also explore how the concept of China as the \"middle kingdom\" influenced the language, religion and political developments in Japan and Korea, leading to an authentic \"macro-culture\" in East Asia. The course will finish with a discussion of samurai culture and an analysis of how the Mongol conquests of Central and East Asia transformed the region, taking students to the threshold of the early modern period in Asia. It is desired but not required that students take HIST 112 prior to this course.",
+        "term": null
+    },
+    {
+        "name": "INST 385 Latin American Politics",
+        "description": "Impressive contributions and drawbacks of the caudillo or leader in Latin American history, culture, and society, in the range of contemporary forms of government-democratic, dictatorial, revolutionary. Some treatment of U.S. foreign policy.",
+        "term": null
+    },
+    {
+        "name": "INST 389 Politics of the Pacific Rim",
+        "description": "Focus on the role played by the East Asian capitalist development states (Japan, South Korea, Taiwan, Hong Kong, and Singapore) in the accelerated economic growth of the Pacific Rim; a consideration of the Philippines as a representative of ASEAN; finally, a brief look at the likely impact of this Pacific Basin dynamism on the USA, Russia, and the P.R.C.",
+        "term": null
+    },
+    {
+        "name": "INST 390 African Politics and Develpmnt",
+        "description": "This is a course on the political economy of, largely, sub-Saharan Africa. Poverty is Africa’s overriding moral, economic, and political challenge. Topics treated include: state-society relations, civil society, institutions, incentives – political and economic, concepts and experiences of development, violence and ruling practices, trade and investment, urban and rural issues, formal and informal economies, social movements and political parties, inequality and justice, accountability of power, capacity building and corruption.",
+        "term": null
+    },
+    {
+        "name": "INST 391 Fascist Italy",
+        "description": "Italian history from 1918 to 1945, including an examination of social and economic conditions in post-world war Italy, rise of the Fascist Party, the role of Benito Mussolini, the nature of fascist government in Italy, Italian imperialism under Mussolini, and the part played by Italy as an ally with Hitler's Germany.",
+        "term": null
+    },
+    {
+        "name": "INST 392 Tyranny to Democracy 21st Cen",
+        "description": "Between 1974 and 2000 more than fifty countries in Southern Europe, Latin America, East Asia, and Eastern Europe shifted from authoritarian to democratic systems of government. This course examines the causes and nature of these democratic transitions and investigates several case studies of democratic transitions in different areas of the world; in order to understand the factors responsible for the democratic trend and to ascertain which key variables best explain completed democratic transitions and democratic consolidation. Spring, alternate years.",
+        "term": "S"
+    },
+    {
+        "name": "INST 393 New Europe",
+        "description": "Studies the \"new Europe\" that has emerged since 1989 as integration through the European Union deepens and widens. Explores contemporary issues that European integration and globalization have fostered in the new Europe such as the resurgence of nationalism and extreme right-wing parties, the increased salience of local and regional identities, the need to build a supra-national European identity, increasing cultural diversity and the need to better manage immigration and migration, and Europe's place in the global economy and foreign affairs as it challenges American hegemony and seeks to continue to be a major player in world affairs.",
+        "term": null
+    },
+    {
+        "name": "INST 394 Modern Latin America",
+        "description": "A general introduction to the history of the former colonies of Spain and Portugal in the western hemisphere. Topics include the rise of caudillos, rural developments, the emergence of liberal economic development, populism, banana republics, dictatorships, dirty wars, Marxist revolution, and contemporary predicaments.",
+        "term": null
+    },
+    {
+        "name": "INST 395 Comparative European Politics",
+        "description": "Survey of the parties, institutions, political processes, issues and policies of the major western European industrialized nations. Special focus on England, France, and Germany, but coverage extends to the other European democracies as well.",
+        "term": null
+    },
+    {
+        "name": "INST 396 Chinese Philosophy",
+        "description": "A survey of the history of Chinese philosophy focusing on the Confucian tradition and taking other traditions such as Taoism and Buddhism into account.",
+        "term": null
+    },
+    {
+        "name": "INST 397 Nazi Germany",
+        "description": "This course examines German politics and society during the Weimar and Nazi periods. Its main emphasis is the relationship between the German people, Adolf Hitler, and the Nazi Party, and the impact that Nazism had on German society and institutions. The course further emphasizes the Nazi regime's foreign policy objectives as well as its racial goals, each of which found their fullest expression during World War II and the Holocaust. As these extremes aspect of the Third Reich pose the central problems of modern European history, students who complete this course will become familiar with the documents and historiography that inform the history of the Nazi era.",
+        "term": null
+    },
+    {
+        "name": "INST 399 Region Studies Abroad",
+        "description": "Region study courses in politics, history, and economics taken abroad.",
+        "term": null
+    },
+    {
+        "name": "INST 401 Perspectives on Global Issues",
+        "description": "Critical analysis of vital global issues from the different perspectives of realists, idealists, and system-transformers. Exploration of competing worldviews and value systems, weighing of evidence from differing ideological, cultural, and gender perspectives. Introduces major analytical perspectives and organizing concepts fashioned by scholars to make these issues comprehensible.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "INST 201 Minimum Grade: D"
+                        },
+                        {
+                            "course": "INST 301 Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "course": "POLS 350 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "INST 406 Narrative Fiction in Span Amer",
+        "description": "The novel and short story in Spanish America during the twentieth century.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 302 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "INST 414 Latin American Cinema",
+        "description": "This course will focus on a series of representative Latin American films in order to explore issues of national formation and cultural identity. Emphasis will be given to the social, political, and economic factors which affect the production and reception of these films.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 302 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "INST 415 Spanish Cinema",
+        "description": "This course will provide an introduction to Spanish cinema through the study of film theory and representative films from different periods. Particular attention will be given to the historical, social, and cultural framework in the production and reception of those movies, as well as theories of authorship, gender, and national/cultural identity.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 302 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "INST 416 The Italian Cinema",
+        "description": "This course aims at presenting aspects of Italian society through film. In English. Special arrangements may be made for majors in Italian Studies and minors in Italian.",
+        "term": null
+    },
+    {
+        "name": "INST 430 Intersectional Communication",
+        "description": "The study of communication and culture in a global world cannot and must not be apolitical, ahistorical, or blind to the messy entanglements of power and privilege. Therefore, this course will focus on the intersections between critical race theory, feminist theory, and critical intercultural communication in order to interrogate and examine the ways in which our social identities and locations affect the contexts of our lives including our opportunities, relationships, and overall understanding of the world. Specifically, this course will engage the work of Black Feminist scholars and ongoing scholarly conversations on intersectionality to analyze intercultural encounters and engagement. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "COMM 320 Minimum Grade: C"
+                        },
+                        {
+                            "course": "COMM 340 Minimum Grade: C"
+                        }
+                    ]
+                },
+                {
+                    "course": "COMM 370 Minimum Grade: C"
+                }
+            ]
+        }
+    },
+    {
+        "name": "INST 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.",
+        "term": null
+    },
+    {
+        "name": "INST 440 Rhetoric of Social Change",
+        "description": "Public expression and discourse can affirm, complicate, challenge, and even radically revolutionize our shared values and ideals over time. Arguments and symbolic actions in communal spaces prompt individuals and groups to re-think, re-develop, and re-establish potential modes of identity, participation, and interaction within a society. Students in this course will closely examine specific social movements (including, potentially, civil rights, gender rights, indigenous rights, and environmental movements) to better understand the plurality of voices and modes of public expression in dialogue and competition that contribute to, resist, and ultimately shape societal change. Students will then build upon historical knowledge and perspective to engage in an immersive study of an ongoing contemporary social controversy, ultimately creating an informed rhetorical intervention of their own, participating in the social issues and changes of the current day. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "COMM 320 Minimum Grade: C"
+                        },
+                        {
+                            "course": "COMM 340 Minimum Grade: C"
+                        }
+                    ]
+                },
+                {
+                    "course": "COMM 350 Minimum Grade: C"
+                }
+            ]
+        }
+    },
+    {
+        "name": "INST 480 Topic in International Studies",
+        "description": "Selected International Studies topics of current and special interest.",
+        "term": null
+    },
+    {
+        "name": "INST 490 Directed Reading",
+        "description": "Credit by arrangement for directed reading and reports on selected topics.",
+        "term": null
+    },
+    {
+        "name": "INST 492 Independent Research or Study",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "INST 497 Internship in Intr'l Studies",
+        "description": "Internship with organization with an international dimension, e.g., political or economic policy organizations, think tank or advocacy organizations; public or foreign policy organizations; human services, non-profit, or charitable organizations.",
+        "term": null
+    }
+]

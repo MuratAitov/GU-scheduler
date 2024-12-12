@@ -1,0 +1,172 @@
+[
+    {
+        "name": "HEAL 104 Indigenous Science",
+        "description": "This lecture and laboratory course content will be determined by the instructor to meet the learning objectives of the Scientific Inquiry requirement of the University Core. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "HEAL 104L Indigenous Science Lab",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "HEAL 193 FYS: Religion and Medicine",
+        "description": "The First-Year Seminar (FYS) introduces new Gonzaga students to the University, the Core Curriculum, and Gonzaga’s Jesuit mission and heritage. While the seminars will be taught by faculty with expertise in particular disciplines, topics will be addressed in a way that illustrates approaches and methods of different academic disciplines. The seminar format of the course highlights the participatory character of university life, emphasizing that learning is an active, collegial process.",
+        "term": null
+    },
+    {
+        "name": "HEAL 195 Special Topics",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "HEAL 196 Special Topics",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "HEAL 201 Sociology of Health & Medicine",
+        "description": "This course examines the social context of health, illness and health care. Particular attention will be paid to the effects of culture and social inequality on health, the interaction of various health care professionals, and political debates about the health care system.",
+        "term": null
+    },
+    {
+        "name": "HEAL 295 Special Topics",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "HEAL 296 Special Topics",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "HEAL 304 Feminism and Science",
+        "description": "This course is an introduction to the interdisciplinary field of Feminist Science and Technology Studies. Students will learn what the field of FSTS has to say about various social justice issues, such as equity for women in science, the history of the science of human difference, how human values shape science in action for better or for worse, and what feminism has to offer the scientific endeavor.",
+        "term": null
+    },
+    {
+        "name": "HEAL 318 MedicalSpan&CulturalCompetency",
+        "description": "This course is designed for students planning to work in the health care field and who want to acquire more skills in medical Spanish. We will develop new critical perspectives on health care for Hispanics in the US. Specifically, we will develop medical language skills and cultural competency for health care situations.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 301 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "HEAL 332 Urban and Community Sociology",
+        "description": "This course investigates the way that urbanization- the increasing density and diversity of human settlements - creates challenges to and opportunities for the flourishing of communal life. We study the political economy of urban land use, the formation of segregated ghettos and ethnic enclaves, and gentrification. We also examine the potential for public spaces, community centers, parks and libraries to provide vital sources of social support and communal life. Spring, odd years.",
+        "term": "SO"
+    },
+    {
+        "name": "HEAL 333 Health Economics",
+        "description": "This course uses microeconomic theory to explain aspects of the health care market. We discuss what makes health care distinctive as an economic good, demand for health and health care, insurance, and economic aspects of physicians, nurses, hospitals, pharmaceuticals, public health, and different types of health care systems. We will look at cost?effectiveness and costbenefit analysis as tools to be used in health care.",
+        "term": null
+    },
+    {
+        "name": "HEAL 343 Sociology of Reproduction",
+        "description": "This course investigates the history and sociology of reproduction primarily within the US context. It examines how reproduction is simultaneously biological and social, focusing on a wide range of topics, including intention, pregnancy, abortion, contraception, infertility, and breastfeeding. It distinguishes reproductive rights from reproductive justice and pays particular attention to how social institutions and intersecting inequalities influence reproductive practices and policies. Every other Spring.",
+        "term": "S"
+    },
+    {
+        "name": "HEAL 364 Drugs and Society",
+        "description": "This course will examine the effect that drugs, both legal and illegal, have on the legal justice system. Critical analysis, select lectures, in-class discussion, and writing will be the formats used to address issues such as the effect of the \"war on drugs,\" the relationship between drugs and violence, how drugs relate to law enforcement, sentencing, and corrections within the U.S. legal justice system, and the impact of drugs on individual users.",
+        "term": null
+    },
+    {
+        "name": "HEAL 376 Christian Sexual Ethics",
+        "description": "This course explores Christian perspectives on the ethical dimensions of human sexuality and issues of gender.",
+        "term": null
+    },
+    {
+        "name": "HEAL 383 Environmental Sociology",
+        "description": "This course examines humans’ relationship with the natural environment. It explores how power structures, social norms, ideologies and politics affect our understanding and treatment of the environment. It also examines how relationships among social groups are played out through the process of defining nature, and through the control of animals, land, water, air, food and other natural resources.",
+        "term": null
+    },
+    {
+        "name": "HEAL 395 Special Topics",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "HEAL 396 Special Topics",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "HEAL 432 CIS:",
+        "description": "Topics determined by instructor",
+        "term": null
+    },
+    {
+        "name": "HEAL 455 Health Care Ethics",
+        "description": "This course will survey a range of ethical issues pertaining to the health care professions. After examining some introductory material concerning philosophical ethics, we will proceed into three main sections of material. Section 1 will examine professional obligations, the doctorpatient relationship, and the role of nurses. Core issues here include paternalism and patient autonomy, beneficence and medical altruism, informed consent, and confidentiality. Section 2 will examine end of life care and will include discussion of euthanasia and physician-assisted suicide, surrogate decision-making, medical futility, and advance directives. Section 3 will focus on ethical issues concerning human reproduction, including abortion, artificial procreation, surrogacy, and genetic manipulation.",
+        "term": null
+    },
+    {
+        "name": "HEAL 459 Ethics of Eating",
+        "description": "In this course we will cover a variety of different ethical issues concerning food. We will look at the consumption, production and transportation of food as well as organic food, GMOs, vegetarianism and veganism. We will also consider several different food movements, including the local and slow food movements as well as the food justice and food sovereignty movements. We will also include in our study reflection on our own food choices and some experiential learning.",
+        "term": null
+    },
+    {
+        "name": "HEAL 475 Organizing for Health Equity",
+        "description": "The Community Organizing for Health Equity course facilitates learning of community organizing skills through participatory exercises, discussion, and short lectures. The course provides a foundation from which to understand the world through a different lens needed to work on \n“upstream” issues. The course will equip student leaders with the tools they need to organize themselves and others to more effectively address the social justice issues that matter most to them.",
+        "term": null
+    },
+    {
+        "name": "HEAL 485 Science and Society",
+        "description": "Science and Society is a class devoted to answering just one question: How can we use scientific knowledge responsibly?",
+        "term": null
+    },
+    {
+        "name": "HEAL 491 Independent Study",
+        "description": "Topic determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "HEAL 492 Independent Study",
+        "description": "Topic determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "HEAL 495 Special Topics",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "HEAL 496 Special Topics",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "HEAL 497 Health Equity Internship",
+        "description": "Students will locate internship opportunities independently, with the assistance of Career & Professional Development/Health Professions Pathways Program. The HEAL director or any preferred faculty member may supervise students enrolling in HEAL 497. Students may crosslist HEAL 497 with the 497- internship course in their major department, with approval of HEAL Director. Students will submit a final reflection paper.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "type": "or",
+                            "requirements": [
+                                {
+                                    "course": "HEAL 201 Minimum Grade: D"
+                                },
+                                {
+                                    "course": "SOCI 283 Minimum Grade: D"
+                                }
+                            ]
+                        },
+                        {
+                            "course": "SOSJ 221 Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "course": "WGST 261 Minimum Grade: D"
+                }
+            ]
+        }
+    }
+]

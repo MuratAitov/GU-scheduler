@@ -1,0 +1,802 @@
+[
+    {
+        "name": "BIOL 104 Scientific Inquiry:",
+        "description": "This lecture and laboratory course content will be determined by the instructor to meet the learning objectives of the Scientific Inquiry requirement of the University Core. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "BIOL 104L Scientific Inquiry Lab",
+        "description": "Taken concurrently with BIOL 104.",
+        "term": null
+    },
+    {
+        "name": "BIOL 105 Info Flow in Biol Systems",
+        "description": "This course provides a foundation in the principles of biology by examining the fundamental role of information in generating the properties of life. The course explores the molecular basis of biological information (codes, signals, structures) and its role in growth, development, communication, regulation, reproduction and evolution of living things. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "BIOL 105L Info Flow in Biol Systems Lab",
+        "description": "Designed to provide students with an authentic scientific discovery experience, this laboratory involves the isolation, identification, and characterization of novel bacteriophages from local soil samples. Students learn how to approach scientific questions, make observations, record, analyze and report data. Taken concurrently with BIOL 105.",
+        "term": null,
+        "prerequisites": {
+            "course": "BIOL 105 Minimum Grade: C-"
+        }
+    },
+    {
+        "name": "BIOL 106 Energy Flow in Biol Systems",
+        "description": "This course focuses on the biological processes of energy acquisition, how energy is used in biological systems, and how energy is transferred between organisms and through ecosystems. Human impacts to energy transfer will be covered and topics will integrate energy concepts from cells to organisms to ecosystems. There is no laboratory associated with this course. Fall and Spring.\nPrerequisite(s): BIOL 105, minimum grade: C- and BIOL 105L, minimum grade: C- (or concurrent) and CHEM 101, minimum grade: C- and CHEM 101L, minimum grade: C-",
+        "term": "FS",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "type": "and",
+                            "requirements": [
+                                {
+                                    "type": "and",
+                                    "requirements": [
+                                        {
+                                            "course": "BIOL 105 Minimum Grade: C-"
+                                        },
+                                        {
+                                            "course": "BIOL 105L Minimum Grade: C-"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "course": "CHEM 101 Minimum Grade: C-"
+                                }
+                            ]
+                        },
+                        {
+                            "course": "CHEM 101L Minimum Grade: C-"
+                        }
+                    ]
+                },
+                {
+                    "course": "CHEM 101L Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "BIOL 111 Biology Pathways",
+        "description": "This course is designed to help biology students increase their awareness of biology as a discipline and discover their role within the broader biological community. Students are introduced to a range of possible careers in biology, degree pathways within biology, and various tools to assist students during their time at Gonzaga.",
+        "term": null
+    },
+    {
+        "name": "BIOL 159 Studies in Biodiversity",
+        "description": "This course is an optional continuation of BIOL 159L Field Studies in Biodiversity. Research projects initiated in the field in BIOL 159L will be concluded with further library research, completion of a technical or popular press article, drafting and editing a poster, and a presentation at a local or regional event. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "course": "BIOL 159L Minimum Grade: D"
+        }
+    },
+    {
+        "name": "BIOL 159L Field Studies in Biodiversity",
+        "description": "This course uses a field experience as a backdrop to learn about evolutionary, ecological and biogeographical processes that determine the ranges and biodiversity of organisms. The course begins with class work on the Gonzaga campus and is followed by 3-4 weeks in the field, where Gonzaga faculty and local experts will mentor students. Field locations vary by year and include Ecuador, Zambia, or domestic locations. This course is designed for non-science majors. The class meets together with the students enrolled in BIOL 359L for Biology majors. Summer.",
+        "term": null
+    },
+    {
+        "name": "BIOL 170 Introduction to Microbiology",
+        "description": "An introduction to microbiology for students in Nursing or other allied health professions who will not be majoring in Biology. The course includes basic cellular chemistry and genetics, as well as a survey of topics of clinical importance. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "type": "or",
+                            "requirements": [
+                                {
+                                    "course": "BIOL 105 Minimum Grade: C-"
+                                },
+                                {
+                                    "course": "TRAN GBIO Minimum Grade: T"
+                                }
+                            ]
+                        },
+                        {
+                            "course": "BIOL 105L Minimum Grade: C-"
+                        }
+                    ]
+                },
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "CHEM 101 Minimum Grade: C-"
+                        },
+                        {
+                            "course": "TRAN GCHM Minimum Grade: T"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "BIOL 170L Intro to Microbiology Lab",
+        "description": "An introduction to methods of microbial analysis including the culture, safe handling, and genetic analysis of microbes. Taken concurrently with BIOL 170.",
+        "term": null
+    },
+    {
+        "name": "BIOL 181 Biological Systems",
+        "description": "This course provides an exploration of the basic systems in biology from plants to animals and from cells to ecosystems for non-science majors. Additionally, this course provides elementary teacher candidates with the basic content knowledge needed to teach life science at the elementary school level. Lab is required. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "BIOL 181L Biological Systems Lab",
+        "description": "Taken concurrently with BIOL 181.",
+        "term": null
+    },
+    {
+        "name": "BIOL 190 Special Topics",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "BIOL 193 FYS:",
+        "description": "The First-Year Seminar (FYS) introduces new Gonzaga students to the University, the Core Curriculum, and Gonzaga’s Jesuit mission and heritage. While the seminars will be taught by faculty with expertise in particular disciplines, topics will be addressed in a way that illustrates approaches and methods of different academic disciplines. The seminar format of the course highlights the participatory character of university life, emphasizing that learning is an active, collegial process.",
+        "term": null
+    },
+    {
+        "name": "BIOL 199 Investigations in Biology",
+        "description": "Designed for non-science majors; this fulfills the core Scientific Inquiry requirement. Lectures and laboratory sessions emphasize science as an inquiry based process. Laboratory is required when offered.",
+        "term": null
+    },
+    {
+        "name": "BIOL 199L Investigations in Biology Lab",
+        "description": "Taken concurrently with BIOL 199.",
+        "term": null
+    },
+    {
+        "name": "BIOL 205 Physiology & Biodiversity",
+        "description": "This course focuses on understanding the diversity of life on earth and the physiological mechanisms that allow organisms to live in a wide array of environments. A framework of physiology is used to compare and contrast clades of organisms. A prerequisite for most upper division biology elective courses, and a pre-requisite for BIOL 499. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "BIOL 105 Minimum Grade: C-"
+                        },
+                        {
+                            "course": "BIOL 105L Minimum Grade: C-"
+                        }
+                    ]
+                },
+                {
+                    "course": "BIOL 106 Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "BIOL 205L Physiology & Biodiversity Lab",
+        "description": "Students are introduced to the diversity of organisms and physiological processes that allow organisms to live in a wide array of environments.",
+        "term": null
+    },
+    {
+        "name": "BIOL 206 Ecology",
+        "description": "This course examines the ecological and evolutionary mechanisms that determine the distribution and abundance of species. Students will explore interactions between organisms and their environments at levels from individuals through ecosystems. A pre-requisite for most upper division biology elective courses, and a pre-requisite for BIOL 499. Must be taken Sophomore or Junior year, and cannot be taken Senior year. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "BIOL 105 Minimum Grade: C-"
+                        },
+                        {
+                            "course": "BIOL 105L Minimum Grade: C-"
+                        }
+                    ]
+                },
+                {
+                    "course": "BIOL 106 Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "BIOL 206L Ecology Lab",
+        "description": "Field and laboratory experiments are used to investigate ecological mechanisms that determine the distribution and abundance of species. Taken concurrently with BIOL 206.",
+        "term": null
+    },
+    {
+        "name": "BIOL 207 Genetics",
+        "description": "This course promotes an understanding of genes and genomes – their molecular properties, how they are expressed and regulated, how they contribute to inheritance, and how they are shaped by evolutionary forces. A pre-requisite for most upper division biology elective courses and a pre-requisite for BIOL 499. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "BIOL 105 Minimum Grade: C-"
+                        },
+                        {
+                            "course": "BIOL 105L Minimum Grade: C-"
+                        }
+                    ]
+                },
+                {
+                    "course": "BIOL 106 Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "BIOL 207L Genetics Lab",
+        "description": "This course provides students with hands-on experimental investigations of molecular mechanisms in genetics. Taken concurrently with BIOL 207.",
+        "term": null
+    },
+    {
+        "name": "BIOL 290 Directed Readings",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "BIOL 295 Science Outreach",
+        "description": "The Biology and Chemistry/Biochemistry departments run a variety of outreach programs that include class visits, field trip tours, special summer programs and more. All of our programs strive to engage participants with opportunities for hands-on scientific discovery and inspiration. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "BIOL 301L Cell Techniques Lab",
+        "description": "This course is an intensive introduction to methods of analysis of prokaryotic and eukaryotic cell structure, composition, and behavior. Microscopy (brightfield and fluorescence), protein studies, enzyme kinetics, bacterial growth, cell signaling, and development are just some of the areas of research students will be exposed to. This course will also be scientific writing and reading intensive, developing student expertise in these critical areas in the field of biological research. Offered upon sufficient demand.\nPre-requisite: CHEM 230 and CHEM 230L and BIOL 106, minimum grade: C- and (BIOL 205, minimum grade: C- or BIOL 207, minimum grade: C-)",
+        "term": null
+    },
+    {
+        "name": "BIOL 303 Population Ecology",
+        "description": "An in-depth look at the interactions that control the distribution and abundance of organisms at the population level. Topics such as life-history strategies, population dynamics, competition, predation, parasitism, and mutualism will be explored through the research literature, and quantitative approaches. Fall, even years.",
+        "term": "FE",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "BIOL 106 Minimum Grade: C-"
+                },
+                {
+                    "course": "BIOL 206 Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "BIOL 303L Population Ecology Laboratory",
+        "description": "Taken concurrently with BIOL 303 when the laboratory is offered.",
+        "term": null
+    },
+    {
+        "name": "BIOL 304 Practice in Laboratory Teachng",
+        "description": "Students gain teaching experience by assisting laboratory instructors as a teaching assistant (TA) in a laboratory course. Duties may include laboratory set-up, in-class mentoring, grading, and quiz preparation. May be repeated. A maximum of two credits may be applied to Biology electives. Usually limited to students who have earned an A or B in the lecture portion of the course for which the student is a candidate to TA the laboratory. By permission only. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "course": "BIOL 106 Minimum Grade: C-"
+        }
+    },
+    {
+        "name": "BIOL 305 Biological Data Analysis",
+        "description": "An applied study of statistical methods used to investigate biological questions. Emphasis will be on applications using software to investigate biological data sets generated by student and instructor research. The course will survey descriptive statistics, sampling, experimental design, estimation, hypothesis testing, and model building (e.g. analysis of variance, regression, multivariate). This course does not fulfill the University Core Math requirement. Spring, odd years.\nPre-requisite: BIOL 106, minimum grade: C- and (BIOL 205, minimum grade: C- or BIOL 206, minimum grade: C- or BIOL 207, minimum grade: C-)",
+        "term": "SO"
+    },
+    {
+        "name": "BIOL 313 Animal Behavior",
+        "description": "This course explores how behavioral processes affect ecological patterns. The behavioral adaptations of animals to their environment including the evolution of behavior, foraging, competition for resources, reproductive ecology, mating systems, parental care, and cooperative behavior. Fall, odd years.\nPre-requisite: BIOL 106, minimum grade: C- and BIOL 205, minimum grade: C- and BIOL 206, minimum grade: C-.",
+        "term": "FO"
+    },
+    {
+        "name": "BIOL 313L Animal Behavior Lab",
+        "description": "Taken concurrently with BIOL 313 when the laboratory is offered.",
+        "term": null
+    },
+    {
+        "name": "BIOL 323 Conservation Biology",
+        "description": "This course covers the biological concepts important for the conservation of natural populations, communities, and ecosystems. Both theoretical and empirical studies will be applied to such topics as: the genetics and ecology of small populations, consequences of habitat fragmentation, the impact of introduced species, and the ecological value of biological diversity. Spring.\nPre-requisite: BIOL 106, minimum grade: C- and (BIOL 206, minimum grade: C- or BIOL 207, minimum grade: C-).",
+        "term": "S"
+    },
+    {
+        "name": "BIOL 323L Conservation Biology Lab",
+        "description": "This laboratory includes field trips. Taken concurrently with BIOL 323.",
+        "term": null
+    },
+    {
+        "name": "BIOL 330 Invertebrate Biology",
+        "description": "An examination of the major invertebrate phyla, including an overview of the structural and functional characteristics of each group. The evolutionary relationships between various invertebrate groups will also be examined. Emphasis will be placed on the interaction of marine species with their environment. Taught in a combined lecture/laboratory format. Offered upon sufficient demand.\nPre-requisite: BIOL 106, minimum grade: C- and BIOL 205, minimum grade: C-.",
+        "term": null
+    },
+    {
+        "name": "BIOL 331 Parasitology",
+        "description": "Explores the medical, physiological, ecological, and historical effects of parasites. The course concentrates on human parasites and ranges from viruses and bacteria through helminthes and arthropods. Fall.\nPre-requisite: BIOL 106, minimum grade: C- and BIOL 205, minimum grade: C- and BIOL 206, minimum grade: C-.",
+        "term": "F"
+    },
+    {
+        "name": "BIOL 331L Parasitology Lab",
+        "description": "Taken concurrently with BIOL 331 when laboratory is offered.",
+        "term": null
+    },
+    {
+        "name": "BIOL 333 Community Ecology",
+        "description": "Community ecology seeks to explain the underlying mechanisms that create, maintain, and determine the fate of biological communities. Typically, patterns are documented by observation, and used to generate hypotheses about processes, which are tested. Integrating theory with real\nworld observations is fundamental to community ecology and will be a focus of this class.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "BIOL 106 Minimum Grade: C-"
+                },
+                {
+                    "course": "BIOL 206 Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "BIOL 334 Advanced Evolution",
+        "description": "An in-depth study of the mechanisms responsible for the diversity of life on earth. Topics covered include speciation, adaptation, systematics, extinction, natural selection, genetic drift, mutation, and gene flow. Examples are chosen from all types of organisms. This course may be repeated once as long as the content is different than the first occurrence of enrollment. Spring, odd years.\nPre-requisite: BIOL 106, minimum grade: C- and BIOL 205, minimum grade: C- and BIOL 206, minimum grade: C-.",
+        "term": "SO"
+    },
+    {
+        "name": "BIOL 335 Advanced Genetics:",
+        "description": "An advanced study of genetics within the context of a selected topic in biology. Past topics have included an examination of human race and racism and the study of genomes. This course may be repeated once as long as the content is different than the first occurrence of enrollment. Spring, even years.\nPre-requisite: BIOL 106, minimum grade: C- and BIOL 207, minimum grade: C-.",
+        "term": "SE"
+    },
+    {
+        "name": "BIOL 335L Adv Genetics Lab",
+        "description": "Taken concurrently with BIOL 335 when laboratory is offered.",
+        "term": null
+    },
+    {
+        "name": "BIOL 337 Developmental Biology",
+        "description": "A study of the principles and mechanisms that underlie the development of plants and animals, using approaches that integrate cell biology, genetics, molecular biology, and evolution. Spring, odd years.\nPre-requisite: BIOL 106, minimum grade: C- and BIOL 205, minimum grade: C- and BIOL 206, minimum grade: C- and BIOL 207, minimum grade: C-.",
+        "term": "SO"
+    },
+    {
+        "name": "BIOL 337L Developmental Biology Lab",
+        "description": "Taken concurrently with BIOL 337.",
+        "term": null
+    },
+    {
+        "name": "BIOL 338 Histology",
+        "description": "A study of the microscopic structure of animal (mostly mammalian) tissues and organs. Topics include: histology, cytology, and microscopic anatomy as exemplified in animal tissue. Material will emphasize the relationship between structure and function in tissues and organs. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "BIOL 338L Histology Lab",
+        "description": "Labs will combine the study of tissue structure using a collection of prepared slides, and the processing and sectioning of tissue samples.  Lab assignments will include the production of personal digital atlases.\nTaken concurrently with BIOL 338.\nPre-requisite: BIOL 106, minimum grade: C- and BIOL 205, minimum grade: C- and BIOL 206, minimum grade: C- and BIOL 207, minimum grade: C-.",
+        "term": null
+    },
+    {
+        "name": "BIOL 340 Field Botany",
+        "description": "Course includes systematics of flowering plants, plant communities of the Inland Northwest, sight identification of major plant families and selected topics in plant ecology. A plant collection is required as well as a field project in the area of plant systematics or plant ecology. This course counts towards the required 9 plant-related credits for Wildlife Biology positions with federal agencies, such as U.S. Fish and Wildlife Service and U.S. Forest Service that utilize Wildlife Biology Series GS-0486.",
+        "term": null
+    },
+    {
+        "name": "BIOL 340L Field Botany Lab",
+        "description": "Taken concurrently with BIOL 340.\nPre-requisite: BIOL 106, minimum grade: C- and BIOL 205, minimum grade: C- and BIOL 206, minimum grade: C-.",
+        "term": null
+    },
+    {
+        "name": "BIOL 341 Human Physiology",
+        "description": "Examines the function of human physiological systems including: metabolic, nervous, cardiovascular, respiratory, renal, muscular, and immunological. Systems are examined through case studies focused on human disease and human performance. Spring, odd years.",
+        "term": "SO"
+    },
+    {
+        "name": "BIOL 341L Human Physiology Lab",
+        "description": "Taken concurrently with BIOL 341. May require weekend field trips.\nPre-requisite: BIOL 106, minimum grade: C- and BIOL 205, minimum grade: C- and BIOL 206, minimum grade: C-.",
+        "term": null
+    },
+    {
+        "name": "BIOL 342 Plant Population Ecology",
+        "description": "This class meets with and covers the same topics as BIOL 303 (Population Ecology) but takes a more plant-focused approach. Through class illustrations and independent projects, students will investigate the theories and empirical evidence in population ecology that directly influence plant populations. This course counts towards the required 9 plant-related credits for Wildlife Biology positions with federal agencies, such as U.S. Fish and Wildlife Service and U.S. Forest Service that utilize Wildlife Biology Series GS-0486.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "BIOL 206 Minimum Grade: C-"
+                },
+                {
+                    "course": "ENVS 103 Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "BIOL 343 Plant Community Ecology",
+        "description": "This class meets with and covers the same topics as BIOL 333 (Community Ecology), but takes a more plant-focused approach. Students will explore the theories and experimental evidence of community ecology and conduct ecology projects with a specific focus on plant processes. This course counts towards the required 9 plant-related credits for Wildlife Biology positions with federal agencies, such as U.S. Fish and Wildlife Service and U.S. Forest Service that utilize Wildlife Biology Series GS-0486.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "BIOL 206 Minimum Grade: C-"
+                },
+                {
+                    "course": "ENVS 103 Minimum Grade: B"
+                }
+            ]
+        }
+    },
+    {
+        "name": "BIOL 344 GIS & Ecological Techniques",
+        "description": "This course will introduce students to geographic information systems (GIS) and focus on how GIS can be used to address research and management questions in ecology. Students will use existing GIS databases from area resource agencies and learn how to create new GIS databases from field exercises. Field techniques will include vegetation sampling, small mammal trapping, amphibian/reptile monitoring, distance sampling, wildlife habitat assessment, and mapping exercises using compass and global position systems (GPS). Spring, even years.",
+        "term": "SE",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "BIOL 106 Minimum Grade: C-"
+                },
+                {
+                    "course": "BIOL 206 Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "BIOL 344L GIS & Ecological TechniquesLab",
+        "description": "Taken concurrently with BIOL 344.",
+        "term": null
+    },
+    {
+        "name": "BIOL 351 Advanced Cell Biology",
+        "description": "An advanced study of cell structure and function with an emphasis on selected topics in cell biology. Topics vary with instructor, but may include cell signaling, cell cycle, plant cells, and the cell biology of cancer. Spring.\nPre-requisite: BIOL 106, minimum grade: C- and BIOL 207, minimum grade: C- and CHEM 230, minimum grade: C-.",
+        "term": "S"
+    },
+    {
+        "name": "BIOL 351L Advanced Cell Biology Lab",
+        "description": "Taken concurrently with BIOL 351 when laboratory is offered.",
+        "term": null
+    },
+    {
+        "name": "BIOL 357 Principles of Wildlife Mgmt",
+        "description": "The ecology, theory, methods, and philosophy of wildlife management emphasizing game, nongame, and endangered species. Students gain an understanding of the roles and responsibilities of various government agencies and non-governmental organizations. Fall, even years.\nPre-requisite: BIOL 106, minimum grade: C- and ( BIOL 206, minimum grade: C- or BIOL 207, minimum grade: C-).",
+        "term": "FE"
+    },
+    {
+        "name": "BIOL 357L Wildlife Management Lab",
+        "description": "This laboratory includes field trips. Taken concurrently with BIOL 357.",
+        "term": null
+    },
+    {
+        "name": "BIOL 359 Studies in Biodiversity",
+        "description": "This course is a continuation of BIOL 359L Field Studies in Biodiversity. Research projects initiated in the field in BIOL 359L will be concluded with further library research, completion of a scientific article, and presentation of the research at a local or regional meeting. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "course": "BIOL 359L Minimum Grade: D"
+        }
+    },
+    {
+        "name": "BIOL 359L Field Studies in Biodiversity",
+        "description": "This course uses a field experience as a backdrop to learn about evolutionary, ecological and biogeographical processes that determine the ranges and biodiversity of organisms. The course begins with class work on the Gonzaga campus and is followed by 3-4 weeks in the field, where Gonzaga faculty and local experts will mentor students. Field locations vary by year and include Ecuador, Zambia, or domestic locations. This course is designed for students majoring or minoring in biology. The class meets together with students enrolled in BIOL 159L for non-science majors. Students are required to enroll in BIOL 359, Studies in Biodiversity, the semester after enrolling in BIOL 359L. Summer.\nPre-requisite: BIOL 106, minimum grade: C- and (BIOL 205, minimum grade: C- or BIOL 206, minimum grade: C-).",
+        "term": null
+    },
+    {
+        "name": "BIOL 360 Plant Biology",
+        "description": "This course acquaints students with the evolution, structure, development and functions of plant cells, tissues and organs. Plant identification and classification are emphasized, along with the importance of environment and ethical considerations of the applied plant sciences. This course counts towards the required 9 plant-related credits for Wildlife Biology positions with federal agencies, such as U.S. Fish and Wildlife Service and U.S. Forest Service that utilize Wildlife Biology Series GS-0486.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "BIOL 205 Minimum Grade: C-"
+                        },
+                        {
+                            "course": "BIOL 206 Minimum Grade: C-"
+                        }
+                    ]
+                },
+                {
+                    "course": "ENVS 413 Minimum Grade: B-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "BIOL 360L Plant Biology Lab",
+        "description": "This laboratory includes field trips. Taken concurrently with BIOL 360.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "BIOL 205 Minimum Grade: C-"
+                        },
+                        {
+                            "course": "BIOL 206 Minimum Grade: C-"
+                        }
+                    ]
+                },
+                {
+                    "course": "ENVS 413 Minimum Grade: B-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "BIOL 363 Plant Propagation & Restorat'n",
+        "description": "This course covers the ecological theories and plant strategies that inform ecological restoration, aiming to repair damaged ecosystems and create habitats for wildlife. The practical skills of restoration project planning, monitoring, regulatory reporting, and traditional ecological knowledge will be covered. This course counts towards the required 9 plant-related credits for Wildlife Biology positions with federal agencies, such as U.S. Fish and Wildlife Service, U.S. Forest Service, U.S. Geological Survey, Bureau of Land Management, etc.; Wildlife Biology Series GS-0486.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "BIOL 206 Minimum Grade: C-"
+                },
+                {
+                    "course": "ENVS 103 Minimum Grade: B-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "BIOL 363L Plant Propagation & Restor Lab",
+        "description": "This course will address plant propagation, plant identification, and general plant care that are foundational skills for restoration projects. Field trips are included. This course counts towards the required 9 plant-related credits for Wildlife Biology positions with federal agencies, such as U.S. Fish and Wildlife Service, U.S. Forest Service, U.S. Geological Survey, Bureau of Land Management, etc.; Wildlife Biology Series GS-0486.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "BIOL 206 Minimum Grade: C-"
+                },
+                {
+                    "course": "ENVS 103 Minimum Grade: B-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "BIOL 367 Entomology",
+        "description": "This course introduces students to the scientific study of insects. Topics will include insect identification, diversity, behavior, anatomy, ecology, and applied entomology. Fall, odd years.\nPre-requisite: BIOL 106, minimum grade: C- and BIOL 205, minimum grade: C- and BIOL 206, minimum grade: C-",
+        "term": "FO"
+    },
+    {
+        "name": "BIOL 367L Entomology Lab",
+        "description": "This laboratory includes field trips. Taken concurrently with BIOL 367.",
+        "term": null
+    },
+    {
+        "name": "BIOL 370 Microbiology",
+        "description": "A study of the fundamental factors involved in microbiology including basic microbial morphology, taxonomy, biochemistry, genetics, and culture techniques. Fall and Spring",
+        "term": "FS"
+    },
+    {
+        "name": "BIOL 370L Microbiology Lab",
+        "description": "Taken concurrently with BIOL 370.\nPre-requisite(s): BIOL 106, minimum grade: C- and BIOL 207, minimum grade: C- and CHEM 230, minimum grade: C-",
+        "term": null
+    },
+    {
+        "name": "BIOL 371 Vertebrate Biology & Anatomy",
+        "description": "Vertebrate diversity, structure and function from an evolutionary perspective. Topics covered will include development, physiology, ecology, behavior and conservation. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "BIOL 371L Vertebrate Biol & Anatomy Lab",
+        "description": "Taken concurrently with BIOL 371.\nPre-requisite: BIOL 106, minimum grade: C- and( BIOL 205, minimum grade: C- or BIOL 206, minimum grade: C- or BIOL 207, minimum grade: C-)",
+        "term": null
+    },
+    {
+        "name": "BIOL 374 Immunology",
+        "description": "An introduction to the cellular and molecular basis of the immune response. Topics will include structures and interactions of molecules in the immune system, generation of diversity in immune specificity, cellular immunology, and the basis of immunity and autoimmune diseases. Spring.\nPre-requisite: BIOL 106, minimum grade: C- and BIOL 205, minimum grade: C- and BIOL 207, minimum grade: C- and CHEM 230, minimum grade: C-",
+        "term": "S"
+    },
+    {
+        "name": "BIOL 374L Immunology Lab",
+        "description": "Taken concurrently with BIOL 374 when laboratory is offered.",
+        "term": null
+    },
+    {
+        "name": "BIOL 375 Virology",
+        "description": "Viral evolution, replication, virus-host interactions, epidemiology, and lateral gene transfer are covered. Spring.\nPre-requisite: BIOL 106, minimum grade: C- and BIOL 207, minimum grade: C- and CHEM 230, minimum grade: C-",
+        "term": "S"
+    },
+    {
+        "name": "BIOL 376 Cellular Neurophysiology",
+        "description": "This course provides an in-depth exploration of the cellular mechanisms underlying the functions of the nervous system. Topics covered include the electrical and chemical signaling properties of neurons, synaptic transmission, and neural plasticity. Students will also examine current research in the field of neurophysiology and develop an understanding of the relationship between cellular processes and behavior.",
+        "term": null
+    },
+    {
+        "name": "BIOL 380 Special Topics:",
+        "description": "This course may be repeated as long as the content is different than other occurrences of enrollment. If course is not taught by a Gonzaga faculty member, a limited number of credits can be applied to Biology electives: 5 for BS, 3 for BA, 1 for minor. Study abroad and School for Field Studies courses are examples.\nPre-requisite: BIOL 205 or BIOL 206 or BIOL 207",
+        "term": null
+    },
+    {
+        "name": "BIOL 380L Special Topics:",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "BIOL 390 Directed Reading",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "BIOL 395 Research Assistantship",
+        "description": "Undergraduate research assistantships are opportunities for student to earn a stipend while performing independent research in the laboratory of a Biology or Chemistry & Biochemistry faculty member. By Department Chair permission only.",
+        "term": null
+    },
+    {
+        "name": "BIOL 399 Advanced Topic:",
+        "description": "An introduction to primary research literature on specific biological topics. Students will write a paper that has as its foundation primary literature. Students will utilize their oral communication skills to explain the background of a given biology topic and lead discussions of the primary literature. Topics will vary. Course should be taken Junior year and must be completed with a C- grade or better prior to taking BIOL 499. Pre-requisites vary depending on topic. Course can only be repeated with permission from the Biology Department Chair. Fall and Spring.\nPre-requisite: BIOL 106, minimum grade: C- and (BIOL 205  minimum grade: C- or BIOL 206, minimum grade: C- or BIOL 207, minimum grade: C-) and (BIOL 205L, minimum grade: C- or BIOL 206L, minimum grade: C- or BIOL 207L, minimum grade: C-)",
+        "term": "FS"
+    },
+    {
+        "name": "BIOL 403 Marine Biology",
+        "description": "Students will explore the biology of marine systems. Topics will include atmospheric and climate modeling, fluid dynamics, physiology, evolution of diversity, ecology, molecular biology, economics, and environmental science. Offered upon sufficient demand.\nPre-requisite: BIOL 106, minimum grade: C- and BIOL 205, minimum grade: C- and BIOL 206, minimum grade: C-",
+        "term": null
+    },
+    {
+        "name": "BIOL 403L Marine Biology Lab",
+        "description": "Taken concurrently with BIOL 403 when laboratory is offered.",
+        "term": null
+    },
+    {
+        "name": "BIOL 404 Freshwater Biology",
+        "description": "An introduction the physical, chemical, geological, and human factors which influence freshwater\norganisms and their communities. After completion of the course students will be competent in\napplication of ecological concepts to freshwater systems and to understand the impacts of human\nactivities on freshwater ecosystems.\nEquivalent: ENVS 408\nCo-requisite: BIOL 404L",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "BIOL 206 Minimum Grade: C-"
+                },
+                {
+                    "course": "BIOL 206L Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "BIOL 404L Freshwater Biology Lab",
+        "description": "Taken concurrently with BIOL 404. Lab will emphasize field techniques, sample identification, and\nscientific inquiry.\nEquivalent: ENVS 408L\nCo-requisite: BIOL 404",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "BIOL 206 Minimum Grade: C-"
+                },
+                {
+                    "course": "BIOL 206L Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "BIOL 405L Advanced Phage Research Lab",
+        "description": "This course provides students with the opportunity to pursue research on bacterial viruses, or bacteriophages. Students will work independently or in small teams to address questions chosen collaboratively by the students and the instructor. The course is aimed at students who are interested in molecular biology or bioinformatics research and those seeking additional experience in a research setting. Interested students should contact the instructor prior to registration to plan a research proposal. This course may be taken up to four times with Department Chair permission. Fall and Spring. Offered upon sufficient demand.\nPre-requisite: BIOL 105L and (BIOL 106 or BIOL 207) and BIOL 207L",
+        "term": "FS"
+    },
+    {
+        "name": "BIOL 420 Physiological Ecology",
+        "description": "This course will examine the interactions between organismal function and the physical environment. Topics include: physiological and evolutionary adaptations to extreme environments (high altitudes, deep oceans, and deserts), physiological determinants of patterns of diversity, limits to performance and environmental tolerance, and physiological responses to climate change. Fall, even years.\nPre-requisite(s): BIOL 205, minimum grade: C- and BIOL 206, minimum grade: C-",
+        "term": "FE"
+    },
+    {
+        "name": "BIOL 425 Ecotoxicology",
+        "description": "This course provides an overview of pollutants in different environments, their movement through these environments, and the effects these pollutants have on organisms at the molecular, cellular, individual, population, and ecosystem levels. Numerous case studies on specific aspects of environmental toxicology in the US will be examined throughout the course. Students will also be introduced to how toxicology is linked to environmental policies, climate change, and environmental justice.",
+        "term": null
+    },
+    {
+        "name": "BIOL 425L Ecotoxicology Lab",
+        "description": "Taken concurrently with BIOL 425L. Labs will focus on methodology, instrumentation, data analyses, and writing scientific reports.",
+        "term": null
+    },
+    {
+        "name": "BIOL 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.\nPre-requisite: (PHIL 301 or RELI 276 or RELI 330 or RELI 331) and World and Comparative Religion",
+        "term": null
+    },
+    {
+        "name": "BIOL 440 Biochemistry I",
+        "description": "Lectures on the structure and function of the major classes of biomolecules (carbohydrates, proteins, and nucleic acids) with an emphasis on proteins and enzymology. The central metabolic pathways of glycolysis, gluconeogenesis, and the citric acid cycle are discussed from a mechanistic, energetic, and regulatory viewpoint. Offered upon sufficient demand.\nPre-requisite: BIOL 207, minimum grade: C- and CHEM 231, minimum grade: C-",
+        "term": null
+    },
+    {
+        "name": "BIOL 441 Advanced Physiology",
+        "description": "Physiological mechanisms, processes and responses of animals. Physical, chemical and biochemical principles common to physiological systems, such as respiration, excretion, and metabolism, will be covered. Goals of the course are to reveal the mechanisms, adaptive significance, and evolution of physiological systems using a comparative approach. This course may be repeated once as long as the content is different than the first occurrence of enrollment. Fall, odd years.\nPre-requisite: BIOL 106, minimum grade: C- and BIOL 205, minimum grade: C-",
+        "term": "FO"
+    },
+    {
+        "name": "BIOL 441L Advanced Physiology Lab",
+        "description": "Taken concurrently with BIOL 441 when laboratory is offered.",
+        "term": null
+    },
+    {
+        "name": "BIOL 443L Biochemistry Laboratory I",
+        "description": "An investigation of the techniques used to examine biomolecules and biochemical systems. Students perform integrated laboratory experiments in biochemistry. Offered upon sufficient demand.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "BIOL 440 Minimum Grade: D"
+                },
+                {
+                    "course": "CHEM 440 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "BIOL 445 Biochemistry II",
+        "description": "Continuation of BIOL 440, including an examination of the primary processes of cellular energy production, oxidative phosphorylation and photosynthesis. The major metabolic pathways of carbohydrates, lipids, amino acids and nucleotides are covered. Offered upon sufficient demand.",
+        "term": null,
+        "prerequisites": {
+            "course": "BIOL 440 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "BIOL 451 Comparative Endocrinology",
+        "description": "A comparative study of the structure and function of hormones across a wide variety of taxa (emphasizing vertebrates), including secretion and regulation of hormones, mechanisms of action, and integration of hormones into biological processes. Spring, even years.",
+        "term": "SE"
+    },
+    {
+        "name": "BIOL 451L Comparative Endocrinology Lab",
+        "description": "Taken concurrently with BIOL 451 when laboratory is offered.\nPre-requisite: BIOL 106, minimum grade: C- and BIOL 205, minimum grade: C- and BIOL 206, minimum grade: C- and BIOL 207, minimum grade: C-",
+        "term": null
+    },
+    {
+        "name": "BIOL 456 Molecular Biology",
+        "description": "This course explores experimental strategies and techniques for discovering how genes function at the molecular level. The course integrates genetics and biochemistry focusing especially on the relationship between DNA, RNA and protein. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "BIOL 456L Molecular Biology Lab",
+        "description": "Labs focus on the construction, manipulation, and analysis of recombinant DNA molecules. Taken concurrently with BIOL 456.",
+        "term": null
+    },
+    {
+        "name": "BIOL 484 Research Seminar",
+        "description": "This class is designed to expose students to various areas of biology research and to the different communication forms of that research. Graduate school is a fundamental part of the biology research pathway and therefore this course will help students to become familiar with the graduate school process. The format of the class will include seminars and class meetings. Fall and Spring.\nPre-requisite: BIOL 106, minimum grade: C- and (BIOL 205, minimum grade: C- or BIOL 206, minimum grade: C- or BIOL 207, minimum grade: C-)",
+        "term": "FS"
+    },
+    {
+        "name": "BIOL 490 Directed Reading",
+        "description": "Reading material will be selected by the student after consultation with a faculty member in the department. A maximum of six credits of any combination of BIOL 390, BIOL 490, BIOL 496, and BIOL 498 can be applied to Biology electives. By permission only.\nPre-requisite: BIOL 106, minimum grade: C- and BIOL 205, minimum grade: C- and BIOL 206, minimum grade: C- and BIOL 207, minimum grade: C-",
+        "term": null
+    },
+    {
+        "name": "BIOL 495 Senior Evaluation",
+        "description": "Required of all majors. Students will take the Major Field Test in Biology in their senior year. Students must score at or above the 20th percentile to pass the course. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "BIOL 496 Biological Resch Techniques",
+        "description": "An introduction to some of the experimental techniques used in biological research. Course content will vary by instructor. A maximum of six credits of any combination of BIOL 490, BIOL 496, and BIOL 498 can be applied to Biology electives. Offered upon sufficient demand.\nPre-requisite: BIOL 106 , minimum grade: C- and BIOL 205, minimum grade: C- and BIOL 206, minimum grade: C- and BIOL 207, minimum grade: C-",
+        "term": null
+    },
+    {
+        "name": "BIOL 497 Biology Internship",
+        "description": "Professional work experience in a biology-related field. Students are responsible for arranging placement opportunities, and gaining approval from a supervising faculty member in the Biology department. This course does not satisfy any requirements for the Biology major or minor. Satisfactory /Unsatisfactory grading only.",
+        "term": null
+    },
+    {
+        "name": "BIOL 498 Undergraduate Research",
+        "description": "This course provides the motivated student with the opportunity to conduct an independent research project under the direction of a Biology Department faculty member. A maximum of six credits of any combination of BIOL 390, BIOL 490, BIOL 496, and BIOL 498 can be applied to Biology electives. Fall and Spring.\nPre-requisite: BIOL 106, minimum grade: C- and BIOL 205, minimum grade: C- and BIOL 206, minimum grade: C- and BIOL 207, minimum grade: C-",
+        "term": "FS"
+    },
+    {
+        "name": "BIOL 499 Senior Colloquium",
+        "description": "Required of all majors. This course meets once per week to discuss biological issues relevant to society. Students must complete all 200-level major requirements and BIOL 399 with C- grades or better to take this senior level course. Taken concurrently with BIOL 495. Fall and Spring.\nPre-requisite: BIOL 106, minimum grade: C- and BIOL 205, minimum grade: C- and BIOL 205L, minimum grade: C- and BIOL 206, minimum grade: C- and BIOL 206L, minimum grade: C- and BIOL 207, minimum grade: C- and BIOL 207L, minimum grade: C- and BIOL 399, minimum grade: C-.",
+        "term": "FS"
+    }
+]

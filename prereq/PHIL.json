@@ -1,0 +1,378 @@
+[
+    {
+        "name": "PHIL 101 Reasoning",
+        "description": "This course helps students develop the foundational skills of critical reading, thinking, analysis, and writing. Students will analyze and evaluate different approaches to formal and informal arguments, reconstruct arguments from a range of sources, assess the quality of various types of evidence, and demonstrate careful use of statistics.",
+        "term": null
+    },
+    {
+        "name": "PHIL 101H Reasoning - Honors",
+        "description": "This course helps students develop the foundational skills of critical reading, thinking, analysis, and writing. Students will analyze and evaluate different approaches to formal and informal arguments, reconstruct arguments from a range of sources, assess the quality of various types of evidence, and demonstrate careful use of statistics.",
+        "term": null
+    },
+    {
+        "name": "PHIL 190 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "PHIL 193 FYS:",
+        "description": "The First-Year Seminar (FYS) introduces new Gonzaga students to the University, the Core Curriculum, and Gonzaga’s Jesuit mission and heritage. While the seminars will be taught by faculty with expertise in particular disciplines, topics will be addressed in a way that illustrates approaches and methods of different academic disciplines. The seminar format of the course highlights the participatory character of university life, emphasizing that learning is an active, collegial process.",
+        "term": null
+    },
+    {
+        "name": "PHIL 201 Philosophy of Human Nature",
+        "description": "Philosophical study of human nature, the human condition, the meaning and value of human life, and the human relationship to ultimate reality, with attention to such issues as the nature and possible existence of the soul, the relation between body and mind, belief and knowledge, freedom vs. determinism, and the possibility of human immortality.  Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "PHIL 201H Philosophy of Human Nature Hon",
+        "description": "Philosophical study of human nature, the human condition, the meaning and value of human life, and the human relationship to ultimate reality, with attention to such issues as the nature and possible existence of the soul, the relation between body and mind, belief and knowledge, freedom vs. determinism, and the possibility of human immortality. Fall. For Honors students.",
+        "term": "F",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "HONS 190 Minimum Grade: D"
+                        },
+                        {
+                            "course": "PHIL 101H Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "course": "PHIL 101 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PHIL 280 Persons and Conduct",
+        "description": "Two basic dimensions of philosophical investigation are inquiry into the nature and meaning of our being human (the philosophy of human nature) and inquiry into the right life and conduct of a human being (ethics). This course undertakes these closely related investigations from a personalist perspective.",
+        "term": null
+    },
+    {
+        "name": "PHIL 290 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "PHIL 301 Ethics",
+        "description": "A general theory of the goals of human life and the norms of moral behavior; the theory will be applied to several specific moral problems. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "PHIL 301H Ethics-Honors",
+        "description": "A general theory of the goals of human life and the norms of moral behavior; the theory will be applied to several specific moral problems. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "PHIL 305 History of Ancient Philosophy",
+        "description": "A survey of major figures and developments in ancient Greek and Hellenistic philosophy from Thales to Plotinus, using texts in translation. Philosophy major, or minor status, or by permission of Department Chair. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "PHIL 310 History of Medieval Philosophy",
+        "description": "A survey of the major philosophical movements in the Latin, Greek, and Arabic traditions from the seventh to the fourteenth centuries. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "PHIL 305 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PHIL 320 History of Modern Philosophy",
+        "description": "A survey from Descartes through Hegel. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "PHIL 305 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PHIL 389 Ethics & Service Learning",
+        "description": "A service learning seminar that may be taken in conjunction with specified sections of PHIL 301. Students discuss and apply ways by which to communicate with Spokane-area youth (primarily middle- and high-school age) what they are learning about ethics and character.",
+        "term": null
+    },
+    {
+        "name": "PHIL 390 Medical Ethics Internship",
+        "description": "Through the internship, students will become familiar with the kinds of ethical issues that arise in a major medical facility such as Sacred Heart Medical Center and understand how those issues are addressed. Students will be asked to reflect on the difference between abstract, theoretical discussions of health care ethics and their concrete, particular manifestations in the lives of patients, families, and professional staff.",
+        "term": null
+    },
+    {
+        "name": "PHIL 391 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "PHIL 403 Christian Metaphysics",
+        "description": "A philosophical articulation of the Christian worldview is provided by classical metaphysics as developed in the Thomistic tradition. This seminar will study the hylomorphic principles of nature, the cosmological argument for the existence of God, the real distinction of being and essence, the nature of divine causality, the analogy of being, ontological participation, and the transcendental properties of being. Fall, every year.",
+        "term": "F"
+    },
+    {
+        "name": "PHIL 406 Philosophy of Mind",
+        "description": "Treatment of the nature and functional capacities of the mind and the philosophical problems raised by analysis of the mind, including mind and body, materialistic reductionism, other minds, freedom, and personality.",
+        "term": null
+    },
+    {
+        "name": "PHIL 413 Theory of Knowledge",
+        "description": "The concepts of knowledge and belief have been of central philosophical concern since the pre-Socratics. In this course, we will consider historical and contemporary contributions to answer the following questions: (1) What is the value of knowledge? (2) What can I know? (3) What can I learn from others? (4) What can I know of myself? (5) Can I know something without being able to say how I know it? (6) How does society shape what I and others know? Historical sources will include Plato, Aristotle, Augustine, Aquinas, Descartes, Reid, and Hume.",
+        "term": null
+    },
+    {
+        "name": "PHIL 414 Ancient Concepts of Justice",
+        "description": "Many Modern theories of social justice rest upon models developed in classical antiquity. Similarly, many modern institutions and laws relating to justice have ancient precursors. This course examines major classical texts dealing with justice: selected Pre-Socratic texts; Plato, Republic; Thucydides, History of Peloponnesian war, Aristotle, Nicomachean Ethics, Book V, selections from Cicero; selections from other Hellenistic and late Roman authors (including Augustine).",
+        "term": null
+    },
+    {
+        "name": "PHIL 416 Marxism",
+        "description": "Some major writings of Marx, the social and intellectual history of Marxism, the relationship between Marxist theory and revolutionary practice, and contemporary problems in Marxism.",
+        "term": null
+    },
+    {
+        "name": "PHIL 418 Spec Top: Contemporary Seminar",
+        "description": "Topics will be determined by the instructor.",
+        "term": null
+    },
+    {
+        "name": "PHIL 419 Spec Top: Ethics/Political Sem",
+        "description": "Topics will be determined by the instructor.",
+        "term": null
+    },
+    {
+        "name": "PHIL 421 American Philosophy",
+        "description": "A study of major figures in the American philosophical tradition.",
+        "term": null
+    },
+    {
+        "name": "PHIL 423 Process Philosophy",
+        "description": "Philosophers such as Bergson and Whitehead, who regard creative process as the essence of the real.",
+        "term": null
+    },
+    {
+        "name": "PHIL 425 Phenomenology",
+        "description": "Some proponents of phenomenological philosophy stemming from Husserl.",
+        "term": null
+    },
+    {
+        "name": "PHIL 426 Political Philosophy",
+        "description": "An examination of the nature and norms of political life, with attention to major historical themes in the light of contemporary relevance.",
+        "term": null
+    },
+    {
+        "name": "PHIL 427 Major Figures & Movements",
+        "description": "An in-depth exploration of the work of a single figure or movement in the history of philosophy.",
+        "term": null
+    },
+    {
+        "name": "PHIL 428 Philosophical Hermeneutics",
+        "description": "Allied with phenomenology, philosophical hermeneutics struggles not only with interpreting patterns of meaning in classical philosophical texts, but also with interpreting patterns of meaning in human existence, based on the model of the text.",
+        "term": null
+    },
+    {
+        "name": "PHIL 429 Special Topics: Philosophy Sem",
+        "description": "Topic will be determined by the instructor.",
+        "term": null
+    },
+    {
+        "name": "PHIL 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.",
+        "term": null
+    },
+    {
+        "name": "PHIL 434 Chinese Philosophy",
+        "description": "A survey of the history of Chinese philosophy focusing on the Confucian tradition and taking other traditions such as Taoism and Buddhism into account.",
+        "term": null
+    },
+    {
+        "name": "PHIL 435 C.S. Lewis",
+        "description": "This course examines Lewis, the Christian intellectual, as his participation in the Christian theistic tradition and his philosophical training exhibit themselves in his fictional, philosophical and theological works.",
+        "term": null
+    },
+    {
+        "name": "PHIL 437 Philosophy of Time",
+        "description": "This course looks at answering the question \"What is time?\" This is done by looking at ancient and modern arguments surrounding the structure, experience and models of time.",
+        "term": null
+    },
+    {
+        "name": "PHIL 440 Africana Philosophy",
+        "description": "This philosophy course will address this question through an investigation of slave narratives, decolonial political theory, philosophy of religion and Black aesthetics. We will address questions such as: What does the emergence of the struggle for liberation by Black people around the world mean for the future of our planet? Students who take this course will wrestle with the challenges posed by various thinkers from Africa and the Diaspora to the dehumanizing systems of colonialism as well as the legacy of these traditions of resistance.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "PHIL 201 Minimum Grade: D"
+                },
+                {
+                    "course": "PHIL 201H Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PHIL 441 Symbolic Logic",
+        "description": "The study of modern symbolic logic (propositional and predicate). Metalogical issues (the syntax and semantics of formal systems) are discussed.",
+        "term": null
+    },
+    {
+        "name": "PHIL 442 Philosophy of Sex & Gender",
+        "description": "Analyzes the concepts of sex, sexuality, and gender by working with authors across traditions and disciplines. We will be particularly concerned with the roles that sex, sexuality and gender have on identity formation/subversion while also questioning whether some or all of these concepts are essential/natural or socially constructed.",
+        "term": null
+    },
+    {
+        "name": "PHIL 443 Dorothy Day&the Cath Wkr Mvmt",
+        "description": "This course is a core integration seminar that investigates the life, times, and leading ideas of Dorothy Day and the Catholic Working Movement in a variety of disciplinary contexts, including history, philosophy, and religions, women's, and social justices studies.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "PHIL 201 Minimum Grade: D"
+                },
+                {
+                    "course": "PHIL 201H Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PHIL 446 Phil Refl Christnty & Science",
+        "description": "Philosophical inquiry into the historical relationship between Christian religious doctrine and the knowledge imparted by the sciences, with focus on particular episodes such as the Galileo affair and the Darwinian revolution.",
+        "term": null
+    },
+    {
+        "name": "PHIL 453 International Ethics",
+        "description": "The moral structure of the international community in the context of problems such as war, foreign aid, and transnational migration.",
+        "term": null
+    },
+    {
+        "name": "PHIL 454 Existentialism",
+        "description": "The movement from Kierkegaard to the present.",
+        "term": null
+    },
+    {
+        "name": "PHIL 455 Health Care Ethics",
+        "description": "Ethical concepts and issues in the medical field: personhood, relationship between health care professional and patient, experimentation, rights to health care, and allocation of health care resources.",
+        "term": null
+    },
+    {
+        "name": "PHIL 456 Feminist Ethics",
+        "description": "Explores women's experiences of oppression and some of the ways in which this has marginalized their concerns and their perceptions of the moral dimension. Feminist contributions to rethinking the concept of moral agency, the traditionally sharp distinction between the public and private domains, the relevance of personal relationships to ethics, and the process of moral development and moral decision-making are considered. Spring, odd years.",
+        "term": "SO"
+    },
+    {
+        "name": "PHIL 458 Environmental Ethics",
+        "description": "The detailed philosophical study of humanity's understanding of its relationship to the natural environment, concentrating on historically prominent conceptions of that relationship, and the philosophical foundation of the contemporary environmental movement. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "PHIL 459 Ethics of Eating",
+        "description": "An examination of ethical issues surrounding the consumption, production and transportation of food.  Issues such as organic food, GMOs, vegetarianism, local and slow food movements, and hunger may be covered.  Ethical issues surrounding both local and international food issues are treated.",
+        "term": null
+    },
+    {
+        "name": "PHIL 460 Ethics: Global Climate Change",
+        "description": "Many have described global climate change as the defining challenge of the 21st century, noting that unless dramatic changes are made today, future generations will suffer terrible consequences, such as rising seas, wars over fresh water, tens of millions of environmental refugees, and the extinction of species such as the polar bear. This course will investigate the complex technological, historical, economic, scientific, political, and philosophical issues surrounding this issue. Global warming skeptics are especially encouraged to enroll. Spring and Summer.",
+        "term": "S"
+    },
+    {
+        "name": "PHIL 462 Theories Solidarity & Soc Just",
+        "description": "This course is designed to fulfill one of the requirements of the Solidarity and Social Justice minor. It builds on the background provided by other courses in the SOSJ minor and the University Core by focusing more explicitly on the role public reason plays in the pursuit of solidarity and social justice. The course will ask “What is justice and how is it related to human solidarity? How do we ground claims about solidarity and social justice through an appeal to reason? What role should reason play in shaping our models of justice and what role can it play in the promotion of solidarity and social justice?”",
+        "term": null
+    },
+    {
+        "name": "PHIL 465 Philosophy of Religion",
+        "description": "A study of the nature of religious experience and practice, and how religious language and belief relate to science, morality and aesthetics. Included is also a study of what is meant by 'God,' divine attributes and proofs for and against God's existence.",
+        "term": null
+    },
+    {
+        "name": "PHIL 466 Phil of Religion & Technology",
+        "description": "In this class we shall be exploring the evolving nature of religions belief and practice in its symbiotic interdependence with humanity's evolving technologies. The course culminates in a month long exploration of the new religious needs of today's digital natives for whom literate institutional religion seems less and less inspiring or even relevant. Throughout the course students will be asked to reflect over and apply insights learned to their own lives and to contemporary society.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "PHIL 201 Minimum Grade: D"
+                },
+                {
+                    "course": "PHIL 201H Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PHIL 467 Faith and Reason",
+        "description": "This course will address a cluster of fundamental problems of faith and reason--the nature of knowledge, especially in connection with religious claims, evidence for the existence of God, the relevance of recent advances in cosmology to the Christian world view, the problem of evil and suffering, and the challenge of atheism.",
+        "term": null
+    },
+    {
+        "name": "PHIL 472 Philosophy of Art",
+        "description": "An analysis of beauty, creativity, and taste according to the theories of Plato, Aristotle, Aquinas, and selected contemporary philosophers. Several representative works from all areas of the fine arts are examined in the light of the aesthetic principles of classical philosophy.",
+        "term": null
+    },
+    {
+        "name": "PHIL 478 Philosophy of Technology",
+        "description": "This course in applied philosophy involves reflection and self-understanding of our technology-saturated world. Examinations of well-known philosophers' writings on technology will be covered. Course goals include a deeper, more reflective understanding of the nature of technology, its role in our lives, its ethical implications, its political ramifications and its relation to society.",
+        "term": null
+    },
+    {
+        "name": "PHIL 484 Major Figures and Movements",
+        "description": "An in-depth exploration of the work of a single figure or movement in the history of philosophy.",
+        "term": null
+    },
+    {
+        "name": "PHIL 485 Philosophy in Film",
+        "description": "Many current films raise first-order philosophical questions or issues, though few films are particularly good at solving those same problems or resolving the conflict underlying the issues. This course seeks to explore many contemporary films (none older than \"Blade Runner\") and the philosophical issues they raise, both by their explicit content and by their implicit content. Metaphysical issues about the mind and body relationship, the nature and extent of free will, and the nature of personal identity will be included. Some epistemological issues having to do with how well we can expect to have access to reality, and what might be among the impediments to the access will also be included. The course generally avoids treating ethical or moral issues, but also takes an interest in the use of the emotions in films, the treatment of violence and human sexuality in films and the nature of comedy in films. Some attention will also be given to film techniques, especially from the point of view of the audience.",
+        "term": null
+    },
+    {
+        "name": "PHIL 489H Honors Seminar",
+        "description": "Topics and credit by arrangement. Spring or Fall.",
+        "term": "S",
+        "prerequisites": {
+            "course": "HONS 190 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PHIL 490 Directed Study",
+        "description": "Topics and credits by arrangement.",
+        "term": null
+    },
+    {
+        "name": "PHIL 491 Special Topics",
+        "description": "Topics to be determined by the instructor.",
+        "term": null
+    },
+    {
+        "name": "PHIL 492 Special Topics: Contemporary",
+        "description": "Topics will be determined by the instructor.",
+        "term": null
+    },
+    {
+        "name": "PHIL 493 SpecialTopics:Ethics/Political",
+        "description": "Topics will be determined by the instructor.",
+        "term": null
+    },
+    {
+        "name": "PHIL 495 Study Abroad Special Topics",
+        "description": "To be determined by the department.",
+        "term": null
+    },
+    {
+        "name": "PHIL 497 Internship",
+        "description": "Professional work experience in Philosophy-related field. Student is responsible for identifying an agency and faculty supervisor. Does not count towards program electives for the major or minor.",
+        "term": null
+    },
+    {
+        "name": "PHIL 498 Research",
+        "description": "Course requires permission of instructor and Department Chair.",
+        "term": null
+    },
+    {
+        "name": "PHIL 499 Senior Exit Requirement",
+        "description": "",
+        "term": null
+    }
+]

@@ -1,0 +1,638 @@
+[
+    {
+        "name": "ENVS 101 Intro to Environmental Studies",
+        "description": "An introduction to the field of Environmental Studies. The course provides an overview of the connections between science, politics, philosophy, history, and ethics regarding nature and the environment. The course urges students to think critically about the relationships between knowledge and judgment, humans and nature, justice and ethics, and natural and human history. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "ENVS 102 Environmental Politics &Policy",
+        "description": "This course examines the politics and policymaking process of environmental issues. The course focuses primarily on American national policy, but also on state and local and international/global policy. The course is designed to evoke and encourage thinking about environmental issues on these various levels. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "ENVS 103 Environmental Biology",
+        "description": "A study of the principles of ecology (including population dynamics, diversity, and energy flow) and the impact humans have on the environment. Lab is required. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "ENVS 103L Environmental Biology Lab",
+        "description": "See course description for ENVS 103. Fall.\nFulfills the following degree requirement(s): Core: Science Inquiry.",
+        "term": "F"
+    },
+    {
+        "name": "ENVS 104 Environmental Chemistry",
+        "description": "This course covers the fundamental principles of chemistry necessary to understand the source and fate of chemical substances in the environment. Additional topics are dependent on the instructor but may include the environmental implications of energy utilization; the chemistry of the atmosphere, hydrosphere, and lithosphere; climate change; and pollution and treatment of water sources. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "ENVS 104L Environmental Chemistry Lab",
+        "description": "See course description for ENVS 104. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "ENVS 110 Earth Science",
+        "description": "This course is an introduction to the basics of earth science. It will cover the origin and evolution of the planet, geologic time scales, an overview of geological processes, marine and freshwater systems, the ice caps and the cryosphere, and atmospheric systems. It also introduces concepts in how life co-evolved with these different systems, and how humans are restructuring these systems. The course includes an introduction to the scientific method as well as the application of the earth sciences to questions of environmental sustainability and climate change.",
+        "term": null
+    },
+    {
+        "name": "ENVS 110L Earth Science Lab",
+        "description": "See course description for ENVS 110L.",
+        "term": null
+    },
+    {
+        "name": "ENVS 190 Independent Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "ENVS 193 FYS:",
+        "description": "The First-Year Seminar (FYS) introduces new Gonzaga students to the University, the Core Curriculum, and Gonzaga’s Jesuit mission and heritage. While the seminars will be taught by faculty with expertise in particular disciplines, topics will be addressed in a way that illustrates approaches and methods of different academic disciplines. The seminar format of the course highlights the participatory character of university life, emphasizing that learning is an active, collegial process.",
+        "term": null
+    },
+    {
+        "name": "ENVS 200 Case Studies in Env Science",
+        "description": "This course is designed to introduce students to scientific issues and concepts related to environmental problems. The course consists of investigations of a number of specific cases of environmental impacts by humans, such as: chemical contamination of soils, air, or water; overexploitation of fisheries or other living resources; freshwater availability and quality; habitat conversion, fragmentation, and loss of biodiversity; invasive species; renewable and non-renewable energy sources; and the production and management of waste. Specific cases vary from semester to semester, and include examples of current local, regional and global relevance. Laboratory exercises allow students to investigate the scientific principles important for understanding the cases, and help students develop an appreciation for the strength and limitations of scientific knowledge in addressing environmental issues. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "type": "or",
+                            "requirements": [
+                                {
+                                    "course": "BIOL 206 Minimum Grade: C-"
+                                },
+                                {
+                                    "course": "ENVS 103 Minimum Grade: C-"
+                                }
+                            ]
+                        },
+                        {
+                            "course": "BIOL 123 Minimum Grade: C-"
+                        }
+                    ]
+                },
+                {
+                    "course": "ENVS 104 Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "ENVS 202 Applied Environmental Chemstry",
+        "description": "To understand the impact of human activities on the natural environment, environmental science majors must be familiar with the chemical, physical, and biological processes that occur in soil, water, and air. These processes determine the reactions, transport, and fates of chemicals introduced into the environment by human activities. Students will apply and build on foundational concepts introduced in General Chemistry/Lab (CHEM 101/101L) to understand the chemical and physical processes that occur in natural systems. Chemical processes include acid-base reactions, oxidation-reduction reactions, and photochemical reactions. Physical processes include dissolution-precipitation and adsorption processes.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "CHEM 101 Minimum Grade: C-"
+                },
+                {
+                    "course": "CHEM 101L Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "ENVS 202L Applied Envrmntl Chem -Lab",
+        "description": "See course description for ENVS 202.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "CHEM 101 Minimum Grade: C-"
+                },
+                {
+                    "course": "CHEM 101L Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "ENVS 285 Special Topics",
+        "description": "Course content determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "ENVS 290 Independent Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "ENVS 320 Econ of Environmental Protectn",
+        "description": "Explores the economic dimensions of environmental topics such as air and water pollution, deforestation, non-renewable resource depletion, recycling, global warming. The course studies the extent of environmental problems and alternative solutions. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "ENVS 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ENVS 321 Ecological Thought & Politics",
+        "description": "This Service Learning course focuses on the writings of seminal figures in American ecological thought, such as John Muir, Gifford Pinchot, and Aldo Leopold. Examine the history and politics of land use and wilderness planning. Field trips in partnership with the United States Forest Service (USFS) and local environmental groups to learn first-hand about the politics of local land use. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "ENVS 324 Climate Change Sci. & Politics",
+        "description": "This course is an in-depth examination of climate change science and politics. It examines the science behind climate models, current and predicted environmental effects of a changing climate, policies, as well as the basic definitions and concepts citizens need to understand climate change and its related political issues. In the course we will examine how scientific and political thinking on climate change has evolved.",
+        "term": null
+    },
+    {
+        "name": "ENVS 326 Environmental Sociology",
+        "description": "This course examines human relationships with the natural environment. It explores how power structures, social norms, ideologies and politics affect our relationship and treatment of the environment. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "ENVS 327 Environmental Justice",
+        "description": "This course examines issues of environmental quality and social justice. It seeks to develop students' understanding of myriad causes of environmental inequality, apply those understandings to critique existing solutions to environmental inequality, as well as to propose new solutions. Service-learning will be integrated throughout as a mechanism to deepen understanding and appreciation of the course content and themes.",
+        "term": null
+    },
+    {
+        "name": "ENVS 328 Politics of Space and Place",
+        "description": "Everyday encounters with physical surroundings guide our orientations to the world. As we wander city streets, shopping malls, stadiums, nature preserves, sacred sites, restaurants, monuments, museums, and classrooms, we examine how we move in, and are moved by the material  arenas we share. Spatial organization and built environments inform our habits of perception, determine the meaning of a particular place, accent what is worth attention and what might be overlooked, and reaffirm dominant norms and power relationships in public culture. Charts, maps, apps, and other navigational tools dictate where and how we move, and how we understand our roles within a given space. Featuring the experiential dimensions of rhetoric and communication, this course presses us to consider how material spaces and places construct everyday geographies.",
+        "term": null
+    },
+    {
+        "name": "ENVS 330 Parks, Forests, and Wildlife",
+        "description": "Explores the past, present, and future of public lands. Focusing primarily on national and state parks, national forests, and wildlife, this course traces the development and application of the U.S. conservation model, both domestically and abroad. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "ENVS 332 Representing the Rainforest",
+        "description": "The course examines how the jungle/rainforest (“selva”) space is defined in Latin America and how it is represented in literature, film, and photography. The course will not focus on the Brazilian Amazon, but instead will examine the representation of Spanish-American jungle spaces including those found in Argentina, Colombia, Peru, Ecuador, and the Central American isthmus, from the Encounter until present day.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "ENVS 333 Veins of Gold",
+        "description": "In this course, we will study the way in which Spanish America's natural resources have been imagined, described, and narrated textually throughout the history of Spanish America. Through a survey of literary and visual texts, we will explore the history of extractivism, environmentalism, and economic engagement in Spanish America. Short stories, poetry, and film will be analyzed from within the framework of Latin American critical responses to this history.",
+        "term": null,
+        "prerequisites": {
+            "course": "SPAN 320 Minimum Grade: C"
+        }
+    },
+    {
+        "name": "ENVS 341 Environmental Science Seminar",
+        "description": "Introduces students to various careers in Environmental Science and to the environmental issues facing our local, regional, and global community. The format of the class includes seminars by visiting professionals and class meetings. Spring annually.",
+        "term": "S",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "ENVS 103 Minimum Grade: C-"
+                },
+                {
+                    "course": "ENVS 101 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "ENVS 343 African Environmental History",
+        "description": "This course explores the long-term history of Africans' dynamic interactions with their environments by interrogating how African environmental realities and Africans' conceptions of the environment shaped broader political, social and economic histories. Beginning in the precolonial period, we will trace how climatic variation, political and economic changes in the colonial period, and post-independence priorities transformed Africans' relationships with their environments.",
+        "term": null
+    },
+    {
+        "name": "ENVS 348 Capitalism Environment Justice",
+        "description": "This course examines how capitalism structures human relationships and impacts the nonhuman world, creating uneven social and environmental benefits and burdens. Students will draw upon a range of critical perspectives, including political economy, political ecology, feminist theory, critical race theory, indigenous and post-colonial epistemology, critical geography, science studies, environmental justice, and other approaches. Resistance and social movement responses is emphasized.",
+        "term": null
+    },
+    {
+        "name": "ENVS 352 Environmental Law & Policy",
+        "description": "This course provides students with an overview of the substance and procedures relating to environmental regulation and protection in the United States. Some technical understanding of the laws governing the use of resources and the control of pollution discharges. The course addresses, among other topics: the consumption of natural resources that resulted in environmental pollution; the political and policy context in which environmental policies have been formulated, and the administrative or regulatory procedures required by statutory law or judicial decisions to deal with various environmental issues.",
+        "term": null
+    },
+    {
+        "name": "ENVS 353 Environmental History",
+        "description": "In examining the dynamic relationship between humans and their environment over time, this course explores how nature affects cultural responses and how humans, in turn, have shaped the world around them. Employing a multidisciplinary approach this course draws upon ecological, historical, economic, or political analysis to illuminate the varied relationships between people and place. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "ENVS 358 Environmental Ethics",
+        "description": "The detailed philosophical study of humanity's understanding of its relationship to the natural environment, concentrating on historically prominent conceptions of that relationship, and the philosophical foundation of the contemporary environment movement. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "ENVS 381 Ethics of Eating",
+        "description": "An examination of ethical issues surrounding the consumption, production and transportation of food. Issues such as organic food, GMOs, vegetarianism, local and slow food movements, and hunger may be covered. Ethical issues surrounding both local and international food issues are treated. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "ENVS 384 GIS & Ecological Techniques",
+        "description": "This course introduces students to geographic information systems (GIS) and focuses on how GIS can be used to address research and management questions in ecology. Students use existing GIS databases from resource agencies and learn how to create and analyze new GIS databases. Field techniques vary but include mapping exercises using compass and global position systems (GPS). Spring, even years.",
+        "term": "SE",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "ENVS 103 Minimum Grade: C-"
+                },
+                {
+                    "course": "BIOL 206 Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "ENVS 384L GIS & Ecological TechniquesLab",
+        "description": "Taken concurrently with ENVS 384.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "ENVS 103 Minimum Grade: B-"
+                },
+                {
+                    "course": "BIOL 206 Minimum Grade: B-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "ENVS 390 Independent Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "ENVS 397 Special Topics:ENVS Humanities",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "ENVS 398 SpecialTopic:ENVSSocialScience",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "ENVS 399 Special Topics:ENVS Electives",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "ENVS 401 Population Ecology",
+        "description": "An in-depth look at the interactions that control the distribution and abundance of organisms at the population level. Topics such as life-history strategies, population dynamics, competition, predation, parasitism, and mutualism will be explored through the research literature, and quantitative approaches. Fall, even years.",
+        "term": "FE",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "type": "or",
+                            "requirements": [
+                                {
+                                    "type": "or",
+                                    "requirements": [
+                                        {
+                                            "type": "or",
+                                            "requirements": [
+                                                {
+                                                    "course": "BIOL 103 Minimum Grade: C-"
+                                                },
+                                                {
+                                                    "course": "BIOL 206 Minimum Grade: C-"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "course": "BIOL 207 Minimum Grade: C-"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "course": "ENVS 103 Minimum Grade: B-"
+                                }
+                            ]
+                        },
+                        {
+                            "course": "ENVS 206 Minimum Grade: B-"
+                        }
+                    ]
+                },
+                {
+                    "course": "ENVS 207 Minimum Grade: B-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "ENVS 401L Population Ecology Lab",
+        "description": "Taken concurrently with ENVS 401.",
+        "term": null
+    },
+    {
+        "name": "ENVS 402 Conservation Biology",
+        "description": "This course covers the biological concepts important for the conservation of natural populations, communities, and ecosystems. Both theoretical and empirical studies will be applied to such topics as: the genetics and ecology of small populations, consequences of habitat degradation and fragmentation, the impact of introduced species, and the ecological value of biological diversity. Students who do not have a major in the sciences are encouraged to talk to the instructor about their preparations for this course at the time of registration. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "type": "or",
+                            "requirements": [
+                                {
+                                    "type": "or",
+                                    "requirements": [
+                                        {
+                                            "type": "or",
+                                            "requirements": [
+                                                {
+                                                    "course": "BIOL 103 Minimum Grade: C-"
+                                                },
+                                                {
+                                                    "course": "BIOL 206 Minimum Grade: C-"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "course": "BIOL 207 Minimum Grade: C-"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "course": "ENVS 103 Minimum Grade: B-"
+                                }
+                            ]
+                        },
+                        {
+                            "course": "ENVS 206 Minimum Grade: B-"
+                        }
+                    ]
+                },
+                {
+                    "course": "ENVS 207 Minimum Grade: B-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "ENVS 402L Conservation Biology Lab",
+        "description": "This lab includes field trips. Taken concurrently with ENVS 402.",
+        "term": null
+    },
+    {
+        "name": "ENVS 403 Marine Biology",
+        "description": "Students will explore the biology of marine systems. Topics will include atmospheric and climate modeling, fluid dynamics, physiology, evolution of diversity, ecology, molecular biology, economics, and environmental science. Upon demand.",
+        "term": null
+    },
+    {
+        "name": "ENVS 403L Marine Biology Lab",
+        "description": "Taken concurrently with ENVS 403, when laboratory is offered.",
+        "term": null
+    },
+    {
+        "name": "ENVS 404 Principles of Wildlife Mgmt",
+        "description": "The ecology, theory, methods, and philosophy of wildlife management emphasizing game, nongame, and endangered species. Students gain an understanding of the roles and responsibilities of various government agencies and non-governmental organizations. Fall, even years.",
+        "term": "FE",
+        "prerequisites": {
+            "course": "ENVS 103 Minimum Grade: C-"
+        }
+    },
+    {
+        "name": "ENVS 404L Wildlife Management Lab",
+        "description": "Taken concurrently with ENVS 404. This lab includes field trips. Fall, even years.",
+        "term": "FE",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "ENVS 103L Minimum Grade: C-"
+                },
+                {
+                    "course": "BIOL 206L Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "ENVS 405 Studies in Biodiversity",
+        "description": "This course is a continuation of ENVS 406L Field Studies in Biodiversity. Research projects initiated in the field in ENVS 406L will be concluded with further library research, completion of a scientific article, and presentation of the research at a local or regional meeting. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "ENVS 405L Field Studies in Biodiversity",
+        "description": "This course uses a field experience as a backdrop to learn about evolutionary, ecological and biogeographical processes that determine the ranges and biodiversity of organisms. The course begins with class work on the Gonzaga campus and is followed by 3-4 weeks in the field, where Gonzaga faculty and local experts mentor students. Field locations vary by year and include Ecuador, Belize, Zambia, Costa Rica, or domestic locations. This course is designed for students majoring or minoring in biology. The class meets together with students enrolled in BIOL 159L for non-science majors. Students are required to enroll in ENVS 405 Studies in Biodiversity, the semester after enrolling in ENVS 405L. Summer.",
+        "term": null
+    },
+    {
+        "name": "ENVS 406 Entomology",
+        "description": "This course introduces students to the scientific study of insects. Topics will include insect identification, diversity, behavior, anatomy, ecology, and applied entomology. Fall, odd years.",
+        "term": "FO"
+    },
+    {
+        "name": "ENVS 406L Entomology Lab",
+        "description": "This laboratory includes field trips. Taken concurrently with ENVS 406.",
+        "term": null
+    },
+    {
+        "name": "ENVS 407 Community Ecology",
+        "description": "Community ecology seeks to explain the underlying mechanisms that create, maintain, and determine the fate of biological communities. Typically, patterns are documented by observation, and used to generate hypotheses about processes, which are tested. Integrating theory with real\nworld observations is fundamental to community ecology and will be a focus of this class.",
+        "term": null,
+        "prerequisites": {
+            "course": "ENVS 103 Minimum Grade: B-"
+        }
+    },
+    {
+        "name": "ENVS 408 Freshwater Biology",
+        "description": "An introduction the physical, chemical, geological, and human factors which influence freshwater\norganisms and their communities. After completion of the course students will be competent in\napplication of ecological concepts to freshwater systems and to understand the impacts of human\nactivities on freshwater ecosystems.\nEquivalent: BIOL 404\nCo-requisite:  ENVS 404L",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "ENVS 103 Minimum Grade: C-"
+                },
+                {
+                    "course": "ENVS 103L Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "ENVS 408L Freshwater Biology Lab",
+        "description": "An introduction the physical, chemical, geological, and human factors which influence freshwater\norganisms and their communities. After completion of the course students will be competent in\napplication of ecological concepts to freshwater systems and to understand the impacts of human\nactivities on freshwater ecosystems.\nEquivalent: BIOL 404\nCo-requisite: ENVS 408L",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "ENVS 103 Minimum Grade: C-"
+                },
+                {
+                    "course": "ENVS 103L Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "ENVS 409 Ecotoxicology",
+        "description": "This course provides an overview of pollutants in different environments, their movement through these environments, and the effects these pollutants have on organisms at the molecular, cellular, individual, population, and ecosystem levels. Numerous case studies on specific aspects of environmental toxicology in the US will be examined throughout the course. Students will also be introduced to how toxicology is linked to environmental policies, climate change, and environmental justice.",
+        "term": null
+    },
+    {
+        "name": "ENVS 409L Ecotoxicology Lab",
+        "description": "",
+        "term": null
+    },
+    {
+        "name": "ENVS 410 Field Botany",
+        "description": "Course includes systematics of flowering plants, plant communities of the Inland Northwest, sight identification of major plant families and selected topics in plant ecology. A plant collection is required as well as a field project in the area of plant systematics or plant ecology. This course counts towards the required 9 plant-related credits for Wildlife Biology positions with federal agencies, such as U.S. Fish and Wildlife Service and U.S. Forest Service that utilize Wildlife Biology Series GS-0486.",
+        "term": null
+    },
+    {
+        "name": "ENVS 410L Field Botany Lab",
+        "description": "Taken concurrently with ENVS 410.\nPre-requisite: (BIOL 205, minimum grade: C- and BIOL 206, minimum grade: C-) and ENVS 103 minimum grade B-.",
+        "term": null
+    },
+    {
+        "name": "ENVS 411 Plant Population Ecology",
+        "description": "This class meets with and covers the same topics as BIOL 303 (Population Ecology) but takes a more plant-focused approach. Through class illustrations and independent projects, students will investigate the theories and empirical evidence in population ecology that directly influence plant populations. This course counts towards the required 9 plant-related credits for Wildlife Biology positions with federal agencies, such as U.S. Fish and Wildlife Service and U.S. Forest Service that utilize Wildlife Biology Series GS-0486.",
+        "term": null
+    },
+    {
+        "name": "ENVS 412 Plant Community Ecology",
+        "description": ": This class meets with and covers the same topics as BIOL 333 (Community Ecology), but takes a more plant-focused approach. Students will explore the theories and experimental evidence of community ecology and conduct ecology projects with a specific focus on plant processes. This course counts towards the required 9 plant-related credits for Wildlife Biology positions with federal agencies, such as U.S. Fish and Wildlife Service and U.S. Forest Service that utilize Wildlife Biology Series GS-0486.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "BIOL 206 Minimum Grade: C-"
+                },
+                {
+                    "course": "ENVS 103 Minimum Grade: B-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "ENVS 413 Plant Biology",
+        "description": "This course acquaints students with the evolution, structure, development and functions of plant cells, tissues and organs. Plant identification and classification are emphasized, along with the importance of environment and ethical considerations of the applied plant sciences. This course counts towards the required 9 plant-related credits for Wildlife Biology positions with federal agencies, such as U.S. Fish and Wildlife Service and U.S. Forest Service that utilize Wildlife Biology Series GS-0486.",
+        "term": null
+    },
+    {
+        "name": "ENVS 413L Plant Biology Lab",
+        "description": "This laboratory includes field trips. Taken concurrently with BIOL 413L.",
+        "term": null
+    },
+    {
+        "name": "ENVS 414 Plant Propagation & Restorat'n",
+        "description": "This course will address plant propagation, plant identification, and general plant care that are foundational skills for restoration projects. Field trips are included. This course counts towards the required 9 plant-related credits for Wildlife Biology positions with federal agencies, such as U.S. Fish and Wildlife Service, U.S. Forest Service, U.S. Geological Survey, Bureau of Land Management, etc.; Wildlife Biology Series GS-0486.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "BIOL 206 Minimum Grade: C-"
+                },
+                {
+                    "course": "ENVS 103 Minimum Grade: B-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "ENVS 414L Plant Propagation & Restor Lab",
+        "description": "This course will address plant propagation, plant identification, and general plant care that are foundational skills for restoration projects. Field trips are included. This course counts towards the required 9 plant-related credits for Wildlife Biology positions with federal agencies, such as U.S. Fish and Wildlife Service, U.S. Forest Service, U.S. Geological Survey, Bureau of Land Management, etc.; Wildlife Biology Series GS-0486.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "BIOL 206 Minimum Grade: C-"
+                },
+                {
+                    "course": "ENVS 103 Minimum Grade: B-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "ENVS 421 Environmental Engineering",
+        "description": "An overview of the principles of environmental engineering. Topics include material balance, environmental chemistry, risk assessment, air quality, water quality, and water and wastewater treatment. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "CHEM 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ENVS 421L Environmental Engineering Lab",
+        "description": "This course emphasizes fundamental environmental chemistry principles and analytical techniques used to study air and water quality and treatment process performance. The course also emphasizes statistical analysis, date interpretation, and reporting requirements associated with environmental engineering. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "CHEM 101L Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ENVS 422 Sustainable Systems and Design",
+        "description": "This course explores the characteristics of sustainable systems and how design practices may encourage sustainability. Topics covered in the course will be selected for applicability to specific regions of the world and may change each year. Basic concepts include: building thermal performance, indoor and outdoor environmental quality, passive and active energy systems, water reclamation strategies, life cycle analysis and current sustainable building rating systems. Sustainable design concepts and methods are also applied to building design site development and infrastructure use. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "ENVS 423 Waste Management",
+        "description": "An overview of solid, hazardous, and industrial waste management. Topics include regulations, contaminant transport, waste sources, waste minimization, recycling, treatment and remediation technologies, landfill design and risk assessment. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "ENVS 424 Water Treatment Process",
+        "description": "The theory and design of water treatment processes. Develops contaminant fate and transport theory in engineered and natural systems focusing on reactor hydraulics and reaction kinetics. Granular and membrane filtration, coagulation, disinfection, ion exchange, adsorption, and gas transfer processes are designed for water and wastewater treatment systems. Additional topics include water reuse and water treatment for low-income, remote communities. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "ENVS 425 Stream Restoration",
+        "description": "Course presents fundamentals of stream restoration: Hydrologic, sediment transport, geomorphic, and ecological principles applicable to (1) assessment of stream channel condition, (2) developing approaches to stream management and restoration, and (3) evaluating project performance. Approach emphasizes the inter-related nature of hydrology, hydraulics, sediment transport, geomorphology, fisheries, and aquatic and riparian ecology. Provides students opportunities to literally get their feet wet while making various observations and measurements in field exercises to evaluate physical and ecological stream characteristics assess stream stability. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "course": "ENVS 103 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "ENVS 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.",
+        "term": null
+    },
+    {
+        "name": "ENVS 490 Independent Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "ENVS 495 Special Topics",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "ENVS 497 Internship",
+        "description": "Professional experience in environmental studies-related field. Students must take the initiative to contact an agency and a faculty member willing to supervise the internship.",
+        "term": null
+    },
+    {
+        "name": "ENVS 498 Undergraduate Research",
+        "description": "This course provides the motivated student with the opportunity to conduct an independent research project under the direction of a science department faculty member (e.g., ENVS, BIOL, CHEM, PHYS).",
+        "term": null
+    },
+    {
+        "name": "ENVS 499A Symposium in Env Studies I",
+        "description": "This first portion of the capstone experience is designed to help Environmental Studies students lay the foundation for the project they will complete in 499B. Together, the courses help students integrate their experience and perspectives and apply them to a specific environmental issue. Students will be expected to produce a major written analysis of a current complex environmental issue facing the Inland Northwest. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "ENVS 499B Symposium in Env Studies II",
+        "description": "This capstone experience is designed to help Environmental Studies students integrate their experience and perspectives and apply them to specific environmental issue. Students will be expected to produce a major written analysis of a current complex environmental issue facing the Inland Northwest. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "ENVS 499A Minimum Grade: D"
+        }
+    }
+]

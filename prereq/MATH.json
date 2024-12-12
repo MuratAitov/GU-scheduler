@@ -1,0 +1,404 @@
+[
+    {
+        "name": "MATH 099 Intermediate Algebra",
+        "description": "Review of basic algebraic operations and concepts for students who need additional preparation before taking other courses involving mathematics. Topics include operations on algebraic expressions, factoring, algebraic functions, linear and quadratic equations, graphing, exponents, radicals, and linear equations in two unknowns. This course does not fulfill the math requirement in the University Core.",
+        "term": null
+    },
+    {
+        "name": "MATH 100 College Algebra",
+        "description": "College algebra for those students who need additional preparation before taking MATH 114, MATH 147, or MATH 148. Topics include equations, polynomials, conics, graphing, algebraic, exponential and logarithmic functions. This course does not fulfill the math requirement in the University Core. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "MATH 103 Excursions in Mathematics",
+        "description": "An elementary survey of various mathematical areas such as algebra, geometry, counting (permutations, combinations), probability, and other topics selected by the instructor. This course is intended for the liberal arts student not pursuing business or the sciences. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "MATH 104 Elements of Algebra & Stats",
+        "description": "Development and application of concepts from algebra and statistics. Topics include polynomials, solving equations, graphing, functions, modeling, counting (permutations and combinations), data representation, probability, and statistics.",
+        "term": null
+    },
+    {
+        "name": "MATH 114 Mathematical Analysis-Business",
+        "description": "Designed for the student majoring in business. Topics selected from: functions and models, systems of equations, optimization, and introductory calculus. The emphasis will be on examples from business, which may include: cost, revenue, profit, supply, demand, market equilibrium, interest, present-value, future-value, and consumer and producer surplus. Fall and Spring.\nPrerequisite: MATH 100",
+        "term": "FS"
+    },
+    {
+        "name": "MATH 121 Introductory Statistics",
+        "description": "An introduction to the basic concepts of descriptive and inferential statistics and their application to the interpretation and analysis of data. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "MATH 147 Precalculus",
+        "description": "Topics include advanced equations and inequalities, functions and graphs including composite and inverse functions, logarithmic and exponential functions, trigonometric functions and their graphs, right angle trigonometry, trigonometric identities, systems of equations, and conics. Fall and Spring.\n\nPrerequisites: Math 100 (minimum grade C) or ALEKS test score of 61-100.",
+        "term": "FS"
+    },
+    {
+        "name": "MATH 148 Survey of Calculus",
+        "description": "A one semester introduction to differential and integral calculus designed to convey the significance, use and application of calculus for liberal arts students, particularly those in the behavioral, biological, and social sciences. Fall and Spring.\nPrerequisite: MATH 100",
+        "term": "FS"
+    },
+    {
+        "name": "MATH 157 Calculus-Analytic Geometry I",
+        "description": "An introduction to calculus for engineering, science and mathematics students, with an emphasis on conceptual understanding, problem solving, and modeling. Topics covered include: limits, continuity, derivatives of algebraic, trigonometric, and transcendental functions, applications of the derivative including optimization problems and linear approximations, antiderivatives, introduction to the definite integral, and the Fundamental Theorem of Calculus. Fall and Spring.\nPrerequisite: MATH 147, minimum grade: C",
+        "term": "FS"
+    },
+    {
+        "name": "MATH 180 Special Topics",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "MATH 193 FYS:",
+        "description": "The First-Year Seminar (FYS) introduces new Gonzaga students to the University, the Core Curriculum, and Gonzaga’s Jesuit mission and heritage. While the seminars will be taught by faculty with expertise in particular disciplines, topics will be addressed in a way that illustrates approaches and methods of different academic disciplines. The seminar format of the course highlights the participatory character of university life, emphasizing that learning is an active, collegial process.\nThis course does not meet major or minor requirements.",
+        "term": null
+    },
+    {
+        "name": "MATH 221 Applied Statistics",
+        "description": "This course contains an introduction to probability and the use of statistics to solve problems in a variety of scientific disciplines. Topics include experimental design, sampling methods, confidence intervals, hypothesis tests, and linear models. The use of statistical software is integral to this course. Fall.\n\nPrerequisites: Math 148 or Math 157",
+        "term": "F"
+    },
+    {
+        "name": "MATH 231 Discrete Structures",
+        "description": "A study of propositional logic, set theory, functions, algorithms, divisibility, introductory number theory, elementary proof techniques, counting techniques, recursive definitions, mathematical induction, and graph theory. Fall and Spring.\n\nPrerequisites: Math 147 or Math 158",
+        "term": "FS"
+    },
+    {
+        "name": "MATH 258 Calculus-Analytic Geometry II",
+        "description": "A continuation of MATH 157. Topics covered are: techniques of integration, applications of the integral, improper integrals, sequences and infinite series with an introduction to convergence tests, parametric equations, and polar coordinates.\n\nPrerequisites: Math 157 (minimum grade C-)",
+        "term": null
+    },
+    {
+        "name": "MATH 259 Calculus-Analytic Geometry III",
+        "description": "A treatment of multivariable calculus and the calculus of vector fields. Topics include: vectors and vector-valued functions, partial derivatives, multiple integration, curl and divergence, line integrals, Green’s theorem, Stokes’ theorem, and the Divergence theorem.\nPrerequisite:  MATH 258 Minimum Grade: C-",
+        "term": null
+    },
+    {
+        "name": "MATH 260 Ordinary Differential Equation",
+        "description": "Solution methods for first-order equations, second-order linear equations, and linear systems of differential equations, including analytic and qualitative approaches. Topics include mathematical modeling, Laplace transforms, Taylor series solutions, and an introduction to matrix methods. Additional topics may include numerical methods, analyzing nonlinear systems, and techniques for higher-order linear equations. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "course": "MATH 259 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "MATH 290 Directed Reading",
+        "description": "Readings and reports in selected mathematical topics. Upon sufficient demand.\nPrerequisite: MATH 157",
+        "term": null
+    },
+    {
+        "name": "MATH 301 Fundamentals of Mathematics",
+        "description": "A development of the standard techniques of mathematical proof through an examination of logic, set theory, as well as one-to-one, onto, and inverse functions. Additional topics may be chosen from the topology of the real line, the cardinality of sets, basic number theory, and basic group theory. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "course": "MATH 259 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "MATH 321 Statistics for Experimentalist",
+        "description": "An applied statistics course for those with calculus preparation.  Descriptive statistics, probability theory, discrete and continuous random variables, and methods of inferential statistics including interval estimation, hypothesis testing, and regression. Fall and Spring.\nPrerequisite:  MATH 258 Minimum Grade: D",
+        "term": "FS"
+    },
+    {
+        "name": "MATH 328 Operations Research",
+        "description": "Quantitative methods for application to problems from business, engineering, and the social sciences. Topics include linear and dynamic programming, transportation problems, network analysis, PERT, and game theory. Spring, odd years.\nPrerequisite:  MATH 258 Minimum Grade: D",
+        "term": "SO"
+    },
+    {
+        "name": "MATH 335 Applied Linear Algbra",
+        "description": "An applied study of matrices, vector spaces, and linear transformations, with a focus on computations and modeling. Topics include linear systems, dependence and rank, bases, inner product spaces, orthogonal and orthonormal sets, eigenvalues and eigenvectors, matrix factorizations, and singular values. Additional topics may include numerical techniques and applications to static and dynamical physical systems, Markov chains, graph theory, artificial neural networks, image and signal processing. Computer programming will be an integral component of the class. Spring.\n\nPrerequisite: MATH 157 Minimum Grade: C- or MATH 231 Minimum Grade: C-",
+        "term": "S"
+    },
+    {
+        "name": "MATH 339 Linear Algebra",
+        "description": "A systematic study of the theory of matrices, vector spaces, and linear transformations. Topics include systems of linear equations, determinants, linear independence, bases, dimension, rank, eigenvalues, and eigenvectors. Additional topics may include inner products, orthonormal bases, projections, and quadratic forms. Applications may include geometry, adjacency matrices, calculus, difference equations, least squares, and Markov chains. Some proof-writing expected. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "MATH 259 Minimum Grade: D"
+                },
+                {
+                    "course": "HONS 217"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MATH 341 Modern Geometry",
+        "description": "Axiomatic systems for, and selected topics from, Euclidean geometry, projective geometry, and other non-Euclidean geometries. Special attention will be given to the needs of the individuals preparing to teach at the secondary level. Fall, even years.",
+        "term": "FE",
+        "prerequisites": {
+            "course": "MATH 259 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "MATH 350 Numerical Methods",
+        "description": "An introduction to approximating solutions to problems arising in applied mathematics and science. Topics include solving linear systems, root-finding, interpolations, regression, numerical integration and differentiation, and initial value problems. Computer programming will be an integral component of the class. Fall.\nPrerequisite:  MATH 258 Minimum Grade: D",
+        "term": "F"
+    },
+    {
+        "name": "MATH 351 Combinatorics and Graph Theory",
+        "description": "An introduction to combinatorics and graph theory with topics taken from counting techniques, generating functions, combinatorial designs and codes, matchings, directed graphs, paths, circuits, connectivity, trees, planarity, and colorings. Fall, odd years.\nPrerequisite:  MATH 231 Minimum Grade: D or Math 301 Minimum Grade: D",
+        "term": "FO"
+    },
+    {
+        "name": "MATH 360 Selected Topics",
+        "description": "Various areas of pure and applied mathematics presented at a level accessible to those just completing calculus. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "MATH 361 Selected Topics",
+        "description": "Various areas of pure and applied mathematics presented at a level accessible to those just completing calculus. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "MATH 362 Selected Topics",
+        "description": "Various areas of pure and applied mathematics presented at a level accessible to those just completing calculus. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "MATH 363 Selected Topics",
+        "description": "Various areas of pure and applied mathematics presented at a level accessible to those just completing calculus. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "MATH 365 Math Seminar",
+        "description": "This seminar is intended to expose students with a calculus background to a wide variety of interesting topics and applications in mathematics. The goal of this seminar is to help students discover and explore topics in mathematics, not typically covered in a classroom setting. A weekly guest lecturer will present a topic or activity and invite questions and participation from the class. Guest lecturers may be faculty, students who have performed independent research, or guests from the community. Spring",
+        "term": "S",
+        "prerequisites": {
+            "course": "MATH 258 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "MATH 390 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "MATH 413 Real Analysis I",
+        "description": "This proof-based course provides a rigorous treatment of the real number system, the topology of the real line, sequences and series of numbers and functions, continuity of functions, differentiation, and the Riemann integral.  Spring and Fall, even years.\nPrerequisite:  MATH 301 Minimum Grade: D",
+        "term": "FE"
+    },
+    {
+        "name": "MATH 414 Real Analysis II",
+        "description": "Continuation of MATH 413 with topics chosen from Lebesgue theory, metric spaces, function spaces, and multivariable calculus. Spring, odd years.",
+        "term": "SO",
+        "prerequisites": {
+            "course": "MATH 413 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "MATH 417 Complex Variables",
+        "description": "An introduction to complex numbers and functions of one complex variable.  Topics include the geometry and algebra of complex numbers, elementary functions, analytic functions, integration on the complex plane, Taylor and Laurent expansions, and the calculus of residues. Other topics selected from conformal mappings, integral transforms and inversion formulas, harmonic functions, and winding numbers, with applications to physical problems. Spring, even years.\nPrerequisite:  MATH 301 Minimum Grade: D",
+        "term": "SE"
+    },
+    {
+        "name": "MATH 421 Probability Theory",
+        "description": "A mathematical treatment of the laws of probability with emphasis on those properties fundamental to mathematical statistics. General probability spaces, combinatorial analysis, random variables, conditional probability, moment generating functions, Bayes' law, distribution theory, and law of large numbers. Fall.\nPrerequisite:  MATH 301 Minimum Grade: D or (MATH 259 Minimum Grade: D & MATH 339 Minimum Grade: D) or (MATH 259 Minimum Grade: D & MATH 351 Minimum Grade: D) or (MATH 259 Minimum Grade: D & MATH 335 Minimum Grade: D)",
+        "term": "F"
+    },
+    {
+        "name": "MATH 422 Mathematical Statistics",
+        "description": "An examination of the mathematical principles underlying the basic statistical inference techniques of estimation, hypothesis testing, regression and correlation, nonparametric statistics, analysis of variance. Spring, even years.",
+        "term": "SE",
+        "prerequisites": {
+            "course": "MATH 421 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "MATH 423 Stochastic Processes",
+        "description": "An introduction to random processes and their applications in scientific inquiry, including discrete and continuous time probability models, Markov chains, Poisson processes, random walks, and simulation techniques. Additional topics selected from: queuing theory, branching processes, reliability theory, and Brownian motion. Spring, odd years.",
+        "term": "SO",
+        "prerequisites": {
+            "course": "MATH 421 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "MATH 425 Applied Statistical Models",
+        "description": "The course covers a wide range of statistical models including simple and multiple linear regression for quantitative and qualitative variables, logistic regression, log-linear models, models for rates (Poisson regression), and non-linear regression models. Inferences and model adequacy checking, model selection, and validation will be covered. The emphasis is on the practical application of these methods using statistical software. Fall, even years.",
+        "term": "FE",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "MATH 321 Minimum Grade: D"
+                },
+                {
+                    "course": "MATH 422 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MATH 426 Experimental Design",
+        "description": "This course covers ANOVA models without and with interactions, randomized block, Latin square, factorial, confounded factorial, balanced incomplete block, other designs. Working with simple linear regression models, random and mixed-effects models, response surface methodology are covered. The emphasis is on how to plan, design, and conduct experiments efficiently and effectively, and analyze the resulting data using statistical software. Fall, odd years.",
+        "term": "FO",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "MATH 321 Minimum Grade: D"
+                },
+                {
+                    "course": "MATH 422 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MATH 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.\nThis course does not meet major or minor requirements.",
+        "term": null
+    },
+    {
+        "name": "MATH 437 Abstract Algebra I",
+        "description": "A detailed examination of topics chosen from groups, rings, integral domains, Euclidean domains, unique factorization, fields, Galois theory, and solvability by radicals. Spring and Fall, odd years.\nPre-requisite: MATH 301",
+        "term": "FO"
+    },
+    {
+        "name": "MATH 438 Abstract Algebra II",
+        "description": "Continuation of MATH 437. Spring, even years.",
+        "term": "SE",
+        "prerequisites": {
+            "course": "MATH 437 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "MATH 440 Foundations of Applied Math",
+        "description": "This course introduces advanced foundational techniques used to solve problems arising in applied mathematics, science and engineering. Topics include dimensional analysis and scaling, mathematical modeling, perturbation methods, and asymptotic expansions. Additional topics may include the calculus of variations, similarity methods, integral transforms, Fourier series, special functions, and the derivation of models from conservation laws and constitutive equations; other topics may be selected at the discretion of the instructor. Fall, odd years.",
+        "term": "FO",
+        "prerequisites": {
+            "course": "MATH 260 Minimum Grade: C-"
+        }
+    },
+    {
+        "name": "MATH 450 Selected Topics",
+        "description": "Possible topics include combinatorics, topology, number theory, advanced numerical analysis, advanced linear algebra, theory of computation and complexity, and history of mathematics. Credit by arrangement. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "MATH 451 Special Topics",
+        "description": "Possible topics include combinatorics, topology, number theory, advanced numerical analysis, advanced linear algebra, theory of computation and complexity, and history of mathematics. Credit by arrangement.",
+        "term": null
+    },
+    {
+        "name": "MATH 452 Selected Topics",
+        "description": "Possible topics include combinatorics, topology, number theory, advanced numerical analysis, advanced linear algebra, theory of computation and complexity, and history of mathematics. Credit by arrangement. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "MATH 453 Selected Topics",
+        "description": "Possible topics include combinatorics, topology, number theory, advanced numerical analysis, advanced linear algebra, theory of computation and complexity, and history of mathematics. Credit by arrangement. Upon sufficient demand.",
+        "term": null
+    },
+    {
+        "name": "MATH 454 Partial Differential Equations",
+        "description": "Solutions of boundary value problems with applications to heat flow, wave motion, and potential theory. Topics include derivation of the heat, wave, and Laplace's equations, orthogonal sets of functions, Fourier series, Sturm-Liouville theory, separation of variables, integral transforms, the method of characteristics, and extensions to higher dimensions and non-Cartesian coordinate systems. Additional topics may include numerical methods, inverse methods, and nonlinear equations. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "MATH 260 Minimum Grade: C-"
+        }
+    },
+    {
+        "name": "MATH 455 Chaos & Discrete Dynamical Sys",
+        "description": "Introduction to the study of one-dimensional discrete-time nonlinear systems and their potential for chaotic behavior. The course will focus on investigations through computer experiments - numerical and graphical - and the mathematical analysis of the observed behavior. Students are expected to write code in at least one high-level language. Topics include orbit analysis, fixed and periodic points, graphical analysis, bifurcations, symbolic dynamics, chaos, and fractals. Additional topics selected from dynamics in the complex plane, higher dimensional maps, numerical computation of Lyapunov exponents, fractal dimension, Sarkovskii's theorem, and chaos control. Spring, even years.\nPrerequisites: (MATH 231 Minimum Grade: C and CPSC 122) or (CPSC 121 Minimum Grade: C and MATH 350)",
+        "term": "SE",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "CPSC 121 Minimum Grade: C"
+                        },
+                        {
+                            "course": "MATH 350 Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "type": "and",
+                    "requirements": [
+                        {
+                            "course": "MATH 231 Minimum Grade: C"
+                        },
+                        {
+                            "course": "CPSC 122 Minimum Grade: D"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "MATH 457 Number Theory & Cryptography",
+        "description": "Elementary number theory topics including modular arithmetic, Diophantine equations, multiplicative functions, factorization techniques, primality testing, and development of the public key code.  Additional topics may be included. Fall, even years.\nPrerequisite:  MATH 301 Minimum Grade: D",
+        "term": "FE"
+    },
+    {
+        "name": "MATH 459 Topology",
+        "description": "Topics selected from the following: Metric spaces, manifolds, general topological spaces. Sequences, continuous functions, homeomorphisms. The separation axioms, connectedness, compactness. The theory of surfaces. Knot theory. Topics from combinatorial topology, algebraic topology, differential topology. Other topics to be determined by the instructor. Spring, odd years.\nPrerequisite:  MATH 301 Minimum Grade: D",
+        "term": "SO"
+    },
+    {
+        "name": "MATH 462 Nonlinear Systems and Chaos",
+        "description": "A study of nonlinear ordinary differential equations and systems of such equations, with a focus on approaching problems geometrically. Topics include phase space, equilibrium solutions, bifurcations, stability analysis, limit cycles, chaos, fractals, and strange attractors; other topics may be selected at the discretion of the instructor. Applications to problems in biology, chemistry, physics, engineering and other fields will be explored. Fall, even years.",
+        "term": "FE",
+        "prerequisites": {
+            "course": "MATH 260 Minimum Grade: C-"
+        }
+    },
+    {
+        "name": "MATH 490 Directed Reading",
+        "description": "Selected topics in mathematics.",
+        "term": null
+    },
+    {
+        "name": "MATH 494 Topics in Actuarial Science",
+        "description": "This course explores the application of mathematics to solving actuarial science problems. Course material is intended to help students prepare for the probability and financial math actuarial exams. Spring upon sufficient demand.",
+        "term": "S",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "MATH 421 Minimum Grade: C-"
+                },
+                {
+                    "course": "ECON 352L Minimum Grade: C-"
+                }
+            ]
+        }
+    },
+    {
+        "name": "MATH 496 Comprehensive - Applied Math",
+        "description": "A comprehensive survey of applied mathematics and its connections with various technical disciplines. Students will gain experience with both written and oral communication while reviewing a breadth of mathematical topics and exploring interdisciplinary applications. Students will be required to take the Educational Testing Service’s Major Field Test in Mathematics. Required of all Applied Mathematics majors in their final year. Fall.",
+        "term": "F"
+    },
+    {
+        "name": "MATH 497 Mathematics Internship",
+        "description": "Special program for Mathematics majors.",
+        "term": null
+    },
+    {
+        "name": "MATH 498A Thesis I",
+        "description": "This course provides the motivated student with the opportunity to conduct an independent research project under the direction of a Mathematics Department faculty member. Rigorous research and study of advanced material with a significant technical writing component. Contingent on the student finding a faculty member in the Department of Mathematics who is willing to serve as a mentor. Fall and Spring.\nPrerequisite:  MATH 301 Minimum Grade: D",
+        "term": "FS"
+    },
+    {
+        "name": "MATH 498B Thesis II",
+        "description": "Continuation of MATH 498A, culminating in a written thesis. Students are expected to present their work at a conference. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "course": "MATH 498A Minimum Grade: B"
+        }
+    },
+    {
+        "name": "MATH 499 Comprehensive - Math",
+        "description": "A comprehensive survey of mathematics. Students will gain experience with both written and oral communication of mathematics while reviewing a breadth of mathematical topics. Students will be required to take the Educational Testing Service’s Major Field Test in Mathematics. Required of all Mathematics majors in their final year. Fall.",
+        "term": "F"
+    }
+]

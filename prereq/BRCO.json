@@ -1,0 +1,609 @@
+[
+    {
+        "name": "BRCO 203 Fundamentals of TV Production",
+        "description": "A practicum dealing with the technical aspects of television production along with creative generation of live, original programs. Students learn the basics of how television signals are created and transported, and then acquire proficiency in all crew areas concerned with live productions. In addition, this course provides a much greater sense of media literacy as it applies to mainstream messages in the visual media. Lab fee. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "course": "INMD 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "BRCO 204 Fund of Audio Production",
+        "description": "A practicum dealing with the technical aspects of radio management, programming, and production. Emphasis will be placed on the mastering of all operational procedures. Lab fee. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "BRCO 272 Intro to Filmmaking",
+        "description": "Intro to Filmmaking is an experiential, hands-on course that introduces students to the fundamental aspects of digital filmmaking. Students will learn basic camera operation, audio recording, screenwriting, and video editing while also examining the creative techniques and ethical considerations associated with the craft of filmmaking.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "INMD 101 Minimum Grade: D"
+                },
+                {
+                    "course": "VART 170 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "BRCO 303 Intermediate TV Production",
+        "description": "An application of the technical and aesthetic aspects of electronic news gathering and production. The class provides experience as camera operators, videotape editors, writers, and performers. Students are required to achieve a basic level of competency with digital cameras, and become proficient in non-linear editing techniques. Lab fee.",
+        "term": null,
+        "prerequisites": {
+            "course": "BRCO 203 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "BRCO 307 Writing with Sights & Sounds",
+        "description": "Students develop creative writing skills for telling stories with the languages of aural and visual media. Traditional media of radio and television are the foundations, but new forms of Internet communications will be studied.",
+        "term": null,
+        "prerequisites": {
+            "course": "INMD 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "BRCO 320 Image Communication",
+        "description": "A study of the fundamental elements of image communication and examination of contemporary image expression as found in film, television, and print.",
+        "term": null,
+        "prerequisites": {
+            "course": "INMD 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "BRCO 370 Broadcast Journalism",
+        "description": "Planning, reporting, and practice in gathering information and covering news for radio and television. May include depth reporting and documentaries. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "course": "BRCO 303 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "BRCO 390 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "BRCO 410 Special Topics",
+        "description": "Course content focuses on emerging issues and topics that relate to broadcasting practice and philosophy.",
+        "term": null
+    },
+    {
+        "name": "BRCO 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.",
+        "term": null
+    },
+    {
+        "name": "BRCO 450 Advanced Audio Production",
+        "description": "Organization, preparation, production of audio for a variety of media. Study of recording, mixing and editing of audio elements.",
+        "term": null,
+        "prerequisites": {
+            "course": "BRCO 204 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "BRCO 469 Advanced TV Production",
+        "description": "Organization, preparation, and production of programs for telecast. Students generate a variety of live-streamed shows, a talk show, and a comedy show, and are responsible for all aspects of each production. Lab fee. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "BRCO 370 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "BRCO 470 Broadcast Leadership",
+        "description": "Students will be exposed to media leadership and management situations which deal with day-to-day decision-making, staffing, departmental structures, human resources, accountability, research and strategic planning.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "BRCO 303 Minimum Grade: D"
+                        },
+                        {
+                            "course": "JOUR 310 Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "course": "PRLS 310 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "BRCO 472 Creative Filmmaking",
+        "description": "In this hands-on course, students will be further explore the technical and creative aspects of digital filmmaking and explore how the medium can be used artistically as a tool for storytelling and self-expression. Through discussions and projects, students will bolster and expand their skillset regarding camera operation, audio recording, and video editing as they create their own short movies.",
+        "term": null,
+        "prerequisites": {
+            "course": "VART 272 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "BRCO 475 Advanced Producing",
+        "description": "Course topic to be determined by the instructor.",
+        "term": null,
+        "prerequisites": {
+            "course": "BRCO 469 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "BRCO 481 TV & Social Justice",
+        "description": "Examines the application of this powerful medium toward improving the human condition. Students study examples of this concept in today’s media, then use their own analytical and production skills to improve the condition locally. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "BRCO 370 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "BRCO 482 Remote Video Production",
+        "description": "Provides advanced experience in scripting, producing, directing, and editing televised field events. Examples include baseball games and theatre productions. Lab fee.",
+        "term": null,
+        "prerequisites": {
+            "course": "BRCO 203 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "BRCO 483 Adv Non-Linear Editing",
+        "description": "Students are introduced to state-of-the-art digital editing and learn how the technology is utilized in the industry.",
+        "term": null,
+        "prerequisites": {
+            "course": "BRCO 303 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "BRCO 484 Seminar in Live Television",
+        "description": "Allows students considering a career in live television to specialize in roles of anchor, reporter, producer or director. Lab fee.",
+        "term": null,
+        "prerequisites": {
+            "course": "BRCO 469 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "BRCO 485 Seminar in Broadcasting",
+        "description": "Students take on more challenging leadership roles in GUTV broadcasts and post-production by assuming the roles of executive producers and directors, and project coordinators.",
+        "term": null,
+        "prerequisites": {
+            "course": "BRCO 469 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "BRCO 486 Applied Radio Production",
+        "description": "Students work with the latest audio production technologies to examine the current state of the radio industry and to participate in creation of radio programming on KAGU-FM.",
+        "term": null,
+        "prerequisites": {
+            "course": "BRCO 204 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "BRCO 491 Directed Studies",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "BRCO 492 Independent Studies",
+        "description": "Topic to be determined by instructor.",
+        "term": null
+    },
+    {
+        "name": "BRCO 494 Special Project",
+        "description": "Topic to be determined by instructor.",
+        "term": null,
+        "prerequisites": {
+            "course": "BRCO 303 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "BRCO 497 Broadcast Internship",
+        "description": "Pre-professional experience in the environment of a commercial or public radio or television facility. Fall, Spring, and Summer.",
+        "term": "S",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "BRCO 303 Minimum Grade: D"
+                },
+                {
+                    "course": "BRCO 370 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "BRCO 499 Capstone",
+        "description": "Comprehensive evaluation of capstone project. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "JOUR 110 Journalistic Writing",
+        "description": "An introduction to journalistic-style writing across media platforms, including broadcast journalism and public relations writing.",
+        "term": null
+    },
+    {
+        "name": "JOUR 190 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "JOUR 210 Civic Journalism",
+        "description": "Emphasis on the style of journalism that fosters community engagement. Research, reporting and interviewing techniques that focus on news coverage of public organizations and groups that participate in framing public policy. A variety of writing styles will be utilized.",
+        "term": null,
+        "prerequisites": {
+            "course": "JOUR 110 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 220 Student Media Writing Lab",
+        "description": "With direction from student newspaper advisers/instructors and editors, students write stories and news reports for The Gonzaga Bulletin and gonzagabulletin.com.",
+        "term": null,
+        "prerequisites": {
+            "course": "JOUR 210 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 230 Student Media Editing Lab",
+        "description": "With direction from advisers/instructors, students edit news stories for The Gonzaga Bulletin and gonzagabulletin.com.",
+        "term": null,
+        "prerequisites": {
+            "course": "JOUR 110 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 270 Photojournalism",
+        "description": "An introduction to the technical, ethical, and creative principles of journalism-based photography and video. Topics include basic camera functions, digital image-editing tools, and the intersection of photojournalism, digital-video, and short documentary filmmaking. Special attention will be given to the professional and ethical considerations of the practice and the unique differences that separate photojournalism from other forms of image capturing. Lab fee. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "course": "INMD 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 280 Design and Editing",
+        "description": "Emphasis on design principles and editing skills for print and online journalistic platforms. Attention also to news values and philosophies.",
+        "term": null,
+        "prerequisites": {
+            "course": "JOUR 110 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 290 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "JOUR 310 Public Affairs Reporting",
+        "description": "Reporting municipal, county, state, and federal affairs. Open meeting, shield and disclosure laws, law enforcement and the judicial process.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "JOUR 210 Minimum Grade: D"
+                },
+                {
+                    "course": "PRLS 310 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "JOUR 350 History of Journalism",
+        "description": "The historical development of the press and journalistic practices in America. The focus is the development of journalistic values such as objectivity, accuracy, balance and legal and ethical issues such as free speech and access to public records.",
+        "term": null,
+        "prerequisites": {
+            "course": "INMD 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 370 Emerging Media",
+        "description": "Students integrate reporting and research with audio, video, photos and text to produce and design multimedia packages in a journalistic context. Students may utilize blogging, podcasting, social media and emerging media techniques. Some focus on analysis of the optimal platforms for presenting journalistic content.",
+        "term": null,
+        "prerequisites": {
+            "course": "JOUR 110 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 374 Documentary History & Analysis",
+        "description": "The course explores documentary film as both a popular art form and as an instrument for constructing social knowledge. From early cinematic experiments to contemporary award winners, students will critically review the evolution of non-fiction filmmaking while analyzing the techniques that documentary filmmakers use to craft their documentaries. The larger ethical and societal impacts of documentary film will also be explored. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "course": "INMD 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 390 Directed Study",
+        "description": "Topic to be determined by faculty.",
+        "term": null
+    },
+    {
+        "name": "JOUR 410 Special Topics",
+        "description": "Course content focuses on emerging issues and topics that relate to journalistic practice and philosophy.",
+        "term": null
+    },
+    {
+        "name": "JOUR 420 Literary Journalism",
+        "description": "The course focuses on writing longer forms of journalism. Content includes a look at the traditions of literary journalism in America, memoir-style nonfiction and using fiction techniques in nonfiction stories. Writing topics are individualized.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "type": "or",
+                            "requirements": [
+                                {
+                                    "type": "or",
+                                    "requirements": [
+                                        {
+                                            "type": "or",
+                                            "requirements": [
+                                                {
+                                                    "course": "JOUR 110 Minimum Grade: D"
+                                                },
+                                                {
+                                                    "course": "ENGL 301 Minimum Grade: D"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "course": "ENGL 302 Minimum Grade: D"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "course": "ENGL 303 Minimum Grade: D"
+                                }
+                            ]
+                        },
+                        {
+                            "course": "ENGL 306 Minimum Grade: D"
+                        }
+                    ]
+                },
+                {
+                    "course": "SOSJ 160 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "JOUR 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.",
+        "term": null
+    },
+    {
+        "name": "JOUR 440 Seminar: Media & Democracy",
+        "description": "Examines the organizational, cultural, technological, and ideological nature of news. Attention is given to theories of the press, the construction of news, news as a form of knowledge, and the broader social implications of news organizations and practices.",
+        "term": null,
+        "prerequisites": {
+            "course": "INMD 360 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 470 Documentary Filmmaking",
+        "description": "Documentary filmmaking provides an environment in which students experiment with the combination of digital film aesthetics and documentary storytelling to produce an original short non-fiction work. The course includes examination of ethical issues in documentaries, the use of animation and interactivity in film and the role of documentary work in different cultures. Lab fee. Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "VART 272 Minimum Grade: D"
+                },
+                {
+                    "course": "BRCO 303 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "JOUR 485 Media Ethics",
+        "description": "Journalistic ethical issues ranging from fairness, balance and conflicts of interest to sensationalism will be discussed in depth. Overview of theories of leading historical and contemporary philosophers through the lens of relevance to contemporary media. Emphasis on use of ethical decision-making models.",
+        "term": null,
+        "prerequisites": {
+            "course": "INMD 101 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "JOUR 490 Directed Study-Special Project",
+        "description": "Tutorial or a project proposed to faculty. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "JOUR 494 Independent Study",
+        "description": "In-depth pursuit of a topic proposed to faculty. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "JOUR 497 Internships",
+        "description": "Professional work experience in journalism. Possibilities include print and online journalistic organizations and magazines. Fall, Spring, and Summer.",
+        "term": "S",
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "JOUR 210 Minimum Grade: D"
+                },
+                {
+                    "course": "SOSJ 262 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "JOUR 499 Capstone Project",
+        "description": "Students demonstrate command of journalistic practices and philosophies in a comprehensive project and essay exam. Spring.",
+        "term": "S"
+    },
+    {
+        "name": "PRLS 260 Public Relations Principles",
+        "description": "Theories and principles underlying public relations practice. The history and development of the field, responsibilities and duties, ethics, law, and social responsibility, and survey of practice and techniques. Fall and Spring.",
+        "term": "FS"
+    },
+    {
+        "name": "PRLS 310 Writing for Public Relations",
+        "description": "Theory and models for communication in an array of forms common to PR including utilization of emerging technologies and an emphasis on understanding the target audience.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "PRLS 260 Minimum Grade: D"
+                },
+                {
+                    "type": "or",
+                    "requirements": [
+                        {
+                            "course": "JOUR 110 Minimum Grade: D"
+                        },
+                        {
+                            "course": "SOSJ 160 Minimum Grade: D"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "PRLS 340 PR Speech Writing & Delivery",
+        "description": "A focus on the variety of public address forms common to the public relations profession, including writing speeches for executives and public figures, and coaching for public and media appearances. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "course": "PRLS 310 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PRLS 356 Sports Media",
+        "description": "The course content examines the roles of public relations practitioners and journalists through the lens of athletics organizations and sports in society. Students will engage in sporting events coverage that focuses on an array of writing styles, social media strategies, media relationships with sports organizations and athletes, and an in-depth understanding of all sports competitions, primarily those at the collegiate and professional levels. Fall.",
+        "term": "F",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "INMD 101 Minimum Grade: D"
+                },
+                {
+                    "course": "JOUR 110 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PRLS 360 Strategic Communications",
+        "description": "Strategic roles and theory-based planning concepts, integrated marketing communication, and analysis of case studies that review communication theory and professional practice. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "course": "PRLS 260 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PRLS 410 Special Topics",
+        "description": "Course content focuses on emerging issues and topics that relate to public relations practice and philosophy.",
+        "term": null
+    },
+    {
+        "name": "PRLS 432 CIS:",
+        "description": "The Core Integration Seminar (CIS) engages the Year Four Question: “Imagining the possible: What is our role in the world?” by offering students a culminating seminar experience in which students integrate the principles of Jesuit education, prior components of the Core, and their disciplinary expertise. Each section of the course will focus on a problem or issue raised by the contemporary world that encourages integration, collaboration, and problem solving. The topic for each section of the course will be proposed and developed by each faculty member in a way that clearly connects to the Jesuit Mission, to multiple disciplinary perspectives, and to our students’ future role in the world.",
+        "term": null
+    },
+    {
+        "name": "PRLS 450 Organizational Issues for PR",
+        "description": "A study of the changing nature of the organizational public relations role, including contemporary theoretical models and expanding roles in communication, leadership, and organizational culture. Emphasis on consulting practices, leadership theory, strategies and corporate ethics.",
+        "term": null,
+        "prerequisites": {
+            "type": "or",
+            "requirements": [
+                {
+                    "course": "PRLS 310 Minimum Grade: D"
+                },
+                {
+                    "course": "PRLS 360 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PRLS 460 Public Relations Campaign",
+        "description": "Applied work for an actual client based on theories of organizational communication, including a campaign plan. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "PRLS 310 Minimum Grade: D"
+                },
+                {
+                    "course": "PRLS 340 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PRLS 470 PR Internship Course",
+        "description": "Pre-professional work experience in public relations with a PR agency, non-profit or organization. 120-140 hours required with onsite supervision by a public relations practitioner. Instructor supports securing an internship, and all internships are to be pre-approved by the instructor. Includes attendance at regular class sessions. Registration requires a minimum cumulative 3.0 G.P.A. Fall, Spring.",
+        "term": "S",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "PRLS 310 Minimum Grade: D"
+                },
+                {
+                    "course": "PRLS 360 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PRLS 480 Public Relations Capstone",
+        "description": "This course involves the completion of a public relations reflection project that integrates and applies prior course work and field work into academic research of contemporary issues in the public relations profession.",
+        "term": null,
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "PRLS 310 Minimum Grade: D"
+                },
+                {
+                    "course": "PRLS 360 Minimum Grade: D"
+                }
+            ]
+        }
+    },
+    {
+        "name": "PRLS 490 Directed Study",
+        "description": "Individualized study of an issue related to the public relations profession. Fall, Spring, and Summer.",
+        "term": "S",
+        "prerequisites": {
+            "course": "PRLS 310 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PRLS 497 Elective Internship",
+        "description": "Pre-professional work experience in public relations with a PR agency, non-profit or organization. All internships are to be approved by the instructor prior to start date. Virtual internships are allowed with instructor permission. Fall, Spring, and Summer.",
+        "term": "S",
+        "prerequisites": {
+            "course": "PRLS 310 Minimum Grade: D"
+        }
+    },
+    {
+        "name": "PRLS 499 Thesis Conferencing",
+        "description": "Individual thesis review sessions with PRLS 480 instructor. Fall and Spring.",
+        "term": "FS",
+        "prerequisites": {
+            "type": "and",
+            "requirements": [
+                {
+                    "course": "PRLS 310 Minimum Grade: D"
+                },
+                {
+                    "course": "PRLS 360 Minimum Grade: D"
+                }
+            ]
+        }
+    }
+]
